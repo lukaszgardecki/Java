@@ -7,11 +7,15 @@ public class Zadanie {
 
     public static void main (String[] args) {
         int a, b, c;
+
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("a=");
         a = scanner.nextInt();
+
         System.out.print("b=");
         b = scanner.nextInt();
+
         System.out.print("c =");
         c = scanner.nextInt();
 
