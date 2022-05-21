@@ -4,7 +4,7 @@ public class Main {
         //słowo static oznacza, śe metoda jest statyczna, czyli ta metoda jest widoczna na poziomie całej klasy
         //słowo void oznacza, że metoda nic nie zwraca
         //słowo main to nazwa metody
-        //w nawiasie są parametry metody
+        //w nawiasie są parametry metody, metoda main przyjmuje jeden argument w postaci tablicy o nazwie "args"
 
         //Tworzę nowy obiekt:
         Person pawel = new Person();
@@ -19,11 +19,14 @@ public class Main {
         mikolaj.age = 100;
         mikolaj.isAlive = false;
 
-        //chciałbym żeby paweł się przedstawił, używamy metody
-        pawel.przedstawSie();
 
-        //chciałbym żeby mikołaj się przedstawił:
-        mikolaj.przedstawSie();
+        pawel.przedstawSie(false);   //chciałbym żeby paweł się przedstawił nieformalnie, używamy metody przedstawSię()
+        mikolaj.przedstawSie(false); //chciałbym żeby mikołaj się przedstawił nieformalnie
+        pawel.przedstawSie(true);   //chciałbym żeby paweł się przedstawił jeszcze raz ale formalnie, używamy metody
+
+        int ileRazy = pawel.ileRazyPrzedstawili(); //policz ile razy osoby się przedstawiły
+
+        System.out.println("Pawel przedstawił się " + ileRazy + " razy."); //wyświetl na ekranie ile razy osoby się przedstawiły
 
     }
 }
