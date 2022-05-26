@@ -1,3 +1,5 @@
+package pl.am.podstawy.lekcja2;
+
 public class TypyZmiennych {
     public static void main(String[] args) {
         System.out.println("Lekcja o typach zmiennych");

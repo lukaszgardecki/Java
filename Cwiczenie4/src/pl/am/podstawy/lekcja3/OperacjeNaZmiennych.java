@@ -1,3 +1,5 @@
+package pl.am.podstawy.lekcja3;
+
 import java.util.Arrays;
 
 public class OperacjeNaZmiennych {
