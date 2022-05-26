@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class PrymitywnyKalkulator {
     public static void main(String[] args) {
-        int num1;
-        int num2;
-        int dzialanie;
+        double num1;
+        double num2;
+        double dzialanie;
 
         Scanner sc = new Scanner(System.in);
 
@@ -31,15 +31,15 @@ public class PrymitywnyKalkulator {
         dzialanie = sc.nextInt();
 
         if(dzialanie == 1) {
-            int wynik;
+            double wynik;
             wynik = num1 + num2;
             System.out.println("Wynik dodawania liczb " + num1 + " i " + num2 + " to: " + wynik + ".");
         } else if (dzialanie == 2) {
-            int wynik;
+            double wynik;
             wynik = num1 - num2;
             System.out.println("Wynik odejmowania liczb " + num1 + " i " + num2 + " to: " + wynik + ".");
         } else if (dzialanie == 3) {
-            int wynik;
+            double wynik;
             wynik = num1 * num2;
             System.out.println("Wynik mnoezenia liczb " + num1 + " i " + num2 + " to: " + wynik + ".");
         } else if (dzialanie == 4) {
