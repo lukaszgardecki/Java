@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Malpa {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        //boolean dostep = false;
 
         //wersja 1 - z góry okreslony wymiar planszy
 //        char[][] plansza = {
@@ -25,32 +26,37 @@ public class Malpa {
         System.out.println("Ilosc kolumn: ");
         int ileKolumn = scanner.nextInt();
 
-        char[][] plansza = new char[ileWierszy][ileKolumn];
 
+
+            //utworzenie tablicy dwuwymiarowej
+        char[][] plansza = new char[ileWierszy][ileKolumn];
+            //wypisanie elementów tablicy za pomocą pętli, na podstawie danych od użytkownika
         for (int i = 0; i < ileWierszy; i++) {
             for (int j = 0; j < ileKolumn; j++) {
                 plansza[i][j] = '.';
             }
         }
 
-        // lokalizacja małpy na starcie programu
+
+
+        // lokalizacja małpy na starcie programu. Ustawienie małpy mniej wiecej na środku deklarowanej przez użytkownika planszy:
         int malpaK = ileKolumn/2;
         int malpaW = ileWierszy/2;
         plansza[malpaW][malpaK] = '@';
 
         //Dodanie pustych linijek w konsoli
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
 
-        for (int i = 0; i < plansza.length; i++) {
-            for (int j = 0; j < plansza[malpaW].length; j++) {
-                System.out.print(plansza[i][j]);
-            }
-            System.out.println();
-        }
+//        for (int i = 0; i < plansza.length; i++) {
+//            for (int j = 0; j < plansza[malpaW].length; j++) {
+//                System.out.print(plansza[i][j]);
+//            }
+//            System.out.println();
+//        }
 
         //całość w nieskończonej pętli żeby non stop działało
         while (true){
@@ -102,11 +108,12 @@ public class Malpa {
             plansza[malpaW][malpaK] = '@';
 
             //Dodanie pustych linijek w konsoli
+//            System.out.println();
+//            System.out.println();
             System.out.println();
             System.out.println();
             System.out.println();
-            System.out.println();
-            System.out.println();
+
 
             for (int i = 0; i < plansza.length; i++) {
                 for (int j = 0; j < plansza[malpaW].length; j++) {
