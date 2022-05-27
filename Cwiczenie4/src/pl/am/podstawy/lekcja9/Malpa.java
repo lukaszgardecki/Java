@@ -7,51 +7,58 @@ import java.util.Scanner;
 public class Malpa {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        char[][] plansza = {
-                {'.','.','.','.','.','.','.','.','.','.'},
-                {'.','.','.','.','.','.','.','.','.','.'},
-                {'.','.','.','.','.','.','.','.','.','.'},
-                {'.','.','.','.','.','.','.','.','.','.'},
-                {'.','.','.','.','.','.','.','.','.','.'}
-        };
 
-        int malpaK = 8;
-        int malpaW = 1;
+        //wersja 1 - z góry okreslony wymiar planszy
+//        char[][] plansza = {
+//                {'.','.','.','.','.','.','.','.','.','.'},
+//                {'.','.','.','.','.','.','.','.','.','.'},
+//                {'.','.','.','.','.','.','.','.','.','.'},
+//                {'.','.','.','.','.','.','.','.','.','.'},
+//                {'.','.','.','.','.','.','.','.','.','.'}
+//        };
 
-        //System.out.println(plansza.length);
-        //System.out.println(plansza[malpaK].length);
+        //wersja 2 - wymiar planszy określa użytkownik:
+        System.out.println("--- Podaj wymiary planszy ---");
+        System.out.println("Ilosc wierszy: ");
+        int ileWierszy = scanner.nextInt();
 
+        System.out.println("Ilosc kolumn: ");
+        int ileKolumn = scanner.nextInt();
 
+        char[][] plansza = new char[ileWierszy][ileKolumn];
+
+        for (int i = 0; i < ileWierszy; i++) {
+            for (int j = 0; j < ileKolumn; j++) {
+                plansza[i][j] = '.';
+            }
+        }
+
+        // lokalizacja małpy na starcie programu
+        int malpaK = ileKolumn/2;
+        int malpaW = ileWierszy/2;
         plansza[malpaW][malpaK] = '@';
 
+        //Dodanie pustych linijek w konsoli
         System.out.println();
         System.out.println();
         System.out.println();
         System.out.println();
         System.out.println();
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 10; j++) {
+        for (int i = 0; i < plansza.length; i++) {
+            for (int j = 0; j < plansza[malpaW].length; j++) {
                 System.out.print(plansza[i][j]);
             }
             System.out.println();
         }
 
+        //całość w nieskończonej pętli żeby non stop działało
         while (true){
             String kierunek =  scanner.nextLine();
             plansza[malpaW][malpaK] = '.';
 
 
-//        if (kierunek.equals("w")) {
-//            malpaW--;
-//        } else if (kierunek.equals("s")) {
-//            malpaW++;
-//        } else if (kierunek.equals("a")) {
-//            malpaK--;
-//        } else if (kierunek.equals("d")) {
-//            malpaK++;
-//        }
-
+            //Po nacisnięciu klawisza zmień kierunek:
             switch (kierunek) {
                 case "w":
                 case "W":
@@ -91,21 +98,21 @@ public class Malpa {
 
             }
 
+
             plansza[malpaW][malpaK] = '@';
 
+            //Dodanie pustych linijek w konsoli
             System.out.println();
             System.out.println();
             System.out.println();
             System.out.println();
             System.out.println();
 
-            for (int i = 0; i < 5; i++) {
-                for (int j = 0; j < 10; j++) {
+            for (int i = 0; i < plansza.length; i++) {
+                for (int j = 0; j < plansza[malpaW].length; j++) {
                     System.out.print(plansza[i][j]);
                 }
                 System.out.println();
-
-
             }
         }
 
