@@ -1,11 +1,16 @@
 package pl.am.oop.pamiec;
 
-public class StosStertaTypyZlozone {
+public class ArgumentyMetodyZlozone {
+
+
+
     public static void main(String[] args) {
         Pracownik pracownik1 = new Pracownik("Jan", "Kowalski");
-        Pracownik pracownik2 = pracownik1;
+        pracownik1.pensja = 2000;
+
+//        zwiekszPensje(pracownik1);
+        pracownik1.zwiekszPensje();
 
         System.out.println("pracownik1 = " + pracownik1);
-        System.out.println("pracownik2 = " + pracownik2);
     }
 }

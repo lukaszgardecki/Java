@@ -31,7 +31,7 @@ public class Pracownik {
 //        return infoPracownik;
 //    }
 
-    public String info() {
+    public String toString() {
         String infoPracownik = "Pracownik: " + this.imie + " " + this.nazwisko + ", wiek: " + this.wiek + ", zarabia: " + this.pensja;
 
         if (this.zaliczoneBHP) {
@@ -40,6 +40,10 @@ public class Pracownik {
             infoPracownik += ", NIE zaliczone BHP";
         }
         return infoPracownik;
+    }
+
+    public void zwiekszPensje() {
+        this.pensja = 1.15 * this.pensja;
     }
 
 

@@ -31,7 +31,7 @@ public class Pracownik {
 //        return infoPracownik;
 //    }
 
-    public String info() {
+    public String toString() {
         String infoPracownik = "Pracownik: " + this.imie + " " + this.nazwisko + ", wiek: " + this.wiek + ", zarabia: " + this.pensja;
 
         if (this.zaliczoneBHP) {
