@@ -1,11 +1,11 @@
-package pl.am.oop.pamiec;
+package pl.am.oop.hermetyzacja;
 
 public class Pracownik {
-    String imie;
-    String nazwisko;
-    int wiek;
-    double pensja;
-    boolean zaliczoneBHP;
+    private String imie;
+    private String nazwisko;
+    private int wiek;
+    private double pensja;
+    private boolean zaliczoneBHP;
 
     //Stwórzmy konstruktor, ¿eby w klasie Firma wpisywaæ dane o pracowniku na etapie tworzenia nowego pracownika, czyli w nawiasie ju¿. Je¿eli tutaj nie stworzymy konstruktora, to w klasie Firma mo¿emy stworzyæ nowych pracowników, a dopiero póŸniej mo¿emy im rêcznie przypisywaæ imie, nazwisko, wiek itp...
     public Pracownik(String imie, String nazwisko, int wiek) {
