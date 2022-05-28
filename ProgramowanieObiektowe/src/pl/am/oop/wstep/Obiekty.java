@@ -23,7 +23,7 @@ public class Obiekty {
         Random random = new Random();
 
         String s1 = "s1";
-        String s1 = new String("s2");
+        String s2 = new String("s2");
 
         //Do tworzenia nowych obiektów bêdziemy u¿ywaæ s³woa NEW;
     }
