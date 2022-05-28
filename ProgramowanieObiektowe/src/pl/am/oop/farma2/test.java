@@ -2,19 +2,22 @@ package pl.am.oop.farma2;
 
 public class test {
     public static void main(String[] args) {
-        Pies pies = new Pies("Reksio",15);
-        Kot kot = new Kot("Kitek", 3);
-        Kura kura = new Kura(1);
-        Krowa krowa = new Krowa(200);
 
-        pies.dajGlos();
-        pies.podajLape();
-        kot.dajGlos();
-        kura.dajGlos();
-        kura.zniesJajo();
-        krowa.dajGlos();
-        krowa.dajMleko();
+        Zwierze[] zwierzeta = new Zwierze[4];
+        zwierzeta[0] = new Pies("Reksio",15);
+        zwierzeta[1] = new Kot("Kitek", 3);
+        zwierzeta[2] = new Kura(1);
+        zwierzeta[3] = new Krowa(200);
 
+        //zwyk³a pêtla for:
+//        for (int i = 0; i < zwierzeta.length; i++) {
+//            zwierzeta[i].dajGlos();
+//        }
+
+        //For each. rozszerzona wersja pêtli for. Przechodzi przez wszystkie elementy tablicy.
+        for (Zwierze zwierze : zwierzeta) {
+            zwierze.dajGlos();
+        }
 
 
     }
