@@ -14,4 +14,11 @@ public class Kura extends ZwierzeHodowlane {
     public void dajGlos() {
         System.out.println("ko ko ko ko ko");
     }
+
+    @Override
+    public String toString() {
+        return "Kura{" +
+                "masa=" + masa +
+                '}';
+    }
 }

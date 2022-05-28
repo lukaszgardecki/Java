@@ -3,6 +3,7 @@ package pl.am.oop.farma2;
 public class test {
     public static void main(String[] args) {
 
+        //Utworzenie tablicy ze zwierzêtami:
         Zwierze[] zwierzeta = new Zwierze[4];
         zwierzeta[0] = new Pies("Reksio",15);
         zwierzeta[1] = new Kot("Kitek", 3);

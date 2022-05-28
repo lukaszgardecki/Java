@@ -14,4 +14,12 @@ public class Pies extends ZwierzeDomowe {
     public void dajGlos() {
         System.out.println("ha³ ha³");
     }
+
+    @Override
+    public String toString() {
+        return "Pies{" +
+                "nazwa='" + nazwa + '\'' +
+                ", masa=" + masa +
+                '}';
+    }
 }

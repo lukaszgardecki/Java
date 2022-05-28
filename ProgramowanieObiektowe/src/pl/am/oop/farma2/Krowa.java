@@ -19,4 +19,12 @@ public class Krowa extends ZwierzeHodowlane {
     public void dajGlos() {
         System.out.println("Muuuuuuuuuu");
     }
+
+    @Override
+    public String toString() {
+        return "Krowa{" +
+                "id=" + id +
+                ", masa=" + masa +
+                '}';
+    }
 }

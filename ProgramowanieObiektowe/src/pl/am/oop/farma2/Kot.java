@@ -10,4 +10,12 @@ public class Kot extends ZwierzeDomowe {
     public void dajGlos() {
         System.out.println("Mia³ mia³");
     }
+
+    @Override
+    public String toString() {
+        return "Kot{" +
+                "nazwa='" + nazwa + '\'' +
+                ", masa=" + masa +
+                '}';
+    }
 }
