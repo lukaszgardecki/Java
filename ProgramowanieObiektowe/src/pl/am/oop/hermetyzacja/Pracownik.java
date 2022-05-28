@@ -3,6 +3,7 @@ package pl.am.oop.hermetyzacja;
 public class Pracownik {
     private String imie;
     private String nazwisko;
+    private String stanowisko;
     private int wiek;
     private double pensja;
     private boolean zaliczoneBHP;
@@ -13,11 +14,13 @@ public class Pracownik {
         this.nazwisko = nazwisko;
         this.wiek = wiek;
         this.pensja = 3000;
+        this.stanowisko = "pomocnik";
     }
     public Pracownik(String imie, String nazwisko) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.pensja = 3000;
+        this.stanowisko = "pomocnik";
     }
 
 //    public static String info(Pracownik pracownik) {
@@ -46,5 +49,56 @@ public class Pracownik {
         this.pensja = 1.15 * this.pensja;
     }
 
+    public String getImie() {
+        return this.imie;
+    }
 
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public String getNazwa() {
+        return this.stanowisko + " " + this.imie + " " + this.nazwisko;
+    }
+
+    public int getWiek() {
+        return wiek;
+    }
+
+    public double getPensja() {
+        return pensja;
+    }
+
+    public boolean isZaliczoneBHP() {
+        return zaliczoneBHP;
+    }
+
+    public void setNazwisko(String noweNazwisko) {
+        if (noweNazwisko == null || noweNazwisko.equals("")) {
+            System.out.println("Nie mo¿na ustawiæ nazwiska na pusty ³añcuch znaków");
+        } else {
+            this.nazwisko = noweNazwisko;
+        }
+
+    }
+
+    public void setImie(String imie) {
+        this.imie = imie;
+    }
+
+    public void setStanowisko(String stanowisko) {
+        this.stanowisko = stanowisko;
+    }
+
+    public void setWiek(int wiek) {
+        this.wiek = wiek;
+    }
+
+    public void setPensja(double pensja) {
+        this.pensja = pensja;
+    }
+
+    public void setZaliczoneBHP(boolean zaliczoneBHP) {
+        this.zaliczoneBHP = zaliczoneBHP;
+    }
 }
