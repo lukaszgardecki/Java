@@ -13,20 +13,35 @@ public class Pracownik {
     private double pensja = 2600;
     private boolean zaliczoneBHP;
 
+//    //blok inicjalizuj¹cy. Raczej nie zaleca siê ich stosowania. Ale trzeba wiedzieæ, ¿e istniej¹ i w razie wyst¹pienia, wiedzieæ czym s¹. W tym przypadku blok inizjalizuj¹cy nadpisuje pensjê zadeklarowan¹ wy¿ej.
+//    {
+//        this.pensja = 4000;
+//    }
+//    //statyczne bloki inicjalizuj¹ce
+//    static {
+//        nextId = 0;
+//    }
+
+
+
     //Stwórzmy konstruktor, ¿eby w klasie Firma wpisywaæ dane o pracowniku na etapie tworzenia nowego pracownika, czyli w nawiasie ju¿. Je¿eli tutaj nie stworzymy konstruktora, to w klasie Firma mo¿emy stworzyæ nowych pracowników, a dopiero póŸniej mo¿emy im rêcznie przypisywaæ imie, nazwisko, wiek itp...
-    public Pracownik(String imie, String nazwisko, int wiek) {
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.wiek = wiek;
-        this.pensja = 3000;
-        this.stanowisko = "pomocnik";
-    }
+//    public Pracownik(String imie, String nazwisko, int wiek) {
+//        this.imie = imie;
+//        this.nazwisko = nazwisko;
+//        this.wiek = wiek;
+//
+//    }
 
     public Pracownik(String imie, String nazwisko) {
         this.imie = imie;
         this.nazwisko = nazwisko;
-        //this.pensja = 3000;
-        //this.stanowisko = "pomocnik";
+
+    }
+
+    //Mo¿emy równie¿ w konstruktorze wywo³aæ inny konstruktor, np. jeœli dane siê pokrywaj¹ i ró¿ni¹ siê one kilkoma elementami:
+    public Pracownik(String imie, String nazwisko, int wiek) {
+        this(imie, nazwisko); // <----to wywo³anie MUSI byæ pierwsz¹ instrukcj¹ !
+        this.wiek = wiek;
     }
 
 //    private int ustawId() {
