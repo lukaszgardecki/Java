@@ -13,7 +13,7 @@ public class Dziedziczenie {
         Prostokat prostokat = new Prostokat(2, 5);
         Kwadrat kwadrat = new Kwadrat(7);
 
-        kwadrat.
+
 
         System.out.println(prostokat);
         System.out.println(kwadrat);
