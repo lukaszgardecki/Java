@@ -1,0 +1,25 @@
+package pl.am.oop.farma3;
+
+public class Pies extends ZwierzeDomowe {
+
+    public Pies(String nazwa, double masa) {
+        super(nazwa, masa);
+    }
+
+    public void podajLape() {
+        System.out.println("Masz ³¹pê!");
+    }
+
+    @Override
+    public void dajGlos() {
+        System.out.println("ha³ ha³");
+    }
+
+    @Override
+    public String toString() {
+        return "Pies{" +
+                "nazwa='" + nazwa + '\'' +
+                ", masa=" + masa +
+                '}';
+    }
+}
