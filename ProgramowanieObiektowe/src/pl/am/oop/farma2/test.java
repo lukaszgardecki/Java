@@ -1,4 +1,4 @@
-package pl.am.oop.zadanie2;
+package pl.am.oop.farma2;
 
 public class test {
     public static void main(String[] args) {

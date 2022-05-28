@@ -1,4 +1,4 @@
-package pl.am.oop.zadanie2;
+package pl.am.oop.farma;
 
 public abstract class Zwierze {
     protected double masa;
