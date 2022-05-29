@@ -3,6 +3,7 @@ package pl.am.projects.Menu;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 public class JMenuTest2 extends JFrame implements ActionListener {
 
@@ -24,8 +25,10 @@ public class JMenuTest2 extends JFrame implements ActionListener {
         menuPlik = new JMenu("Plik");
         menuBar.add(menuPlik);
             mOtworz = new JMenuItem("Owórz", 'O');
+            mOtworz.addActionListener(this);
             menuPlik.add(mOtworz);
             mZapisz = new JMenuItem("Zapisz", 'Z');
+            mZapisz.addActionListener(this);
             menuPlik.add(mZapisz);
             menuPlik.addSeparator();
             mWyjscie = new JMenuItem("Wyjœcie");
@@ -41,7 +44,8 @@ public class JMenuTest2 extends JFrame implements ActionListener {
             //Mo¿emy wy³¹czyæ dan¹ pozycjê
             //mNarz1.setEnabled(false);
             menuNarzedzia.add(mNarz1);
-            mNarz2 = new JMenuItem("Narzêdzia 2");
+            mNarz2 = new JMenuItem("Metry na Stopy");
+            mNarz2.addActionListener(this);
             menuNarzedzia.add(mNarz2);
             menuOpcje = new JMenu("Opcje");
             menuNarzedzia.add(menuOpcje);
@@ -64,17 +68,48 @@ public class JMenuTest2 extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         Object z = e.getSource();
-        if (z==mWyjscie)
-            dispose();
+
+        if (z == mOtworz) {
+            JFileChooser fc = new JFileChooser();
+            if (fc.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+                File plik = fc.getSelectedFile();
+                JOptionPane.showMessageDialog(null,"Wybrany plik to " + plik.getAbsolutePath());
+            }
+        } else if (z == mZapisz) {
+            JFileChooser fc = new JFileChooser();
+            if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+                File plik = fc.getSelectedFile();
+                JOptionPane.showMessageDialog(null,"Wybrany plik to " + plik);
+            }
+        } else if (z == mWyjscie) {
+            int odp = JOptionPane.showConfirmDialog(null, "Czy na pewno wyjœæ?", "Pytanie", JOptionPane.YES_NO_OPTION);
+
+            if (odp == JOptionPane.YES_OPTION)
+                dispose();
+            else if (odp == JOptionPane.NO_OPTION)
+                JOptionPane.showMessageDialog(null, "Wiedzia³em...");
+            else if (odp == JOptionPane.CANCEL_OPTION)
+                JOptionPane.showMessageDialog(null, "Tak nie robimy", "Tytu³", JOptionPane.WARNING_MESSAGE);
+        }
+
         if (z == chOpcja2) {
             if (chOpcja2.isSelected()) {
                 mNarz1.setEnabled(true);
             } else if (!chOpcja2.isSelected())
                 mNarz1.setEnabled(false);
         }
+
+        if (z == mNarz2) {
+            String sMetry = JOptionPane.showInputDialog("Podaj d³ugoœæ w metrach");
+            double metry = Double.parseDouble(sMetry);
+            double stopy = metry / 0.3048;
+            String sStopy = String.format("%.2f", stopy);
+            JOptionPane.showMessageDialog(null, metry + " metrów =" + sStopy + " stóp");
+        }
+
         if (z == mOProgramie) {
             //wyœwietlenie okna dialogowego
-            JOptionPane.showMessageDialog(this, "Program demonstruje wykorzystanie JMenuBar i JMenu \n Wersja 1.0");
+            JOptionPane.showMessageDialog(null, "Program demonstruje wykorzystanie JMenuBar i JMenu \n Wersja 1.0");
         }
 
     }
