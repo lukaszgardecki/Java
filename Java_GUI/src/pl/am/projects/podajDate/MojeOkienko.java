@@ -1,3 +1,5 @@
+package pl.am.projects.podajDate;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

@@ -1,3 +1,5 @@
+package pl.am.projects.rownanieKwadratowe;
+
 public class RownanieKwadratowe {
     private int a;
     private int b;
@@ -18,10 +20,9 @@ public class RownanieKwadratowe {
             delta = Math.sqrt(delta);
             double x1 = (-b - delta) / (2 * a);
             double x2 = (-b + delta) / (2 * a);
-
             rozwiazanie = "Równanie posiada dwa pierwiastki rzeczywiste: " + x1 + " oraz: " + x2;
         } else if (delta == 0) {
-            delta = Math.sqrt(delta);
+            //delta = Math.sqrt(delta);
             double x0 = -b / (2 * a);
             rozwiazanie = "Równanie posiada jeden pierwiastek rzeczywisty: " + x0;
         } else {
@@ -47,7 +48,7 @@ public class RownanieKwadratowe {
     }
 
     public static void main(String[] args) {
-        RownanieKwadratowe rownanie = new RownanieKwadratowe(1, 4, 1);
+        RownanieKwadratowe rownanie = new RownanieKwadratowe(15, 4, 0);
         System.out.println(rownanie.rozwiaz());
     }
 }
