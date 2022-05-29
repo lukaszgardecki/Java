@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
@@ -8,7 +9,8 @@ public class MojeOkienko extends JFrame implements ActionListener {
         //¿eby nasze guziki by³y widoczne w addActionListener, musimy najpierw zadeklarowaæ odpowiednie pola:
         //Czyli bêdziemy mieæ taki guziki o takich nazwach:
         JButton bPodajDate, bWyjscie;
-
+        //Jeszcze chcemy mieæ etykietê:
+        JLabel lWyswietlDate;
 
 
     public MojeOkienko() {
@@ -34,6 +36,13 @@ public class MojeOkienko extends JFrame implements ActionListener {
         bWyjscie.setBounds(150, 50, 100, 20);
         add(bWyjscie);
         bWyjscie.addActionListener(this);
+
+        //Tworzymy etykietê:
+        lWyswietlDate = new JLabel("Data: ");
+        lWyswietlDate.setBounds(50, 100, 250, 20); //wymiary
+        lWyswietlDate.setForeground(new Color(0,200,200)); //kolor czcionki
+        lWyswietlDate.setFont(new Font("SansSerif", Font.BOLD, 14)); //czcionka
+        add(lWyswietlDate);
     }
 
     public static void main(String[] args) {
@@ -50,7 +59,8 @@ public class MojeOkienko extends JFrame implements ActionListener {
         Object zrodlo = e.getSource();
 
         if (zrodlo == bPodajDate) {
-            System.out.println(new Date());
+            lWyswietlDate.setText(new Date().toString());
+            //System.out.println(new Date());
         } else if (zrodlo == bWyjscie) {
             dispose(); //<-- je¿eli chcemy wyjœc to po prostu dajemy komende dispose()
         }
