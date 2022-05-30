@@ -1,9 +1,13 @@
 package pl.am.projects.Menu;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class JMenuTest3 extends JFrame implements ActionListener {
 
@@ -11,6 +15,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
     JMenu menuPlik, menuNarzedzia, menuOpcje, menuPomoc;
     JMenuItem mOtworz, mZapisz, mWyjscie, mNarz1, mNarz2, mOpcja1, mOProgramie;
     JCheckBoxMenuItem chOpcja2;
+    JTextArea notatnik;
 
 
     public JMenuTest3() {
@@ -27,15 +32,18 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             mOtworz = new JMenuItem("Owórz", 'O');
             mOtworz.addActionListener(this);
             menuPlik.add(mOtworz);
+
             mZapisz = new JMenuItem("Zapisz", 'Z');
             mZapisz.addActionListener(this);
+            mZapisz.setAccelerator(KeyStroke.getKeyStroke("ctrl S"));
             menuPlik.add(mZapisz);
+
             menuPlik.addSeparator();
+
             mWyjscie = new JMenuItem("Wyjœcie");
             mWyjscie.addActionListener(this);
+            mWyjscie.setAccelerator(KeyStroke.getKeyStroke("ctrl X"));   //mo¿na wywo³aæ mWyjœcie jakimœ skrótem klawiszowym:
             menuPlik.add(mWyjscie);
-            //mo¿na wywo³aæ mWyjœcie jakimœ skrótem klawiszowym:
-            mWyjscie.setAccelerator(KeyStroke.getKeyStroke("ctrl X"));
 
 
         menuNarzedzia = new JMenu("Narzêdzia");
@@ -44,9 +52,11 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             //Mo¿emy wy³¹czyæ dan¹ pozycjê
             //mNarz1.setEnabled(false);
             menuNarzedzia.add(mNarz1);
+
             mNarz2 = new JMenuItem("Metry na Stopy");
             mNarz2.addActionListener(this);
             menuNarzedzia.add(mNarz2);
+
             menuOpcje = new JMenu("Opcje");
             menuNarzedzia.add(menuOpcje);
                 mOpcja1 = new JMenuItem("Opcja 1");
@@ -62,6 +72,12 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             mOProgramie.addActionListener(this);
             menuPomoc.add(mOProgramie);
 
+            //Stworzenie pola edycyjnego
+        notatnik = new JTextArea();
+        JScrollPane scrollPane = new JScrollPane(notatnik);
+        scrollPane.setBounds(0, 0, 785, 735);
+        add(scrollPane);
+
     }
 
 
@@ -73,13 +89,30 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             JFileChooser fc = new JFileChooser();
             if (fc.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
                 File plik = fc.getSelectedFile();
-                JOptionPane.showMessageDialog(null,"Wybrany plik to " + plik.getAbsolutePath());
+                //JOptionPane.showMessageDialog(null,"Wybrany plik to " + plik.getAbsolutePath());
+                try {
+                    Scanner scaner = new Scanner(plik);
+                    while (scaner.hasNext()) {
+                        notatnik.append(scaner.nextLine() + "\n");
+                    }
+                } catch (FileNotFoundException  el) {
+                    el.printStackTrace();
+                }
             }
         } else if (z == mZapisz) {
             JFileChooser fc = new JFileChooser();
             if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
                 File plik = fc.getSelectedFile();
-                JOptionPane.showMessageDialog(null,"Wybrany plik to " + plik);
+                try {
+                    PrintWriter pw = new PrintWriter(plik);
+                    Scanner scaner = new Scanner(notatnik.getText());
+                    while (scaner.hasNext())
+                        pw.println(scaner.nextLine() + "\n");
+                    pw.close();     //trzeba zamkn¹æ printWriter! bo siê plik nie zapisze!!!
+                } catch (FileNotFoundException el) {
+                    el.printStackTrace();
+                }
+                //JOptionPane.showMessageDialog(null,"Wybrany plik to " + plik);
             }
         } else if (z == mWyjscie) {
             int odp = JOptionPane.showConfirmDialog(null, "Czy na pewno wyjœæ?", "Pytanie", JOptionPane.YES_NO_OPTION);
