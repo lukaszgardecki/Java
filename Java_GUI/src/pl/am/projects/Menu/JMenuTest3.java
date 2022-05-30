@@ -12,10 +12,12 @@ import java.util.Scanner;
 public class JMenuTest3 extends JFrame implements ActionListener {
 
     JMenuBar menuBar;
+    JButton bSzukaj;
     JMenu menuPlik, menuNarzedzia, menuOpcje, menuPomoc;
     JMenuItem mOtworz, mZapisz, mWyjscie, mNarz1, mNarz2, mOpcja1, mOProgramie;
     JCheckBoxMenuItem chOpcja2;
     JTextArea notatnik;
+    JTextField tSzukany;
 
 
     public JMenuTest3() {
@@ -75,9 +77,17 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             //Stworzenie pola edycyjnego
         notatnik = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(notatnik);
-        scrollPane.setBounds(0, 0, 785, 735);
+        scrollPane.setBounds(50, 50, 500, 500);
         add(scrollPane);
 
+        tSzukany = new JTextField();
+        tSzukany.setBounds(50, 700, 140, 20);
+        add(tSzukany);
+
+        bSzukaj = new JButton("Szukaj");
+        bSzukaj.setBounds(200, 700, 100, 20);
+        bSzukaj.addActionListener(this);
+        add(bSzukaj);
     }
 
 
@@ -123,6 +133,21 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Wiedzia³em...");
             else if (odp == JOptionPane.CANCEL_OPTION)
                 JOptionPane.showMessageDialog(null, "Tak nie robimy", "Tytu³", JOptionPane.WARNING_MESSAGE);
+        } else if (z == bSzukaj) {
+            String tekst = notatnik.getText();
+            String szukane = tSzukany.getText();
+            String wystapienia = "";
+            int i = 0;
+            int index;
+            int startIndex = 0;
+
+            //pêtla wyszukuj¹ca tekst !!!!!
+            while ((index = tekst.indexOf(szukane, startIndex)) != -1) {
+                startIndex = index + szukane.length();
+                i++;
+                wystapienia += " " + index;
+            }
+            JOptionPane.showMessageDialog(null, szukane + " wyst¹pi³o " + i + " razy: " + wystapienia);
         }
 
         if (z == chOpcja2) {
