@@ -1,6 +1,7 @@
 package pl.am.projects.Menu;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -19,6 +20,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
     JTextArea notepad;
     JTextField tSzukany;
     String wybranyTekst;
+    JComboBox colorCombo;
 
 
     public JMenuTest3() {
@@ -104,6 +106,16 @@ public class JMenuTest3 extends JFrame implements ActionListener {
         popup.add(mpAdd);
 
         notepad.setComponentPopupMenu(popup);
+
+        colorCombo = new JComboBox();
+        colorCombo.setBounds(600, 50, 100, 20);
+        colorCombo.addItem("czarny");
+        colorCombo.addItem("czerwony");
+        colorCombo.addItem("zielony");
+        colorCombo.addItem("niebieski");
+        colorCombo.addItem("ró¿owy");
+        colorCombo.addActionListener(this);
+        add(colorCombo);
     }
 
     @Override
@@ -169,6 +181,19 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             notepad.insert( wybranyTekst, notepad.getCaretPosition());
         } else if (z == mpAdd) {
             notepad.append("\n" + wybranyTekst);
+        } else if (z == colorCombo) {
+            String color = colorCombo.getSelectedItem().toString();
+            if (color.equals("zielony")) {
+                notepad.setForeground(Color.GREEN);
+            } else if (color.equals("czarny")) {
+                notepad.setForeground(Color.BLACK);
+            } else if (color.equals("czerwony")) {
+                notepad.setForeground(Color.RED);
+            } else if (color.equals("niebieski")) {
+                notepad.setForeground(Color.BLUE);
+            } else if (color.equals("ró¿owy")) {
+                notepad.setForeground(Color.PINK);
+            }
         }
 
         if (z == chOpcja2) {
