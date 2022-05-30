@@ -1,7 +1,6 @@
 package pl.am.projects.Menu;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -13,16 +12,18 @@ public class JMenuTest3 extends JFrame implements ActionListener {
 
     JMenuBar menuBar;
     JButton bSzukaj;
+    JPopupMenu popup;
     JMenu menuPlik, menuNarzedzia, menuOpcje, menuPomoc;
-    JMenuItem mOtworz, mZapisz, mWyjscie, mNarz1, mNarz2, mOpcja1, mOProgramie;
+    JMenuItem mOtworz, mZapisz, mWyjscie, mNarz1, mNarz2, mOpcja1, mpCopy, mpPaste, mpAdd, mOProgramie;
     JCheckBoxMenuItem chOpcja2;
-    JTextArea notatnik;
+    JTextArea notepad;
     JTextField tSzukany;
+    String wybranyTekst;
 
 
     public JMenuTest3() {
         setSize(800, 800);
-        setTitle("Demonstracja JMenuBar");
+        setTitle("Notatnik");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
 
@@ -31,52 +32,52 @@ public class JMenuTest3 extends JFrame implements ActionListener {
 
         menuPlik = new JMenu("Plik");
         menuBar.add(menuPlik);
-            mOtworz = new JMenuItem("Owórz", 'O');
-            mOtworz.addActionListener(this);
-            menuPlik.add(mOtworz);
+        mOtworz = new JMenuItem("Owórz", 'O');
+        mOtworz.addActionListener(this);
+        menuPlik.add(mOtworz);
 
-            mZapisz = new JMenuItem("Zapisz", 'Z');
-            mZapisz.addActionListener(this);
-            mZapisz.setAccelerator(KeyStroke.getKeyStroke("ctrl S"));
-            menuPlik.add(mZapisz);
+        mZapisz = new JMenuItem("Zapisz", 'Z');
+        mZapisz.addActionListener(this);
+        mZapisz.setAccelerator(KeyStroke.getKeyStroke("ctrl S"));
+        menuPlik.add(mZapisz);
 
-            menuPlik.addSeparator();
+        menuPlik.addSeparator();
 
-            mWyjscie = new JMenuItem("Wyjœcie");
-            mWyjscie.addActionListener(this);
-            mWyjscie.setAccelerator(KeyStroke.getKeyStroke("ctrl X"));   //mo¿na wywo³aæ mWyjœcie jakimœ skrótem klawiszowym:
-            menuPlik.add(mWyjscie);
+        mWyjscie = new JMenuItem("Wyjœcie");
+        mWyjscie.addActionListener(this);
+        mWyjscie.setAccelerator(KeyStroke.getKeyStroke("ctrl X"));   //mo¿na wywo³aæ mWyjœcie jakimœ skrótem klawiszowym:
+        menuPlik.add(mWyjscie);
 
 
         menuNarzedzia = new JMenu("Narzêdzia");
         menuBar.add(menuNarzedzia);
-            mNarz1 = new JMenuItem("Narzêdzia 1");
-            //Mo¿emy wy³¹czyæ dan¹ pozycjê
-            //mNarz1.setEnabled(false);
-            menuNarzedzia.add(mNarz1);
+        mNarz1 = new JMenuItem("Narzêdzia 1");
+        //Mo¿emy wy³¹czyæ dan¹ pozycjê
+        //mNarz1.setEnabled(false);
+        menuNarzedzia.add(mNarz1);
 
-            mNarz2 = new JMenuItem("Metry na Stopy");
-            mNarz2.addActionListener(this);
-            menuNarzedzia.add(mNarz2);
+        mNarz2 = new JMenuItem("Metry na Stopy");
+        mNarz2.addActionListener(this);
+        menuNarzedzia.add(mNarz2);
 
-            menuOpcje = new JMenu("Opcje");
-            menuNarzedzia.add(menuOpcje);
-                mOpcja1 = new JMenuItem("Opcja 1");
-                menuOpcje.add(mOpcja1);
-                chOpcja2 = new JCheckBoxMenuItem ("Opcja 2");
-                chOpcja2.addActionListener(this);
-                menuOpcje.add(chOpcja2);
+        menuOpcje = new JMenu("Opcje");
+        menuNarzedzia.add(menuOpcje);
+        mOpcja1 = new JMenuItem("Opcja 1");
+        menuOpcje.add(mOpcja1);
+        chOpcja2 = new JCheckBoxMenuItem("Opcja 2");
+        chOpcja2.addActionListener(this);
+        menuOpcje.add(chOpcja2);
 
 
         menuPomoc = new JMenu("Pomoc");
         menuBar.add(menuPomoc);
-            mOProgramie = new JMenuItem("O programie");
-            mOProgramie.addActionListener(this);
-            menuPomoc.add(mOProgramie);
+        mOProgramie = new JMenuItem("O programie");
+        mOProgramie.addActionListener(this);
+        menuPomoc.add(mOProgramie);
 
-            //Stworzenie pola edycyjnego
-        notatnik = new JTextArea();
-        JScrollPane scrollPane = new JScrollPane(notatnik);
+        //Stworzenie pola edycyjnego
+        notepad = new JTextArea();
+        JScrollPane scrollPane = new JScrollPane(notepad);
         scrollPane.setBounds(50, 50, 500, 500);
         add(scrollPane);
 
@@ -88,8 +89,22 @@ public class JMenuTest3 extends JFrame implements ActionListener {
         bSzukaj.setBounds(200, 700, 100, 20);
         bSzukaj.addActionListener(this);
         add(bSzukaj);
-    }
 
+        popup = new JPopupMenu();
+        mpCopy = new JMenuItem("Kopiuj");
+        mpCopy.addActionListener(this);
+        popup.add(mpCopy);
+
+        mpPaste = new JMenuItem("Wklej");
+        mpPaste.addActionListener(this);
+        popup.add(mpPaste);
+
+        mpAdd = new JMenuItem("Dodaj");
+        mpAdd.addActionListener(this);
+        popup.add(mpAdd);
+
+        notepad.setComponentPopupMenu(popup);
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -103,7 +118,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 try {
                     Scanner scaner = new Scanner(plik);
                     while (scaner.hasNext()) {
-                        notatnik.append(scaner.nextLine() + "\n");
+                        notepad.append(scaner.nextLine() + "\n");
                     }
                 } catch (FileNotFoundException  el) {
                     el.printStackTrace();
@@ -115,7 +130,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 File plik = fc.getSelectedFile();
                 try {
                     PrintWriter pw = new PrintWriter(plik);
-                    Scanner scaner = new Scanner(notatnik.getText());
+                    Scanner scaner = new Scanner(notepad.getText());
                     while (scaner.hasNext())
                         pw.println(scaner.nextLine() + "\n");
                     pw.close();     //trzeba zamkn¹æ printWriter! bo siê plik nie zapisze!!!
@@ -134,7 +149,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             else if (odp == JOptionPane.CANCEL_OPTION)
                 JOptionPane.showMessageDialog(null, "Tak nie robimy", "Tytu³", JOptionPane.WARNING_MESSAGE);
         } else if (z == bSzukaj) {
-            String tekst = notatnik.getText();
+            String tekst = notepad.getText();
             String szukane = tSzukany.getText();
             String wystapienia = "";
             int i = 0;
@@ -148,6 +163,12 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 wystapienia += " " + index;
             }
             JOptionPane.showMessageDialog(null, szukane + " wyst¹pi³o " + i + " razy: " + wystapienia);
+        } else if (z == mpCopy) {
+            wybranyTekst = notepad.getSelectedText();
+        } else if (z == mpPaste) {
+            notepad.insert( wybranyTekst, notepad.getCaretPosition());
+        } else if (z == mpAdd) {
+            notepad.append("\n" + wybranyTekst);
         }
 
         if (z == chOpcja2) {
