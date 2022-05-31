@@ -14,8 +14,8 @@ public class JMenuTest3 extends JFrame implements ActionListener {
     JMenuBar menuBar;
     JButton bSzukaj, bWybierzKolor;
     JPopupMenu popup;
-    JMenu menuPlik, menuNarzedzia, menuOpcje, menuPomoc;
-    JMenuItem mOtworz, mZapisz, mWyjscie, mNarz1, mNarz2, mOpcja1, mpCopy, mpPaste, mpAdd, mOProgramie;
+    JMenu menuPlik, menuNarzedzia, menuOpcje, menuLookAndFeel, menuPomoc;
+    JMenuItem mOtworz, mZapisz, mWyjscie, mNarz1, mNarz2, mOpcja1, mpCopy, mpPaste, mpAdd, mMetal, mNimbus, mWindows, mOProgramie;
     JCheckBoxMenuItem chOpcja2;
     JTextArea notepad;
     JTextField tSzukany;
@@ -34,42 +34,53 @@ public class JMenuTest3 extends JFrame implements ActionListener {
 
         menuPlik = new JMenu("Plik");
         menuBar.add(menuPlik);
-        mOtworz = new JMenuItem("Owórz", 'O');
-        mOtworz.addActionListener(this);
-        menuPlik.add(mOtworz);
+            mOtworz = new JMenuItem("Owórz", 'O');
+            mOtworz.addActionListener(this);
+            menuPlik.add(mOtworz);
 
-        mZapisz = new JMenuItem("Zapisz", 'Z');
-        mZapisz.addActionListener(this);
-        mZapisz.setAccelerator(KeyStroke.getKeyStroke("ctrl S"));
-        menuPlik.add(mZapisz);
+            mZapisz = new JMenuItem("Zapisz", 'Z');
+            mZapisz.addActionListener(this);
+            mZapisz.setAccelerator(KeyStroke.getKeyStroke("ctrl S"));
+            menuPlik.add(mZapisz);
 
-        menuPlik.addSeparator();
+            menuPlik.addSeparator();
 
-        mWyjscie = new JMenuItem("Wyjœcie");
-        mWyjscie.addActionListener(this);
-        mWyjscie.setAccelerator(KeyStroke.getKeyStroke("ctrl X"));   //mo¿na wywo³aæ mWyjœcie jakimœ skrótem klawiszowym:
-        menuPlik.add(mWyjscie);
+            mWyjscie = new JMenuItem("Wyjœcie");
+            mWyjscie.addActionListener(this);
+            mWyjscie.setAccelerator(KeyStroke.getKeyStroke("ctrl X"));   //mo¿na wywo³aæ mWyjœcie jakimœ skrótem klawiszowym:
+            menuPlik.add(mWyjscie);
 
 
         menuNarzedzia = new JMenu("Narzêdzia");
         menuBar.add(menuNarzedzia);
-        mNarz1 = new JMenuItem("Narzêdzia 1");
-        //Mo¿emy wy³¹czyæ dan¹ pozycjê
-        //mNarz1.setEnabled(false);
-        menuNarzedzia.add(mNarz1);
+            mNarz1 = new JMenuItem("Narzêdzia 1");
+            //Mo¿emy wy³¹czyæ dan¹ pozycjê
+            //mNarz1.setEnabled(false);
+            menuNarzedzia.add(mNarz1);
 
-        mNarz2 = new JMenuItem("Metry na Stopy");
-        mNarz2.addActionListener(this);
-        menuNarzedzia.add(mNarz2);
+            mNarz2 = new JMenuItem("Metry na Stopy");
+            mNarz2.addActionListener(this);
+            menuNarzedzia.add(mNarz2);
 
-        menuOpcje = new JMenu("Opcje");
-        menuNarzedzia.add(menuOpcje);
-        mOpcja1 = new JMenuItem("Opcja 1");
-        menuOpcje.add(mOpcja1);
-        chOpcja2 = new JCheckBoxMenuItem("Opcja 2");
-        chOpcja2.addActionListener(this);
-        menuOpcje.add(chOpcja2);
+            menuOpcje = new JMenu("Opcje");
+            menuNarzedzia.add(menuOpcje);
+                mOpcja1 = new JMenuItem("Opcja 1");
+                menuOpcje.add(mOpcja1);
+                chOpcja2 = new JCheckBoxMenuItem("Opcja 2");
+                chOpcja2.addActionListener(this);
+                menuOpcje.add(chOpcja2);
 
+        menuLookAndFeel = new JMenu("Look And Feel");
+        menuBar.add(menuLookAndFeel);
+            mMetal = new JMenuItem("Metal");
+            mMetal.addActionListener(this);
+            menuLookAndFeel.add(mMetal);
+            mNimbus = new JMenuItem("Nimbus");
+            mNimbus.addActionListener(this);
+            menuLookAndFeel.add(mNimbus);
+            mWindows = new JMenuItem("Windows");
+            mWindows.addActionListener(this);
+            menuLookAndFeel.add(mWindows);
 
         menuPomoc = new JMenu("Pomoc");
         menuBar.add(menuPomoc);
@@ -83,20 +94,24 @@ public class JMenuTest3 extends JFrame implements ActionListener {
         scrollPane.setBounds(50, 50, 500, 500);
         add(scrollPane);
 
+        //Stworzenie pola wyszukuj¹cego
         tSzukany = new JTextField();
         tSzukany.setBounds(50, 700, 140, 20);
         add(tSzukany);
 
+        //przycisk Szukaj:
         bSzukaj = new JButton("Szukaj");
         bSzukaj.setBounds(200, 700, 100, 20);
         bSzukaj.addActionListener(this);
         add(bSzukaj);
 
+        //przycisk Wybierz Kolor
         bWybierzKolor = new JButton("Wybierz Kolor");
         bWybierzKolor.setBounds(350, 700, 150, 20);
         bWybierzKolor.addActionListener(this);
         add(bWybierzKolor);
 
+        //Menu kontekstowe
         popup = new JPopupMenu();
         mpCopy = new JMenuItem("Kopiuj");
         mpCopy.addActionListener(this);
@@ -112,6 +127,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
 
         notepad.setComponentPopupMenu(popup);
 
+        //Stworzenie ComboBoxa z nazwami kolorów:
         colorCombo = new JComboBox();
         colorCombo.setBounds(600, 50, 100, 20);
         colorCombo.addItem("czarny");
@@ -127,6 +143,8 @@ public class JMenuTest3 extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object z = e.getSource();
 
+
+            //Menu Otwórz:
         if (z == mOtworz) {
             JFileChooser fc = new JFileChooser();
             if (fc.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
@@ -141,6 +159,8 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                     el.printStackTrace();
                 }
             }
+
+            //Menu Zapisz:
         } else if (z == mZapisz) {
             JFileChooser fc = new JFileChooser();
             if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
@@ -156,6 +176,9 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 }
                 //JOptionPane.showMessageDialog(null,"Wybrany plik to " + plik);
             }
+
+
+            //Menu Wyjœcie:
         } else if (z == mWyjscie) {
             int odp = JOptionPane.showConfirmDialog(null, "Czy na pewno wyjœæ?", "Pytanie", JOptionPane.YES_NO_OPTION);
 
@@ -165,6 +188,9 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Wiedzia³em...");
             else if (odp == JOptionPane.CANCEL_OPTION)
                 JOptionPane.showMessageDialog(null, "Tak nie robimy", "Tytu³", JOptionPane.WARNING_MESSAGE);
+
+
+            //Pole wyszukiwania i przycisk Szukaj:
         } else if (z == bSzukaj) {
             String tekst = notepad.getText();
             String szukane = tSzukany.getText();
@@ -180,15 +206,22 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 wystapienia += " " + index;
             }
             JOptionPane.showMessageDialog(null, szukane + " wyst¹pi³o " + i + " razy: " + wystapienia);
+
+
+            //Przycisk Wybieranie koloru czcionki:
         } else if (z == bWybierzKolor) {
             Color wybranyKolor = JColorChooser.showDialog(null, "Wybór koloru", Color.GREEN);
             notepad.setForeground(wybranyKolor);
+
+            //Popup, menu kontekstowe: Kopiuj, Wklej, Do³¹cz:
         } else if (z == mpCopy) {
             wybranyTekst = notepad.getSelectedText();
         } else if (z == mpPaste) {
             notepad.insert(wybranyTekst, notepad.getCaretPosition());
         } else if (z == mpAdd) {
             notepad.append("\n" + wybranyTekst);
+
+            //Combobox:
         } else if (z == colorCombo) {
             String color = colorCombo.getSelectedItem().toString();
             if (color.equals("zielony")) {
@@ -201,9 +234,41 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 notepad.setForeground(Color.BLUE);
             } else if (color.equals("ró¿owy")) {
                 notepad.setForeground(Color.PINK);
+
+                //zmiana Look and Feel na ró¿ne style:
             }
+            else if (z == mMetal) {
+                try {
+                    UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e1) {
+                    e1.printStackTrace();
+                    //throw new RuntimeException(e1);
+                }
+                SwingUtilities.updateComponentTreeUI(this);
+            } else if (z == mNimbus) {
+                try {
+                    UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e1) {
+                    e1.printStackTrace();
+                    //throw new RuntimeException(e1);
+                }
+                SwingUtilities.updateComponentTreeUI(this);
+            }
+            else if (z == mWindows) {
+                try {
+                    UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e1) {
+                    e1.printStackTrace();
+                    //throw new RuntimeException(e1);
+                }
+                SwingUtilities.updateComponentTreeUI(this);
+                
+            }
+
+
         }
 
+        //
         if (z == chOpcja2) {
             if (chOpcja2.isSelected()) {
                 mNarz1.setEnabled(true);
@@ -219,6 +284,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null, metry + " metrów =" + sStopy + " stóp");
         }
 
+            //O programie:
         if (z == mOProgramie) {
             //wyœwietlenie okna dialogowego
             JOptionPane.showMessageDialog(null, "Program demonstruje wykorzystanie JMenuBar i JMenu \n Wersja 1.0");
