@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class JMenuTest3 extends JFrame implements ActionListener {
 
     JMenuBar menuBar;
-    JButton bSzukaj;
+    JButton bSzukaj, bWybierzKolor;
     JPopupMenu popup;
     JMenu menuPlik, menuNarzedzia, menuOpcje, menuPomoc;
     JMenuItem mOtworz, mZapisz, mWyjscie, mNarz1, mNarz2, mOpcja1, mpCopy, mpPaste, mpAdd, mOProgramie;
@@ -91,6 +91,11 @@ public class JMenuTest3 extends JFrame implements ActionListener {
         bSzukaj.setBounds(200, 700, 100, 20);
         bSzukaj.addActionListener(this);
         add(bSzukaj);
+
+        bWybierzKolor = new JButton("Wybierz Kolor");
+        bWybierzKolor.setBounds(350, 700, 150, 20);
+        bWybierzKolor.addActionListener(this);
+        add(bWybierzKolor);
 
         popup = new JPopupMenu();
         mpCopy = new JMenuItem("Kopiuj");
@@ -175,10 +180,13 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                 wystapienia += " " + index;
             }
             JOptionPane.showMessageDialog(null, szukane + " wyst¹pi³o " + i + " razy: " + wystapienia);
+        } else if (z == bWybierzKolor) {
+            Color wybranyKolor = JColorChooser.showDialog(null, "Wybór koloru", Color.GREEN);
+            notepad.setForeground(wybranyKolor);
         } else if (z == mpCopy) {
             wybranyTekst = notepad.getSelectedText();
         } else if (z == mpPaste) {
-            notepad.insert( wybranyTekst, notepad.getCaretPosition());
+            notepad.insert(wybranyTekst, notepad.getCaretPosition());
         } else if (z == mpAdd) {
             notepad.append("\n" + wybranyTekst);
         } else if (z == colorCombo) {
