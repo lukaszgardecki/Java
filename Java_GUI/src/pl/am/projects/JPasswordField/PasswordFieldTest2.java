@@ -39,8 +39,14 @@ public class PasswordFieldTest2 extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (panelHasla1 == null)
-            panelHasla1 = new PanelHasla(this);
+            panelHasla1 = new PanelHasla(null);
         panelHasla1.setVisible(true);
+        panelHasla1.setFocus();
+
+        if (panelHasla1.isOK()) {
+            notatnik.append(panelHasla1.getUser() + ", ");
+            notatnik.append(panelHasla1.getPassword() + "\n");
+        }
     }
 }
 
@@ -76,18 +82,44 @@ class PanelHasla extends JDialog implements ActionListener {
 
         bOK = new JButton("OK");
         bOK.setBounds(0, 100, 100, 20);
+        bOK.addActionListener(this);
         add(bOK);
 
         bCancel = new JButton("Cancel");
         bCancel.setBounds(150, 100, 100, 20);
+        bCancel.addActionListener(this);
         add(bCancel);
     }
+
+    public String getUser() {
+        return tUser.getText();
+    }
+
+    public String getPassword() {
+        return new String(pHaslo.getPassword());
+    }
+
+    public boolean isOK() {
+        return okData;
+    }
+
+    public void setFocus() {
+        tUser.requestFocusInWindow();
+    }
+
 
 
     @Override
 
     public void actionPerformed(ActionEvent e) {
+        Object z = e.getSource();
 
+        if (z == bOK)
+            okData = true;
+
+        else
+            okData = false;
+           setVisible(false);
     }
 }
 
