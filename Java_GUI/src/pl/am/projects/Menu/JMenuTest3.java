@@ -262,7 +262,7 @@ public class JMenuTest3 extends JFrame implements ActionListener {
                     //throw new RuntimeException(e1);
                 }
                 SwingUtilities.updateComponentTreeUI(this);
-                
+
             }
 
 
