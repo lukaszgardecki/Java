@@ -1,5 +1,8 @@
 package ShapesAbstractTest;
 
+import java.text.Format;
+import java.text.NumberFormat;
+
 public class Triangle extends Shape{
 
     private  double base;
@@ -23,6 +26,7 @@ public class Triangle extends Shape{
 
     public static void main(String[] args) {
         Triangle a = new Triangle(4.1, 5.6);
-        System.out.println(a.getArea());
+        System.out.println(a.toString());
+
     }
 }
