@@ -9,6 +9,11 @@ public class MainPanel extends JPanel {
 
     //stworzenie snake:
     private Snake snake = new Snake();
+
+    //instancja dla jab³ka - stworzenie jab³ka:
+    private Apple apple = new Apple();
+
+    //Stworzenie zmiennej boolean, która bêdzie okreœlaæ KONIEC GRY
     private boolean gameOver = false;
 
     public MainPanel() {
@@ -20,6 +25,9 @@ public class MainPanel extends JPanel {
         MainTimer timer = new MainTimer();
         timer.start();
 
+        //wyœwietlanie wyniku:
+        MainFrame.score.setText("Score: " + snake.getSize());
+
         //trzeba ustawiæ fokus, ¿eby nas³uchiwacz dzia³a³:
         setFocusable(true);
 
@@ -27,11 +35,12 @@ public class MainPanel extends JPanel {
         addKeyListener(new MyKeyAdapter());
     }
 
-    //musimy nadpisaæ metodê paintComponent, dziêki niej bêdziemy rysowaæ
+    //musimy nadpisaæ metodê paintComponent, dziêki niej bêdziemy rysowaæ elementy na planszy
     @Override
     protected void paintComponent(Graphics g) {
-        Board.draw(g);
-        snake.draw(g);
+        Board.draw(g); //--> narysuj tablicê, t³o
+        snake.draw(g); //--> narysuj wê¿a
+        apple.draw(g); //--> narysuj jab³ko
     }
 
 
@@ -44,6 +53,7 @@ public class MainPanel extends JPanel {
                     snake.move();
                     if (snake.isCollision()) {
                         gameOver = true;
+                        MainFrame.score.setText("GAME OVER - Score: " + snake.getSize());
                     }
                     repaint();
                 }

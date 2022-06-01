@@ -71,4 +71,8 @@ public class Snake {
 
         return head.x < 0 || head.x >= Board.FIELD_X || head.y < 0 || head.y >= Board.FIELD_Y;
     }
+
+    public int getSize() {
+        return body.size();
+    }
 }

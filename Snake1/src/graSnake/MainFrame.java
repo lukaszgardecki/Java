@@ -5,9 +5,20 @@ import java.awt.*;
 
 public class MainFrame extends JFrame {
 
+    public static JLabel score;
+
     public MainFrame() throws HeadlessException {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Snake");
+
+        //stworzenie etykiety, która siê wyœwietli po zakoñczeniu gry. SwingConstants.CENTER ustawia napis na œrodku
+        score = new JLabel("Score: ", SwingConstants.CENTER);
+
+        //zmiana czcionki:
+        score.setFont(new Font(score.getFont().getName(), Font.BOLD, 30));
+
+        //dodanie etykiety do ramki ORAZ zlokalizowanie jej 'na pó³noc' czyli w górnej czêœæ ramki:
+        add(score,BorderLayout.NORTH);
 
         //Do ramki nalezy dodaæ panel:
         add(new MainPanel());
