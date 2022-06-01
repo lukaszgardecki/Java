@@ -59,4 +59,16 @@ public class Snake {
     public void setDirection(Direction direction) {
         this.direction = direction;
     }
+
+    public boolean isCollision() {
+        Point head = getHead();
+
+        for (Point point : getTail()) {
+            if (head.equals(point)) {
+                return true;
+            }
+        }
+
+        return head.x < 0 || head.x >= Board.FIELD_X || head.y < 0 || head.y >= Board.FIELD_Y;
+    }
 }

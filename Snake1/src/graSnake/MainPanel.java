@@ -9,6 +9,7 @@ public class MainPanel extends JPanel {
 
     //stworzenie snake:
     private Snake snake = new Snake();
+    private boolean gameOver = false;
 
     public MainPanel() {
 
@@ -39,8 +40,13 @@ public class MainPanel extends JPanel {
 
         public MainTimer() {
             super(DELAY, e -> {
-                snake.move();
-                repaint();
+                if (!gameOver) {
+                    snake.move();
+                    if (snake.isCollision()) {
+                        gameOver = true;
+                    }
+                    repaint();
+                }
             });
         }
     }
