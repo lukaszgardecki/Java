@@ -7,8 +7,10 @@ import java.util.List;
 public class Snake {
     private List<Point> body;
     private Direction direction;
+    private Point ending; //--> do przechowania ostatniego punktu wê¿a
 
     public Snake() {
+        ending = new Point();
         direction = Direction.D;
         body = new ArrayList<>();
 
@@ -39,6 +41,9 @@ public class Snake {
 
     //metoda umo¿liwiaj¹ca siê poruaszanie ( jest wywo³ywana w ka¿dym cyklu zegara)
     public void move() {
+        //przy wykonaniu ruchu zapisz wspó³rzêdne ostatniego elementu. Ostatni element wê¿a jest zapisywany w "ending"
+        ending.setLocation(body.get(body.size()-1));
+
         for (int i = body.size() - 1; i > 0; i--) {
             body.get(i).setLocation(body.get(i-1));
         }
@@ -74,5 +79,15 @@ public class Snake {
 
     public int getSize() {
         return body.size();
+    }
+
+    public boolean eatApple(Apple apple) {
+        if (getHead().equals(apple)) {
+            body.add(new Point(ending));
+            MainFrame.score.setText("Score: " + body.size());
+            return true;
+        }
+        return false;
+
     }
 }

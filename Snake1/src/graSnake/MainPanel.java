@@ -45,12 +45,21 @@ public class MainPanel extends JPanel {
 
 
     private class MainTimer extends Timer {
+
+        //sta³a zawieraj¹ca odœwie¿anie zegara co 100ms
         public static final int DELAY = 100;
 
         public MainTimer() {
             super(DELAY, e -> {
                 if (!gameOver) {
                     snake.move();
+
+                    //jeœli w¹¿ zje jab³ko to wygeneruj nowe jab³ko
+                    if (snake.eatApple(apple)) {
+                        apple = new Apple();
+                    }
+
+                    //jeœli nast¹pi kolizja wê¿a to zakoñcz grê i zmieñ napis z wynikiem
                     if (snake.isCollision()) {
                         gameOver = true;
                         MainFrame.score.setText("GAME OVER - Score: " + snake.getSize());
