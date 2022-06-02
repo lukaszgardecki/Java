@@ -4,9 +4,14 @@ import java.awt.*;
 
 public class MainCanvas extends Canvas {
 
-    public CellService cellService = new CellService();
+    private final CellService cellService = CellService.getInstance();
+    private static final MainCanvas INSTANCE = new MainCanvas();
 
-    public MainCanvas() {
+    public static MainCanvas getInstance() {
+        return INSTANCE;
+    }
+
+    private MainCanvas() {
         setSize(Config.COLS * Config.SIZE, Config.ROWS * Config.SIZE);
     }
 
