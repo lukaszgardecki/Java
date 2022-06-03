@@ -1,8 +1,6 @@
-package Dziedziczenie;
+package Polimorfizm;
 
-//w klasach abstrakcyjnych nie mo¿na definiowaæ obiektów
-
-public abstract class Figura {
+public class Figura {
 
     String kolor;
     boolean wypelnienie;
@@ -20,6 +18,7 @@ public abstract class Figura {
         return "Kolor: " + kolor + ", wype³nienie: " + wypelnienie;
     }
 
-    public abstract double obliczPole();
-    public abstract double obliczObwod();
+    public static void main(String[] args) {
+
+    }
 }
