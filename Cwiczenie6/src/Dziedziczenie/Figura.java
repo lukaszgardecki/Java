@@ -14,6 +14,10 @@ public class Figura {
         wypelnienie = w;
     }
 
+    public String toString() {
+        return "Kolor: " + kolor + ", wype³nienie: " + wypelnienie;
+    }
+
     public static void main(String[] args) {
 
     }

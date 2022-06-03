@@ -9,6 +9,11 @@ public class Kolo extends Figura {
     }
 
     public Kolo(double r) {
+        this(r, "Fioletowy", true);
+    }
+
+    public Kolo(double r, String k, boolean w) {
+        super(k, w);
         promien = r;
     }
 
@@ -21,11 +26,11 @@ public class Kolo extends Figura {
     }
 
     public String toString() {
-        return "Promieñ: " + promien + ", obwód: " + obliczObwod() + ", pole: " + obliczPole() + ", kolor: " + super.kolor;
+        return "Promieñ: " + promien + ", obwód: " + obliczObwod() + ", pole: " + obliczPole() + ", " + super.toString();
     }
 
     public static void main(String[] args) {
-        Kolo kolko = new Kolo();
+        Kolo kolko = new Kolo(4,"Zielony", true);
         System.out.println(kolko);
     }
 }

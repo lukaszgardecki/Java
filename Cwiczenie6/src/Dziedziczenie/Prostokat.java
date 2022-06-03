@@ -6,13 +6,19 @@ public class Prostokat extends Figura {
     private  double bokA;
     private double bokB;
 
-
     //Konstruktor domyœlny:
     public Prostokat() {
-        this(1.0, 1.0);
+        this(1.0, 2.0);
     }
-    //Konstruktor z dwoma parametrami:
+
+    //Konstruktor z 2 parametrami:
     public Prostokat(double a, double b) {
+        this(a, b, "Bezbarwny", false);
+    }
+
+    //Konstruktor z 4 parametrami:
+    public Prostokat(double a, double b, String k, boolean w) {
+        super(k, w);
         this.bokA = a;
         this.bokB = b;
     }
@@ -29,7 +35,7 @@ public class Prostokat extends Figura {
 
 
     public String toString() {
-        return "Nazwa: " + getClass().getName() + ", Bok a: " + bokA + ", Bok b: " + bokB + ", obwód: " + obliczObwod() + ", pole: " + obliczPole();
+        return "Nazwa: " + getClass().getName() + ", Bok a: " + bokA + ", Bok b: " + bokB + ", obwód: " + obliczObwod() + ", pole: " + obliczPole() + ", " + super.toString();
     }
 
     public static void main(String[] args) {
