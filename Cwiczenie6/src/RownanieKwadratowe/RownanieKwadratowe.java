@@ -33,6 +33,22 @@ public class RownanieKwadratowe {
         return rozwiazanie;
     }
 
+    public String toString() {
+        return "Równanie kwadratowe: " + a + "x^2 + " + b + "x + " + c;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public void setC(int c) {
+        this.c = c;
+    }
+
     public static void main(String[] args) {
 
         RownanieKwadratowe rownanie = new RownanieKwadratowe(1, -54, 3);
