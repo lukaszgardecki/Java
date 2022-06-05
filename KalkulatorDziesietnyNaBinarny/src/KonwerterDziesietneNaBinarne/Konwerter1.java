@@ -1,8 +1,8 @@
-package KalkulatorBinarny;
+package KonwerterDziesietneNaBinarne;
 
 import java.util.Scanner;
 
-public class Kalkulator1 {
+public class Konwerter1 {
 
             // KONWERTER. Podejœcie 1. Wynik jest Stringiem
 
