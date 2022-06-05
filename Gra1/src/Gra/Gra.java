@@ -10,8 +10,16 @@ import java.awt.event.KeyListener;
 public class Gra extends JPanel implements KeyListener, ActionListener {
 
     private int x = 300;
+    private Timer time;
+    private int speed = 20;
 
     public Gra() {
+        time = new Timer(10, this);
+        time.start();
+
+        setFocusable(true);
+        setFocusTraversalKeysEnabled(false);
+        addKeyListener(this);
 
     }
 
@@ -30,7 +38,8 @@ public class Gra extends JPanel implements KeyListener, ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        //przerysuj kiedy wykryjesz akcjê
+        repaint();
     }
 
     @Override
@@ -40,6 +49,12 @@ public class Gra extends JPanel implements KeyListener, ActionListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
+        //po naciœniêciu klawisz przesuñ kwadrat, tzn przerysuj (repaint()):
+        if (e.getKeyCode() == KeyEvent.VK_A || e.getKeyCode() == KeyEvent.VK_LEFT) {
+            x -= speed;
+        } else if (e.getKeyCode() == KeyEvent.VK_D || e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            x += speed;
+        }
 
     }
 
