@@ -10,6 +10,7 @@ public class Main {
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jf.setResizable(false);
         jf.setVisible(true);
+        jf.setLocationRelativeTo(null);
         jf.add(gra);
     }
 }
