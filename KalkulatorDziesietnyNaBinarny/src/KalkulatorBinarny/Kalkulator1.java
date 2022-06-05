@@ -1,9 +1,19 @@
 package KalkulatorBinarny;
 
+import java.util.Scanner;
+
 public class Kalkulator1 {
 
+            // KONWERTER. Podejœcie 1. Wynik jest Stringiem
+
     public static void main(String[] args) {
-        long skan = 256;
+        Scanner skaner = new Scanner(System.in);
+
+
+        System.out.println(" * * * KONWERTER LICZB DZIESIÊTNYCH NA BINARNE * * * ");
+        System.out.println("Wpisz liczbê ca³kowit¹:");
+        long skan = skaner.nextLong();
+
         double bi;
         double x = (int) (Math.log(skan) / Math.log(2));
         double liczba = skan;
@@ -23,8 +33,6 @@ public class Kalkulator1 {
             wynik = "0";
         }
 
-        System.out.println();
-        System.out.println(" * * * KONWERTER LICZB DZIESIÊTNYCH NA BINARNE * * * ");
         System.out.println("Liczba " + skan + " w systemie dwójkowym (binarnym) to: " + wynik);
     }
 }
