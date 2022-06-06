@@ -1,6 +1,7 @@
 package main;
 
 import entity.Player;
+import tile.TileManager;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,24 +13,20 @@ public class GamePanel extends JPanel implements Runnable{
     final int scale = 3;
 
     public final int tileSize = originalTileSize * scale; //kafelka 48x48 px
-    final int maxScreenCol = 16;
-    final int maxScreenRow = 12;
-    final int screenWidth = tileSize * maxScreenCol; //768px
-    final int screenHeight = tileSize * maxScreenRow; //576px
+    public final int maxScreenCol = 16;
+    public final int maxScreenRow = 12;
+    public final int screenWidth = tileSize * maxScreenCol; //768px
+    public final int screenHeight = tileSize * maxScreenRow; //576px
 
     //FPS:
     int FPS = 60;
 
+    TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
     //Thread jest czymœ co mo¿na rozpocz¹æ i zakoñczyæ:
     Thread gameThread;
     Player player = new Player(this, keyH);
 
-
-    //Ustawienie domyœlnej pozycji gracza
-    int playerX = 100;
-    int playerY = 100;
-    int playerSpeed = 4;
 
 
     //Konstruktor
@@ -134,6 +131,9 @@ public class GamePanel extends JPanel implements Runnable{
 
         //rzutowanie! konwertowanie zamiana itp..Zamieniamy zwyk³e Graphics na Graphics2D poniewa¿ ma ona wiêcej fukcji:
         Graphics2D g2 = (Graphics2D)g;
+
+        //uwaga! p³ytki maj¹ byæ rysowane PRZED graczem. najpierw p³ytki potem gracz
+        tileM.draw(g2);
         player.draw(g2);
         g2.dispose();
     }
