@@ -32,6 +32,7 @@ public class GamePanel extends JPanel implements Runnable{
     KeyHandler keyH = new KeyHandler();
     //Thread jest czymœ co mo¿na rozpocz¹æ i zakoñczyæ:
     Thread gameThread;
+    public CollisionChecker cChecker = new CollisionChecker(this);
     public Player player = new Player(this, keyH);
 
 
