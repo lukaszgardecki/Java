@@ -11,6 +11,7 @@ public class KeyHandler implements KeyListener {
     public void keyTyped(KeyEvent e) {
     }
 
+    //cos siê ma dziac po naciœniêciu okreœlonych klawiszy:
     @Override
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
@@ -31,6 +32,8 @@ public class KeyHandler implements KeyListener {
 
     }
 
+
+    //co ma siê dziaæ po zwolnieniu okreœlonych klawiszy:
     @Override
     public void keyReleased(KeyEvent e) {
         int code = e.getKeyCode();
