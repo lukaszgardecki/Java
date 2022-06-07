@@ -15,7 +15,7 @@ public class Player extends Entity {
 
     public final int screenX;
     public final int screenY;
-    int hasKey = 0;
+    public int hasKey = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
 
@@ -121,20 +121,31 @@ public class Player extends Entity {
                     gp.playSE(1);        // -> odtwórz muzyczkê coin.wav (index 1)
                     hasKey++;           // -> licz ile kluczy zebrano
                     gp.obj[i] = null;   //-->zniknij obiekt
-                    System.out.println("Key: " + hasKey);
+                    gp.ui.showMessage("You got a key!");
                     break;
                 case "Door":
+                        //jeœli mamy klucz:
                     if (hasKey > 0) {
                         gp.playSE(3);        // -> odtwórz muzyczkê unlock.wav (index 3)
                         gp.obj[i] = null;
                         hasKey--;
+                        gp.ui.showMessage("You opened the door!");
                     }
-                    System.out.println("Key: " + hasKey);
+                        //jeœli nie mamy klucza:
+                    else {
+                        gp.ui.showMessage("You need a key!");
+                    }
                     break;
                 case "Boots":
                     gp.playSE(2);        // -> odtwórz muzyczkê powerup.wav (index 2)
                     speed += 1;         //-> po zebraniu butów przyspiesz chodzenie
                     gp.obj[i] = null;   //-> zniknij obiekt
+                    gp.ui.showMessage("Speed up!");
+                    break;
+                case "Chest":
+                    gp.ui.gameFinished = true;
+                    gp.stopMusic();     //->zatrzymaj muzykê
+                    gp.playSE(4);       //-> odtwórz fanfary
                     break;
             }
         }
