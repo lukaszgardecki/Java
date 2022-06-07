@@ -12,10 +12,11 @@ public class Player extends Entity {
 
     GamePanel gp;
     KeyHandler keyH;
-
     public final int screenX;
     public final int screenY;
     public int hasKey = 0;
+    boolean moving = false;
+    int pixelCounter = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
 
@@ -109,8 +110,6 @@ public class Player extends Entity {
                 spriteCounter = 0;
             }
         }
-
-
     }
     public void pickUpObject(int i) {
         if (i != 999) {
