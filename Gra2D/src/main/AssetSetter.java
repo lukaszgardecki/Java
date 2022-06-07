@@ -1,5 +1,6 @@
 package main;
 
+import object.OBJ_Boots;
 import object.OBJ_Chest;
 import object.OBJ_Door;
 import object.OBJ_Key;
@@ -30,7 +31,7 @@ public class AssetSetter {
         gp.obj[2].worldX = 38 * gp.tileSize;
         gp.obj[2].worldY = 9 * gp.tileSize;
 
-        //drzwi 1:
+        //drzwi 1 (wejœcie do budynku):
         gp.obj[3] = new OBJ_Door();
         gp.obj[3].worldX = 10 * gp.tileSize;
         gp.obj[3].worldY = 11 * gp.tileSize;
@@ -45,10 +46,15 @@ public class AssetSetter {
         gp.obj[5].worldX = 12 * gp.tileSize;
         gp.obj[5].worldY = 22 * gp.tileSize;
 
-        //skrzynka 1:
+        //skrzynka 1 (w budynku):
         gp.obj[6] = new OBJ_Chest();
         gp.obj[6].worldX = 10 * gp.tileSize;
         gp.obj[6].worldY = 7 * gp.tileSize;
+
+        //Buty 1:
+        gp.obj[6] = new OBJ_Boots();
+        gp.obj[6].worldX = 37 * gp.tileSize;
+        gp.obj[6].worldY = 42 * gp.tileSize;
 
 
 

@@ -118,16 +118,23 @@ public class Player extends Entity {
 
             switch (objectName) {
                 case "Key":
+                    gp.playSE(1);        // -> odtwórz muzyczkê coin.wav (index 1)
                     hasKey++;           // -> licz ile kluczy zebrano
                     gp.obj[i] = null;   //-->zniknij obiekt
                     System.out.println("Key: " + hasKey);
                     break;
                 case "Door":
                     if (hasKey > 0) {
+                        gp.playSE(3);        // -> odtwórz muzyczkê unlock.wav (index 3)
                         gp.obj[i] = null;
                         hasKey--;
                     }
                     System.out.println("Key: " + hasKey);
+                    break;
+                case "Boots":
+                    gp.playSE(2);        // -> odtwórz muzyczkê powerup.wav (index 2)
+                    speed += 1;         //-> po zebraniu butów przyspiesz chodzenie
+                    gp.obj[i] = null;   //-> zniknij obiekt
                     break;
             }
         }
