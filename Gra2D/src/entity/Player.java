@@ -15,6 +15,7 @@ public class Player extends Entity {
 
     public final int screenX;
     public final int screenY;
+    int hasKey = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
 
@@ -82,6 +83,7 @@ public class Player extends Entity {
 
             //sprawdzenie kolizji obiektu
             int objIndex = gp.cChecker.checkObject(this, true);
+            pickUpObject(objIndex);
 
 
             //jeœli nie ma kolizji, to postaæ mo¿e siê ruszaæ
@@ -109,6 +111,26 @@ public class Player extends Entity {
         }
 
 
+    }
+    public void pickUpObject(int i) {
+        if (i != 999) {
+            String objectName = gp.obj[i].name;
+
+            switch (objectName) {
+                case "Key":
+                    hasKey++;           // -> licz ile kluczy zebrano
+                    gp.obj[i] = null;   //-->zniknij obiekt
+                    System.out.println("Key: " + hasKey);
+                    break;
+                case "Door":
+                    if (hasKey > 0) {
+                        gp.obj[i] = null;
+                        hasKey--;
+                    }
+                    System.out.println("Key: " + hasKey);
+                    break;
+            }
+        }
     }
 
     public void draw(Graphics2D g2) {
