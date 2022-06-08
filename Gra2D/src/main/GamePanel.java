@@ -41,6 +41,9 @@ public class GamePanel extends JPanel implements Runnable{
     public Player player = new Player(this, keyH);
     public SuperObject obj[] = new SuperObject[10];
 
+    //STAN GRY
+    public int gameState;
+    public final int playState = 1;
 
 
     //Konstruktor
