@@ -32,11 +32,11 @@ public class TileManager {
     public void getTileImage() {
             //tutaj wstawiamy kafelki, które mamy do dyspozycji i które bêd¹ u¿ywane. Je¿eli chcemy dodaæ nowy kafelek to musimy go tutaj dodaæ, po prostu go stworzyæ
         setup(0, "grass", false);
-        setup(0, "wall", true);
-        setup(0, "water", true);
-        setup(0, "earth", false);
-        setup(0, "tree", true);
-        setup(0, "sand", false);
+        setup(1, "wall", true);
+        setup(2, "water", true);
+        setup(3, "earth", false);
+        setup(4, "tree", true);
+        setup(5, "sand", false);
     }
 
     public void setup(int index, String imageName, boolean collision) {
@@ -44,7 +44,7 @@ public class TileManager {
 
         try {
             tile[index] = new Tile();
-            tile[index].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/" + imagePath + ".png"));
+            tile[index].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/" + imageName + ".png"));
             tile[index].image = uTool.scaleImage(tile[index].image, gp.tileSize, gp.tileSize);
             tile[index].collision = collision;
 
