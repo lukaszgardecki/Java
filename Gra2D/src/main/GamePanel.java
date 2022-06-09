@@ -1,5 +1,6 @@
 package main;
 
+import entity.Entity;
 import entity.Player;
 import object.SuperObject;
 import tile.TileManager;
@@ -40,6 +41,8 @@ public class GamePanel extends JPanel implements Runnable{
     // ENTITY AND OBJECT
     public Player player = new Player(this, keyH);
     public SuperObject obj[] = new SuperObject[10];
+    public Entity npc[] = new Entity[10];
+
 
     //STAN GRY
     public int gameState;
@@ -58,7 +61,7 @@ public class GamePanel extends JPanel implements Runnable{
 
     public void setupGame() {
         aSetter.setObject();
-
+        aSetter.setNPC();
         playMusic(0);   //->odtwórz muzykê BlueBoyAdventure
 
         gameState = playState;
@@ -150,7 +153,14 @@ public class GamePanel extends JPanel implements Runnable{
 
     public void update() {
         if (gameState == playState) {
+            //Player
             player.update();
+            //NPC
+            for (int i = 0; i < npc.length; i++) {
+                if (npc[i] != null) {
+                    npc[i].update();
+                }
+            }
         }
         if (gameState == pauseState) {
             //nothing
@@ -172,7 +182,6 @@ public class GamePanel extends JPanel implements Runnable{
             drawStart = System.nanoTime();
         }
 
-
         // P£YTKA
         tileM.draw(g2);
 
@@ -183,8 +192,15 @@ public class GamePanel extends JPanel implements Runnable{
             }
         }
 
-        //GRACZ
-        player.draw(g2);
+        //NPC
+        for (int i = 0; i < npc.length; i++) {
+            if (npc[i] != null) {
+                npc[i].draw(g2);
+            }
+        }
+
+            //GRACZ
+            player.draw(g2);
 
         // UI - zebrane klucze:
         ui.draw(g2);
