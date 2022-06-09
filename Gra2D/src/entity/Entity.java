@@ -42,6 +42,8 @@ public class Entity {
 
         collisionOn = false;
         gp.cChecker.checkTile(this);
+        gp.cChecker.checkObject(this, false);
+        gp.cChecker.checkPlayer(this);
 
         //jeœli nie ma kolizji, to postaæ mo¿e siê ruszaæ
         if (collisionOn == false) {
