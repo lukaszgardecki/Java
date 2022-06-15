@@ -10,7 +10,7 @@ public class MysqlDatabase implements Database {
     private String host, user, password, db;
     private int port;
     private HikariDataSource hikari;     //czemu Hikari?
-    //biblioteka hikari sp, która jest odpowiedizalna za sterowanie połączeniami do różńych baz danych
+    //biblioteka hikari cp, która jest odpowiedizalna za sterowanie połączeniami do różńych baz danych
 
 
     private MysqlDatabase() {

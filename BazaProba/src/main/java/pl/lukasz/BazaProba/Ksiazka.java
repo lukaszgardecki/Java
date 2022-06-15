@@ -6,6 +6,7 @@ public class Ksiazka {
     private final String tytul;
     private final double cena;
 
+    //konstruktor: w taki sposób będziemy 'budować' nasz nowy obiekt (książkę)
     public Ksiazka(String imieAutora, String nazwiskoAutora, String tytul, double cena) {
         this.imieAutora = imieAutora;
         this.nazwiskoAutora = nazwiskoAutora;
