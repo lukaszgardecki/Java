@@ -1,6 +1,7 @@
 package Bankomat;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Bankomat {
@@ -100,41 +101,38 @@ public class Bankomat {
         System.out.println("--------------------------------------------------");
         System.out.println("               Witaj " + baza.get(nrKlienta).getImieWlasciciela() + "!");
         System.out.print("Wyp³ata pieniêdzy. Wpisz kwotê: ");
+
         boolean war = true;
+        String odp;
+
+
+
+        // DO POPRAWY!!!
 
         while(war) {
 
-
-           kwotaWyplaty = sk.nextDouble(); //=50
-
-            //zrób wyp³atê:
-            baza.get(nrKlienta).wyplata(kwotaWyplaty);    //=1700
-            double saldo = baza.get(nrKlienta).getSaldo();
-
-            System.out.println("Wyp³acono " + kwotaWyplaty + " z³. Stan konta: " + saldo + " z³");
-            System.out.println("[1] Wyp³aæ ponownie     [2] WyjdŸ");
+                kwotaWyplaty = sk.nextDouble(); //=50
 
 
-            //Dot¹d dzia³a
+                //zrób wyp³atê:
+                baza.get(nrKlienta).wyplata(kwotaWyplaty);    //=1700
+                double saldo = baza.get(nrKlienta).getSaldo();
 
+                System.out.println("Wyp³acono " + kwotaWyplaty + " z³. Stan konta: " + saldo + " z³");
+                System.out.println("[1] Wyp³aæ ponownie     [2] WyjdŸ");
 
-
-            String odp = sk.nextLine();
-
-
-
-            switch (odp) {
-                case "1":
-                    System.out.println("Wyp³ata pieniêdzy. Wpisz kwotê: ");
-                    break;
-                case "2":
-                    System.out.println("Dziêkujemy i zapraszmy ponownie");
-                    war = false;
-                    break;
-            }
-
-
+                odp = sk.next();
+                switch (odp) {
+                    case "1" -> System.out.println("Wyp³ata pieniêdzy. Wpisz kwotê: ");
+                    case "2" -> {
+                        System.out.println("Dziêkujemy i zapraszmy ponownie");
+                        war = false;
+                    }
+                    default -> System.out.println("Wpisz poprawn¹ wartoœæ");
+                }
         }
+
+
 
 
 
