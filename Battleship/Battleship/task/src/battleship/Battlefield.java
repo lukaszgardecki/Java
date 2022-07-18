@@ -5,13 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Battlefield {
-
-
-
-
-
     static String[] coordTab = new String[3];
-    private List<List<String>> lists = new ArrayList<>();
+    List<List<String>> lists = new ArrayList<>();
     List<Ship> ships = new ArrayList<>();
 
     private static final int X = 10;
@@ -64,9 +59,6 @@ public class Battlefield {
     public char getAxisYstart() {
         return axisYstart;
     }
-
-
-
 
     public void createBattlefield() {
         for(int i = 0; i <= getX(); i++) {
@@ -124,10 +116,10 @@ public class Battlefield {
 
 
     public void addShips(Battlefield OOO) {
-//        Main.ships.add(new Ship ("Aircraft Carrier", 5));
-//        Main.ships.add(new Ship ("Battleship", 4));
-//        Main.ships.add(new Ship ("Submarine", 3));
-//        Main.ships.add(new Ship ("Cruiser", 3));
+        ships.add(new Ship ("Aircraft Carrier", 5));
+        ships.add(new Ship ("Battleship", 4));
+        ships.add(new Ship ("Submarine", 3));
+        ships.add(new Ship ("Cruiser", 3));
         ships.add(new Ship ("Destroyer", 2));
 
 
@@ -148,6 +140,9 @@ public class Battlefield {
 
 
     public void addShipToBattlefield(Ship sh, Battlefield OOO) {
+
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.println();
         Main.displayMessage(1, sh);
@@ -472,31 +467,31 @@ public class Battlefield {
 
 
 
-//    public int countIfShipIsHit() {
-//        int counter = 0;
-//        for (int i = 1; i <= getX(); i++) {
-//            for (int j = 1; j <= getY(); j++) {
-//                //je¿eli znak na tablicy to "O"(okrêt) to licz
-//                if (getFogBoard()[i][j].charAt(0) == getHitChar() ) {
-//                    counter++;
-//                }
-//            }
-//        }
-//        return counter;
-//    }
+    public int countIfShipIsHit() {
+        int counter = 0;
+        for (int i = 1; i <= getX(); i++) {
+            for (int j = 1; j <= getY(); j++) {
+                //je¿eli znak na tablicy to "O"(okrêt) to licz
+                if (getFogBoard()[i][j].charAt(0) == getHitChar() ) {
+                    counter++;
+                }
+            }
+        }
+        return counter;
+    }
 
-//    public int countShips() {
-//        int counter = 0;
-//        for (int i = 1; i <= getX(); i++) {
-//            for (int j = 1; j <= getY(); j++) {
-//                //je¿eli znak na tablicy to "O"(okrêt) to licz
-//                if (getBoard()[i][j].charAt(0) == getShipChar() ) {
-//                    counter++;
-//                }
-//            }
-//        }
-//        return counter;
-//    }
+    public int countShips() {
+        int counter = 0;
+        for (int i = 1; i <= getX(); i++) {
+            for (int j = 1; j <= getY(); j++) {
+                //je¿eli znak na tablicy to "O"(okrêt) to licz
+                if (getBoard()[i][j].charAt(0) == getShipChar() ) {
+                    counter++;
+                }
+            }
+        }
+        return counter;
+    }
 
 
 }
