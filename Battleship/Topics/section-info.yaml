@@ -12,3 +12,5 @@ content:
 - Files
 - Input streams
 - Hiding and overriding
+- Polymorphism
+- Abstract class

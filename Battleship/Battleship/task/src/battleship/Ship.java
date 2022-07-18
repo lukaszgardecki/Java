@@ -28,10 +28,10 @@ public class Ship {
         this.cords.add(cord);
     }
 
-    public static void addCoordsToShipList(Ship sh, String cor1, String cor2) {
-        int from1 = Battlefield.returnCoordinate(cor1);
+    public void addCoordsToShipList(Ship sh, String cor1, String cor2, Battlefield OOO) {
+        int from1 = OOO.returnCoordinate(cor1);
         int from2 = Integer.parseInt(cor1.substring(1));
-        int to1 = Battlefield.returnCoordinate(cor2);
+        int to1 = OOO.returnCoordinate(cor2);
         int to2 = Integer.parseInt(cor2.substring(1));
         char letterFrom = cor1.charAt(0);
         char letterTo = cor2.charAt(0);
@@ -73,4 +73,6 @@ public class Ship {
         }
         return answer;
     }
+
+
 }

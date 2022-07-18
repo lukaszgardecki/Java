@@ -9,6 +9,17 @@
       <module name="Battleship.Battleship-task-build-test-results.main" target="11" />
       <module name="Battleship.Battleship-task-build-tmp.main" target="11" />
       <module name="Battleship.Battleship-task.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-About_abstract_classes.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-An_incorrect_statement.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Correct_statements.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Features_of_an_abstract_method.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Incorrect_declaration.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-IntBinaryOperation.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Overriding_when_extending.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Shape_hierarchy.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Theory.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Users_and_WebSites.main" target="11" />
+      <module name="Battleship.Topics-Abstract_class-Which_methods_must_be_overridden.main" target="11" />
       <module name="Battleship.Topics-Custom_exceptions-Checked_exception_with_constructor.main" target="11" />
       <module name="Battleship.Topics-Custom_exceptions-Custom_exceptions_features.main" target="11" />
       <module name="Battleship.Topics-Custom_exceptions-DriverNotReadyException.main" target="11" />
@@ -41,8 +52,18 @@
       <module name="Battleship.Topics-Getters_and_setters-The_name_of_setter.main" target="11" />
       <module name="Battleship.Topics-Getters_and_setters-Theory.main" target="11" />
       <module name="Battleship.Topics-Hiding_and_overriding-Correctly_overridden_methods.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Employee_and_Programmer.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Incorrectly_overridden_methods.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Overriding_rules.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Publications.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Rules_for_overriding.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Rules_for_overriding__1_.main" target="11" />
       <module name="Battleship.Topics-Hiding_and_overriding-Saying_animals.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Shapes_area.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Statements.main" target="11" />
       <module name="Battleship.Topics-Hiding_and_overriding-Theory.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Which_methods_cannot_be_overridden.main" target="11" />
+      <module name="Battleship.Topics-Hiding_and_overriding-Which_methods_will_be_overridden.main" target="11" />
       <module name="Battleship.Topics-Hierarchy_of_exceptions-BadRequestException.main" target="11" />
       <module name="Battleship.Topics-Hierarchy_of_exceptions-Base_class.main" target="11" />
       <module name="Battleship.Topics-Hierarchy_of_exceptions-Base_classes_of_RuntimeException.main" target="11" />
@@ -101,6 +122,16 @@
       <module name="Battleship.Topics-Package-The_default_import.main" target="11" />
       <module name="Battleship.Topics-Package-The_full_name_of_a_class.main" target="11" />
       <module name="Battleship.Topics-Package-Theory.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Find_mistake.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Notification.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Publication_and_its_subclasses.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Runtime_method_resolution.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Runtime_polymorphic_behavior.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Statements.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Superclass_method_call.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-The_time_of_overloading.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Theory.main" target="11" />
+      <module name="Battleship.Topics-Polymorphism-Type_of_polymorphism.main" target="11" />
       <module name="Battleship.Topics-The_keyword_super-Accessing_constructors_of_a_base_class.main" target="11" />
       <module name="Battleship.Topics-The_keyword_super-Bank_account.main" target="11" />
       <module name="Battleship.Topics-The_keyword_super-Employees.main" target="11" />
