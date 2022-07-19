@@ -2,7 +2,25 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="17">
+      <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-classes-java.main" target="11" />
+      <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-generated-sources-annotationProcessor-java.main" target="11" />
+      <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-generated-sources-headers-java.main" target="11" />
+      <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-reports-tests.main" target="11" />
+      <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-test-results.main" target="11" />
+      <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-tmp.main" target="11" />
       <module name="Bulls_and_Cows.Bulls_and_Cows-task.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Area_of_a_circle.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Compact_strings_with_AsciiCharSequence.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Implementing_an_interface.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Interface_methods.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Marker_interface.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Mutable_geometric_shapes.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Properties_of_methods.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Statements.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-What_can_an_interface_have.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-What_does_an_interface_define.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Interface-Which_methods_must_be_overridden.main" target="11" />
       <module name="Bulls_and_Cows.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>
