@@ -1,9 +1,12 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 class ConcatenateStringsProblem {
 
     public static String concatenateStringsWithoutDigits(String[] strings) {
         // write your code with StringBuilder here
+        StringBuilder sb = new StringBuilder(Arrays.toString(strings).replaceAll("\\d","").replaceAll("\\[","").replaceAll(", ","").replaceAll("\\]",""));
+        return new String(sb);
     }
 
     public static void main(String[] args) {
