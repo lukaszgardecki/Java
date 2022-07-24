@@ -1,387 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-24T16:42:36" hostname="LUKASZ" time="0.41">
+<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-24T23:23:45" hostname="LUKASZ" time="0.097">
   <properties/>
-  <testcase name="start" classname="BullsCowsTest" time="0.41"/>
+  <testcase name="start" classname="BullsCowsTest" time="0.097">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;Cannot find number of bulls or number of cows or None after the input.&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Input the length of the secret code:&#10;&gt; 1&#10;Input the number of possible symbols in the code:&#10;&gt; 0&#10;Error: can't generate a secret number with a length of 1 because there aren't enough unique digits." type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
+
+Cannot find number of bulls or number of cows or None after the input.
+
+Please find below the output of your program during this failed test.
+Note that the '&gt;' character indicates the beginning of the input line.
+
+---
+
+Input the length of the secret code:
+&gt; 1
+Input the number of possible symbols in the code:
+&gt; 0
+Error: can't generate a secret number with a length of 1 because there aren't enough unique digits.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:155)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
-Please, enter the secret code's length:
+Input the length of the secret code:
 > 1
-Okay, let's start a game!
-Turn 1:
-Grade: None.
-Turn 2:
+Input the number of possible symbols in the code:
 > 0
-Grade: None.
-Turn 3:
-> 1
-Grade: None.
-Turn 4:
-> 2
-Grade: None.
-Turn 5:
-> 3
-Grade: 1 bull.
-Turn 6:
-> 4
-Grade: None.
-Turn 7:
-> 5
-Grade: None.
-Turn 8:
-> 6
-Grade: None.
-Turn 9:
-> 7
-Grade: None.
-Turn 10:
-> 8
-Grade: None.
-Turn 11:
-> 9
-Grade: None.
-Turn 12:
-?[1;31m
-Start test 2?[0m
-Please, enter the secret code's length:
-> 4
-Okay, let's start a game!
-Turn 1:
-Grade: None.
-Turn 2:
-> 0000
-Grade: 1 bull.
-Turn 3:
-> 1111
-Grade: 1 bull.
-Turn 4:
-> 2222
-Grade: 1 bull.
-Turn 5:
-> 3333
-Grade: None.
-Turn 6:
-> 4444
-Grade: None.
-Turn 7:
-> 5555
-Grade: None.
-Turn 8:
-> 6666
-Grade: 1 bull.
-Turn 9:
-> 0126
-Grade: 4 cows.
-Turn 10:
-> 1026
-Grade: 4 cows.
-Turn 11:
-> 2016
-Grade: 1 bull and 3 cows.
-Turn 12:
-> 0216
-Grade: 4 cows.
-Turn 13:
-> 1206
-Grade: 1 bull and 3 cows.
-Turn 14:
-> 2106
-Grade: 2 bulls and 2 cows.
-Turn 15:
-> 6102
-Grade: 1 bull and 3 cows.
-Turn 16:
-> 1602
-Grade: 2 bulls and 2 cows.
-Turn 17:
-> 0612
-Grade: 1 bull and 3 cows.
-Turn 18:
-> 6012
-Grade: 4 cows.
-Turn 19:
-> 1062
-Grade: 4 cows.
-Turn 20:
-> 0162
-Grade: 4 cows.
-Turn 21:
-> 0261
-Grade: 1 bull and 3 cows.
-Turn 22:
-> 2061
-Grade: 2 bulls and 2 cows.
-Turn 23:
-> 6021
-Grade: 1 bull and 3 cows.
-Turn 24:
-> 0621
-Grade: 2 bulls and 2 cows.
-Turn 25:
-> 2601
-Grade: 4 bulls.
-Congratulations! You guessed the secret code.
-?[1;31m
-Start test 3?[0m
-Please, enter the secret code's length:
-> 6
-Okay, let's start a game!
-Turn 1:
-Grade: None.
-Turn 2:
-> 000000
-Grade: None.
-Turn 3:
-> 111111
-Grade: 1 bull.
-Turn 4:
-> 222222
-Grade: 1 bull.
-Turn 5:
-> 333333
-Grade: None.
-Turn 6:
-> 444444
-Grade: 1 bull.
-Turn 7:
-> 555555
-Grade: 1 bull.
-Turn 8:
-> 666666
-Grade: None.
-Turn 9:
-> 777777
-Grade: None.
-Turn 10:
-> 888888
-Grade: 1 bull.
-Turn 11:
-> 999999
-Grade: 1 bull.
-Turn 12:
-> 124589
-Grade: 1 bull and 5 cows.
-Turn 13:
-> 214589
-Grade: 2 bulls and 4 cows.
-Turn 14:
-> 412589
-Grade: 2 bulls and 4 cows.
-Turn 15:
-> 142589
-Grade: 1 bull and 5 cows.
-Turn 16:
-> 241589
-Grade: 1 bull and 5 cows.
-Turn 17:
-> 421589
-Grade: 1 bull and 5 cows.
-Turn 18:
-> 521489
-Grade: 2 bulls and 4 cows.
-Turn 19:
-> 251489
-Grade: 1 bull and 5 cows.
-Turn 20:
-> 152489
-Grade: 1 bull and 5 cows.
-Turn 21:
-> 512489
-Grade: 3 bulls and 3 cows.
-Turn 22:
-> 215489
-Grade: 2 bulls and 4 cows.
-Turn 23:
-> 125489
-Grade: 1 bull and 5 cows.
-Turn 24:
-> 145289
-Grade: 2 bulls and 4 cows.
-Turn 25:
-> 415289
-Grade: 3 bulls and 3 cows.
-Turn 26:
-> 514289
-Grade: 4 bulls and 2 cows.
-Turn 27:
-> 154289
-Grade: 2 bulls and 4 cows.
-Turn 28:
-> 451289
-Grade: 2 bulls and 4 cows.
-Turn 29:
-> 541289
-Grade: 3 bulls and 3 cows.
-Turn 30:
-> 542189
-Grade: 2 bulls and 4 cows.
-Turn 31:
-> 452189
-Grade: 1 bull and 5 cows.
-Turn 32:
-> 254189
-Grade: 1 bull and 5 cows.
-Turn 33:
-> 524189
-Grade: 2 bulls and 4 cows.
-Turn 34:
-> 425189
-Grade: 1 bull and 5 cows.
-Turn 35:
-> 245189
-Grade: 1 bull and 5 cows.
-Turn 36:
-> 845129
-Grade: 1 bull and 5 cows.
-Turn 37:
-> 485129
-Grade: 1 bull and 5 cows.
-Turn 38:
-> 584129
-Grade: 2 bulls and 4 cows.
-Turn 39:
-> 854129
-Grade: 1 bull and 5 cows.
-Turn 40:
-> 458129
-Grade: 2 bulls and 4 cows.
-Turn 41:
-> 548129
-Grade: 3 bulls and 3 cows.
-Turn 42:
-> 148529
-Grade: 2 bulls and 4 cows.
-Turn 43:
-> 418529
-Grade: 3 bulls and 3 cows.
-Turn 44:
-> 814529
-Grade: 2 bulls and 4 cows.
-Turn 45:
-> 184529
-Grade: 1 bull and 5 cows.
-Turn 46:
-> 481529
-Grade: 1 bull and 5 cows.
-Turn 47:
-> 841529
-Grade: 1 bull and 5 cows.
-Turn 48:
-> 851429
-Grade: 1 bull and 5 cows.
-Turn 49:
-> 581429
-Grade: 2 bulls and 4 cows.
-Turn 50:
-> 185429
-Grade: 1 bull and 5 cows.
-Turn 51:
-> 815429
-Grade: 2 bulls and 4 cows.
-Turn 52:
-> 518429
-Grade: 4 bulls and 2 cows.
-Turn 53:
-> 158429
-Grade: 2 bulls and 4 cows.
-Turn 54:
-> 154829
-Grade: 1 bull and 5 cows.
-Turn 55:
-> 514829
-Grade: 3 bulls and 3 cows.
-Turn 56:
-> 415829
-Grade: 2 bulls and 4 cows.
-Turn 57:
-> 145829
-Grade: 1 bull and 5 cows.
-Turn 58:
-> 541829
-Grade: 2 bulls and 4 cows.
-Turn 59:
-> 451829
-Grade: 1 bull and 5 cows.
-Turn 60:
-> 251849
-Grade: 2 bulls and 4 cows.
-Turn 61:
-> 521849
-Grade: 3 bulls and 3 cows.
-Turn 62:
-> 125849
-Grade: 2 bulls and 4 cows.
-Turn 63:
-> 215849
-Grade: 3 bulls and 3 cows.
-Turn 64:
-> 512849
-Grade: 4 bulls and 2 cows.
-Turn 65:
-> 152849
-Grade: 2 bulls and 4 cows.
-Turn 66:
-> 852149
-Grade: 2 bulls and 4 cows.
-Turn 67:
-> 582149
-Grade: 3 bulls and 3 cows.
-Turn 68:
-> 285149
-Grade: 2 bulls and 4 cows.
-Turn 69:
-> 825149
-Grade: 2 bulls and 4 cows.
-Turn 70:
-> 528149
-Grade: 4 bulls and 2 cows.
-Turn 71:
-> 258149
-Grade: 3 bulls and 3 cows.
-Turn 72:
-> 218549
-Grade: 4 bulls and 2 cows.
-Turn 73:
-> 128549
-Grade: 3 bulls and 3 cows.
-Turn 74:
-> 821549
-Grade: 2 bulls and 4 cows.
-Turn 75:
-> 281549
-Grade: 2 bulls and 4 cows.
-Turn 76:
-> 182549
-Grade: 2 bulls and 4 cows.
-Turn 77:
-> 812549
-Grade: 3 bulls and 3 cows.
-Turn 78:
-> 815249
-Grade: 4 bulls and 2 cows.
-Turn 79:
-> 185249
-Grade: 3 bulls and 3 cows.
-Turn 80:
-> 581249
-Grade: 4 bulls and 2 cows.
-Turn 81:
-> 851249
-Grade: 3 bulls and 3 cows.
-Turn 82:
-> 158249
-Grade: 4 bulls and 2 cows.
-Turn 83:
-> 518249
-Grade: 6 bulls.
-Congratulations! You guessed the secret code.
-?[1;31m
-Start test 4?[0m
-Please, enter the secret code's length:
-> 11
-Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.Okay, let's start a game!
-Turn 1:
-Grade: None.
-Turn 2:
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

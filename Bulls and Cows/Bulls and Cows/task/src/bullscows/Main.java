@@ -1,78 +1,100 @@
 package bullscows;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    static Scanner scanner = new Scanner(System.in);
-    static ArrayList<Character> tab = new ArrayList<>();
-    static long pseudoRandomNumber = System.nanoTime();
-    static StringBuilder randy = new StringBuilder(Long.toString(pseudoRandomNumber));
+
     static StringBuilder secretCode = new StringBuilder();
-    static int index = 0;
     static boolean isGuessed = false;
+    static char firstLetter = 'a';
+    static char lastLetter = 97;
     static int numOfTurn = 1;
     public static int len = 0;
+    public static int amountOfSigns = 0;
+    static final int MAX_LENGTH = 36;
+
 
     public static void main(String[] args) {
         createSecretCode();
-        //System.out.println(secretCode);
-        System.out.println("Okay, let's start a game!");
+       // System.out.println(secretCode);
 
-        do {
-            System.out.printf("Turn %d:\n", numOfTurn);
-            isGuessed = tryToGuess();
-            numOfTurn++;
-        } while (!isGuessed);
+        if (amountOfSigns != 0) {
+            System.out.println("Okay, let's start a game!");
+            do {
+                System.out.printf("Turn %d:\n", numOfTurn);
+                isGuessed = tryToGuess();
+                numOfTurn++;
+            } while (!isGuessed);
+        }
 
     }
 
     public static void createSecretCode() {
-        System.out.println("Please, enter the secret code's length:");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input the length of the secret code:");
         len = scanner.nextInt();
+        ArrayList<String> list = new ArrayList<>(len);
+        System.out.println("Input the number of possible symbols in the code:");
+        amountOfSigns = scanner.nextInt();
 
-        if (len <= 10 && len > 0) {
-            //odwrócenie liczby
-            randy.reverse();
 
-            //usuniêcie zer z pocz¹tku liczby
-            while (Character.getNumericValue(randy.charAt(0)) == 0) {
-                randy.deleteCharAt(0);
+
+        //stworzenie listy z wymaganymi
+        if (amountOfSigns == 0) {
+            list.add(" ");
+        } else if(amountOfSigns <= 10){
+            for (int i = 0; i < amountOfSigns; i++) {
+                String x = "";
+                list.add(x + i);
             }
+        } else {
+            int numOfDigits = 10;
+            int numOfLetters = amountOfSigns - numOfDigits;
+            lastLetter += numOfLetters;
 
-            //stworzenie listy wartoœci unikatowych
-            for (int i = 0; i < 10; i++) {
-                tab.add((Integer.toString(i).charAt(0)));
+            for (int i = 0; i < numOfDigits; i++) {
+                String x = "";
+                list.add(x + i);
             }
+            for (char ch = 'a'; ch < lastLetter; ch++) {
+                list.add(Character.toString(ch));
+            }
+        }
 
-            //stworzenie liczby losowej
+        //stworzenie gwiazdek *****
+        StringBuilder star = new StringBuilder();
+        for (int i = 0; i < len; i++){
+            star.append('*');
+        }
+
+        if (len <= MAX_LENGTH && len > 0 && amountOfSigns > 0) {
+            //stworzenie liczby losowej UNIKATOWEJ
             while (secretCode.length() < len) {
-                boolean isQnique = false;
-
-                for (int i = 0; i < tab.size(); i++) {
-                    if (randy.charAt(0) == tab.get(i)) {
-                        isQnique = true;
-                        index = i;
-                        break;
-                    }
-                }
-
-                if (isQnique) {
-                    secretCode.append(randy.charAt(0));
-                    tab.remove(tab.get(index));
-                    randy.deleteCharAt(0);
-                } else {
-                    randy.deleteCharAt(0);
-                }
+                Random random = new Random();
+                int randomIndex = random.nextInt(list.size());
+                secretCode.append(list.get(randomIndex));
+                list.remove(randomIndex);
             }
 
-            //System.out.printf("The random secret number is %s.", secretCode);
-
+            if (amountOfSigns == 0) {
+                System.out.printf("The secret is prepared: %s\n", star);
+            } else if (amountOfSigns <= 10) {
+                System.out.printf("The secret is prepared: %s (0-%d)\n", star, amountOfSigns-1);
+            } else {
+                System.out.printf("The secret is prepared: %s (0-9, %c-%c)\n", star, firstLetter, lastLetter-1);
+            }
         } else {
             System.out.printf("Error: can't generate a secret number with a length of %d because there aren't enough unique digits.", len);
         }
+
+
     }
 
     public static boolean tryToGuess() {
+        Scanner scanner = new Scanner(System.in);
         boolean answer = false;
         int bullsCounter = 0;
         int cowsCounter = 0;
@@ -107,7 +129,7 @@ public class Main {
         else if (cowsCounter > 1) {
             System.out.printf("Grade: %d cows.\n", cowsCounter);
         }
-        else if (bullsCounter == 1) {
+        else if (bullsCounter == 1 && bullsCounter != len) {
             System.out.printf("Grade: %d bull.\n", bullsCounter);
         }
         else if (bullsCounter == len) {

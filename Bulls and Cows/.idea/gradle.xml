@@ -50,7 +50,9 @@
             <option value="$PROJECT_DIR$/Topics/Comparable/Value class" />
             <option value="$PROJECT_DIR$/Topics/Comparable/compareTo" />
             <option value="$PROJECT_DIR$/Topics/Floating-point types/Area of a circle" />
+            <option value="$PROJECT_DIR$/Topics/Floating-point types/Celsius to Fahrenheit" />
             <option value="$PROJECT_DIR$/Topics/Floating-point types/Determine the result" />
+            <option value="$PROJECT_DIR$/Topics/Floating-point types/Difference between two doubles" />
             <option value="$PROJECT_DIR$/Topics/Floating-point types/Distance" />
             <option value="$PROJECT_DIR$/Topics/Floating-point types/Evaluate an expression" />
             <option value="$PROJECT_DIR$/Topics/Floating-point types/Existing floating-point types" />
@@ -87,6 +89,15 @@
             <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Theory" />
             <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Type arguments" />
             <option value="$PROJECT_DIR$/Topics/Introduction to generic programming/Type parameter inside a class body" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Compare the results" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Existing methods" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Heron's formula" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Pow" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Quadratic equation" />
+            <option value="$PROJECT_DIR$/Topics/Math library/The angle between vectors" />
+            <option value="$PROJECT_DIR$/Topics/Math library/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Math library/What does random produce" />
+            <option value="$PROJECT_DIR$/Topics/Math library/What is true" />
             <option value="$PROJECT_DIR$/Topics/Processing strings/Compression algorithm" />
             <option value="$PROJECT_DIR$/Topics/Processing strings/Convert a date" />
             <option value="$PROJECT_DIR$/Topics/Processing strings/Create an euphonious word" />

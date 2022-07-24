@@ -40,7 +40,9 @@
       <module name="Bulls_and_Cows.Topics-Comparable-Theory.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Comparable-Value_class.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Floating-point_types-Area_of_a_circle.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Celsius_to_Fahrenheit.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Floating-point_types-Determine_the_result.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Difference_between_two_doubles.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Floating-point_types-Distance.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Floating-point_types-Evaluate_an_expression.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Floating-point_types-Existing_floating-point_types.main" target="11" />
@@ -77,6 +79,15 @@
       <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Theory.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Type_arguments.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Type_parameter_inside_a_class_body.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-Compare_the_results.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-Existing_methods.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-Heron's_formula.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-Pow.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-Quadratic_equation.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-The_angle_between_vectors.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-What_does_random_produce.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Math_library-What_is_true.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Processing_strings-Compression_algorithm.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Processing_strings-Convert_a_date.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Processing_strings-Create_an_euphonious_word.main" target="11" />
