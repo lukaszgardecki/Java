@@ -10,3 +10,5 @@ content:
 - Comparable
 - Processing strings
 - StringBuilder
+- Random
+- Floating-point types

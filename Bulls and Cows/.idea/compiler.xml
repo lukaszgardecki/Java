@@ -39,6 +39,16 @@
       <module name="Bulls_and_Cows.Topics-Comparable-Rules.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Comparable-Theory.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Comparable-Value_class.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Area_of_a_circle.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Determine_the_result.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Distance.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Evaluate_an_expression.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Existing_floating-point_types.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Exponential_expression.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Find_X.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Liquid_pressure.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Statements.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Floating-point_types-Theory.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Generics_and_Object-Boxes_are_not_just_objects.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Generics_and_Object-Correct_the_usage_of_non-generic_class.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Generics_and_Object-Initialize_an_object_of_a_generic_class.main" target="11" />
@@ -86,6 +96,15 @@
       <module name="Bulls_and_Cows.Topics-Processing_strings-The_lucky_ticket.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Processing_strings-The_percentage_of_G_and_C_characters.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Processing_strings-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Choose_a_correct_invocation.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Find_the_seed.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Gaussian_random_numbers.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Generate_random_numbers.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Impossible_to_generate.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Pseudorandom_sequences.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-The_result_of_a_method.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Random-Which_values_can_be_generated.main" target="11" />
       <module name="Bulls_and_Cows.Topics-StringBuilder-Behold_the_power_of_StringBuilder.main" target="11" />
       <module name="Bulls_and_Cows.Topics-StringBuilder-Concat_all_strings_without_digits.main" target="11" />
       <module name="Bulls_and_Cows.Topics-StringBuilder-Multiple_modifications.main" target="11" />
