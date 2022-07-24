@@ -10,15 +10,15 @@ Object-based box class that requires casting every time you want to get some spe
 Casting is not desirable and can fall at runtime, could you create more... generic solution?
 
 */
-class Box {
+class Box<T> {
 
-    private Object item;
+    private T item;
 
-    public void put(Object item) {
+    public void put(T item) {
     	this.item = item;
     }
 
-    public Object get() {
+    public T get() {
         return this.item;
     }
 

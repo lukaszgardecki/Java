@@ -6,7 +6,14 @@ import java.util.stream.Collectors;
 class ConcatPositiveNumbersProblem {
 
     public static ArrayList<Integer> concatPositiveNumbers(ArrayList<Integer> l1, ArrayList<Integer> l2) {
-        return l1; // write your code here
+        l1.addAll(l2);
+        ArrayList<Integer> l3 = new ArrayList<>();
+        for(Integer n : l1) {
+            if (n > 0) l3.add(n);
+        }
+
+
+        return l3; // write your code here
     }
 
     /* Do not modify this method */

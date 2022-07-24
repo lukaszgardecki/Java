@@ -5,6 +5,13 @@ public class Main {
 
     public static <T> T getElementByIndex(List<T> lst, int index) {
         // write your code here
+        T x;
+        if (index < 0 ) {
+            x = lst.get(index + lst.size());
+        } else {
+            x = lst.get(index);
+        }
+        return x;
     }
 
     /* Do not change code below */

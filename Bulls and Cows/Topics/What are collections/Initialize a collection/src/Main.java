@@ -5,6 +5,9 @@ class Main {
 
     void init() {
         // add "one", "two", "three" to list field in this order
+        list.add("one");
+        list.add("two");
+        list.add("three");
     }
 }
 

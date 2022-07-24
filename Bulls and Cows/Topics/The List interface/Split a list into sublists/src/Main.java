@@ -11,9 +11,21 @@ class ListUtils {
      */
     public static <T> List<List<T>> splitListIntoSubLists(List<T> list, int subListSize) {
         List<List<T>> sublists = new ArrayList<>();
+        int y = list.size() % subListSize;
+        List<T> rest = new ArrayList<>();
 
         // write your code here
-
+        if (subListSize >= list.size()) {
+            sublists.add(list);
+        } else {
+            for (int i = 0; i < list.size()/subListSize; i++) {
+                sublists.add(list.subList(subListSize * i, subListSize + subListSize * i));
+            }
+            for (int i = list.size() - y; i <= list.size()-1; i++) {
+                rest.add(list.get(i));
+            }
+            sublists.add(rest);
+        }
         return sublists;
     }
 }

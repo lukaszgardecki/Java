@@ -17,6 +17,12 @@ class Article implements Comparable<Article> {
 
     @Override
     public int compareTo(Article otherArticle) {
-        // add your code here!
+        if (size == otherArticle.getSize()) {
+                return title.compareTo(otherArticle.getTitle());
+        } else if (size < otherArticle.getSize()) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }

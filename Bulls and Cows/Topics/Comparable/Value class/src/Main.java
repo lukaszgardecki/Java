@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-class Age {
+class Age implements Comparable<Age> {
     private final int value;
 
     public Age(int value) {
@@ -10,6 +10,17 @@ class Age {
 
     public int getValue() {
         return value;
+    }
+
+    @Override
+    public int compareTo(Age otherAge) {
+        if (getValue() == otherAge.getValue()) {
+            return 0;
+        } else if (getValue() < otherAge.getValue()) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }
 

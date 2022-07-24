@@ -4,6 +4,15 @@ public class Main {
 
     public static int convert(Long val) {
         // write your code here
+        int x = 0;
+        if (val == null) {
+            return x;
+        } else if (val > Integer.MAX_VALUE) {
+            x = Integer.MAX_VALUE;
+        } else if (val < Integer.MIN_VALUE) {
+            x = Integer.MIN_VALUE;
+        } else x = Integer.parseInt(String.valueOf(val));
+        return x;
     }
 
     /* Do not change code below */

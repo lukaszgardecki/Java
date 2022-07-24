@@ -8,7 +8,13 @@ class CollectionUtils {
 
     public static Collection<Integer> pow2(Collection<Integer> numbers) {
         // write your code here
-        return numbers;
+
+        Collection<Integer> po = new ArrayList<>();
+
+        for(Integer num : numbers) {
+            po.add(num * num);
+        }
+        return po;
     }
 }
 

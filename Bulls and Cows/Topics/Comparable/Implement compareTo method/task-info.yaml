@@ -39,5 +39,25 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/14463#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 3. Wrong answer
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    Tom-22-185-65
+    Bob-22-175-85
+    Kris-30-180-90
+    Correct output:
+    Bob 22 175 85
+    Kris 30 180 90
+    Tom 22 185 65
+
+    Your code output:
+    Tom 22 185 65
+    Bob 22 175 85
+    Kris 30 180 90
+  time: Wed, 20 Jul 2022 19:49:56 UTC
 record: -1

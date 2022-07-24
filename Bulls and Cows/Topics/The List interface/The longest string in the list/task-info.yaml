@@ -22,5 +22,11 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/2326#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: |-
+    <html>you're cool !
+
+    </html>
+  time: Wed, 20 Jul 2022 16:19:01 UTC
 record: -1

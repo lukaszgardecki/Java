@@ -22,8 +22,14 @@ class Rating implements Comparable<Rating> {
 
     @Override
     public int compareTo(Rating rating) {
-        // write your code here
-        return 0;
+
+        if ((upVotes-downVotes) == (rating.upVotes - rating.downVotes)) {
+            return 0;
+        } else if ((upVotes-downVotes) < (rating.upVotes - rating.downVotes)) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }
 

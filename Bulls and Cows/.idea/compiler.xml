@@ -9,6 +9,43 @@
       <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-test-results.main" target="11" />
       <module name="Bulls_and_Cows.Bulls_and_Cows-task-build-tmp.main" target="11" />
       <module name="Bulls_and_Cows.Bulls_and_Cows-task.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-Concat_positive_numbers.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-Creating_list.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-Find_the_nearest_number.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-How_to_get_an_element_by_the_index.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-Output_the_list's_elements.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-Powers_of_indexes.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-Removing_items.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-The_behavior_of_methods.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-ArrayList-What_ArrayList_can_store.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-Identify_a_possible_exception.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-Initializing_long_value.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-NPE,_zero_or_null.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-Only_true_or_false.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-Result_of_the_code.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-Safe_converting.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Boxing_and_unboxing-Wrapper_classes_for_char_and_int.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Addresses.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-compareTo.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Comparing_objects.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Implement_Comparable.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Implement_compareTo_method.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Implement_comparing_by_additional_fields.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Leaderboard.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Ratings.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Rewrite_compareTo_method.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Rules.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Comparable-Value_class.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Generics_and_Object-Boxes_are_not_just_objects.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Generics_and_Object-Correct_the_usage_of_non-generic_class.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Generics_and_Object-Initialize_an_object_of_a_generic_class.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Generics_and_Object-Reusing_code_with_Object.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Generics_and_Object-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Generics_and_Object-What_is_a_type.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Generics_and_Object-Why_generics.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Interface-Area_of_a_circle.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Interface-Compact_strings_with_AsciiCharSequence.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Interface-Implementing_an_interface.main" target="11" />
@@ -21,6 +58,66 @@
       <module name="Bulls_and_Cows.Topics-Interface-What_can_an_interface_have.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Interface-What_does_an_interface_define.main" target="11" />
       <module name="Bulls_and_Cows.Topics-Interface-Which_methods_must_be_overridden.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Correct_the_program.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Creating_instances.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Declaring_generic_classes.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Declaring_generic_classes_-_2.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Generic_parameter_values.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Pastry_packing_optimization.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Type_arguments.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Introduction_to_generic_programming-Type_parameter_inside_a_class_body.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Compression_algorithm.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Convert_a_date.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Create_an_euphonious_word.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Cutting_out_the_middle_of_a_string.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Determine_the_output.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Determine_the_value.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Determine_the_value__1_.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Double_characters.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Find_the_first_occurrence_of_the_word__the.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Generating_passwords.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Move_the_first_N_characters.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Number_of_occurrences.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Palindrome.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Parse_url.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Piece_of_alphabet.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-The_longest_word.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-The_lucky_ticket.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-The_percentage_of_G_and_C_characters.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-Processing_strings-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-A_package.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Blacklist.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Collection_interfaces.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Collections_properties.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Creating_instances.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Extra_methods.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Inheritance_of_standard_collections.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Root_interfaces.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Squares_list.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Supported_collections.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_Collections_Framework_overview-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Backward_indexes.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Companies.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Count_the_value_occurrences.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Equal_lists.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Filtering_the_list.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Greek_letters.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Implementations.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Mutable_lists.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Replacing_ArrayList_with_LinkedList.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Results_of_operations.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Select_correct_assignments.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Setting_a_new_name.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Similarities_between_lists_and_arrays.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Split_a_list_into_sublists.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-The_longest_string_in_the_list.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-The_List_interface-Theory.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-What_are_collections-Accessing_element_of_a_collection.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-What_are_collections-Initialize_a_collection.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-What_are_collections-The_one_suitable_description.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-What_are_collections-The_relations_between_Java_and_CS.main" target="11" />
+      <module name="Bulls_and_Cows.Topics-What_are_collections-Theory.main" target="11" />
       <module name="Bulls_and_Cows.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>

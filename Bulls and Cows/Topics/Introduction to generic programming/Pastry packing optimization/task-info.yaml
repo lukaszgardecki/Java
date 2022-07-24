@@ -15,5 +15,8 @@ files:
     \ }\n\nclass Pie { }\n\nclass Tart { }"
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/2597#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 20 Jul 2022 10:57:26 UTC
 record: -1

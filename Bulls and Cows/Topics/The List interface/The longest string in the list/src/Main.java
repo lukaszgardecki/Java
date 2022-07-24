@@ -4,6 +4,20 @@ public class Main {
 
     static void changeList(List<String> list) {
         // write your code here
+        int max = 0;
+        int ind = 0;
+        for (String word : list) {
+            if (word.length() > max) {
+                max = word.length();
+                ind = list.indexOf(word);
+            }
+        }
+
+        String j = list.get(ind);
+
+        for (String word : list) {
+            list.set(list.indexOf(word), j);
+        }
     }
 
     /* Do not change code below */

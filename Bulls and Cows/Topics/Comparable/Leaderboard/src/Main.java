@@ -24,7 +24,15 @@ class Score implements Comparable<Score> {
 
     @Override
     public int compareTo(Score score) {
-        // your code here
+        if (getTotalScore() == score.getTotalScore() && getPlayer().compareTo(score.getPlayer()) == 0) {
+            return 0;
+        } else if (getTotalScore() == score.getTotalScore() &&
+                getPlayer().compareTo(score.getPlayer()) < 0 ||
+                getTotalScore() < score.getTotalScore()) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }
 

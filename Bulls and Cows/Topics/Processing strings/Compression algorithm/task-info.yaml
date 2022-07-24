@@ -10,5 +10,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/2292#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 21 Jul 2022 17:53:49 UTC
 record: -1
