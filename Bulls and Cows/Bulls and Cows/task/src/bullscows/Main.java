@@ -1,17 +1,72 @@
 package bullscows;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-
-
         Scanner scanner = new Scanner(System.in);
         int bullsCounter = 0;
         int cowsCounter = 0;
-        String rand = Integer.toString((int) Math.floor(Math.random() * 9000) + 1000);
+//        String rand = Integer.toString((int) Math.floor(Math.random() * 9000) + 1000);
+        ArrayList<Character> tab = new ArrayList<>();
+        long pseudoRandomNumber = System.nanoTime();
+        StringBuilder randy = new StringBuilder(Long.toString(pseudoRandomNumber));
+        StringBuilder secretCode = new StringBuilder();
+        int index = 0;
 
-        System.out.println(rand);
+
+        System.out.println("Please, enter the secret code's length:");
+        int len = scanner.nextInt();
+
+
+        if (len <= 10 && len > 0) {
+            //odwrócenie liczby
+            randy.reverse();
+
+            //usuniêcie zer z pocz¹tku liczby
+            while (Character.getNumericValue(randy.charAt(0)) == 0) {
+                randy.deleteCharAt(0);
+            }
+
+            //stworzenie listy wartoœci unikatowych
+            for (int i = 0; i < 10; i++) {
+                tab.add((Integer.toString(i).charAt(0)));
+            }
+
+            //stworzenie liczby losowej
+            while (secretCode.length() < len) {
+                boolean isQnique = false;
+
+                for (int i = 0; i < tab.size(); i++) {
+                    if (randy.charAt(0) == tab.get(i)) {
+                        isQnique = true;
+                        index = i;
+                        break;
+                    }
+                }
+
+                if (isQnique) {
+                    secretCode.append(randy.charAt(0));
+                    tab.remove(tab.get(index));
+                    randy.deleteCharAt(0);
+                } else {
+                    randy.deleteCharAt(0);
+                }
+            }
+
+            System.out.printf("The random secret number is %s.", secretCode);
+
+        } else {
+            System.out.printf("Error: can't generate a secret number with a length of %d because there aren't enough unique digits.", len);
+        }
+
+
+
+
+
+
+
+
 
         //typowanie liczby
         String num = Integer.toString(scanner.nextInt());
@@ -54,6 +109,8 @@ public class Main {
 //                "Grade: 4 bulls.\n" +
 //                "Congrats! The secret code is 9876.");
     }
+
+
 
 
 }
