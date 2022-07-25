@@ -1,33 +1,40 @@
 package numbers;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Number{
-    private Scanner scanner;
-    private String num;
+    private final String num;
     private String[] tab;
+    private final List<String> propertiesNames = List.of("BUZZ", "DUCK", "PALINDROMIC", "GAPFUL", "SPY", "EVEN", "ODD");
 
+    //konstruktory
     public Number() {
-        scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         tab = scanner.nextLine().split("\\s+");
         this.num = tab[0];
-        //this.amount = tab[1];
     }
-    public Number(int num) {
-        //this.tab[0] = String.valueOf(num);
-        //this.num = this.tab[0];
-        this.num = "" + num  ;
+    public Number(long num) {
+        this.num = "" + num ;
     }
-
+    //gettery
     public long getNum() {
         return Long.parseLong(num);
     }
     public long getNum(int i) {
         return Long.parseLong(tab[i]);
     }
-    public int amountOfEl() {
+    public String getProperty() {
+        return tab[2].toUpperCase();
+    }
+    public final List<String> getPropertiesNames() {
+        return propertiesNames;
+    }
+    public int getAmountOfEl() {
         return tab.length;
     }
+
+    //metody sprawdzaj¹ce liczby
     public boolean isNatural() {
         return getNum() >= 1;
     }
@@ -48,16 +55,11 @@ public class Number{
 
         if (isDivisibleBy7() && endsWith7()) {
             answer = true;
-//            System.out.printf("It is a Buzz number:\nExplanation:\n%d is divisible by 7 and ends with 7.", num);
         } else if (isDivisibleBy7()) {
             answer = true;
-//            System.out.printf("It is a Buzz number:\nExplanation:\n%d is divisible by 7.", num);
         } else if (endsWith7()) {
             answer = true;
-//            System.out.printf("It is a Buzz number:\nExplanation:\n%d ends with 7.", num);
-        } /*else {
-//            System.out.printf("It is not a Buzz number.\nExplanation:\n%d is neither divisible by 7 nor does it end with 7.", num);
-        }*/
+        }
         return answer;
     }
     public boolean isDuckNumber() {
@@ -78,6 +80,20 @@ public class Number{
             if (x % y == 0) {
                 answer = true;
             }
+        }
+        return answer;
+    }
+    public boolean isSpy() {
+        boolean answer = false;
+        long product = 1;
+        long sum = 0;
+
+        for(int i = 0; i < this.num.length(); i++) {
+            sum += Character.getNumericValue(this.num.charAt(i)) ;
+            product *= Character.getNumericValue(this.num.charAt(i)) ;
+        }
+        if(sum == product) {
+            answer = true;
         }
         return answer;
     }
