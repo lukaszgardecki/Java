@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NumbersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-25T12:35:44" hostname="LUKASZ" time="0.691">
+  <properties/>
+  <testcase name="start" classname="NumbersTest" time="0.691"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 2?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > -51
+
+The first parameter should be a natural number or zero.
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 3?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > -103
+
+The first parameter should be a natural number or zero.
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 4?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > -6
+
+The first parameter should be a natural number or zero.
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 5?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > -119
+
+The first parameter should be a natural number or zero.
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 6?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > -69
+
+The first parameter should be a natural number or zero.
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 7?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 1
+
+Properties of 1
+even: false
+odd: true
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 2
+
+Properties of 2
+even: true
+odd: false
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 3
+
+Properties of 3
+even: false
+odd: true
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 4
+
+Properties of 4
+even: true
+odd: false
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 5
+
+Properties of 5
+even: false
+odd: true
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 6
+
+Properties of 6
+even: true
+odd: false
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 7
+
+Properties of 7
+even: false
+odd: true
+buzz: true
+duck: false
+palindromic: true
+
+Enter a request: > 8
+
+Properties of 8
+even: true
+odd: false
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 9
+
+Properties of 9
+even: false
+odd: true
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 10
+
+Properties of 10
+even: true
+odd: false
+buzz: false
+duck: true
+palindromic: false
+
+Enter a request: > 11
+
+Properties of 11
+even: false
+odd: true
+buzz: false
+duck: false
+palindromic: true
+
+Enter a request: > 12
+
+Properties of 12
+even: true
+odd: false
+buzz: false
+duck: false
+palindromic: false
+
+Enter a request: > 13
+
+Properties of 13
+even: false
+odd: true
+buzz: false
+duck: false
+palindromic: false
+
+Enter a request: > 14
+
+Properties of 14
+even: true
+odd: false
+buzz: true
+duck: false
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 8?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 4303500666108695177
+
+Properties of 4303500666108695177
+even: false
+odd: true
+buzz: true
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 9?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 3755676164255135513
+
+Properties of 3755676164255135513
+even: false
+odd: true
+buzz: false
+duck: false
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 10?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 6225854891000823279
+
+Properties of 6225854891000823279
+even: false
+odd: true
+buzz: false
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 11?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 2189270103798016437
+
+Properties of 2189270103798016437
+even: false
+odd: true
+buzz: true
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 12?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 6074987530221328238
+
+Properties of 6074987530221328238
+even: true
+odd: false
+buzz: false
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 13?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 5484777805252123175
+
+Properties of 5484777805252123175
+even: false
+odd: true
+buzz: true
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 14?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 2157470360588475196
+
+Properties of 2157470360588475196
+even: true
+odd: false
+buzz: false
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 15?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 2025410301069333434
+
+Properties of 2025410301069333434
+even: true
+odd: false
+buzz: false
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 16?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 9091557191074296048
+
+Properties of 9091557191074296048
+even: true
+odd: false
+buzz: false
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+?[1;31m
+Start test 17?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter 0 to exit.
+
+Enter a request: > 389414709039316232
+
+Properties of 389414709039316232
+even: true
+odd: false
+buzz: false
+duck: true
+palindromic: false
+
+Enter a request: > 0
+
+Goodbye!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
