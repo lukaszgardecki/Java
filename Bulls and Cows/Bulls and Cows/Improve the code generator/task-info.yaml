@@ -258,6 +258,7 @@ feedback:
     &gt; 1
     Input the number of possible symbols in the code:
     &gt; 0
-    Error: can&#39;t generate a secret number with a length of 1 because there aren&#39;t enough unique digits.
-  time: Sun, 24 Jul 2022 23:23:46 UTC
-record: -1
+    Error: symbols range length cannot be smaller than secret length
+    Input the number of possible symbols in the code:
+  time: Mon, 25 Jul 2022 07:56:11 UTC
+record: 5

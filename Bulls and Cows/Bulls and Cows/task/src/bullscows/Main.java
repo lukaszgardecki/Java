@@ -1,8 +1,5 @@
 package bullscows;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -20,7 +17,7 @@ public class Main {
         createSecretCode();
        // System.out.println(secretCode);
 
-        if (amountOfSigns != 0) {
+        if (amountOfSigns != 0 && len != 0 && len <= amountOfSigns && amountOfSigns <= MAX_LENGTH) {
             System.out.println("Okay, let's start a game!");
             do {
                 System.out.printf("Turn %d:\n", numOfTurn);
@@ -32,20 +29,45 @@ public class Main {
     }
 
     public static void createSecretCode() {
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input the length of the secret code:");
-        len = scanner.nextInt();
+
+        try {
+            len = scanner.nextInt();
+            scanner.nextLine();
+        } catch (InputMismatchException e) {
+            System.out.println("Error");
+            return;
+        }
+
+        try {
+            System.out.println("Input the number of possible symbols in the code:");
+            amountOfSigns = Integer.parseInt(scanner.nextLine());
+            if (amountOfSigns > MAX_LENGTH || amountOfSigns < len) {
+                System.out.printf("Error: maximum number of possible symbols in the code is %d (0-9, a-z).\n", MAX_LENGTH);
+            } else {
+                System.out.printf("Error: it's not possible to generate a code with a length of %d with %d unique symbols.\n", len, amountOfSigns);
+            }
+
+        } catch (NumberFormatException e) {
+            amountOfSigns = MAX_LENGTH;
+        }
         ArrayList<String> list = new ArrayList<>(len);
-        System.out.println("Input the number of possible symbols in the code:");
-        amountOfSigns = scanner.nextInt();
+
+//        while (amountOfSigns > MAX_LENGTH || amountOfSigns < len) {
+//            if (amountOfSigns > MAX_LENGTH) {
+//                System.out.printf("Error: maximum number of possible symbols in the code is %d (0-9, a-z).\n", MAX_LENGTH);
+//            } else {
+//                System.out.printf("Error: it's not possible to generate a code with a length of %d with %d unique symbols.\n", len, amountOfSigns);
+//            }
+//            System.out.println("\nInput the number of possible symbols in the code:");
+//            amountOfSigns = scanner.nextInt();
+//        }
 
 
 
         //stworzenie listy z wymaganymi
-        if (amountOfSigns == 0) {
-            list.add(" ");
-        } else if(amountOfSigns <= 10){
+        if(amountOfSigns <= 10){
             for (int i = 0; i < amountOfSigns; i++) {
                 String x = "";
                 list.add(x + i);
@@ -70,7 +92,7 @@ public class Main {
             star.append('*');
         }
 
-        if (len <= MAX_LENGTH && len > 0 && amountOfSigns > 0) {
+        if (len <= MAX_LENGTH && len > 0 && amountOfSigns > 0 && len <= amountOfSigns) {
             //stworzenie liczby losowej UNIKATOWEJ
             while (secretCode.length() < len) {
                 Random random = new Random();
@@ -99,6 +121,9 @@ public class Main {
         int bullsCounter = 0;
         int cowsCounter = 0;
         String num = scanner.nextLine();
+
+
+
 
         for (int i = 0; i < secretCode.length(); i++) {
             for (int j = 0; j < num.length(); j++) {
