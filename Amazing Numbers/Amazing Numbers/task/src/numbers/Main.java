@@ -1,7 +1,12 @@
 package numbers;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+
+
+//  input 1:    "L"             (wyœwietl wszystkie parametry dla liczby L)
+//  input 2:    "L N"           (wyœwietl wszystkie parametry N kolejnych liczb zaczynaj¹c od L)
+//  input 3:    "L N P1"        (wyœwietl N liczb, zawieraj¹cych parametr P1, wiêkszych lub równych ni¿ L)
+//  input 4:    "L N P1 P2..."  (wyœwietla N liczb, zawieraj¹cych okreœlone parametry, wiêkszych lub równych ni¿ L)
 
 public class Main {
     static Number num1;
@@ -22,10 +27,7 @@ public class Main {
             displayMessage(2);
             try {
                 //stwórz liczbê (nowy obiekt), na której bêd¹ wykonywane operacje
-                //  input 1:    "L"             (wyœwietl wszystkie parametry dla liczby L)
-                //  input 2:    "L N"           (wyœwietl wszystkie parametry N kolejnych liczb zaczynaj¹c od L)
-                //  input 3:    "L N P1"        (wyœwietl N liczb, zawieraj¹cych parametr P1, wiêkszych od L)
-                //  input 4:    "L N P1 P2"     (
+
                 num1 = new Number();
 
 
@@ -47,17 +49,7 @@ public class Main {
                     long down = num1.getNum();
                     long up =  down + num1.getNum(1);
                     displayNumbersFromTo(down, up);
-                }
-
-
-//                else if (num1.getAmountOfEl() == 3) {
-//                    //gdy wpisaliœmy trzy parametry
-//                    displayPropertyNumbers();
-//                }
-
-
-
-                else if (num1.getAmountOfEl() >= 3) {
+                } else if (num1.getAmountOfEl() >= 3) {
                     //gdy wpisaliœmy minimum 4 parametry
                     checkProperties();
                 }
@@ -69,33 +61,22 @@ public class Main {
                 displayMessage(1);
             }
 
-
             notExistingParams.clear();
             mutExPropTab.clear();
         }
     }
 
-
-
-
-
-
-
-
-
-    //metoda dla wielu parametrów
+    //metoda sprawedzaj¹ca wprowadzone w³aœciwoœci liczb
     public static void checkProperties() {
-
-        //za³o¿enie 1: wpisaliœmy przynajmniej dwa parametry!!!!!!!!!
-        //za³o¿enie 2: ta metoda ma zast¹piæ mêtodê dla 3 i 4 wprowadzonych  elementów !!!!!!!!
-
         ArrayList<String> inP = num1.getInputProperties();
-
         boolean areAllParamsExist = true;
         boolean areExistEvenAndOdd = inP.contains("EVEN") && inP.contains("ODD");
         boolean areExistDuckAndSpy = inP.contains("DUCK") && inP.contains("SPY");
         boolean areExistSunnyAndSquare = inP.contains("SUNNY") && inP.contains("SQUARE");
         boolean areMutExProp = areExistEvenAndOdd || areExistDuckAndSpy || areExistSunnyAndSquare;
+        long firstNum = num1.getNum(); //pierwsza liczba
+        long amoutOfNums = num1.getNum(1); // druga liczba
+        long counter = 0;
 
         for (int i = 0; i < inP.size(); i++) {
             String inputProperty = inP.get(i);                         //kolejna wprowadzona nazwa w³aœciwoœci
@@ -108,6 +89,7 @@ public class Main {
             }
         }
 
+        // je¿eli wyst¹pi³ wypadek ¿e w³aœciwoœci liczb siê wykluczaj¹ to dodaj te w³aœciwoœci do listy
         if (areExistEvenAndOdd) {
             mutExPropTab.add("EVEN");
             mutExPropTab.add("ODD");
@@ -121,24 +103,15 @@ public class Main {
             mutExPropTab.add("SQUARE");
         }
 
-
-
-
-
-
-        long firstNum = num1.getNum(); //pierwsza liczba
-        long amoutOfNums = num1.getNum(1); // druga liczba
-        long counter = 0;
-
         if (areAllParamsExist && !areMutExProp) {
             System.out.println();
             while(counter < amoutOfNums) {
-                Number num1 = new Number(firstNum);
-                String output = createOutput(num1);
+                Number num3 = new Number(firstNum);
+                String output = createOutput(num3);
                 boolean areAllParams = true;
 
-                for (int i = 0; i < num1.getInputProperties().size(); i++) {
-                    String inputProperty = Main.num1.getInputProperties().get(i).toLowerCase();
+                for (int i = 0; i < inP.size(); i++) {
+                    String inputProperty = inP.get(i).toLowerCase();
                     boolean outputHasParam = output.contains(inputProperty);
 
                     if (!outputHasParam) {
@@ -146,79 +119,25 @@ public class Main {
                         break;
                     }
                 }
-
                 if(areAllParams) {
                     System.out.print(output);
                     System.out.println();
                     counter++;
                 }
+
                 firstNum++;
             }
-        } else if (areMutExProp) {
-            //je¿eli wystêpuj¹ wykluczaj¹ce siê w³aœciwoœci
-            displayMessage(11);
-        } else {
+        } else if (!areAllParamsExist) {
             //je¿eli jakaœ nazwa w³aœciwoœci jest Ÿle wpisana
             displayMessage(8);
+        } else {
+            //je¿eli wystêpuj¹ wykluczaj¹ce siê w³aœciwoœci
+            displayMessage(11);
         }
 
 
 
     }
-
-
-    //metoda wyœwietlaj¹ca liczby je¿eli wprowadziliœmy 4 wartoœci
-//    public static void displayIfTwoParams() {
-//        //sprawdŸ, czy podane parametry s¹ w³aœciwie wpisane
-//        String firstParam = num1.getInsertProperty(1);
-//        String secondParam = num1.getInsertProperty(2);
-//        boolean firstParamIsExist = num1.getPropertiesNames().contains(firstParam);
-//        boolean secondParamIsExist = num1.getPropertiesNames().contains(secondParam);
-//        boolean areMutExProp = firstParam.equalsIgnoreCase("EVEN") && secondParam.equalsIgnoreCase("ODD")
-//                            || firstParam.equalsIgnoreCase("ODD") && secondParam.equalsIgnoreCase("EVEN")
-//
-//                            || firstParam.equalsIgnoreCase("DUCK") && secondParam.equalsIgnoreCase("SPY")
-//                            || firstParam.equalsIgnoreCase("SPY") && secondParam.equalsIgnoreCase("DUCK")
-//
-//                            || firstParam.equalsIgnoreCase("SUNNY") && secondParam.equalsIgnoreCase("SQUARE")
-//                            || firstParam.equalsIgnoreCase("SQUARE") && secondParam.equalsIgnoreCase("SUNNY");
-//        long down = num1.getNum(); //pierwsza liczba
-//        long amoutOfNums = num1.getNum(1); // druga liczba
-//        long counter = 0;
-//
-//        if (firstParamIsExist && secondParamIsExist && !areMutExProp) {
-//            System.out.println();
-//            while(counter < amoutOfNums) {
-//                Number num1 = new Number(down);
-//                String output = createOutput(num1);
-//
-//                boolean outputHasFirstParam = output.contains(Main.num1.getInsertProperty(1).toLowerCase());
-//                boolean outputHasSecondParam = output.contains(Main.num1.getInsertProperty(2).toLowerCase());
-//
-//                if(outputHasFirstParam && outputHasSecondParam) {
-//                    System.out.print(output);
-//                    System.out.println();
-//                    counter++;
-//                }
-//                down++;
-//            }
-//        } else if (areMutExProp) {
-//            //je¿eli poprawnie wpisano parê wzajemnie wykluczaj¹cych siê w³aœciwoœci
-//            displayMessage(11);
-//        } else if (!firstParamIsExist && !secondParamIsExist) {
-//            //je¿eli obie nazwy w³aœciwoœci s¹ b³êdnie wpisane
-//            displayMessage(10);
-//        } else if (!firstParamIsExist) {
-//            //je¿eli tylko pierwsza nazwa jest b³êdnie wpisana
-//            displayMessage(8);
-//        } else {
-//            //je¿eli tylko druga nazwa jest b³êdnie wpisana
-//            displayMessage(9);
-//        }
-//    }
-
-
-
 
     //metoda wyœwietlaj¹ca wszystkie w³aœciwoœci danej liczby;
     public static String createOutput(Number num) {
@@ -274,32 +193,6 @@ public class Main {
         }
     }
 
-//    //metoda wyœwietlaj¹ca liczby je¿eli wprowadziliœmy 3 wartoœci
-//    public static void displayPropertyNumbers() {
-//        long firstNum = num1.getNum();
-//        String prop = num1.getInsertProperty(2);
-//        boolean propertyIsExist = num1.getPropertiesNames().contains(prop);
-//        long counter = 0;
-//
-//        if (propertyIsExist) {
-//            System.out.println();
-//            while(counter < num1.getNum(1)) {
-//                num1 = new Number(firstNum);
-//                String output = createOutput(num1);
-//
-//                if(output.contains(num1.getInsertProperty(2).toLowerCase())) {
-//                    System.out.print(output);
-//                    System.out.println();
-//                    counter++;
-//                }
-//                firstNum++;
-//            }
-//        } else {
-//            notExistingParams.add(prop);
-//            displayMessage(8);
-//        }
-//    }
-
     //metoda wyœwietlaj¹ca komunikaty
     public static void displayMessage(int msg) {
         switch (msg) {
@@ -338,7 +231,7 @@ public class Main {
                                            + "Available properties: %s",
                     w, x);
                 } else {
-                    System.out.printf(       "The property %s are wrong."       +  "\n"
+                    System.out.printf(       "The properties %s are wrong."       +  "\n"
                                            + "Available properties: %s",
                     w, x);
                 }
