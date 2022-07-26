@@ -1,12 +1,13 @@
 package numbers;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Number{
     private final String num;
     private String[] tab;
-    private final List<String> propertiesNames = List.of("BUZZ", "DUCK", "PALINDROMIC", "GAPFUL", "SPY", "EVEN", "ODD");
+    private final List<String> propertiesNames = List.of("BUZZ", "DUCK", "PALINDROMIC", "GAPFUL", "SPY", "EVEN", "ODD", "SQUARE", "SUNNY", "JUMPING");
 
     //konstruktory
     public Number() {
@@ -24,8 +25,27 @@ public class Number{
     public long getNum(int i) {
         return Long.parseLong(tab[i]);
     }
-    public String getProperty() {
-        return tab[2].toUpperCase();
+    public ArrayList<String> getInputProperties() {
+
+
+
+        //String[] tempTab = new String[tab.length-2];
+        ArrayList<String> tempList = new ArrayList<>();
+
+        for (int i = 2; i < getAmountOfEl(); i++) {
+
+            tempList.add(tab[i].toUpperCase());
+            //tempTab[i-2] = tab[i].toUpperCase();
+
+
+        }
+        return tempList;
+    }
+    public String getInsertProperty(int minimum2) {
+        return tab[minimum2].toUpperCase();
+    }
+    public String getListProperty(int from0) {
+        return this.propertiesNames.get(from0);
     }
     public final List<String> getPropertiesNames() {
         return propertiesNames;
@@ -95,6 +115,42 @@ public class Number{
         if(sum == product) {
             answer = true;
         }
+        return answer;
+    }
+    public boolean isSquare() {
+        double sqrt = Math.sqrt(getNum());
+        return sqrt - Math.floor(sqrt) == 0;
+    }
+    public boolean isSunny() {
+        boolean answer = false;
+        double sqrt = Math.sqrt(getNum() + 1);
+        if (sqrt - Math.floor(sqrt) == 0) answer = true;
+        return answer;
+    }
+    public boolean isJumping() {
+        boolean answer = false, isNineZero;
+
+        long digit1, digit2, difference;
+
+        if (num.length() > 1) {
+            for (int i = 1; i < num.length(); i++) {
+                digit1 = num.charAt(i-1);
+                digit2 = num.charAt(i);
+                difference = Math.abs(digit1 - digit2);
+                isNineZero = digit1 == 0 && digit2 == 9
+                          || digit1 == 9 && digit2 == 0;
+
+                if (isNineZero || difference != 1) {
+                    answer = false;
+                    break;
+                } else {
+                    answer = true;
+                }
+            }
+        } else {
+            answer = true;
+        }
+
         return answer;
     }
 }
