@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Number{
     private final String num;
     private String[] tab;
-    private final List<String> propertiesNames = List.of("BUZZ", "DUCK", "PALINDROMIC", "GAPFUL", "SPY", "EVEN", "ODD", "SQUARE", "SUNNY", "JUMPING");
+    private final List<String> propertiesNames = List.of("BUZZ", "DUCK", "PALINDROMIC", "GAPFUL", "SPY", "EVEN", "ODD", "SQUARE", "SUNNY", "JUMPING", "SAD", "HAPPY");
 
     //konstruktory
     public Number() {
@@ -26,18 +26,11 @@ public class Number{
         return Long.parseLong(tab[i]);
     }
     public ArrayList<String> getInputProperties() {
-
-
-
         //String[] tempTab = new String[tab.length-2];
         ArrayList<String> tempList = new ArrayList<>();
 
         for (int i = 2; i < getAmountOfEl(); i++) {
-
             tempList.add(tab[i].toUpperCase());
-            //tempTab[i-2] = tab[i].toUpperCase();
-
-
         }
         return tempList;
     }
@@ -151,6 +144,34 @@ public class Number{
             answer = true;
         }
 
+        return answer;
+    }
+    public boolean isSad() {
+        return !isHappy();
+    }
+    public boolean isHappy() {
+        boolean answer = false;
+        String[] digitTab = num.split("");
+        int number;
+        int sum = 0;
+
+        while (true) {
+            //zsumuj kwadraty wszystkich kolejnych cyfr
+            for (String s : digitTab) {
+                number = (int) Math.pow(Double.parseDouble(s), 2);
+                sum += number;
+            }
+            if (sum == 1) {
+                answer = true;
+                break;
+            }
+            if (sum == 4) {
+                break;
+            }
+            String tuptup = Integer.toString(sum);
+            digitTab =  tuptup.split("");
+            sum = 0;
+        }
         return answer;
     }
 }
