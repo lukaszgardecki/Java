@@ -13,46 +13,83 @@ public class Main {
         Player player = new Player();
         AI ai = new AI();
 
+        while (true) {
+            int gameNum = selectGame();
+            if (gameNum == 0) break;
+            Board.displayBoard();
 
-        int gameNum = selectGame();
-
-        Board.displayBoard();
-
-        while(true) {
-            try {
-                player.makeMove();
+            while (true) {
+                try {
 
 
-                boolean isDraw = Board.countFreeFields() == 0;
-                boolean isWin = checkWinner();
-                if (isWin) {
-                    Message.display(7);
-                    break;
-                } else if (isDraw) {
-                    Message.display(5);
-                    break;
-                }/* else {
+                    if (gameNum == 1) ai.makeMove();
+                    ;
+                    if (gameNum == 2 || gameNum == 3) player.makeMove();
+                    ;
+
+
+                    boolean isDraw = Board.countFreeFields() == 0;
+                    boolean isWin = checkWinner();
+                    if (isWin) {
+                        Message.display(7);
+                        break;
+                    } else if (isDraw) {
+                        Message.display(5);
+                        break;
+                    }/* else {
                     Message.display(6);
                 }*/
-            } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
-                Message.display(2);
+                } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                    Message.display(2);
+                }
+
+                if (gameNum == 1 || gameNum == 2) ai.makeMove();
+
             }
-
-            ai.makeMove();
-
+            Board.table = Board.clearBoard();
         }
     }
 
     public static int selectGame() {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> menuTab = new ArrayList<>();
+        int game;
 
+        while(true) {
+            try {
+                Message.display(9);
+                String[] inputTab = scanner.nextLine().split("\\s+");
 
-        Message.display(9);
-        String[] inputTab = scanner.nextLine().split("\\s+");
-        
+                //je¿eli pierwsze s³owo to start
+                if (inputTab[0].equalsIgnoreCase("START")) {
 
+                    if (inputTab[1].equalsIgnoreCase("EASY") && inputTab[2].equalsIgnoreCase("EASY")) {
+                        game = 1;
+                        break;
+                    } else if (inputTab[1].equalsIgnoreCase("USER") && inputTab[2].equalsIgnoreCase("EASY")
+                            || inputTab[1].equalsIgnoreCase("EASY") && inputTab[2].equalsIgnoreCase("USER")) {
+                        game = 2;
+                        break;
+                    } else if (inputTab[1].equalsIgnoreCase("USER") && inputTab[2].equalsIgnoreCase("USER")) {
+                        game = 3;
+                        break;
+                    } else {
+                        Message.display(10);
+                    }
 
+                } else if (inputTab[0].equalsIgnoreCase("EXIT")) {
+                    game = 0;
+                    break;
+                } else {
+                    Message.display(10);
+                }
+            } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                Message.display(10);
+                game = 0;
+            }
+        }
+
+        return game;
     }
 
 

@@ -1,7 +1,9 @@
 package tictactoe;
 
+import java.util.Arrays;
+
 public class Board {
-    static String[][] table = {{" ", " ", " "}, {" ", " ", " "}, {" ", " ", " "} };
+    static String[][] table = {{" ", " ", " "}, {" ", " ", " "}, {" ", " ", " "}};
     static final String SIGN_X = "X";
     static final String SIGN_O = "O";
     static final String SIGN_EMPTY = " ";
@@ -107,5 +109,15 @@ public class Board {
             }
         }
         return amountO;
+    }
+
+    public static String[][] clearBoard() {
+        String[][] temp = getTable();
+
+        //wyczyœæ tablicê (wype³nij ca³¹ tablicê pustymi polami)
+        for (String[] str : temp) {
+            Arrays.fill(str, " ");
+        }
+        return temp;
     }
 }
