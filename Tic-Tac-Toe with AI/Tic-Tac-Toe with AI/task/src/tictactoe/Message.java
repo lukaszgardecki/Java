@@ -13,6 +13,7 @@ public class Message {
             case 8: System.out.println("Making move level \"easy\""); break;
             case 9: System.out.print("\nInput command: "); break;
             case 10: System.out.println("Bad parameters!"); break;
+            case 11: System.out.println("Making move level \"medium\""); break;
         }
     }
 }

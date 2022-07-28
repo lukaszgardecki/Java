@@ -7,7 +7,7 @@ public class Board {
     static final String SIGN_X = "X";
     static final String SIGN_O = "O";
     static final String SIGN_EMPTY = " ";
-    static String currentPlayer;
+    static String currentPlayer = "X";
 
     //Getters
     public static String getSignX() {
@@ -31,10 +31,6 @@ public class Board {
         currentPlayer = sign;
     }
 
-
-
-
-
     //display the board
     public static void displayBoard() {
         System.out.println("---------");
@@ -54,8 +50,6 @@ public class Board {
         System.out.println("---------");
     }
 
-
-
     // put a sign on the board
     public static void insertSign(int cor1, int cor2) {
         int amountX = countXs();
@@ -73,7 +67,6 @@ public class Board {
                 table[cor1-1][cor2-1] = getSignO();
                 setCurrentPlayer(SIGN_O);
                 displayBoard();
-
             } else {
                 Message.display(4);
             }
@@ -81,7 +74,6 @@ public class Board {
             Message.display(3);
         }
     }
-
 
     public static int countFreeFields() {
         int counter = 0;
@@ -110,7 +102,6 @@ public class Board {
         }
         return amountO;
     }
-
     public static String[][] clearBoard() {
         String[][] temp = getTable();
 

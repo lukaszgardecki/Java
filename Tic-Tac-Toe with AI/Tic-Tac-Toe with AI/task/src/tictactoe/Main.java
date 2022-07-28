@@ -1,9 +1,9 @@
 package tictactoe;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    static int game;
 
     public static void main(String[] args) {
         play();
@@ -14,19 +14,25 @@ public class Main {
         AI ai = new AI();
 
         while (true) {
-            int gameNum = selectGame();
-            if (gameNum == 0) break;
+            selectGame();
+
+            if (game == 0) break;
             Board.displayBoard();
 
             while (true) {
+
+
+
+
                 try {
-
-
-                    if (gameNum == 1) ai.makeMove();
-                    ;
-                    if (gameNum == 2 || gameNum == 3) player.makeMove();
-                    ;
-
+                    int amountBefore = Board.countOs() + Board.countXs();
+                    int amountAfter = amountBefore;
+                    while(amountBefore == amountAfter) {
+                        if (game == 1 || game == 3 || game == 8) ai.makeMove(1);
+                        if (game == 5 || game == 7 || game == 9) ai.makeMove(2);
+                        if (game == 2 || game == 4 || game == 6) player.makeMove();
+                        amountAfter = Board.countOs() + Board.countXs();
+                    }
 
                     boolean isDraw = Board.countFreeFields() == 0;
                     boolean isWin = checkWinner();
@@ -39,22 +45,47 @@ public class Main {
                     }/* else {
                     Message.display(6);
                 }*/
+
+
+                    if (game == 1 || game == 2 ||game == 9) ai.makeMove(1);
+                    if (game == 5 || game == 6 ||game == 8) ai.makeMove(2);
+
+
+                    isDraw = Board.countFreeFields() == 0;
+                    isWin = checkWinner();
+                    if (isWin) {
+                        Message.display(7);
+                        break;
+                    } else if (isDraw) {
+                        Message.display(5);
+                        break;
+                    }
+
+
+
+
+
                 } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
                     Message.display(2);
                 }
 
-                if (gameNum == 1 || gameNum == 2) ai.makeMove();
+
+
+
+
+
+
+
+
+
 
             }
             Board.table = Board.clearBoard();
         }
     }
 
-    public static int selectGame() {
+    public static void selectGame() {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> menuTab = new ArrayList<>();
-        int game;
-
         while(true) {
             try {
                 Message.display(9);
@@ -62,21 +93,42 @@ public class Main {
 
                 //je¿eli pierwsze s³owo to start
                 if (inputTab[0].equalsIgnoreCase("START")) {
-
                     if (inputTab[1].equalsIgnoreCase("EASY") && inputTab[2].equalsIgnoreCase("EASY")) {
                         game = 1;
                         break;
-                    } else if (inputTab[1].equalsIgnoreCase("USER") && inputTab[2].equalsIgnoreCase("EASY")
-                            || inputTab[1].equalsIgnoreCase("EASY") && inputTab[2].equalsIgnoreCase("USER")) {
+                    } else if (inputTab[1].equalsIgnoreCase("USER") && inputTab[2].equalsIgnoreCase("EASY")) {
                         game = 2;
                         break;
-                    } else if (inputTab[1].equalsIgnoreCase("USER") && inputTab[2].equalsIgnoreCase("USER")) {
+                    } else if (inputTab[1].equalsIgnoreCase("EASY") && inputTab[2].equalsIgnoreCase("USER")) {
                         game = 3;
                         break;
-                    } else {
-                        Message.display(10);
+                    } else if (inputTab[1].equalsIgnoreCase("USER") && inputTab[2].equalsIgnoreCase("USER")) {
+                        game = 4;
+                        break;
+                    } else if (inputTab[1].equalsIgnoreCase("MEDIUM") && inputTab[2].equalsIgnoreCase("MEDIUM")) {
+                        game = 5;
+                        break;
+                    } else if (inputTab[1].equalsIgnoreCase("USER") && inputTab[2].equalsIgnoreCase("MEDIUM")) {
+                        game = 6;
+                        break;
+                    } else if (inputTab[1].equalsIgnoreCase("MEDIUM") && inputTab[2].equalsIgnoreCase("USER")) {
+                        game = 7;
+                        break;
+                    } else if (inputTab[1].equalsIgnoreCase("EASY") && inputTab[2].equalsIgnoreCase("MEDIUM")) {
+                        game = 8;
+                        break;
+                    } else if (inputTab[1].equalsIgnoreCase("MEDIUM") && inputTab[2].equalsIgnoreCase("EASY")) {
+                        game = 9;
+                        break;
                     }
 
+
+
+
+
+                    else {
+                        Message.display(10);
+                    }
                 } else if (inputTab[0].equalsIgnoreCase("EXIT")) {
                     game = 0;
                     break;
@@ -88,8 +140,6 @@ public class Main {
                 game = 0;
             }
         }
-
-        return game;
     }
 
 
