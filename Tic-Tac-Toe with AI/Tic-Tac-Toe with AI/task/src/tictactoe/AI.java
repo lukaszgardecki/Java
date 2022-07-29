@@ -1,6 +1,7 @@
 package tictactoe;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class AI {
@@ -195,5 +196,20 @@ public class AI {
         }
         Message.display(11);
         Board.insertSign(c1 + 1, c2 + 1);
+    }
+
+    void hard() {
+        //minimax
+        String[][] OriginBoard = Board.getTable();
+
+
+
+        for (int i = 0; i < Board.countFreeFields(OriginBoard); i++) {
+            String[][] CopyBoard = Arrays.copyOf(OriginBoard, OriginBoard.length);
+
+
+
+
+        }
     }
 }

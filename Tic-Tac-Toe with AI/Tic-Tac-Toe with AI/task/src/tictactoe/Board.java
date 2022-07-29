@@ -84,6 +84,16 @@ public class Board {
         }
         return counter;
     }
+    public static int countFreeFields(String[][] ta) {
+        int counter = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if(ta[i][j].equals(" ")) counter++;
+            }
+        }
+        return counter;
+    }
+
     public static int countXs() {
         int amountX = 0;
         for(int i = 0; i < 3; i++) {
