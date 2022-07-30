@@ -719,30 +719,34 @@ files:
         }
     }
   learner_created: true
+- name: src/tictactoe/TicTacToeBoard.java
+  visible: true
+  learner_created: true
+- name: src/tictactoe/Players.java
+  visible: true
+  learner_created: true
+- name: src/tictactoe/GameController.java
+  visible: true
+  learner_created: true
+- name: src/tictactoe/HardComputerPlayer.java
+  visible: true
+  learner_created: true
+- name: src/tictactoe/MediumComputerPlayer.java
+  visible: true
+  learner_created: true
+- name: src/tictactoe/HumanPlayer.java
+  visible: true
+  learner_created: true
+- name: src/tictactoe/EasyComputerPlayer.java
+  visible: true
+  learner_created: true
 - name: src/tictactoe/Player.java
   visible: true
-  text: |
-    package tictactoe;
-
-    import java.util.Scanner;
-
-    public class Player {
-        Scanner scanner = new Scanner(System.in);
-
-
-
-        public void makeMove() {
-            Message.display(1);
-            String[] corTab = scanner.nextLine().split(" ");
-            int cor1 = Integer.parseInt(corTab[0]);
-            int cor2 = Integer.parseInt(corTab[1]);
-
-            //insert sign
-            Board.insertSign(cor1, cor2);
-
-        }
-    }
   learner_created: true
 feedback_link: https://hyperskill.org/learn/step/7438#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Sat, 30 Jul 2022 15:35:39 UTC
 record: -1

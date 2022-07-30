@@ -1,20 +1,11 @@
 package tictactoe;
 
-import java.util.Scanner;
+public abstract class Player {
+    TicTacToeBoard board;
 
-public class Player {
-    Scanner scanner = new Scanner(System.in);
-
-
-
-    public void makeMove() {
-        Message.display(1);
-        String[] corTab = scanner.nextLine().split(" ");
-        int cor1 = Integer.parseInt(corTab[0]);
-        int cor2 = Integer.parseInt(corTab[1]);
-
-        //insert sign
-        Board.insertSign(cor1, cor2);
-
+    public Player(TicTacToeBoard board) {
+        this.board = board;
     }
+
+    abstract public void makeMove();
 }

@@ -393,7 +393,7 @@ files:
         }
     }
   learner_created: true
-- name: src/tictactoe/Player.java
+- name: src/tictactoe/Player333.java
   visible: true
   text: |
     package tictactoe;
