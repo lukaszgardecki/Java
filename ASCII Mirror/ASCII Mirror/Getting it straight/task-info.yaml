@@ -214,6 +214,30 @@ files:
 
     Hello
   learner_created: false
+- name: src/asciimirror/r
+  visible: true
+  learner_created: true
+- name: src/asciimirror/file
+  visible: true
+  learner_created: true
+- name: src/asciimirror/te
+  visible: true
+  learner_created: true
+- name: src/asciimirror/Camel
+  visible: true
+  learner_created: true
+- name: src/asciimirror/file3
+  visible: true
+  learner_created: true
+- name: src/asciimirror/Cow
+  visible: true
+  learner_created: true
+- name: src/asciimirror/file2
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/260/stages/1320/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 30 Jul 2022 18:45:45 UTC
 record: -1

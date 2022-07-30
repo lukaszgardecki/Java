@@ -60,5 +60,11 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/projects/260/stages/1316/implement#comment
-status: Unchecked
-record: -1
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #1
+
+    When the program just started, output should contain exactly 1 non-empty line with &quot;file path&quot; substring
+  time: Sat, 30 Jul 2022 15:48:28 UTC
+record: 1
