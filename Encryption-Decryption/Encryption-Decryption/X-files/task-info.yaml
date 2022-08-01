@@ -135,9 +135,9 @@ files:
 - name: output.txt
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/46/stages/249/implement#comment
+feedback_link: https://hyperskill.org/learn/step/5391#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: Sun, 31 Jul 2022 12:30:29 UTC
-record: -1
+record: 5
