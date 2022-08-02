@@ -1,6 +1,5 @@
 package converter;
 
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 
@@ -29,25 +28,6 @@ public class Main {
             } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
                 System.err.println("Enter two numbers! Try again!");
             }
-
-            //String fromTo = scanner.nextLine();
-
-           // Conversion conversion;
-
-//            switch (fromTo) {
-//                case "/from":
-//                    conversion = new Conversion(new FromDecimal());
-//                    conversion.execute();
-//                    break;
-//                case "/to":
-//                    conversion = new Conversion(new ToDecimal());
-//                    conversion.execute();
-//                    break;
-//                case "/exit":
-//                    return;
-//                default:
-//                    System.err.println("Unknown operation. Try again!");
-//            }
         }
     }
 
@@ -57,79 +37,63 @@ public class Main {
         while (true) {
             System.out.printf("Enter number in base %d to convert to base %d (To go back type /back) ", baseFrom, baseTo);
             String num = scanner.nextLine();
-            if (num.equals("/back")) return;
 
+            if (num.equals("/back")) {
+                return;
+            } else {
+                //je¿eli wpisano potencjaln¹ liczbê dziesiêtn¹
+                if (num.contains(".")) {
+                    String[] numTab = num.split("\\.");
+                    int p = 1;
+                    double result = 0;
 
-            BigInteger n = new BigInteger(num, baseFrom);
-            String n2 = n.toString();
-            String m = new BigInteger(n2).toString(baseTo);
+                    for (int i = 1; i <= numTab[1].length(); i++) {
+                        int x = Character.getNumericValue(numTab[1].charAt(i - 1));
+                        if (x == 0) continue;
+                        result = result + (x * Math.pow(baseFrom, -i));
+                    }
 
-            //String n = Integer.toString(decimalNum, targetBase);
-            System.out.printf("Conversion result: %s\n\n", m);
+                    //liczba po przecinku zaminiona na dziesiêtny system:
+                    numTab[1] = Double.toString(result).substring(Double.toString(result).indexOf(".") + 1);
+
+                    double num2 = result;
+
+                    int amountOfNums = 5; // -> iloœæ miejsc po przecinku, które chcemy
+                    StringBuilder newNum = new StringBuilder("");
+                    String[] temp;
+
+                    for (int i = 0; i < amountOfNums; i++) {
+                        num2 = num2 * baseTo;
+                        temp = Double.toString(num2).split("\\.");
+                        num2 = Double.parseDouble("0." + temp[1]);
+                        newNum.append(Integer.toString(Integer.parseInt(temp[0]), baseTo));
+                    }
+
+                    String k = integerConvert(numTab[0], baseFrom, baseTo);
+                    System.out.printf("Conversion result: %s.%s\n\n", k, newNum);
+                }
+
+                //je¿eli wpisano liczbê ca³kowit¹
+                else {
+                    String m = integerConvert(num, baseFrom, baseTo);
+                    System.out.printf("Conversion result: %s\n\n", m);
+                }
+            }
         }
+    }
+
+    public static String integerConvert(String num, int baseFrom, int baseTo) {
+        BigInteger n = new BigInteger(num, baseFrom);
+        String n2 = n.toString();
+        return new BigInteger(n2).toString(baseTo);
     }
 }
 
 
-//
-//    class Conversion {
-//        private final FindingConversion conversion;
-//
-//        public Conversion (FindingConversion conversion) {
-//            this.conversion = conversion;
-//        }
-//
-//        public void execute() {
-//            conversion.convert();
-//        }
-//    }
-//
-//
-//    interface FindingConversion {
-//        void convert();
-//    }
-//
-//    class FromDecimal implements FindingConversion {
-//
-//        @Override
-//        public void convert() {
-//            Scanner scanner = new Scanner(System.in);
-//
-//            System.out.println("Enter number in base 10 to convert to base 2 (To go back type /back) ");
-//            String[] tab = scanner.nextLine().split("\\s+");
-//
-//
-//            //System.out.print("Enter number in decimal system: ");
-//            int decimalNum = Integer.parseInt(scanner.nextLine());
-//
-//            //System.out.print("Enter target base: ");
-//            int targetBase = scanner.nextInt();
-//
-//            String n = Integer.toString(decimalNum, targetBase);
-//            System.out.printf("Conversion result: %s\n", n);
-//
-//        }
-//    }
-//
-//    class ToDecimal implements FindingConversion {
-//
-//        @Override
-//        public void convert() {
-//            Scanner scanner = new Scanner(System.in);
-//
-//            System.out.print("Enter source number: ");
-//            String num = scanner.nextLine();
-//
-//            System.out.print("Enter source base: ");
-//            int targetBase = scanner.nextInt();
-//
-//            int n = Integer.parseInt(num, targetBase);
-//            System.out.printf("Conversion to decimal result: %d\n", n);
-//        }
-//
-//    }
-//
-//
+
+
+
+
 
 
 
