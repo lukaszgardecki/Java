@@ -1,5 +1,4 @@
 package flashcards;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,8 +23,6 @@ public class Main {
             String definition = scanner.nextLine();
             definitionList.add(definition);
         }
-
-
 
         for (int i = 0; i < definitionList.size(); i++) {
             String name = cardsList.get(i);
