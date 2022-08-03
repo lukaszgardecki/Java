@@ -1,6 +1,8 @@
 package flashcards;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
@@ -108,6 +110,7 @@ public class Main {
 
         File file = new File(path);
 
+
         try (Scanner inputScanner = new Scanner(file)) {
             while (inputScanner.hasNextLine()) {
                 counter++;
@@ -120,25 +123,55 @@ public class Main {
 
     }
     public static void exportCard() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("File name:");
+        String path = scanner.next();
+        File file = new File(path);
+        int counter = map.size();
 
+        try (FileWriter writer = new FileWriter(file)) {
+
+            for (Map.Entry<String, String> el : map.entrySet()) {
+                String term = el.getKey();
+                String definition = el.getValue();
+                writer.write(term + "\t" + definition + "\n");
+            }
+
+            System.out.printf("%d cards have been loaded.\n", counter);
+        } catch (IOException e) {
+            System.out.println("File not found.");
+        }
     }
+
+
+    // --------------- POPRAWIÆ ASK BO NIE DZIA£A, ZROBIÆ ABY WYŒWIETLA£ TYLE PYTAÑ ILE CHCEMY,
+    //--------------- A CO JEŒLI W MAPIE JEST MNIEJ PYTAÑ?
 
     public static void ask() {
         Scanner scanner = new Scanner(System.in);
         //zgadywanie definicji
-        for (Map.Entry<String, String> el : map.entrySet()) {
-            String term = el.getKey();
-            String definition = el.getValue();
+        int counter = 0;
 
-            System.out.printf("Print the definition of \"%s\":\n", term);
-            String answer = scanner.nextLine();
-            if (definition.equals(answer)) {
-                System.out.println("Correct!");
-            } else if (map.containsValue(answer)) {
-                System.out.printf("Wrong. The right answer is \"%s\", but your definition is correct for \"%s\".\n", definition, getKeybyValue(map, answer));
-            } else {
-                System.out.printf("Wrong. The right answer is \"%s\".\n", definition);
+        System.out.println("How many times to ask?");
+        int amount = scanner.nextInt();
+        scanner.nextLine();
+
+        while (counter < amount) {
+            for (Map.Entry<String, String> el : map.entrySet()) {
+                String term = el.getKey();
+                String definition = el.getValue();
+
+                System.out.printf("Print the definition of \"%s\":\n", term);
+                String answer = scanner.nextLine();
+                if (definition.equals(answer)) {
+                    System.out.println("Correct!");
+                } else if (map.containsValue(answer)) {
+                    System.out.printf("Wrong. The right answer is \"%s\", but your definition is correct for \"%s\".\n", definition, getKeybyValue(map, answer));
+                } else {
+                    System.out.printf("Wrong. The right answer is \"%s\".\n", definition);
+                }
             }
+            counter++;
         }
     }
 
