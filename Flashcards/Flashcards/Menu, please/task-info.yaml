@@ -828,6 +828,12 @@ files:
 - name: src/flashcards/capitals.txt
   visible: true
   learner_created: true
+- name: src/flashcards/ppp.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/5347#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 04 Aug 2022 18:44:21 UTC
+record: 5

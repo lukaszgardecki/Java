@@ -596,6 +596,24 @@ files:
     \   \"London\",\n                \"Abuja\",\n                \"Berlin\"\n    \
     \    );\n    }\n    \n}\n\n\n\n\n"
   learner_created: false
+- name: src/flashcards/ppp.txt
+  visible: true
+  text: |
+    2
+    2
+    3
+    3
+    4
+    4
+  learner_created: true
+- name: src/flashcards/capitals.txt
+  visible: true
+  text: |2+
+
+  learner_created: true
+- name: src/flashcards/log.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/5348#comment
 status: Unchecked
 record: -1
