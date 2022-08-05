@@ -292,6 +292,26 @@ files:
     }
 
   learner_created: false
+- name: src/search/database.txt
+  visible: true
+  text: |-
+    Dwight Joseph djo@gmail.com
+    Rene Webb webb@gmail.com
+    Katie Jacobs
+    Erick Harrington harrington@gmail.com
+    Myrtle Medina
+    Erick Burgess
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/66/stages/358/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Exception in test #5\n\njava.lang.NullPointerException: Cannot invoke\
+    \ &quot;java.util.ArrayList.size()&quot; because the return value of &quot;java.util.SortedMap.get(Object)&quot;\
+    \ is null\r\n\tat search.Main.findPerson(Main.java:84)\r\n\tat search.Main.play(Main.java:42)\r\
+    \n\tat search.Main.main(Main.java:17)\n\nPlease find below the output of your\
+    \ program during this failed test.\nNote that the &#39;&gt;&#39; character indicates\
+    \ the beginning of the input line.\n\n---\n\nArguments: --data names.txt\n\n===\
+    \ Menu ===\n1. Find a person\n2. Print all people\n0. Exit\n&gt; 1\n\nEnter a\
+    \ name or email to search all suitable people.\n&gt; @"
+  time: Fri, 05 Aug 2022 22:34:34 UTC
 record: -1

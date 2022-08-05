@@ -12,62 +12,6 @@ files:
         }
     }
   learner_created: false
-- name: test/SearchEngineTests.java
-  visible: false
-  text: |
-    public class SearchEngineTests {
-        public static final String NAMES = "Kristofer Galley\n" +
-            "Fernando Marbury fernando_marbury@gmail.com\n" +
-            "Kristyn Nix nix-kris@gmail.com\n" +
-            "Regenia Enderle\n" +
-            "Malena Gray\n" +
-            "Colette Mattei\n" +
-            "Wendolyn Mcphillips\n" +
-            "Jim Gray\n" +
-            "Coreen Beckham\n" +
-            "Bob Yeh bobyeah@gmail.com\n" +
-            "Shannan Strope stropeshah@gmail.com\n" +
-            "Yer Fillion\n" +
-            "Margene Resendez marres@gmail.com\n" +
-            "Blossom Ambler\n" +
-            "Teri Ledet teri_ledet@gmail.com\n" +
-            "Dana Baron baron@gmail.com\n" +
-            "Abram Goldsberry\n" +
-            "Yer Leopold\n" +
-            "Stefania Trunzo\n" +
-            "Alexis Leopold\n" +
-            "Carlene Pompa\n" +
-            "Oliver Dacruz\n" +
-            "Jonie Richter\n" +
-            "Pasquale Gallien gallien@evilcorp.com\n" +
-            "Verdie Gentle\n" +
-            "Gerardo Strouth gallien@evilcorp.com\n" +
-            "Agripina Dones\n" +
-            "Latricia Niebuhr\n" +
-            "Malena Schommer\n" +
-            "Drema Leopold\n" +
-            "Heide Payeur\n" +
-            "Ranae Digiovanni\n" +
-            "Simona Pereira\n" +
-            "Nick Digiovanni\n" +
-            "Angelita Wigington gallien@evilcorp.com\n" +
-            "Elin Gray\n" +
-            "Dwain Trunzo\n" +
-            "Boris Beiler\n" +
-            "Remi Malek fsociefy@gmail.com\n" +
-            "Demetria Hostetler gallien@evilcorp.com\n" +
-            "Nydia Mcduffie\n" +
-            "Florencio Defibaugh\n" +
-            "Warner Giblin\n" +
-            "May Mans\n" +
-            "Shu Gray\n" +
-            "Kaycee Gray\n" +
-            "Victorina Froehlich victory@gmail.com\n" +
-            "Roseanne Gray\n" +
-            "Erica Radford hisam@gmail.com\n" +
-            "Elyse Pauling";
-    }
-  learner_created: false
 - name: test/SimpleSearchEngineTest.java
   visible: false
   text: |+
@@ -286,6 +230,72 @@ files:
     }
 
   learner_created: false
+- name: src/search/database.txt
+  visible: true
+  text: |+
+    8
+    0 6 5 1 1 2 8 1 3 6 1 2 0 2 1 4 1 2 8 6 6 9 2 7 5 8 8 3 6 8 4 0 5 7 9 7 5 3 9 6 3 8 6 7 3 1 2 1 9 5 4 7 8 2 0 9 9 1 6 2 4 7 3 4 5 5 5 8 4 0 8 4 7 5 6 0 5 4 2 8 5 4 7 5 0 0 0 5 1 7 3 7 8 5 9 7 1 3 2 1
+
+  learner_created: true
+- name: test/SearchEngineTests.java
+  visible: false
+  text: |
+    public class SearchEngineTests {
+        public static final String NAMES = "Kristofer Galley\n" +
+            "Fernando Marbury fernando_marbury@gmail.com\n" +
+            "Kristyn Nix nix-kris@gmail.com\n" +
+            "Regenia Enderle\n" +
+            "Malena Gray\n" +
+            "Colette Mattei\n" +
+            "Wendolyn Mcphillips\n" +
+            "Jim Gray\n" +
+            "Coreen Beckham\n" +
+            "Bob Yeh bobyeah@gmail.com\n" +
+            "Shannan Strope stropeshah@gmail.com\n" +
+            "Yer Fillion\n" +
+            "Margene Resendez marres@gmail.com\n" +
+            "Blossom Ambler\n" +
+            "Teri Ledet teri_ledet@gmail.com\n" +
+            "Dana Baron baron@gmail.com\n" +
+            "Abram Goldsberry\n" +
+            "Yer Leopold\n" +
+            "Stefania Trunzo\n" +
+            "Alexis Leopold\n" +
+            "Carlene Pompa\n" +
+            "Oliver Dacruz\n" +
+            "Jonie Richter\n" +
+            "Pasquale Gallien gallien@evilcorp.com\n" +
+            "Verdie Gentle\n" +
+            "Gerardo Strouth gallien@evilcorp.com\n" +
+            "Agripina Dones\n" +
+            "Latricia Niebuhr\n" +
+            "Malena Schommer\n" +
+            "Drema Leopold\n" +
+            "Heide Payeur\n" +
+            "Ranae Digiovanni\n" +
+            "Simona Pereira\n" +
+            "Nick Digiovanni\n" +
+            "Angelita Wigington gallien@evilcorp.com\n" +
+            "Elin Gray\n" +
+            "Dwain Trunzo\n" +
+            "Boris Beiler\n" +
+            "Remi Malek fsociefy@gmail.com\n" +
+            "Demetria Hostetler gallien@evilcorp.com\n" +
+            "Nydia Mcduffie\n" +
+            "Florencio Defibaugh\n" +
+            "Warner Giblin\n" +
+            "May Mans\n" +
+            "Shu Gray\n" +
+            "Kaycee Gray\n" +
+            "Victorina Froehlich victory@gmail.com\n" +
+            "Roseanne Gray\n" +
+            "Erica Radford hisam@gmail.com\n" +
+            "Elyse Pauling";
+    }
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/66/stages/357/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 05 Aug 2022 21:44:18 UTC
+record: 4
