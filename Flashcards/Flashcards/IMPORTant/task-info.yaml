@@ -641,6 +641,137 @@ files:
     \                \"Moscow\",\n                \"London\",\n                \"\
     Abuja\",\n                \"Berlin\"\n        );\n    }\n    \n}\n"
   learner_created: false
+- name: src/flashcards/ppp.txt
+  visible: true
+  text: "Podaj stolicê Polski.\tWarszawa\t12\nPodaj stolicê Niemiec.\tBerlin\t10\n\
+    Podaj stolicê Czech.\tPraga\t9\nPodaj stolicê W³och.\tRzym\t8\nPodaj nazwisko\
+    \ Jana Sebastiana Bacha.\tBach\t8\n"
+  learner_created: true
+- name: src/flashcards/log.txt
+  visible: true
+  text: |2
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    import
+    File name:
+    F:\1. S  T  U  D  I  A\Æwiczenia z programowania\Java\Flashcards\Flashcards\task\src\flashcards\ppp.txt
+    3 cards have been loaded.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    add
+    The card:
+    1
+    The definition of the card:
+    1
+    The pair ("1":"1") has been added.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    add
+    The card:
+    dupa
+    The definition of the card:
+    dupa
+    The pair ("dupa":"dupa") has been added.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    add
+    The card:
+    90
+    The definition of the card:
+    90
+    The pair ("90":"90") has been added.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    add
+    The card:
+    Poland
+    The definition of the card:
+    Warsaw
+    The pair ("Poland":"Warsaw") has been added.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    add
+    The card:
+    France
+    The definition of the card:
+    Paris
+    The pair ("France":"Paris") has been added.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    ask
+    How many times to ask?
+    3
+    Print the definition of "2":
+    2
+    Correct!
+    Print the definition of "3":
+    3
+    Correct!
+    Print the definition of "4":
+    4
+    Correct!
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    export
+    File name:
+    F:\1. S  T  U  D  I  A\Æwiczenia z programowania\Java\Flashcards\Flashcards\task\src\flashcards\ppp.txt
+    8 cards have been saved.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    ask
+    How many times to ask?
+    1
+    Print the definition of "2":
+    5
+    Wrong. The right answer is "2".
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    ask
+    How many times to ask?
+    1
+    Print the definition of "2":
+    90
+    Wrong. The right answer is "2", but your definition is correct for "90".
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    log
+    File name:
+    F:\1. S  T  U  D  I  A\Æwiczenia z programowania\Java\Flashcards\Flashcards\task\src\flashcards\log.txt
+  learner_created: true
+- name: src/flashcards/capitals.txt
+  visible: true
+  text: |2+
+
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/5349#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #17
+
+    Your program did not save a file after exiting
+
+    Please find below the output of your program during this failed test.
+    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
+
+    ---
+
+    Arguments: -export fridayThe13th.txt
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    &gt; hardest card
+    There are no cards with errors.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    &gt; add
+    The card:
+    &gt; Movie
+    The definition of the card:
+    &gt; A recorded sequence of images displayed on a screen at a rate sufficiently fast
+    The pair (&quot;Movie&quot;:&quot;A recorded sequence of images displayed on a screen at a rate sufficiently fast&quot;) has been added.
+
+    Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+    &gt; exit
+    Bye Bye!
+  time: Fri, 05 Aug 2022 17:27:36 UTC
 record: -1

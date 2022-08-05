@@ -3,18 +3,43 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static Map<String, String> map = new LinkedHashMap<>();
+    static Map<String, String> cardsMap = new LinkedHashMap<>();
     static ArrayList<String> logList = new ArrayList<>();
 
+
     public static void main(String[] args) {
-        play();
-    }
-
-
-
-
-    public static void play() {
         Scanner scanner = new Scanner(System.in);
+        String inputPath = "";
+        int counter = 0;
+
+        for (int i = 0; i < args.length; i += 2) {
+            if (args[i].equals("-import")) {
+                inputPath = args[i+1];
+
+                File file = new File(inputPath);
+
+                try (Scanner inputScanner = new Scanner(file)) {
+                    while (inputScanner.hasNextLine()) {
+
+                        String[] abcTab = inputScanner.nextLine().split("\\t");
+
+                        String a = abcTab[0];
+                        String b = abcTab[1];
+
+                        cardsMap.put(a, (b + "\t" + abcTab[2]));
+                        counter++;
+                    }
+                    System.out.println(displayMessage(12, String.valueOf(counter)));
+                    logList.add(displayMessage(12, String.valueOf(counter)));
+                } catch (FileNotFoundException e) {
+                    System.out.println(displayMessage(13));
+                    logList.add(displayMessage(13));
+                }
+
+            }
+        }
+
+
 
         while(true) {
             System.out.println(displayMessage(1));
@@ -39,9 +64,6 @@ public class Main {
                     case "ask":
                         ask();
                         break;
-                    case "exit":
-                        exit();
-                        return;
                     case "log":
                         log();
                         break;
@@ -51,38 +73,73 @@ public class Main {
                     case "reset stats":
                         resetStats();
                         break;
+                    case "exit":
+                        String outputPath = "";
+
+                        System.out.println(displayMessage(20));
+                        logList.add(displayMessage(20));
+
+                        for (int i = 0; i < args.length; i += 2) {
+                            if (args[i].equals("-export")) {
+                                File file = new File(outputPath);
+                                int counter2 = cardsMap.size();
+
+                                try (FileWriter writer = new FileWriter(file)) {
+
+                                    for (Map.Entry<String, String> el : cardsMap.entrySet()) {
+                                        String term = el.getKey();
+                                        String definition = el.getValue();
+
+                                        writer.write(term + "\t" + definition + "\n");
+                                    }
+                                    writer.close();
+                                    System.out.println(displayMessage(14, String.valueOf(counter2)));
+                                    logList.add(displayMessage(14, String.valueOf(counter2)));
+                                } catch (IOException e) {
+                                    //System.out.println(displayMessage(13));
+                                    //logList.add(displayMessage(13));
+                                }
+                            }
+                        }
+
+                        return;
                 }
             } catch (InputMismatchException | NumberFormatException e) {
                 System.err.println(displayMessage(2));
                 logList.add(displayMessage(2));
             }
+
+
+            //System.out.println(cardsMap);
+
         }
+
+
+
+
+
+
+
+
+
     }
+
 
     public static void addCard() {
         Scanner scanner = new Scanner(System.in);
-        //System.out.println("Input the number of cards:");
-       // int amount = scanner.nextInt();
-       // scanner.nextLine();
-
 
         //wprowadzanie pojêæ i definicji
-       // for (int i = 0; i < amount; i++) {
-            //int num = i + 1;
             String term;
             String definition;
-
 
             //wpisanie terminu
             System.out.println(displayMessage(3));
             logList.add(displayMessage(3));
 
-
-
             //while(true) {
                 term = scanner.nextLine();
                 logList.add(term);
-                boolean isTermExist = map.containsKey(term);
+                boolean isTermExist = cardsMap.containsKey(term);
                 if (isTermExist) {
                     System.out.println(displayMessage(4, term));
                     logList.add(displayMessage(4, term));
@@ -98,9 +155,18 @@ public class Main {
 
             //while(true) {
                 definition = scanner.nextLine();
-                logList.add(definition);
+                logList.add(definition + "\t" + 0);
 
-                boolean isDefExist = map.containsValue(definition);
+                boolean isDefExist = false;
+
+                for (Map.Entry<String, String> el : cardsMap.entrySet()) {
+                    String[] defTab = el.getValue().split("\t");
+                    if (definition.equals(defTab[0])) {
+                        isDefExist = true;
+                        break;
+                    }
+                }
+
                 if (isDefExist) {
                     System.out.println(displayMessage(6, definition));
                     logList.add(displayMessage(6, definition));
@@ -111,7 +177,8 @@ public class Main {
             //}
             System.out.println(displayMessage(7, term, definition));
             logList.add(displayMessage(7, term, definition));
-            map.put(term, definition);
+            //dodanie do mapy kart/definicji:
+            cardsMap.put(term, (definition + "\t" + 0));
         //}
     }
     public static void removeCard() {
@@ -120,16 +187,16 @@ public class Main {
         logList.add(displayMessage(8));
         String remC = scanner.nextLine();
         logList.add(remC);
-        int amountOfEl = map.size();
+        int amountOfEl = cardsMap.size();
 
-        for (Map.Entry<String, String> el : map.entrySet()) {
+        for (Map.Entry<String, String> el : cardsMap.entrySet()) {
             if (el.getKey().equals(remC)) {
-                map.remove(el.getKey(), el.getValue());
+                cardsMap.remove(el.getKey(), el.getValue());
                 break;
             }
         }
         // je¿eli usuniêto / lub nie to wyœwietl komunikat
-        if (map.size() == amountOfEl - 1) {
+        if (cardsMap.size() == amountOfEl - 1) {
             System.out.println(displayMessage(9));
             logList.add(displayMessage(9));
         } else {
@@ -137,6 +204,7 @@ public class Main {
             logList.add(displayMessage(10, remC));
         }
     }
+
     public static void importCard() {
         Scanner scanner = new Scanner(System.in);
         System.out.println(displayMessage(11));
@@ -150,10 +218,13 @@ public class Main {
 
         try (Scanner inputScanner = new Scanner(file)) {
             while (inputScanner.hasNextLine()) {
-                String a = inputScanner.nextLine();
-                String b = inputScanner.nextLine();
 
-                map.put(a, b);
+                String[] abcTab = inputScanner.nextLine().split("\\t");
+
+                String a = abcTab[0];
+                String b = abcTab[1];
+
+                cardsMap.put(a, (b + "\t" + abcTab[2]));
                 counter++;
             }
             System.out.println(displayMessage(12, String.valueOf(counter)));
@@ -170,21 +241,15 @@ public class Main {
         String exportPath = scanner.nextLine();
         logList.add(exportPath);
         File file = new File(exportPath);
-        int counter = map.size();
-
-        //System.out.println(map);
+        int counter = cardsMap.size();
 
         try (FileWriter writer = new FileWriter(file)) {
 
-            for (Map.Entry<String, String> el : map.entrySet()) {
+            for (Map.Entry<String, String> el : cardsMap.entrySet()) {
                 String term = el.getKey();
                 String definition = el.getValue();
 
-                //System.out.println(term + definition);
-
-                //writer.write("chuj chuj chuj chuj");
-                writer.write(term + "\n");
-                writer.write(definition + "\n");
+                writer.write(term + "\t" + definition + "\n");
             }
             writer.close();
             System.out.println(displayMessage(14, String.valueOf(counter)));
@@ -192,7 +257,6 @@ public class Main {
         } catch (IOException e) {
             System.out.println(displayMessage(13));
             logList.add(displayMessage(13));
-            //System.out.println(path);
         }
     }
 
@@ -210,26 +274,59 @@ public class Main {
 
 
         while (counter < amount) {
-            for (Map.Entry<String, String> el : map.entrySet()) {
+            for (Map.Entry<String, String> el : cardsMap.entrySet()) {
+                //termin:
                 String term = el.getKey();
-                String definition = el.getValue();
-
+                //ca³a wartoœæ (definicja + iloœæ pomy³ek):
+                String[] defTab = el.getValue().split("\\t");
+                //definicja:
+                String definition = defTab[0];
+                //iloœc pomy³ek:
+                int errCounter = Integer.parseInt(defTab[1]);
 
                 System.out.println(displayMessage(16, term));
                 logList.add(displayMessage(16, term));
                 String answer = scanner.nextLine();
                 logList.add(answer);
 
+                //je¿eli odpowiedŸ istnieje to dla jakigo
+                String anotherTerm = "";
+                for (Map.Entry<String, String> x : cardsMap.entrySet()) {
+                    String[] tab = x.getValue().split("\\t");
+                    if (answer.equals(tab[0])) {
+                        anotherTerm = getKeybyValue(cardsMap, x.getValue());
+                        break;
+                    }
+                }
+
+
+
+
+                //je¿eli dobra odpowiedŸ
                 if (definition.equals(answer)) {
                     System.out.println(displayMessage(17));
                     logList.add(displayMessage(17));
+                }
+                //je¿eli z³a odpowiedŸ (ale dobra dla innego terminu)
+                else if (cardsMap.containsKey(anotherTerm)) {
+                    //znajdŸ ten termin
+                    System.out.println(displayMessage(18, definition, anotherTerm));
+                    logList.add(displayMessage(18, definition, anotherTerm));
 
-                } else if (map.containsValue(answer)) {
-                    System.out.println(displayMessage(18, definition, getKeybyValue(map, answer)));
-                    logList.add(displayMessage(18, definition, getKeybyValue(map, answer)));
-                } else {
+                    //nalicz b³¹d i zaktualizuj definition w cardsMap
+                    errCounter++;
+                    String newDef = definition + "\t" + errCounter;
+                    cardsMap.replace(term, el.getValue(), newDef);
+                }
+                // je¿eli z³a odpowiedŸ
+                else {
                     System.out.println(displayMessage(19, definition));
                     logList.add(displayMessage(19, definition));
+
+                    //nalicz b³¹d i zaktualizuj definition w cardsMap
+                    errCounter++;
+                    String newDef = definition + "\t" + errCounter;
+                    cardsMap.replace(term, el.getValue(), newDef);
                 }
 
                 counter++;
@@ -239,10 +336,7 @@ public class Main {
         }
     }
 
-    public static void exit() {
-        System.out.println(displayMessage(20));
-        logList.add(displayMessage(20));
-    }
+
 
     public static void log() {
         Scanner scanner = new Scanner(System.in);
@@ -271,11 +365,57 @@ public class Main {
     }
 
     public static void showHardestCard() {
+        SortedMap<String, Integer> errMap = new TreeMap<>();
+        StringBuilder sb = new StringBuilder();
+        int maxErrCounter = 0; // maksymalna wartoœæ pomy³ek
+        int cardsWithMaxErrCounter = 0; // iloœæ pomy³ek
+
+        for (Map.Entry<String, String> el : cardsMap.entrySet()) {
+            String card = el.getKey();
+            String[] tab = el.getValue().split("\\t");
+            int errCounter = Integer.parseInt(tab[1]);
+            errMap.put(card, errCounter);
+
+            //max value
+            if (errCounter > maxErrCounter) maxErrCounter = errCounter;
+        }
+
+        //je¿eli nie ma kart z b³êdami
+        if (maxErrCounter == 0) {
+            System.out.println(displayMessage(22));
+            logList.add(displayMessage(22));
+        }
+        //je¿eli s¹:
+        else {
+            for (Map.Entry<String, Integer> el : errMap.entrySet()) {
+                if (el.getValue() == maxErrCounter) {
+                    sb.append("\"").append(el.getKey()).append("\"").append(", ");
+                    cardsWithMaxErrCounter++;
+                }
+            }
+            sb.delete(sb.length() - 2, sb.length());
+
+            if(cardsWithMaxErrCounter == 1 ) {
+                System.out.println(displayMessage(23, sb.toString(), String.valueOf(maxErrCounter)));
+                logList.add(displayMessage(23, sb.toString(), String.valueOf(maxErrCounter)));
+            } else {
+                System.out.println(displayMessage(24, sb.toString(), String.valueOf(maxErrCounter)));
+                logList.add(displayMessage(24, sb.toString(), String.valueOf(maxErrCounter)));
+            }
+
+        }
+
+
 
     }
 
     public static void resetStats() {
-
+        for (Map.Entry<String, String> el : cardsMap.entrySet()) {
+            String[] defTab = el.getValue().split("\\t");
+            String value = defTab[0];
+            cardsMap.replace(el.getKey(), el.getValue(), value + "\t" + 0);
+        }
+        System.out.println("Card statistics have been reset.");
     }
 
     public static String displayMessage(int num) {
@@ -317,6 +457,9 @@ public class Main {
             case 21:
                 msg = "The log has been saved.";
                 break;
+            case 22:
+                msg = "There are no cards with errors.";
+                break;
         }
         return msg;
     }
@@ -354,7 +497,13 @@ public class Main {
                 msg = String.format("The pair (\"%s\":\"%s\") has been added.", val1, val2);
                 break;
             case 18:
-                msg = String.format("Wrong. The right answer is \"%s\", but your definition is correct for \"%s\".", val1, val2);
+                msg = String.format("Wrong. The right answer is \"%s\", but your definition is correct for \"%s\" card.", val1, val2);
+                break;
+            case 23:
+                msg = String.format("The hardest card is %s. You have %s errors answering it.", val1, val2);
+                break;
+            case 24:
+                msg = String.format("The hardest cards are %s. You have %s errors answering them.", val1, val2);
                 break;
         }
         return msg;
