@@ -1,79 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FlashcardsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-08-05T17:27:34" hostname="LUKASZ" time="1.709">
+<testsuite name="FlashcardsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-05T17:41:11" hostname="LUKASZ" time="2.517">
   <properties/>
-  <testcase name="start" classname="FlashcardsTest" time="1.709">
-    <failure message="java.lang.AssertionError: Wrong answer in test #17&#10;&#10;Your program did not save a file after exiting&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Arguments: -export fridayThe13th.txt&#10;&#10;Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):&#10;&gt; hardest card&#10;There are no cards with errors.&#10;&#10;Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):&#10;&gt; add&#10;The card:&#10;&gt; Movie&#10;The definition of the card:&#10;&gt; A recorded sequence of images displayed on a screen at a rate sufficiently fast&#10;The pair (&quot;Movie&quot;:&quot;A recorded sequence of images displayed on a screen at a rate sufficiently fast&quot;) has been added.&#10;&#10;Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):&#10;&gt; exit&#10;Bye Bye!" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #17
-
-Your program did not save a file after exiting
-
-Please find below the output of your program during this failed test.
-Note that the '&gt;' character indicates the beginning of the input line.
-
----
-
-Arguments: -export fridayThe13th.txt
-
-Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
-&gt; hardest card
-There are no cards with errors.
-
-Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
-&gt; add
-The card:
-&gt; Movie
-The definition of the card:
-&gt; A recorded sequence of images displayed on a screen at a rate sufficiently fast
-The pair (&quot;Movie&quot;:&quot;A recorded sequence of images displayed on a screen at a rate sufficiently fast&quot;) has been added.
-
-Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
-&gt; exit
-Bye Bye!
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:155)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
+  <testcase name="start" classname="FlashcardsTest" time="2.517"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 
@@ -807,6 +735,35 @@ The pair ("Movie":"A recorded sequence of images displayed on a screen at a rate
 Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
 > exit
 Bye Bye!
+1 cards have been saved.
+?[1;31m
+Start test 18?[0m
+1 cards have been loaded.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+> add
+The card:
+> Movie
+The card "Movie" already exists.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+> remove
+Which card?
+> Movie
+The card has been removed.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+> add
+The card:
+> Series
+The definition of the card:
+> A television program which consists of several episodes
+The pair ("Series":"A television program which consists of several episodes") has been added.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+> exit
+Bye Bye!
+1 cards have been saved.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -6,7 +6,6 @@ public class Main {
     static Map<String, String> cardsMap = new LinkedHashMap<>();
     static ArrayList<String> logList = new ArrayList<>();
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String inputPath = "";
@@ -38,8 +37,6 @@ public class Main {
 
             }
         }
-
-
 
         while(true) {
             System.out.println(displayMessage(1));
@@ -74,13 +71,13 @@ public class Main {
                         resetStats();
                         break;
                     case "exit":
-                        String outputPath = "";
 
                         System.out.println(displayMessage(20));
                         logList.add(displayMessage(20));
 
                         for (int i = 0; i < args.length; i += 2) {
                             if (args[i].equals("-export")) {
+                                String outputPath = args[i+1];
                                 File file = new File(outputPath);
                                 int counter2 = cardsMap.size();
 
@@ -101,27 +98,13 @@ public class Main {
                                 }
                             }
                         }
-
                         return;
                 }
             } catch (InputMismatchException | NumberFormatException e) {
                 System.err.println(displayMessage(2));
                 logList.add(displayMessage(2));
             }
-
-
-            //System.out.println(cardsMap);
-
         }
-
-
-
-
-
-
-
-
-
     }
 
 
@@ -144,10 +127,7 @@ public class Main {
                     System.out.println(displayMessage(4, term));
                     logList.add(displayMessage(4, term));
                     return;
-                } //else {
-                   // break;
-                //}
-            //}
+                }
 
             //wpisanie jego definicji
             System.out.println(displayMessage(5));
@@ -260,7 +240,6 @@ public class Main {
         }
     }
 
-
     public static void ask() {
         Scanner scanner = new Scanner(System.in);
         //zgadywanie definicji
@@ -271,7 +250,6 @@ public class Main {
         int amount = scanner.nextInt();
         logList.add(String.valueOf(amount));
         scanner.nextLine();
-
 
         while (counter < amount) {
             for (Map.Entry<String, String> el : cardsMap.entrySet()) {
@@ -299,9 +277,6 @@ public class Main {
                     }
                 }
 
-
-
-
                 //jeøeli dobra odpowiedü
                 if (definition.equals(answer)) {
                     System.out.println(displayMessage(17));
@@ -328,15 +303,11 @@ public class Main {
                     String newDef = definition + "\t" + errCounter;
                     cardsMap.replace(term, el.getValue(), newDef);
                 }
-
                 counter++;
                 if(counter == amount) break;
             }
-
         }
     }
-
-
 
     public static void log() {
         Scanner scanner = new Scanner(System.in);
@@ -360,8 +331,6 @@ public class Main {
             System.out.println(displayMessage(13));
             logList.add(displayMessage(13));
         }
-
-
     }
 
     public static void showHardestCard() {
@@ -402,11 +371,7 @@ public class Main {
                 System.out.println(displayMessage(24, sb.toString(), String.valueOf(maxErrCounter)));
                 logList.add(displayMessage(24, sb.toString(), String.valueOf(maxErrCounter)));
             }
-
         }
-
-
-
     }
 
     public static void resetStats() {
@@ -509,7 +474,6 @@ public class Main {
         return msg;
     }
 
-
     //metoda zwracajπca klucz na podstawie wartoúci
     public static String getKeybyValue(Map<String, String> map, String value) {
         for (Map.Entry<String, String> entry : map.entrySet()) {
@@ -519,5 +483,4 @@ public class Main {
         }
         return null;
     }
-
 }
