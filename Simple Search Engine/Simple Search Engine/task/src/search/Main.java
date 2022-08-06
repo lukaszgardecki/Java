@@ -5,11 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class Main {
-    static ArrayList<String> resultList = new ArrayList<>();
     static ArrayList<String> peopleList = new ArrayList<>();
     static SortedMap<String, ArrayList<Integer>> invertedIndexMap = new TreeMap<>();
-
-
+    static SortedSet<String> set = new TreeSet<>();
 
     public static void main(String[] args) {
         readFile(args);
@@ -19,27 +17,29 @@ public class Main {
 
     public static void play() {
         Scanner scanner = new Scanner(System.in);
-
-//        System.out.println("Enter the number of people:");
-//        int amount = scanner.nextInt();
-//        scanner.nextLine();
-//        peopleTab = new String[amount];
-//
-//        System.out.println("Enter all people:");
-//        for(int i = 0; i < amount; i++) {
-//            peopleTab[i] = scanner.nextLine();
-//        }
-
         while (true) {
             displayMenu();
-            String choice = scanner.nextLine();
-
+            String choice = scanner.nextLine().toLowerCase();
             switch (choice) {
                 case "0":
                     System.out.println("\nBye!");
                     return;
                 case "1":
-                    findPerson();
+                    System.out.println("\nSelect a matching strategy: ALL, ANY, NONE");
+                    String choice2 = scanner.nextLine().toLowerCase();
+                    switch(choice2) {
+                        case "all":
+                            all();
+                            break;
+                        case "any":
+                            any();
+                            break;
+                        case "none":
+                            none();
+                            break;
+                        default:
+                            System.out.println("\nIncorrect option! Try again!");
+                    }
                     break;
                 case "2":
                     printAllPeople();
@@ -50,6 +50,7 @@ public class Main {
         }
     }
 
+    //wyœwietl menu
     public static void displayMenu() {
         System.out.println("\n=== Menu ===");
         System.out.println("1. Find a person");
@@ -57,48 +58,29 @@ public class Main {
         System.out.println("0. Exit");
     }
 
-    public static void findPerson() {
+    //wyœwietla tylko te pozycje, które zawieraj¹ wszystkie wprowadzone s³owa
+    public static void all() {
         Scanner scanner = new Scanner(System.in);
-
-        //System.out.println("\nEnter the number of search queries:");
-        //int howManyQueries = scanner.nextInt();
-        //scanner.nextLine();
-
-        //for (int i = 0; i < howManyQueries; i++) {
-
-            //System.out.println("\nEnter data to search poeple:");
             System.out.println("\nEnter a name or email to search all suitable people.");
             String searchFor = scanner.nextLine().toLowerCase();
 
-            for (String el : peopleList) {
-                if (el.toLowerCase().contains(searchFor)) {
-                    resultList.add(el);
-
-                }
+        // ------   WERSJA 2 - ZNAJD TYLKO TE POZYCJE, KTÓRE POSIADAJ¥ WSZYSTKIE WPROWADZONE S£OWA
+        for (String el : peopleList) {
+            if (el.toLowerCase().contains(searchFor)) {
+                    set.add(el);
             }
+        }
 
-            if (resultList.size() == 0) {
-                System.out.println("No matching people found.");
-            } else {
-                //System.out.println("\nFound people:");
-
-
-                // TUTAJ TRZEBA ZMIENIÆ SEARCH FOR ¯EBY W MAPIE NIE SZUKAÆ PO TYM SO SIÊ WPISZE
-                //DLA ZNAKU @ NPE
-                // JEST KILKA WYNIKÓW NIE JEDEN
-                int amount = invertedIndexMap.get(searchFor).size();
-
-
-
-
-                System.out.printf("\n%d persons found:\n", amount);
-
-                resultList.forEach(System.out::println);
-            }
-            resultList.clear();
-        //}
+        if (set.size() == 0) {
+            System.out.println("No matching people found.");
+        } else {
+            System.out.printf("\n%d persons found:\n", set.size());
+            set.forEach(System.out::println);
+        }
+        set.clear();
     }
 
+    //wyœwietl wszystkie osoby (ca³¹ zawartoœæ pliku.txt)
     public static void printAllPeople() {
         System.out.println("\n=== List of people ===");
         for(String el : peopleList) {
@@ -106,6 +88,7 @@ public class Main {
         }
     }
 
+    //czytanie pliku tekstowego z argumentów programu
     public static void readFile(String[] args) {
         String importPath = "";
         //int counter = 0;
@@ -126,15 +109,16 @@ public class Main {
         }
     }
 
+    //stworzenie Inverted Index
     public static void createInvertedIndex() {
         for (int i = 0; i < peopleList.size(); i++) {
-            String[] temp = peopleList.get(i).split("\\s+");
+            String[] temp = peopleList.get(i).trim().split("\\s+");
 
-            for (int k = 0; k < temp.length; k++) {
+            for (String s : temp) {
 
-                String el = temp[k].toLowerCase();
+                String el = s.toLowerCase();
 
-                if(invertedIndexMap.containsKey(el)) {
+                if (invertedIndexMap.containsKey(el)) {
                     //pojedyncza lista wyst¹pieñ dla konkretnego s³owa
                     ArrayList<Integer> li = invertedIndexMap.get(el);
                     li.add(i);
@@ -146,8 +130,65 @@ public class Main {
                 }
             }
         }
-
-        //System.out.println(invertedIndexMap);
     }
 
+    //wyœwietlanie pozycji, które ZAWIERAJ¥ PRZYNAJMNIEJ JEDNO wprowadzone s³owo
+    public static void any() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nEnter a name or email to search all suitable people.");
+        //String searchFor = scanner.nextLine().toLowerCase();
+        String[] searchTab = scanner.nextLine().toLowerCase().split("\\s+");
+
+        // ------   WERSJA 1 - ODNAJDYWANIE NAWET JEDNEGO ZNAKU
+        for (Map.Entry<String, ArrayList<Integer>> el : invertedIndexMap.entrySet()) {
+            for (String n : searchTab) {
+                if (el.getKey().equals(n)) {
+                    //counter += el.getValue().size();
+
+                    for (int i = 0; i < el.getValue().size(); i++) {
+                        int indexOfPeople = el.getValue().get(i);
+                        String human = peopleList.get(indexOfPeople);
+                        set.add(human);
+                    }
+                }
+            }
+        }
+
+        if (set.size() == 0) {
+            System.out.println("No matching people found.");
+        } else {
+            System.out.printf("\n%d persons found:\n", set.size());
+            set.forEach(System.out::println);
+        }
+        set.clear();
+    }
+
+    //wyœwietlanie pozycji, które NIE ZAWIERAJ¥ wprowadzonych s³ów
+    public static void none() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nEnter a name or email to search all suitable people.");
+        String[] searchTab = scanner.nextLine().toLowerCase().split("\\s+");
+
+        // ------   WERSJA 1 - ODNAJDYWANIE NAWET JEDNEGO ZNAKU
+        for (String el : peopleList) {
+            boolean isNone = true;
+            for (String n : searchTab) {
+                if (el.toLowerCase().contains(n)) {
+                    isNone = false;
+                    break;
+                }
+            }
+            if(isNone) {
+                    set.add(el);
+            }
+        }
+
+        if (set.size() == 0) {
+            System.out.println("No matching people found.");
+        } else {
+            System.out.printf("\n%d persons found:\n", set.size());
+            set.forEach(System.out::println);
+        }
+        set.clear();
+    }
 }
