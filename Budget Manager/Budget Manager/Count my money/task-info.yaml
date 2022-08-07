@@ -99,7 +99,7 @@ files:
         }
     }
   learner_created: false
-feedback_link: https://hyperskill.org/projects/76/stages/421/implement#comment
+feedback_link: https://hyperskill.org/learn/step/7024#comment
 status: Failed
 feedback:
   message: "Exception in test #1\n\nProbably your program run out of input (Scanner\
