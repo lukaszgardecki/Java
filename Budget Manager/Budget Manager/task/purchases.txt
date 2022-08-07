@@ -1,4 +1,4 @@
-Balance: $-946.29
+Balance: $785.64
 
 1 Food:
 	-                             Almond 250g  $35.43
@@ -28,7 +28,7 @@ Balance: $-946.29
 
 4 Other:
 	-           Sensodyne Pronamel Toothpaste  $19.74
-	-                             Chick-fil-A  $10 Gift Card 
+	-               Chick-fil-A $10 Gift Card  $10.00
 	-                                    Debt  $3.50
 --------------------------------------------------------
 	                                   TOTAL:  $33.24
@@ -49,7 +49,7 @@ Balance: $-946.29
 	-                                  Cinema  $8.73
 	-                            Skate rental  $30.00
 	-           Sensodyne Pronamel Toothpaste  $19.74
-	-                             Chick-fil-A  $10 Gift Card 
+	-               Chick-fil-A $10 Gift Card  $10.00
 	-                                    Debt  $3.50
 --------------------------------------------------------
 	                                   TOTAL:  $214.36

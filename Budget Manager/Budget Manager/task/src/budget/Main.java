@@ -5,10 +5,11 @@ import java.util.*;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
-    static double balance = 0;
+    static double balance = 0.00;
     static Map<Integer, TypesOfProducts> map = new HashMap<>();
     static TypesOfProducts products;
     static String filePath = "purchases.txt";
+    //static String filePath = "F:\\1. S  T  U  D  I  A\\Æwiczenia z programowania\\Java\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt";
 
 
     public static void main(String[] args) {
@@ -62,54 +63,62 @@ public class Main {
     }
 
     public static void addIncome() {
-        System.out.println("\nEnter income:");
+        double income;
         while(true) {
+            System.out.println("\nEnter income:");
             try {
-                double income = scanner.nextInt();
-                scanner.nextLine();
-                balance += income;
-                System.out.println("Income was added!\n");
+                income = Double.parseDouble(scanner.nextLine());
                 break;
-            } catch (InputMismatchException | NumberFormatException e) {
-                System.out.println("\nEnter numbers!");
+            } catch (InputMismatchException | NumberFormatException ignored) {
             }
         }
+        balance += income;
+        System.out.println("Income was added!");
+
     }
     public static void addPurchase() {
         double price;
 
         while(true) {
 
+
+
+
             int typeOfPurchase;
             while(true) {
+                showTypesOfPurchases1();
                 try {
                     //wybierz numer pozycji menu
-                    showTypesOfPurchases1();
-                    typeOfPurchase = scanner.nextInt();
-                    scanner.nextLine();
+                    typeOfPurchase = Integer.parseInt(scanner.nextLine());
 
                     //if zale¿ny od rozmiaru mapy, poniewa¿ iloœæ pozycji menu powinna byæ uzale¿niona od zawartoœci mapy
-                    if (typeOfPurchase > 0 && typeOfPurchase < map.size()) break;
-                    if (typeOfPurchase == 5) return;
-                } catch (InputMismatchException e) {
-                    System.out.println("Incorrect price! Enter numbers. Try again!");
+                    if (typeOfPurchase > 0 && typeOfPurchase < map.size()) {
+                        break;
+                    } else if (typeOfPurchase == 5) {
+                        return;
+                    } else {
+                        System.out.println("\nEnter numbers. Try again!");
+                    }
+                } catch (InputMismatchException | NumberFormatException e) {
+                    System.out.println("\nEnter numbers. Try again!");
+
                 }
             }
-            String x;
 
+            String x;
             while(true) {
-                try {
-                    System.out.println("\nEnter purchase name:");
-                    x = scanner.nextLine();
-                    break;
-                } catch (NumberFormatException ignored) {}
+                System.out.println("\nEnter purchase name:");
+                x = scanner.nextLine();
+
+                if(!x.isEmpty() && !x.isBlank()) break;
             }
 
             while (true) {
                 System.out.println("Enter its price:");
                 try {
-                    price = scanner.nextDouble();
-                    scanner.nextLine();
+
+                    price = Double.parseDouble(scanner.nextLine());
+
                     System.out.println("Purchase was added!");
                     break;
                 } catch (InputMismatchException | NumberFormatException ignored){}
@@ -132,8 +141,8 @@ public class Main {
             map.get(5).setSum(map.get(5).getSum() + price);
 
             //zmieñ stan konta:
-            double sumAll = map.get(5).getSum();
-            balance -= sumAll;
+            //double sumAll = map.get(5).getSum();
+            balance -= price;
 
         }
     }
@@ -145,14 +154,23 @@ public class Main {
                 System.out.println("\nThe purchase list is empty!");
                 return;
             }
-            //wyœwietl menu
-            showTypesOfPurchases2();
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
 
-            //cofnij
-            if (choice == 6) return;
+            int choice;
+            while(true) {
+                try {
+                    //wyœwietl menu
+                    showTypesOfPurchases2();
+                    choice = Integer.parseInt(scanner.nextLine());
+
+                    if (choice > 0 && choice <= map.size()) {
+                        break;
+                    } else if (choice == 6) {
+                        return;
+                    }
+                } catch (InputMismatchException | NumberFormatException ignored) {
+                }
+            }
 
             //rozmiar listy danej kategorii
             int vol = map.get(choice).getBoughtProducts().size();
@@ -213,9 +231,11 @@ public class Main {
                     sb = new StringBuilder(t);
                 } else {
                     for (String pos : list) {
-                        String[] temp = pos.split("\\$");
-                        String name = temp[0];
-                        String price = temp[1];
+
+                        int indexLast$ = pos.lastIndexOf("$");
+
+                        String name = pos.substring(0,indexLast$);
+                        String price = pos.substring(indexLast$ + 1);
                         String designOfPos = String.format("\t- %40s $%s\n", name, price);
                         sb.append(designOfPos);
                     }
@@ -240,53 +260,113 @@ public class Main {
 
     public static void loadFile() {
         File file = new File(filePath);
-        try (Scanner scanner = new Scanner(file)) {
+        try (Scanner importScanner = new Scanner(file)) {
 
             //ustawienie stanu konta:
-            String[] temp = scanner.nextLine().split("\\$");
-            balance = Double.parseDouble(temp[1].replace(",", "."));
-            scanner.nextLine();
+            String[] temp = importScanner.nextLine().split("\\$");
 
-            while(scanner.hasNextLine()) {
+            if (temp[1].contains(",")) {
+                balance = Double.parseDouble(temp[1].replace(",", "."));
+            } else {
+                balance = Double.parseDouble(temp[1]);
+            }
+
+            importScanner.nextLine();
+
+            while(importScanner.hasNextLine()) {
                 //linijka z numerem i nazw¹
-                String[] temp1 = scanner.nextLine().split("\\s+");
+                String[] temp1 = importScanner.nextLine().split("\\s+");
                 temp1[1] = temp1[1].replace(":", "");
                 int numOfCat = Integer.parseInt(temp1[0]);
+
                 double price;
                 String name;
                 double sum;
 
-                //pêtla do stworzenia listy
-                while (true) {
-                    //ca³a linijka
-                    String wholeLine = scanner.nextLine();
+                String firstLine = importScanner.nextLine();
+                //System.out.println("Poza ifem :" + importScanner.nextLine());
 
-                    if (wholeLine.startsWith("\t-")) {
-                        String[] temp3 = wholeLine.split("\\$");
-                        String[] temp4 = temp3[0].trim().split("\\s+");
 
-                        //cena pojedynczego produktu
-                        price = Double.parseDouble(temp3[1].replace(",", "."));
-                        StringBuilder nameSB = new StringBuilder();
-                        for (String s : temp4) {
-                            nameSB.append(String.format("%s ", s));
+                //je¿eli dana kategoria jest pusta to idŸ do nastêpnej
+                if (!firstLine.equals("\tThe purchase list is empty!")) {
+
+
+
+                    //pêtla do stworzenia listy
+                    while (true) {
+                        //ca³a linijka
+                       // String wholeLine = importScanner.nextLine();
+
+                        if (firstLine.startsWith("\t-")) {
+
+                            //ostatnie wyst¹pienie $ oznacza pocz¹tek ceny:
+                            int indexLast$ = firstLine.lastIndexOf("$");
+
+                            String reallyPrice = firstLine.substring(indexLast$ + 1);
+                            String reallyName = firstLine.substring(0, indexLast$);
+
+                            //ca³a linijka podzielona na czêœæ nazwy i czêœæ ceny
+                            //String[] temp3 = firstLine.split("\\$");
+
+                            //pozbawinie nazwy zbêdnych spacji
+                            String[] nameWithoutSpaces = reallyName.trim().split("\\s+");
+
+
+
+
+                            //cena pojedynczego produktu
+                            if (reallyPrice.contains(",")) {
+                                price = Double.parseDouble(reallyPrice.replace(",", "."));
+                            } else {
+                                price = Double.parseDouble(reallyPrice);
+                            }
+
+
+
+
+                            StringBuilder nameSB = new StringBuilder();
+                            for (String s : nameWithoutSpaces) {
+                                nameSB.append(String.format("%s ", s));
+                            }
+
+
+                            //nowa linijka usuniêcie pocz¹tkowych myœlników i dodatkowej spacji:
+                            nameSB.deleteCharAt(0);
+                            nameSB.deleteCharAt(0);
+
+
+                            //nowa ca³a linijka (bez zbêdnych tabów i spacji)
+                            nameSB.append(String.format("$%.2f", price));
+                            name = nameSB.toString();
+
+
+
+
+                            //aktualizacja pierwszej linijki:
+                            firstLine = importScanner.nextLine();
+
+
+
+
+
+                            //dodaj pozycjê do listy
+                            map.get(numOfCat).getBoughtProducts().add(name);
+                        } else {
+                            break;
                         }
-                        //nowa ca³a linijka (bez zbêdnych tabów i spacji)
-                        nameSB.append(String.format("$%.2f", price));
-                        name = nameSB.toString();
-                        //dodaj pozycjê do listy
-                        map.get(numOfCat).getBoughtProducts().add(name);
-                    } else {
-                        break;
                     }
+                    String[] temp5 = importScanner.nextLine().split("\\$");
+                    sum = Double.parseDouble(temp5[1].replace(",", "."));
+
+                    //ustaw sumê kategorii
+                    map.get(numOfCat).setSum(sum);
+
+                    importScanner.nextLine();
+                } else {
+                    importScanner.nextLine();
+                    importScanner.nextLine();
+                    importScanner.nextLine();
                 }
-                String[] temp5 = scanner.nextLine().split("\\$");
-                sum = Double.parseDouble(temp5[1].replace(",", "."));
-
-                //ustaw sumê kategorii
-                map.get(numOfCat).setSum(sum);
-
-                scanner.nextLine();
             }
             System.out.println("\nPurchases were loaded!");
         } catch (FileNotFoundException e) {

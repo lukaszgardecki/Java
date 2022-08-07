@@ -1,46 +1,56 @@
-Balance: $411,82
+Balance: $785,64
 
 1 Food:
-	-                             Frytki 100g  $3,20
-	-                           Ziemniaki 2kg  $8,00
-	-                     Woda mineralna 1,5L  $1,90
-	-                                MLeko 1L  $4,30
-	-                          Pomarañcze 2kg  $9,50
-	-              Serek homogenizowany 10sz.  $15,45
+	-                             Almond 250g  $35,43
+	-                                    Milk  $3,50
+	-                          Red Fuji Apple  $5,99
+	-                                    Eggs  $3,99
+	-             FIJI Natural Artesian Water  $25,98
+	-           Hershey's milk chocolate bars  $8,54
+	-            Great Value Broccoli Florets  $1,00
+	-                     Keystone Ground Bee  $6,28
 --------------------------------------------------------
-	                                   TOTAL:  $42,35
+	                                   TOTAL:  $90,71
 
 2 Clothes:
-	-                          Spodnie mêskie  $89,98
-	-                           Bluzka damska  $34,45
-	-                         Obuwie sportowe  $180,45
+	-                               Gildan LT  $8,61
+	-  Men's Dual Defense Crew Socks 12 Pairs  $13,00
+	-       Wrangler Men's Stretch Cargo Pant  $19,97
 --------------------------------------------------------
-	                                   TOTAL:  $304,88
+	                                   TOTAL:  $41,58
 
 3 Entertainment:
-	-                         Gra w bilard 1h  $2,00
+	-            LEGO DUPLO Town Farm Animals  $10,10
+	-                                  Cinema  $8,73
+	-                            Skate rental  $30,00
 --------------------------------------------------------
-	                                   TOTAL:  $2,00
+	                                   TOTAL:  $48,83
 
 4 Other:
-	-                       Jedzenie dla kota  $90,00
-	-                                  Paliwo  $600,00
+	-           Sensodyne Pronamel Toothpaste  $19,74
+	-                                    Debt  $3,50
+	-               Chick-fil-A $10 Gift Card  $10,00
 --------------------------------------------------------
-	                                   TOTAL:  $690,00
+	                                   TOTAL:  $63,24
 
 5 All:
-	-                             Frytki 100g  $3,20
-	-                           Ziemniaki 2kg  $8,00
-	-                     Woda mineralna 1,5L  $1,90
-	-                                MLeko 1L  $4,30
-	-                          Pomarañcze 2kg  $9,50
-	-              Serek homogenizowany 10sz.  $15,45
-	-                          Spodnie mêskie  $89,98
-	-                           Bluzka damska  $34,45
-	-                         Obuwie sportowe  $180,45
-	-                         Gra w bilard 1h  $2,00
-	-                       Jedzenie dla kota  $90,00
-	-                                  Paliwo  $600,00
+	-                             Almond 250g  $35,43
+	-                                    Milk  $3,50
+	-                          Red Fuji Apple  $5,99
+	-                                    Eggs  $3,99
+	-             FIJI Natural Artesian Water  $25,98
+	-           Hershey's milk chocolate bars  $8,54
+	-            Great Value Broccoli Florets  $1,00
+	-                     Keystone Ground Bee  $6,28
+	-                               Gildan LT  $8,61
+	-  Men's Dual Defense Crew Socks 12 Pairs  $13,00
+	-       Wrangler Men's Stretch Cargo Pant  $19,97
+	-            LEGO DUPLO Town Farm Animals  $10,10
+	-                                  Cinema  $8,73
+	-                            Skate rental  $30,00
+	-           Sensodyne Pronamel Toothpaste  $19,74
+	-                                    Debt  $3,50
+	-               Chick-fil-A $10 Gift Card  $10,00
 --------------------------------------------------------
-	                                   TOTAL:  $1039,23
+	                                   TOTAL:  $214,36
 
