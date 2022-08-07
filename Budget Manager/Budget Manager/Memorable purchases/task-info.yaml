@@ -341,6 +341,20 @@ files:
 - name: src/budget/purchases.txt
   visible: true
   learner_created: true
+- name: purchases.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/7027#comment
-status: Unchecked
-record: -1
+status: Failed
+feedback:
+  message: "Exception in test #6\n\njava.lang.NumberFormatException: For input string:\
+    \ &quot;10 Gift Card&quot;\r\n\tat java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)\r\
+    \n\tat java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\
+    \n\tat java.base/java.lang.Double.parseDouble(Double.java:651)\r\n\tat budget.Main.loadFile(Main.java:253)\r\
+    \n\tat budget.Main.play(Main.java:45)\r\n\tat budget.Main.main(Main.java:15)\n\
+    \nPlease find below the output of your program during this failed test.\nNote\
+    \ that the &#39;&gt;&#39; character indicates the beginning of the input line.\n\
+    \n---\n\nChoose your action:\n1) Add income\n2) Add purchase\n3) Show list of\
+    \ purchases\n4) Balance\n5) Save\n6) Load\n0) Exit\n&gt; 6"
+  time: Sun, 07 Aug 2022 16:57:45 UTC
+record: 4

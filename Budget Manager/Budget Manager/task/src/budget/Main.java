@@ -1,5 +1,5 @@
 package budget;
-import java.awt.image.ImagingOpException;
+
 import java.io.*;
 import java.util.*;
 
@@ -8,21 +8,17 @@ public class Main {
     static double balance = 0;
     static Map<Integer, TypesOfProducts> map = new HashMap<>();
     static TypesOfProducts products;
-    static String filePath = "F:\\1. S  T  U  D  I  A\\Æwiczenia z programowania\\Java\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt";
+    static String filePath = "purchases.txt";
 
 
     public static void main(String[] args) {
-
-        map.put(1, TypesOfProducts.FOOD);
-        map.put(2, TypesOfProducts.CLOTHES);
-        map.put(3, TypesOfProducts.ENTERTAINMENT);
-        map.put(4, TypesOfProducts.OTHER);
-        map.put(5, TypesOfProducts.ALL);
-
         play();
     }
 
     public static void play() {
+        //add default values to the HashMap:
+        TypesOfProducts.createHashMap();
+
         while(true) {
             displayMenu();
             String action = scanner.nextLine();
@@ -47,8 +43,9 @@ public class Main {
                     break;
                 case "6":
                     loadFile();
+                    break;
                 default:
-                    System.out.println("\nIncorrect operation. Try again!\n");
+                    System.out.println("\nIncorrect operation. Try again!");
             }
         }
     }
@@ -82,25 +79,40 @@ public class Main {
         double price;
 
         while(true) {
-            //wybierz numer pozycji menu
-            showTypesOfPurchases1();
-            int typeOfPurchase = scanner.nextInt();
-            scanner.nextLine();
-            if (typeOfPurchase == 5) return;
 
-            System.out.println("\nEnter purchase name:");
-            String x = scanner.nextLine();
-            System.out.println("Enter its price:");
+            int typeOfPurchase;
+            while(true) {
+                try {
+                    //wybierz numer pozycji menu
+                    showTypesOfPurchases1();
+                    typeOfPurchase = scanner.nextInt();
+                    scanner.nextLine();
+
+                    //if zale¿ny od rozmiaru mapy, poniewa¿ iloœæ pozycji menu powinna byæ uzale¿niona od zawartoœci mapy
+                    if (typeOfPurchase > 0 && typeOfPurchase < map.size()) break;
+                    if (typeOfPurchase == 5) return;
+                } catch (InputMismatchException e) {
+                    System.out.println("Incorrect price! Enter numbers. Try again!");
+                }
+            }
+            String x;
+
+            while(true) {
+                try {
+                    System.out.println("\nEnter purchase name:");
+                    x = scanner.nextLine();
+                    break;
+                } catch (NumberFormatException ignored) {}
+            }
 
             while (true) {
+                System.out.println("Enter its price:");
                 try {
                     price = scanner.nextDouble();
                     scanner.nextLine();
                     System.out.println("Purchase was added!");
                     break;
-                } catch (InputMismatchException | NumberFormatException e) {
-                    System.out.println("Incorrect price! Enter numbers. Try again!");
-                }
+                } catch (InputMismatchException | NumberFormatException ignored){}
             }
 
             //weŸ dan¹ kategoriê z mapy:
@@ -122,6 +134,7 @@ public class Main {
             //zmieñ stan konta:
             double sumAll = map.get(5).getSum();
             balance -= sumAll;
+
         }
     }
 
@@ -181,7 +194,9 @@ public class Main {
 
     public static void saveFile() {
         File file = new File(filePath);
+
         try (FileWriter writer = new FileWriter(file)) {
+
             writer.write(String.format("Balance: $%.2f\n\n", balance));
 
             for(Map.Entry<Integer, TypesOfProducts> el : map.entrySet()) {
@@ -229,40 +244,54 @@ public class Main {
 
             //ustawienie stanu konta:
             String[] temp = scanner.nextLine().split("\\$");
-            balance = Double.parseDouble(temp[1]);
+            balance = Double.parseDouble(temp[1].replace(",", "."));
             scanner.nextLine();
 
             while(scanner.hasNextLine()) {
                 //linijka z numerem i nazw¹
                 String[] temp1 = scanner.nextLine().split("\\s+");
-                temp[1] = temp[1].replace(":", "");
-                int numOfCat = Integer.parseInt(temp[0]);
-                String nameOfCat = temp[1];
+                temp1[1] = temp1[1].replace(":", "");
+                int numOfCat = Integer.parseInt(temp1[0]);
+                double price;
+                String name;
+                double sum;
 
-                //pêtla je¿eli linijka zaczyna siê od "\t-" (elementy listy)
+                //pêtla do stworzenia listy
                 while (true) {
+                    //ca³a linijka
                     String wholeLine = scanner.nextLine();
-                    String t = wholeLine.trim();
-                    if (t.startsWith("\t-")) {
 
+                    if (wholeLine.startsWith("\t-")) {
+                        String[] temp3 = wholeLine.split("\\$");
+                        String[] temp4 = temp3[0].trim().split("\\s+");
+
+                        //cena pojedynczego produktu
+                        price = Double.parseDouble(temp3[1].replace(",", "."));
+                        StringBuilder nameSB = new StringBuilder();
+                        for (String s : temp4) {
+                            nameSB.append(String.format("%s ", s));
+                        }
+                        //nowa ca³a linijka (bez zbêdnych tabów i spacji)
+                        nameSB.append(String.format("$%.2f", price));
+                        name = nameSB.toString();
+                        //dodaj pozycjê do listy
+                        map.get(numOfCat).getBoughtProducts().add(name);
                     } else {
                         break;
                     }
                 }
+                String[] temp5 = scanner.nextLine().split("\\$");
+                sum = Double.parseDouble(temp5[1].replace(",", "."));
+
+                //ustaw sumê kategorii
+                map.get(numOfCat).setSum(sum);
+
+                scanner.nextLine();
             }
-
-
-
-
-
-
-
-
+            System.out.println("\nPurchases were loaded!");
         } catch (FileNotFoundException e) {
             System.out.println("File not found!");
 
         }
-
-
     }
 }
