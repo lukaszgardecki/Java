@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CorrecterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-08T20:47:51" hostname="LUKASZ" time="0.596">
+  <properties/>
+  <testcase name="start" classname="CorrecterTest" time="0.596"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+?[1;31m
+Start test 2?[0m
+?[1;31m
+Start test 3?[0m
+?[1;31m
+Start test 4?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

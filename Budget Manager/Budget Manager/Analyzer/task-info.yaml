@@ -402,6 +402,128 @@ files:
         }
     }
   learner_created: false
+- name: purchases.txt
+  visible: true
+  text: "Balance: $785.64\n\n1 Food:\n\t-                             Almond 250g\
+    \  $35.43\n\t-                                    Milk  $3.50\n\t-           \
+    \               Red Fuji Apple  $5.99\n\t-                                   \
+    \ Eggs  $3.99\n\t-             FIJI Natural Artesian Water  $25.98\n\t-      \
+    \     Hershey's milk chocolate bars  $8.54\n\t-            Great Value Broccoli\
+    \ Florets  $1.00\n\t-                     Keystone Ground Bee  $6.28\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $90.71\n\n2 Clothes:\n\t-       \
+    \                        Gildan LT  $8.61\n\t-  Men's Dual Defense Crew Socks\
+    \ 12 Pairs  $13.00\n\t-       Wrangler Men's Stretch Cargo Pant  $19.97\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $41.58\n\n3 Entertainment:\n\t- \
+    \           LEGO DUPLO Town Farm Animals  $10.10\n\t-                        \
+    \          Cinema  $8.73\n\t-                            Skate rental  $30.00\n\
+    --------------------------------------------------------\n\t                 \
+    \                  TOTAL:  $48.83\n\n4 Other:\n\t-           Sensodyne Pronamel\
+    \ Toothpaste  $19.74\n\t-               Chick-fil-A $10 Gift Card  $10.00\n\t\
+    -                                    Debt  $3.50\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $33.24\n\n5 All:\n\t-           \
+    \                  Almond 250g  $35.43\n\t-                                  \
+    \  Milk  $3.50\n\t-                          Red Fuji Apple  $5.99\n\t-      \
+    \                              Eggs  $3.99\n\t-             FIJI Natural Artesian\
+    \ Water  $25.98\n\t-           Hershey's milk chocolate bars  $8.54\n\t-     \
+    \       Great Value Broccoli Florets  $1.00\n\t-                     Keystone\
+    \ Ground Bee  $6.28\n\t-                               Gildan LT  $8.61\n\t- \
+    \ Men's Dual Defense Crew Socks 12 Pairs  $13.00\n\t-       Wrangler Men's Stretch\
+    \ Cargo Pant  $19.97\n\t-            LEGO DUPLO Town Farm Animals  $10.10\n\t\
+    -                                  Cinema  $8.73\n\t-                        \
+    \    Skate rental  $30.00\n\t-           Sensodyne Pronamel Toothpaste  $19.74\n\
+    \t-               Chick-fil-A $10 Gift Card  $10.00\n\t-                     \
+    \               Debt  $3.50\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $214.36\n\n"
+  learner_created: true
+- name: src/budget/purchases.txt
+  visible: true
+  text: "Balance: $785,64\n\n1 Food:\n\t-                             Almond 250g\
+    \  $35,43\n\t-                                    Milk  $3,50\n\t-           \
+    \               Red Fuji Apple  $5,99\n\t-                                   \
+    \ Eggs  $3,99\n\t-             FIJI Natural Artesian Water  $25,98\n\t-      \
+    \     Hershey's milk chocolate bars  $8,54\n\t-            Great Value Broccoli\
+    \ Florets  $1,00\n\t-                     Keystone Ground Bee  $6,28\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $90,71\n\n2 Clothes:\n\t-       \
+    \                        Gildan LT  $8,61\n\t-  Men's Dual Defense Crew Socks\
+    \ 12 Pairs  $13,00\n\t-       Wrangler Men's Stretch Cargo Pant  $19,97\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $41,58\n\n3 Entertainment:\n\t- \
+    \           LEGO DUPLO Town Farm Animals  $10,10\n\t-                        \
+    \          Cinema  $8,73\n\t-                            Skate rental  $30,00\n\
+    --------------------------------------------------------\n\t                 \
+    \                  TOTAL:  $48,83\n\n4 Other:\n\t-           Sensodyne Pronamel\
+    \ Toothpaste  $19,74\n\t-                                    Debt  $3,50\n\t-\
+    \               Chick-fil-A $10 Gift Card  $10,00\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $63,24\n\n5 All:\n\t-           \
+    \                  Almond 250g  $35,43\n\t-                                  \
+    \  Milk  $3,50\n\t-                          Red Fuji Apple  $5,99\n\t-      \
+    \                              Eggs  $3,99\n\t-             FIJI Natural Artesian\
+    \ Water  $25,98\n\t-           Hershey's milk chocolate bars  $8,54\n\t-     \
+    \       Great Value Broccoli Florets  $1,00\n\t-                     Keystone\
+    \ Ground Bee  $6,28\n\t-                               Gildan LT  $8,61\n\t- \
+    \ Men's Dual Defense Crew Socks 12 Pairs  $13,00\n\t-       Wrangler Men's Stretch\
+    \ Cargo Pant  $19,97\n\t-            LEGO DUPLO Town Farm Animals  $10,10\n\t\
+    -                                  Cinema  $8,73\n\t-                        \
+    \    Skate rental  $30,00\n\t-           Sensodyne Pronamel Toothpaste  $19,74\n\
+    \t-                                    Debt  $3,50\n\t-               Chick-fil-A\
+    \ $10 Gift Card  $10,00\n--------------------------------------------------------\n\
+    \t                                   TOTAL:  $214,36\n\n"
+  learner_created: true
+- name: src/budget/TypesOfProducts.java
+  visible: true
+  text: |
+    package budget;
+    import java.util.ArrayList;
+
+    public enum TypesOfProducts {
+
+        FOOD("Food", 0,  new ArrayList<>()),
+        CLOTHES("Clothes", 0, new ArrayList<>()),
+        ENTERTAINMENT("Entertainment", 0, new ArrayList<>()),
+        OTHER("Other", 0, new ArrayList<>()),
+        ALL("All", 0, new ArrayList<>() );
+
+        final String name;
+        double sum;
+        ArrayList<String> boughtProducts;
+
+        TypesOfProducts(String name, double sum, ArrayList<String> boughtProducts) {
+            this.name = name;
+            this.sum = sum;
+            this.boughtProducts = boughtProducts;
+        }
+
+        public static void createHashMap() {
+            Main.map.put(1, TypesOfProducts.FOOD);
+            Main.map.put(2, TypesOfProducts.CLOTHES);
+            Main.map.put(3, TypesOfProducts.ENTERTAINMENT);
+            Main.map.put(4, TypesOfProducts.OTHER);
+            Main.map.put(5, TypesOfProducts.ALL);
+        }
+
+        public String getName() {
+            return name;
+        }
+        public double getSum() {
+            return sum;
+        }
+        public ArrayList<String> getBoughtProducts() {
+            return boughtProducts;
+        }
+
+        public void setSum(double sum) {
+            this.sum = sum;
+        }
+        public void setBoughtProducts(ArrayList<String> list) {
+            this.boughtProducts = list;
+        }
+
+
+
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/7028#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 08 Aug 2022 12:32:09 UTC
 record: -1
