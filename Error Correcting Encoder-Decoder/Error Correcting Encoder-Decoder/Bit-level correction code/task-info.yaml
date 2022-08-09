@@ -422,6 +422,27 @@ files:
   visible: true
   text: 110<536$210<$661503$672121=1$1511
   learner_created: true
-feedback_link: https://hyperskill.org/projects/58/stages/315/implement#comment
-status: Unchecked
-record: -1
+- name: src/correcter/encoded.txt
+  visible: true
+  learner_created: true
+- name: src/correcter/decoded.txt
+  visible: true
+  learner_created: true
+- name: encoded.txt
+  visible: true
+  learner_created: true
+- name: src/correcter/NumberConverter.java
+  visible: true
+  learner_created: true
+- name: src/correcter/Decoder.java
+  visible: true
+  learner_created: true
+- name: decoded.txt
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5457#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 09 Aug 2022 19:57:38 UTC
+record: 4
