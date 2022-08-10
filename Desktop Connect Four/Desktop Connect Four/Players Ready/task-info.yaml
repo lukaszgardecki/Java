@@ -595,6 +595,9 @@ files:
 - name: src/four/Feet.java
   visible: true
   learner_created: true
+- name: src/four/ButtonReset.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/226/stages/1135/implement#comment
 status: Unchecked
 record: -1
