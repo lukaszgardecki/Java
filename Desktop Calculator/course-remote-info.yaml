@@ -1,22 +1,25 @@
 hyperskill_project:
-  id: 226
-  ide_files: https://stepik.org/media/attachments/lesson/626666/additional_files.json
+  id: 191
+  ide_files: https://stepik.org/media/attachments/lesson/545919/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 11 Aug 2022 16:44:21 UTC
+update_date: Thu, 11 Aug 2022 15:45:14 UTC
 stages:
-- id: 1132
-  step: 17267
+- id: 953
+  step: 13794
   is_completed: true
-- id: 1133
-  step: 17268
-  is_completed: true
-- id: 1134
-  step: 17269
-  is_completed: true
-- id: 1135
-  step: 17270
-  is_completed: true
+- id: 954
+  step: 13795
+  is_completed: false
+- id: 955
+  step: 13796
+  is_completed: false
+- id: 956
+  step: 13797
+  is_completed: false
+- id: 957
+  step: 13798
+  is_completed: false
 topics:
   0:
   - title: Write, compile, and run
@@ -27,18 +30,8 @@ topics:
     theory_id: 14603
   - title: The basic window in Swing
     theory_id: 5514
-  - title: Layout managers
-    theory_id: 6824
   - title: Units of information
     theory_id: 6865
-  - title: Computer algorithms
-    theory_id: 16547
-  - title: The big O notation
-    theory_id: 16699
-  - title: Best, average and worst cases
-    theory_id: 20084
-  - title: Data structures
-    theory_id: 16927
   - title: Immutability
     theory_id: 7929
   - title: Introduction to Swing components
@@ -107,8 +100,6 @@ topics:
     theory_id: 3511
   - title: Arrays as parameters
     theory_id: 3594
-  - title: Iterating over arrays
-    theory_id: 3602
   - title: Characters
     theory_id: 3514
   - title: String
@@ -125,56 +116,16 @@ topics:
     theory_id: 3614
   - title: Package
     theory_id: 3621
-  - title: Hierarchy of exceptions
-    theory_id: 3570
-  - title: Exception handling
-    theory_id: 3552
-  - title: Throwing exceptions
-    theory_id: 3553
-  - title: Custom exceptions
-    theory_id: 15639
-  - title: Pseudocode
-    theory_id: 15090
-  - title: Pseudocode basics
-    theory_id: 19510
-  - title: Complex constructions in pseudocode
-    theory_id: 20922
-  - title: Multidimensional array
-    theory_id: 1933
-  - title: Fixed-size array
-    theory_id: 20078
-  - title: Dynamic array
-    theory_id: 5357
   - title: Libraries
     theory_id: 8504
   - title: Introduction to generic programming
     theory_id: 3492
-  - title: Generics and Object
-    theory_id: 3493
-  - title: What are collections
-    theory_id: 3770
-  - title: The Collections Framework overview
-    theory_id: 3624
   - title: Lambda expressions
     theory_id: 11635
-  - title: ArrayList
-    theory_id: 3567
-  - title: The List interface
-    theory_id: 3581
-  - title: The Set interface
-    theory_id: 3575
   - title: Method references
     theory_id: 3620
   - title: Functional interfaces
     theory_id: 11636
-  - title: 'Hashing: overview'
-    theory_id: 9831
-  - title: Hash function
-    theory_id: 10878
-  - title: Hash table
-    theory_id: 13054
-  - title: The Map interface
-    theory_id: 3558
   - title: Defining classes
     theory_id: 3618
   - title: Constructor
@@ -191,8 +142,6 @@ topics:
     theory_id: 6692
   - title: Referencing subclass objects
     theory_id: 3585
-  - title: The Object class
-    theory_id: 3596
   - title: Multiple constructors
     theory_id: 3538
   - title: The keyword super
@@ -216,12 +165,79 @@ topics:
   - title: Boxing and unboxing
     theory_id: 3595
   1:
-  - title: Window listeners
-    theory_id: 10614
+  - title: Computer algorithms
+    theory_id: 16547
+  - title: The big O notation
+    theory_id: 16699
+  - title: Best, average and worst cases
+    theory_id: 20084
+  - title: Data structures
+    theory_id: 16927
+  - title: Iterating over arrays
+    theory_id: 3602
+  - title: Pseudocode
+    theory_id: 15090
+  - title: Pseudocode basics
+    theory_id: 19510
+  - title: Complex constructions in pseudocode
+    theory_id: 20922
+  - title: Fixed-size array
+    theory_id: 20078
+  - title: Dynamic array
+    theory_id: 5357
+  - title: Processing strings
+    theory_id: 3551
+  - title: Generics and Object
+    theory_id: 3493
+  - title: What are collections
+    theory_id: 3770
+  - title: The Collections Framework overview
+    theory_id: 3624
+  - title: ArrayList
+    theory_id: 3567
+  - title: The List interface
+    theory_id: 3581
+  - title: The Object class
+    theory_id: 3596
+  - title: Comparable
+    theory_id: 14456
   2:
-  - title: The concept of patterns
-    theory_id: 3611
-  - title: Template method
-    theory_id: 5155
+  - title: Multithreading in Swing
+    theory_id: 11299
+  - title: IDE
+    theory_id: 10996
+  - title: Introduction to Operating systems
+    theory_id: 9704
+  - title: Stack
+    theory_id: 5252
+  - title: IntelliJ IDEA
+    theory_id: 3801
+  - title: IDEA Basics
+    theory_id: 5819
+  - title: Synchronous, asynchronous, parallel
+    theory_id: 9332
+  - title: Processes and threads
+    theory_id: 9420
+  - title: Queue
+    theory_id: 20716
+  - title: Deque
+    theory_id: 18635
+  - title: Threads as objects
+    theory_id: 4875
+  - title: Custom threads
+    theory_id: 4876
+  - title: Stack
+    theory_id: 20203
   - title: Abstract class
     theory_id: 3597
+  - title: Initialization blocks
+    theory_id: 3533
+  - title: Anonymous classes properties
+    theory_id: 3564
+  4:
+  - title: Floating-point types
+    theory_id: 3517
+  - title: Infinity and Not a Number
+    theory_id: 3494
+  - title: Math library
+    theory_id: 3501
