@@ -12,12 +12,14 @@ public class ButtonReset extends JButton implements ActionListener {
         setBounds(570,17,100,25);
         setActionCommand("res");
         addActionListener(this);
+        setName("ButtonReset");
     }
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         if (actionEvent.getActionCommand().equals("res")) {
             Cell.clearBoard();
+            Cell.currentSign = "X";
         }
     }
 }

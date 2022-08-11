@@ -248,7 +248,7 @@ files:
 - name: src/four/Cell.java
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/226/stages/1132/implement#comment
+feedback_link: https://hyperskill.org/learn/step/17267#comment
 status: Solved
 feedback:
   message: Congratulations!

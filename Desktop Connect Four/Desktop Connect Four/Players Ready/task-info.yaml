@@ -598,6 +598,9 @@ files:
 - name: src/four/ButtonReset.java
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/226/stages/1135/implement#comment
-status: Unchecked
-record: -1
+feedback_link: https://hyperskill.org/learn/step/17270#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 11 Aug 2022 10:35:08 UTC
+record: 4

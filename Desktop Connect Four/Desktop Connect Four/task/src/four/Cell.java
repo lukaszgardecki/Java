@@ -17,7 +17,7 @@ public class Cell extends JButton implements ActionListener {
     private static final Font FONT = new Font("Courier", Font.BOLD, 40);
     static final Color WIN_COLOR = Color.CYAN;
     static final Color DEFAULT_COLOR = Color.GRAY;
-    private static String currentSign = "X";
+    static String currentSign = "X";
     static Map<String, Cell> map = new LinkedHashMap<>();
 
     public Cell (String label) {
@@ -44,15 +44,25 @@ public class Cell extends JButton implements ActionListener {
         if (a.equals("clicked")) {
 
             if (isFull()) clearBoard();
-
             String column = getName().substring(6,7); // -> num of column
 
             for (int i = 1; i <= 6; i++) {
                 Cell cellInCol = map.get(column+i);
                 String text = cellInCol.getText();
-                if (text.equals(" ")) {
+
+                if (isWinner() && text.equals(" ")) {
+                    cellInCol.setText(" ");
+                } else if (isWinner() && text.equals("X")) {
+                    cellInCol.setText("X");
+                } else if (isWinner() && text.equals("O")) {
+                    cellInCol.setText("O");
+                }
+
+
+
+                else if (text.equals(" ")) {
                     cellInCol.setText(currentSign);
-                    if(isWinner()) blockCells();
+                    isWinner();
 
                     if (currentSign.equals("X")) {
                         setCurrentSign("O");
@@ -61,8 +71,21 @@ public class Cell extends JButton implements ActionListener {
                     }
                     break;
                 }
+
+
+
+
+
+
             }
+
+
         }
+
+
+
+
+
     }
 
     public static void setCurrentSign(String currentSign) {
@@ -75,7 +98,6 @@ public class Cell extends JButton implements ActionListener {
                 Cell eachCell = map.get(Character.toString(j)+i);
                 eachCell.setText(" ");
                 eachCell.setBackground(DEFAULT_COLOR);
-                eachCell.setEnabled(true);
             }
         }
     }
@@ -98,6 +120,7 @@ public class Cell extends JButton implements ActionListener {
         boolean w1 = false;
         boolean w2 = false;
         boolean w3 = false;
+        boolean w4 = false;
 
         for (int i = 1; i <= ROWS-3; i++) {
             for (int j = 'A'; j < 'A' + COLS; j++) {
@@ -155,7 +178,7 @@ public class Cell extends JButton implements ActionListener {
                 Cell c4 = map.get(Character.toString(j+3)+(i-3));
                 String text = c1.getText() + c2.getText() + c3.getText() + c4.getText();
                 if (text.equals("XXXX") || text.equals("OOOO")) {
-                    w3 = true;
+                    w4 = true;
                     c1.setBackground(WIN_COLOR);
                     c2.setBackground(WIN_COLOR);
                     c3.setBackground(WIN_COLOR);
@@ -163,16 +186,7 @@ public class Cell extends JButton implements ActionListener {
                 }
             }
         }
-        return w1 || w2 || w3;
-    }
-
-    public static void blockCells() {
-        for (int i = ROWS; i >= 1; i--) {
-            for (int j = 'A'; j < 'A' + COLS; j++) {
-                Cell eachCell = map.get(Character.toString(j)+i);
-                eachCell.setEnabled(false);
-            }
-        }
+        return w1 || w2 || w3 || w4;
     }
 
 
