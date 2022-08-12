@@ -202,8 +202,30 @@ public class KeyPanel extends JPanel implements ActionListener {
                 break;
             case "=":
                 textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "=");
-                ResultPanel.txtF.setText(textNew);
+                String[] numTab = {};
+                int result = 0;
+
+
+                if (textIn.contains("+")) {
+                    numTab = textIn.split("\\+");
+                    result = Integer.parseInt(String.valueOf(numTab[0])) +
+                             Integer.parseInt(String.valueOf(numTab[1]));
+                } else if (textIn.contains("-")) {
+                    numTab = textIn.split("-");
+                    result = Integer.parseInt(String.valueOf(numTab[0])) -
+                            Integer.parseInt(String.valueOf(numTab[1]));
+                } else if (textIn.contains("x")) {
+                    numTab = textIn.split("x");
+                    result = Integer.parseInt(String.valueOf(numTab[0])) *
+                            Integer.parseInt(String.valueOf(numTab[1]));
+                } else if (textIn.contains("/")) {
+                    numTab = textIn.split("/");
+                    result = Integer.parseInt(String.valueOf(numTab[0])) /
+                            Integer.parseInt(String.valueOf(numTab[1]));
+                }
+                if(!textIn.equals("")) {
+                    ResultPanel.txtF.setText(textIn + "=" + result);
+                }
                 break;
 
         }

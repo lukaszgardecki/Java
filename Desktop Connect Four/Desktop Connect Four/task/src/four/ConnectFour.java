@@ -1,31 +1,26 @@
 package four;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class ConnectFour extends JFrame {
-    static final int ROWS = 6;
-    static final int COLS = 7;
-    static final int WIND_WIDTH = 715;
-    static final int WIND_HEIGHT = 800;
+    private static final int ROWS = 6;
+    private static final int COLS = 7;
 
 
     public ConnectFour() {
         super("Connect Four");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(WIND_WIDTH, WIND_HEIGHT);
+        setSize(800, 800);
         setLocationRelativeTo(null);
-        setLayout(null);
-        setResizable(false);
+        setLayout(new GridLayout(ROWS, COLS));
 
-        Board board = new Board();
-        add(board);
+        for (int i = ROWS; i >= 1; i--) {
+            for (int j = 'A'; j < 'A' + COLS; j++) {
 
-        Feet feet = new Feet();
-        add(feet);
-
-        ButtonReset br = new ButtonReset();
-        br.setText("Reset");
-        feet.add(br);
+                Cell.map.put(Character.toString(j) + i, (Cell) add(new Cell(Character.toString(j) + i)));
+            }
+        }
 
         setVisible(true);
     }
