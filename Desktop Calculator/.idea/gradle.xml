@@ -39,6 +39,15 @@
             <option value="$PROJECT_DIR$/Topics/Custom threads/Theory" />
             <option value="$PROJECT_DIR$/Topics/Custom threads/When will a thread start performing a task" />
             <option value="$PROJECT_DIR$/Topics/Custom threads/Writing a thread for printing numbers" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Deque output" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Getting the max element of a stack" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Html Parser" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Methods" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Stack implementation" />
+            <option value="$PROJECT_DIR$/Topics/Stack/The LIFO principle in action" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Using deque" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Which brackets are balanced" />
             <option value="$PROJECT_DIR$/Topics/Threads as objects/Counting threads" />
             <option value="$PROJECT_DIR$/Topics/Threads as objects/Getting current thread info" />
             <option value="$PROJECT_DIR$/Topics/Threads as objects/Is thread daemon" />

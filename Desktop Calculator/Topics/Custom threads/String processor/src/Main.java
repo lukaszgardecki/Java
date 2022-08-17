@@ -21,6 +21,7 @@ class StringProcessor extends Thread {
                 System.out.println("FINISHED");
                 return;
             }
+
         }
     }
 }

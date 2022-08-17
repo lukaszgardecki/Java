@@ -4,13 +4,44 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class KeyPanel extends JPanel implements ActionListener {
+    final String ADDITION_SIGN = Character.toString('\u002B');
+    final String SUBTRACTION_SIGN = Character.toString('-');
+//    final String SUBTRACTION_SIGN = Character.toString('\u2212');
+    final String MULTIPLICATION_SIGN = Character.toString('\u00D7');
+    final String DIVISION_SIGN = Character.toString('\u00F7');
+    ArrayList<String> numList = new ArrayList<>();
+    ArrayList<String> opList = new ArrayList<>();
 
     public KeyPanel() {
-        setBounds(25,100,335,250);
+        setBounds(25,175,335,250);
         //setBackground(Color.ORANGE);
-        setLayout(new GridLayout(4, 4, 25, 25));
+        setLayout(new GridLayout(5, 4, 10, 10));
+
+
+        Key empty1 = new Key();
+        empty1.setVisible(false);
+        add(empty1);
+
+        Key empty2 = new Key();
+        empty2.setVisible(false);
+        add(empty2);
+
+        Key keyClear = new Key();
+        keyClear.setText("C");
+        keyClear.setName("Clear");
+        keyClear.setActionCommand("clear");
+        keyClear.addActionListener(this);
+        add(keyClear);
+
+        Key keyDelete = new Key();
+        keyDelete.setText("Del");
+        keyDelete.setName("Delete");
+        keyDelete.setActionCommand("delete");
+        keyDelete.addActionListener(this);
+        add(keyDelete);
 
         Key key7 = new Key();
         key7.setText("7");
@@ -34,7 +65,7 @@ public class KeyPanel extends JPanel implements ActionListener {
         add(key9);
 
         Key keyDiv = new Key();
-        keyDiv.setText("/");
+        keyDiv.setText(DIVISION_SIGN);
         keyDiv.setName("Divide");
         keyDiv.setActionCommand("/");
         keyDiv.addActionListener(this);
@@ -62,7 +93,7 @@ public class KeyPanel extends JPanel implements ActionListener {
         add(key6);
 
         Key keyMult = new Key();
-        keyMult.setText("x");
+        keyMult.setText(MULTIPLICATION_SIGN);
         keyMult.setName("Multiply");
         keyMult.setActionCommand("*");
         keyMult.addActionListener(this);
@@ -90,15 +121,18 @@ public class KeyPanel extends JPanel implements ActionListener {
         add(key3);
 
         Key keyPlus = new Key();
-        keyPlus.setText("+");
+        keyPlus.setText(ADDITION_SIGN);
         keyPlus.setName("Add");
         keyPlus.setActionCommand("+");
         keyPlus.addActionListener(this);
         add(keyPlus);
 
-        Key empty = new Key();
-        empty.setVisible(false);
-        add(empty);
+        Key keyDot = new Key();
+        keyDot.setText(".");
+        keyDot.setName("Dot");
+        keyDot.setActionCommand(".");
+        keyDot.addActionListener(this);
+        add(keyDot);
 
         Key key0 = new Key();
         key0.setText("0");
@@ -115,7 +149,7 @@ public class KeyPanel extends JPanel implements ActionListener {
         add(keyEqual);
 
         Key keyMinus = new Key();
-        keyMinus.setText("-");
+        keyMinus.setText(SUBTRACTION_SIGN);
         keyMinus.setName("Subtract");
         keyMinus.setActionCommand("-");
         keyMinus.addActionListener(this);
@@ -125,110 +159,115 @@ public class KeyPanel extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         String event = ae.getActionCommand();
-        String textIn;
-        String textNew;
-        System.out.println(event);
+        StringBuilder textIn = new StringBuilder(ResultPanel.equationLabel.getText());;
+        //System.out.println(event);
 
         switch (event) {
             case "1":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "1");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("1").toString());
                 break;
             case "2":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "2");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("2").toString());
                 break;
             case "3":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "3");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("3").toString());
                 break;
             case "4":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "4");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("4").toString());
                 break;
             case "5":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "5");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("5").toString());
                 break;
             case "6":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "6");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("6").toString());
                 break;
             case "7":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "7");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("7").toString());
                 break;
             case "8":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "8");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("8").toString());
                 break;
             case "9":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "9");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("9").toString());
                 break;
             case "0":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "0");
-                ResultPanel.txtF.setText(textNew);
+                ResultPanel.equationLabel.setText(textIn.append("0").toString());
                 break;
             case "-":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "-");
-                ResultPanel.txtF.setText(textNew);
+                System.out.println(SUBTRACTION_SIGN);
+                ResultPanel.equationLabel.setText(textIn.append(SUBTRACTION_SIGN).toString());
                 break;
             case "+":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "+");
-                ResultPanel.txtF.setText(textNew);
+                System.out.println(ADDITION_SIGN);
+                ResultPanel.equationLabel.setText(textIn.append(ADDITION_SIGN).toString());
                 break;
             case "/":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "/");
-                ResultPanel.txtF.setText(textNew);
+                System.out.println(DIVISION_SIGN);
+                ResultPanel.equationLabel.setText(textIn.append(DIVISION_SIGN).toString());
                 break;
             case "*":
-                textIn = ResultPanel.txtF.getText();
-                textNew = String.format(textIn + "x");
-                ResultPanel.txtF.setText(textNew);
+                System.out.println(MULTIPLICATION_SIGN);
+                ResultPanel.equationLabel.setText(textIn.append(MULTIPLICATION_SIGN).toString());
+                break;
+            case "clear":
+                ResultPanel.equationLabel.setText("");
+                ResultPanel.resultLabel.setText("0");
+                break;
+            case ".":
+                ResultPanel.equationLabel.setText(textIn.append(".").toString());
+                break;
+
+            case "delete":
+                try {
+                    ResultPanel.equationLabel.setText(textIn.deleteCharAt(textIn.length() - 1).toString());
+                } catch (StringIndexOutOfBoundsException ignored) {};
                 break;
             case "=":
-                textIn = ResultPanel.txtF.getText();
-                String[] numTab = {};
-                int result = 0;
+                double result = 0;
+                addToList(textIn);
 
+                System.out.println(numList);
+                System.out.println(opList);
 
-                if (textIn.contains("+")) {
-                    numTab = textIn.split("\\+");
-                    result = Integer.parseInt(String.valueOf(numTab[0])) +
-                             Integer.parseInt(String.valueOf(numTab[1]));
-                } else if (textIn.contains("-")) {
-                    numTab = textIn.split("-");
-                    result = Integer.parseInt(String.valueOf(numTab[0])) -
-                            Integer.parseInt(String.valueOf(numTab[1]));
-                } else if (textIn.contains("x")) {
-                    numTab = textIn.split("x");
-                    result = Integer.parseInt(String.valueOf(numTab[0])) *
-                            Integer.parseInt(String.valueOf(numTab[1]));
-                } else if (textIn.contains("/")) {
-                    numTab = textIn.split("/");
-                    result = Integer.parseInt(String.valueOf(numTab[0])) /
-                            Integer.parseInt(String.valueOf(numTab[1]));
-                }
                 if(!textIn.equals("")) {
-                    ResultPanel.txtF.setText(textIn + "=" + result);
+                    ResultPanel.resultLabel.setText(String.valueOf(result));
                 }
+
+
+
+                numList.clear();
+                opList.clear();
                 break;
 
         }
+
+    }
+    public void addToList(StringBuilder text) {
+        for (int i = 0; i < text.length(); i++) {
+            String op = Character.toString(text.charAt(i));
+            if (op.equals(ADDITION_SIGN) || op.equals(SUBTRACTION_SIGN) ||
+                op.equals(MULTIPLICATION_SIGN) || op.equals(DIVISION_SIGN)) {
+                opList.add(op);
+                numList.add(text.substring(0, i));
+                text.delete(0, i+1);
+                addToList(text);
+                break;
+            }
+            if (i == text.length()-1) numList.add(text.toString());
+        }
+    }
+
+    public void makeCalculations() {
+        if (opList.contains(MULTIPLICATION_SIGN)) {
+            int index = opList.lastIndexOf(MULTIPLICATION_SIGN);
+        }
+
+
+        if (opList.contains(MULTIPLICATION_SIGN) || opList.contains(DIVISION_SIGN)) {
+
+
+        }
+
     }
 
 
