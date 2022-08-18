@@ -10,18 +10,18 @@ import java.util.ArrayList;
 public class KeyPanel extends JPanel implements ActionListener {
     final String ADDITION_SIGN = Character.toString('\u002B');
     final String SUBTRACTION_SIGN = Character.toString('-');
-//    final String SUBTRACTION_SIGN = Character.toString('\u2212');
     final String MULTIPLICATION_SIGN = Character.toString('\u00D7');
     final String DIVISION_SIGN = Character.toString('\u00F7');
     ArrayList<String> equationList = new ArrayList<>();
-    ArrayList<String> opList = new ArrayList<>();
     DecimalFormat format = new DecimalFormat("0.#");
+    StringBuilder textIn;
+    boolean isEquationLabelEmpty;
+    boolean isLastSignAnOperator;
 
     public KeyPanel() {
         setBounds(25,175,335,250);
         //setBackground(Color.ORANGE);
         setLayout(new GridLayout(5, 4, 10, 10));
-
 
         Key empty1 = new Key();
         empty1.setVisible(false);
@@ -161,11 +161,11 @@ public class KeyPanel extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         String event = ae.getActionCommand();
-        StringBuilder textIn = new StringBuilder(ResultPanel.equationLabel.getText());
         String lastSign;
-        boolean isEquationLabelEmpty = textIn.toString().equals("");
-        boolean isLastSignAnOperator = false;
         ResultPanel.equationLabel.setForeground(Color.GREEN.darker());
+        textIn = new StringBuilder(ResultPanel.equationLabel.getText());
+        isEquationLabelEmpty = textIn.toString().equals("");
+        isLastSignAnOperator = false;
 
         if(!isEquationLabelEmpty) {
             lastSign = String.valueOf(textIn.charAt(textIn.length() - 1));
@@ -174,7 +174,6 @@ public class KeyPanel extends JPanel implements ActionListener {
                                    lastSign.equals(DIVISION_SIGN) ||
                                    lastSign.equals(MULTIPLICATION_SIGN);
         }
-        //System.out.println(event);
 
         switch (event) {
             case "1":
@@ -208,32 +207,16 @@ public class KeyPanel extends JPanel implements ActionListener {
                 ResultPanel.equationLabel.setText(textIn.append("0").toString());
                 break;
             case "-":
-                if (!isEquationLabelEmpty && isLastSignAnOperator) {
-                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),SUBTRACTION_SIGN).toString());
-                } else if (!isEquationLabelEmpty) {
-                    ResultPanel.equationLabel.setText(textIn.append(SUBTRACTION_SIGN).toString());
-                }
+                formatEquationLabel(SUBTRACTION_SIGN);
                 break;
             case "+":
-                if (!isEquationLabelEmpty && isLastSignAnOperator) {
-                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),ADDITION_SIGN).toString());
-                } else if (!isEquationLabelEmpty) {
-                    ResultPanel.equationLabel.setText(textIn.append(ADDITION_SIGN).toString());
-                }
+                formatEquationLabel(ADDITION_SIGN);
                 break;
             case "/":
-                if (!isEquationLabelEmpty && isLastSignAnOperator) {
-                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),DIVISION_SIGN).toString());
-                } else if (!isEquationLabelEmpty) {
-                    ResultPanel.equationLabel.setText(textIn.append(DIVISION_SIGN).toString());
-                }
+                formatEquationLabel(DIVISION_SIGN);
                 break;
             case "*":
-                if (!isEquationLabelEmpty && isLastSignAnOperator) {
-                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),MULTIPLICATION_SIGN).toString());
-                } else if (!isEquationLabelEmpty) {
-                    ResultPanel.equationLabel.setText(textIn.append(MULTIPLICATION_SIGN).toString());
-                }
+                formatEquationLabel(MULTIPLICATION_SIGN);
                 break;
             case "clear":
                 ResultPanel.equationLabel.setText("");
@@ -242,7 +225,6 @@ public class KeyPanel extends JPanel implements ActionListener {
             case ".":
                 ResultPanel.equationLabel.setText(textIn.append(".").toString());
                 break;
-
             case "delete":
                 try {
                     ResultPanel.equationLabel.setText(textIn.deleteCharAt(textIn.length() - 1).toString());
@@ -282,19 +264,19 @@ public class KeyPanel extends JPanel implements ActionListener {
 
     public void makeCalculations() {
         if (equationList.contains(DIVISION_SIGN)) {
-            calc(DIVISION_SIGN);
+            calculate(DIVISION_SIGN);
             makeCalculations();
         } else if (equationList.contains(MULTIPLICATION_SIGN)) {
-            calc(MULTIPLICATION_SIGN);
+            calculate(MULTIPLICATION_SIGN);
             makeCalculations();
         } else if (equationList.contains(ADDITION_SIGN) ||
                    equationList.contains(SUBTRACTION_SIGN)){
-            calc(equationList.get(1));
+            calculate(equationList.get(1));
             makeCalculations();
         }
     }
 
-    public void calc(String sign) {
+    public void calculate(String sign) {
         int index = equationList.indexOf(sign);
         double num1 = Double.parseDouble(equationList.get(index-1));
         double num2 = Double.parseDouble(equationList.get(index+1));
@@ -317,10 +299,26 @@ public class KeyPanel extends JPanel implements ActionListener {
             result = num1 - num2;
         }
 
-
         equationList.remove(index);
         equationList.set(index, String.valueOf(result));
         equationList.remove(index-1);
+    }
+
+    public void formatEquationLabel(String sign) {
+        if (textIn.toString().startsWith(".") || textIn.toString().contains(ADDITION_SIGN + ".") || textIn.toString().contains(SUBTRACTION_SIGN + ".") || textIn.toString().contains(MULTIPLICATION_SIGN + ".") || textIn.toString().contains(DIVISION_SIGN + ".")) {
+            int index = textIn.lastIndexOf(".");
+            textIn.replace(index, index+1, "0.");
+        } else if (textIn.toString().endsWith(".")) {
+            int index = textIn.lastIndexOf(".");
+            textIn.replace(index, index+1, ".0");
+        }
+
+        if (!isEquationLabelEmpty && isLastSignAnOperator) {
+            ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),sign).toString());
+        } else if (!isEquationLabelEmpty) {
+
+            ResultPanel.equationLabel.setText(textIn.append(sign).toString());
+        }
     }
 
 

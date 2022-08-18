@@ -360,6 +360,214 @@ files:
 
     }
   learner_created: false
+- name: src/calculator/ResultPanel.java
+  visible: true
+  text: |
+    package calculator;
+
+    import javax.swing.*;
+    import java.awt.*;
+
+    import static javax.swing.SwingConstants.RIGHT;
+
+    public class ResultPanel extends JPanel {
+        public static JLabel resultLabel;
+        public static JLabel equationLabel;
+
+        public ResultPanel() {
+            setBounds(0, 0, 400, 150);
+            //setBackground(Color.BLUE);
+            setLayout(null);
+
+            resultLabel = new JLabel();
+            resultLabel.setBounds(45, 35, 300, 80);
+            resultLabel.setText("0");
+            resultLabel.setName("ResultLabel");
+            //resultLabel.setBackground(Color.PINK);
+            resultLabel.setHorizontalAlignment(RIGHT);
+            resultLabel.setFont(new Font("Courier", Font.BOLD, 50));
+            add(resultLabel);
+
+            equationLabel = new JLabel();
+            equationLabel.setBounds(45, 115, 300, 35);
+            equationLabel.setName("EquationLabel");
+            //equationLabel.setBackground(Color.BLACK);
+            equationLabel.setHorizontalAlignment(RIGHT);
+            equationLabel.setFont(new Font("Courier", Font.BOLD, 18));
+            equationLabel.setForeground(Color.GREEN.darker());
+            add(equationLabel);
+
+
+        }
+    }
+  learner_created: true
+- name: src/calculator/KeyPanel.java
+  visible: true
+  text: "package calculator;\n\nimport javax.swing.*;\nimport java.awt.*;\nimport\
+    \ java.awt.event.ActionEvent;\nimport java.awt.event.ActionListener;\nimport java.text.DecimalFormat;\n\
+    import java.util.ArrayList;\n\npublic class KeyPanel extends JPanel implements\
+    \ ActionListener {\n    final String ADDITION_SIGN = Character.toString('\\u002B');\n\
+    \    final String SUBTRACTION_SIGN = Character.toString('-');\n//    final String\
+    \ SUBTRACTION_SIGN = Character.toString('\\u2212');\n    final String MULTIPLICATION_SIGN\
+    \ = Character.toString('\\u00D7');\n    final String DIVISION_SIGN = Character.toString('\\\
+    u00F7');\n    ArrayList<String> equationList = new ArrayList<>();\n    ArrayList<String>\
+    \ opList = new ArrayList<>();\n    DecimalFormat format = new DecimalFormat(\"\
+    0.#\");\n    StringBuilder textIn;\n    boolean isEquationLabelEmpty;\n    boolean\
+    \ isLastSignAnOperator;\n\n    public KeyPanel() {\n        setBounds(25,175,335,250);\n\
+    \        //setBackground(Color.ORANGE);\n        setLayout(new GridLayout(5, 4,\
+    \ 10, 10));\n\n\n        Key empty1 = new Key();\n        empty1.setVisible(false);\n\
+    \        add(empty1);\n\n        Key empty2 = new Key();\n        empty2.setVisible(false);\n\
+    \        add(empty2);\n\n        Key keyClear = new Key();\n        keyClear.setText(\"\
+    C\");\n        keyClear.setName(\"Clear\");\n        keyClear.setActionCommand(\"\
+    clear\");\n        keyClear.addActionListener(this);\n        add(keyClear);\n\
+    \n        Key keyDelete = new Key();\n        keyDelete.setText(\"Del\");\n  \
+    \      keyDelete.setName(\"Delete\");\n        keyDelete.setActionCommand(\"delete\"\
+    );\n        keyDelete.addActionListener(this);\n        add(keyDelete);\n\n  \
+    \      Key key7 = new Key();\n        key7.setText(\"7\");\n        key7.setName(\"\
+    Seven\");\n        key7.setActionCommand(\"7\");\n        key7.addActionListener(this);\n\
+    \        add(key7);\n\n        Key key8 = new Key();\n        key8.setText(\"\
+    8\");\n        key8.setName(\"Eight\");\n        key8.setActionCommand(\"8\");\n\
+    \        key8.addActionListener(this);\n        add(key8);\n\n        Key key9\
+    \ = new Key();\n        key9.setText(\"9\");\n        key9.setName(\"Nine\");\n\
+    \        key9.setActionCommand(\"9\");\n        key9.addActionListener(this);\n\
+    \        add(key9);\n\n        Key keyDiv = new Key();\n        keyDiv.setText(DIVISION_SIGN);\n\
+    \        keyDiv.setName(\"Divide\");\n        keyDiv.setActionCommand(\"/\");\n\
+    \        keyDiv.addActionListener(this);\n        add(keyDiv);\n\n        Key\
+    \ key4 = new Key();\n        key4.setText(\"4\");\n        key4.setName(\"Four\"\
+    );\n        key4.setActionCommand(\"4\");\n        key4.addActionListener(this);\n\
+    \        add(key4);\n\n        Key key5 = new Key();\n        key5.setText(\"\
+    5\");\n        key5.setName(\"Five\");\n        key5.setActionCommand(\"5\");\n\
+    \        key5.addActionListener(this);\n        add(key5);\n\n        Key key6\
+    \ = new Key();\n        key6.setText(\"6\");\n        key6.setName(\"Six\");\n\
+    \        key6.setActionCommand(\"6\");\n        key6.addActionListener(this);\n\
+    \        add(key6);\n\n        Key keyMult = new Key();\n        keyMult.setText(MULTIPLICATION_SIGN);\n\
+    \        keyMult.setName(\"Multiply\");\n        keyMult.setActionCommand(\"*\"\
+    );\n        keyMult.addActionListener(this);\n        add(keyMult);\n\n      \
+    \  Key key1 = new Key();\n        key1.setText(\"1\");\n        key1.setName(\"\
+    One\");\n        key1.setActionCommand(\"1\");\n        key1.addActionListener(this);\n\
+    \        add(key1);\n\n        Key key2 = new Key();\n        key2.setText(\"\
+    2\");\n        key2.setName(\"Two\");\n        key2.setActionCommand(\"2\");\n\
+    \        key2.addActionListener(this);\n        add(key2);\n\n        Key key3\
+    \ = new Key();\n        key3.setText(\"3\");\n        key3.setName(\"Three\");\n\
+    \        key3.setActionCommand(\"3\");\n        key3.addActionListener(this);\n\
+    \        add(key3);\n\n        Key keyPlus = new Key();\n        keyPlus.setText(ADDITION_SIGN);\n\
+    \        keyPlus.setName(\"Add\");\n        keyPlus.setActionCommand(\"+\");\n\
+    \        keyPlus.addActionListener(this);\n        add(keyPlus);\n\n        Key\
+    \ keyDot = new Key();\n        keyDot.setText(\".\");\n        keyDot.setName(\"\
+    Dot\");\n        keyDot.setActionCommand(\".\");\n        keyDot.addActionListener(this);\n\
+    \        add(keyDot);\n\n        Key key0 = new Key();\n        key0.setText(\"\
+    0\");\n        key0.setName(\"Zero\");\n        key0.setActionCommand(\"0\");\n\
+    \        key0.addActionListener(this);\n        add(key0);\n\n        Key keyEqual\
+    \ = new Key();\n        keyEqual.setText(\"=\");\n        keyEqual.setName(\"\
+    Equals\");\n        keyEqual.setActionCommand(\"=\");\n        keyEqual.addActionListener(this);\n\
+    \        add(keyEqual);\n\n        Key keyMinus = new Key();\n        keyMinus.setText(SUBTRACTION_SIGN);\n\
+    \        keyMinus.setName(\"Subtract\");\n        keyMinus.setActionCommand(\"\
+    -\");\n        keyMinus.addActionListener(this);\n        add(keyMinus);\n   \
+    \ }\n\n    @Override\n    public void actionPerformed(ActionEvent ae) {\n    \
+    \    String event = ae.getActionCommand();\n        textIn = new StringBuilder(ResultPanel.equationLabel.getText());\n\
+    \        String lastSign;\n        isEquationLabelEmpty = textIn.toString().equals(\"\
+    \");\n        isLastSignAnOperator = false;\n        ResultPanel.equationLabel.setForeground(Color.GREEN.darker());\n\
+    \n        if(!isEquationLabelEmpty) {\n            lastSign = String.valueOf(textIn.charAt(textIn.length()\
+    \ - 1));\n            isLastSignAnOperator = lastSign.equals(ADDITION_SIGN) ||\n\
+    \                                   lastSign.equals(SUBTRACTION_SIGN) ||\n   \
+    \                                lastSign.equals(DIVISION_SIGN) ||\n         \
+    \                          lastSign.equals(MULTIPLICATION_SIGN);\n        }\n\
+    \        //System.out.println(event);\n\n        switch (event) {\n          \
+    \  case \"1\":\n                ResultPanel.equationLabel.setText(textIn.append(\"\
+    1\").toString());\n                break;\n            case \"2\":\n         \
+    \       ResultPanel.equationLabel.setText(textIn.append(\"2\").toString());\n\
+    \                break;\n            case \"3\":\n                ResultPanel.equationLabel.setText(textIn.append(\"\
+    3\").toString());\n                break;\n            case \"4\":\n         \
+    \       ResultPanel.equationLabel.setText(textIn.append(\"4\").toString());\n\
+    \                break;\n            case \"5\":\n                ResultPanel.equationLabel.setText(textIn.append(\"\
+    5\").toString());\n                break;\n            case \"6\":\n         \
+    \       ResultPanel.equationLabel.setText(textIn.append(\"6\").toString());\n\
+    \                break;\n            case \"7\":\n                ResultPanel.equationLabel.setText(textIn.append(\"\
+    7\").toString());\n                break;\n            case \"8\":\n         \
+    \       ResultPanel.equationLabel.setText(textIn.append(\"8\").toString());\n\
+    \                break;\n            case \"9\":\n                ResultPanel.equationLabel.setText(textIn.append(\"\
+    9\").toString());\n                break;\n            case \"0\":\n         \
+    \       ResultPanel.equationLabel.setText(textIn.append(\"0\").toString());\n\
+    \                break;\n            case \"-\":\n                formatEquationLabel(SUBTRACTION_SIGN);\n\
+    \                break;\n            case \"+\":\n                formatEquationLabel(ADDITION_SIGN);\n\
+    \                break;\n            case \"/\":\n                formatEquationLabel(DIVISION_SIGN);\n\
+    \                break;\n            case \"*\":\n                formatEquationLabel(MULTIPLICATION_SIGN);\n\
+    \                break;\n            case \"clear\":\n                ResultPanel.equationLabel.setText(\"\
+    \");\n                ResultPanel.resultLabel.setText(\"0\");\n              \
+    \  break;\n            case \".\":\n//                if (isLastSignAnOperator)\
+    \ {\n//                    ResultPanel.equationLabel.setText(textIn.append(\"\
+    0.\").toString());\n//                } else {\n                    ResultPanel.equationLabel.setText(textIn.append(\"\
+    .\").toString());\n//                }\n\n\n                break;\n\n       \
+    \     case \"delete\":\n                try {\n                    ResultPanel.equationLabel.setText(textIn.deleteCharAt(textIn.length()\
+    \ - 1).toString());\n                } catch (StringIndexOutOfBoundsException\
+    \ ignored) {};\n                break;\n            case \"=\":\n\n          \
+    \      //ResultPanel.equationLabel.setText(textIn.toString());\n\n           \
+    \     if (!isEquationLabelEmpty && isLastSignAnOperator) {\n                 \
+    \   ResultPanel.equationLabel.setForeground(Color.RED.darker());\n           \
+    \     } else if (!isEquationLabelEmpty) {\n                    addToList(textIn);\n\
+    \                    makeCalculations();\n                    String result =\
+    \ equationList.get(0);\n                    result = format.format(Double.parseDouble(result));\n\
+    \                    result = result.replace(\",\", \".\");\n                \
+    \    ResultPanel.resultLabel.setText(result);\n                    equationList.clear();\n\
+    \                }\n                break;\n        }\n    }\n\n    public void\
+    \ addToList(StringBuilder text) {\n        for (int i = 0; i < text.length();\
+    \ i++) {\n            String op = Character.toString(text.charAt(i));\n      \
+    \      if (op.equals(ADDITION_SIGN) || op.equals(SUBTRACTION_SIGN) ||\n      \
+    \          op.equals(MULTIPLICATION_SIGN) || op.equals(DIVISION_SIGN)) {\n   \
+    \             equationList.add(text.substring(0, i));\n                equationList.add(op);\n\
+    \n                text.delete(0, i+1);\n                addToList(text);\n   \
+    \             break;\n            }\n            if (i == text.length()-1) equationList.add(text.toString());\n\
+    \        }\n    }\n\n    public void makeCalculations() {\n        if (equationList.contains(DIVISION_SIGN))\
+    \ {\n            calc(DIVISION_SIGN);\n            makeCalculations();\n     \
+    \   } else if (equationList.contains(MULTIPLICATION_SIGN)) {\n            calc(MULTIPLICATION_SIGN);\n\
+    \            makeCalculations();\n        } else if (equationList.contains(ADDITION_SIGN)\
+    \ ||\n                   equationList.contains(SUBTRACTION_SIGN)){\n         \
+    \   calc(equationList.get(1));\n            makeCalculations();\n        }\n \
+    \   }\n\n    public void calc(String sign) {\n        int index = equationList.indexOf(sign);\n\
+    \        double num1 = Double.parseDouble(equationList.get(index-1));\n      \
+    \  double num2 = Double.parseDouble(equationList.get(index+1));\n        double\
+    \ result = 0;\n\n        if (sign.equals(DIVISION_SIGN)) {\n            if (num2\
+    \ == 0) {\n                ResultPanel.equationLabel.setForeground(Color.RED.darker());\n\
+    \                equationList.clear();\n                equationList.add(\"0\"\
+    );\n                return;\n            } else {\n                result = num1\
+    \ / num2;\n            }\n        } else if (sign.equals(MULTIPLICATION_SIGN))\
+    \ {\n            result = num1 * num2;\n        } else if (sign.equals(ADDITION_SIGN))\
+    \ {\n            result = num1 + num2;\n        } else if (sign.equals(SUBTRACTION_SIGN))\
+    \ {\n            result = num1 - num2;\n        }\n\n\n        equationList.remove(index);\n\
+    \        equationList.set(index, String.valueOf(result));\n        equationList.remove(index-1);\n\
+    \n        System.out.println(equationList);\n    }\n    \n    public void formatEquationLabel(String\
+    \ sign) {\n        if (textIn.toString().startsWith(\".\") || textIn.toString().contains(ADDITION_SIGN\
+    \ + \".\") || textIn.toString().contains(SUBTRACTION_SIGN + \".\") || textIn.toString().contains(MULTIPLICATION_SIGN\
+    \ + \".\") || textIn.toString().contains(DIVISION_SIGN + \".\")) {\n         \
+    \   int index = textIn.lastIndexOf(\".\");\n            textIn.replace(index,\
+    \ index+1, \"0.\");\n        } else if (textIn.toString().endsWith(\".\")) {\n\
+    \            int index = textIn.lastIndexOf(\".\");\n            textIn.replace(index,\
+    \ index+1, \".0\");\n        }\n\n        if (!isEquationLabelEmpty && isLastSignAnOperator)\
+    \ {\n            ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),sign).toString());\n\
+    \        } else if (!isEquationLabelEmpty) {\n\n            ResultPanel.equationLabel.setText(textIn.append(sign).toString());\n\
+    \        }\n    }\n\n\n}\n"
+  learner_created: true
+- name: src/calculator/Key.java
+  visible: true
+  text: |
+    package calculator;
+
+    import javax.swing.*;
+    import java.awt.*;
+
+    public class Key extends JButton {
+        public static final Font KEY_FONT = new Font("Courier", Font.BOLD, 20);
+
+        public Key() {
+            setFont(KEY_FONT);
+            //setBounds(0,0,30,30);
+            setBackground(Color.WHITE);
+
+
+
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/13798#comment
 status: Unchecked
 record: -1
