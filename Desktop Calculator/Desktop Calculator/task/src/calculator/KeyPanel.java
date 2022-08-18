@@ -4,164 +4,89 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class KeyPanel extends JPanel implements ActionListener {
     final String ADDITION_SIGN = Character.toString('\u002B');
     final String SUBTRACTION_SIGN = Character.toString('-');
     final String MULTIPLICATION_SIGN = Character.toString('\u00D7');
     final String DIVISION_SIGN = Character.toString('\u00F7');
+    final String SQUARE_ROOT_SIGN = Character.toString('\u221A');
+    final String PLUS_MINUS_SIGN = Character.toString('\u00B1');
+    final String POWER_2_SIGN = "x\u00B2";
+    final String POWER_Y_SIGN = "x\u02B8";
     ArrayList<String> equationList = new ArrayList<>();
     DecimalFormat format = new DecimalFormat("0.#");
     StringBuilder textIn;
     boolean isEquationLabelEmpty;
     boolean isLastSignAnOperator;
+    boolean isLastSignNumeric;
 
     public KeyPanel() {
-        setBounds(25,175,335,250);
-        //setBackground(Color.ORANGE);
-        setLayout(new GridLayout(5, 4, 10, 10));
+        setBounds(5,175,341,340);
+        setBackground(Calculator.backgroundColor);
+        setLayout(new GridLayout(6, 4, 3, 2));
 
-        Key empty1 = new Key();
-        empty1.setVisible(false);
-        add(empty1);
+        Key key1 = new NumberKey("1", "One", this);
+        Key key2 = new NumberKey("2", "Two", this);
+        Key key3 = new NumberKey("3", "Three", this);
+        Key key4 = new NumberKey("4", "Four", this);
+        Key key5 = new NumberKey("5", "Five", this);
+        Key key6 = new NumberKey("6", "Six", this);
+        Key key7 = new NumberKey("7", "Seven", this);
+        Key key8 = new NumberKey("8", "Eight", this);
+        Key key9 = new NumberKey("9", "Nine", this);
+        Key key0 = new NumberKey("0", "Zero", this);
+        Key keyDot = new NumberKey(".", "Dot", this);
+        Key keyPlusMinus = new NumberKey(PLUS_MINUS_SIGN, "PlusMinus", this);
 
-        Key empty2 = new Key();
-        empty2.setVisible(false);
-        add(empty2);
+        Key keyPlus = new OperatorKey(ADDITION_SIGN, "Add", this);
+        Key keyMinus = new OperatorKey(SUBTRACTION_SIGN, "Subtract", this);
+        Key keyMult = new OperatorKey(MULTIPLICATION_SIGN, "Multiply", this);
+        Key keyDiv = new OperatorKey(DIVISION_SIGN, "Divide", this);
+        Key keyPowerTwo = new OperatorKey(POWER_2_SIGN, "PowerTwo", this);
+        Key keyPowerY = new OperatorKey(POWER_Y_SIGN, "PowerY", this);
+        Key keySquareRoot = new OperatorKey(SQUARE_ROOT_SIGN, "SquareRoot", this);
+        Key keyParentheses = new OperatorKey("( )", "Parentheses", this);
+        Key keyClear = new OperatorKey("C", "Clear", this);
+        Key keyClearEverything = new OperatorKey("CE", "ClearEverything", this);
+        Key keyDelete = new OperatorKey("Del", "Delete", this);
 
-        Key keyClear = new Key();
-        keyClear.setText("C");
-        keyClear.setName("Clear");
-        keyClear.setActionCommand("clear");
-        keyClear.addActionListener(this);
+        Key keyEqual = new EqualsKey("=", "Equals", this);
+
+        add(keyParentheses);
+        add(keyClearEverything);
         add(keyClear);
-
-        Key keyDelete = new Key();
-        keyDelete.setText("Del");
-        keyDelete.setName("Delete");
-        keyDelete.setActionCommand("delete");
-        keyDelete.addActionListener(this);
         add(keyDelete);
-
-        Key key7 = new Key();
-        key7.setText("7");
-        key7.setName("Seven");
-        key7.setActionCommand("7");
-        key7.addActionListener(this);
-        add(key7);
-
-        Key key8 = new Key();
-        key8.setText("8");
-        key8.setName("Eight");
-        key8.setActionCommand("8");
-        key8.addActionListener(this);
-        add(key8);
-
-        Key key9 = new Key();
-        key9.setText("9");
-        key9.setName("Nine");
-        key9.setActionCommand("9");
-        key9.addActionListener(this);
-        add(key9);
-
-        Key keyDiv = new Key();
-        keyDiv.setText(DIVISION_SIGN);
-        keyDiv.setName("Divide");
-        keyDiv.setActionCommand("/");
-        keyDiv.addActionListener(this);
+        add(keyPowerTwo);
+        add(keyPowerY);
+        add(keySquareRoot);
         add(keyDiv);
-
-        Key key4 = new Key();
-        key4.setText("4");
-        key4.setName("Four");
-        key4.setActionCommand("4");
-        key4.addActionListener(this);
-        add(key4);
-
-        Key key5 = new Key();
-        key5.setText("5");
-        key5.setName("Five");
-        key5.setActionCommand("5");
-        key5.addActionListener(this);
-        add(key5);
-
-        Key key6 = new Key();
-        key6.setText("6");
-        key6.setName("Six");
-        key6.setActionCommand("6");
-        key6.addActionListener(this);
-        add(key6);
-
-        Key keyMult = new Key();
-        keyMult.setText(MULTIPLICATION_SIGN);
-        keyMult.setName("Multiply");
-        keyMult.setActionCommand("*");
-        keyMult.addActionListener(this);
+        add(key7);
+        add(key8);
+        add(key9);
         add(keyMult);
-
-        Key key1 = new Key();
-        key1.setText("1");
-        key1.setName("One");
-        key1.setActionCommand("1");
-        key1.addActionListener(this);
-        add(key1);
-
-        Key key2 = new Key();
-        key2.setText("2");
-        key2.setName("Two");
-        key2.setActionCommand("2");
-        key2.addActionListener(this);
-        add(key2);
-
-        Key key3 = new Key();
-        key3.setText("3");
-        key3.setName("Three");
-        key3.setActionCommand("3");
-        key3.addActionListener(this);
-        add(key3);
-
-        Key keyPlus = new Key();
-        keyPlus.setText(ADDITION_SIGN);
-        keyPlus.setName("Add");
-        keyPlus.setActionCommand("+");
-        keyPlus.addActionListener(this);
-        add(keyPlus);
-
-        Key keyDot = new Key();
-        keyDot.setText(".");
-        keyDot.setName("Dot");
-        keyDot.setActionCommand(".");
-        keyDot.addActionListener(this);
-        add(keyDot);
-
-        Key key0 = new Key();
-        key0.setText("0");
-        key0.setName("Zero");
-        key0.setActionCommand("0");
-        key0.addActionListener(this);
-        add(key0);
-
-        Key keyEqual = new Key();
-        keyEqual.setText("=");
-        keyEqual.setName("Equals");
-        keyEqual.setActionCommand("=");
-        keyEqual.addActionListener(this);
-        add(keyEqual);
-
-        Key keyMinus = new Key();
-        keyMinus.setText(SUBTRACTION_SIGN);
-        keyMinus.setName("Subtract");
-        keyMinus.setActionCommand("-");
-        keyMinus.addActionListener(this);
+        add(key4);
+        add(key5);
+        add(key6);
         add(keyMinus);
+        add(key1);
+        add(key2);
+        add(key3);
+        add(keyPlus);
+        add(keyPlusMinus);
+        add(key0);
+        add(keyDot);
+        add(keyEqual);
     }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
         String event = ae.getActionCommand();
-        String lastSign;
+        String lastSign = "";
         ResultPanel.equationLabel.setForeground(Color.GREEN.darker());
         textIn = new StringBuilder(ResultPanel.equationLabel.getText());
         isEquationLabelEmpty = textIn.toString().equals("");
@@ -173,69 +98,113 @@ public class KeyPanel extends JPanel implements ActionListener {
                                    lastSign.equals(SUBTRACTION_SIGN) ||
                                    lastSign.equals(DIVISION_SIGN) ||
                                    lastSign.equals(MULTIPLICATION_SIGN);
+            isLastSignNumeric = Character.isDigit(lastSign.charAt(0));
         }
 
+
+
         switch (event) {
-            case "1":
+            case "One":
                 ResultPanel.equationLabel.setText(textIn.append("1").toString());
                 break;
-            case "2":
+            case "Two":
                 ResultPanel.equationLabel.setText(textIn.append("2").toString());
                 break;
-            case "3":
+            case "Three":
                 ResultPanel.equationLabel.setText(textIn.append("3").toString());
                 break;
-            case "4":
+            case "Four":
                 ResultPanel.equationLabel.setText(textIn.append("4").toString());
                 break;
-            case "5":
+            case "Five":
                 ResultPanel.equationLabel.setText(textIn.append("5").toString());
                 break;
-            case "6":
+            case "Six":
                 ResultPanel.equationLabel.setText(textIn.append("6").toString());
                 break;
-            case "7":
+            case "Seven":
                 ResultPanel.equationLabel.setText(textIn.append("7").toString());
                 break;
-            case "8":
+            case "Eight":
                 ResultPanel.equationLabel.setText(textIn.append("8").toString());
                 break;
-            case "9":
+            case "Nine":
                 ResultPanel.equationLabel.setText(textIn.append("9").toString());
                 break;
-            case "0":
+            case "Zero":
                 ResultPanel.equationLabel.setText(textIn.append("0").toString());
                 break;
-            case "-":
+            case "Subtract":
                 formatEquationLabel(SUBTRACTION_SIGN);
                 break;
-            case "+":
+            case "Add":
                 formatEquationLabel(ADDITION_SIGN);
                 break;
-            case "/":
+            case "Divide":
                 formatEquationLabel(DIVISION_SIGN);
                 break;
-            case "*":
+            case "Multiply":
                 formatEquationLabel(MULTIPLICATION_SIGN);
                 break;
-            case "clear":
+            case "Clear":
                 ResultPanel.equationLabel.setText("");
                 ResultPanel.resultLabel.setText("0");
                 break;
-            case ".":
-                ResultPanel.equationLabel.setText(textIn.append(".").toString());
+            case "Dot":
+                if(!lastSign.equals(".")) {
+                    ResultPanel.equationLabel.setText(textIn.append(".").toString());
+                }
                 break;
-            case "delete":
+            case "Delete":
                 try {
                     ResultPanel.equationLabel.setText(textIn.deleteCharAt(textIn.length() - 1).toString());
-                } catch (StringIndexOutOfBoundsException ignored) {};
+                } catch (StringIndexOutOfBoundsException ignored) {}
                 break;
-            case "=":
+            case "PlusMinus":
+
+                break;
+            case "Parentheses":
+                int leftCounter = 0;
+                int rightCounter = 0;
+
+                for(int i = 0; i < textIn.length(); i++) {
+                    if (textIn.toString().charAt(i) == '(') leftCounter++;
+                    if (textIn.toString().charAt(i) == ')') rightCounter++;
+                }
+
+                if (textIn.length() == 0 || isLastSignAnOperator || lastSign.equals("(")) {
+                    ResultPanel.equationLabel.setText(textIn.append("(").toString());
+                } else if (leftCounter == rightCounter && (isLastSignNumeric || lastSign.equals(")"))) {
+                    ResultPanel.equationLabel.setText(textIn.append(MULTIPLICATION_SIGN).append("(").toString());
+                } else {
+                    ResultPanel.equationLabel.setText(textIn.append(")").toString());
+                }
+                break;
+            case "PowerTwo":
+
+                break;
+            case "PowerY":
+
+                break;
+            case "SquareRoot":
+
+                break;
+            case "ClearEverything":
+
+                break;
+            case "Equals":
                 if (!isEquationLabelEmpty && isLastSignAnOperator) {
                     ResultPanel.equationLabel.setForeground(Color.RED.darker());
                 } else if (!isEquationLabelEmpty) {
                     addToList(textIn);
-                    makeCalculations();
+
+                    System.out.println(equationList);
+
+                    makeCalculations(equationList);
+
+
+                    //System.out.println(equationList);
+
                     String result = equationList.get(0);
                     result = format.format(Double.parseDouble(result));
                     result = result.replace(",", ".");
@@ -246,47 +215,76 @@ public class KeyPanel extends JPanel implements ActionListener {
         }
     }
 
+
+    /*
+        Adding each element of the equation to the equationList
+     */
     public void addToList(StringBuilder text) {
         for (int i = 0; i < text.length(); i++) {
             String op = Character.toString(text.charAt(i));
-            if (op.equals(ADDITION_SIGN) || op.equals(SUBTRACTION_SIGN) ||
-                op.equals(MULTIPLICATION_SIGN) || op.equals(DIVISION_SIGN)) {
-                equationList.add(text.substring(0, i));
-                equationList.add(op);
 
+            if (op.equals("(")) {
+                equationList.add(op);
+                text.delete(0, i+1);
+                addToList(text);
+                break;
+            } else if (op.equals(")")) {
+                if (i != 0) {
+                    equationList.add(text.substring(0, i));
+                }
+                equationList.add(op);
+                text.delete(0, i+1);
+                addToList(text);
+                break;
+            } else if (op.equals(ADDITION_SIGN) || op.equals(SUBTRACTION_SIGN) ||
+                op.equals(MULTIPLICATION_SIGN) || op.equals(DIVISION_SIGN)) {
+                if (i != 0) {
+                    equationList.add(text.substring(0, i));
+                }
+                equationList.add(op);
                 text.delete(0, i+1);
                 addToList(text);
                 break;
             }
-            if (i == text.length()-1) equationList.add(text.toString());
+            if (i == text.length()-1) equationList.add(text.substring(0,1));
         }
     }
 
-    public void makeCalculations() {
-        if (equationList.contains(DIVISION_SIGN)) {
-            calculate(DIVISION_SIGN);
-            makeCalculations();
-        } else if (equationList.contains(MULTIPLICATION_SIGN)) {
-            calculate(MULTIPLICATION_SIGN);
-            makeCalculations();
-        } else if (equationList.contains(ADDITION_SIGN) ||
-                   equationList.contains(SUBTRACTION_SIGN)){
-            calculate(equationList.get(1));
-            makeCalculations();
+    public void makeCalculations(ArrayList<String> list) {
+        if (list.contains(DIVISION_SIGN)) {
+            calculate(list, DIVISION_SIGN);
+            //makeCalculations(list);
+        } else if (list.contains(MULTIPLICATION_SIGN)) {
+            calculate(list, MULTIPLICATION_SIGN);
+            //makeCalculations(list);
+        } else if (list.contains(ADDITION_SIGN)){
+            calculate(list, ADDITION_SIGN);
+            //makeCalculations(list);
+        } else if (list.contains(SUBTRACTION_SIGN)) {
+            calculate(list, SUBTRACTION_SIGN);
+            //makeCalculations(list);
         }
     }
 
-    public void calculate(String sign) {
-        int index = equationList.indexOf(sign);
-        double num1 = Double.parseDouble(equationList.get(index-1));
-        double num2 = Double.parseDouble(equationList.get(index+1));
+    public void calculate(ArrayList<String> list, String sign) {
+        int index = list.indexOf(sign);
+
+       // System.out.println(equationList);
+
+
+        //double num1 = Double.parseDouble(equationList.get(index-1));
+        //double num2 = Double.parseDouble(equationList.get(index+1));
+        double num1 = findNum("left", index, list);
+        double num2 = findNum("right", index, list);
+
+
         double result = 0;
 
         if (sign.equals(DIVISION_SIGN)) {
             if (num2 == 0) {
                 ResultPanel.equationLabel.setForeground(Color.RED.darker());
-                equationList.clear();
-                equationList.add("0");
+                list.clear();
+                list.add("0");
                 return;
             } else {
                 result = num1 / num2;
@@ -299,16 +297,32 @@ public class KeyPanel extends JPanel implements ActionListener {
             result = num1 - num2;
         }
 
-        equationList.remove(index);
-        equationList.set(index, String.valueOf(result));
-        equationList.remove(index-1);
+        boolean isParenthesisAtLeft = list.get(index-2).equals("(");
+        boolean isParenthesisAtRight = list.get(index+2).equals(")");
+        list.remove(index);
+        list.set(index, String.valueOf(result));
+        list.remove(index-1);
+
+        if(isParenthesisAtLeft && isParenthesisAtRight) {
+            list.remove(index-2);
+            list.remove(index-1);
+        }
+
+//        System.out.println(list);
+//        list.removeAll(Collections.singleton("("));
+//        list.removeAll(Collections.singleton(")"));
+        System.out.println(list);
+        makeCalculations(list);
+
+
     }
 
     public void formatEquationLabel(String sign) {
-        if (textIn.toString().startsWith(".") || textIn.toString().contains(ADDITION_SIGN + ".") || textIn.toString().contains(SUBTRACTION_SIGN + ".") || textIn.toString().contains(MULTIPLICATION_SIGN + ".") || textIn.toString().contains(DIVISION_SIGN + ".")) {
+        String text = textIn.toString();
+        if (text.startsWith(".") || text.contains(ADDITION_SIGN + ".") || text.contains(SUBTRACTION_SIGN + ".") || text.contains(MULTIPLICATION_SIGN + ".") || text.contains(DIVISION_SIGN + ".")) {
             int index = textIn.lastIndexOf(".");
             textIn.replace(index, index+1, "0.");
-        } else if (textIn.toString().endsWith(".")) {
+        } else if (text.endsWith(".")) {
             int index = textIn.lastIndexOf(".");
             textIn.replace(index, index+1, ".0");
         }
@@ -316,10 +330,95 @@ public class KeyPanel extends JPanel implements ActionListener {
         if (!isEquationLabelEmpty && isLastSignAnOperator) {
             ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),sign).toString());
         } else if (!isEquationLabelEmpty) {
-
             ResultPanel.equationLabel.setText(textIn.append(sign).toString());
         }
     }
 
+    public double findNum(String side, int index, ArrayList<String> list) {
+        boolean isSignANum;
+        String sign = "";
+        double num = 0;
+        int counter1 = 0;
+        int counter2 = 0;
+        if (side.equals("left")) sign = list.get(index-1);
+        if (side.equals("right")) sign = list.get(index+1);
 
+
+        isSignANum = !sign.equals("(") && !sign.equals(")") && !sign.equals(ADDITION_SIGN) && !sign.equals(SUBTRACTION_SIGN) && !sign.equals(MULTIPLICATION_SIGN) && !sign.equals(DIVISION_SIGN);
+
+        //System.out.println(index);
+       // System.out.println(isSignANum);
+
+        if (isSignANum) {
+            num = Double.parseDouble(sign);
+        } else {
+            if (side.equals("right")) {
+                int startIndex = index+1;
+                int endIndex;
+                for (int i = startIndex; ;i++) {
+                    if (list.get(i).equals("(")) counter1++;
+                    if (list.get(i).equals(")")) counter2++;
+                    if (counter1 == counter2) {
+                        endIndex = i;
+                        break;
+                    }
+                }
+                ArrayList<String> tempList = new ArrayList<>(list.subList(startIndex, index));
+
+                System.out.println(tempList);
+
+                makeCalculations(tempList);
+
+                StringBuilder tempSb = new StringBuilder();
+                for (String s : tempList) {
+                    tempSb.append(s);
+                }
+                for (int k = startIndex; k <= endIndex; k++) {
+                    list.remove(startIndex);
+                }
+                list.add(tempSb.toString());
+
+
+                System.out.println(tempSb);
+                num = Double.parseDouble(tempSb.toString());
+
+            }
+            if (side.equals("left")) {
+                int startIndex;
+                int endIndex = index-1;
+                for (int i = endIndex; ;i--) {
+                    if (list.get(i).equals("(")) counter1++;
+                    if (list.get(i).equals(")")) counter2++;
+                    if (counter1 == counter2) {
+                        startIndex = i;
+                        break;
+                    }
+                }
+                ArrayList<String> tempList = new ArrayList<>(list.subList(startIndex, index));
+
+                System.out.println(tempList);
+
+                makeCalculations(tempList);
+
+                StringBuilder tempSb = new StringBuilder();
+                for (String s : tempList) {
+                    tempSb.append(s);
+                }
+                for (int k = startIndex; k <= endIndex; k++) {
+                    list.remove(startIndex);
+                }
+
+
+
+                list.add(startIndex, tempSb.toString());
+
+
+                num = Double.parseDouble(tempSb.toString());
+
+
+            }
+
+        }
+        return num;
+    }
 }

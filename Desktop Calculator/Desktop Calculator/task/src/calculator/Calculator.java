@@ -1,18 +1,15 @@
 package calculator;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Calculator extends JFrame {
-    public static final int CALC_WIDTH = 400;
-    public static final int CALC_HEIGHT = 500;
+    public static final int CALC_WIDTH = 366;
+    public static final int CALC_HEIGHT = 650;
+    public static final Color backgroundColor = new Color(210, 210, 210);
 
     public Calculator() {
         super("Calculator");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(CALC_WIDTH, CALC_HEIGHT);
-        setLayout(null);
-        setLocationRelativeTo(null);
-        setResizable(false);
 
         ResultPanel resultPanel = new ResultPanel();
         add(resultPanel);
@@ -20,6 +17,12 @@ public class Calculator extends JFrame {
         KeyPanel keyPanel = new KeyPanel();
         add(keyPanel);
 
+        setSize(CALC_WIDTH, CALC_HEIGHT);
+        setLayout(null);
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setBackground(backgroundColor);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
 

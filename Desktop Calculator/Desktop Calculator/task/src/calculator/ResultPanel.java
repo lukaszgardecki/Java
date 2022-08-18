@@ -10,23 +10,23 @@ public class ResultPanel extends JPanel {
     public static JLabel equationLabel;
 
     public ResultPanel() {
-        setBounds(0, 0, 400, 150);
-        //setBackground(Color.BLUE);
+        setBounds(5, 0, 341, 175);
+        setBackground(Calculator.backgroundColor);
         setLayout(null);
 
         resultLabel = new JLabel();
-        resultLabel.setBounds(45, 35, 300, 80);
+        resultLabel.setBounds(10, 0, 321, 80);
         resultLabel.setText("0");
         resultLabel.setName("ResultLabel");
-        //resultLabel.setBackground(Color.PINK);
+        //resultLabel.setBackground(Calculator.backgroundColor);
         resultLabel.setHorizontalAlignment(RIGHT);
         resultLabel.setFont(new Font("Courier", Font.BOLD, 50));
         add(resultLabel);
 
         equationLabel = new JLabel();
-        equationLabel.setBounds(45, 115, 300, 35);
+        equationLabel.setBounds(10, 90, 321, 35);
         equationLabel.setName("EquationLabel");
-        //equationLabel.setBackground(Color.BLACK);
+        //equationLabel.setBackground(Calculator.backgroundColor);
         equationLabel.setHorizontalAlignment(RIGHT);
         equationLabel.setFont(new Font("Courier", Font.BOLD, 18));
         equationLabel.setForeground(Color.GREEN.darker());
