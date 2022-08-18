@@ -29,7 +29,7 @@ public class ResultPanel extends JPanel {
         //equationLabel.setBackground(Color.BLACK);
         equationLabel.setHorizontalAlignment(RIGHT);
         equationLabel.setFont(new Font("Courier", Font.BOLD, 18));
-        equationLabel.setForeground(new Color(0, 170, 0));
+        equationLabel.setForeground(Color.GREEN.darker());
         add(equationLabel);
 
 

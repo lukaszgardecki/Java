@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class KeyPanel extends JPanel implements ActionListener {
@@ -12,8 +13,9 @@ public class KeyPanel extends JPanel implements ActionListener {
 //    final String SUBTRACTION_SIGN = Character.toString('\u2212');
     final String MULTIPLICATION_SIGN = Character.toString('\u00D7');
     final String DIVISION_SIGN = Character.toString('\u00F7');
-    ArrayList<String> numList = new ArrayList<>();
+    ArrayList<String> equationList = new ArrayList<>();
     ArrayList<String> opList = new ArrayList<>();
+    DecimalFormat format = new DecimalFormat("0.#");
 
     public KeyPanel() {
         setBounds(25,175,335,250);
@@ -159,7 +161,19 @@ public class KeyPanel extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         String event = ae.getActionCommand();
-        StringBuilder textIn = new StringBuilder(ResultPanel.equationLabel.getText());;
+        StringBuilder textIn = new StringBuilder(ResultPanel.equationLabel.getText());
+        String lastSign;
+        boolean isEquationLabelEmpty = textIn.toString().equals("");
+        boolean isLastSignAnOperator = false;
+        ResultPanel.equationLabel.setForeground(Color.GREEN.darker());
+
+        if(!isEquationLabelEmpty) {
+            lastSign = String.valueOf(textIn.charAt(textIn.length() - 1));
+            isLastSignAnOperator = lastSign.equals(ADDITION_SIGN) ||
+                                   lastSign.equals(SUBTRACTION_SIGN) ||
+                                   lastSign.equals(DIVISION_SIGN) ||
+                                   lastSign.equals(MULTIPLICATION_SIGN);
+        }
         //System.out.println(event);
 
         switch (event) {
@@ -194,20 +208,32 @@ public class KeyPanel extends JPanel implements ActionListener {
                 ResultPanel.equationLabel.setText(textIn.append("0").toString());
                 break;
             case "-":
-                System.out.println(SUBTRACTION_SIGN);
-                ResultPanel.equationLabel.setText(textIn.append(SUBTRACTION_SIGN).toString());
+                if (!isEquationLabelEmpty && isLastSignAnOperator) {
+                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),SUBTRACTION_SIGN).toString());
+                } else if (!isEquationLabelEmpty) {
+                    ResultPanel.equationLabel.setText(textIn.append(SUBTRACTION_SIGN).toString());
+                }
                 break;
             case "+":
-                System.out.println(ADDITION_SIGN);
-                ResultPanel.equationLabel.setText(textIn.append(ADDITION_SIGN).toString());
+                if (!isEquationLabelEmpty && isLastSignAnOperator) {
+                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),ADDITION_SIGN).toString());
+                } else if (!isEquationLabelEmpty) {
+                    ResultPanel.equationLabel.setText(textIn.append(ADDITION_SIGN).toString());
+                }
                 break;
             case "/":
-                System.out.println(DIVISION_SIGN);
-                ResultPanel.equationLabel.setText(textIn.append(DIVISION_SIGN).toString());
+                if (!isEquationLabelEmpty && isLastSignAnOperator) {
+                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),DIVISION_SIGN).toString());
+                } else if (!isEquationLabelEmpty) {
+                    ResultPanel.equationLabel.setText(textIn.append(DIVISION_SIGN).toString());
+                }
                 break;
             case "*":
-                System.out.println(MULTIPLICATION_SIGN);
-                ResultPanel.equationLabel.setText(textIn.append(MULTIPLICATION_SIGN).toString());
+                if (!isEquationLabelEmpty && isLastSignAnOperator) {
+                    ResultPanel.equationLabel.setText(textIn.replace(textIn.length()-1,textIn.length(),MULTIPLICATION_SIGN).toString());
+                } else if (!isEquationLabelEmpty) {
+                    ResultPanel.equationLabel.setText(textIn.append(MULTIPLICATION_SIGN).toString());
+                }
                 break;
             case "clear":
                 ResultPanel.equationLabel.setText("");
@@ -223,51 +249,78 @@ public class KeyPanel extends JPanel implements ActionListener {
                 } catch (StringIndexOutOfBoundsException ignored) {};
                 break;
             case "=":
-                double result = 0;
-                addToList(textIn);
-
-                System.out.println(numList);
-                System.out.println(opList);
-
-                if(!textIn.equals("")) {
-                    ResultPanel.resultLabel.setText(String.valueOf(result));
+                if (!isEquationLabelEmpty && isLastSignAnOperator) {
+                    ResultPanel.equationLabel.setForeground(Color.RED.darker());
+                } else if (!isEquationLabelEmpty) {
+                    addToList(textIn);
+                    makeCalculations();
+                    String result = equationList.get(0);
+                    result = format.format(Double.parseDouble(result));
+                    result = result.replace(",", ".");
+                    ResultPanel.resultLabel.setText(result);
+                    equationList.clear();
                 }
-
-
-
-                numList.clear();
-                opList.clear();
                 break;
-
         }
-
     }
+
     public void addToList(StringBuilder text) {
         for (int i = 0; i < text.length(); i++) {
             String op = Character.toString(text.charAt(i));
             if (op.equals(ADDITION_SIGN) || op.equals(SUBTRACTION_SIGN) ||
                 op.equals(MULTIPLICATION_SIGN) || op.equals(DIVISION_SIGN)) {
-                opList.add(op);
-                numList.add(text.substring(0, i));
+                equationList.add(text.substring(0, i));
+                equationList.add(op);
+
                 text.delete(0, i+1);
                 addToList(text);
                 break;
             }
-            if (i == text.length()-1) numList.add(text.toString());
+            if (i == text.length()-1) equationList.add(text.toString());
         }
     }
 
     public void makeCalculations() {
-        if (opList.contains(MULTIPLICATION_SIGN)) {
-            int index = opList.lastIndexOf(MULTIPLICATION_SIGN);
+        if (equationList.contains(DIVISION_SIGN)) {
+            calc(DIVISION_SIGN);
+            makeCalculations();
+        } else if (equationList.contains(MULTIPLICATION_SIGN)) {
+            calc(MULTIPLICATION_SIGN);
+            makeCalculations();
+        } else if (equationList.contains(ADDITION_SIGN) ||
+                   equationList.contains(SUBTRACTION_SIGN)){
+            calc(equationList.get(1));
+            makeCalculations();
+        }
+    }
+
+    public void calc(String sign) {
+        int index = equationList.indexOf(sign);
+        double num1 = Double.parseDouble(equationList.get(index-1));
+        double num2 = Double.parseDouble(equationList.get(index+1));
+        double result = 0;
+
+        if (sign.equals(DIVISION_SIGN)) {
+            if (num2 == 0) {
+                ResultPanel.equationLabel.setForeground(Color.RED.darker());
+                equationList.clear();
+                equationList.add("0");
+                return;
+            } else {
+                result = num1 / num2;
+            }
+        } else if (sign.equals(MULTIPLICATION_SIGN)) {
+            result = num1 * num2;
+        } else if (sign.equals(ADDITION_SIGN)) {
+            result = num1 + num2;
+        } else if (sign.equals(SUBTRACTION_SIGN)) {
+            result = num1 - num2;
         }
 
 
-        if (opList.contains(MULTIPLICATION_SIGN) || opList.contains(DIVISION_SIGN)) {
-
-
-        }
-
+        equationList.remove(index);
+        equationList.set(index, String.valueOf(result));
+        equationList.remove(index-1);
     }
 
 
