@@ -4,10 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class KeyPanel extends JPanel implements ActionListener {
     final String ADDITION_SIGN = Character.toString('\u002B');
@@ -19,7 +17,7 @@ public class KeyPanel extends JPanel implements ActionListener {
     final String POWER_2_SIGN = "x\u00B2";
     final String POWER_Y_SIGN = "x\u02B8";
     ArrayList<String> equationList = new ArrayList<>();
-    DecimalFormat format = new DecimalFormat("0.#");
+    DecimalFormat format = new DecimalFormat("0.##########");
     StringBuilder textIn;
     boolean isEquationLabelEmpty;
     boolean isLastSignAnOperator;
@@ -187,29 +185,42 @@ public class KeyPanel extends JPanel implements ActionListener {
 
                 break;
             case "SquareRoot":
-
+                ResultPanel.equationLabel.setText(textIn.append(SQUARE_ROOT_SIGN).append("(").toString());
                 break;
             case "ClearEverything":
 
                 break;
             case "Equals":
+
+                equationList.clear();
+
                 if (!isEquationLabelEmpty && isLastSignAnOperator) {
                     ResultPanel.equationLabel.setForeground(Color.RED.darker());
                 } else if (!isEquationLabelEmpty) {
+
+                    System.out.println( textIn);
+
                     addToList(textIn);
 
-                    System.out.println(equationList);
+                    System.out.println("---------------------------------------------------");
+                    System.out.println("to jest lista startowa:\n" + equationList);
 
                     makeCalculations(equationList);
 
+                    String result = equationList.toString()
+                            .replace("(", "")
+                            .replace(")", "")
+                            .replace("[", "")
+                            .replace("]", "")
+                            .replace(", ", "");
 
-                    //System.out.println(equationList);
+                    System.out.println("lista koñcowa equationList:\n" + result);
 
-                    String result = equationList.get(0);
+                    //String result = equationList.get(0);
                     result = format.format(Double.parseDouble(result));
                     result = result.replace(",", ".");
                     ResultPanel.resultLabel.setText(result);
-                    equationList.clear();
+
                 }
                 break;
         }
@@ -246,27 +257,72 @@ public class KeyPanel extends JPanel implements ActionListener {
                 addToList(text);
                 break;
             }
-            if (i == text.length()-1) equationList.add(text.substring(0,1));
+
+
+            System.out.println("ostatni element, który powinien byæ dodany do listy to: " + text);
+
+            if (i == text.length()-1) equationList.add(text.substring(0));
         }
     }
 
     public void makeCalculations(ArrayList<String> list) {
         if (list.contains(DIVISION_SIGN)) {
             calculate(list, DIVISION_SIGN);
-            //makeCalculations(list);
+
+            System.out.println("najpierw zrobiê dzielenie. lista po calculate:\n" + list);
+
+            makeCalculations(list);
+
+            System.out.println("to jest list po drugim makecalc:\n" + list);
+
+
         } else if (list.contains(MULTIPLICATION_SIGN)) {
             calculate(list, MULTIPLICATION_SIGN);
-            //makeCalculations(list);
-        } else if (list.contains(ADDITION_SIGN)){
-            calculate(list, ADDITION_SIGN);
-            //makeCalculations(list);
-        } else if (list.contains(SUBTRACTION_SIGN)) {
-            calculate(list, SUBTRACTION_SIGN);
-            //makeCalculations(list);
+            System.out.println("najpierw zrobiê mno¿enie. lista po calculate:\n" + list);
+
+            makeCalculations(list);
+            System.out.println("to jest list po drugim makecalc:\n" + list);
+        } else if (list.contains(ADDITION_SIGN) || list.contains(SUBTRACTION_SIGN)){
+            int idexOfFirstSign;
+
+            idexOfFirstSign = Math.min(list.indexOf(ADDITION_SIGN), list.indexOf(SUBTRACTION_SIGN));
+
+            if (!list.contains(ADDITION_SIGN)) {
+                idexOfFirstSign = list.indexOf(SUBTRACTION_SIGN);
+            } else if (!list.contains(SUBTRACTION_SIGN)) {
+                idexOfFirstSign = list.indexOf(ADDITION_SIGN);
+            }
+
+            System.out.println("first index to: " + idexOfFirstSign);
+
+
+            String firstSign = list.get(idexOfFirstSign);
+
+            System.out.println("pierwszy znak to " + firstSign);
+
+            calculate(list, firstSign);
+
+            System.out.println("najpierw zrobiê dodawanie/odejmowanie. lista po calculate:\n" + list);
+            makeCalculations(list);
+            System.out.println("to jest list po drugim makecalc:\n" + list);
         }
+
+        if (list.size() == 3 && list.get(0).equals("(") && list.get(2).equals(")")) {
+            list.remove(0);
+            list.remove(1);
+        }
+
+//        else if (list.contains(SUBTRACTION_SIGN)) {
+//            calculate(list, SUBTRACTION_SIGN);
+//            System.out.println("odejmowanie. lista po calculate:\n" + list);
+//            makeCalculations(list);
+//        }
     }
 
     public void calculate(ArrayList<String> list, String sign) {
+
+        System.out.println("lista, która wesz³a do calculate:\n" + list);
+
         int index = list.indexOf(sign);
 
        // System.out.println(equationList);
@@ -275,8 +331,9 @@ public class KeyPanel extends JPanel implements ActionListener {
         //double num1 = Double.parseDouble(equationList.get(index-1));
         //double num2 = Double.parseDouble(equationList.get(index+1));
         double num1 = findNum("left", index, list);
-        double num2 = findNum("right", index, list);
 
+        int index2 = list.indexOf(sign);
+        double num2 = findNum("right", index2, list);
 
         double result = 0;
 
@@ -297,22 +354,34 @@ public class KeyPanel extends JPanel implements ActionListener {
             result = num1 - num2;
         }
 
-        boolean isParenthesisAtLeft = list.get(index-2).equals("(");
-        boolean isParenthesisAtRight = list.get(index+2).equals(")");
-        list.remove(index);
-        list.set(index, String.valueOf(result));
-        list.remove(index-1);
+        boolean isParenthesisAtLeft;
+        try {
+            isParenthesisAtLeft = list.get(index2 - 2).equals("(");
+        } catch (IndexOutOfBoundsException e) {
+            isParenthesisAtLeft = false;
+        }
+
+        boolean isParenthesisAtRight;
+        try {
+            isParenthesisAtRight = list.get(index2 + 2).equals(")");
+        } catch (IndexOutOfBoundsException e) {
+            isParenthesisAtRight = false;
+        }
+
+        list.remove(index2);
+        list.set(index2, String.valueOf(result));
+        list.remove(index2-1);
 
         if(isParenthesisAtLeft && isParenthesisAtRight) {
-            list.remove(index-2);
-            list.remove(index-1);
+            list.remove(index2-2);
+            list.remove(index2-1);
         }
 
 //        System.out.println(list);
 //        list.removeAll(Collections.singleton("("));
 //        list.removeAll(Collections.singleton(")"));
-        System.out.println(list);
-        makeCalculations(list);
+        //System.out.println("to jest lista pod koniec kalkulate:\n" + list);
+        //makeCalculations(list);
 
 
     }
@@ -335,6 +404,10 @@ public class KeyPanel extends JPanel implements ActionListener {
     }
 
     public double findNum(String side, int index, ArrayList<String> list) {
+
+        System.out.println("teraz sprawdzê stronê: " + side + ", index: " + index + " lista, która wesz³a do findNum:\n" + list);
+
+
         boolean isSignANum;
         String sign = "";
         double num = 0;
@@ -356,14 +429,16 @@ public class KeyPanel extends JPanel implements ActionListener {
                 int startIndex = index+1;
                 int endIndex;
                 for (int i = startIndex; ;i++) {
-                    if (list.get(i).equals("(")) counter1++;
+                    if (list.get(i).equals("(")) {
+                        counter1++;
+                    }
                     if (list.get(i).equals(")")) counter2++;
                     if (counter1 == counter2) {
                         endIndex = i;
                         break;
                     }
                 }
-                ArrayList<String> tempList = new ArrayList<>(list.subList(startIndex, index));
+                ArrayList<String> tempList = new ArrayList<>(list.subList(startIndex, endIndex+1));
 
                 System.out.println(tempList);
 
@@ -373,13 +448,13 @@ public class KeyPanel extends JPanel implements ActionListener {
                 for (String s : tempList) {
                     tempSb.append(s);
                 }
-                for (int k = startIndex; k <= endIndex; k++) {
+                for (int k = startIndex; k < endIndex; k++) {
                     list.remove(startIndex);
                 }
-                list.add(tempSb.toString());
+                list.set(startIndex, tempSb.toString());
 
 
-                System.out.println(tempSb);
+                //System.out.println(tempSb);
                 num = Double.parseDouble(tempSb.toString());
 
             }
@@ -396,7 +471,7 @@ public class KeyPanel extends JPanel implements ActionListener {
                 }
                 ArrayList<String> tempList = new ArrayList<>(list.subList(startIndex, index));
 
-                System.out.println(tempList);
+                //System.out.println(tempList);
 
                 makeCalculations(tempList);
 
@@ -404,13 +479,13 @@ public class KeyPanel extends JPanel implements ActionListener {
                 for (String s : tempList) {
                     tempSb.append(s);
                 }
-                for (int k = startIndex; k <= endIndex; k++) {
+                for (int k = startIndex; k < endIndex; k++) {
                     list.remove(startIndex);
                 }
 
 
 
-                list.add(startIndex, tempSb.toString());
+                list.set(startIndex, tempSb.toString());
 
 
                 num = Double.parseDouble(tempSb.toString());
