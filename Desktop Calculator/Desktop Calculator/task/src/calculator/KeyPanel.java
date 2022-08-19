@@ -185,7 +185,13 @@ public class KeyPanel extends JPanel implements ActionListener {
 
                 break;
             case "SquareRoot":
-                ResultPanel.equationLabel.setText(textIn.append(SQUARE_ROOT_SIGN).append("(").toString());
+
+                if (isLastSignNumeric) {
+                    ResultPanel.equationLabel.setText(textIn.append(MULTIPLICATION_SIGN).append(SQUARE_ROOT_SIGN).append("(").toString());
+                } else {
+                    ResultPanel.equationLabel.setText(textIn.append(SQUARE_ROOT_SIGN).append("(").toString());
+                }
+
                 break;
             case "ClearEverything":
 
@@ -234,7 +240,14 @@ public class KeyPanel extends JPanel implements ActionListener {
         for (int i = 0; i < text.length(); i++) {
             String op = Character.toString(text.charAt(i));
 
-            if (op.equals("(")) {
+
+
+            if (op.equals(SQUARE_ROOT_SIGN)) {
+                equationList.add(op);
+                text.delete(0, i+1);
+                addToList(text);
+                break;
+            } else if (op.equals("(")) {
                 equationList.add(op);
                 text.delete(0, i+1);
                 addToList(text);
