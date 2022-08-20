@@ -14,6 +14,7 @@ public class KeyPanel extends JPanel implements ActionListener {
     final String DIVISION_SIGN = Character.toString('\u00F7');
     final String SQUARE_ROOT_SIGN = Character.toString('\u221A');
     final String PLUS_MINUS_SIGN = Character.toString('\u00B1');
+    final String POWER_SIGN = "^";
     final String POWER_2_SIGN = "x\u00B2";
     final String POWER_Y_SIGN = "x\u02B8";
     ArrayList<String> equationList = new ArrayList<>();
@@ -159,7 +160,11 @@ public class KeyPanel extends JPanel implements ActionListener {
                 } catch (StringIndexOutOfBoundsException ignored) {}
                 break;
             case "PlusMinus":
-
+                if (isEquationLabelEmpty) {
+                    ResultPanel.equationLabel.setText("(-");
+                } else if (textIn.toString().equals("(-")) {
+                    ResultPanel.equationLabel.setText("");
+                }
                 break;
             case "Parentheses":
                 int leftCounter = 0;
@@ -179,14 +184,18 @@ public class KeyPanel extends JPanel implements ActionListener {
                 }
                 break;
             case "PowerTwo":
-
+                if (isLastSignNumeric || lastSign.equals(")")) {
+                    ResultPanel.equationLabel.setText(textIn.append("^(2)").toString());
+                }
                 break;
             case "PowerY":
-
+                if (isLastSignNumeric || lastSign.equals(")")) {
+                    ResultPanel.equationLabel.setText(textIn.append("^(").toString());
+                }
                 break;
             case "SquareRoot":
 
-                if (isLastSignNumeric) {
+                if (isLastSignNumeric || lastSign.equals(")")) {
                     ResultPanel.equationLabel.setText(textIn.append(MULTIPLICATION_SIGN).append(SQUARE_ROOT_SIGN).append("(").toString());
                 } else {
                     ResultPanel.equationLabel.setText(textIn.append(SQUARE_ROOT_SIGN).append("(").toString());
@@ -240,9 +249,33 @@ public class KeyPanel extends JPanel implements ActionListener {
         for (int i = 0; i < text.length(); i++) {
             String op = Character.toString(text.charAt(i));
 
-
-
             if (op.equals(SQUARE_ROOT_SIGN)) {
+                int countLeft = 0;
+                int countRight = 0;
+                int index = 0;
+
+                for (int k = i + 1; ; k++) {
+                    String tempSign = Character.toString(text.charAt(k));
+                    if (tempSign.equals("(")) countLeft++;
+                    if (tempSign.equals(")")) countRight++;
+                    if (countLeft == countRight) {
+                        index = k;
+                        break;
+                    }
+                }
+                equationList.add("(");
+                addToList(new StringBuilder(text.substring(i + 1, index + 1)));
+                equationList.add("^");
+                addToList(new StringBuilder("0.5"));
+                equationList.add(")");
+
+                text.delete(i, index + 1);
+                addToList(text);
+                break;
+            } else if (op.equals(POWER_SIGN)) {
+                if (i != 0) {
+                    equationList.add(text.substring(0, i));
+                }
                 equationList.add(op);
                 text.delete(0, i+1);
                 addToList(text);
@@ -272,52 +305,48 @@ public class KeyPanel extends JPanel implements ActionListener {
             }
 
 
-            System.out.println("ostatni element, który powinien byæ dodany do listy to: " + text);
+            //System.out.println("ostatni element, który powinien byæ dodany do listy to: " + text);
 
             if (i == text.length()-1) equationList.add(text.substring(0));
         }
     }
 
     public void makeCalculations(ArrayList<String> list) {
-        if (list.contains(DIVISION_SIGN)) {
-            calculate(list, DIVISION_SIGN);
 
-            System.out.println("najpierw zrobiê dzielenie. lista po calculate:\n" + list);
-
+        if (list.contains(POWER_SIGN)) {
+            calculate(list, POWER_SIGN);
+            System.out.println("teraz zrobiê potêgowanie. lista po calculate:\n" + list);
             makeCalculations(list);
-
-            System.out.println("to jest list po drugim makecalc:\n" + list);
-
-
+        } else if (list.contains(DIVISION_SIGN)) {
+            calculate(list, DIVISION_SIGN);
+            System.out.println("teraz zrobiê dzielenie. lista po calculate:\n" + list);
+            makeCalculations(list);
+            //System.out.println("to jest list po drugim makecalc:\n" + list);
         } else if (list.contains(MULTIPLICATION_SIGN)) {
             calculate(list, MULTIPLICATION_SIGN);
-            System.out.println("najpierw zrobiê mno¿enie. lista po calculate:\n" + list);
-
+            System.out.println("teraz zrobiê mno¿enie. lista po calculate:\n" + list);
             makeCalculations(list);
             System.out.println("to jest list po drugim makecalc:\n" + list);
         } else if (list.contains(ADDITION_SIGN) || list.contains(SUBTRACTION_SIGN)){
-            int idexOfFirstSign;
-
-            idexOfFirstSign = Math.min(list.indexOf(ADDITION_SIGN), list.indexOf(SUBTRACTION_SIGN));
-
-            if (!list.contains(ADDITION_SIGN)) {
-                idexOfFirstSign = list.indexOf(SUBTRACTION_SIGN);
-            } else if (!list.contains(SUBTRACTION_SIGN)) {
-                idexOfFirstSign = list.indexOf(ADDITION_SIGN);
-            }
-
-            System.out.println("first index to: " + idexOfFirstSign);
+            int indexOfFirstSign = findIndexOfPlusMinus(list);
 
 
-            String firstSign = list.get(idexOfFirstSign);
+//            indexOfFirstSign = Math.min(list.indexOf(ADDITION_SIGN), list.indexOf(SUBTRACTION_SIGN));
+//
+//            if (!list.contains(ADDITION_SIGN)) {
+//                indexOfFirstSign = list.indexOf(SUBTRACTION_SIGN);
+//            } else if (!list.contains(SUBTRACTION_SIGN)) {
+//                indexOfFirstSign = list.indexOf(ADDITION_SIGN);
+//            }
 
+            System.out.println("first index to: " + indexOfFirstSign);
+            String firstSign = list.get(indexOfFirstSign);
             System.out.println("pierwszy znak to " + firstSign);
 
             calculate(list, firstSign);
-
-            System.out.println("najpierw zrobiê dodawanie/odejmowanie. lista po calculate:\n" + list);
+            System.out.println("teraz zrobiê dodawanie/odejmowanie. lista po calculate:\n" + list);
             makeCalculations(list);
-            System.out.println("to jest list po drugim makecalc:\n" + list);
+            //System.out.println("to jest list po drugim makecalc:\n" + list);
         }
 
         if (list.size() == 3 && list.get(0).equals("(") && list.get(2).equals(")")) {
@@ -332,25 +361,55 @@ public class KeyPanel extends JPanel implements ActionListener {
 //        }
     }
 
+    public int findIndexOfPlusMinus(ArrayList<String> list) {
+        int indexOfFirstSign = 0;
+        for (int i = 0; i < list.size(); i++) {
+            try {
+                if (list.get(i).equals(ADDITION_SIGN) || list.get(i).equals(SUBTRACTION_SIGN)) {
+                    if ((list.get(i - 1).equals(")") || Character.isDigit(list.get(i - 1).charAt(0)) || Character.isDigit(list.get(i - 1).charAt(1)))
+                            && (list.get(i + 1).equals("(") || Character.isDigit(list.get(i + 1).charAt(0)))) {
+                        indexOfFirstSign = i;
+                        break;
+                    }
+                }
+            } catch (IndexOutOfBoundsException ignored) {}
+        }
+        return indexOfFirstSign;
+    }
+
     public void calculate(ArrayList<String> list, String sign) {
 
-        System.out.println("lista, która wesz³a do calculate:\n" + list);
+        //System.out.println("lista, która wesz³a do calculate:\n" + list);
+        int index1;
+        int index2;
+        boolean isMinusOrPlus = sign.equals(ADDITION_SIGN) || sign.equals(SUBTRACTION_SIGN);
 
-        int index = list.indexOf(sign);
+        if (isMinusOrPlus) {
+            index1 = findIndexOfPlusMinus(list);
+        } else {
+            index1 = list.indexOf(sign);
+        }
+        double num1 = findNum("left", index1, list);
 
-       // System.out.println(equationList);
+        if (isMinusOrPlus) {
+            //index2 = index1;
+            index2 = findIndexOfPlusMinus(list);
+            //index2 = list.indexOf(sign);
+        } else {
+            index2 = list.indexOf(sign);
+        }
 
+//        index2 = list.indexOf(sign);
 
-        //double num1 = Double.parseDouble(equationList.get(index-1));
-        //double num2 = Double.parseDouble(equationList.get(index+1));
-        double num1 = findNum("left", index, list);
-
-        int index2 = list.indexOf(sign);
         double num2 = findNum("right", index2, list);
+
 
         double result = 0;
 
-        if (sign.equals(DIVISION_SIGN)) {
+
+        if (sign.equals(POWER_SIGN)) {
+            result = Math.pow(num1, num2);
+        } else if (sign.equals(DIVISION_SIGN)) {
             if (num2 == 0) {
                 ResultPanel.equationLabel.setForeground(Color.RED.darker());
                 list.clear();
@@ -385,6 +444,10 @@ public class KeyPanel extends JPanel implements ActionListener {
         list.set(index2, String.valueOf(result));
         list.remove(index2-1);
 
+        if (num1 < 0 && list.size() > 3) {
+            list.remove(index2 - 2);
+        }
+
         if(isParenthesisAtLeft && isParenthesisAtRight) {
             list.remove(index2-2);
             list.remove(index2-1);
@@ -416,6 +479,14 @@ public class KeyPanel extends JPanel implements ActionListener {
         }
     }
 
+
+
+
+
+
+
+
+
     public double findNum(String side, int index, ArrayList<String> list) {
 
         System.out.println("teraz sprawdzê stronê: " + side + ", index: " + index + " lista, która wesz³a do findNum:\n" + list);
@@ -436,7 +507,32 @@ public class KeyPanel extends JPanel implements ActionListener {
        // System.out.println(isSignANum);
 
         if (isSignANum) {
-            num = Double.parseDouble(sign);
+
+            boolean isMinus;
+            boolean isLeftParenthesis;
+
+            try {
+                isMinus = list.get(index - 2).equals(SUBTRACTION_SIGN);
+            } catch (IndexOutOfBoundsException e) {
+                isMinus = false;
+            }
+
+            try {
+                isLeftParenthesis = list.get(index - 3).equals("(");
+            } catch (IndexOutOfBoundsException e) {
+                isLeftParenthesis = false;
+            }
+
+            if (side.equals("left") && isLeftParenthesis && isMinus) {
+                num = -Double.parseDouble(sign);
+
+            } else {
+                num = Double.parseDouble(sign);
+            }
+
+
+
+
         } else {
             if (side.equals("right")) {
                 int startIndex = index+1;
