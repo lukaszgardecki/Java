@@ -366,22 +366,32 @@ public class KeyPanel extends JPanel implements ActionListener {
         for (int i = 0; i < list.size(); i++) {
             try {
                 if (list.get(i).equals(ADDITION_SIGN) || list.get(i).equals(SUBTRACTION_SIGN)) {
-                    if ((list.get(i - 1).equals(")") || Character.isDigit(list.get(i - 1).charAt(0)) || Character.isDigit(list.get(i - 1).charAt(1)))
-                            && (list.get(i + 1).equals("(") || Character.isDigit(list.get(i + 1).charAt(0)))) {
+
+
+
+                    if ((list.get(i - 1).equals(")") || Character.isDigit(list.get(i - 1).charAt(0))
+                                                     || Character.isDigit(list.get(i - 1).charAt(1))) &&
+                        (list.get(i + 1).equals("(") || Character.isDigit(list.get(i + 1).charAt(0)))) {
                         indexOfFirstSign = i;
                         break;
                     }
+
+
+
+
                 }
             } catch (IndexOutOfBoundsException ignored) {}
         }
         return indexOfFirstSign;
     }
 
+
     public void calculate(ArrayList<String> list, String sign) {
 
-        //System.out.println("lista, która wesz³a do calculate:\n" + list);
-        int index1;
+        System.out.println("lista, która wesz³a do calculate:\n" + list);
+        int index1 = 0;
         int index2;
+
         boolean isMinusOrPlus = sign.equals(ADDITION_SIGN) || sign.equals(SUBTRACTION_SIGN);
 
         if (isMinusOrPlus) {
@@ -390,6 +400,8 @@ public class KeyPanel extends JPanel implements ActionListener {
             index1 = list.indexOf(sign);
         }
         double num1 = findNum("left", index1, list);
+
+        //boolean isMinusOrPlusAgain = sign.equals(ADDITION_SIGN) || sign.equals(SUBTRACTION_SIGN);
 
         if (isMinusOrPlus) {
             //index2 = index1;
@@ -408,7 +420,18 @@ public class KeyPanel extends JPanel implements ActionListener {
 
 
         if (sign.equals(POWER_SIGN)) {
-            result = Math.pow(num1, num2);
+
+            String[] tempTab = String.valueOf(num2).split("\\.");
+            double remainder = Long.parseLong(tempTab[1]);
+
+            if (num1 < 0 && remainder > 0) {
+                result = 0;
+            } else {
+                result = Math.pow(num1, num2);
+            }
+
+
+
         } else if (sign.equals(DIVISION_SIGN)) {
             if (num2 == 0) {
                 ResultPanel.equationLabel.setForeground(Color.RED.darker());
@@ -444,9 +467,15 @@ public class KeyPanel extends JPanel implements ActionListener {
         list.set(index2, String.valueOf(result));
         list.remove(index2-1);
 
+
+
+        // ZMIENIÆ !!!!!!!!!!!!!!
         if (num1 < 0 && list.size() > 3) {
             list.remove(index2 - 2);
         }
+
+
+
 
         if(isParenthesisAtLeft && isParenthesisAtRight) {
             list.remove(index2-2);
@@ -497,6 +526,13 @@ public class KeyPanel extends JPanel implements ActionListener {
         double num = 0;
         int counter1 = 0;
         int counter2 = 0;
+//        boolean isOnlyMinusDigit = list.size() == 4 && list.get(0).equals("(") && list.get(1).equals("-");
+//        if (isOnlyMinusDigit) {
+//            list.remove(1);
+//            list.set(1, String.valueOf(-Double.parseDouble(list.get(1))));
+//            return Double.parseDouble(list.get(1));
+//        }
+
         if (side.equals("left")) sign = list.get(index-1);
         if (side.equals("right")) sign = list.get(index+1);
 
@@ -506,10 +542,17 @@ public class KeyPanel extends JPanel implements ActionListener {
         //System.out.println(index);
        // System.out.println(isSignANum);
 
+
+
+
+
+
+
         if (isSignANum) {
 
             boolean isMinus;
             boolean isLeftParenthesis;
+
 
             try {
                 isMinus = list.get(index - 2).equals(SUBTRACTION_SIGN);
@@ -523,7 +566,7 @@ public class KeyPanel extends JPanel implements ActionListener {
                 isLeftParenthesis = false;
             }
 
-            if (side.equals("left") && isLeftParenthesis && isMinus) {
+            if (side.equals("left") && isLeftParenthesis && isMinus && !list.get(index).equals(POWER_SIGN)) {
                 num = -Double.parseDouble(sign);
 
             } else {
@@ -581,6 +624,18 @@ public class KeyPanel extends JPanel implements ActionListener {
                 ArrayList<String> tempList = new ArrayList<>(list.subList(startIndex, index));
 
                 //System.out.println(tempList);
+
+                for (int i = 0; ; i++) {
+                    try {
+                        if (tempList.get(i).equals("-") && Character.isDigit(tempList.get(i + 1).charAt(0))) {
+                            tempList.remove(i);
+                            tempList.set(i, String.valueOf(-Double.parseDouble(tempList.get(i))));
+                        }
+                    } catch (IndexOutOfBoundsException e) {
+                        break;
+                    }
+                }
+
 
                 makeCalculations(tempList);
 
