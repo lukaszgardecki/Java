@@ -9,7 +9,7 @@ public class Stats extends JPanel implements ActionListener {
         setLayout(null);
 
         Button backBtn = new Button("WRÓÆ");
-        backBtn.setBounds(550,20, 110, 30);
+        backBtn.setBounds(550,30, 110, 30);
         backBtn.setActionCommand("back");
         backBtn.addActionListener(this);
         backBtn.setBackground(MyColor.ORANGE_LIGHT);

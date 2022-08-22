@@ -6,7 +6,7 @@ public class Content extends JPanel {
     static MainView view;
 
     public Content() {
-        setBounds(0, 0, 684, 261);
+        setBounds(0, 0, 684, 361);
         //setBackground(Color.ORANGE.darker());
         setLayout(null);
 

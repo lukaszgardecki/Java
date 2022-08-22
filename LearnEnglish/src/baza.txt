@@ -1,3 +1,32 @@
-T£UMACZNIE POLSKIE_T£UMACZENIE ANGIELSKIE_NR GRUPY_ILOŒÆ B£ÊDNYCH ODPOWIEDZI_ILOŒÆ POPRAWNYCH ODPOWIEDZI
-charakteryzowaæ_to characterize_0_5_45
-charakter_a character_0_2_10
+T£UMACZENIE POLSKIE_T£UMACZENIE ANGIELSKIE_NR GRUPY_ILOŒÆ B£ÊDNYCH ODPOWIEDZI_ILOŒÆ POPRAWNYCH ODPOWIEDZI
+wydajnie, skutecznie, efektywnie_efficiently_1_1_0_20220822210959
+emisja; wydzielanie_emission_1_5_2_20220822211337
+* (symbol gwiazdki)_an asterisk_1_1_1_20220822211320
+emitowaæ; wydzielaæ_to emit_1_7_1_20220822212856
+niemniej jednak_nonetheless_1_1_1_20220822211305
+to przekracza_it exceeds_1_1_0_20220822211218
+innymi s³owy_in other words_1_1_0_20220822211205
+mimo ¿e; chocia¿_although_1_2_1_20220822212924
+w sumie_all in all_1_1_0_20220822211200
+miej na uwadze_bear in mind_1_1_0_20220822211156
+nawet jeœli_even though_1_1_0_20220822211138
+doszlifujmy informacje_let's polish the information_1_1_0_20220822211129
+sk³adniki_ingredients_1_1_0_20220822211109
+urz¹dzenie_a device_1_1_0_20220822211100
+modu³y_modules_1_1_1_20220822211054
+czêœæ obowi¹zkowa_a mandatory part_1_1_1_20220822211052
+funkcja, cecha, w³aœciwoœæ_a feature_1_1_0_20220822211047
+do tej pory; dotychczas_so far_1_1_0_20220822211043
+rdzeñ_a core_1_1_1_20220822211039
+niezbêdny_essential_1_1_0_20220822211036
+nie by³oby to mo¿liwe_it would not be possible_1_1_0_20220822211033
+poni¿ej_below_1_1_0_20220822211005
+powy¿ej_above_1_1_0_20220822211003
+charakteryzowaæ_to characterize_2_5_1_20220822211342
+charakter_a character_2_5_2_20220822211354
+substancja wydzielana_an emission_2_6_1_20220822212902
+tak zwane ("tzw.")_so called_2_2_0_20220822212905
+chocia¿_though_2_2_0_20220822212909
+j¹dro_a kernel_2_2_0_20220822212932
+zazwyczaj_typically_2_2_0_20220822212934
+poza; oprócz_besides_2_2_0_20220822212942
