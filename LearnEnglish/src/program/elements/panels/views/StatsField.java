@@ -1,3 +1,8 @@
+package program.elements.panels.views;
+
+import program.Main;
+import program.settings.MyColor;
+
 import javax.swing.*;
 import java.awt.*;
 

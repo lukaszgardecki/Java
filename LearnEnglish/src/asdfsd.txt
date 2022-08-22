@@ -1,6 +1,0 @@
-T£UMACZENIE POLSKIE_T£UMACZENIE ANGIELSKIE_NR GRUPY_ILOŒÆ B£ÊDNYCH ODPOWIEDZI_ILOŒÆ POPRAWNYCH ODPOWIEDZI
-charakter_a character_0_0_0
-emitowaæ; wydzielaæ_to emit_0_0_0
-substancja wydzielana_an emission_0_0_0
-emisja; wydzielanie_emission_0_0_0
-charakteryzowaæ_to characterize_0_0_0

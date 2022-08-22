@@ -1,15 +1,18 @@
+package program;
+
+import program.elements.main_frame.Window;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.*;
 
 public class Main {
-    static String path = "src/baza.txt";
+    static String path = "src/program.database/baza.txt";
     static File file = new File(path);
-    static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
+    public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
     static final int CAP_GROUP_1 = 50;
     static final int CAP_GROUP_2 = 60;
     static final int CAP_GROUP_3 = 90;

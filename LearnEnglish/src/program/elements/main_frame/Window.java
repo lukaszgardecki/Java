@@ -1,3 +1,8 @@
+package program.elements.main_frame;
+
+import program.elements.panels.Content;
+import program.Main;
+
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
