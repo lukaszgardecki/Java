@@ -18,7 +18,7 @@ public class MainView extends View {
     public MainView() {
         wordLabel = new EnglishWordTextArea();
         correctAnswer = new CorrectAnswerTextArea();
-        inputTextF = new TranslateTextField();
+        inputTextF = new TranslateTextField("T≥umaczenie");
         dateLabel = new DateLabel();
         check = new CheckButton("Sprawdü");
 

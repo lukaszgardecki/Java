@@ -2,10 +2,12 @@ package program;
 
 import program.elements.main_frame.Window;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -45,6 +47,7 @@ public class Main {
 
 
         new Window();
+
     }
 
     public static void loadData() {
@@ -214,5 +217,29 @@ public class Main {
             return String.format("%s.%s.%s %s:%s:%s", day, month, year, hours, minutes, seconds);
         }
     }
+
+//    public static ArrayList<String> createList() {
+//        ArrayList<String> as = new ArrayList<>();
+//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+//
+//            for (ArrayList<String> list : el.getValue()) {
+//                String e = String.format("%s (%s)", list.get(4), list.get(5));
+//                as.add(e);
+//            }
+//        }
+//        return as;
+//    }
+    public static DefaultListModel<String> getListModel() {
+        DefaultListModel<String> m = new DefaultListModel<>();
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+
+            for (ArrayList<String> list : el.getValue()) {
+                String e = String.format("%s (%s)", list.get(4), list.get(5));
+                m.addElement(e);
+            }
+        }
+        return m;
+    }
+
 
 }

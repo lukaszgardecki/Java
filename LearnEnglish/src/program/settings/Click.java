@@ -3,6 +3,7 @@ package program.settings;
 import program.Main;
 import program.elements.panels.MainPanel;
 import program.elements.panels.MenuPanel;
+import program.elements.panels.views.AddOrRemoveView;
 import program.elements.panels.views.MainView;
 import program.elements.panels.views.StatsView;
 
@@ -19,12 +20,18 @@ public class Click implements ActionListener{
         String a = e.getActionCommand();
         if(a.equals("stats") && statBtn.getText().equals("STATYSTYKI")) {
             MainPanel.mainView.setVisible(false);
+            MainPanel.addRemoveView.setVisible(false);
             MainPanel.statsView.setVisible(true);
+
             MenuPanel.addRemoveBtn.setVisible(false);
             statBtn.setText("WRÓÆ");
         } else if (a.equals("stats") && statBtn.getText().equals("WRÓÆ")) {
             MainPanel.statsView.setVisible(false);
             MainPanel.mainView.setVisible(true);
+
+
+
+
             MenuPanel.addRemoveBtn.setVisible(true);
             statBtn.setText("STATYSTYKI");
         } else if(a.equals("check")) {
@@ -54,6 +61,8 @@ public class Click implements ActionListener{
         } else if (a.equals("addRemove")) {
             MainPanel.mainView.setVisible(false);
             MainPanel.addRemoveView.setVisible(true);
+            MainPanel.statsView.setVisible(false);
+
             MenuPanel.addRemoveBtn.setVisible(false);
             statBtn.setText("WRÓÆ");
         }
