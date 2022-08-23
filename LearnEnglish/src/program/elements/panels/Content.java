@@ -1,7 +1,6 @@
 package program.elements.panels;
 
-import program.elements.panels.views.MainView;
-import program.elements.panels.views.StatsView;
+import program.settings.MyColor;
 
 import javax.swing.*;
 
@@ -15,14 +14,13 @@ public class Content extends JPanel {
 
     public Content() {
         setBounds(X, Y, WIDTH, HEIGHT);
-        //setBackground(Color.ORANGE.darker());
-        //setBackground(MyColor.BLUE);
+        setBackground(MyColor.BLUE);
         setLayout(null);
 
-        menuPanel = new MenuPanel();
         mainPanel = new MainPanel();
-
         add(mainPanel);
+
+        menuPanel = new MenuPanel();
         add(menuPanel);
     }
 }

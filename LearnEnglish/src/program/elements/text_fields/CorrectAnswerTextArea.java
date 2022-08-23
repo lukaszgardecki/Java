@@ -6,9 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CorrectAnswerTextArea extends JTextArea {
-
     public CorrectAnswerTextArea() {
-        setBackground(MyColor.BLUE);
+        setBackground(null);
         setEditable(false);
         setLineWrap(true);
         setWrapStyleWord(true);
@@ -16,5 +15,4 @@ public class CorrectAnswerTextArea extends JTextArea {
         setFont(new Font("Courier", Font.PLAIN, 22));
         setForeground(MyColor.GREEN);
     }
-
 }

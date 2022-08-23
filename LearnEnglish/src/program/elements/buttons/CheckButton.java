@@ -8,6 +8,5 @@ public class CheckButton extends Button{
         setLocation(220, 300);
         setActionCommand("check");
         setBackground(MyColor.GREEN);
-
     }
 }

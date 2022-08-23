@@ -5,22 +5,12 @@ import program.elements.panels.MainPanel;
 
 import java.awt.event.ActionEvent;
 
-public class StatsView extends MainPanel {
+public class StatsView extends View {
     public StatsView() {
 
         StatsField statContent = new StatsField();
         add(statContent);
 
         setVisible(false);
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        String a = e.getActionCommand();
-
-        if(a.equals("back")) {
-            Content.main.setVisible(true);
-            Content.stats.setVisible(false);
-        }
     }
 }

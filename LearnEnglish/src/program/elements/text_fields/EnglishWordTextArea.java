@@ -7,7 +7,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class EnglishWordTextArea extends JTextArea {
-
     public EnglishWordTextArea() {
         setText(Main.loadWord().get(0));
         setBounds(55, 30, 450, 80);

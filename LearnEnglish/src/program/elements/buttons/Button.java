@@ -13,9 +13,9 @@ public class Button extends JButton implements ActionListener {
     public Button(String name) {
         super(name);
         setSize(WIDTH, HEIGHT);
-        Dimension size = getPreferredSize();
-        size.width = size.height = Math.max(size.width, size.height);
-        setPreferredSize(size);
+        //Dimension size = getPreferredSize();
+        //size.width = size.height = Math.max(size.width, size.height);
+        //setPreferredSize(size);
         addActionListener(this);
         setContentAreaFilled(false);
         setFocusPainted(false);

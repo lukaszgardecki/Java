@@ -14,22 +14,21 @@ import program.settings.MyColor;
 import java.awt.*;
 import java.awt.event.*;
 
-public class MainView extends MainPanel implements KeyListener {
-
-    static TranslateTextField inputTextF;
-    static CheckButton check;
+public class MainView extends View implements KeyListener {
     static EnglishWordTextArea wordLabel;
-    DateLabel dateLabel;
     static CorrectAnswerTextArea correctAnswer;
+    static TranslateTextField inputTextF;
+    static DateLabel dateLabel;
+    static CheckButton check;
     static boolean isAnswerWrong = false;
 
     public MainView() {
-        check = new CheckButton("Sprawdü");
         wordLabel = new EnglishWordTextArea();
-        dateLabel = new DateLabel();
         correctAnswer = new CorrectAnswerTextArea();
         inputTextF = new TranslateTextField();
-        
+        dateLabel = new DateLabel();
+        check = new CheckButton("Sprawdü");
+
         add(check);
         add(wordLabel);
         add(dateLabel);
@@ -42,11 +41,6 @@ public class MainView extends MainPanel implements KeyListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         String a = e.getActionCommand();
-
-        if(a.equals("stats")) {
-            Content.main.setVisible(false);
-            Content.stats.setVisible(true);
-        }
 
         if(a.equals("check")) {
             if (!inputTextF.getText().isEmpty() && !inputTextF.getText().equals("T≥umaczenie")) {

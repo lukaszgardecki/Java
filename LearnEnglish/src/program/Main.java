@@ -10,9 +10,13 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
-    static String path = "src/program.database/baza.txt";
+    static String path = "src/program/database/baza.txt";
     static File file = new File(path);
     public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
+
+    /*
+        CAPACITY OF LEVELS
+     */
     static final int CAP_GROUP_1 = 50;
     static final int CAP_GROUP_2 = 60;
     static final int CAP_GROUP_3 = 90;
