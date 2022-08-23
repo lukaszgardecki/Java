@@ -1,26 +1,23 @@
 package program.elements.panels;
 
+import program.elements.panels.views.AddOrRemoveView;
 import program.elements.panels.views.MainView;
 import program.elements.panels.views.StatsView;
 import program.elements.panels.views.View;
-import program.settings.MyColor;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class MainPanel extends JPanel implements ActionListener {
+public class MainPanel extends JPanel {
     public static final int X = Content.X;
     public static final int Y = Content.Y;
     public static final int WIDTH = Content.WIDTH - MenuPanel.WIDTH;
     public static final int HEIGHT = Content.HEIGHT;
-    static View mainView;
-    static View statsView;
+    public static View mainView;
+    public static View statsView;
+    public static View addRemoveView;
 
     public MainPanel() {
         setBounds(X,Y, WIDTH, HEIGHT);
-        //setBackground(Color.green);
         setBackground(null);
         setLayout(null);
 
@@ -30,11 +27,9 @@ public class MainPanel extends JPanel implements ActionListener {
         statsView = new StatsView();
         add(statsView);
 
+        addRemoveView = new AddOrRemoveView();
+        add(addRemoveView);
+
         setVisible(true);
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
     }
 }

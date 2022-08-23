@@ -1,22 +1,20 @@
 package program.elements.buttons;
 
+import program.settings.Click;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.geom.RoundRectangle2D;
 
-public class Button extends JButton implements ActionListener {
+public class Button extends JButton {
     public static final int WIDTH = 110;
     public static final int HEIGHT = 30;
 
     public Button(String name) {
         super(name);
+        setText(name);
         setSize(WIDTH, HEIGHT);
-        //Dimension size = getPreferredSize();
-        //size.width = size.height = Math.max(size.width, size.height);
-        //setPreferredSize(size);
-        addActionListener(this);
+        addActionListener(new Click());
         setContentAreaFilled(false);
         setFocusPainted(false);
         setBorderPainted(false);
@@ -43,8 +41,5 @@ public class Button extends JButton implements ActionListener {
         return shape.contains(x, y);
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
 
-    }
 }

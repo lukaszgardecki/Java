@@ -29,40 +29,34 @@ public class Main {
         createMap();
         loadData();
 
-        System.out.println("listy po operacji:");
-        System.out.println("lista 0");
-        map.get(0).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 1");
-        map.get(1).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 2");
-        map.get(2).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 3");
-        map.get(3).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 4");
-        map.get(4).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 5");
-        map.get(5).forEach(e -> System.out.println("    " + e));
+//        System.out.println("listy po operacji:");
+//        System.out.println("lista 0");
+//        map.get(0).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 1");
+//        map.get(1).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 2");
+//        map.get(2).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 3");
+//        map.get(3).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 4");
+//        map.get(4).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 5");
+//        map.get(5).forEach(e -> System.out.println("    " + e));
 
 
         new Window();
-//        System.out.println(map.get(0).getFirst().get(0));
-//        String data = new SimpleDateFormat("yyyyMMddHHmmss").format(Calendar.getInstance().getTime());
-//        long num = Long.parseLong(data);
-//        System.out.println(num);
-
-
     }
 
     public static void loadData() {
         try (Scanner scanner = new Scanner(file)) {
+            scanner.nextLine();
             scanner.nextLine();
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] tab = line.split("_");
                 ArrayList<String> list = new ArrayList<>();
                 Collections.addAll(list, tab);
-                int numOfGroup = Integer.parseInt(tab[2]);
-
+                int numOfGroup = Integer.parseInt(tab[1]);
 
                 map.get(numOfGroup).add(list);
                 amountOfWords++;
@@ -74,7 +68,8 @@ public class Main {
 
     public static void saveData() {
         try (FileWriter writer = new FileWriter(file)) {
-            writer.write("T£UMACZENIE POLSKIE_T£UMACZENIE ANGIELSKIE_NR GRUPY_ILOŒÆ B£ÊDNYCH ODPOWIEDZI_ILOŒÆ POPRAWNYCH ODPOWIEDZI");
+            writer.write("data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie");
+            writer.write("\n");
             writer.write("\n");
             for (Map.Entry<Integer, LinkedList<ArrayList<String>>> m : map.entrySet()) {
                 for (ArrayList<String> list : m.getValue()) {
@@ -86,7 +81,6 @@ public class Main {
                     writer.write(line + "\n");
                 }
             }
-
         } catch (IOException e) {
             System.out.println("File not found");
         }
@@ -114,7 +108,7 @@ public class Main {
         } else if (volG0 != 0) {
             word = map.get(0).getFirst();
         } else if (volG1 == 0 && volG2 == 0 && volG3 == 0 && volG4 == 0 && volG5 == 0) {
-            word = (ArrayList<String>) List.of("brak fiszek", "brak fiszek", "0", "0", "0");
+            word = (ArrayList<String>) List.of("19940418200515", "0", "0", "0", "brak fiszek", "brak fiszek");
         } else {
             word = getTheOldestWord();
         }
@@ -133,12 +127,12 @@ public class Main {
 
     public static void changeLevel(String upOrDown) {
         ArrayList<String> temp = loadWord();
-        int numOfGroup = Integer.parseInt(temp.get(2));
-        int correctAnswer = Integer.parseInt(temp.get(3));
-        int wrongAnswer = Integer.parseInt(temp.get(4));
+        int numOfGroup = Integer.parseInt(temp.get(1));
+        int correctAnswer = Integer.parseInt(temp.get(2));
+        int wrongAnswer = Integer.parseInt(temp.get(3));
         String dateNew = new SimpleDateFormat("yyyyMMddHHmmss").format(Calendar.getInstance().getTime());
 
-        // usuñ ze stare listy
+        // usuñ ze starej listy
         map.get(numOfGroup).remove(temp);
 
         switch (upOrDown) {
@@ -160,34 +154,31 @@ public class Main {
         }
 
         // dodaj do nowej listy
-        temp.set(2, String.valueOf(numOfGroup));
-        temp.set(3, String.valueOf(correctAnswer));
-        temp.set(4, String.valueOf(wrongAnswer));
-        try {
-            temp.set(5, dateNew);
+        temp.set(1, String.valueOf(numOfGroup));
+        temp.set(2, String.valueOf(correctAnswer));
+        temp.set(3, String.valueOf(wrongAnswer));
+        temp.set(0, dateNew);
 
-        } catch (IndexOutOfBoundsException e) {
-            temp.add(dateNew);
-        }
+        //je¿eli s³owo trafi do grupy 0 to na 10 miejsce
         try {
             map.get(numOfGroup).add(10, temp);
         } catch (IndexOutOfBoundsException e) {
             map.get(numOfGroup).addLast(temp);
         }
 
-        System.out.println("listy po operacji:");
-        System.out.println("lista 0");
-        map.get(0).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 1");
-        map.get(1).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 2");
-        map.get(2).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 3");
-        map.get(3).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 4");
-        map.get(4).forEach(e -> System.out.println("    " + e));
-        System.out.println("lista 5");
-        map.get(5).forEach(e -> System.out.println("    " + e));
+//        System.out.println("listy po operacji:");
+//        System.out.println("lista 0");
+//        map.get(0).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 1");
+//        map.get(1).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 2");
+//        map.get(2).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 3");
+//        map.get(3).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 4");
+//        map.get(4).forEach(e -> System.out.println("    " + e));
+//        System.out.println("lista 5");
+//        map.get(5).forEach(e -> System.out.println("    " + e));
     }
 
     public static ArrayList<String> getTheOldestWord() {
@@ -197,7 +188,7 @@ public class Main {
 
         for (int i = 1; i <= 5; i++) {
             try {
-                n = Long.parseLong(map.get(i).getFirst().get(5));
+                n = Long.parseLong(map.get(i).getFirst().get(0));
                 if (n < min) {
                     min = n;
                     nMin = map.get(i).getFirst();
@@ -210,20 +201,18 @@ public class Main {
     }
 
     public static String getDate() {
-        try {
-            String d = loadWord().get(5);
-            String year = d.substring(0, 4);
-            String month = d.substring(4, 6);
-            String day = d.substring(6, 8);
-            String hours = d.substring(8, 10);
-            String minutes = d.substring(10, 12);
-            String seconds = d.substring(12);
-            return String.format("%s.%s.%s %s:%s:%s", day, month, year, hours, minutes, seconds);
-        } catch (IndexOutOfBoundsException e) {
+        String fullDate = loadWord().get(0);
+        if (fullDate.equals("00000000000000")) {
             return "NOWE";
+        } else {
+            String year = fullDate.substring(0, 4);
+            String month = fullDate.substring(4, 6);
+            String day = fullDate.substring(6, 8);
+            String hours = fullDate.substring(8, 10);
+            String minutes = fullDate.substring(10, 12);
+            String seconds = fullDate.substring(12);
+            return String.format("%s.%s.%s %s:%s:%s", day, month, year, hours, minutes, seconds);
         }
-
-
     }
 
 }
