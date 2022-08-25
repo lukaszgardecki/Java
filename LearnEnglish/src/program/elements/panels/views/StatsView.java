@@ -9,7 +9,7 @@ import java.awt.*;
 public class StatsView extends View {
     Font boldFont = new Font("Courier", Font.BOLD, 24);
     Font plainFont = new Font("Courier", Font.PLAIN, 20);
-    JLabel t1;
+    public static JLabel t1;
     public static JLabel t2;
     public static JLabel t3;
     public static JLabel t4;
@@ -22,7 +22,7 @@ public class StatsView extends View {
         setLayout(new GridLayout(6, 2, 0, 0));
 
         JLabel s1 = new JLabel("Iloœæ zwrotów: ");
-        t1 = new JLabel(String.valueOf(Main.amountOfWords));
+        t1 = new JLabel(String.valueOf(Main.getAmountOfAllWords()));
         JLabel s2 = new JLabel("Poziom 1: ");
         t2 = new JLabel(String.valueOf(Main.map.get(1).size()));
         JLabel s3 = new JLabel("Poziom 2: ");

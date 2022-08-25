@@ -1,25 +1,447 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-20220823172235_0_1_2_urz¹dzenie_a device
-20220823170906_1_1_0_mimo ¿e; chocia¿_although
-20220823170911_1_1_0_powy¿ej_above
-20220823170914_1_1_0_poni¿ej_below
-20220823170923_1_1_0_nie by³oby to mo¿liwe_it would not be possible
-20220823170926_1_1_0_niezbêdny_essential
-20220823170930_1_1_0_do tej pory; dotychczas_so far
-20220823171058_1_1_0_poza; oprócz_besides
-20220823171055_1_1_0_zazwyczaj_typically
-20220823171053_1_1_0_j¹dro_a kernel
-20220823171049_1_1_0_chocia¿_though
-20220823171045_1_1_0_tak zwane ("tzw.")_so called
-20220823171043_1_1_0_substancja wydzielana_an emission
+00000000000000_0_0_0_W porównaniu do..._compared to
+00000000000000_0_0_0_ponadto_furthermore
+20220825123416_0_0_2_W przeciwieñstwie do ..._unlike the
+00000000000000_0_0_0_plusy i minusy (zalety i wady)_pros and cons
+20220825123457_0_0_1_czytelne dla cz³owieka_human readable
+00000000000000_0_0_0_ró¿norodnoœæ_the variety
+00000000000000_0_0_0_pomimo_despite
+20220825123721_0_1_1_odnosiæ siê do (czegoœ)_to refer to
+20220825123728_0_0_1_odrzucanie_discarding
+20220825123741_0_0_1_umiejêtnoœæ rysowania_the ability to draw
+20220825123804_0_0_1_W przeciwieñstwie do..._opposite to
+00000000000000_0_0_0_Pomimo ró¿norodnoœci...(czegoœ)_despite the variety of
+00000000000000_0_0_0_niestety_alas
+00000000000000_0_0_0_Niestety to te¿ jest z³y pomys³_alas this is also a bad idea
+00000000000000_0_0_0_to jest bez znaczenia_it is irrelevant
+00000000000000_0_0_0_Rzuæmy okiem na..._let's have a look at
+00000000000000_0_0_0_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
+00000000000000_0_0_0_wyrafinowany, wyszukany_sophisticated
+00000000000000_0_0_0_trójk¹t równoboczny_an equilateral triangle
+00000000000000_0_0_0_trójk¹t równoramienny_an isosceles triangle
+00000000000000_0_0_0_trójk¹t ró¿noboczny_a scalene triangle
+00000000000000_0_0_0_dwukropek_a colon
+00000000000000_0_0_0_Podobnie..._likewise
+00000000000000_0_0_0_Zasadniczo..._basically
+00000000000000_0_0_0_pojawiaæ siê, powstawaæ_to arise
+00000000000000_0_0_0_powstaje proste pytanie_a simply question arises
+00000000000000_0_0_0_z grubsza mówi¹c_roughly speaking
+00000000000000_0_0_0_z jednej strony..._on the one hand
+00000000000000_0_0_0_z drugiej strony..._on the other hand
+00000000000000_0_0_0_Rzeczywiœcie..._indeed
+00000000000000_0_0_0_podobny_similar
+00000000000000_0_0_0_Analogicznie..._analogously
+00000000000000_0_0_0_W skrócie..._in a nutshell
+00000000000000_0_0_0_przeciêtny_average
+00000000000000_0_0_0_scenariusz_a scenario
+00000000000000_0_0_0_Ogólnie, ..._overall
+00000000000000_0_0_0_szacunki_estimates
+00000000000000_0_0_0_nieskuteczny, nieefektywny_inefficient
+00000000000000_0_0_0_Powiedzmy, ¿e..._let's say that
+00000000000000_0_0_0_napój_a beverage
+00000000000000_0_0_0_zbêdny_superfluous
+00000000000000_0_0_0_W takim przypadku_in such a case
+00000000000000_0_0_0_W przeciwieñstwie do..._in contrast to
+00000000000000_0_0_0_kompromis_trade off
+00000000000000_0_0_0_Okazuje siê, ¿e..._it turns out that
+00000000000000_0_0_0_Musisz to wzi¹æ pod uwagê_you need to take it into account
+00000000000000_0_0_0_w ten sposób_in this manner
+00000000000000_0_0_0_Pomimo mo¿liwoœci..._despite the possibility
+00000000000000_0_0_0_Bez wzglêdu na to; niezale¿nie od tego_regardless of
+00000000000000_0_0_0_trójk¹t prostok¹tny_a right triangle
+00000000000000_0_0_0_Bierzesz udzia³ w konkursie_yuu take part in competition
+00000000000000_0_0_0_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
+00000000000000_0_0_0_oczywiœcie_of course
+00000000000000_0_0_0_Oczywiœcie ale to ma³o prawdopodobne, ¿e..._of course but it's unlikely that
+00000000000000_0_0_0_z³oœliwy_malicious
+00000000000000_0_0_0_z³oœliwy kod_a malicious code
+00000000000000_0_0_0_Nic dziwnego..._unsurprisingly
+00000000000000_0_0_0_œwiadomy wybór_a conscious choice
+00000000000000_0_0_0_prawie zawsze_nearly always
+00000000000000_0_0_0_œwiadomie_consciously
+00000000000000_0_0_0_nieœwiadomie_unconsciously
+00000000000000_0_0_0_podœwiadomie_subconsciously
+00000000000000_0_0_0_podœwiadomy_subconscious
+00000000000000_0_0_0_œwiadomy_conscious
+00000000000000_0_0_0_nieœwiadomy_unconscious
+00000000000000_0_0_0_wymyœlaæ_to devise
+00000000000000_0_0_0_Warto zapamiêtaæ, ¿e..._it's worth remembering that
+00000000000000_0_0_0_wyj¹tkowoœæ, unikalnoœæ_uniqueness
+00000000000000_0_0_0_przyjemny dla oka_pleasant to the eye
+00000000000000_0_0_0_raczej_rather
+00000000000000_0_0_0_Ten diagram przedstawia..._this diagram depicts
+00000000000000_0_0_0_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
+00000000000000_0_0_0_wydatek; koszt_an expense
+00000000000000_0_0_0_koszty_expenses
+00000000000000_0_0_0_na twój koszt_at your own expense
+00000000000000_0_0_0_oszczêdzaæ_to economize
+00000000000000_0_0_0_Oszczêdzam na jedzeniu_i economize on food
+00000000000000_0_0_0_finansowaæ_to finance
+00000000000000_0_0_0_finanse; œrodki finansowe_finance
+00000000000000_0_0_0_Studiujê finanse_i study finance
+00000000000000_0_0_0_finansowy_financial
+00000000000000_0_0_0_doradca finansowy_a financial adviser
+00000000000000_0_0_0_konto; rachunek_an account
+00000000000000_0_0_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
+00000000000000_0_0_0_Otworzy³em rachunek oszczêdnoœciowy_i opened a savings account
+00000000000000_0_0_0_wp³ata; zap³ata_a payment
+00000000000000_0_0_0_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
+00000000000000_0_0_0_Zwlekali z zap³at¹_they were delaying payment
+00000000000000_0_0_0_wp³acaæ (pieni¹dze na konto)_to deposit
+00000000000000_0_0_0_zaliczka_a deposit
+00000000000000_0_0_0_Wp³aci³ zaliczkê na samochód_he put down a deposit on a car
+00000000000000_0_0_0_podejmowaæ (pieni¹dze z banku)_to withdraw
+00000000000000_0_0_0_podjêcie (pieniêdzy z banku)_a withdrawal
+00000000000000_0_0_0_Podj¹³em pieni¹dze z konta_i made a withdrawal from my account
+00000000000000_0_0_0_wartoœæ_a value
+00000000000000_0_0_0_wartoœciowy_valuable
+00000000000000_0_0_0_spadek wartoœci dolara_a fall in the value of the dollar
+00000000000000_0_0_0_sprzedawaæ na aukcji; licytowaæ_to auction
+00000000000000_0_0_0_aukcja; licytacja_an auction
+00000000000000_0_0_0_Kupi³em ten obraz na aukcji_i have bought this painting at auction
+00000000000000_0_0_0_udzia³; akcja_a share
+00000000000000_0_0_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
+00000000000000_0_0_0_udzia³owiec; akcjonariusz_a shareholder
+00000000000000_0_0_0_kapita³_capital
+00000000000000_0_0_0_lokata kapita³u_a capital investment
+00000000000000_0_0_0_zysk; korzyœæ_a profit
+00000000000000_0_0_0_osi¹gnêliœmy zysk_we have made a profit
+00000000000000_0_0_0_Sprzedali spó³kê z zyskiem_they sold the company at a profit
+00000000000000_0_0_0_obci¹¿aæ kosztami_to charge
+00000000000000_0_0_0_nale¿noœæ; op³ata_a charge
+00000000000000_0_0_0_wolny od op³at_free of charge
+00000000000000_0_0_0_udzielaæ; przyznawaæ_to grant
+00000000000000_0_0_0_stypendium; bezzwrotna pomoc finansowa_a grant
+00000000000000_0_0_0_Mo¿emy przyj¹æ to za pewnik_we can take it for granted
+00000000000000_0_0_0_opiekuñczy_protective
+00000000000000_0_0_0_nadopiekuñczy_overprotective
+00000000000000_0_0_0_Ona jest nadopiekuñcza w stosunku do swoich dzieci_She is overprotective towards her children
+00000000000000_0_0_0_chrupaæ; skrzypieæ (pod nogami)_to crunch
+00000000000000_0_0_0_chrupanie_a crunch
+00000000000000_0_0_0_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
+00000000000000_0_0_0_przechwalaæ siê_to boast
+00000000000000_0_0_0_che³pliwy_boastful
+00000000000000_0_0_0_cierpliwoœæ_patience
+00000000000000_0_0_0_niecierpliwoœæ_impatience
+00000000000000_0_0_0_rozs¹dny_sensible
+00000000000000_0_0_0_rozs¹dny ch³opiec_a sensible boy
+00000000000000_0_0_0_rozs¹dny sposób rozwi¹zywania problemów_a sensible way of dealing with problems
+00000000000000_0_0_0_opodatkowaæ; na³o¿yæ akcyzê_to tax
+00000000000000_0_0_0_opodatkowanie_taxation
+00000000000000_0_0_0_Alkohol jest w Polsce wysoko opodatkowany_alcohol is heavily taxed in Poland
+00000000000000_0_0_0_przeciwdzia³aæ_to counteract
+00000000000000_0_0_0_przeciwdzia³anie_a counteraction
+00000000000000_0_0_0_jednorazowego u¿ytku_disposable
+00000000000000_0_0_0_jednorazowa maszynka do golenia_a disposable razor
+00000000000000_0_0_0_jednorazowe kubki papierowe_disposable paper cups
+00000000000000_0_0_0_po¿yczaæ (komuœ pieni¹dze)_to loan
+00000000000000_0_0_0_po¿yczka_a loan
+00000000000000_0_0_0_Bank udzieli³ nam po¿yczki studenckiej_the bank has granted us a student loan
+00000000000000_0_0_0_tchórz_a coward
+00000000000000_0_0_0_tchórzliwy_cowardly
+00000000000000_0_0_0_Jest zbyt tchórzliwy, by zrealizowaæ (wszystkie) swoje ambicje_he is too cowardly to realize all his ambitions
+00000000000000_0_0_0_czêstotliwoœæ_a frequency
+00000000000000_0_0_0_czêsto_frequently
+00000000000000_0_0_0_coraz czêœciej_with increasing frequently
+00000000000000_0_0_0_zwracaæ pieni¹dze; sp³acaæ_to repay
+00000000000000_0_0_0_zwrot pieniêdzy; sp³ata_a repayment
+00000000000000_0_0_0_Czy ju¿ sp³aci³eœ d³ugi?_have you repaid your debts yet
+00000000000000_0_0_0_przytulny_cosy
+00000000000000_0_0_0_przytulny pokój_a cosy room
+00000000000000_0_0_0_mruczeæ; szemraæ_to murmur
+00000000000000_0_0_0_Ona mamrocze we œnie_she murmurs in her sleep
+00000000000000_0_0_0_strumyk szemra³_the brook was murmuring
+00000000000000_0_0_0_pluskaæ_to splash
+00000000000000_0_0_0_plusk_a splash
+00000000000000_0_0_0_syczeæ_to hiss
+00000000000000_0_0_0_syk_a hiss
+00000000000000_0_0_0_klimatyzacja_air conditioning
+00000000000000_0_0_0_klimatyzowany_air conditioned
+00000000000000_0_0_0_dzieliæ (siê)_to share
+00000000000000_0_0_0_Dzielê pokój z przyjació³k¹_i share the room with my friend
+00000000000000_0_0_0_wybredny; drobiazgowy_fussy
+00000000000000_0_0_0_Nie jestem wybredny w jedzeniu_i am not a fussy eater
+00000000000000_0_0_0_dociekliwy_inquisitive
+00000000000000_0_0_0_wœcibski_nosy
+00000000000000_0_0_0_potem_afterwards
+00000000000000_0_0_0_Obejrzymy ten film, a potem mo¿emy coœ zjeœæ_let's see this film and afterwards we can have something to eat
+00000000000000_0_0_0_otwarty; towarzyski_outgoing
+00000000000000_0_0_0_On jest naprawdê otwart¹ osob¹_he is really an outgoing person
+00000000000000_0_0_0_uczciwoœæ_honesty
+00000000000000_0_0_0_uczciwy_honest
+00000000000000_0_0_0_nieuczciwy_dishonest
+00000000000000_0_0_0_prowizja_a commission
+00000000000000_0_0_0_Musi pan zap³aciæ prowizjê od czeku_you have to pay a commission on the cheque
+00000000000000_0_0_0_rujnowaæ_to ruin
+00000000000000_0_0_0_ruina_ruin
+00000000000000_0_0_0_ruina gospodarcza_economic ruin
+00000000000000_0_0_0_strata_a loss
+00000000000000_0_0_0_Spó³ka przynios³a straty_the company made a loss
+00000000000000_0_0_0_ryzykowaæ_to risk
+00000000000000_0_0_0_ryzykowny_risky
+00000000000000_0_0_0_ryzykowny interes_a risky business
+00000000000000_0_0_0_inwestowaæ_to invest
+00000000000000_0_0_0_inwestycja_an investment
+00000000000000_0_0_0_inwestor_an investor
+00000000000000_0_0_0_nieszkodliwy dla œrodowiska_eco friendly
+00000000000000_0_0_0_produkty nieszkodliwe dla œrodowiska_eco friendly products
+00000000000000_0_0_0_chrapaæ_to snore
+00000000000000_0_0_0_chrapanie_a snore
+00000000000000_0_0_0_kurek; kran_a tap
+00000000000000_0_0_0_kurek z gazem_a gas tap
+00000000000000_0_0_0_kurek z ciep³¹ wod¹_a hot tap
+00000000000000_0_0_0_kurek z zimn¹ wod¹_a cold tap
+00000000000000_0_0_0_kurki z ciep³¹ i zimn¹ wod¹_the hot and cold taps
+00000000000000_0_0_0_sufit_a ceiling
+00000000000000_0_0_0_dotychczas_so far
+00000000000000_0_0_0_Dotychczas otrzyma³em dwa listy_so far i have received two letters
+00000000000000_0_0_0_Jak na razie wszystko idzie dobrze_so far so good
+00000000000000_0_0_0_pod³y; okropny_mean
+00000000000000_0_0_0_Nie b¹dŸ dla mnie taki niedobry!_don't be so mean to me
+00000000000000_0_0_0_ambicja_an ambition
+00000000000000_0_0_0_ambitny_ambitious
+00000000000000_0_0_0_pozbawiony ambicji_unambitious
+00000000000000_0_0_0_umywalka (pe³na nazwa)_a washbasin
+00000000000000_0_0_0_umywalka (skrót)_a basin
+00000000000000_0_0_0_zobowi¹zywaæ_to oblige
+00000000000000_0_0_0_zobowi¹zanie_an obligation
+00000000000000_0_0_0_Mamy zobowi¹zania wobec naszych klientów_we have obligations to our customers
+00000000000000_0_0_0_byæ winnym (pieni¹dze)_to owe
+00000000000000_0_0_0_On jest mi winien 250$_he owes me 250$
+00000000000000_0_0_0_Jestem mu winien ogromn¹ iloœæ pieniêdzy_i owe him a great deal of money
+00000000000000_0_0_0_promieniowaæ_to radiate
+00000000000000_0_0_0_promieniowanie_radiation
+00000000000000_0_0_0_ultrafioletowe promieniowanie s³oneczne_ultraviolet radiation from the sun
+00000000000000_0_0_0_sta³y; ci¹g³y_constant
+00000000000000_0_0_0_przewa¿nie_mostly
+00000000000000_0_0_0_Przewa¿nie s³uchamy muzyki rockowej_we mostly listen to rock music
+00000000000000_0_0_0_szeptaæ_to whisper
+00000000000000_0_0_0_szept_a whisper
+00000000000000_0_0_0_Rozmawialiœmy szeptem_we talked in whispers
+00000000000000_0_0_0_piwnica_a cellar
+00000000000000_0_0_0_bzyczeæ; buczeæ_to buzz
+00000000000000_0_0_0_Pszczo³y brzêcza³y_bees were buzzing
+00000000000000_0_0_0_T³um zabucza³ (np. na stadionie)_the crowd buzzed
+00000000000000_0_0_0_przejœciowy; tymczasowy_temporary
+00000000000000_0_0_0_tymczasowa praca_a temporary job
+00000000000000_0_0_0_dymiæ_to fume
+00000000000000_0_0_0_spaliny_fumes
+00000000000000_0_0_0_szklarnia_a greenhouse
+00000000000000_0_0_0_efekt cieplarniany_the greenhouse effect
+00000000000000_0_0_0_przetwarzaæ na surowce wtórne_to recycle
+00000000000000_0_0_0_przetwarzanie na surowce wtórne; recykling_recycling
+00000000000000_0_0_0_przelewaæ (pieni¹dze)_to transfer
+00000000000000_0_0_0_przelew_a transfer
+00000000000000_0_0_0_Przelejê 100$ na twoje konto_i will transfer 100$ to your account
+00000000000000_0_0_0_deklarowaæ; zg³aszaæ_to declare
+00000000000000_0_0_0_deklaracja_a declaration
+00000000000000_0_0_0_Jest pan zobowi¹zany wype³niæ deklaracjê podatkow¹_you are obliged to complete a tax declaration
+00000000000000_0_0_0_radioaktywny_radioactive
+00000000000000_0_0_0_odpady radioaktywne_radioactive waste
+00000000000000_0_0_0_kwas_an acid
+00000000000000_0_0_0_kwaœny_acid
+00000000000000_0_0_0_kwaœny deszcz_acid rain
+00000000000000_0_0_0_ocieplaæ (siê)_to warm
+00000000000000_0_0_0_ocieplenie_warming
+00000000000000_0_0_0_globalne ocieplenie_global warming
+00000000000000_0_0_0_tu¿ przed_nearly
+00000000000000_0_0_0_Jest tu¿ przed ósm¹_it is nearly eight
+00000000000000_0_0_0_kostka_an ankle
+00000000000000_0_0_0_Skrêci³em kostkê_i have twisted my ankle
+00000000000000_0_0_0_odwaga_courage
+00000000000000_0_0_0_odwa¿ny_courageous
+00000000000000_0_0_0_Znalaz³ odwagê, by wyjechaæ_he found the courage to leave
+00000000000000_0_0_0_w¹troba_a liver
+00000000000000_0_0_0_broda; podbródek_a chin
+00000000000000_0_0_0_podwójny podbródek_a double chin
+00000000000000_0_0_0_dziecinny_childish
+00000000000000_0_0_0_dziecinne zachowanie_childish behaviour
+00000000000000_0_0_0_ostatnio_lately
+00000000000000_0_0_0_ostatni; najnowszy_the latest
+00000000000000_0_0_0_najnowsze wiadomoœci_the latest news
+00000000000000_0_0_0_mijaæ (o czasie)_to pass
+00000000000000_0_0_0_Czas mija powoli_time passes slowly
+00000000000000_0_0_0_Zabijaliœmy czas, graj¹c w karty_we passed the time playing cards
+00000000000000_0_0_0_nerw_a nerve
+00000000000000_0_0_0_Ona dzia³a mi na nerwy_She gets on my nerves
+00000000000000_0_0_0_szczêka_a jaw
+00000000000000_0_0_0_¿ebro_a rib
+00000000000000_0_0_0_z³amane ¿ebro_a broken rib
+00000000000000_0_0_0_nadgarstek_a wrist
+00000000000000_0_0_0_dopiero_not...until
+00000000000000_0_0_0_Wyjadê dopiero jutro_i am not going until tomorrow
+00000000000000_0_0_0_skromnoœæ_modesty
+00000000000000_0_0_0_skromny_modest
+00000000000000_0_0_0_nieskromny_immodest
+00000000000000_0_0_0_p³uco_a lung
+00000000000000_0_0_0_rak p³uc_lung cancer
+00000000000000_0_0_0_Mia³ wodê w p³ucach_he had water in his lungs
+00000000000000_0_0_0_w³aœciciel mieszkania (wynajmuj¹cy je innym)_a landlord
+00000000000000_0_0_0_w³aœcicielka mieszkania (wynajmuj¹ca je innym)_a landlady
+00000000000000_0_0_0_¿y³a_a vein
+00000000000000_0_0_0_natychmiastowy_immediate
+00000000000000_0_0_0_natychmiast_immediately
+00000000000000_0_0_0_Podjêliœmy natychmiastowe dzia³anie_we took immediate action
+00000000000000_0_0_0_tu¿ po_just after
+00000000000000_0_0_0_Jest tu¿ po drugiej_it is just after two
+00000000000000_0_0_0_wczorajszy_yesterday's
+00000000000000_0_0_0_dzisiejszy_today's
+00000000000000_0_0_0_jutrzejszy_tomorrow's
+00000000000000_0_0_0_ty³ek_a bottom
+00000000000000_0_0_0_sygnalizowaæ_to signal
+00000000000000_0_0_0_sygna³_a signal
+00000000000000_0_0_0_Da³ sygna³ ostrzegawczy_he gave a warning signal
+00000000000000_0_0_0_narz¹d; organ_an organ
+00000000000000_0_0_0_zamykaæ (na klucz)_to lock
+00000000000000_0_0_0_zamek (w drzwiach)_a lock
+00000000000000_0_0_0_Trzymaj te papiery pod kluczem!_keep these papers under lock and key
+00000000000000_0_0_0_taras_a terrace
+00000000000000_0_0_0_na tarasie_on the terrace
+00000000000000_0_0_0_bêbniæ_to drum
+00000000000000_0_0_0_bêben_a drum
+00000000000000_0_0_0_dobosz_a drummer
+00000000000000_0_0_0_gwizdaæ_to whistle
+00000000000000_0_0_0_gwizd; gwizdek_a whistle
+00000000000000_0_0_0_Dmuchn¹³em w gwizdek_i blew a whistle
+00000000000000_0_0_0_zlewozmywak_a sink
+00000000000000_0_0_0_w miêdzyczasie_in the meantime
+00000000000000_0_0_0_zmys³; poczucie_a sense
+00000000000000_0_0_0_zmys³ orientacji_a sense of direction
+00000000000000_0_0_0_¿¹dza przygód_a sense of adventure
+00000000000000_0_0_0_wrzeszczeæ; krzyczeæ_to scream
+00000000000000_0_0_0_wrzask; krzyk_a scream
+00000000000000_0_0_0_Krzyczeli o pomoc_they were screaming for help
+00000000000000_0_0_0_wanna_a bath
+00000000000000_0_0_0_Napuœci³em wody do wanny_i have run a bath
+00000000000000_0_0_0_policzek_a cheek
+00000000000000_0_0_0_wynajmowaæ (od kogoœ)_to rent
+00000000000000_0_0_0_czynsz_a rent
+00000000000000_0_0_0_Chcia³bym wynaj¹æ mieszkanie_i would like to rent a flat
+00000000000000_0_0_0_ogrzewaæ_to heat
+00000000000000_0_0_0_ogrzewanie_heating
+00000000000000_0_0_0_centralne ogrzewanie_central heating
+00000000000000_0_0_0_klatka schodowa_a staircase
+00000000000000_0_0_0_czaska_a skull
+00000000000000_0_0_0_korytarz_a corridor
+00000000000000_0_0_0_ceg³a_a brick
+00000000000000_0_0_0_murarz_a bricklayer
+00000000000000_0_0_0_szkielet_a skeleton
+00000000000000_0_0_0_szczekaæ_to bark
+00000000000000_0_0_0_szczekanie_a bark
+00000000000000_0_0_0_dojrza³oœæ_maturity
+00000000000000_0_0_0_dojrza³y_mature
+00000000000000_0_0_0_niedojrza³y_immature
+00000000000000_0_0_0_szuflada_a drawer
+00000000000000_0_0_0_komoda_a chest of drawers
+00000000000000_0_0_0_stojak; stoj¹cy wieszak_a stand
+00000000000000_0_0_0_stojak na parasole_an umbrella stand
+00000000000000_0_0_0_wieszak na ubrania_a coat stand
+00000000000000_0_0_0_rama_a frame
+00000000000000_0_0_0_ramka fotografii_a photograph frame
+00000000000000_0_0_0_framuga okienna_a window frame
+00000000000000_0_0_0_kciuk_a thumb
+00000000000000_0_0_0_tr¹biæ (o s³oniu)_to trumpet
+00000000000000_0_0_0_tr¹bka_a trumpet
+00000000000000_0_0_0_trêbacz_a trumpeter
+00000000000000_0_0_0_organizator_an organizer
+00000000000000_0_0_0_zorganizowany; uporz¹dkowany_organized
+00000000000000_0_0_0_On jest zawsze taki zorganizowany!_he is always so organized
+00000000000000_0_0_0_rzetelny; niezawodny_reliable
+00000000000000_0_0_0_nierzetelny; zawodny_unreliable
+00000000000000_0_0_0_egoista_an egoist
+00000000000000_0_0_0_egoistyczny_egoistic
+00000000000000_0_0_0_pesymizm_pessimism
+00000000000000_0_0_0_pesymista_a pessimist
+00000000000000_0_0_0_pesymistyczny_pessimistic
+00000000000000_0_0_0_optymizm_optimism
+00000000000000_0_0_0_optymista_an optimist
+00000000000000_0_0_0_optymistyczny_optimistic
+00000000000000_0_0_0_humor_humour
+00000000000000_0_0_0_Masz wspania³e poczucie humoru_you have a great sense of humour
+00000000000000_0_0_0_On nie ma poczucia humoru_he has no sense of humour
+00000000000000_0_0_0_powœci¹gliwy_reserved
+00000000000000_0_0_0_Ona jest bardzo powœci¹gliw¹ kobiet¹_she is a very reserved woman
+00000000000000_0_0_0_przedtem; zanim_before
+00000000000000_0_0_0_Nigdy przedtem go nie widzia³em_i have never seen him before
+00000000000000_0_0_0_najpierw_first
+00000000000000_0_0_0_Pocz¹tkowo myœla³em, ¿e..._at first i thought that
+00000000000000_0_0_0_przede wszystkim_first of all
+00000000000000_0_0_0_koñcowy; ostateczny_final
+00000000000000_0_0_0_w koñcu_finally
+00000000000000_0_0_0_ostateczna decyzja_the final decision
+00000000000000_0_0_0_dawno_long ago
+00000000000000_0_0_0_To by³o dawno temu_it was a long time ago
+00000000000000_0_0_0_jak tylko..._as soon as
+00000000000000_0_0_0_Jak tylko wrócê_as soon as i come back
+00000000000000_0_0_0_okres; przedzia³ czasu_a period
+00000000000000_0_0_0_przez krótki okres_for a short period of time
+00000000000000_0_0_0_w ci¹gu; w obrêbie (wewn¹trz)_within
+00000000000000_0_0_0_w ci¹gu szeœciu miesiêcy_within six months
+00000000000000_0_0_0_w obrêbie murów_within the walls
+00000000000000_0_0_0_nastêpowaæ_to follow
+00000000000000_0_0_0_nastepny_following
+00000000000000_0_0_0_Lipiec nastepuje po czerwcu_July follows June
+00000000000000_0_0_0_straszyæ_to frighten
+00000000000000_0_0_0_strach_fright
+00000000000000_0_0_0_Przestraszy³em siê_i got frightened
+00000000000000_0_0_0_przera¿aæ_to horrify
+00000000000000_0_0_0_groza; okropnoœæ_a horror
+00000000000000_0_0_0_przygnêbiaæ_to depress
+00000000000000_0_0_0_przygnêbienie; depresja_depression
+00000000000000_0_0_0_Coraz wiêcej ludzi cierpi na depresjê_More and more people suffer from depression
+00000000000000_0_0_0_nieszczêœcie; pech_a misfortune
+00000000000000_0_0_0_By³ bardzo przygnêbiony tymi nieszczêœciami_he was very depressed about these misfortunes
+00000000000000_0_0_0_niepokój; zmartwienie; lêk_an anxiety
+00000000000000_0_0_0_zaniepokojony; zmartwiony_anxious
+00000000000000_0_0_0_oœmielaæ siê; mieæ odwagê_to dare
+00000000000000_0_0_0_Oœmieli³em siê zaprotestowaæ_i dared to protest
+00000000000000_0_0_0_Jak œmiesz!_how dare you
+00000000000000_0_0_0_nie znosiæ_to detest
+00000000000000_0_0_0_nieznoœny; wstrêtny_detestable
+00000000000000_0_0_0_nieznoœne dziecko_a detestable child
+20220825123203_1_1_1_zmaksymalizowaæ, wyolbrzymiæ_to maximize
+20220825123222_1_1_0_w¹tek_a thread
+20220825123235_1_1_1_Powiedzmy, ¿e..._say
+20220825123313_1_1_2_zamiast_rather then
+20220825123333_1_1_0_zarz¹dzanie_a management
+20220825123350_1_1_1_Po pierwsze, ..._first off
+20220825123430_1_1_1_...z którego..._from which
+20220825123556_1_1_0_aplikacje wielow¹tkowe_multithreaded applications
+20220825123627_1_1_0_nie potrzeba (czegoœ robiæ)_there is no need to
+20220825123651_1_1_0_dla (twojej) wygody_for your convenience
+20220825120633_1_1_1_najprostszym sposobem by..._the simplest way to
+20220825120551_1_1_1_oto co musisz zrobiæ_here is what you need to do
+20220825120535_1_1_0_maniery_manners
+20220825120509_1_1_1_powszechnie znany_widely known
+20220825120341_1_1_0_charakterystyczny_characteristic
+20220825120219_1_1_0_podaj pe³n¹ œcie¿kê_provide the full path
+20220824230204_1_1_1_jego u¿ycie nie zawsze jest uzasadnione_its use is not always justified
+20220824230148_1_1_1_odpowiedzi okaza³y siê b³êdne_the answers turned out to be incorrect
+20220824230057_1_1_1_warunek_a condition
+20220824225801_1_1_1_rozró¿niaæ_to distinguish
+20220824225752_1_1_0_niepoprawny, b³êdny_incorrect
+20220824225711_1_1_1_rozs¹dnie_reasonable
+20220824225542_1_1_0_w³aœciwie_properly
+20220824225354_1_1_0_weryfikowaæ_to validate
+20220824225345_1_1_0_poprawnoœæ_correctness
+20220824225307_1_1_0_jednak¿e_however
+20220824225138_1_1_0_mam do czynienia_i have to deal
+20220824224922_1_1_0_za³ó¿my, ¿e_let's assume that
+20220824224705_1_1_0_warunki wstêpne_preconditions
+20220824224119_1_1_0_zadanie_a task
+20220824224117_1_1_0_po pewnym czasie praktyki_after some time of practice
+20220824224032_1_1_0_wtedy i tylko wtedy_when and only when
+20220824224020_1_1_0_powszechna praktyka_the common practice
+20220824224006_1_1_0_to jest oczywiste_it is obvious
+20220824223958_1_1_0_oczywiste_obvious
 20220823171039_1_1_1_emisja; wydzielanie_emission
 20220823171035_1_1_0_charakteryzowaæ_to characterize
 20220823171031_1_1_0_doszlifujmy informacje_let's polish the information
 20220823171025_1_1_0_wydajnie, skutecznie, efektywnie_efficiently
 20220823171018_1_1_0_nawet jeœli_even though
 20220823171014_1_1_0_miej na uwadze_bear in mind
-20220823171010_1_1_0_w sumie_all in all
+20220823171010_1_1_0_w sumie; podsumowuj¹c_all in all
 20220823171008_1_1_0_innymi s³owy_in other words
 20220823171004_1_1_0_to przekracza_it exceeds
 20220823171000_1_1_0_emitowaæ; wydzielaæ_to emit
@@ -27,6 +449,68 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220823170949_1_1_0_czêœæ obowi¹zkowa_a mandatory part
 20220823170944_1_1_1_charakter_a character
 20220823170942_1_1_0_funkcja, cecha, w³aœciwoœæ_a feature
-20220823171100_2_2_0_rdzeñ_a core
-20220823171103_2_2_0_sk³adniki_ingredients
-20220823172227_2_2_0_niemniej jednak_nonetheless
+20220824230239_2_2_0_nie by³oby to mo¿liwe_it would not be possible
+20220824230243_2_2_0_niezbêdny_essential
+20220825120645_2_2_0_do tej pory; dotychczas_so far
+20220825120825_2_2_0_poza; oprócz_besides
+20220825123321_2_2_1_..., który zawiera_that contains
+20220825123337_2_2_0_zminimalizowaæ_to minimize
+20220825123359_2_2_0_Z zasady...(zwykle)_as a rule
+20220825123438_2_2_0_ponadczasowy_timeless
+20220825123605_2_2_1_w³aœciwy_appropriate
+20220825123631_2_2_0_ponadto_moreover
+20220825123238_2_2_0_W rzeczywistoœci..._in fact
+20220825123233_2_2_1_podobieñstwa_similarities
+20220825123215_2_2_1_..., które wskazuj¹ czy..._those indicate whether
+20220825123147_2_2_1_..., który wskazuje, czy..._that indicates whether
+20220825123127_2_2_1_To odpowiada...(czemuœ)_it corresponds to
+20220825123112_2_3_2_trwa³y_lasting
+20220825123037_2_2_1_Ogólnie, zazwyczaj_in general
+20220825122958_2_2_0_Który z nich...?_which of them
+20220825122917_2_2_1_Co ciekawe, ..._interestingly
+20220825122848_2_2_1_niezmienny_immutable
+20220825122748_2_2_0_Teraz, gdy...(coœ zrobiliœmy)_now that
+20220825122737_2_2_0_Spójrz na..._take a look at
+20220825122724_2_2_1_niepodlegaj¹cy zwrotowi; bezzwrotny_non returnable
+20220825122706_2_2_0_W celu..._in order to
+20220825122633_2_2_2_On jest odpowiedzialny za sprzeda¿_he has responsibility for sales
+20220825122608_2_2_0_plik_a file
+20220825122600_2_2_0_folder_a directory
+20220825122535_2_2_1_zwrotny_returnable
+20220825122506_2_2_1_Wynajmê ten dom jej siostrze_i will let this house to her sister
+20220825122448_2_2_1_wynajmowaæ (komuœ)_to let
+20220825122342_2_2_0_butelka zwrotna_a returnable bottle
+20220825122211_2_2_2_szczery; otwarty_frank
+20220825122156_2_2_1_trwaæ_to last
+20220825122104_2_2_1_Zrobi³em to na w³asn¹ odpowiedzialnoœæ_i did it on my own responsibility
+20220825122040_2_2_1_odpowiedzialnoœæ_responsibility
+20220825122025_2_2_1_szczerze; otwarcie_frankly
+20220825122013_2_2_0_wieczny_everlasting
+20220825122006_2_2_0_godny zaufania_trustworthy
+20220825121949_2_2_0_Mówi¹c szczerze..._frankly speaking
+20220825121937_2_2_1_cwany; przebieg³y_sly
+20220825121810_2_2_1_zrównowa¿ony_even tempered
+20220825121756_2_2_1_dra¿liwy_bad tempered
+20220825121739_2_2_3_decyduj¹c siê na..._by opting for
+20220825121709_2_2_1_usposobienie; nastrój_a temper
+20220825121643_2_2_2_sposób bycia_a manner
+20220825121538_2_2_2_to jest charakterystyczne dla Anglików_it is characteristic of the English
+20220825121517_2_2_1_On ma agresywny sposób bycia_he has an aggressive manner
+20220825121336_2_2_0_przebieg³oœæ_slyness
+20220825121317_2_2_2_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
+20220825121248_2_2_2_niespójnoœci_inconsistencies
+20220825121225_2_2_1_cecha_a characteristic
+20220825121150_2_2_1_uzasadnij swoj¹ odpowiedŸ_justify your answer
+20220825121054_2_2_3_wytyczne_guidelines
+20220825121030_2_2_0_substancja wydzielana_an emission
+20220825121010_2_2_0_tak zwane ("tzw.")_so called
+20220825121001_2_3_2_urz¹dzenie_a device
+20220825120946_2_2_0_chocia¿_though
+20220825120919_2_2_0_j¹dro_a kernel
+20220825120900_2_2_0_zazwyczaj_typically
+20220825123324_3_3_0_rdzeñ_a core
+20220825123344_3_3_0_sk³adniki_ingredients
+20220825123406_3_3_0_niemniej jednak_nonetheless
+20220825123445_3_3_0_mimo ¿e; chocia¿_although
+20220825123615_3_3_0_powy¿ej_above
+20220825123636_3_3_0_poni¿ej_below

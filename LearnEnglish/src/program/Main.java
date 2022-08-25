@@ -1,13 +1,12 @@
 package program;
 
 import program.elements.main_frame.Window;
+import program.elements.panels.views.AddOrRemoveView;
+import program.elements.panels.views.StatsView;
+import program.settings.MouseClick;
 
 import javax.swing.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.lang.reflect.Array;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -218,28 +217,140 @@ public class Main {
         }
     }
 
-//    public static ArrayList<String> createList() {
-//        ArrayList<String> as = new ArrayList<>();
-//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-//
-//            for (ArrayList<String> list : el.getValue()) {
-//                String e = String.format("%s (%s)", list.get(4), list.get(5));
-//                as.add(e);
-//            }
-//        }
-//        return as;
-//    }
-    public static DefaultListModel<String> getListModel() {
+    public static DefaultListModel <String> getListModel() {
         DefaultListModel<String> m = new DefaultListModel<>();
+        ArrayList<String> temp = new ArrayList<>();
         for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-
             for (ArrayList<String> list : el.getValue()) {
                 String e = String.format("%s (%s)", list.get(4), list.get(5));
-                m.addElement(e);
+                temp.add(e);
             }
+        }
+        Collections.sort(temp);
+        for (String s : temp) {
+            m.addElement(s);
         }
         return m;
     }
+
+    public static void addWordToBase() {
+        String polishWord = AddOrRemoveView.tf1.getText();
+        String englishWord = AddOrRemoveView.tf2.getText();
+
+        /*--------- return if it is a duplicate ---------*/
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                boolean s1 = list.get(4).equals(polishWord);
+                boolean s2 = list.get(5).equals(englishWord);
+                if (s1 && s2) return;
+            }
+        }
+
+        /*--------- Add to map ---------*/
+        ArrayList<String> temp = new ArrayList<>(6);
+        temp.add("00000000000000");
+        temp.add("0");
+        temp.add("0");
+        temp.add("0");
+        temp.add(polishWord);
+        temp.add(englishWord);
+        map.get(0).add(temp);
+
+        /*--------- update statistics ---------*/
+        updateStatistics();
+
+        /*--------- update edit list ---------*/
+        AddOrRemoveView.list.setModel(getListModel());
+    }
+
+    public static void changeTheWordInBase() {
+        String polishWord = MouseClick.polishWord;
+        String englishWord = MouseClick.englishWord;
+        String newPolishWord = AddOrRemoveView.tf1.getText();
+        String newEnglishWord = AddOrRemoveView.tf2.getText();
+
+        System.out.println(polishWord);
+        System.out.println(englishWord);
+        System.out.println(newPolishWord);
+        System.out.println(newEnglishWord);
+
+
+        /*--------- return if it is a duplicate ---------*/
+        if (polishWord.equals(newPolishWord) && englishWord.equals(newEnglishWord)) return;
+
+        /*--------- Change to map ---------*/
+        loop2:
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                boolean s1 = list.get(4).equals(polishWord);
+                boolean s2 = list.get(5).equals(englishWord);
+                if (s1 && s2) {
+                    list.set(4, newPolishWord);
+                    list.set(5, newEnglishWord);
+                    break loop2;
+                }
+            }
+        }
+        /*--------- update statistics ---------*/
+        updateStatistics();
+
+        /*--------- update edit list ---------*/
+        AddOrRemoveView.list.setModel(getListModel());
+    }
+
+
+
+    public static void removeFromBase() {
+        String polishWord = AddOrRemoveView.tf1.getText();
+        String englishWord = AddOrRemoveView.tf2.getText();
+        int numOfGroup = 0;
+        int index = 0;
+
+        /*--------- return if it does not exist ---------*/
+        boolean s1 = false;
+        boolean s2 = false;
+        loop:
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                s1 = list.get(4).equals(polishWord);
+                s2 = list.get(5).equals(englishWord);
+                numOfGroup = Integer.parseInt(list.get(1));
+                if (s1 && s2) break loop;
+                index++;
+            }
+        }
+        if (!s1 && !s2) return;
+
+        /*--------- Change to map ---------*/
+        map.get(numOfGroup).remove(index);
+
+        /*--------- update statistics ---------*/
+        updateStatistics();
+
+        /*--------- update edit list ---------*/
+        AddOrRemoveView.list.setModel(getListModel());
+    }
+
+
+
+    public static void updateStatistics() {
+        StatsView.t1.setText(String.valueOf(getAmountOfAllWords()));
+        StatsView.t2.setText(String.valueOf(map.get(1).size()));
+        StatsView.t3.setText(String.valueOf(map.get(2).size()));
+        StatsView.t4.setText(String.valueOf(map.get(3).size()));
+        StatsView.t5.setText(String.valueOf(map.get(4).size()));
+        StatsView.t6.setText(String.valueOf(map.get(5).size()));
+    }
+
+    public static int getAmountOfAllWords() {
+        return map.get(0).size() +
+                map.get(1).size() +
+                map.get(2).size() +
+                map.get(3).size() +
+                map.get(4).size() +
+                map.get(5).size();
+    }
+
 
 
 }

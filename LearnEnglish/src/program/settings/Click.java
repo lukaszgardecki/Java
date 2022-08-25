@@ -5,8 +5,8 @@ import program.elements.panels.MainPanel;
 import program.elements.panels.MenuPanel;
 import program.elements.panels.views.AddOrRemoveView;
 import program.elements.panels.views.MainView;
-import program.elements.panels.views.StatsView;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,19 +18,30 @@ public class Click implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         String a = e.getActionCommand();
+        JPanel mainView = MainPanel.mainView;
+        JPanel editView = MainPanel.addRemoveView;
+        JPanel statsView = MainPanel.statsView;
+
         if(a.equals("stats") && statBtn.getText().equals("STATYSTYKI")) {
-            MainPanel.mainView.setVisible(false);
-            MainPanel.addRemoveView.setVisible(false);
-            MainPanel.statsView.setVisible(true);
+            mainView.setVisible(false);
+            editView.setVisible(false);
+            statsView.setVisible(true);
 
             MenuPanel.addRemoveBtn.setVisible(false);
             statBtn.setText("WRÓÆ");
         } else if (a.equals("stats") && statBtn.getText().equals("WRÓÆ")) {
-            MainPanel.statsView.setVisible(false);
-            MainPanel.mainView.setVisible(true);
-
-
-
+            if (MainPanel.addRemoveView.isVisible()) {
+                AddOrRemoveView.tf1.setForeground(Color.GRAY);
+                AddOrRemoveView.tf1.setText("wpisz s³ówko");
+                AddOrRemoveView.tf2.setForeground(Color.GRAY);
+                AddOrRemoveView.tf2.setText("wpisz t³umaczenie");
+                AddOrRemoveView.addBtn.setBackground(MyColor.GREEN);
+                AddOrRemoveView.addBtn.setText("DODAJ");
+                AddOrRemoveView.list.clearSelection();
+            }
+            editView.setVisible(false);
+            statsView.setVisible(false);
+            mainView.setVisible(true);
 
             MenuPanel.addRemoveBtn.setVisible(true);
             statBtn.setText("STATYSTYKI");
@@ -49,24 +60,63 @@ public class Click implements ActionListener{
                 }
 
                 //nadpisz statystyki
-                StatsView.t2.setText(String.valueOf(Main.map.get(1).size()));
-                StatsView.t3.setText(String.valueOf(Main.map.get(2).size()));
-                StatsView.t4.setText(String.valueOf(Main.map.get(3).size()));
-                StatsView.t5.setText(String.valueOf(Main.map.get(4).size()));
-                StatsView.t6.setText(String.valueOf(Main.map.get(5).size()));
+                Main.updateStatistics();
             }
 
             MainView.inputTextF.setForeground(Color.GRAY);
             MainView.inputTextF.setText("T³umaczenie");
         } else if (a.equals("addRemove")) {
-            MainPanel.mainView.setVisible(false);
-            MainPanel.addRemoveView.setVisible(true);
-            MainPanel.statsView.setVisible(false);
+            mainView.setVisible(false);
+            statsView.setVisible(false);
+            editView.setVisible(true);
+            AddOrRemoveView.tf1.transferFocus();
+            AddOrRemoveView.tf2.transferFocus();
 
             MenuPanel.addRemoveBtn.setVisible(false);
             statBtn.setText("WRÓÆ");
+        } else if (a.equals("add") && AddOrRemoveView.addBtn.getText().equals("DODAJ")) {
+            if (!AddOrRemoveView.tf1.getText().equals("wpisz s³ówko") && !AddOrRemoveView.tf1.getText().isBlank() &&
+                !AddOrRemoveView.tf2.getText().equals("wpisz t³umaczenie") && !AddOrRemoveView.tf2.getText().isBlank()) {
+                Main.addWordToBase();
+
+                AddOrRemoveView.tf1.setText("");
+                AddOrRemoveView.tf1.requestFocusInWindow();
+                AddOrRemoveView.tf2.setText("");
+                AddOrRemoveView.tf2.setForeground(Color.GRAY);
+                AddOrRemoveView.tf2.setText("wpisz t³umaczenie");
+            }
+
+        } else if (a.equals("add") && AddOrRemoveView.addBtn.getText().equals("ZMIEÑ")) {
+            if (!AddOrRemoveView.tf1.getText().equals("wpisz s³ówko") && !AddOrRemoveView.tf1.getText().isBlank() &&
+                    !AddOrRemoveView.tf2.getText().equals("wpisz t³umaczenie") && !AddOrRemoveView.tf2.getText().isBlank()) {
+                Main.changeTheWordInBase();
+
+                AddOrRemoveView.tf1.setText("");
+                AddOrRemoveView.tf1.requestFocusInWindow();
+                AddOrRemoveView.tf2.setForeground(Color.GRAY);
+                AddOrRemoveView.tf2.setText("wpisz t³umaczenie");
+                AddOrRemoveView.addBtn.setBackground(MyColor.GREEN);
+                AddOrRemoveView.addBtn.setText("DODAJ");
+                AddOrRemoveView.list.clearSelection();
+            }
+        }
+
+        else if (a.equals("remove")) {
+            if (!AddOrRemoveView.tf1.getText().equals("wpisz s³ówko") && !AddOrRemoveView.tf1.getText().isBlank() &&
+                    !AddOrRemoveView.tf2.getText().equals("wpisz t³umaczenie") && !AddOrRemoveView.tf2.getText().isBlank()) {
+                Main.removeFromBase();
+
+                AddOrRemoveView.tf1.setText("");
+                AddOrRemoveView.tf1.requestFocusInWindow();
+                AddOrRemoveView.tf2.setForeground(Color.GRAY);
+                AddOrRemoveView.tf2.setText("wpisz t³umaczenie");
+                AddOrRemoveView.addBtn.setBackground(MyColor.GREEN);
+                AddOrRemoveView.addBtn.setText("DODAJ");
+                AddOrRemoveView.list.clearSelection();
+            }
         }
     }
+
 
 
 }
