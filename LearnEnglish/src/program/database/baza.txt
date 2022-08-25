@@ -400,6 +400,27 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 00000000000000_0_0_0_nie znosiæ_to detest
 00000000000000_0_0_0_nieznoœny; wstrêtny_detestable
 00000000000000_0_0_0_nieznoœne dziecko_a detestable child
+00000000000000_0_0_0_? (znak zapytania)_a question mark
+00000000000000_0_0_0_z wyj¹tkiem (czegoœ), poza (czymœ)_except for
+00000000000000_0_0_0_Pod tym wzglêdem... ; W tym wzglêdzie..._in this regard
+00000000000000_0_0_0_niezdolny_unable
+00000000000000_0_0_0_Przyk³ady poni¿ej powinny wygl¹daæ znajomo_the examples below should look familiar to you
+00000000000000_0_0_0_..., który znaczy..._that means
+00000000000000_0_0_0_nieznacznie_slightly
+00000000000000_0_0_0_Zobaczmy, co powinniœmy z tym zrobiæ_ let's see what we should do about that
+00000000000000_0_0_0_w tym przypadku_in this case
+00000000000000_0_0_0_W tej chwili prawdopodobnie zastanawiasz siê, co powinniœmy zrobiæ_right now you are probably wondering what should we do
+00000000000000_0_0_0_przetwarzanie_processing
+00000000000000_0_0_0_potê¿ne narzêdzie_a powerful tool
+00000000000000_0_0_0_pozwalaj¹ nam zdefiniowaæ_they allow us to define
+00000000000000_0_0_0_zamiast_instead of
+00000000000000_0_0_0_W kolejnych tematach zobaczymy..._in the following topics we will see
+00000000000000_0_0_0_inne mo¿liwoœci_other possibilities
+00000000000000_0_0_0_to pozwala nam..._it allows us
+00000000000000_0_0_0_to nie ma znaczenia_it does not matter
+00000000000000_0_0_0_zakres_a range
+00000000000000_0_0_0_! (wykrzyknik)_an exclamation mark
+00000000000000_0_0_0_wymagania_requirements
 20220825123203_1_1_1_zmaksymalizowaæ, wyolbrzymiæ_to maximize
 20220825123222_1_1_0_w¹tek_a thread
 20220825123235_1_1_1_Powiedzmy, ¿e..._say
