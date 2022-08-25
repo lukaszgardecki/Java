@@ -1,28 +1,16 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-00000000000000_0_0_0_W porównaniu do..._compared to
-00000000000000_0_0_0_ponadto_furthermore
-20220825123416_0_0_2_W przeciwieñstwie do ..._unlike the
-00000000000000_0_0_0_plusy i minusy (zalety i wady)_pros and cons
-20220825123457_0_0_1_czytelne dla cz³owieka_human readable
-00000000000000_0_0_0_ró¿norodnoœæ_the variety
-00000000000000_0_0_0_pomimo_despite
-20220825123721_0_1_1_odnosiæ siê do (czegoœ)_to refer to
-20220825123728_0_0_1_odrzucanie_discarding
-20220825123741_0_0_1_umiejêtnoœæ rysowania_the ability to draw
-20220825123804_0_0_1_W przeciwieñstwie do..._opposite to
-00000000000000_0_0_0_Pomimo ró¿norodnoœci...(czegoœ)_despite the variety of
-00000000000000_0_0_0_niestety_alas
-00000000000000_0_0_0_Niestety to te¿ jest z³y pomys³_alas this is also a bad idea
-00000000000000_0_0_0_to jest bez znaczenia_it is irrelevant
-00000000000000_0_0_0_Rzuæmy okiem na..._let's have a look at
-00000000000000_0_0_0_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
-00000000000000_0_0_0_wyrafinowany, wyszukany_sophisticated
-00000000000000_0_0_0_trójk¹t równoboczny_an equilateral triangle
+20220825233531_0_0_1_to jest bez znaczenia_it is irrelevant
+20220825233620_0_0_1_Rzuæmy okiem na..._let's have a look at
+20220825233628_0_0_3_pomimo_despite
+20220825233653_0_0_2_Pomimo ró¿norodnoœci...(czegoœ)_despite the variety of
 00000000000000_0_0_0_trójk¹t równoramienny_an isosceles triangle
+20220825233734_0_0_1_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
 00000000000000_0_0_0_trójk¹t ró¿noboczny_a scalene triangle
+20220825233837_0_1_2_ponadto_furthermore
 00000000000000_0_0_0_dwukropek_a colon
 00000000000000_0_0_0_Podobnie..._likewise
+20220825233943_0_0_1_trójk¹t równoboczny_an equilateral triangle
 00000000000000_0_0_0_Zasadniczo..._basically
 00000000000000_0_0_0_pojawiaæ siê, powstawaæ_to arise
 00000000000000_0_0_0_powstaje proste pytanie_a simply question arises
@@ -421,16 +409,16 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 00000000000000_0_0_0_zakres_a range
 00000000000000_0_0_0_! (wykrzyknik)_an exclamation mark
 00000000000000_0_0_0_wymagania_requirements
-20220825123203_1_1_1_zmaksymalizowaæ, wyolbrzymiæ_to maximize
-20220825123222_1_1_0_w¹tek_a thread
-20220825123235_1_1_1_Powiedzmy, ¿e..._say
-20220825123313_1_1_2_zamiast_rather then
-20220825123333_1_1_0_zarz¹dzanie_a management
-20220825123350_1_1_1_Po pierwsze, ..._first off
-20220825123430_1_1_1_...z którego..._from which
-20220825123556_1_1_0_aplikacje wielow¹tkowe_multithreaded applications
-20220825123627_1_1_0_nie potrzeba (czegoœ robiæ)_there is no need to
-20220825123651_1_1_0_dla (twojej) wygody_for your convenience
+20220825230606_1_1_1_ró¿norodnoœæ_the variety
+20220825231226_1_1_2_umiejêtnoœæ rysowania_the ability to draw
+20220825231233_1_1_0_niestety_alas
+20220825233426_1_1_0_Niestety to te¿ jest z³y pomys³_alas this is also a bad idea
+20220825233503_1_2_3_zamiast_rather then
+20220825233704_1_1_3_odrzucanie_discarding
+20220825233804_1_2_1_aplikacje wielow¹tkowe_multithreaded applications
+20220825233828_1_1_3_W porównaniu do..._compared to
+20220825233855_1_1_0_wyrafinowany, wyszukany_sophisticated
+20220825233917_1_1_5_W przeciwieñstwie do ..._unlike the
 20220825120633_1_1_1_najprostszym sposobem by..._the simplest way to
 20220825120551_1_1_1_oto co musisz zrobiæ_here is what you need to do
 20220825120535_1_1_0_maniery_manners
@@ -470,16 +458,16 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220823170949_1_1_0_czêœæ obowi¹zkowa_a mandatory part
 20220823170944_1_1_1_charakter_a character
 20220823170942_1_1_0_funkcja, cecha, w³aœciwoœæ_a feature
-20220824230239_2_2_0_nie by³oby to mo¿liwe_it would not be possible
-20220824230243_2_2_0_niezbêdny_essential
-20220825120645_2_2_0_do tej pory; dotychczas_so far
-20220825120825_2_2_0_poza; oprócz_besides
-20220825123321_2_2_1_..., który zawiera_that contains
-20220825123337_2_2_0_zminimalizowaæ_to minimize
-20220825123359_2_2_0_Z zasady...(zwykle)_as a rule
-20220825123438_2_2_0_ponadczasowy_timeless
-20220825123605_2_2_1_w³aœciwy_appropriate
-20220825123631_2_2_0_ponadto_moreover
+20220825230520_2_2_1_Powiedzmy, ¿e..._say
+20220825230557_2_2_0_zarz¹dzanie_a management
+20220825230611_2_2_1_Po pierwsze, ..._first off
+20220825231229_2_2_1_...z którego..._from which
+20220825233436_2_2_0_nie potrzeba (czegoœ robiæ)_there is no need to
+20220825233514_2_2_0_dla (twojej) wygody_for your convenience
+20220825233709_2_3_1_odnosiæ siê do (czegoœ)_to refer to
+20220825233812_2_2_1_W przeciwieñstwie do..._opposite to
+20220825233900_2_2_1_plusy i minusy (zalety i wady)_pros and cons
+20220825233929_2_2_2_czytelne dla cz³owieka_human readable
 20220825123238_2_2_0_W rzeczywistoœci..._in fact
 20220825123233_2_2_1_podobieñstwa_similarities
 20220825123215_2_2_1_..., które wskazuj¹ czy..._those indicate whether
@@ -535,3 +523,15 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220825123445_3_3_0_mimo ¿e; chocia¿_although
 20220825123615_3_3_0_powy¿ej_above
 20220825123636_3_3_0_poni¿ej_below
+20220825230432_3_3_0_nie by³oby to mo¿liwe_it would not be possible
+20220825230507_3_3_0_niezbêdny_essential
+20220825230525_3_3_0_do tej pory; dotychczas_so far
+20220825230603_3_3_0_poza; oprócz_besides
+20220825233932_3_3_0_w¹tek_a thread
+20220825233906_3_3_1_zmaksymalizowaæ, wyolbrzymiæ_to maximize
+20220825233820_3_3_0_ponadto_moreover
+20220825233716_3_3_1_w³aœciwy_appropriate
+20220825233520_3_3_0_ponadczasowy_timeless
+20220825233442_3_3_0_Z zasady...(zwykle)_as a rule
+20220825231232_3_3_0_zminimalizowaæ_to minimize
+20220825230616_3_3_1_..., który zawiera_that contains

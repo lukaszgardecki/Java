@@ -2,6 +2,7 @@ package program;
 
 import program.elements.main_frame.Window;
 import program.elements.panels.views.AddOrRemoveView;
+import program.elements.panels.views.MainView;
 import program.elements.panels.views.StatsView;
 import program.settings.MouseClick;
 
@@ -14,6 +15,7 @@ public class Main {
     static String path = "src/program/database/baza.txt";
     static File file = new File(path);
     public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
+    static StringBuilder correctAns;
 
     /*
         CAPACITY OF LEVELS
@@ -114,7 +116,7 @@ public class Main {
         } else {
             word = getTheOldestWord();
         }
-
+        setUnderscores(word);
         return word;
     }
 
@@ -298,8 +300,6 @@ public class Main {
         AddOrRemoveView.list.setModel(getListModel());
     }
 
-
-
     public static void removeFromBase() {
         String polishWord = AddOrRemoveView.tf1.getText();
         String englishWord = AddOrRemoveView.tf2.getText();
@@ -331,8 +331,6 @@ public class Main {
         AddOrRemoveView.list.setModel(getListModel());
     }
 
-
-
     public static void updateStatistics() {
         StatsView.t1.setText(String.valueOf(getAmountOfAllWords()));
         StatsView.t2.setText(String.valueOf(map.get(1).size()));
@@ -351,6 +349,32 @@ public class Main {
                 map.get(5).size();
     }
 
+    public static void setUnderscores(ArrayList<String> lst) {
+        String englishWord = lst.get(5);
+        StringBuilder undersc = new StringBuilder();
+        correctAns = new StringBuilder();
+
+        for (int i = 0; i < englishWord.length(); i++) {
+            String sign = Character.toString(englishWord.charAt(i));
+            if (sign.matches("\\w")) {
+                undersc.append("_").append("\u00A0");
+                correctAns.append(sign).append("\u00A0");
+            } else if (sign.matches("\\s+")) {
+                undersc.append("  ");
+                correctAns.append("  ");
+            } else {
+                undersc.append(sign);
+                correctAns.append(sign);
+            }
+
+        }
+
+        MainView.underscores.setText(String.valueOf(undersc));
+    }
+
+    public static String getCorrectAnswer() {
+        return correctAns.toString();
+    }
 
 
 }

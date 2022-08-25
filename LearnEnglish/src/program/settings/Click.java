@@ -55,7 +55,8 @@ public class Click implements ActionListener{
                 else {
                     isAnswerWrong = true;
                     wordLabel.setForeground(MyColor.RED);
-                    MainView.correctAnswer.setText(Main.loadWord().get(5));
+                    //MainView.correctAnswer.setText(Main.loadWord().get(5));
+                    MainView.correctAnswer.setText(Main.getCorrectAnswer());
                     Main.changeLevel("down");
                 }
 
