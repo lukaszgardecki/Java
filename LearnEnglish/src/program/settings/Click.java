@@ -46,26 +46,36 @@ public class Click implements ActionListener{
             MenuPanel.addRemoveBtn.setVisible(true);
             statBtn.setText("STATYSTYKI");
         } else if(a.equals("check")) {
-            if (!inputTextF.getText().isEmpty() && !inputTextF.getText().equals("T≥umaczenie")) {
-                //jeøeli odpowiedü jest dobra
+            if (check.getText().equals("Dalej")) {
+                wordLabel.setText(Main.loadWord().get(4));
+                wordLabel.setForeground(MyColor.BLACK);
+                dateLabel.setText("Ostatnia powtÛrka: " + Main.getDate());
+                correctAnswer.setText("");
+                inputTextF.requestFocusInWindow();
+                inputTextF.setEditable(true);
+                inputTextF.setForeground(MyColor.BLACK);
+                inputTextF.setText("");
+                check.setText("Sprawdü");
+            } else if (check.getText().equals("Sprawdü") && !inputTextF.getText().isEmpty() && !inputTextF.getText().equals("T≥umaczenie")) {
+                /* ----- if answer is good ----- */
                 if (inputTextF.getText().equals(Main.loadWord().get(5))) {
                     Main.changeLevel("up");
+                    wordLabel.setText(Main.loadWord().get(4));
+                    dateLabel.setText("Ostatnia powtÛrka: " + Main.getDate());
+                    inputTextF.setText("");
+                    inputTextF.requestFocusInWindow();
                 }
-                //jeøeli odpowiedü jest z≥a
+                /* ----- if answer is bad ----- */
                 else {
-                    isAnswerWrong = true;
                     wordLabel.setForeground(MyColor.RED);
-                    //MainView.correctAnswer.setText(Main.loadWord().get(5));
-                    MainView.correctAnswer.setText(Main.getCorrectAnswer());
+                    correctAnswer.setText(Main.getCorrectAnswer());
+                    inputTextF.setForeground(Color.GRAY);
+                    inputTextF.setEditable(false);
+                    check.setText("Dalej");
                     Main.changeLevel("down");
                 }
-
-                //nadpisz statystyki
                 Main.updateStatistics();
             }
-
-            MainView.inputTextF.setForeground(Color.GRAY);
-            MainView.inputTextF.setText("T≥umaczenie");
         } else if (a.equals("addRemove")) {
             mainView.setVisible(false);
             statsView.setVisible(false);

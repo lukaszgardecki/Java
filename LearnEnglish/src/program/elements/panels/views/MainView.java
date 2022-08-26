@@ -6,6 +6,7 @@ import program.elements.text_fields.EnglishWordTextArea;
 import program.elements.text_fields.CorrectAnswerTextArea;
 import program.elements.text_fields.TranslateTextField;
 import program.elements.text_fields.UnderscoresTextArea;
+import program.settings.KeyPress;
 
 
 public class MainView extends View {
@@ -15,7 +16,6 @@ public class MainView extends View {
     public static TranslateTextField inputTextF;
     public static DateLabel dateLabel;
     public static CheckButton check;
-    public static boolean isAnswerWrong = false;
 
     public MainView() {
         underscores = new UnderscoresTextArea();
