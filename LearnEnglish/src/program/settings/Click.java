@@ -22,12 +22,16 @@ public class Click implements ActionListener{
         JPanel editView = MainPanel.addRemoveView;
         JPanel statsView = MainPanel.statsView;
 
-        if(a.equals("stats") && statBtn.getText().equals("STATYSTYKI")) {
+        if (a.equals("end")) {
+            Main.saveData();
+            Main.win.dispose();
+        } else if(a.equals("stats") && statBtn.getText().equals("STATYSTYKI")) {
             mainView.setVisible(false);
             editView.setVisible(false);
             statsView.setVisible(true);
 
             MenuPanel.addRemoveBtn.setVisible(false);
+            MenuPanel.endBtn.setVisible(false);
             statBtn.setText("WRÓÆ");
         } else if (a.equals("stats") && statBtn.getText().equals("WRÓÆ")) {
             if (MainPanel.addRemoveView.isVisible()) {
@@ -44,6 +48,7 @@ public class Click implements ActionListener{
             mainView.setVisible(true);
 
             MenuPanel.addRemoveBtn.setVisible(true);
+            MenuPanel.endBtn.setVisible(true);
             statBtn.setText("STATYSTYKI");
         } else if(a.equals("check")) {
             if (check.getText().equals("Dalej")) {
@@ -84,6 +89,7 @@ public class Click implements ActionListener{
             AddOrRemoveView.tf2.transferFocus();
 
             MenuPanel.addRemoveBtn.setVisible(false);
+            MenuPanel.endBtn.setVisible(false);
             statBtn.setText("WRÓÆ");
         } else if (a.equals("add") && AddOrRemoveView.addBtn.getText().equals("DODAJ")) {
             if (!AddOrRemoveView.tf1.getText().equals("wpisz s³ówko") && !AddOrRemoveView.tf1.getText().isBlank() &&

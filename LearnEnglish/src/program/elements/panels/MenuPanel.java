@@ -15,6 +15,7 @@ public class MenuPanel extends JPanel {
     public static final int BTN_X = (int) ((MenuPanel.WIDTH - MenuButton.WIDTH) * 0.5);
     public static MenuButton statBtn;
     public static MenuButton addRemoveBtn;
+    public static MenuButton endBtn;
 
     public MenuPanel() {
         setBounds(X,Y, WIDTH, HEIGHT);
@@ -31,7 +32,13 @@ public class MenuPanel extends JPanel {
         addRemoveBtn.setActionCommand("addRemove");
         addRemoveBtn.setLocation(BTN_X, UP_GAP+MenuButton.HEIGHT+GAP_BETWEEN_BTNS);
 
+        // Button 3:
+        endBtn = new MenuButton("ZAKOÑCZ");
+        endBtn.setActionCommand("end");
+        endBtn.setLocation(BTN_X, UP_GAP+2*MenuButton.HEIGHT+2*GAP_BETWEEN_BTNS);
+
         add(statBtn);
         add(addRemoveBtn);
+        add(endBtn);
     }
 }

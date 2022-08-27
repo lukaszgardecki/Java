@@ -1,15 +1,62 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
+20220826182006_0_0_4_Oczywiœcie ale to ma³o prawdopodobne, ¿e..._of course but it's unlikely that
+20220826182010_0_1_3_zbêdny_superfluous
+00000000000000_0_0_0_prawie zawsze_nearly always
+20220826182036_0_3_3_Podobnie..._likewise
+00000000000000_0_0_0_œwiadomie_consciously
+20220826182133_0_0_4_Nic dziwnego..._unsurprisingly
+20220826182140_0_0_4_œwiadomy wybór_a conscious choice
+20220826182154_0_2_3_Analogicznie..._analogously
+20220826182213_0_0_5_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
+00000000000000_0_0_0_nieœwiadomie_unconsciously
+00000000000000_0_0_0_podœwiadomie_subconsciously
+00000000000000_0_0_0_podœwiadomy_subconscious
+00000000000000_0_0_0_œwiadomy_conscious
+00000000000000_0_0_0_nieœwiadomy_unconscious
+00000000000000_0_0_0_wymyœlaæ_to devise
+00000000000000_0_0_0_Warto zapamiêtaæ, ¿e..._it's worth remembering that
+00000000000000_0_0_0_wyj¹tkowoœæ, unikalnoœæ_uniqueness
+00000000000000_0_0_0_przyjemny dla oka_pleasant to the eye
+00000000000000_0_0_0_raczej_rather
+00000000000000_0_0_0_Ten diagram przedstawia..._this diagram depicts
+00000000000000_0_0_0_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
+00000000000000_0_0_0_wydatek; koszt_an expense
+00000000000000_0_0_0_koszty_expenses
+00000000000000_0_0_0_na twój koszt_at your own expense
+00000000000000_0_0_0_oszczêdzaæ_to economize
+00000000000000_0_0_0_Oszczêdzam na jedzeniu_i economize on food
+00000000000000_0_0_0_finansowaæ_to finance
+00000000000000_0_0_0_finanse; œrodki finansowe_finance
+00000000000000_0_0_0_Studiujê finanse_i study finance
+00000000000000_0_0_0_finansowy_financial
+00000000000000_0_0_0_doradca finansowy_a financial adviser
+00000000000000_0_0_0_konto; rachunek_an account
+00000000000000_0_0_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
+00000000000000_0_0_0_Otworzy³em rachunek oszczêdnoœciowy_i opened a savings account
+00000000000000_0_0_0_wp³ata; zap³ata_a payment
+00000000000000_0_0_0_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
+00000000000000_0_0_0_Zwlekali z zap³at¹_they were delaying payment
+00000000000000_0_0_0_wp³acaæ (pieni¹dze na konto)_to deposit
+00000000000000_0_0_0_zaliczka_a deposit
+00000000000000_0_0_0_Wp³aci³ zaliczkê na samochód_he put down a deposit on a car
+00000000000000_0_0_0_podejmowaæ (pieni¹dze z banku)_to withdraw
+00000000000000_0_0_0_podjêcie (pieniêdzy z banku)_a withdrawal
+00000000000000_0_0_0_Podj¹³em pieni¹dze z konta_i made a withdrawal from my account
+00000000000000_0_0_0_wartoœæ_a value
+00000000000000_0_0_0_wartoœciowy_valuable
+00000000000000_0_0_0_spadek wartoœci dolara_a fall in the value of the dollar
+00000000000000_0_0_0_sprzedawaæ na aukcji; licytowaæ_to auction
+00000000000000_0_0_0_aukcja; licytacja_an auction
+00000000000000_0_0_0_Kupi³em ten obraz na aukcji_i have bought this painting at auction
+00000000000000_0_0_0_udzia³; akcja_a share
+00000000000000_0_0_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
+00000000000000_0_0_0_udzia³owiec; akcjonariusz_a shareholder
+00000000000000_0_0_0_kapita³_capital
 00000000000000_0_0_0_lokata kapita³u_a capital investment
-20220827160908_0_0_2_wartoœæ_a value
-20220827160945_0_0_1_Kupi³em ten obraz na aukcji_i have bought this painting at auction
-20220827161036_0_0_2_wartoœciowy_valuable
-20220827161049_0_0_1_udzia³; akcja_a share
 00000000000000_0_0_0_zysk; korzyœæ_a profit
 00000000000000_0_0_0_osi¹gnêliœmy zysk_we have made a profit
 00000000000000_0_0_0_Sprzedali spó³kê z zyskiem_they sold the company at a profit
-20220827161339_0_1_2_zaliczka_a deposit
-20220827161347_0_0_1_udzia³owiec; akcjonariusz_a shareholder
 00000000000000_0_0_0_obci¹¿aæ kosztami_to charge
 00000000000000_0_0_0_nale¿noœæ; op³ata_a charge
 00000000000000_0_0_0_wolny od op³at_free of charge
@@ -324,17 +371,17 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 00000000000000_0_0_0_! (wykrzyknik)_an exclamation mark
 00000000000000_0_0_0_wymagania_requirements
 00000000000000_0_0_0_œrednia (rzecz.)_an average
-20220827160234_1_1_1_Wp³aci³ zaliczkê na samochód_he put down a deposit on a car
-20220827160334_1_1_2_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
-20220827160540_1_3_2_wydatek; koszt_an expense
-20220827160632_1_1_0_aukcja; licytacja_an auction
-20220827160711_1_3_3_Warto zapamiêtaæ, ¿e..._it's worth remembering that
-20220827160831_1_1_1_Podj¹³em pieni¹dze z konta_i made a withdrawal from my account
-20220827161104_1_4_1_niezbêdny_essential
-20220827161136_1_1_1_spadek wartoœci dolara_a fall in the value of the dollar
-20220827161228_1_1_1_sprzedawaæ na aukcji; licytowaæ_to auction
-20220827161314_1_1_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
-20220827161357_1_1_0_kapita³_capital
+20220826114540_1_1_2_Bez wzglêdu na to; niezale¿nie od tego_regardless of
+20220826133655_1_1_3_w ten sposób_in this manner
+20220826155035_1_2_3_szacunki_estimates
+20220826155327_1_1_2_z³oœliwy_malicious
+20220826155519_1_1_2_z³oœliwy kod_a malicious code
+20220826181756_1_1_3_Bierzesz udzia³ w konkursie_you take part in competition
+20220826182013_1_4_8_pomimo_despite
+20220826182027_1_2_1_Pomimo mo¿liwoœci..._despite the possibility
+20220826182116_1_2_2_W przeciwieñstwie do..._in contrast to
+20220826182251_1_2_2_Musisz to wzi¹æ pod uwagê_you need to take it into account
+20220826182306_1_2_3_kompromis_trade off
 20220825120633_1_1_1_najprostszym sposobem by..._the simplest way to
 20220825120551_1_1_1_oto co musisz zrobiæ_here is what you need to do
 20220825120535_1_1_0_maniery_manners
@@ -374,16 +421,16 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220823170949_1_1_0_czêœæ obowi¹zkowa_a mandatory part
 20220823170944_1_1_1_charakter_a character
 20220823170942_1_1_0_funkcja, cecha, w³aœciwoœæ_a feature
-20220827160142_2_2_2_oszczêdzaæ_to economize
-20220827160250_2_4_7_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
-20220827160349_2_6_3_Pomimo mo¿liwoœci..._despite the possibility
-20220827160548_2_2_0_wp³acaæ (pieni¹dze na konto)_to deposit
-20220827160645_2_2_1_Otworzy³em rachunek oszczêdnoœciowy_i opened a savings account
-20220827160731_2_2_1_Zwlekali z zap³at¹_they were delaying payment
-20220827160841_2_2_0_podejmowaæ (pieni¹dze z banku)_to withdraw
-20220827161106_2_2_2_finansowy_financial
-20220827161145_2_2_0_podjêcie (pieniêdzy z banku)_a withdrawal
-20220827161236_2_7_6_trójk¹t równoramienny_an isosceles triangle
+20220826101040_2_3_3_trójk¹t równoramienny_an isosceles triangle
+20220826101114_2_3_3_trójk¹t ró¿noboczny_a scalene triangle
+20220826101131_2_3_2_z grubsza mówi¹c_roughly speaking
+20220826101148_2_2_1_nieskuteczny, nieefektywny_inefficient
+20220826101229_2_2_0_W takim przypadku_in such a case
+20220826181802_2_2_0_trójk¹t prostok¹tny_a right triangle
+20220826182018_2_2_2_napój_a beverage
+20220826182030_2_2_3_Ogólnie, ..._overall
+20220826182125_2_2_1_Okazuje siê, ¿e..._it turns out that
+20220826182254_2_2_1_oczywiœcie_of course
 20220825123238_2_2_0_W rzeczywistoœci..._in fact
 20220825123233_2_2_1_podobieñstwa_similarities
 20220825123215_2_2_1_..., które wskazuj¹ czy..._those indicate whether
@@ -433,49 +480,16 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220825120946_2_2_0_chocia¿_though
 20220825120919_2_2_0_j¹dro_a kernel
 20220825120900_2_2_0_zazwyczaj_typically
-20220827160147_3_5_5_w ten sposób_in this manner
-20220827160307_3_3_0_finanse; œrodki finansowe_finance
-20220827160354_3_3_2_wyj¹tkowoœæ, unikalnoœæ_uniqueness
-20220827160612_3_3_1_na twój koszt_at your own expense
-20220827160651_3_3_0_Studiujê finanse_i study finance
-20220827160743_3_3_0_doradca finansowy_a financial adviser
-20220827160858_3_3_2_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
-20220827161109_3_3_0_konto; rachunek_an account
-20220827161158_3_3_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
-20220827161242_3_3_0_wp³ata; zap³ata_a payment
-20220827155321_3_3_1_podœwiadomie_subconsciously
-20220827155150_3_3_0_Ten schemat (diagram) przedstawia..._this diagram depicts
-20220827155120_3_3_0_przyjemny dla oka_pleasant to the eye
-20220827154840_3_3_0_nieœwiadomy_unconscious
-20220827154742_3_3_0_œwiadomy_conscious
-20220827154651_3_3_0_podœwiadomy_subconscious
-20220827154156_3_3_5_œwiadomy wybór_a conscious choice
-20220827154118_3_3_5_Nic dziwnego..._unsurprisingly
-20220827154049_3_3_1_œwiadomie_consciously
-20220827154013_3_6_4_Podobnie..._likewise
-20220827153838_3_3_1_prawie zawsze_nearly always
-20220827153052_3_4_4_zbêdny_superfluous
-20220827152934_3_3_5_Oczywiœcie ale to ma³o prawdopodobne, ¿e..._of course but it's unlikely that
-20220827152844_3_4_3_Bez wzglêdu na to; niezale¿nie od tego_regardless of
-20220827152832_3_3_0_nieœwiadomie_unconsciously
-20220827152736_3_5_3_Analogicznie..._analogously
-20220827152615_3_4_3_kompromis_trade off
-20220827152512_3_4_2_Musisz to wzi¹æ pod uwagê_you need to take it into account
-20220827152430_3_4_2_W przeciwieñstwie do..._in contrast to
-20220827152304_3_6_8_pomimo_despite
-20220827152130_3_3_3_Bierzesz udzia³ w konkursie_you take part in competition
-20220827152028_3_3_2_z³oœliwy kod_a malicious code
-20220827151950_3_3_2_z³oœliwy_malicious
-20220827151825_3_4_3_szacunki_estimates
-20220827151751_3_3_1_oczywiœcie_of course
-20220827151708_3_3_1_Okazuje siê, ¿e..._it turns out that
-20220827151643_3_3_3_Ogólnie, ..._overall
-20220827151526_3_3_2_napój_a beverage
-20220827151404_3_3_0_trójk¹t prostok¹tny_a right triangle
-20220827151348_3_3_0_W takim przypadku_in such a case
-20220827151325_3_3_1_nieskuteczny, nieefektywny_inefficient
-20220827151252_3_4_2_z grubsza mówi¹c_roughly speaking
-20220827151207_3_4_3_trójk¹t ró¿noboczny_a scalene triangle
+20220825123324_3_3_0_rdzeñ_a core
+20220825123344_3_3_0_sk³adniki_ingredients
+20220825123406_3_3_0_niemniej jednak_nonetheless
+20220825123445_3_3_0_mimo ¿e; chocia¿_although
+20220825123615_3_3_0_powy¿ej_above
+20220825123636_3_3_0_poni¿ej_below
+20220825230432_3_3_0_nie by³oby to mo¿liwe_it would not be possible
+20220825230507_3_3_0_niezbêdny_essential
+20220825230525_3_3_0_do tej pory; dotychczas_so far
+20220825230603_3_3_0_poza; oprócz_besides
 20220826182303_3_3_1_przeciêtny, œredni_average
 20220826182129_3_3_0_Powiedzmy, ¿e..._let's say that
 20220826182021_3_3_1_W skrócie..._in a nutshell
@@ -522,17 +536,3 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220825233442_3_3_0_Z zasady...(zwykle)_as a rule
 20220825231232_3_3_0_zminimalizowaæ_to minimize
 20220825230616_3_3_1_..., który zawiera_that contains
-20220827155355_4_4_0_rdzeñ_a core
-20220827155434_4_4_0_sk³adniki_ingredients
-20220827155650_4_4_0_niemniej jednak_nonetheless
-20220827155722_4_4_0_mimo ¿e; chocia¿_although
-20220827155952_4_4_0_powy¿ej_above
-20220827160151_4_4_0_poni¿ej_below
-20220827160320_4_4_0_nie by³oby to mo¿liwe_it would not be possible
-20220827160626_4_4_0_do tej pory; dotychczas_so far
-20220827160659_4_4_0_poza; oprócz_besides
-20220827160748_4_4_0_koszty_expenses
-20220827161245_4_4_0_finansowaæ_to finance
-20220827161206_4_4_0_Oszczêdzam na jedzeniu_i economize on food
-20220827161111_4_4_1_raczej_rather
-20220827160904_4_4_1_wymyœlaæ_to devise

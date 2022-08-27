@@ -26,6 +26,7 @@ public class Main {
     static final int CAP_GROUP_4 = 140;
     static final int CAP_GROUP_5 = 160;
     public static int amountOfWords = 0;
+    public static Window win;
 
 
     public static void main(String[] args) {
@@ -47,12 +48,14 @@ public class Main {
 //        map.get(5).forEach(e -> System.out.println("    " + e));
 
 
-        new Window();
+        win = new Window();
 
     }
 
     public static void loadData() {
-        try (Scanner scanner = new Scanner(file)) {
+
+        try (FileInputStream inputf = new FileInputStream(path);
+             Scanner scanner = new Scanner(new InputStreamReader(inputf))) {
             scanner.nextLine();
             scanner.nextLine();
             while (scanner.hasNextLine()) {
@@ -65,13 +68,32 @@ public class Main {
                 map.get(numOfGroup).add(list);
                 amountOfWords++;
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println("File not found.");
         }
+
+
+//        try (Scanner scanner = new Scanner(file)) {
+//            scanner.nextLine();
+//            scanner.nextLine();
+//            while (scanner.hasNextLine()) {
+//                String line = scanner.nextLine();
+//                String[] tab = line.split("_");
+//                ArrayList<String> list = new ArrayList<>();
+//                Collections.addAll(list, tab);
+//                int numOfGroup = Integer.parseInt(tab[1]);
+//
+//                map.get(numOfGroup).add(list);
+//                amountOfWords++;
+//            }
+//        } catch (FileNotFoundException e) {
+//            System.out.println("File not found.");
+//        }
     }
 
     public static void saveData() {
-        try (FileWriter writer = new FileWriter(file)) {
+        try (FileOutputStream outf = new FileOutputStream(path);
+             OutputStreamWriter writer = new OutputStreamWriter(outf)) {
             writer.write("data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie");
             writer.write("\n");
             writer.write("\n");
@@ -85,9 +107,29 @@ public class Main {
                     writer.write(line + "\n");
                 }
             }
-        } catch (IOException e) {
-            System.out.println("File not found");
+
+        } catch (IOException f) {
+            System.out.println("File not found.");
         }
+
+//       try (FileWriter writer = new FileWriter(file)) {
+//
+//            writer.write("data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie");
+//            writer.write("\n");
+//            writer.write("\n");
+//            for (Map.Entry<Integer, LinkedList<ArrayList<String>>> m : map.entrySet()) {
+//                for (ArrayList<String> list : m.getValue()) {
+//                    StringBuilder line = new StringBuilder();
+//
+//                    list.forEach(el -> line.append(el).append("_"));
+//                    line.deleteCharAt(line.length()-1);
+//
+//                    writer.write(line + "\n");
+//                }
+//            }
+//        } catch (IOException e) {
+//            System.out.println("File not found");
+//        }
     }
 
     public static ArrayList<String> loadWord() {
