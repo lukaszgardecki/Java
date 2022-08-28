@@ -1,118 +1,8 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-00000000000000_0_0_0_lokata kapita³u_a capital investment
-20220827160908_0_0_2_wartoœæ_a value
-20220827160945_0_0_1_Kupi³em ten obraz na aukcji_i have bought this painting at auction
-20220827161036_0_0_2_wartoœciowy_valuable
-20220827161049_0_0_1_udzia³; akcja_a share
-00000000000000_0_0_0_zysk; korzyœæ_a profit
-00000000000000_0_0_0_osi¹gnêliœmy zysk_we have made a profit
-00000000000000_0_0_0_Sprzedali spó³kê z zyskiem_they sold the company at a profit
-20220827161339_0_1_2_zaliczka_a deposit
-20220827161347_0_0_1_udzia³owiec; akcjonariusz_a shareholder
-00000000000000_0_0_0_obci¹¿aæ kosztami_to charge
-00000000000000_0_0_0_nale¿noœæ; op³ata_a charge
-00000000000000_0_0_0_wolny od op³at_free of charge
-00000000000000_0_0_0_udzielaæ; przyznawaæ_to grant
-00000000000000_0_0_0_stypendium; bezzwrotna pomoc finansowa_a grant
-00000000000000_0_0_0_Mo¿emy przyj¹æ to za pewnik_we can take it for granted
-00000000000000_0_0_0_opiekuñczy_protective
-00000000000000_0_0_0_nadopiekuñczy_overprotective
-00000000000000_0_0_0_Ona jest nadopiekuñcza w stosunku do swoich dzieci_She is overprotective towards her children
-00000000000000_0_0_0_chrupaæ; skrzypieæ (pod nogami)_to crunch
-00000000000000_0_0_0_chrupanie_a crunch
-00000000000000_0_0_0_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
-00000000000000_0_0_0_przechwalaæ siê_to boast
-00000000000000_0_0_0_che³pliwy_boastful
-00000000000000_0_0_0_cierpliwoœæ_patience
-00000000000000_0_0_0_niecierpliwoœæ_impatience
-00000000000000_0_0_0_rozs¹dny_sensible
-00000000000000_0_0_0_rozs¹dny ch³opiec_a sensible boy
-00000000000000_0_0_0_rozs¹dny sposób rozwi¹zywania problemów_a sensible way of dealing with problems
-00000000000000_0_0_0_opodatkowaæ; na³o¿yæ akcyzê_to tax
-00000000000000_0_0_0_opodatkowanie_taxation
-00000000000000_0_0_0_Alkohol jest w Polsce wysoko opodatkowany_alcohol is heavily taxed in Poland
-00000000000000_0_0_0_przeciwdzia³aæ_to counteract
-00000000000000_0_0_0_przeciwdzia³anie_a counteraction
-00000000000000_0_0_0_jednorazowego u¿ytku_disposable
-00000000000000_0_0_0_jednorazowa maszynka do golenia_a disposable razor
-00000000000000_0_0_0_jednorazowe kubki papierowe_disposable paper cups
-00000000000000_0_0_0_po¿yczaæ (komuœ pieni¹dze)_to loan
-00000000000000_0_0_0_po¿yczka_a loan
-00000000000000_0_0_0_Bank udzieli³ nam po¿yczki studenckiej_the bank has granted us a student loan
-00000000000000_0_0_0_tchórz_a coward
-00000000000000_0_0_0_tchórzliwy_cowardly
-00000000000000_0_0_0_Jest zbyt tchórzliwy, by zrealizowaæ (wszystkie) swoje ambicje_he is too cowardly to realize all his ambitions
-00000000000000_0_0_0_czêstotliwoœæ_a frequency
-00000000000000_0_0_0_czêsto_frequently
-00000000000000_0_0_0_coraz czêœciej_with increasing frequently
-00000000000000_0_0_0_zwracaæ pieni¹dze; sp³acaæ_to repay
-00000000000000_0_0_0_zwrot pieniêdzy; sp³ata_a repayment
-00000000000000_0_0_0_Czy ju¿ sp³aci³eœ d³ugi?_have you repaid your debts yet
-00000000000000_0_0_0_przytulny_cosy
-00000000000000_0_0_0_przytulny pokój_a cosy room
-00000000000000_0_0_0_mruczeæ; szemraæ_to murmur
-00000000000000_0_0_0_Ona mamrocze we œnie_she murmurs in her sleep
-00000000000000_0_0_0_strumyk szemra³_the brook was murmuring
-00000000000000_0_0_0_pluskaæ_to splash
-00000000000000_0_0_0_plusk_a splash
-00000000000000_0_0_0_syczeæ_to hiss
-00000000000000_0_0_0_syk_a hiss
-00000000000000_0_0_0_klimatyzacja_air conditioning
-00000000000000_0_0_0_klimatyzowany_air conditioned
-00000000000000_0_0_0_dzieliæ (siê)_to share
-00000000000000_0_0_0_Dzielê pokój z przyjació³k¹_i share the room with my friend
-00000000000000_0_0_0_wybredny; drobiazgowy_fussy
-00000000000000_0_0_0_Nie jestem wybredny w jedzeniu_i am not a fussy eater
-00000000000000_0_0_0_dociekliwy_inquisitive
-00000000000000_0_0_0_wœcibski_nosy
-00000000000000_0_0_0_potem_afterwards
-00000000000000_0_0_0_Obejrzymy ten film, a potem mo¿emy coœ zjeœæ_let's see this film and afterwards we can have something to eat
-00000000000000_0_0_0_otwarty; towarzyski_outgoing
-00000000000000_0_0_0_On jest naprawdê otwart¹ osob¹_he is really an outgoing person
-00000000000000_0_0_0_uczciwoœæ_honesty
-00000000000000_0_0_0_uczciwy_honest
-00000000000000_0_0_0_nieuczciwy_dishonest
-00000000000000_0_0_0_prowizja_a commission
-00000000000000_0_0_0_Musi pan zap³aciæ prowizjê od czeku_you have to pay a commission on the cheque
-00000000000000_0_0_0_rujnowaæ_to ruin
-00000000000000_0_0_0_ruina_ruin
-00000000000000_0_0_0_ruina gospodarcza_economic ruin
-00000000000000_0_0_0_strata_a loss
-00000000000000_0_0_0_Spó³ka przynios³a straty_the company made a loss
-00000000000000_0_0_0_ryzykowaæ_to risk
-00000000000000_0_0_0_ryzykowny_risky
-00000000000000_0_0_0_ryzykowny interes_a risky business
-00000000000000_0_0_0_inwestowaæ_to invest
-00000000000000_0_0_0_inwestycja_an investment
-00000000000000_0_0_0_inwestor_an investor
-00000000000000_0_0_0_nieszkodliwy dla œrodowiska_eco friendly
-00000000000000_0_0_0_produkty nieszkodliwe dla œrodowiska_eco friendly products
-00000000000000_0_0_0_chrapaæ_to snore
-00000000000000_0_0_0_chrapanie_a snore
-00000000000000_0_0_0_kurek; kran_a tap
-00000000000000_0_0_0_kurek z gazem_a gas tap
-00000000000000_0_0_0_kurek z ciep³¹ wod¹_a hot tap
-00000000000000_0_0_0_kurek z zimn¹ wod¹_a cold tap
-00000000000000_0_0_0_kurki z ciep³¹ i zimn¹ wod¹_the hot and cold taps
-00000000000000_0_0_0_sufit_a ceiling
-00000000000000_0_0_0_dotychczas_so far
-00000000000000_0_0_0_Dotychczas otrzyma³em dwa listy_so far i have received two letters
-00000000000000_0_0_0_Jak na razie wszystko idzie dobrze_so far so good
-00000000000000_0_0_0_pod³y; okropny_mean
-00000000000000_0_0_0_Nie b¹dŸ dla mnie taki niedobry!_don't be so mean to me
-00000000000000_0_0_0_ambicja_an ambition
-00000000000000_0_0_0_ambitny_ambitious
-00000000000000_0_0_0_pozbawiony ambicji_unambitious
-00000000000000_0_0_0_umywalka (pe³na nazwa)_a washbasin
-00000000000000_0_0_0_umywalka (skrót)_a basin
-00000000000000_0_0_0_zobowi¹zywaæ_to oblige
-00000000000000_0_0_0_zobowi¹zanie_an obligation
-00000000000000_0_0_0_Mamy zobowi¹zania wobec naszych klientów_we have obligations to our customers
-00000000000000_0_0_0_byæ winnym (pieni¹dze)_to owe
-00000000000000_0_0_0_On jest mi winien 250$_he owes me 250$
-00000000000000_0_0_0_Jestem mu winien ogromn¹ iloœæ pieniêdzy_i owe him a great deal of money
 00000000000000_0_0_0_promieniowaæ_to radiate
+20220828160742_0_0_1_pozbawiony ambicji_unambitious
+20220828160812_0_0_1_umywalka (pe³na nazwa)_a washbasin
 00000000000000_0_0_0_promieniowanie_radiation
 00000000000000_0_0_0_ultrafioletowe promieniowanie s³oneczne_ultraviolet radiation from the sun
 00000000000000_0_0_0_sta³y; ci¹g³y_constant
@@ -120,6 +10,7 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 00000000000000_0_0_0_Przewa¿nie s³uchamy muzyki rockowej_we mostly listen to rock music
 00000000000000_0_0_0_szeptaæ_to whisper
 00000000000000_0_0_0_szept_a whisper
+20220828161216_0_1_2_kurek z ciep³¹ wod¹_a hot tap
 00000000000000_0_0_0_Rozmawialiœmy szeptem_we talked in whispers
 00000000000000_0_0_0_piwnica_a cellar
 00000000000000_0_0_0_bzyczeæ; buczeæ_to buzz
@@ -324,17 +215,16 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 00000000000000_0_0_0_! (wykrzyknik)_an exclamation mark
 00000000000000_0_0_0_wymagania_requirements
 00000000000000_0_0_0_œrednia (rzecz.)_an average
-20220827160234_1_1_1_Wp³aci³ zaliczkê na samochód_he put down a deposit on a car
-20220827160334_1_1_2_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
-20220827160540_1_3_2_wydatek; koszt_an expense
-20220827160632_1_1_0_aukcja; licytacja_an auction
-20220827160711_1_3_3_Warto zapamiêtaæ, ¿e..._it's worth remembering that
-20220827160831_1_1_1_Podj¹³em pieni¹dze z konta_i made a withdrawal from my account
-20220827161104_1_4_1_niezbêdny_essential
-20220827161136_1_1_1_spadek wartoœci dolara_a fall in the value of the dollar
-20220827161228_1_1_1_sprzedawaæ na aukcji; licytowaæ_to auction
-20220827161314_1_1_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
-20220827161357_1_1_0_kapita³_capital
+20220828160635_1_1_0_ambicja_an ambition
+20220828160703_1_1_0_ambitny_ambitious
+20220828160817_1_1_0_umywalka (skrót)_a basin
+20220828160856_1_1_0_zobowi¹zywaæ_to oblige
+20220828160918_1_1_0_zobowi¹zanie_an obligation
+20220828161001_1_1_0_Mamy zobowi¹zania wobec naszych klientów_we have obligations to our customers
+20220828161014_1_1_1_pod³y; okropny_mean
+20220828161052_1_1_0_byæ winnym (pieni¹dze)_to owe
+20220828161117_1_1_0_On jest mi winien 250$_he owes me 250$
+20220828161206_1_1_0_Jestem mu winien ogromn¹ iloœæ pieniêdzy_i owe him a great deal of money
 20220825120633_1_1_1_najprostszym sposobem by..._the simplest way to
 20220825120551_1_1_1_oto co musisz zrobiæ_here is what you need to do
 20220825120535_1_1_0_maniery_manners
@@ -374,16 +264,16 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220823170949_1_1_0_czêœæ obowi¹zkowa_a mandatory part
 20220823170944_1_1_1_charakter_a character
 20220823170942_1_1_0_funkcja, cecha, w³aœciwoœæ_a feature
-20220827160142_2_2_2_oszczêdzaæ_to economize
-20220827160250_2_4_7_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
-20220827160349_2_6_3_Pomimo mo¿liwoœci..._despite the possibility
-20220827160548_2_2_0_wp³acaæ (pieni¹dze na konto)_to deposit
-20220827160645_2_2_1_Otworzy³em rachunek oszczêdnoœciowy_i opened a savings account
-20220827160731_2_2_1_Zwlekali z zap³at¹_they were delaying payment
-20220827160841_2_2_0_podejmowaæ (pieni¹dze z banku)_to withdraw
-20220827161106_2_2_2_finansowy_financial
-20220827161145_2_2_0_podjêcie (pieniêdzy z banku)_a withdrawal
-20220827161236_2_7_6_trójk¹t równoramienny_an isosceles triangle
+20220828160615_2_2_0_kurek z gazem_a gas tap
+20220828160642_2_2_0_kurek z zimn¹ wod¹_a cold tap
+20220828160710_2_5_2_strumyk szemra³_the brook was murmuring
+20220828160824_2_2_0_kurki z ciep³¹ i zimn¹ wod¹_the hot and cold taps
+20220828160900_2_2_0_sufit_a ceiling
+20220828160921_2_2_0_dotychczas_so far
+20220828161003_2_2_1_chrapaæ_to snore
+20220828161028_2_2_0_Dotychczas otrzyma³em dwa listy_so far i have received two letters
+20220828161057_2_2_0_Jak na razie wszystko idzie dobrze_so far so good
+20220828161126_2_2_0_Nie b¹dŸ dla mnie taki niedobry!_don't be so mean to me
 20220825123238_2_2_0_W rzeczywistoœci..._in fact
 20220825123233_2_2_1_podobieñstwa_similarities
 20220825123215_2_2_1_..., które wskazuj¹ czy..._those indicate whether
@@ -433,16 +323,16 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220825120946_2_2_0_chocia¿_though
 20220825120919_2_2_0_j¹dro_a kernel
 20220825120900_2_2_0_zazwyczaj_typically
-20220827160147_3_5_5_w ten sposób_in this manner
-20220827160307_3_3_0_finanse; œrodki finansowe_finance
-20220827160354_3_3_2_wyj¹tkowoœæ, unikalnoœæ_uniqueness
-20220827160612_3_3_1_na twój koszt_at your own expense
-20220827160651_3_3_0_Studiujê finanse_i study finance
-20220827160743_3_3_0_doradca finansowy_a financial adviser
-20220827160858_3_3_2_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
-20220827161109_3_3_0_konto; rachunek_an account
-20220827161158_3_3_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
-20220827161242_3_3_0_wp³ata; zap³ata_a payment
+20220828160627_3_6_2_coraz czêœciej_with increasing frequently
+20220828160647_3_3_1_ruina gospodarcza_economic ruin
+20220828160715_3_3_0_inwestowaæ_to invest
+20220828160827_3_3_0_inwestycja_an investment
+20220828160903_3_3_0_inwestor_an investor
+20220828160924_3_3_0_nieszkodliwy dla œrodowiska_eco friendly
+20220828161011_3_3_0_produkty nieszkodliwe dla œrodowiska_eco friendly products
+20220828161030_3_3_0_chrapanie_a snore
+20220828161100_3_3_0_kurek; kran_a tap
+20220828161131_3_3_1_ryzykowny interes_a risky business
 20220827155321_3_3_1_podœwiadomie_subconsciously
 20220827155150_3_3_0_Ten schemat (diagram) przedstawia..._this diagram depicts
 20220827155120_3_3_0_przyjemny dla oka_pleasant to the eye
@@ -532,6 +422,116 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220827160626_4_4_0_do tej pory; dotychczas_so far
 20220827160659_4_4_0_poza; oprócz_besides
 20220827160748_4_4_0_koszty_expenses
+20220828161144_4_4_1_Musi pan zap³aciæ prowizjê od czeku_you have to pay a commission on the cheque
+20220828161103_4_4_1_prowizja_a commission
+20220828161033_4_4_0_ryzykowny_risky
+20220828161013_4_4_0_ryzykowaæ_to risk
+20220828160931_4_4_0_Spó³ka przynios³a straty_the company made a loss
+20220828160908_4_4_1_uczciwoœæ_honesty
+20220828160830_4_4_0_strata_a loss
+20220828160717_4_4_0_ruina_ruin
+20220828160649_4_4_0_rujnowaæ_to ruin
+20220828160631_4_4_0_nieuczciwy_dishonest
+20220828160606_4_4_1_dociekliwy_inquisitive
+20220828160525_4_4_0_uczciwy_honest
+20220828160508_4_4_1_wybredny; drobiazgowy_fussy
+20220828160433_4_4_0_On jest naprawdê otwart¹ osob¹_he is really an outgoing person
+20220828160405_4_7_2_Alkohol jest w Polsce wysoko opodatkowany_alcohol is heavily taxed in Poland
+20220828160336_4_4_0_otwarty; towarzyski_outgoing
+20220828160315_4_4_0_Obejrzymy ten film, a potem mo¿emy coœ zjeœæ_let's see this film and afterwards we can have something to eat
+20220828160223_4_4_0_potem_afterwards
+20220828160207_4_6_1_tchórzliwy_cowardly
+20220828160140_4_4_0_wœcibski_nosy
+20220828160116_4_4_1_pluskaæ_to splash
+20220828160037_4_4_0_Nie jestem wybredny w jedzeniu_i am not a fussy eater
+20220828160023_4_4_0_Dzielê pokój z przyjació³k¹_i share the room with my friend
+20220828155942_4_4_0_dzieliæ (siê)_to share
+20220828155912_4_5_3_jednorazowego u¿ytku_disposable
+20220828155835_4_4_0_klimatyzowany_air conditioned
+20220828155759_4_4_0_klimatyzacja_air conditioning
+20220828155658_4_4_0_syk_a hiss
+20220828155640_4_4_0_syczeæ_to hiss
+20220828155609_4_4_0_plusk_a splash
+20220828155527_4_4_2_czêstotliwoœæ_a frequency
+20220828155508_4_4_1_przytulny_cosy
+20220828155447_4_4_0_Ona mamrocze we œnie_she murmurs in her sleep
+20220828155413_4_4_1_zwrot pieniêdzy; sp³ata_a repayment
+20220828155341_4_6_3_Ona jest nadopiekuñcza w stosunku do swoich dzieci_she is overprotective towards her children
+20220828155245_4_4_1_zwracaæ pieni¹dze; sp³acaæ_to repay
+20220828155219_4_7_1_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
+20220828155047_4_4_0_mruczeæ; szemraæ_to murmur
+20220828154933_4_4_0_przytulny pokój_a cosy room
+20220828154910_4_4_0_Czy ju¿ sp³aci³eœ d³ugi?_have you repaid your debts yet
+20220828154821_4_4_1_tchórz_a coward
+20220828154741_4_4_2_jednorazowa maszynka do golenia_a disposable razor
+20220828154701_4_4_0_czêsto_frequently
+20220828154638_4_7_2_udzia³owiec; akcjonariusz_a shareholder
+20220828154600_4_4_0_Jest zbyt tchórzliwy, by zrealizowaæ (wszystkie) swoje ambicje_he is too cowardly to realize all his ambitions
+20220828154447_4_6_2_obci¹¿aæ kosztami_to charge
+20220828154425_4_4_0_Bank udzieli³ nam po¿yczki studenckiej_the bank has granted us a student loan
+20220828154355_4_4_1_przeciwdzia³anie_a counteraction
+20220828154329_4_4_0_po¿yczka_a loan
+20220828154318_4_4_1_przeciwdzia³aæ_to counteract
+20220828154227_4_7_2_Kupi³em ten obraz na aukcji_i have bought this painting at auction
+20220828154055_4_4_0_po¿yczaæ (komuœ pieni¹dze)_to loan
+20220828154030_4_4_1_opodatkowanie_taxation
+20220828153941_4_4_0_jednorazowe kubki papierowe_disposable paper cups
+20220828153817_4_4_1_rozs¹dny sposób rozwi¹zywania problemów_a sensible way of dealing with problems
+20220828153746_4_4_1_rozs¹dny_sensible
+20220828153702_4_4_1_cierpliwoœæ_patience
+20220828153636_4_5_1_chrupaæ; skrzypieæ (pod nogami)_to crunch
+20220828153604_4_4_0_opodatkowaæ; na³o¿yæ akcyzê_to tax
+20220828153531_4_4_1_przechwalaæ siê_to boast
+20220828153433_4_4_0_rozs¹dny ch³opiec_a sensible boy
+20220828153346_4_4_0_niecierpliwoœæ_impatience
+20220828153307_4_4_0_che³pliwy_boastful
+20220828153220_4_7_1_wp³acaæ (pieni¹dze na konto)_to deposit
+20220828153135_4_6_2_Podj¹³em pieni¹dze z konta_i made a withdrawal from my account
+20220828153051_4_4_1_nadopiekuñczy_overprotective
+20220828153002_4_8_4_Warto zapamiêtaæ, ¿e..._it's worth remembering that
+20220828152849_4_4_1_Mo¿emy przyj¹æ to za pewnik_we can take it for granted
+20220828152541_4_4_1_udzielaæ; przyznawaæ_to grant
+20220828152422_4_4_1_wolny od op³at_free of charge
+20220828152330_4_4_0_chrupanie_a crunch
+20220828152241_4_4_0_opiekuñczy_protective
+20220828152116_4_5_2_spadek wartoœci dolara_a fall in the value of the dollar
+20220828152017_4_4_0_stypendium; bezzwrotna pomoc finansowa_a grant
+20220828151859_4_4_0_nale¿noœæ; op³ata_a charge
+20220828151817_4_5_2_Wp³aci³ zaliczkê na samochód_he put down a deposit on a car
+20220828151653_4_5_2_zaliczka_a deposit
+20220828151610_4_4_0_Sprzedali spó³kê z zyskiem_they sold the company at a profit
+20220828151528_4_4_0_osi¹gnêliœmy zysk_we have made a profit
+20220828151450_4_4_0_zysk; korzyœæ_a profit
+20220828151334_4_4_1_udzia³; akcja_a share
+20220828150848_4_4_2_wartoœciowy_valuable
+20220828150639_4_4_2_wartoœæ_a value
+20220828150604_4_4_0_lokata kapita³u_a capital investment
+20220828150417_4_4_0_kapita³_capital
+20220828150317_4_4_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
+20220828150240_4_4_1_sprzedawaæ na aukcji; licytowaæ_to auction
+20220828150124_4_7_1_niezbêdny_essential
+20220828145814_4_4_0_aukcja; licytacja_an auction
+20220828145731_4_6_2_wydatek; koszt_an expense
+20220828145600_4_4_2_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
+20220828145506_4_9_6_trójk¹t równoramienny_an isosceles triangle
+20220828145327_4_4_0_podjêcie (pieniêdzy z banku)_a withdrawal
+20220828145232_4_4_2_finansowy_financial
+20220828145138_4_4_0_podejmowaæ (pieni¹dze z banku)_to withdraw
+20220828145105_4_4_1_Zwlekali z zap³at¹_they were delaying payment
+20220828145015_4_4_1_Otworzy³em rachunek oszczêdnoœciowy_i opened a savings account
+20220828144413_4_8_3_Pomimo mo¿liwoœci..._despite the possibility
+20220828144248_4_6_7_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
+20220828144047_4_4_2_oszczêdzaæ_to economize
+20220828143935_4_4_0_wp³ata; zap³ata_a payment
+20220828143750_4_4_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
+20220828143634_4_4_0_konto; rachunek_an account
+20220828143552_4_4_2_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
+20220828143345_4_4_0_doradca finansowy_a financial adviser
+20220828143306_4_4_0_Studiujê finanse_i study finance
+20220828143154_4_4_1_na twój koszt_at your own expense
+20220828143108_4_4_2_wyj¹tkowoœæ, unikalnoœæ_uniqueness
+20220828143012_4_4_0_finanse; œrodki finansowe_finance
+20220828142929_4_6_5_w ten sposób_in this manner
 20220827161245_4_4_0_finansowaæ_to finance
 20220827161206_4_4_0_Oszczêdzam na jedzeniu_i economize on food
 20220827161111_4_4_1_raczej_rather

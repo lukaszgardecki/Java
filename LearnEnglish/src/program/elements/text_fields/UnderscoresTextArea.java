@@ -13,7 +13,7 @@ public class UnderscoresTextArea extends JTextArea {
         setLineWrap(true);
         setWrapStyleWord(true);
         setBounds(55, 145, 450, 100);
-        setFont(new Font(Font.MONOSPACED, Font.BOLD, 20));
+        setFont(new Font(Font.MONOSPACED, Font.BOLD, 18));
         setForeground(MyColor.BLACK);
     }
 }
