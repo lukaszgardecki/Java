@@ -32,7 +32,7 @@ public class Main {
     public static void main(String[] args) {
         createMap();
         loadData();
-
+        
 //        System.out.println("listy po operacji:");
 //        System.out.println("lista 0");
 //        map.get(0).forEach(e -> System.out.println("    " + e));

@@ -63,7 +63,7 @@ public class Click implements ActionListener{
                 check.setText("Sprawdü");
             } else if (check.getText().equals("Sprawdü") && !inputTextF.getText().isEmpty() && !inputTextF.getText().equals("T≥umaczenie")) {
                 /* ----- if answer is good ----- */
-                if (inputTextF.getText().equals(Main.loadWord().get(5))) {
+                if ((inputTextF.getText().toLowerCase()).equals(Main.loadWord().get(5).toLowerCase())) {
                     Main.changeLevel("up");
                     wordLabel.setText(Main.loadWord().get(4));
                     dateLabel.setText("Ostatnia powtÛrka: " + Main.getDate());
