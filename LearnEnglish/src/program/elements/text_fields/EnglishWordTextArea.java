@@ -9,7 +9,7 @@ import java.awt.*;
 public class EnglishWordTextArea extends JTextArea {
     public EnglishWordTextArea() {
         setText(Main.loadWord().get(4));
-        setBounds(55, 30, 450, 80);
+        setBounds(55, 30, 450, 130);
         setLineWrap(true);
         setWrapStyleWord(true);
         setEditable(false);

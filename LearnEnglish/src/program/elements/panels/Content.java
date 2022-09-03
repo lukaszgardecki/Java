@@ -1,5 +1,6 @@
 package program.elements.panels;
 
+import program.elements.main_frame.Window;
 import program.settings.MyColor;
 
 import javax.swing.*;
@@ -7,8 +8,8 @@ import javax.swing.*;
 public class Content extends JPanel {
     public static final int X = 0;
     public static final int Y = 0;
-    public static final int WIDTH = 684;
-    public static final int HEIGHT = 361;
+    public static final int WIDTH = Window.WIDTH-16;
+    public static final int HEIGHT = Window.HEIGHT-39;
     public static MainPanel mainPanel;
     public static MenuPanel menuPanel;
 

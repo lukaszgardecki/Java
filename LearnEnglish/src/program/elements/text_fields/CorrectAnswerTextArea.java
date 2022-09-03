@@ -12,7 +12,7 @@ public class CorrectAnswerTextArea extends JTextArea {
         setEditable(false);
         setLineWrap(true);
         setWrapStyleWord(true);
-        setBounds(55, 145, 450, 100);
+        setBounds(55, 195, 450, 100);
         setFont(new Font(Font.MONOSPACED, Font.BOLD, 18));
         setForeground(MyColor.GREEN);
     }

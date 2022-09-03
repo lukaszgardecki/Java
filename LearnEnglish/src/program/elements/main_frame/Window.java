@@ -8,8 +8,11 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class Window extends JFrame {
+    public static final int WIDTH = 700;
+    public static final int HEIGHT = 450;
+
     public Window() {
-        setSize(700, 400);
+        setSize(WIDTH, HEIGHT);
         setTitle("Learn English");
         setLayout(null);
         setResizable(false);

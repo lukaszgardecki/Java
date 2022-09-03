@@ -177,6 +177,7 @@ public class Main {
         int correctAnswer = Integer.parseInt(temp.get(2));
         int wrongAnswer = Integer.parseInt(temp.get(3));
         String dateNew = new SimpleDateFormat("yyyyMMddHHmmss").format(Calendar.getInstance().getTime());
+        boolean isFromGroup5 = false;
 
         // usuñ ze starej listy
         map.get(numOfGroup).remove(temp);
@@ -185,6 +186,7 @@ public class Main {
             case "up" -> {
                 if (numOfGroup == 5) {
                     numOfGroup = 0;
+                    isFromGroup5 = true;
                 } else {
                     numOfGroup++;
                 }
@@ -205,10 +207,18 @@ public class Main {
         temp.set(3, String.valueOf(wrongAnswer));
         temp.set(0, dateNew);
 
-        //je¿eli s³owo trafi do grupy 0 to na 10 miejsce
+
         try {
-            map.get(numOfGroup).add(10, temp);
+            //je¿eli s³owo trafi do grupy 0 to na 10 miejsce
+            if (numOfGroup == 0 && isFromGroup5) {
+                map.get(numOfGroup).addLast(temp);
+            } else if (numOfGroup == 0) {
+                map.get(numOfGroup).add(10, temp);
+            } else {
+                map.get(numOfGroup).addLast(temp);
+            }
         } catch (IndexOutOfBoundsException e) {
+            //je¿eli grupa nie posiada 10 elementów to dodaj s³ówko na koniec tej grupy
             map.get(numOfGroup).addLast(temp);
         }
 
