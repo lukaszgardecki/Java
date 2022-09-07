@@ -1,9 +1,8 @@
-package com.example.courseapi;
+package com.example.courseapidata.topic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -22,7 +21,8 @@ public class TopicController {
         return topicService.getTopic(id);
     }
 
-    @RequestMapping(method= RequestMethod.POST, value = "/topics")
+    //@RequestMapping(method= RequestMethod.POST, value = "/topics")
+    @PostMapping(value = "/topics")
     public void addTopic(@RequestBody Topic topic) {
         topicService.addTopic(topic);
     }
