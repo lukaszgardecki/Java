@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
-    static String path = "src/program/database/baza.txt";
+    static String path = "program/database/baza.txt";
     static File file = new File(path);
     public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
     static StringBuilder correctAns;
