@@ -1,45 +1,16 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-00000000000000_0_0_0_zakupy i us³ugi_shopping and services
-20220907225452_0_5_1_Sprzedali spó³kê z zyskiem_they sold the company at a profit
-00000000000000_0_0_0_ogl¹daæ wystawy sklepowe_to window-shop
-00000000000000_0_0_0_ogl¹danie wystaw sklepowych_window-shopping
-00000000000000_0_0_0_klejnot; kamieñ szlachetny_a jewel
-00000000000000_0_0_0_bi¿uteria_jewellery
-00000000000000_0_0_0_jubiler_a jeweller
-00000000000000_0_0_0_sprzedawca kwiatów_a florist
-00000000000000_0_0_0_Idê do kwiaciarni_i'm going to the florist's
-00000000000000_0_0_0_targ; targi_a fair
-20220907230206_0_0_1_¿ycie codzienne_everyday life
-00000000000000_0_0_0_weso³e miasteczko_a funfair
-00000000000000_0_0_0_targi ksi¹¿ki_a book fair
-00000000000000_0_0_0_stoisko_a stall
-00000000000000_0_0_0_stragan_a market stall
-00000000000000_0_0_0_naklejaæ etykietê_to label
-00000000000000_0_0_0_etykieta_a label
-00000000000000_0_0_0_na etykiecie_on the label
-00000000000000_0_0_0_obni¿aæ cenê_to discount
-00000000000000_0_0_0_rabat_a discount
-00000000000000_0_0_0_Udzieli³ klientom rabatu na ksi¹¿ki_he offered a discount on books to the customers
-00000000000000_0_0_0_zamiast tego (w zamian)_instead
-00000000000000_0_0_0_zamiast mnie_instead of me
-00000000000000_0_0_0_targowaæ siê_to bargain
-00000000000000_0_0_0_okazja; gratka_a bargain
-00000000000000_0_0_0_cena okazyjna_a bargain price
-00000000000000_0_0_0_rozwa¿aæ; zastanawiaæ siê_to consider
-00000000000000_0_0_0_rozwa¿enie; uwaga_consideration
-00000000000000_0_0_0_Wzi¹³em to pod uwagê_i took it into consideration
-00000000000000_0_0_0_w³aœciciel sklepu_a shopkeeper
-00000000000000_0_0_0_zasiêgaæ porady_to consult
-00000000000000_0_0_0_porada; konsultacja_a consultation
-00000000000000_0_0_0_doradca; konsultant_a consultant
-00000000000000_0_0_0_jakoœæ_a quality
-00000000000000_0_0_0_kiepska jakoœæ_poor quality
+20220908162132_0_0_1_w³aœciciel sklepu_a shopkeeper
 00000000000000_0_0_0_Jedzenie jest najlepszej jakoœci_the food is of the highest quality
+20220908162216_0_0_2_targowaæ siê_to bargain
+20220908162224_0_0_1_zasiêgaæ porady_to consult
+20220908162317_0_11_1_On jest zawsze taki zorganizowany!_he is always so organized
 00000000000000_0_0_0_produkt; artyku³_a product
 00000000000000_0_0_0_artyku³y dla niemowl¹t_baby products
 00000000000000_0_0_0_Ten produkt jest wart swojej ceny_this product is good value
+20220908162534_0_0_1_jakoœæ_a quality
 00000000000000_0_0_0_zapas (towaru)_a stock
+20220908162629_0_0_1_kiepska jakoœæ_poor quality
 00000000000000_0_0_0_Czy ma Pan to na sk³adzie? (w magazynie)_do you have it in stock?
 00000000000000_0_0_0_Te buty s¹ ju¿ wyprzedane_These shoes are already out of stock
 00000000000000_0_0_0_staæ w kolejce_to queue
@@ -408,40 +379,35 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220907230014_0_6_0_kapita³_capital
 20220907230133_0_6_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
 20220907230158_0_6_1_sprzedawaæ na aukcji; licytowaæ_to auction
-20220907221037_1_1_0_leciwy; wiekowy_elderly
-20220907221125_1_1_0_starszy cz³owiek_an elderly man
-20220907221214_1_1_1_ruch rewolucyjny_a revolutionary movement
-20220907221318_1_1_0_³ysy_bald
-20220907221434_1_1_1_wygl¹d; pozór_an appearance
-20220907221650_1_8_4_Ona jest nadopiekuñcza w stosunku do swoich dzieci_she is overprotective towards her children
-20220907221745_1_6_2_zwracaæ pieni¹dze; sp³acaæ_to repay
-20220907221907_1_9_2_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
-20220907222024_1_1_1_szeœcioletni ch³opiec_a boy aged six
-20220907222100_1_1_0_dieta_a diet
-20220907222447_1_1_1_Wy³ysia³ i przybra³ na wadze_he went bald and put on weight
-20220907222527_1_1_0_piêkno_beauty
-20220907222641_1_1_0_piêknoœæ (piêkna kobieta)_a beauty
-20220907222713_1_1_2_Zachowujcie pozory!_keep appearances!
-20220907222726_1_6_1_Bank udzieli³ nam po¿yczki studenckiej_the bank has granted us a student loan
-20220907222812_1_1_0_cecha_a feature
-20220907222853_1_1_1_dieta odchudzaj¹ca_a slimming diet
-20220907222931_1_1_1_Jestem na diecie, bo chcê straciæ na wadze_i'm on a diet because i want to lose weight
-20220907222952_1_1_1_atrakcyjny_attractive
-20220907223032_1_1_1_nieatrakcyjny_unattractive
-20220907223205_1_1_0_zauwa¿yæ_to notice
-20220907223251_1_2_1_panika_a panic
-20220907223407_1_1_0_styl_a style
-20220907223425_1_14_4_egoista_an egoist
-20220907223524_1_1_1_cechy; rysy (twarzy)_features
-20220907223610_1_2_2_Gotujemy na zmianê_we take turns cooking
-20220907223654_1_2_1_ewakuacja_evacuation
-20220907223807_1_1_0_fryzura_a hairstyle
-20220907223955_1_1_0_o w³osach koloru..._...-haired
-20220907224219_1_1_0_rudow³osy_red-haired
-20220907224244_1_1_1_Zosta³em zauwa¿ony_i got noticed
-20220907224345_1_1_0_ciemnow³osy_dark-haired
-20220907224423_1_2_1_Uwaga!_caution!
-20220907224534_1_1_0_o skórze koloru..._...-skinned
+20220908154143_0_9_1_niezbêdny_essential
+20220908154226_0_6_0_aukcja; licytacja_an auction
+20220908155707_0_6_0_podjêcie (pieniêdzy z banku)_a withdrawal
+20220908155806_0_6_2_finansowy_financial
+20220908155906_0_6_0_podejmowaæ (pieni¹dze z banku)_to withdraw
+20220908160026_0_6_1_Zwlekali z zap³at¹_they were delaying payment
+20220908160251_0_8_7_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
+20220908160357_0_6_2_oszczêdzaæ_to economize
+20220908160515_0_6_0_wp³ata; zap³ata_a payment
+20220908160607_0_6_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
+20220908160707_0_6_0_konto; rachunek_an account
+20220908160813_0_6_2_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
+20220908160857_0_6_0_doradca finansowy_a financial adviser
+20220908161032_0_6_0_Studiujê finanse_i study finance
+20220908161155_0_6_1_na twój koszt_at your own expense
+20220908161230_0_6_2_wyj¹tkowoœæ, unikalnoœæ_uniqueness
+20220908161319_0_6_0_finanse; œrodki finansowe_finance
+20220908161443_0_6_0_finansowaæ_to finance
+20220908161519_0_6_0_Oszczêdzam na jedzeniu_i economize on food
+20220908161647_0_6_1_raczej_rather
+20220908161817_0_6_3_Coraz wiêcej ludzi cierpi na depresjê_more and more people suffer from depression
+20220908161852_0_12_0_Nie b¹dŸ dla mnie taki niedobry!_don't be so mean to me
+20220908161942_0_12_1_nie by³oby to mo¿liwe_it would not be possible
+20220908162128_0_12_0_zorganizowany; uporz¹dkowany_organized
+20220908162206_0_11_2_organizator_an organizer
+20220908162407_0_9_2_Pocz¹tkowo myœla³em, ¿e..._at first i thought that
+20220908162441_0_10_2_pesymizm_pessimism
+20220908162524_0_12_0_rzetelny; niezawodny_reliable
+20220908162625_0_9_2_ostateczna decyzja_the final decision
 20220907224626_1_1_0_ciemnoskóry_dark-skinned
 20220907224714_1_8_4_W przeciwieñstwie do..._in contrast to
 20220907224835_1_1_0_typowy_typical
@@ -457,40 +423,40 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220907225938_1_1_1_typ; rodzaj_a type
 20220907230043_1_1_0_Mia³ mocno wytatuowane rêce_he had heavily tattooed arms
 20220907230137_1_1_0_zwierzêta_animals
-20220907215354_2_2_0_czajnik elektryczny_an electric kettle
-20220907215414_2_2_1_szyæ_to sew
-20220907215609_2_3_2_domowy_domestic
-20220907215700_2_11_10_pomimo_despite
-20220907215743_2_6_2_czêœæ obowi¹zkowa_a mandatory part
-20220907215904_2_2_1_maszyna do szycia_a sewing machine
-20220907215942_2_2_1_robiæ na drutach_to knit
-20220907220021_2_2_0_dzbanuszek na mleko (lub œmietankê)_a cream jug
-20220907220129_2_2_0_przykrywaæ_to cover
-20220907220213_2_13_4_Przelejê 100$ na twoje konto_i will transfer 100$ to your account
-20220907220325_2_2_0_przykrycie; pokrowiec_a cover
-20220907220516_2_2_0_koc_a blanket
-20220907220639_2_2_0_Przykryj siê kocem_cover yourself with a blanket
-20220907220744_2_4_1_futro (futrzany p³aszcz)_a fur coat
-20220907220924_2_2_1_dzbanek_a jug
-20220907221047_2_9_3_uczciwoœæ_honesty
-20220907221134_2_2_0_poduszka_a pillow
-20220907221221_2_2_0_puchowa poduszka_a feather pillow
-20220907221338_2_10_5_Musisz to wzi¹æ pod uwagê_you need to take it into account
-20220907221439_2_2_0_kolej; kolejka_a turn
-20220907221703_2_2_1_osoba psuj¹ca innym nastrój; smutas_a wet blanket
-20220907221804_2_2_2_Pod³¹cz czajnik do gniazdka_plug the kettle into the power point
-20220907221926_2_2_0_Teraz twoja kolej, ¿eby zrobiæ zakupy_it's your turn to do the shopping
-20220907222027_2_2_1_przeœcierad³o_a sheet
-20220907222116_2_3_1_plama_a stain
-20220907222450_2_4_2_agresywny_aggressive
-20220907222529_2_2_1_naprawiaæ_to mend
-20220907222644_2_2_0_panikowaæ; wpadaæ w panikê_to panic
-20220907222736_2_2_0_Spowodowa³ wybuch paniki_he caused a panic
-20220907222819_2_2_0_ewakuowaæ (siê)_to evacuate
-20220907223000_2_2_1_tratwa ratunkowa_a life raft
-20220907223037_2_2_1_ko³o ratunkowe_a life belt
-20220907223213_2_2_0_ostro¿ny_cautious
-20220907223258_2_2_1_kamizelka ratunkowa_a life jacket
+20220908154045_1_1_0_zakupy i us³ugi_shopping and services
+20220908154154_1_6_1_Sprzedali spó³kê z zyskiem_they sold the company at a profit
+20220908155527_1_1_0_ogl¹danie wystaw sklepowych_window-shopping
+20220908155643_1_1_0_bi¿uteria_jewellery
+20220908155724_1_1_0_jubiler_a jeweller
+20220908155816_1_1_0_sprzedawca kwiatów_a florist
+20220908155930_1_1_0_Idê do kwiaciarni_i'm going to the florist's
+20220908160052_1_1_1_¿ycie codzienne_everyday life
+20220908160206_1_1_0_targi ksi¹¿ki_a book fair
+20220908160259_1_1_1_ogl¹daæ wystawy sklepowe_to window-shop
+20220908160317_1_8_3_wydatek; koszt_an expense
+20220908160446_1_1_0_naklejaæ etykietê_to label
+20220908160519_1_1_0_etykieta_a label
+20220908160620_1_1_1_targ; targi_a fair
+20220908160721_1_6_2_Otworzy³em rachunek oszczêdnoœciowy_i opened a savings account
+20220908160826_1_1_0_na etykiecie_on the label
+20220908160941_1_14_5_Przelejê 100$ na twoje konto_i will transfer 100$ to your account
+20220908161045_1_1_2_klejnot; kamieñ szlachetny_a jewel
+20220908161159_1_1_1_stoisko_a stall
+20220908161243_1_1_1_stragan_a market stall
+20220908161419_1_1_0_zamiast tego (w zamian)_instead
+20220908161448_1_1_0_zamiast mnie_instead of me
+20220908161544_1_1_0_okazja; gratka_a bargain
+20220908161653_1_1_1_obni¿aæ cenê_to discount
+20220908161749_1_1_0_rozwa¿aæ; zastanawiaæ siê_to consider
+20220908161826_1_1_0_rozwa¿enie; uwaga_consideration
+20220908161904_1_1_1_rabat_a discount
+20220908162052_1_1_0_Wzi¹³em to pod uwagê_i took it into consideration
+20220908162141_1_1_3_weso³e miasteczko_a funfair
+20220908162236_1_6_2_wymyœlaæ_to devise
+20220908162328_1_1_1_cena okazyjna_a bargain price
+20220908162416_1_1_0_porada; konsultacja_a consultation
+20220908162455_1_1_0_doradca; konsultant_a consultant
+20220908162553_1_1_2_Udzieli³ klientom rabatu na ksi¹¿ki_he offered a discount on books to the customers
 20220907223441_2_2_0_On zdradzi³ swój kraj_he was a traitor to his country
 20220907223533_2_7_1_nieuczciwy_dishonest
 20220907223617_2_9_8_Nic dziwnego..._unsurprisingly
@@ -516,39 +482,40 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220907225942_2_8_4_jednorazowego u¿ytku_disposable
 20220907230100_2_3_4_Kto posprz¹ta? (dom)_who will do the cleaning?
 20220907230140_2_2_0_w wieku..._aged
-20220907211227_3_3_0_walki kogutów_cockfighting
-20220907211334_3_3_1_agresja_aggression
-20220907211441_3_3_0_bia³y go³¹b; go³êbica_a dove
-20220907211530_3_3_1_drapaæ_to scratch
-20220907211618_3_3_1_zadrapanie_a scratch
-20220907211709_3_3_0_go³¹bek pokoju_a dove of peace
-20220907211822_3_7_1_lokata kapita³u_a capital investment
-20220907211906_3_3_0_³abêdŸ_a swan
-20220907212056_3_3_1_paw_a peacock
-20220907212542_3_3_2_Pies okaza³ wobec niej agresjê_the dog showed aggression towards her
-20220907212634_3_3_0_pióro (np. ptaka)_a feather
-20220907212750_3_7_3_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
-20220907212831_3_12_7_trójk¹t równoramienny_an isosceles triangle
-20220907212905_3_3_0_foka_a seal
-20220907212948_3_3_1_sowa_an owl
-20220907213124_3_3_1_skrzyd³o_a wing
-20220907213242_3_3_0_rekin_a shark
-20220907213336_3_11_4_Pomimo mo¿liwoœci..._despite the possibility
-20220907213421_3_3_0_³osoœ_a salmon
-20220907213524_3_3_1_gniazdo_a nest
-20220907213709_3_3_0_³ososie_salmon
-20220907213820_3_3_1_Ka¿dego roku zabija siê ogromn¹ liczbê fok_a large number of seals are killed every year
-20220907213924_3_3_0_robak_a worm
-20220907214033_3_3_0_robaczywy_wormy
-20220907214127_3_3_1_wieloryb_a whale
-20220907214250_3_8_2_po¿yczaæ (komuœ pieni¹dze)_to loan
-20220907214349_3_3_0_robaczywe jab³ko_a wormy apple
-20220907214440_3_3_0_mrówka_an ant
-20220907214553_3_3_0_mrówkojad_an anteater
-20220907215011_3_9_6_W porównaniu do..._compared to
-20220907215226_3_6_1_to jest oczywiste_it is obvious
-20220907215402_3_6_5_zaniepokojony; zmartwiony_anxious
-20220907215425_3_6_1_wydajnie, skutecznie, efektywnie_efficiently
+20220908154053_2_2_0_leciwy; wiekowy_elderly
+20220908154214_2_2_0_starszy cz³owiek_an elderly man
+20220908155541_2_2_1_ruch rewolucyjny_a revolutionary movement
+20220908155645_2_2_0_³ysy_bald
+20220908155741_2_2_1_wygl¹d; pozór_an appearance
+20220908155830_2_9_4_Ona jest nadopiekuñcza w stosunku do swoich dzieci_she is overprotective towards her children
+20220908155936_2_7_2_zwracaæ pieni¹dze; sp³acaæ_to repay
+20220908160110_2_10_2_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
+20220908160217_2_2_1_szeœcioletni ch³opiec_a boy aged six
+20220908160301_2_2_0_dieta_a diet
+20220908160329_2_2_1_Wy³ysia³ i przybra³ na wadze_he went bald and put on weight
+20220908160452_2_2_0_piêkno_beauty
+20220908160524_2_2_0_piêknoœæ (piêkna kobieta)_a beauty
+20220908160631_2_2_2_Zachowujcie pozory!_keep appearances!
+20220908160735_2_7_1_Bank udzieli³ nam po¿yczki studenckiej_the bank has granted us a student loan
+20220908160830_2_2_0_cecha_a feature
+20220908160952_2_2_1_dieta odchudzaj¹ca_a slimming diet
+20220908161125_2_2_1_Jestem na diecie, bo chcê straciæ na wadze_i'm on a diet because i want to lose weight
+20220908161205_2_2_1_atrakcyjny_attractive
+20220908161254_2_2_1_nieatrakcyjny_unattractive
+20220908161423_2_2_0_zauwa¿yæ_to notice
+20220908161450_2_3_1_panika_a panic
+20220908161546_2_2_0_styl_a style
+20220908161700_2_15_4_egoista_an egoist
+20220908161752_2_2_1_cechy; rysy (twarzy)_features
+20220908161836_2_3_2_Gotujemy na zmianê_we take turns cooking
+20220908161914_2_3_1_ewakuacja_evacuation
+20220908162113_2_2_0_fryzura_a hairstyle
+20220908162148_2_2_0_o w³osach koloru..._...-haired
+20220908162240_2_2_0_rudow³osy_red-haired
+20220908162335_2_2_1_Zosta³em zauwa¿ony_i got noticed
+20220908162422_2_2_0_ciemnow³osy_dark-haired
+20220908162501_2_3_1_Uwaga!_caution!
+20220908162558_2_2_0_o skórze koloru..._...-skinned
 20220907215619_3_6_1_nawet jeœli_even though
 20220907215705_3_9_6_w ten sposób_in this manner
 20220907215747_3_3_1_mrowisko_an anthill
@@ -605,39 +572,39 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220907225951_3_3_0_robienie na drutach_knitting
 20220907230104_3_3_0_serwetka_a napkin
 20220907230142_3_3_0_czajnik_a kettle
-20220906134337_4_7_3_straszyæ_to frighten
-20220906134511_4_10_0_okres; przedzia³ czasu_a period
-20220906134752_4_10_0_przez krótki okres_for a short period of time
-20220906135011_4_10_0_w ci¹gu; w obrêbie (wewn¹trz)_within
-20220906135128_4_10_0_w ci¹gu szeœciu miesiêcy_within six months
-20220906135217_4_8_3_Przestraszy³em siê_i got frightened
-20220906135533_4_10_0_w obrêbie murów_within the walls
-20220906135658_4_10_0_nastêpowaæ_to follow
-20220906153648_4_10_3_pesymista_a pessimist
-20220906153801_4_10_0_nastêpny_following
-20220906153932_4_10_0_strach_fright
-20220906154025_4_12_1_humor_humour
-20220906154146_4_14_1_poza; oprócz_besides
-20220906154242_4_7_2_podœwiadomie_subconsciously
-20220906154423_4_11_3_¿¹dza przygód_a sense of adventure
-20220906154533_4_6_2_..., które wskazuj¹ czy..._those indicate whether
-20220906154644_4_5_2_warunek_a condition
-20220906154740_4_4_1_oœmielaæ siê; mieæ odwagê_to dare
-20220906154935_4_6_2_Co ciekawe, ..._interestingly
-20220906155235_4_4_1_Jak œmiesz!_how dare you
-20220906155309_4_5_1_weryfikowaæ_to validate
-20220906155341_4_5_1_poprawnoœæ_correctness
-20220906155506_4_4_1_nie znosiæ_to detest
-20220906155541_4_5_1_mam do czynienia_i have to deal
-20220906155646_4_4_1_nieznoœny; wstrêtny_detestable
-20220906155843_4_5_1_za³ó¿my, ¿e_let's assume that
-20220906155911_4_7_2_œwiadomie_consciously
-20220906155942_4_10_5_Podobnie..._likewise
-20220906160035_4_6_2_niepodlegaj¹cy zwrotowi; bezzwrotny_non returnable
-20220906160202_4_8_1_kurek z zimn¹ wod¹_a cold tap
-20220906160301_4_5_1_oczywiste_obvious
-20220906160405_4_4_0_? (znak zapytania)_a question mark
-20220906160436_4_4_0_z wyj¹tkiem (czegoœ), poza (czymœ)_except for
+20220908154059_3_3_0_czajnik elektryczny_an electric kettle
+20220908154216_3_3_1_szyæ_to sew
+20220908155551_3_4_2_domowy_domestic
+20220908155653_3_12_10_pomimo_despite
+20220908155746_3_7_2_czêœæ obowi¹zkowa_a mandatory part
+20220908155839_3_3_1_maszyna do szycia_a sewing machine
+20220908155943_3_3_1_robiæ na drutach_to knit
+20220908160119_3_3_0_dzbanuszek na mleko (lub œmietankê)_a cream jug
+20220908160220_3_3_0_przykrywaæ_to cover
+20220908160334_3_3_0_przykrycie; pokrowiec_a cover
+20220908160458_3_3_0_koc_a blanket
+20220908160540_3_3_0_Przykryj siê kocem_cover yourself with a blanket
+20220908160639_3_5_1_futro (futrzany p³aszcz)_a fur coat
+20220908160739_3_3_1_dzbanek_a jug
+20220908160834_3_10_3_uczciwoœæ_honesty
+20220908160955_3_3_0_poduszka_a pillow
+20220908161132_3_3_0_puchowa poduszka_a feather pillow
+20220908161217_3_11_5_Musisz to wzi¹æ pod uwagê_you need to take it into account
+20220908161258_3_3_0_kolej; kolejka_a turn
+20220908161428_3_3_1_osoba psuj¹ca innym nastrój; smutas_a wet blanket
+20220908161505_3_3_2_Pod³¹cz czajnik do gniazdka_plug the kettle into the power point
+20220908161606_3_3_0_Teraz twoja kolej, ¿eby zrobiæ zakupy_it's your turn to do the shopping
+20220908161702_3_3_1_przeœcierad³o_a sheet
+20220908161755_3_4_1_plama_a stain
+20220908161839_3_5_2_agresywny_aggressive
+20220908161916_3_3_1_naprawiaæ_to mend
+20220908162115_3_3_0_panikowaæ; wpadaæ w panikê_to panic
+20220908162157_3_3_0_Spowodowa³ wybuch paniki_he caused a panic
+20220908162246_3_3_0_ewakuowaæ (siê)_to evacuate
+20220908162342_3_3_1_tratwa ratunkowa_a life raft
+20220908162428_3_3_1_ko³o ratunkowe_a life belt
+20220908162506_3_3_0_ostro¿ny_cautious
+20220908162604_3_3_1_kamizelka ratunkowa_a life jacket
 20220906160541_4_5_1_doszlifujmy informacje_let's polish the information
 20220906160635_4_7_1_nieœwiadomie_unconsciously
 20220906160752_4_6_2_Wynajmê ten dom jej siostrze_i will let this house to her sister
@@ -744,39 +711,39 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220907230006_4_10_2_odwa¿ny_courageous
 20220907230107_4_4_0_kogut_a cock
 20220907230146_4_7_1_substancja wydzielana_an emission
-20220906125123_5_8_1_niezbêdny_essential
-20220906125242_5_5_0_aukcja; licytacja_an auction
-20220906125406_5_7_2_wydatek; koszt_an expense
-20220906125823_5_5_0_podjêcie (pieniêdzy z banku)_a withdrawal
-20220906125923_5_5_2_finansowy_financial
-20220906130026_5_5_0_podejmowaæ (pieni¹dze z banku)_to withdraw
-20220906130254_5_5_1_Zwlekali z zap³at¹_they were delaying payment
-20220906130805_5_5_1_Otworzy³em rachunek oszczêdnoœciowy_i opened a savings account
-20220906131108_5_7_7_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
-20220906131203_5_5_2_oszczêdzaæ_to economize
-20220906131402_5_5_0_wp³ata; zap³ata_a payment
-20220906131531_5_5_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
-20220906131720_5_5_0_konto; rachunek_an account
-20220906131852_5_5_2_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
-20220906131949_5_5_0_doradca finansowy_a financial adviser
-20220906132104_5_5_0_Studiujê finanse_i study finance
-20220906132200_5_5_1_na twój koszt_at your own expense
-20220906132509_5_5_2_wyj¹tkowoœæ, unikalnoœæ_uniqueness
-20220906132623_5_5_0_finanse; œrodki finansowe_finance
-20220906133134_5_5_0_finansowaæ_to finance
-20220906133252_5_5_0_Oszczêdzam na jedzeniu_i economize on food
-20220906133350_5_5_1_raczej_rather
-20220906133715_5_5_1_wymyœlaæ_to devise
-20220906133823_5_5_3_Coraz wiêcej ludzi cierpi na depresjê_more and more people suffer from depression
-20220906133927_5_11_0_Nie b¹dŸ dla mnie taki niedobry!_don't be so mean to me
-20220906134039_5_11_1_nie by³oby to mo¿liwe_it would not be possible
-20220906134238_5_11_0_zorganizowany; uporz¹dkowany_organized
-20220906134341_5_10_2_organizator_an organizer
-20220906134522_5_11_0_On jest zawsze taki zorganizowany!_he is always so organized
-20220906134802_5_8_2_Pocz¹tkowo myœla³em, ¿e..._at first i thought that
-20220906135030_5_9_2_pesymizm_pessimism
-20220906135143_5_11_0_rzetelny; niezawodny_reliable
-20220906135229_5_8_2_ostateczna decyzja_the final decision
+20220908154136_4_4_0_walki kogutów_cockfighting
+20220908154219_4_4_1_agresja_aggression
+20220908155554_4_4_0_bia³y go³¹b; go³êbica_a dove
+20220908155656_4_4_1_drapaæ_to scratch
+20220908155750_4_4_1_zadrapanie_a scratch
+20220908155849_4_4_0_go³¹bek pokoju_a dove of peace
+20220908155955_4_8_1_lokata kapita³u_a capital investment
+20220908160122_4_4_0_³abêdŸ_a swan
+20220908160223_4_4_1_paw_a peacock
+20220908160349_4_4_2_Pies okaza³ wobec niej agresjê_the dog showed aggression towards her
+20220908160501_4_4_0_pióro (np. ptaka)_a feather
+20220908160550_4_8_3_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
+20220908160658_4_13_7_trójk¹t równoramienny_an isosceles triangle
+20220908160741_4_4_0_foka_a seal
+20220908160837_4_4_1_sowa_an owl
+20220908160958_4_4_1_skrzyd³o_a wing
+20220908161134_4_4_0_rekin_a shark
+20220908161222_4_12_4_Pomimo mo¿liwoœci..._despite the possibility
+20220908161303_4_4_0_³osoœ_a salmon
+20220908161430_4_4_1_gniazdo_a nest
+20220908161508_4_4_0_³ososie_salmon
+20220908161634_4_4_1_Ka¿dego roku zabija siê ogromn¹ liczbê fok_a large number of seals are killed every year
+20220908161704_4_4_0_robak_a worm
+20220908161757_4_4_0_robaczywy_wormy
+20220908161841_4_4_1_wieloryb_a whale
+20220908161919_4_9_2_po¿yczaæ (komuœ pieni¹dze)_to loan
+20220908162121_4_4_0_robaczywe jab³ko_a wormy apple
+20220908162159_4_4_0_mrówka_an ant
+20220908162254_4_4_0_mrówkojad_an anteater
+20220908162350_4_10_6_W porównaniu do..._compared to
+20220908162433_4_7_1_to jest oczywiste_it is obvious
+20220908162513_4_7_5_zaniepokojony; zmartwiony_anxious
+20220908162609_4_7_1_wydajnie, skutecznie, efektywnie_efficiently
 20220906135547_5_5_0_Ten schemat (diagram) przedstawia..._this diagram depicts
 20220906135707_5_5_0_przyjemny dla oka_pleasant to the eye
 20220906153653_5_5_0_nieœwiadomy_unconscious
@@ -903,3 +870,36 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220907230010_5_5_1_charakter_a character
 20220907230112_5_5_0_funkcja, cecha, w³aœciwoœæ_a feature
 20220907230154_5_11_0_jak tylko..._as soon as
+20220908154139_5_8_3_straszyæ_to frighten
+20220908154221_5_11_0_okres; przedzia³ czasu_a period
+20220908155603_5_11_0_przez krótki okres_for a short period of time
+20220908155700_5_11_0_w ci¹gu; w obrêbie (wewn¹trz)_within
+20220908155803_5_11_0_w ci¹gu szeœciu miesiêcy_within six months
+20220908155858_5_9_3_Przestraszy³em siê_i got frightened
+20220908160000_5_11_0_w obrêbie murów_within the walls
+20220908160127_5_11_0_nastêpowaæ_to follow
+20220908160227_5_11_3_pesymista_a pessimist
+20220908160352_5_11_0_nastêpny_following
+20220908160505_5_11_0_strach_fright
+20220908160553_5_13_1_humor_humour
+20220908160701_5_15_1_poza; oprócz_besides
+20220908160752_5_8_2_podœwiadomie_subconsciously
+20220908160844_5_12_3_¿¹dza przygód_a sense of adventure
+20220908161025_5_7_2_..., które wskazuj¹ czy..._those indicate whether
+20220908161136_5_6_2_warunek_a condition
+20220908161224_5_5_1_oœmielaæ siê; mieæ odwagê_to dare
+20220908161315_5_7_2_Co ciekawe, ..._interestingly
+20220908161436_5_5_1_Jak œmiesz!_how dare you
+20220908161512_5_6_1_weryfikowaæ_to validate
+20220908161645_5_6_1_poprawnoœæ_correctness
+20220908161709_5_5_1_nie znosiæ_to detest
+20220908161802_5_6_1_mam do czynienia_i have to deal
+20220908161847_5_5_1_nieznoœny; wstrêtny_detestable
+20220908161927_5_6_1_za³ó¿my, ¿e_let's assume that
+20220908162125_5_8_2_œwiadomie_consciously
+20220908162203_5_11_5_Podobnie..._likewise
+20220908162259_5_7_2_niepodlegaj¹cy zwrotowi; bezzwrotny_non returnable
+20220908162354_5_9_1_kurek z zimn¹ wod¹_a cold tap
+20220908162438_5_6_1_oczywiste_obvious
+20220908162518_5_5_0_? (znak zapytania)_a question mark
+20220908162615_5_5_0_z wyj¹tkiem (czegoœ), poza (czymœ)_except for
