@@ -408,6 +408,18 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220908162441_0_10_2_pesymizm_pessimism
 20220908162524_0_12_0_rzetelny; niezawodny_reliable
 20220908162625_0_9_2_ostateczna decyzja_the final decision
+00000000000000_0_0_0_lousy_parszywy, wstrêtny
+00000000000000_0_0_0_Powodzenia!_Good luck
+00000000000000_0_0_0_Mam chore kolana_I've got bad knees
+00000000000000_0_0_0_prawnik, adwokat_a lawyer
+00000000000000_0_0_0_prawnik, adwokat_an attorney
+00000000000000_0_0_0_Cieszê siê, ¿e siê zgadzamy._Glad we're on the same page
+00000000000000_0_0_0_tablica rejestracyjna_a licence plate
+00000000000000_0_0_0_Ty nêdzna kupo gówna! [Ty marny zasrañcu!]_You miserable piece of shit
+00000000000000_0_0_0_Co to za ró¿nica?_What does it matter?
+00000000000000_0_0_0_Nie moja sprawa; Nie moje zmartwienie_Not my concern
+00000000000000_0_0_0_Ty dupku!_You butthole
+00000000000000_0_0_0_Nie mogê wzi¹æ ³apówki._I can't take a bribe
 20220907224626_1_1_0_ciemnoskóry_dark-skinned
 20220907224714_1_8_4_W przeciwieñstwie do..._in contrast to
 20220907224835_1_1_0_typowy_typical
