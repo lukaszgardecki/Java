@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Wszystkie pizze</title>
+</head>
+<body>
+
+  <div th:if="${!#lists.isEmpty(allPizzas)}">
+      <h1>All Pizzas</h1>
+      <table border="1">
+          <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Size</th>
+          </tr>
+          <tr th:each="pizza: ${allPizzas}" th:object="${Pizza}">
+                <td th:text="${pizza.id}"></td>
+                <td th:text="${pizza.name}"></td>
+                <td th:text="${pizza.size}"></td>
+          </tr>
+      </table>
+  </div>
+
+</body>
+</html>
