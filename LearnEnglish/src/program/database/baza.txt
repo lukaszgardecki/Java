@@ -1,321 +1,16 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-20220916152556_0_12_1_Masz wspania³e poczucie humoru_you have a great sense of humour
-20220910122229_0_6_1_niezmienny_immutable
-20220910122332_0_6_0_Teraz, gdy...(coœ zrobiliœmy)_now that
-20220916152733_0_6_1_W rzeczywistoœci..._in fact
-20220910122557_0_6_0_Spójrz na..._take a look at
-20220910122716_0_6_0_plik_a file
-20220910123021_0_6_0_folder_a directory
-20220910123129_0_6_1_zwrotny_returnable
-20220910123158_0_6_1_wynajmowaæ (komuœ)_to let
-20220910123327_0_6_0_butelka zwrotna_a returnable bottle
-20220910123557_0_6_1_trwaæ_to last
-20220910123722_0_6_1_Zrobi³em to na w³asn¹ odpowiedzialnoœæ_i did it on my own responsibility
-20220910123826_0_6_1_odpowiedzialnoœæ_responsibility
-20220910124107_0_6_1_szczerze; otwarcie_frankly
-20220910124207_0_6_0_godny zaufania_trustworthy
-20220910124318_0_6_0_Mówi¹c szczerze..._frankly speaking
-20220910124434_0_6_1_cwany; przebieg³y_sly
-20220910125013_0_6_3_decyduj¹c siê na..._by opting for
-20220910125502_0_6_2_sposób bycia_a manner
-20220910125610_0_6_0_przebieg³oœæ_slyness
-20220910125803_0_6_1_cecha_a characteristic
-20220910125916_0_6_1_uzasadnij swoj¹ odpowiedŸ_justify your answer
-20220910130234_0_6_0_tak zwane ("tzw.")_so called
-20220910130320_0_7_2_urz¹dzenie_a device
-20220910130414_0_6_0_chocia¿_though
-20220910130520_0_6_0_j¹dro_a kernel
-20220910130702_0_12_0_najpierw_first
-20220910130759_0_13_1_trêbacz_a trumpeter
-20220910131024_0_14_1_wieszak na ubrania_a coat stand
-20220910131053_0_12_0_przede wszystkim_first of all
-20220910131155_0_12_0_koñcowy; ostateczny_final
-20220910131304_0_12_0_w koñcu_finally
-20220910131346_0_12_1_powœci¹gliwy_reserved
-20220910131443_0_12_0_dawno_long ago
-20220910131521_0_12_0_To by³o dawno temu_it was a long time ago
-20220910131632_0_6_1_najprostszym sposobem by..._the simplest way to
-20220910131819_0_6_1_oto co musisz zrobiæ_here is what you need to do
-20220910131907_0_6_0_maniery_manners
-20220910132224_0_6_1_powszechnie znany_widely known
-20220910132344_0_6_0_charakterystyczny_characteristic
-20220910132453_0_6_0_podaj pe³n¹ œcie¿kê_provide the full path
-20220910132602_0_6_1_jego u¿ycie nie zawsze jest uzasadnione_its use is not always justified
-20220910132706_0_6_1_rozró¿niaæ_to distinguish
-20220910132923_0_6_0_niepoprawny, b³êdny_incorrect
-20220910133100_0_6_0_w³aœciwie_properly
-20220910133152_0_6_0_jednak¿e_however
-20220910133258_0_6_0_zadanie_a task
-20220910133422_0_6_0_po pewnym czasie praktyki_after some time of practice
-20220910133558_0_6_0_wtedy i tylko wtedy_when and only when
-20220910133740_0_6_0_powszechna praktyka_the common practice
-20220910133810_0_6_1_emisja; wydzielanie_emission
-20220910133854_0_6_0_charakteryzowaæ_to characterize
-20220910134041_0_6_0_miej na uwadze_bear in mind
-20220910134130_0_6_0_w sumie; podsumowuj¹c_all in all
-00000000000000_0_0_0_Co tam? (co s³ychaæ?)_What's up?
-00000000000000_0_0_0_Jakoœ leci! (dajê radê!)_Getting by
-00000000000000_0_0_0_odnotowane (nale¿ycie zanotowane)_duly noted
-00000000000000_0_0_0_Odnotowa³em._I've duly noted
-00000000000000_0_0_0_Bu³ka z mas³em! (³atwizna!)_Easy peasy
-00000000000000_0_0_0_Dotrzymaj s³owa!_Keep your word
-00000000000000_0_0_0_Nigdy nie dotrzymujesz s³owa!_You never keep your word
-00000000000000_0_0_0_Musisz dotrzymaæ s³owa!_You have to keep your word
-00000000000000_0_0_0_Poza tym, co za ró¿nica?_Besides what's the difference?
-00000000000000_0_0_0_Nie martw siê, bêdê siê streszczaæ!_Don't worry. I'll keep it short
-00000000000000_0_0_0_Jesteœ œwiadkiem!_You're my witness
-00000000000000_0_0_0_Potrafisz dotrzymaæ tajemnicy?_Can you keep a secret?
-00000000000000_0_0_0_Wiesz, ¿e potrafiê dochowaæ tajemnicy._You know I can keep a secret
-00000000000000_0_0_0_No i co? (no i co z tego?)_So what?
-00000000000000_0_0_0_Kogo to obchodzi?_Who cares?
-00000000000000_0_0_0_Wal siê!_Screw you
-00000000000000_0_0_0_Skoro o tym mowa, ..._Speaking of which
-00000000000000_0_0_0_Nie ma za co._You are welcome
-00000000000000_0_0_0_Nie ma za co (nieoficjalnie)_Any time
-00000000000000_0_0_0_dowód (np. w sprawie)_an evidence
-00000000000000_0_0_0_Myœlê, ¿e robisz z ig³y wid³y (myœlê, ¿e siê czepiasz)_I think you're splitting hairs
-00000000000000_0_0_0_dowiadywaæ siê_to find out
-00000000000000_0_0_0_Dowiedzia³em siê, ¿e..._I found out that
-20220912191750_0_6_0_innymi s³owy_in other words
-20220912192012_0_6_0_to przekracza_it exceeds
-20220912192332_0_6_0_emitowaæ; wydzielaæ_to emit
-00000000000000_0_0_0_bukiet_a bouquet
-20220912192748_0_6_0_* (symbol gwiazdki)_an asterisk
-20220912192844_0_6_1_charakter_a character
-20220912193135_0_6_0_funkcja, cecha, w³aœciwoœæ_a feature
-20220912194630_0_12_0_jak tylko..._as soon as
-20220912194719_0_9_3_straszyæ_to frighten
-20220912194858_0_12_0_okres; przedzia³ czasu_a period
-20220912195106_0_12_0_przez krótki okres_for a short period of time
-20220912195221_0_12_0_w ci¹gu; w obrêbie (wewn¹trz)_within
-20220912195501_0_12_0_w ci¹gu szeœciu miesiêcy_within six months
-20220912195620_0_10_3_Przestraszy³em siê_i got frightened
-20220912195855_0_12_0_w obrêbie murów_within the walls
-20220912200204_0_12_0_nastêpowaæ_to follow
-20220912200301_0_12_3_pesymista_a pessimist
-20220912200337_0_12_0_nastêpny_following
-20220912201111_0_14_1_humor_humour
-20220912201503_0_16_1_poza; oprócz_besides
-20220912201828_0_13_3_¿¹dza przygód_a sense of adventure
-20220912202143_0_8_2_..., które wskazuj¹ czy..._those indicate whether
-20220912202217_0_7_2_warunek_a condition
-20220912202314_0_6_1_oœmielaæ siê; mieæ odwagê_to dare
-20220912202356_0_8_2_Co ciekawe, ..._interestingly
-20220912202445_0_6_1_Jak œmiesz!_how dare you
-20220912202749_0_7_1_weryfikowaæ_to validate
-20220912203152_0_7_1_poprawnoœæ_correctness
-20220912203250_0_6_1_nie znosiæ_to detest
-20220912203332_0_7_1_mam do czynienia_i have to deal
-20220912203631_0_7_1_za³ó¿my, ¿e_let's assume that
-20220912203716_0_9_2_œwiadomie_consciously
-20220912203752_0_12_5_Podobnie..._likewise
-20220912203901_0_8_2_niepodlegaj¹cy zwrotowi; bezzwrotny_non returnable
-20220912203941_0_10_1_kurek z zimn¹ wod¹_a cold tap
-20220912204025_0_7_1_oczywiste_obvious
-20220912204200_0_6_0_? (znak zapytania)_a question mark
-20220912204302_0_6_0_z wyj¹tkiem (czegoœ), poza (czymœ)_except for
-20220912204443_0_9_1_nieœwiadomie_unconsciously
-20220912204544_0_8_2_Wynajmê ten dom jej siostrze_i will let this house to her sister
-20220912204635_0_6_0_niezdolny_unable
-20220912204708_0_8_3_szczery; otwarty_frank
-20220912204818_0_6_1_nieznoœne dziecko_a detestable child
-20220912205113_0_8_2_zrównowa¿ony_even tempered
-20220912205149_0_8_2_usposobienie; nastrój_a temper
-20220912205237_0_9_4_Ogólnie, ..._overall
-20220912205322_0_8_3_to jest charakterystyczne dla Anglików_it is characteristic of the English
-20220912205615_0_6_1_W tej chwili prawdopodobnie zastanawiasz siê, co powinniœmy zrobiæ_right now you are probably wondering what should we do
-20220912205830_0_10_1_Spó³ka przynios³a straty_the company made a loss
-20220912210214_0_8_3_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
-20220912210407_0_8_3_niespójnoœci_inconsistencies
-20220912210459_0_6_0_potê¿ne narzêdzie_a powerful tool
-20220912210549_0_6_3_Pod tym wzglêdem... ; W tym wzglêdzie..._in this regard
-20220912210635_0_6_2_przetwarzanie_processing
-20220912210721_0_6_0_W kolejnych tematach zobaczymy..._in the following topics we will see
-20220912210856_0_6_3_nieznacznie_slightly
-20220912211016_0_8_1_zazwyczaj_typically
-20220912211102_0_6_1_pozwalaj¹ nam zdefiniowaæ_they allow us to define
-20220912211222_0_8_3_odpowiedzi okaza³y siê b³êdne_the answers turned out to be incorrect
-20220912211306_0_10_5_trójk¹t ró¿noboczny_a scalene triangle
-20220912211401_0_6_1_zamiast_instead of
-20220912211442_0_6_0_inne mo¿liwoœci_other possibilities
-20220912211532_0_10_4_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
-20220912211651_0_8_6_wytyczne_guidelines
-20220912211800_0_6_0_to nie ma znaczenia_it doesn't matter
-20220912211834_0_9_2_Rzeczywiœcie..._indeed
-20220912211909_0_6_0_zakres_a range
-20220912211936_0_9_5_to jest nieistotne_it is irrelevant
-20220912212002_0_6_0_! (wykrzyknik)_an exclamation mark
-20220912212026_0_8_2_warunki wstêpne_preconditions
-20220912212228_0_9_5_trójk¹t równoboczny_an equilateral triangle
-20220912212302_0_6_0_operacja_surgery
-20220912212336_0_6_0_chirurg_a surgeon
-20220912212412_0_6_1_wymagania_requirements
-20220912212500_0_9_1_Niestety to te¿ jest z³y pomys³_alas this is also a bad idea
-20220912212537_0_6_1_przechodziæ (operacjê, leczenie)_to undergo
-20220912212649_0_6_1_leczyæ (o lekarzu)_to treat
-20220912212729_0_6_1_leczenie; kuracja_a treatment
-20220912212833_0_9_2_W przeciwieñstwie do..._opposite to
-20220912212917_0_6_2_chirurgiczny_surgical
-20220912212952_0_7_1_w tym przypadku_in this case
-20220912213030_0_9_3_ró¿norodnoœæ_the variety
-20220912213101_0_6_1_stosowaæ_to apply
-20220912213208_0_6_0_syrop_syrup
-20220912213244_0_10_2_zwrot pieniêdzy; sp³ata_a repayment
-20220912213331_0_6_1_stosowanie; zastosowanie_an application
-20220912213431_0_6_0_syrop na kaszel_cough syrup
-20220912213458_0_6_0_zatruwaæ_to poison
-20220912213955_0_6_1_maœæ_an ointment
-20220912214059_0_9_2_w³aœciwy_appropriate
-20220912214503_0_11_1_na tarasie_on the terrace
-20220912214812_0_11_4_z grubsza mówi¹c_roughly speaking
-20220912215244_0_6_0_wymiotowaæ_to vomit
-20220912215439_0_9_2_..., który zawiera_that contains
-20220912215605_0_6_1_zatrucie_a poisoning
-20220912215642_0_6_11_Zobaczmy, co powinniœmy z tym zrobiæ_let's see what we should do about that
-20220912215736_0_10_3_jednorazowa maszynka do golenia_a disposable razor
-20220912215801_0_6_0_biæ; uderzaæ_to beat
-20220912215829_0_13_3_udzia³owiec; akcjonariusz_a shareholder
-20220912215954_0_6_0_bicie; uderzenie_a beat
-20220912220047_0_6_0_bicie serca_heartbeat
-20220912220138_0_6_1_zatrucie pokarmowe_food poisoning
-20220912220215_0_6_0_przytomny_conscious
-20220912220307_0_12_4_przygnêbiaæ_to depress
-20220912220328_0_11_1_sygnalizowaæ_to signal
-20220912220433_0_6_0_nieprzytomny_unconscious
-20220912220514_0_10_3_To odpowiada...(czemuœ)_it corresponds to
-20220912220619_0_6_0_transfuzja krwi_a transfusion
-20220912220645_0_10_3_Zasadniczo..._basically
-20220912220734_0_10_2_rozs¹dny_sensible
-20220912220815_0_10_2_cierpliwoœæ_patience
-20220912220914_0_6_1_Straci³ przytomnoœæ (po tym jak upad³ lub uderzy³ siê w coœ)_he knocked himself unconscious
-00000000000000_0_0_0_uczucia_feelings
-00000000000000_0_0_0_ekologia_an ecology
-00000000000000_0_0_0_dŸwiêki_sounds
-00000000000000_0_0_0_czêœci cia³a_parts of the body
-00000000000000_0_0_0_czas_time
-00000000000000_0_0_0_charakter i osobowoœæ_character and personality
-00000000000000_0_0_0_emocja; uczucie_an emotion
-00000000000000_0_0_0_emocjonalny; uczuciowy_emotional
-00000000000000_0_0_0_problemy uczuciowe_emotional problems
-00000000000000_0_0_0_randka_a date
-00000000000000_0_0_0_randka w ciemno_a blind date
-00000000000000_0_0_0_biuro matrymonialne_a dating agency
-00000000000000_0_0_0_romans_an affair
-00000000000000_0_0_0_Oni mieli romans._They had an affair
-00000000000000_0_0_0_kochanek; mi³oœnik_a lover
-00000000000000_0_0_0_Oni s¹ kochankami._They are lovers
-00000000000000_0_0_0_mi³oœnik sztuki_an art lover
-00000000000000_0_0_0_czu³y; kochaj¹cy_fond
-00000000000000_0_0_0_kochaj¹cy ojciec_a fond father
-00000000000000_0_0_0_Czy lubisz dzieci?_Are you fond of children?
-00000000000000_0_0_0_ukochany_beloved
-00000000000000_0_0_0_zadziwiaæ; zaskakiwaæ_to astonish
-00000000000000_0_0_0_zaskoczenie_astonishment
-00000000000000_0_0_0_Byliœmy zaskoczeni jego sukcesem._We were astnished at his success
-00000000000000_0_0_0_zak³opotaæ; zdezorientowaæ_to confuse
-00000000000000_0_0_0_zak³opotanie; dezorientacja_confusion
-00000000000000_0_0_0_By³em zdezorientowany._I was counfused
-00000000000000_0_0_0_zazdroœciæ_to envy
-00000000000000_0_0_0_zazdroœæ_envy
-00000000000000_0_0_0_zazdrosny_envious
-00000000000000_0_0_0_obwiniaæ; zrzucaæ winê_to blame
-00000000000000_0_0_0_wina_blame
-00000000000000_0_0_0_Nie zrzucaj na mnie winy za wszystkie swoje problemy!_Don't blame all your problems on me!
-00000000000000_0_0_0_irytowaæ_to annoy
-00000000000000_0_0_0_irytacja_annoyance
-00000000000000_0_0_0_By³em zirytowany jego zachowaniem._I was annoyed at his behaviour
-00000000000000_0_0_0_wœciek³oœæ_fury
-00000000000000_0_0_0_wœciek³y_furious
-00000000000000_0_0_0_Wpad³a we wœciek³oœæ._She flew into a fury
-00000000000000_0_0_0_szacunek (do kogoœ)_respect
-00000000000000_0_0_0_pe³en szacunku_respectful
-00000000000000_0_0_0_Cieszy³a siê powa¿aniem._She enjoyed respect
-00000000000000_0_0_0_pewnoœæ_certainty
-00000000000000_0_0_0_niepewnoœæ_uncertainty
-00000000000000_0_0_0_nie ufaæ_to distrust
-00000000000000_0_0_0_nieufnoœæ_distrust
-00000000000000_0_0_0_nieufny_distrustful
-00000000000000_0_0_0_niepokoiæ; przeszkadzaæ_to bother
-00000000000000_0_0_0_k³opot_bother
-00000000000000_0_0_0_Nie rób sobie k³opotu!_Don't bother!
-00000000000000_0_0_0_wdziêcznoœæ_gratitude
-00000000000000_0_0_0_niewdziêcznoœæ_ingratitude
-00000000000000_0_0_0_Chcia³bym wyraziæ wdziêcznoœæ..._I'd like to express my gratitude
-00000000000000_0_0_0_zawstydzaæ_to shame
-00000000000000_0_0_0_wstyd_shame
-00000000000000_0_0_0_bezwstydny_shameless
-00000000000000_0_0_0_wzruszaæ_to touch
-00000000000000_0_0_0_wzruszaj¹cy_touching
-00000000000000_0_0_0_wzruszaj¹ca scena_a touching scene
-00000000000000_0_0_0_zachwycaæ_to delight
-00000000000000_0_0_0_zachwyt; rozkosz_delight
-00000000000000_0_0_0_zachwycony_delighted
-00000000000000_0_0_0_radoœæ_joy
-00000000000000_0_0_0_radosny; szczêsliwy_joyful
-00000000000000_0_0_0_zadowolony_contented
-00000000000000_0_0_0_niezadowolony_discontented
-00000000000000_0_0_0_zadowolony klient_a contented customer
-00000000000000_0_0_0_rozpaczaæ_to despair
-00000000000000_0_0_0_rozpacz_despair
-00000000000000_0_0_0_rozpaczliwy; beznadziejny_desperate
-00000000000000_0_0_0_wspó³czuæ_to sympathize
-00000000000000_0_0_0_wspó³czucie; zrozumienie_sympathy
-00000000000000_0_0_0_Wyrazi³em wspó³czucie._I expressed my sympathy
-00000000000000_0_0_0_urz¹d_the office
-00000000000000_0_0_0_bie¿¹cy_current
-00000000000000_0_0_0_obecnie_currently
-00000000000000_0_0_0_ponaglaæ; poganiaæ_to urge
-00000000000000_0_0_0_nagl¹ca potrzeba; krytyczna sytuacja_urgency
-00000000000000_0_0_0_pilny; nagl¹cy_urgent
-00000000000000_0_0_0_obowi¹zek_an obligation
-00000000000000_0_0_0_obowi¹zkowy; obowi¹zuj¹cy_obligatory
-00000000000000_0_0_0_ostateczny termin_a deadline
-00000000000000_0_0_0_Nie mo¿esz przekroczyæ terminu sk³adania podañ._You can't miss the deadline for applications
-00000000000000_0_0_0_Zd¹¿y³em przed ostatecznym terminem_I met the deadline
-00000000000000_0_0_0_za³¹czaæ_to enclose
-00000000000000_0_0_0_za³¹cznik_an enclosure
-00000000000000_0_0_0_Za³¹czy³em ¿yciorys_I enclosed a CV
-00000000000000_0_0_0_dokumenty_papers
-00000000000000_0_0_0_termin; okres_a term
-00000000000000_0_0_0_rozwi¹zanie krótkoterminowe_a short-term solution
-00000000000000_0_0_0_po¿yczka d³ugoterminowa_a long-term loan
-00000000000000_0_0_0_up³ywaæ (o terminie); wygasaæ_to expire
-00000000000000_0_0_0_wygaœniêcie_expiry
-00000000000000_0_0_0_data up³ywu wa¿noœci_the expiry date
-00000000000000_0_0_0_zezwalaæ_to permit
-00000000000000_0_0_0_zezwolenie (dokument)_a permit
-00000000000000_0_0_0_zezwolenie na pracê_a work permit
-00000000000000_0_0_0_pozwolenie (prawo)_permission
-00000000000000_0_0_0_Dosta³ pozwolenie na pobyt._He got permission to stay
-00000000000000_0_0_0_zaklejaæ; pieczêtowaæ_to seal
-00000000000000_0_0_0_pieczêæ_a seal
-00000000000000_0_0_0_szczegó³_a detail
-00000000000000_0_0_0_szczegó³owy_detailed
-00000000000000_0_0_0_dane osobowe_personal details
-00000000000000_0_0_0_dodatkowy_additional
-00000000000000_0_0_0_kilka dodatkowych szczegó³ów_some additional details
-00000000000000_0_0_0_ma³¿eñski_marital
-00000000000000_0_0_0_stan cywilny_marital status
-00000000000000_0_0_0_cel_a purpose
-00000000000000_0_0_0_cel wizyty_a purpose of the visit
-00000000000000_0_0_0_Zrobi³ to celowo._He did it on purpose
-00000000000000_0_0_0_pismo_writing
-00000000000000_0_0_0_na piœmie_in writing
-00000000000000_0_0_0_pismo rêczne_handwriting
-00000000000000_0_0_0_czytelny_legible
-00000000000000_0_0_0_nieczytelny_illegible
-00000000000000_0_0_0_czytelny podpis_a legible signature
-00000000000000_0_0_0_odrzucaæ; odmawiaæ przyjêcia_to reject
-00000000000000_0_0_0_odrzucenie; odmowa przyjêcia_a rejection
-00000000000000_0_0_0_brak_lack
-00000000000000_0_0_0_z braku dowodów_for lack of evidence
-00000000000000_0_0_0_z braku œrodków finansowych_for lack of finance
 00000000000000_0_0_0_wieœ_the countryside
 00000000000000_0_0_0_ch³op_a peasant
+20220920131033_0_0_1_czytelny podpis_a legible signature
+20220920131058_0_0_1_odrzucaæ; odmawiaæ przyjêcia_to reject
 00000000000000_0_0_0_uprawiaæ_to cultivate
 00000000000000_0_0_0_uprawa_cultivation
+20220920131234_0_0_1_brak_lack
+20220920131300_0_0_1_z braku dowodów_for lack of evidence
+20220920131343_0_13_5_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
 00000000000000_0_0_0_Ry¿ jest uprawiany w Chinach._Rice is cultivated in China
+20220920131410_0_0_2_nieczytelny_illegible
 00000000000000_0_0_0_pszenica_wheat
 00000000000000_0_0_0_m¹ka pszenna_wheat flour
 00000000000000_0_0_0_jêczmieñ_barley
@@ -326,8 +21,8 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 00000000000000_0_0_0_m³ynarz_a miller
 00000000000000_0_0_0_wiatrak_a windmill
 00000000000000_0_0_0_studnia_a well
-00000000000000_0_0_0_drabina_a ledder
-00000000000000_0_0_0_Wspi¹³ siê po drabinie._He climbed a ledder
+00000000000000_0_0_0_drabina_a ladder
+00000000000000_0_0_0_Wspi¹³ siê po drabinie._He climbed a ladder
 00000000000000_0_0_0_hodowaæ_to breed
 00000000000000_0_0_0_hodowla_breeding
 00000000000000_0_0_0_hodowca_a breeder
@@ -843,499 +538,805 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 00000000000000_0_0_0_Nie rozumiem ani s³owa._I don't understand one word
 00000000000000_0_0_0_Ktoœ nie sp³ukuje wody. (w toalecie)_Someone is not flushing
 00000000000000_0_0_0_Cieszê siê._I'm glad
-20220915214739_1_1_0_relacja_relationship
-20220915215402_1_1_0_Chwalmy Pana! Chwa³a Panu!_Praise the Lord
-20220915215614_1_16_6_W przeciwieñstwie do..._in contrast to
-20220916144439_1_12_2_Mamy zobowi¹zania wobec naszych klientów_we have obligations to our customers
-20220916144612_1_1_1_niekompatybilny, niezgodny, sprzeczny_incompatible
-20220916144736_1_1_0_Nie patrz tak na mnie!_Don't look at me like that
-20220916144836_1_14_7_Oœmieli³em siê zaprotestowaæ_i dared to protest
-20220916144951_1_1_0_okropna praca (straszna praca)_a terrible job
-20220916145031_1_1_0_Jesteœmy kwita._We are square
-20220916145114_1_1_1_Ja dok³adnie pamiêtam..._I distinctly remember
-20220916145756_1_1_1_Z pewnoœci¹ nigdy nie bêdziesz w stanie..._You certainly will never be able to
-20220916145941_1_1_0_PrzejdŸmy do sedna sprawy._Let's get to the nitty-gritty
-20220916150043_1_1_1_straszny, okropny_terrible
-20220916150135_1_1_0_z³odziej_a thief
-20220916150236_1_1_2_chwa³a, pochwa³a_a praise
-20220916150456_1_1_0_Nie mam nic do stracenia_I got nothing to lose
-20220916150555_1_7_0_zarz¹dzanie_a management
-20220916150702_1_1_1_przechodziæ do sedna sprawy_to get to the nitty-gritty
-20220916150745_1_1_2_Na litoœæ bosk¹! (na mi³oœæ bosk¹)_For Chrissakes
-20220916150816_1_7_1_Powiedzmy, ¿e..._say
-20220916150920_1_1_1_okolicznoœci_circumstances
-20220916151102_1_7_0_w¹tek_a thread
-20220916151138_1_7_1_zmaksymalizowaæ, wyolbrzymiæ_to maximize
-20220916151205_1_7_0_ponadto_moreover
-20220916151227_1_1_1_Na szczêœcie ..._Luckily
-20220916151324_1_1_1_Poparz na jasn¹ stronê (spójrz na to optymistycznie)_Look on the bright side
-20220916151432_1_7_0_ponadczasowy_timeless
-20220916151511_1_7_0_Z zasady...(zwykle)_as a rule
-20220916151539_1_7_0_zminimalizowaæ_to minimize
-20220916151705_1_10_7_Oczywiœcie ale to ma³o prawdopodobne, ¿e..._of course but it's unlikely that
-20220916151812_1_13_0_nierzetelny; zawodny_unreliable
-20220916151848_1_8_4_Lipiec nastêpuje po czerwcu_July follows June
-20220916151929_1_22_6_egoista_an egoist
-20220916152011_1_13_0_egoistyczny_egoistic
-20220916152101_1_2_2_On jest niewinny._He is innocent
-20220916152151_1_13_0_pesymistyczny_pessimistic
-20220916152231_1_13_0_optymizm_optimism
-20220916152331_1_13_0_optymista_an optimist
-20220916152423_1_2_1_Wiem, ¿e to trudne. (to trudne, wiem...)_It's tough. I know
-20220916152513_1_13_0_optymistyczny_optimistic
-20220916152608_1_13_0_On nie ma poczucia humoru_he has no sense of humour
-20220916152650_1_13_0_przedtem; zanim_before
-20220916152756_1_7_1_podobieñstwa_similarities
-20220916152832_1_7_1_..., który wskazuje, czy..._that indicates whether
-20220916152952_1_2_1_niefortunny, nieszczêœliwy_unfortunate
-20220916153132_1_7_1_Ogólnie, zazwyczaj_in general
-20220916153230_1_7_0_Który z nich...?_which of them
-20220916153322_1_15_4_Sprzedali spó³kê z zyskiem_they sold the company at a profit
-20220916153502_1_2_2_Oczekujê, ¿e to udowodnisz._I expect you to prove that
-20220915212636_2_2_2_Przypadkowo rozla³em kawê._Accidentally I spilled my coffee
-20220915212732_2_3_1_opieka zdrowotna_health care
-20220915212923_2_2_1_Cokolwiek?_Anything at all
-20220915213041_2_2_0_Trzymaj siê!_Take care
-20220915213123_2_2_0_Czy mo¿esz z tym ¿yæ?_Can you live with it?
-20220915213711_2_2_0_Jeszcze raz..._Once again
-20220915213814_2_2_0_Nie jestem przeciwko tobie!_I'm not against you
-20220915213917_2_2_0_To by³ wypadek._It was an accident
-20220915214027_2_2_1_Skoñczyliœmy._We're done
-20220915214322_2_2_1_Co to mia³o znaczyæ?_What's that supposed to mean?
-20220915214344_2_2_0_przypadkowo_accidentally
-20220915214432_2_2_0_synowa_a daughter in law
-20220915214610_2_15_4_przelewaæ (pieni¹dze)_to transfer
-20220915214657_2_2_0_ziêæ_a son in law
-20220915214744_2_2_0_teœæ_a father in law
-20220915215409_2_2_0_teœciowa_a mother in law
-20220915215730_2_2_1_Mogê siê tylko domyœlaæ..._I can only surmise
-20220916144450_2_2_0_Naprawdê nie wiem._I don't honestly know
-20220916144630_2_2_0_rynsztok, kana³ œciekowy_a sewer
-20220916144744_2_2_0_plan emerytalny_a retirement plan
-20220916144843_2_2_0_wiek emerytalny_retirement age
-20220916145007_2_2_0_Zaraz wracam._I'll be right back
-20220916145035_2_2_1_szczerze, uczciwie, naprawdê_honestly
-20220916145654_2_2_0_Nie wiem co to znaczy._I don't know what it means
-20220916145802_2_2_1_Tak czy inaczej..._Either way
-20220916145947_2_2_1_emerytura_retirement
-20220916150048_2_2_0_wiêzienie (za powa¿ne przestêpstwa, na d³u¿szy okres czasu)_a prison
-20220916150140_2_2_0_wiêzienie (za mniejsze przestêpstwa, na krótszy okres czasu)_a jail
-20220916150304_2_2_1_bracia_brethren
-20220916150503_2_10_1_przyjemny dla oka_pleasant to the eye
-20220916150617_2_2_1_cokolwiek_whatever
-20220916150707_2_11_5_Uwaga!_caution!
-20220916150757_2_2_1_rozprawa s¹dowa_a court hearing
-20220916150830_2_2_0_Nie ma innego wyjœcia?_There's no other way?
-20220916150929_2_3_3_doradca, adwokat_a counselor
-20220916151120_2_2_0_mordercy i gwa³ciciele_murderers and rapists
-20220916151141_2_2_0_gwa³t_a rape
-20220916151235_2_11_1_jednorazowe kubki papierowe_disposable paper cups
-20220916151338_2_2_3_okolica, dzielnica_a precinct
-20220916151440_2_2_0_to jest bolesne_it's painful
-20220916151608_2_2_0_Jesteœ zwolniony_You're fired
-20220916151714_2_2_0_Jesteœ zatrudniony_You're hired
-20220916151816_2_2_0_modlitwa_a prayer
-20220916151904_2_2_1_Zrezygnowa³em z tych pieniêdzy._I gave up that money
-20220916151942_2_2_0_pewny, przekonany_certain
-20220916152027_2_2_1_Przyznaj siê do winy!_Plead guilty
-20220916152114_2_2_0_Mogê zapytaæ dlaczego?_May I ask why?
-20220916152258_2_2_2_W tych okolicznoœciach, ..._Under the circumstances
-20220916152341_2_2_0_pêcherz_a bladder
-20220916152435_2_19_5_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
-20220916152626_2_11_5_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
-20220916152709_2_2_0_Obawiam siê, ¿e nie mogê tego zrobiæ_I'm afraid I can't do that
-20220916152803_2_15_2_On jest mi winien 250$_he owes me 250$
-20220916152844_2_2_1_zaliczka, honorarium (np. dla adwokata)_a retainer
-20220916153031_2_13_8_Ten lek mo¿e byæ stosowany w leczeniu raka_this medicine can be applied to the treatment of cancer
-20220916153136_2_2_1_ciep³a posadka (potocznie o pracy)_a plum job
-20220916153254_2_2_1_Dosta³ ciep³¹ posadkê w firmie swojego ojca._He got a plum job at his father's company
-20220916153413_2_2_1_Gor¹co ciê zachêcam do... (Bardzo ciê zachêcam do...)_I highly encourage you to
-20220916153510_2_2_0_Nikt tego nie lubi_No one likes that
-20220915203957_3_9_4_wp³ata; zap³ata_a payment
-20220915204124_3_3_0_Nie moja sprawa; Nie moje zmartwienie_Not my concern
-20220915204212_3_3_0_Ty dupku!_You butthole
-20220915204347_3_3_0_Nie mogê wzi¹æ ³apówki._I can't take a bribe
-20220915204520_3_14_3_Alkohol jest w Polsce wysoko opodatkowany_alcohol is heavily taxed in Poland
-20220915204720_3_3_1_prawnik, adwokat_an attorney
-20220915204910_3_9_0_Ten schemat (diagram) przedstawia..._this diagram depicts
-20220915205048_3_3_1_Cieszê siê, ¿e siê zgadzamy._Glad we're on the same page
-20220915205315_3_9_0_nieœwiadomy_unconscious
-20220915205432_3_9_0_œwiadomy_conscious
-20220915205603_3_9_1_prawie zawsze_nearly always
-20220915205708_3_10_4_zbêdny_superfluous
-20220915205828_3_11_1_Dzielê pokój z przyjació³k¹_i share the room with my friend
-20220915205919_3_10_3_Bez wzglêdu na to; niezale¿nie od tego_regardless of
-20220915210021_3_11_3_Analogicznie..._analogously
-20220915210353_3_10_3_kompromis_trade off
-20220915210426_3_9_2_z³oœliwy kod_a malicious code
-20220915210528_3_9_2_z³oœliwy_malicious
-20220915210621_3_15_2_Napuœci³em wody do wanny_i have run a bath
-20220915210738_3_9_6_œwiadomy wybór_a conscious choice
-20220915210922_3_10_3_szacunki_estimates
-20220915211000_3_9_1_oczywiœcie_of course
-20220915211149_3_9_1_Okazuje siê, ¿e..._it turns out that
-20220915211312_3_9_0_trójk¹t prostok¹tny_a right triangle
-20220915211512_3_8_2_zasiêgaæ porady_to consult
-20220915211642_3_9_0_W takim przypadku_in such a case
-20220915211722_3_9_1_przeciêtny, œredni_average
-20220915211854_3_9_0_Powiedzmy, ¿e..._let's say that
-20220915211959_3_9_1_W skrócie..._in a nutshell
-20220915212042_3_9_2_powstaje proste pytanie_a simple question arises
-20220915212215_3_9_0_z drugiej strony..._on the other hand
-20220915212305_3_10_2_kolej; kolejka_a turn
-20220915212522_3_9_0_z jednej strony..._on the one hand
-20220915212640_3_9_0_pojawiaæ siê, powstawaæ_to arise
-20220915212925_3_9_0_dwukropek_a colon
-20220915213044_3_10_2_ponadto_furthermore
-20220915213133_3_9_1_Rzuæmy okiem na..._let's have a look at
-20220915213717_3_9_5_W przeciwieñstwie do ..._unlike the
-20220915213818_3_9_0_wyrafinowany, wyszukany_sophisticated
-20220915213927_3_10_1_aplikacje wielow¹tkowe_multithreaded applications
-20220915214032_3_9_3_odrzucanie_discarding
-20220915214324_3_9_0_niestety_alas
-20220915214437_3_9_2_czytelne dla cz³owieka_human readable
-20220915214613_3_9_1_plusy i minusy (zalety i wady)_pros and cons
-20220915214702_3_3_0_po³ykaæ, prze³ykaæ_to swallow
-20220915215147_3_10_1_odnosiæ siê do (czegoœ)_to refer to
-20220915215423_3_9_0_dla (twojej) wygody_for your convenience
-20220915215737_3_15_5_Warto zapamiêtaæ, ¿e..._it's worth remembering that
-20220916144457_3_9_0_nie potrzeba (czegoœ robiæ)_there is no need to
-20220916144634_3_9_1_...z którego..._from which
-20220916144749_3_9_3_stragan_a market stall
-20220916144847_3_9_1_Po pierwsze, ..._first off
-20220916145015_3_3_0_zabójstwo_homicide
-20220916145040_3_3_0_Jesteœ bezpieczny._You're safe
-20220916145703_3_3_0_¯artujesz?_You're kidding?
-20220916145805_3_3_0_IdŸ do domu._Go home
-20220916145949_3_3_0_Nastêpnym razem._Next time
-20220916150056_3_4_2_Jakie to ma znaczenie? (Co to za ró¿nica?)_What does it matter?
-20220916150148_3_3_1_dos³owny, dos³ownie_verbatim
-20220916150310_3_3_1_s³owo w s³owo, dos³ownie_word for word
-20220916150529_3_3_0_Co to by³o do cholery?_What the hell was that?
-20220916150627_3_10_1_podœwiadomy_subconscious
-20220916150712_3_3_1_broniæ (czegoœ, kogoœ)_to defend
-20220916150836_3_3_0_Jestem z ciebie dumny._I am proud of you
-20220916151046_3_3_0_To zale¿y od ciebie._It's up to you
-20220916151129_3_3_0_Narazie! (po¿egnanie)_See you around
-20220916151144_3_3_1_odpornoœæ_immunity
-20220916151243_3_3_0_Co siê sta³o?_What happened?
-20220916151359_3_3_2_Doceniam twoj¹ pomoc._I appreciate your help
-20220916151447_3_3_1_system odpornoœciowy_immunity system
-20220916151630_3_3_1_Nie mogê tak dalej ¿yæ._I can't go on like this
-20220916151725_3_3_0_Co ci siê sta³o?_What happened to you?
-20220916151828_3_3_0_Co mu siê sta³o?_What happened to him?
-20220916151912_3_3_1_Po moim trupie!_Over my dead body
-20220916151949_3_3_1_Jest tu kto?_Anybody here?
-20220916152041_3_3_0_W¹tpiê!_I doubt it
-20220916152118_3_10_3_napój_a beverage
-20220916152309_3_3_0_W¹tpiê, ¿e..._I doubt that
-20220916152352_3_13_1_Trzymaj te papiery pod kluczem!_keep these papers under lock and key
-20220916152441_3_3_0_G³upiec ze mnie! (ale g³uptas ze mnie!)_How silly of me
-20220916152632_3_3_0_NajwyraŸniej ..._Clearly
-20220916152716_3_3_0_Chwila, chwila!_Hold on, hold on!
-20220916152805_3_3_0_Œwietnie!_Great
-20220916152849_3_3_0_Za³ó¿my, ¿e..._Assume that
-20220916153039_3_3_0_Zacznij od pocz¹tku._Start at the beginning
-20220916153200_3_3_0_Powa¿nie? (serio?)_Seriously?
-20220916153301_3_3_0_Niestety, ... (niefortunnie)_Unfortunately
-20220916153429_3_3_0_Sprawy wymknê³y siê spod kontroli._Things got out of hand
-20220916153514_3_3_0_Skoñczy³em._I'm done
-20220915115730_4_10_0_Jak na razie wszystko idzie dobrze_so far so good
-20220915115842_4_9_4_Kiedy udomowiono koty?_when did cats become domesticated?
-20220915115944_4_10_0_Dotychczas otrzyma³em dwa listy_so far i have received two letters
-20220915120008_4_11_1_przelew_a transfer
-20220915120105_4_12_1_w³aœcicielka mieszkania (wynajmuj¹ca je innym)_a landlady
-20220915120308_4_10_3_nieszczêœcie; pech_a misfortune
-20220915120424_4_10_0_dotychczas_so far
-20220915120616_4_13_2_strumyk szemra³_the brook was murmuring
-20220915120713_4_8_2_Wolisz Coca-Colê czy Pepsi?_Do you prefer Coca-Cola or Pepsi?
-20220915120820_4_10_0_kurek z gazem_a gas tap
-20220915120923_4_9_2_Ubrania le¿a³y w nie³adzie_the clothes were lying in disorder
-20220915121035_4_10_0_kurek; kran_a tap
-20220915122747_4_10_2_chrapaæ_to snore
-20220915122835_4_10_0_chrapanie_a snore
-20220915122919_4_10_0_produkty nieszkodliwe dla œrodowiska_eco friendly products
-20220915123121_4_10_0_nieszkodliwy dla œrodowiska_eco friendly
-20220915123156_4_10_0_inwestor_an investor
-20220915123235_4_10_1_kurki z ciep³¹ i zimn¹ wod¹_the hot and cold taps
-20220915123427_4_17_8_przera¿aæ_to horrify
-20220915123519_4_8_1_kontroler biletów_a ticket collector
-20220915123600_4_10_0_inwestowaæ_to invest
-20220915123709_4_10_1_Musi pan zap³aciæ prowizjê od czeku_you have to pay a commission on the cheque
-20220915123822_4_10_0_ryzykowny_risky
-20220915123903_4_10_0_ryzykowaæ_to risk
-20220915200414_4_10_0_strata_a loss
-20220915200447_4_10_0_ruina_ruin
-20220915200518_4_10_0_rujnowaæ_to ruin
-20220915200550_4_10_1_dociekliwy_inquisitive
-20220915200640_4_16_3_Da³ sygna³ ostrzegawczy_he gave a warning signal
-20220915200731_4_10_1_inwestycja_an investment
-20220915200821_4_10_0_uczciwy_honest
-20220915200942_4_10_1_wybredny; drobiazgowy_fussy
-20220915201034_4_10_2_prowizja_a commission
-20220915201114_4_10_0_On jest naprawdê otwart¹ osob¹_he is really an outgoing person
-20220915201328_4_9_2_Musicie czêœciej wietrzyæ pokój_you must air the room more often
-20220915201437_4_9_1_Muszê zrobiæ pranie_i must do the laundry
-20220915201530_4_11_1_promieniowanie_radiation
-20220915201609_4_10_0_otwarty; towarzyski_outgoing
-20220915201754_4_10_0_Obejrzymy ten film, a potem mo¿emy coœ zjeœæ_let's see this film and afterwards we can have something to eat
-20220915201908_4_10_0_potem_afterwards
-20220915202838_4_12_1_tchórzliwy_cowardly
-20220915202915_4_10_0_wœcibski_nosy
-20220915202954_4_9_1_czajnik elektryczny_an electric kettle
-20220915203035_4_10_0_Nie jestem wybredny w jedzeniu_i am not a fussy eater
-20220915203155_4_10_0_dzieliæ (siê)_to share
-20220915203248_4_10_3_Jestem na diecie, bo chcê straciæ na wadze_i'm on a diet because i want to lose weight
-20220915203329_4_10_0_klimatyzowany_air conditioned
-20220915203438_4_10_0_klimatyzacja_air conditioning
-20220915203523_4_10_0_syk_a hiss
-20220915203702_4_15_6_ambicja_an ambition
-20220915203737_4_10_0_syczeæ_to hiss
-20220915203844_4_10_2_czêstotliwoœæ_a frequency
-20220915203917_4_10_0_Ona mamrocze we œnie_she murmurs in her sleep
-20220915204003_4_11_2_handel futrami; handel skórami_the fur trade
-20220915204128_4_10_0_mruczeæ; szemraæ_to murmur
-20220915204215_4_10_0_przytulny pokój_a cosy room
-20220915204402_4_10_0_Czy ju¿ sp³aci³eœ d³ugi?_have you repaid your debts yet
-20220915204523_4_10_1_tchórz_a coward
-20220915204725_4_10_0_czêsto_frequently
-20220915204928_4_10_0_Jest zbyt tchórzliwy, by zrealizowaæ (wszystkie) swoje ambicje_he is too cowardly to realize all his ambitions
-20220915205101_4_17_6_Musisz to wzi¹æ pod uwagê_you need to take it into account
-20220915205337_4_12_3_Jest pan zobowi¹zany wype³niæ deklaracjê podatkow¹_you are obliged to complete a tax declaration
-20220915205435_4_13_1_policzek_a cheek
-20220915205606_4_12_2_obci¹¿aæ kosztami_to charge
-20220915205714_4_13_2_gwizdaæ_to whistle
-20220915205829_4_10_0_po¿yczka_a loan
-20220915205927_4_10_1_przeciwdzia³aæ_to counteract
-20220915210035_4_13_2_Kupi³em ten obraz na aukcji_i have bought this painting at auction
-20220915210356_4_10_1_opodatkowanie_taxation
-20220915210531_4_11_1_chrupaæ; skrzypieæ (pod nogami)_to crunch
-20220915210625_4_10_0_opodatkowaæ; na³o¿yæ akcyzê_to tax
-20220915210743_4_10_1_przechwalaæ siê_to boast
-20220915210927_4_10_0_rozs¹dny ch³opiec_a sensible boy
-20220915211020_4_23_7_Przelejê 100$ na twoje konto_i will transfer 100$ to your account
-20220915211157_4_10_2_przeciwdzia³anie_a counteraction
-20220915211318_4_8_2_ubezpieczenie_insurance
-20220915211517_4_13_1_wp³acaæ (pieni¹dze na konto)_to deposit
-20220915211657_4_12_2_Podj¹³em pieni¹dze z konta_i made a withdrawal from my account
-20220915211726_4_10_1_nadopiekuñczy_overprotective
-20220915211913_4_10_1_Mo¿emy przyj¹æ to za pewnik_we can take it for granted
-20220915212003_4_10_1_udzielaæ; przyznawaæ_to grant
-20220915212105_4_10_4_Udzieli³ klientom rabatu na ksi¹¿ki_he offered a discount on books to the customers
-20220915212220_4_10_1_wolny od op³at_free of charge
-20220915212315_4_11_2_spadek wartoœci dolara_a fall in the value of the dollar
-20220915212524_4_10_0_stypendium; bezzwrotna pomoc finansowa_a grant
-20220915212643_4_10_0_nale¿noœæ; op³ata_a charge
-20220915212931_4_12_1_Przewa¿nie s³uchamy muzyki rockowej_we mostly listen to rock music
-20220915213047_4_11_2_zaliczka_a deposit
-20220915213145_4_10_0_osi¹gnêliœmy zysk_we have made a profit
-20220915213722_4_10_0_zysk; korzyœæ_a profit
-20220915213821_4_10_1_udzia³; akcja_a share
-20220915213930_4_10_2_wartoœæ_a value
-20220915214035_4_11_2_pluskaæ_to splash
-20220915214326_4_10_0_kapita³_capital
-20220915214441_4_11_3_mrowisko_an anthill
-20220915214629_4_11_3_Wp³aci³ zaliczkê na samochód_he put down a deposit on a car
-20220915214716_4_10_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
-20220915215151_4_10_1_sprzedawaæ na aukcji; licytowaæ_to auction
-20220915215429_4_13_1_niezbêdny_essential
-20220915215740_4_17_2_deklaracja_a declaration
-20220916144502_4_10_3_wartoœciowy_valuable
-20220916144638_4_10_0_aukcja; licytacja_an auction
-20220916144754_4_10_0_podjêcie (pieniêdzy z banku)_a withdrawal
-20220916144849_4_10_2_finansowy_financial
-20220916145017_4_11_1_plusk_a splash
-20220916145047_4_10_0_podejmowaæ (pieni¹dze z banku)_to withdraw
-20220916145718_4_12_7_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
-20220916145808_4_10_2_oszczêdzaæ_to economize
-20220916150004_4_10_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
-20220916150059_4_10_0_konto; rachunek_an account
-20220916150156_4_9_3_S¹ podobni z wygl¹du_they are similar in appearance
-20220916150321_4_10_0_doradca finansowy_a financial adviser
-20220916150540_4_10_2_Zwlekali z zap³at¹_they were delaying payment
-20220916150632_4_8_1_s³oik d¿emu_a jar of jam
-20220916150723_4_10_1_na twój koszt_at your own expense
-20220916150842_4_10_2_wyj¹tkowoœæ, unikalnoœæ_uniqueness
-20220916151050_4_10_0_finanse; œrodki finansowe_finance
-20220916151147_4_10_0_finansowaæ_to finance
-20220916151248_4_10_0_Oszczêdzam na jedzeniu_i economize on food
-20220916151413_4_10_1_Studiujê finanse_i study finance
-20220916151449_4_10_1_raczej_rather
-20220916151636_4_14_2_Dmuchn¹³em w gwizdek_i blew a whistle
-20220916151742_4_10_3_Coraz wiêcej ludzi cierpi na depresjê_more and more people suffer from depression
-20220916151833_4_16_0_Nie b¹dŸ dla mnie taki niedobry!_don't be so mean to me
-20220916151919_4_16_1_nie by³oby to mo¿liwe_it would not be possible
-20220916151953_4_16_0_zorganizowany; uporz¹dkowany_organized
-20220916152047_4_15_2_organizator_an organizer
-20220916152138_4_13_2_Pocz¹tkowo myœla³em, ¿e..._at first i thought that
-20220916152313_4_14_2_pesymizm_pessimism
-20220916152400_4_11_1_che³pliwy_boastful
-20220916152446_4_16_0_rzetelny; niezawodny_reliable
-20220916152637_4_13_2_ostateczna decyzja_the final decision
-20220916152722_4_4_0_parszywy, wstrêtny_lousy
-20220916152808_4_4_0_Powodzenia!_Good luck
-20220916152851_4_9_1_tatua¿_a tattoo
-20220916153049_4_4_0_Mam chore kolana_I've got bad knees
-20220916153211_4_4_0_prawnik, adwokat_a lawyer
-20220916153305_4_11_1_chrupanie_a crunch
-20220916153436_4_4_0_tablica rejestracyjna_a licence plate
-20220916153526_4_4_0_Ty nêdzna kupo gówna! [Ty marny zasrañcu!]_You miserable piece of shit
-20220915113538_5_11_0_komoda_a chest of drawers
-20220915113626_5_11_0_szuflada_a drawer
-20220915113736_5_7_1_ubezpieczenie zdrowotne_health insurance
-20220915113809_5_11_1_czaszka_a skull
-20220915113852_5_11_0_niedojrza³y_immature
-20220915113920_5_11_0_dojrza³y_mature
-20220915114007_5_9_3_Wzi¹³em to pod uwagê_i took it into consideration
-20220915114045_5_11_0_szczekanie_a bark
-20220915114140_5_11_2_doszlifujmy informacje_let's polish the information
-20220915114242_5_11_0_szczekaæ_to bark
-20220915114332_5_11_1_ogrzewaæ_to heat
-20220915114442_5_11_0_ceg³a_a brick
-20220915114514_5_7_1_krwawienie; krwotok_bleeding
-20220915114630_5_11_0_korytarz_a corridor
-20220915114726_5_7_1_banda¿_a bandage
-20220915114808_5_11_0_klatka schodowa_a staircase
-20220915115000_5_17_2_Znalaz³ odwagê, by wyjechaæ_he found the courage to leave
-20220915115045_5_11_0_centralne ogrzewanie_central heating
-20220915115145_5_11_0_ogrzewanie_heating
-20220915115231_5_12_3_On ma agresywny sposób bycia_he has an aggressive manner
-20220915115314_5_11_1_murarz_a bricklayer
-20220915115419_5_15_2_Wyjadê dopiero jutro_i am not going until tomorrow
-20220915115458_5_8_2_Ten produkt jest wart swojej ceny_this product is good value
-20220915115603_5_11_0_Chcia³bym wynaj¹æ mieszkanie_i would like to rent a flat
-20220915115642_5_8_1_paragon_a receipt
-20220915115735_5_6_1_talia kart_a deck of cards
-20220915115849_5_6_1_kufel piwa_a pint of beer
-20220915115945_5_11_0_czynsz_a rent
-20220915120030_5_8_2_Te buty s¹ ju¿ wyprzedane_These shoes are already out of stock
-20220915120108_5_11_0_wynajmowaæ (od kogoœ)_to rent
-20220915120310_5_11_0_wanna_a bath
-20220915120432_5_11_0_Krzyczeli o pomoc_they were screaming for help
-20220915120621_5_13_3_podobny_similar
-20220915120717_5_11_0_wrzeszczeæ; krzyczeæ_to scream
-20220915120823_5_13_1_wczorajszy_yesterday's
-20220915120938_5_10_3_Pakt Pó³nocnoatlantycki NATO_North Atlantic Treaty Organization
-20220915121036_5_11_0_zmys³; poczucie_a sense
-20220915122751_5_11_0_w miêdzyczasie_in the meantime
-20220915122838_5_11_0_zlewozmywak_a sink
-20220915122925_5_11_0_gwizd; gwizdek_a whistle
-20220915123125_5_10_1_to pozwala nam..._it allows us
-20220915123159_5_11_0_dobosz_a drummer
-20220915123239_5_11_0_bêben_a drum
-20220915123430_5_11_0_bêbniæ_to drum
-20220915123525_5_11_0_taras_a terrace
-20220915123712_5_11_0_zamek (w drzwiach)_a lock
-20220915123827_5_12_1_natychmiastowy_immediate
-20220915123906_5_11_0_zamykaæ (na klucz)_to lock
-20220915200419_5_11_0_narz¹d; organ_an organ
-20220915200449_5_11_0_sygna³_a signal
-20220915200520_5_11_0_ty³ek_a bottom
-20220915200601_5_11_1_Podjêliœmy natychmiastowe dzia³anie_we took immediate action
-20220915200643_5_11_0_jutrzejszy_tomorrow's
-20220915200744_5_10_2_przeszed³em zabieg_i underwent minor surgery
-20220915200826_5_11_0_dzisiejszy_today's
-20220915200946_5_12_1_nieskromny_immodest
-20220915201036_5_11_1_¿y³a_a vein
-20220915201120_5_12_1_skromny_modest
-20220915201339_5_11_0_Jest tu¿ po drugiej_it is just after two
-20220915201444_5_11_0_tu¿ po_just after
-20220915201536_5_11_1_Mia³ wodê w p³ucach_he had water in his lungs
-20220915201614_5_7_2_kostka myd³a_a bar of soap
-20220915201801_5_11_0_natychmiast_immediately
-20220915201911_5_11_1_skromnoœæ_modesty
-20220915202849_5_7_1_Z lodem czy bez?_With or without ice?
-20220915202919_5_11_1_dopiero_not...until
-20220915203050_5_7_1_Ilu masz braci?_How many brothers do you have?
-20220915203158_5_11_0_rak p³uc_lung cancer
-20220915203250_5_11_0_p³uco_a lung
-20220915203335_5_11_1_Ona dzia³a mi na nerwy_she gets on my nerves
-20220915203449_5_7_1_paczka papierosów_a pack of cigarettes
-20220915203525_5_11_0_nadgarstek_a wrist
-20220915203705_5_11_0_z³amane ¿ebro_a broken rib
-20220915203748_5_14_1_deklarowaæ; zg³aszaæ_to declare
-20220915203846_5_11_0_¿ebro_a rib
-20220915203919_5_11_0_nerw_a nerve
-20220915204028_5_8_6_Jestem uczulony na py³ki traw_i'm allergic to pollen from grass
-20220915204135_5_11_2_w³aœciciel mieszkania (wynajmuj¹cy je innym)_a landlord
-20220915204221_5_11_1_podwójny podbródek_a double chin
-20220915204414_5_11_0_Zabijaliœmy czas, graj¹c w karty_we passed the time playing cards
-20220915204529_5_11_0_Czas mija powoli_time passes slowly
-20220915204727_5_11_0_mijaæ (o czasie)_to pass
-20220915204939_5_15_3_Jestem mu winien ogromn¹ iloœæ pieniêdzy_i owe him a great deal of money
-20220915205108_5_11_0_najnowsze wiadomoœci_the latest news
-20220915205343_5_11_0_ostatni; najnowszy_the latest
-20220915205437_5_11_0_ostatnio_lately
-20220915205615_5_11_0_dziecinne zachowanie_childish behaviour
-20220915205717_5_11_0_dziecinny_childish
-20220915205831_5_11_0_broda; podbródek_a chin
-20220915205929_5_11_0_w¹troba_a liver
-20220915210040_5_11_0_odwaga_courage
-20220915210359_5_10_1_ma³pa (cz³ekokszta³tna)_an ape
-20220915210537_5_11_0_Skrêci³em kostkê_i have twisted my ankle
-20220915210628_5_11_0_kostka_an ankle
-20220915210748_5_16_6_dra¿liwy_bad tempered
-20220915210930_5_11_0_tu¿ przed_nearly
-20220915211025_5_11_0_ocieplenie_warming
-20220915211200_5_11_0_ocieplaæ (siê)_to warm
-20220915211325_5_11_2_przetwarzanie na surowce wtórne; recykling_recycling
-20220915211520_5_11_0_kwaœny deszcz_acid rain
-20220915211659_5_11_0_kwaœny_acid
-20220915211731_5_8_2_[slang] This burger smells ... (suspicious). I'm not eating it!_dodgy
-20220915211920_5_11_1_Jest tu¿ przed ósm¹_it is nearly eight
-20220915212007_5_8_2_rainy = ... (deszczowo)_drizzly
-20220915212112_5_11_1_globalne ocieplenie_global warming
-20220915212229_5_14_2_umywalka (pe³na nazwa)_a washbasin
-20220915212318_5_11_0_kwas_an acid
-20220915212529_5_13_1_dojrza³oœæ_maturity
-20220915212941_5_11_0_odpady radioaktywne_radioactive waste
-20220915213052_5_11_0_radioaktywny_radioactive
-20220915213649_5_15_1_powy¿ej_above
-20220915213737_5_18_4_coraz czêœciej_with increasing frequently
-20220915213825_5_11_0_przetwarzaæ na surowce wtórne_to recycle
-20220915214206_5_11_0_efekt cieplarniany_the greenhouse effect
-20220915214328_5_11_1_bzyczeæ; buczeæ_to buzz
-20220915214444_5_11_0_szklarnia_a greenhouse
-20220915214631_5_11_0_spaliny_fumes
-20220915214726_5_10_3_zadowalaæ; zaspokajaæ_to satisfy
-20220915215432_5_11_1_piwnica_a cellar
-20220915215742_5_11_0_dymiæ_to fume
-20220916144506_5_14_2_ryzykowny interes_a risky business
-20220916144642_5_11_0_tymczasowa praca_a temporary job
-20220916144758_5_11_0_przejœciowy; tymczasowy_temporary
-20220916144908_5_12_3_Przyk³ady poni¿ej powinny wygl¹daæ znajomo_the examples below should look familiar to you
-20220916145019_5_12_1_szczêka_a jaw
-20220916145054_5_11_0_T³um zabucza³ (np. na stadionie)_the crowd buzzed
-20220916145724_5_11_0_Pszczo³y brzêcza³y_bees were buzzing
-20220916145811_5_13_1_sufit_a ceiling
-20220916150006_5_10_1_rekin_a shark
-20220916150103_5_12_1_zobowi¹zanie_an obligation
-20220916150208_5_11_0_Rozmawialiœmy szeptem_we talked in whispers
-20220916150326_5_14_2_ruina gospodarcza_economic ruin
-20220916150544_5_11_1_promieniowaæ_to radiate
-20220916150638_5_12_2_kurek z ciep³¹ wod¹_a hot tap
-20220916150729_5_10_1_robaczywy_wormy
-20220916150845_5_11_0_szept_a whisper
-20220916151052_5_11_0_szeptaæ_to whisper
-20220916151152_5_10_1_robaczywe jab³ko_a wormy apple
-20220916151250_5_11_0_przewa¿nie_mostly
-20220916151415_5_11_0_sta³y; ci¹g³y_constant
-20220916151506_5_11_1_pozbawiony ambicji_unambitious
-20220916151641_5_10_2_uczulenie; alergia_an allergy
-20220916151745_5_13_2_wrzask; krzyk_a scream
-20220916151837_5_9_2_obni¿aæ cenê_to discount
-20220916151922_5_11_0_byæ winnym (pieni¹dze)_to owe
-20220916151958_5_11_0_zobowi¹zywaæ_to oblige
-20220916152051_5_11_0_umywalka (skrót)_a basin
-20220916152141_5_12_2_œrednia (rzecz.)_an average
-20220916152318_5_11_0_ambitny_ambitious
-20220916152404_5_17_0_niemniej jednak_nonetheless
-20220916152455_5_13_2_Ona jest bardzo powœci¹gliw¹ kobiet¹_she is a very reserved woman
-20220916152643_5_17_0_mimo ¿e; chocia¿_although
-20220916152724_5_17_0_poni¿ej_below
-20220916152812_5_9_1_produkt; artyku³_a product
-20220916152853_5_10_1_weterynarz (skrót)_a vet
-20220916153121_5_11_2_By³ bardzo przygnêbiony tymi nieszczêœciami_he was very depressed about these misfortunes
-20220916153213_5_17_0_do tej pory; dotychczas_so far
-20220916153308_5_17_1_sk³adniki_ingredients
-20220916153439_5_17_0_koszty_expenses
+20220917101414_0_12_0_komoda_a chest of drawers
+20220917101715_0_12_0_szuflada_a drawer
+20220917101759_0_8_1_ubezpieczenie zdrowotne_health insurance
+20220917101939_0_12_1_czaszka_a skull
+20220917102024_0_12_0_niedojrza³y_immature
+20220917102120_0_12_0_dojrza³y_mature
+20220917102317_0_10_3_Wzi¹³em to pod uwagê_i took it into consideration
+20220917102410_0_12_0_szczekanie_a bark
+20220917102442_0_12_2_doszlifujmy informacje_let's polish the information
+20220917102641_0_12_0_szczekaæ_to bark
+20220917102802_0_12_0_ceg³a_a brick
+20220917102858_0_8_1_krwawienie; krwotok_bleeding
+20220917102925_0_12_0_korytarz_a corridor
+20220917103016_0_8_1_banda¿_a bandage
+20220917103046_0_12_0_klatka schodowa_a staircase
+20220917103124_0_18_2_Znalaz³ odwagê, by wyjechaæ_he found the courage to leave
+20220917103144_0_12_0_centralne ogrzewanie_central heating
+20220917103216_0_12_0_ogrzewanie_heating
+20220917103249_0_13_3_On ma agresywny sposób bycia_he has an aggressive manner
+20220917103310_0_12_1_murarz_a bricklayer
+20220917103412_0_9_2_Ten produkt jest wart swojej ceny_this product is good value
+20220917103453_0_12_0_Chcia³bym wynaj¹æ mieszkanie_i would like to rent a flat
+20220917103517_0_9_1_paragon_a receipt
+20220917103544_0_7_1_talia kart_a deck of cards
+20220917103639_0_7_1_kufel piwa_a pint of beer
+20220917103702_0_12_0_czynsz_a rent
+20220917103732_0_9_2_Te buty s¹ ju¿ wyprzedane_These shoes are already out of stock
+20220917103827_0_12_0_wynajmowaæ (od kogoœ)_to rent
+20220917103903_0_12_0_wanna_a bath
+20220917103930_0_12_0_Krzyczeli o pomoc_they were screaming for help
+20220917103957_0_14_3_podobny_similar
+20220917104021_0_12_0_wrzeszczeæ; krzyczeæ_to scream
+20220917104107_0_14_1_wczorajszy_yesterday's
+20220917104203_0_11_3_Pakt Pó³nocnoatlantycki NATO_North Atlantic Treaty Organization
+20220917104241_0_12_0_zmys³; poczucie_a sense
+20220917104258_0_12_0_w miêdzyczasie_in the meantime
+20220917104338_0_12_0_zlewozmywak_a sink
+20220917104436_0_12_0_gwizd; gwizdek_a whistle
+20220917104500_0_11_1_to pozwala nam..._it allows us
+20220917104534_0_12_0_dobosz_a drummer
+20220917104602_0_12_0_bêben_a drum
+20220917104658_0_12_0_bêbniæ_to drum
+20220917104721_0_12_0_taras_a terrace
+20220917104751_0_12_0_zamek (w drzwiach)_a lock
+20220917104820_0_13_1_natychmiastowy_immediate
+20220917104948_0_12_0_zamykaæ (na klucz)_to lock
+20220917105016_0_12_0_narz¹d; organ_an organ
+20220917105032_0_12_0_sygna³_a signal
+20220917105054_0_12_0_ty³ek_a bottom
+20220917105123_0_12_1_Podjêliœmy natychmiastowe dzia³anie_we took immediate action
+20220917105422_0_11_2_przeszed³em zabieg_i underwent minor surgery
+20220917105626_0_12_0_dzisiejszy_today's
+20220917105717_0_13_1_nieskromny_immodest
+20220917105747_0_12_1_¿y³a_a vein
+20220917105847_0_13_1_skromny_modest
+20220917105938_0_12_0_Jest tu¿ po drugiej_it is just after two
+20220917110007_0_12_0_tu¿ po_just after
+20220917110043_0_12_1_Mia³ wodê w p³ucach_he had water in his lungs
+20220917110137_0_8_2_kostka myd³a_a bar of soap
+20220917110217_0_12_0_natychmiast_immediately
+20220917110404_0_12_1_skromnoœæ_modesty
+20220917110440_0_8_1_Z lodem czy bez?_With or without ice?
+20220917110529_0_12_1_dopiero_not...until
+20220917110616_0_8_1_Ilu masz braci?_How many brothers do you have?
+20220917110710_0_12_0_rak p³uc_lung cancer
+20220917110827_0_12_0_p³uco_a lung
+20220917111005_0_12_1_Ona dzia³a mi na nerwy_she gets on my nerves
+20220917111103_0_8_1_paczka papierosów_a pack of cigarettes
+20220917111129_0_12_0_nadgarstek_a wrist
+20220917111223_0_12_0_z³amane ¿ebro_a broken rib
+20220917111300_0_15_1_deklarowaæ; zg³aszaæ_to declare
+20220917111412_0_12_0_¿ebro_a rib
+20220917111528_0_12_0_nerw_a nerve
+20220917111618_0_9_6_Jestem uczulony na py³ki traw_i'm allergic to pollen from grass
+20220917111706_0_12_2_w³aœciciel mieszkania (wynajmuj¹cy je innym)_a landlord
+20220917111809_0_12_1_podwójny podbródek_a double chin
+20220917111857_0_12_0_Zabijaliœmy czas, graj¹c w karty_we passed the time playing cards
+20220917111926_0_12_0_Czas mija powoli_time passes slowly
+20220917111949_0_12_0_mijaæ (o czasie)_to pass
+20220917112031_0_16_3_Jestem mu winien ogromn¹ iloœæ pieniêdzy_i owe him a great deal of money
+20220917112109_0_12_0_najnowsze wiadomoœci_the latest news
+20220918115612_0_12_0_ostatni; najnowszy_the latest
+20220918115635_0_12_0_ostatnio_lately
+20220918115752_0_12_0_dziecinne zachowanie_childish behaviour
+20220918115823_0_12_0_dziecinny_childish
+20220918115854_0_12_0_broda; podbródek_a chin
+20220918115959_0_12_0_w¹troba_a liver
+20220918120100_0_12_0_odwaga_courage
+20220918120128_0_11_1_ma³pa (cz³ekokszta³tna)_an ape
+20220918122322_0_12_0_kostka_an ankle
+20220918122517_0_17_6_dra¿liwy_bad tempered
+20220918122632_0_12_0_tu¿ przed_nearly
+20220918122656_0_12_0_ocieplenie_warming
+20220918123548_0_12_0_ocieplaæ (siê)_to warm
+20220918123749_0_12_0_kwaœny deszcz_acid rain
+20220918123848_0_12_0_kwaœny_acid
+20220918124138_0_9_2_[slang] This burger smells ... (suspicious). I'm not eating it!_dodgy
+20220918124211_0_12_1_Jest tu¿ przed ósm¹_it is nearly eight
+20220918124302_0_9_2_rainy = ... (deszczowo)_drizzly
+20220918124406_0_12_1_globalne ocieplenie_global warming
+20220918124453_0_15_2_umywalka (pe³na nazwa)_a washbasin
+20220918124522_0_12_0_kwas_an acid
+20220918124554_0_14_1_dojrza³oœæ_maturity
+20220918124631_0_12_0_odpady radioaktywne_radioactive waste
+20220918124731_0_12_0_radioaktywny_radioactive
+20220918124802_0_16_1_powy¿ej_above
+20220918124903_0_19_4_coraz czêœciej_with increasing frequently
+20220918124941_0_12_0_przetwarzaæ na surowce wtórne_to recycle
+20220918125022_0_12_0_efekt cieplarniany_the greenhouse effect
+20220918125102_0_12_1_bzyczeæ; buczeæ_to buzz
+20220918125144_0_12_0_szklarnia_a greenhouse
+20220918125217_0_12_0_spaliny_fumes
+20220918125303_0_11_3_zadowalaæ; zaspokajaæ_to satisfy
+20220918125422_0_12_1_piwnica_a cellar
+20220918131023_0_15_2_ryzykowny interes_a risky business
+20220918131113_0_12_0_tymczasowa praca_a temporary job
+20220918131223_0_12_0_przejœciowy; tymczasowy_temporary
+20220918131754_0_13_3_Przyk³ady poni¿ej powinny wygl¹daæ znajomo_the examples below should look familiar to you
+20220918131851_0_13_1_szczêka_a jaw
+20220918131923_0_12_0_T³um zabucza³ (np. na stadionie)_the crowd buzzed
+20220918131957_0_12_0_Pszczo³y brzêcza³y_bees were buzzing
+20220918132022_0_14_1_sufit_a ceiling
+20220918132221_0_13_1_zobowi¹zanie_an obligation
+20220918132313_0_12_0_Rozmawialiœmy szeptem_we talked in whispers
+20220918132422_0_15_2_ruina gospodarcza_economic ruin
+20220918132541_0_12_1_promieniowaæ_to radiate
+20220918132727_0_13_2_kurek z ciep³¹ wod¹_a hot tap
+20220918132857_0_11_1_robaczywy_wormy
+20220918132953_0_12_0_szept_a whisper
+20220918133020_0_12_0_szeptaæ_to whisper
+20220918133115_0_11_1_robaczywe jab³ko_a wormy apple
+20220918133149_0_12_0_przewa¿nie_mostly
+20220918133206_0_12_0_sta³y; ci¹g³y_constant
+00000000000000_0_0_0_On jest lekko ranny._He's slightly injured
+20220918133614_0_12_1_pozbawiony ambicji_unambitious
+20220918133724_0_11_2_uczulenie; alergia_an allergy
+20220918133810_0_14_2_wrzask; krzyk_a scream
+20220918133900_0_10_2_obni¿aæ cenê_to discount
+20220918133930_0_12_0_byæ winnym (pieni¹dze)_to owe
+20220918134555_0_12_0_zobowi¹zywaæ_to oblige
+20220918134641_0_12_0_umywalka (skrót)_a basin
+20220918134830_0_13_2_œrednia (rzecz.)_an average
+20220918134856_0_12_0_ambitny_ambitious
+20220918135003_0_18_0_niemniej jednak_nonetheless
+20220918135304_0_18_0_mimo ¿e; chocia¿_although
+20220918135344_0_18_0_poni¿ej_below
+20220918135424_0_10_1_produkt; artyku³_a product
+20220918135513_0_11_1_weterynarz (skrót)_a vet
+20220918135633_0_12_2_By³ bardzo przygnêbiony tymi nieszczêœciami_he was very depressed about these misfortunes
+20220918140001_0_18_1_sk³adniki_ingredients
+20220918140118_0_18_0_koszty_expenses
+20220918140146_0_12_0_Jak na razie wszystko idzie dobrze_so far so good
+20220918140221_0_12_0_Dotychczas otrzyma³em dwa listy_so far i have received two letters
+20220918140245_0_13_1_przelew_a transfer
+20220918140315_0_14_1_w³aœcicielka mieszkania (wynajmuj¹ca je innym)_a landlady
+20220918140345_0_12_3_nieszczêœcie; pech_a misfortune
+20220918140436_0_12_0_dotychczas_so far
+20220918140527_0_15_2_strumyk szemra³_the brook was murmuring
+20220918140703_0_10_2_Wolisz Coca-Colê czy Pepsi?_Do you prefer Coca-Cola or Pepsi?
+20220918140741_0_12_0_kurek z gazem_a gas tap
+20220918140831_0_12_0_kurek; kran_a tap
+20220918140932_0_12_2_chrapaæ_to snore
+20220918141010_0_12_0_chrapanie_a snore
+20220918141049_0_12_0_nieszkodliwy dla œrodowiska_eco friendly
+20220918141119_0_12_0_inwestor_an investor
+20220918141157_0_12_1_kurki z ciep³¹ i zimn¹ wod¹_the hot and cold taps
+20220918141310_0_19_8_przera¿aæ_to horrify
+20220918141420_0_12_0_inwestowaæ_to invest
+20220918141454_0_12_1_Musi pan zap³aciæ prowizjê od czeku_you have to pay a commission on the cheque
+20220918141516_0_12_0_ryzykowny_risky
+20220918141655_0_12_0_ryzykowaæ_to risk
+20220918141731_0_12_0_strata_a loss
+20220918141812_0_12_0_ruina_ruin
+20220918142130_0_12_0_rujnowaæ_to ruin
+20220919174311_0_12_1_dociekliwy_inquisitive
+20220919174351_0_18_3_Da³ sygna³ ostrzegawczy_he gave a warning signal
+20220919174421_0_12_1_inwestycja_an investment
+20220919174517_0_12_0_uczciwy_honest
+20220919174635_0_12_1_wybredny; drobiazgowy_fussy
+20220919174711_0_12_0_On jest naprawdê otwart¹ osob¹_he is really an outgoing person
+20220919174800_0_11_2_Musicie czêœciej wietrzyæ pokój_you must air the room more often
+20220919174848_0_11_1_Muszê zrobiæ pranie_i must do the laundry
+20220919175003_0_13_1_promieniowanie_radiation
+20220919175054_0_12_0_otwarty; towarzyski_outgoing
+20220919175147_0_12_0_Obejrzymy ten film, a potem mo¿emy coœ zjeœæ_let's see this film and afterwards we can have something to eat
+20220919175304_0_12_0_potem_afterwards
+20220919175333_0_14_1_tchórzliwy_cowardly
+20220919175451_0_12_0_wœcibski_nosy
+20220919175556_0_11_1_czajnik elektryczny_an electric kettle
+20220919175746_0_12_0_Nie jestem wybredny w jedzeniu_i am not a fussy eater
+20220919175826_0_12_0_dzieliæ (siê)_to share
+20220919180033_0_12_3_Jestem na diecie, bo chcê straciæ na wadze_i'm on a diet because i want to lose weight
+20220919180143_0_12_0_klimatyzowany_air conditioned
+20220919180230_0_12_0_klimatyzacja_air conditioning
+20220919180311_0_12_0_syk_a hiss
+20220919180430_0_17_6_ambicja_an ambition
+20220919180509_0_12_0_syczeæ_to hiss
+20220919180633_0_12_2_czêstotliwoœæ_a frequency
+20220919180737_0_12_0_Ona mamrocze we œnie_she murmurs in her sleep
+20220919181034_0_13_2_handel futrami; handel skórami_the fur trade
+20220919181150_0_12_0_mruczeæ; szemraæ_to murmur
+20220919181335_0_12_1_tchórz_a coward
+20220919181459_0_12_0_czêsto_frequently
+20220919181552_0_19_6_Musisz to wzi¹æ pod uwagê_you need to take it into account
+20220919181920_0_14_3_Jest pan zobowi¹zany wype³niæ deklaracjê podatkow¹_you are obliged to complete a tax declaration
+20220919182002_0_15_1_policzek_a cheek
+20220919182046_0_14_2_obci¹¿aæ kosztami_to charge
+20220919182142_0_15_2_gwizdaæ_to whistle
+20220919182217_0_12_0_po¿yczka_a loan
+20220919182432_0_12_1_przeciwdzia³aæ_to counteract
+20220919182515_0_15_2_Kupi³em ten obraz na aukcji_i have bought this painting at auction
+20220919182630_0_12_1_opodatkowanie_taxation
+20220919182743_0_13_1_chrupaæ; skrzypieæ (pod nogami)_to crunch
+20220919182913_0_12_0_opodatkowaæ; na³o¿yæ akcyzê_to tax
+20220919183250_0_12_1_przechwalaæ siê_to boast
+20220919183416_0_12_0_rozs¹dny ch³opiec_a sensible boy
+20220919183611_0_12_2_przeciwdzia³anie_a counteraction
+20220920113923_0_15_1_wp³acaæ (pieni¹dze na konto)_to deposit
+20220920114217_0_14_2_Podj¹³em pieni¹dze z konta_i made a withdrawal from my account
+20220920114245_0_12_1_nadopiekuñczy_overprotective
+20220920114426_0_12_1_Mo¿emy przyj¹æ to za pewnik_we can take it for granted
+20220920114505_0_12_1_udzielaæ; przyznawaæ_to grant
+20220920114547_0_12_1_wolny od op³at_free of charge
+20220920114740_0_13_2_spadek wartoœci dolara_a fall in the value of the dollar
+20220920114821_0_12_0_stypendium; bezzwrotna pomoc finansowa_a grant
+20220920114903_0_12_0_nale¿noœæ; op³ata_a charge
+20220920115037_0_14_1_Przewa¿nie s³uchamy muzyki rockowej_we mostly listen to rock music
+20220920115156_0_13_2_zaliczka_a deposit
+20220920115236_0_12_0_osi¹gnêliœmy zysk_we have made a profit
+20220920115309_0_12_0_zysk; korzyœæ_a profit
+20220920115434_0_12_1_udzia³; akcja_a share
+20220920115516_0_12_2_wartoœæ_a value
+20220920115542_0_12_0_kapita³_capital
+20220920115621_0_13_3_mrowisko_an anthill
+20220920115754_0_13_3_Wp³aci³ zaliczkê na samochód_he put down a deposit on a car
+20220920115842_0_12_0_Inwestor wykupi³ udzia³y w spó³ce_an investor has bought shares in the company
+20220920120039_0_12_1_sprzedawaæ na aukcji; licytowaæ_to auction
+20220920120217_0_15_1_niezbêdny_essential
+20220920120334_0_19_2_deklaracja_a declaration
+20220920120400_0_12_3_wartoœciowy_valuable
+20220920120435_0_12_0_aukcja; licytacja_an auction
+20220920120518_0_12_0_podjêcie (pieniêdzy z banku)_a withdrawal
+20220920120608_0_12_2_finansowy_financial
+20220920120734_0_12_0_podejmowaæ (pieni¹dze z banku)_to withdraw
+20220920120839_0_14_7_Tym samym koñczymy nasze rozwa¿anie nad..._by this we are finishing our consideration of
+20220920120924_0_12_2_oszczêdzaæ_to economize
+20220920121006_0_12_0_Wp³aæ pieni¹dze na konto bankowe_pay money into a bank account
+20220920121134_0_12_0_konto; rachunek_an account
+20220920121201_0_11_3_S¹ podobni z wygl¹du_they are similar in appearance
+20220920121319_0_12_0_doradca finansowy_a financial adviser
+20220920121514_0_12_2_Zwlekali z zap³at¹_they were delaying payment
+20220920121612_0_10_1_s³oik d¿emu_a jar of jam
+20220920121701_0_12_1_na twój koszt_at your own expense
+20220920121851_0_12_2_wyj¹tkowoœæ, unikalnoœæ_uniqueness
+20220920121941_0_12_0_finanse; œrodki finansowe_finance
+20220920122028_0_12_0_finansowaæ_to finance
+20220920122059_0_12_0_Oszczêdzam na jedzeniu_i economize on food
+20220920122233_0_12_1_Studiujê finanse_i study finance
+20220920122355_0_12_1_raczej_rather
+20220920122510_0_16_2_Dmuchn¹³em w gwizdek_i blew a whistle
+20220920122741_0_12_3_Coraz wiêcej ludzi cierpi na depresjê_more and more people suffer from depression
+20220920122835_0_18_0_Nie b¹dŸ dla mnie taki niedobry!_don't be so mean to me
+20220920122920_0_18_1_nie by³oby to mo¿liwe_it would not be possible
+20220920123022_0_18_0_zorganizowany; uporz¹dkowany_organized
+20220920123051_0_17_2_organizator_an organizer
+20220920123149_0_15_2_Pocz¹tkowo myœla³em, ¿e..._at first i thought that
+20220920123242_0_16_2_pesymizm_pessimism
+20220920123331_0_13_1_che³pliwy_boastful
+20220920123417_0_18_0_rzetelny; niezawodny_reliable
+20220920123500_0_15_2_ostateczna decyzja_the final decision
+20220920123557_0_6_0_parszywy, wstrêtny_lousy
+20220920123856_0_6_0_Powodzenia!_Good luck
+20220920123926_0_11_1_tatua¿_a tattoo
+20220920124017_0_6_0_Mam chore kolana_I've got bad knees
+20220920124130_0_6_0_prawnik, adwokat_a lawyer
+20220920124203_0_13_1_chrupanie_a crunch
+20220920124234_0_6_0_tablica rejestracyjna_a licence plate
+20220920124312_0_6_0_Ty nêdzna kupo gówna! [Ty marny zasrañcu!]_You miserable piece of shit
+20220920124446_0_6_0_Nie moja sprawa; Nie moje zmartwienie_Not my concern
+20220920124716_0_6_0_Ty dupku!_You butthole
+20220920124823_0_17_3_Alkohol jest w Polsce wysoko opodatkowany_alcohol is heavily taxed in Poland
+20220920124918_0_6_1_prawnik, adwokat_an attorney
+20220920124947_0_12_0_Ten schemat (diagram) przedstawia..._this diagram depicts
+20220920125058_0_6_1_Cieszê siê, ¿e siê zgadzamy._Glad we're on the same page
+20220920125153_0_12_0_nieœwiadomy_unconscious
+20220920125301_0_12_0_œwiadomy_conscious
+20220920125428_0_12_1_prawie zawsze_nearly always
+20220920125502_0_13_4_zbêdny_superfluous
+20220920125558_0_14_1_Dzielê pokój z przyjació³k¹_i share the room with my friend
+20220920125705_0_13_3_Bez wzglêdu na to; niezale¿nie od tego_regardless of
+20220920125731_0_14_3_Analogicznie..._analogously
+20220920125821_0_12_2_z³oœliwy kod_a malicious code
+20220920125858_0_12_2_z³oœliwy_malicious
+20220920125931_0_18_2_Napuœci³em wody do wanny_i have run a bath
+20220920130204_0_12_6_œwiadomy wybór_a conscious choice
+20220920130249_0_13_3_szacunki_estimates
+20220920130421_0_12_1_Okazuje siê, ¿e..._it turns out that
+20220920130508_0_12_0_trójk¹t prostok¹tny_a right triangle
+20220920130553_0_11_2_zasiêgaæ porady_to consult
+20220920130655_0_12_0_W takim przypadku_in such a case
+20220920130729_0_12_1_przeciêtny, œredni_average
+20220920130801_0_12_0_Powiedzmy, ¿e..._let's say that
+20220920130925_0_12_1_W skrócie..._in a nutshell
+20220920131017_0_12_2_powstaje proste pytanie_a simple question arises
+20220920131152_0_12_0_z drugiej strony..._on the other hand
+20220920131230_0_13_2_kolej; kolejka_a turn
+20220920131406_0_12_0_z jednej strony..._on the one hand
+20220920123507_1_1_0_ostateczny termin_a deadline
+20220920123628_1_11_1_w¹tek_a thread
+20220920123809_1_1_0_Za³¹czy³em ¿yciorys_I enclosed a CV
+20220920123822_1_1_0_dokumenty_papers
+20220920123901_1_1_0_termin; okres_a term
+20220920123945_1_1_1_obowi¹zkowy; obowi¹zuj¹cy_obligatory
+20220920124034_1_1_0_rozwi¹zanie krótkoterminowe_a short-term solution
+20220920124056_1_1_0_po¿yczka d³ugoterminowa_a long-term loan
+20220920124146_1_1_1_Nie mo¿esz przekroczyæ terminu sk³adania podañ._You can't miss the deadline for applications
+20220920124207_1_12_3_Co ciekawe, ..._interestingly
+20220920124246_1_1_1_Zd¹¿y³em przed ostatecznym terminem_I met the deadline
+20220920124341_1_1_1_za³¹cznik_an enclosure
+20220920124421_1_2_1_niepewnoœæ_uncertainty
+20220920124627_1_1_0_zezwolenie (dokument)_a permit
+20220920124730_1_1_0_zezwolenie na pracê_a work permit
+20220920124846_1_1_2_za³¹czaæ_to enclose
+20220920124922_1_12_5_wp³ata; zap³ata_a payment
+20220920125011_1_1_0_Dosta³ pozwolenie na pobyt._He got permission to stay
+20220920125102_1_1_1_up³ywaæ (o terminie); wygasaæ_to expire
+20220920125121_1_1_1_wygaœniêcie_expiry
+20220920125206_1_1_1_data up³ywu wa¿noœci_the expiry date
+20220920125237_1_2_3_Cieszy³a siê powa¿aniem._She enjoyed respect
+20220920125307_1_1_1_zezwalaæ_to permit
+20220920125356_1_1_0_pieczêæ_a seal
+20220920125434_1_1_1_pozwolenie (prawo)_permission
+20220920125506_1_1_0_szczegó³_a detail
+20220920125535_1_1_0_szczegó³owy_detailed
+20220920125631_1_3_1_czêœci cia³a_parts of the body
+20220920125711_1_1_0_dodatkowy_additional
+20220920125739_1_13_2_nieœwiadomie_unconsciously
+20220920125840_1_1_0_kilka dodatkowych szczegó³ów_some additional details
+20220920125900_1_12_4_szczery; otwarty_frank
+20220920125933_1_1_1_zaklejaæ; pieczêtowaæ_to seal
+20220920130028_1_3_1_Oni mieli romans._They had an affair
+20220920130137_1_1_1_dane osobowe_personal details
+20220920130223_1_1_0_cel wizyty_a purpose of the visit
+20220920130333_1_1_0_na piœmie_in writing
+20220920130435_1_1_0_pismo rêczne_handwriting
+20220920130515_1_3_2_zaskoczenie_astonishment
+20220920130557_1_1_1_ma³¿eñski_marital
+20220920130631_1_1_1_stan cywilny_marital status
+20220920130705_1_12_4_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
+20220920130735_1_1_1_cel_a purpose
+20220920130841_1_1_1_Zrobi³ to celowo._He did it on purpose
+20220920130930_1_1_1_pismo_writing
+20220920131108_1_1_0_odrzucenie; odmowa przyjêcia_a rejection
+20220920131202_1_3_2_Czy lubisz dzieci?_Are you fond of children?
+20220920131317_1_1_0_z braku œrodków finansowych_for lack of finance
+20220920131348_1_1_1_czytelny_legible
+20220920122335_2_2_1_zazdroœciæ_to envy
+20220920122448_2_2_0_wœciek³oœæ_fury
+20220920122711_2_11_3_ubezpieczenie_insurance
+20220920122820_2_10_4_Pod tym wzglêdem... ; W tym wzglêdzie..._in this regard
+20220920122903_2_2_1_Nie zrzucaj na mnie winy za wszystkie swoje problemy!_Don't blame all your problems on me!
+20220920122925_2_2_1_irytowaæ_to annoy
+20220920122946_2_2_2_zak³opotanie; dezorientacja_confusion
+20220920123034_2_2_2_By³em zdezorientowany._I was confused
+20220920123123_2_2_1_By³em zirytowany jego zachowaniem._I was annoyed at his behaviour
+20220920123207_2_2_2_zazdrosny_envious
+20220920123316_2_16_2_jutrzejszy_tomorrow's
+20220920123400_2_2_0_pe³en szacunku_respectful
+20220920123450_2_13_4_To odpowiada...(czemuœ)_it corresponds to
+20220920123522_2_2_1_wœciek³y_furious
+20220920123636_2_2_2_irytacja_annoyance
+20220920123839_2_2_0_nieufnoœæ_distrust
+20220920123910_2_2_1_Wpad³a we wœciek³oœæ._She flew into a fury
+20220920123950_2_2_1_szacunek (do kogoœ)_respect
+20220920124105_2_2_1_pewnoœæ_certainty
+20220920124150_2_2_0_k³opot_bother
+20220920124216_2_2_1_nie ufaæ_to distrust
+20220920124249_2_2_0_wstyd_shame
+20220920124352_2_2_1_niepokoiæ; przeszkadzaæ_to bother
+20220920124425_2_3_1_problemy uczuciowe_emotional problems
+20220920124632_2_2_1_Nie rób sobie k³opotu!_Don't bother!
+20220920124756_2_2_1_wdziêcznoœæ_gratitude
+20220920124859_2_2_1_niewdziêcznoœæ_ingratitude
+20220920124925_2_2_1_zawstydzaæ_to shame
+20220920125040_2_2_2_nieufny_distrustful
+20220920125107_2_2_1_bezwstydny_shameless
+20220920125129_2_2_0_zachwyt; rozkosz_delight
+20220920125214_2_2_0_zachwycony_delighted
+20220920125242_2_2_1_wzruszaæ_to touch
+20220920125324_2_2_2_Chcia³bym wyraziæ wdziêcznoœæ..._I'd like to express my gratitude
+20220920125358_2_14_2_plusk_a splash
+20220920125447_2_2_0_radosny; szczêsliwy_joyful
+20220920125512_2_2_1_wzruszaj¹cy_touching
+20220920125542_2_2_1_wzruszaj¹ca scena_a touching scene
+20220920125637_2_2_1_zachwycaæ_to delight
+20220920125720_2_2_0_zadowolony klient_a contented customer
+20220920125745_2_3_2_czu³y; kochaj¹cy_fond
+20220920125842_2_2_1_radoœæ_joy
+20220920125903_2_6_1_relacja_relationship
+20220920130035_2_2_0_rozpacz_despair
+20220920130141_2_2_1_zadowolony_contented
+20220920130236_2_2_1_niezadowolony_discontented
+20220920130357_2_2_0_Wyrazi³em wspó³czucie._I expressed my sympathy
+20220920130439_2_2_0_obecnie_currently
+20220920130533_2_2_1_wspó³czucie; zrozumienie_sympathy
+20220920130603_2_15_5_Przestraszy³em siê_i got frightened
+20220920130633_2_2_1_urz¹d_the office
+20220920130708_2_2_1_bie¿¹cy_current
+20220920130741_2_2_2_rozpaczaæ_to despair
+20220920130846_2_2_0_obowi¹zek_an obligation
+20220920130936_2_2_1_ponaglaæ; poganiaæ_to urge
+20220920131118_2_2_2_rozpaczliwy; beznadziejny_desperate
+20220920131216_2_2_2_wspó³czuæ_to sympathize
+20220920131330_2_2_1_nagl¹ca potrzeba; krytyczna sytuacja_urgency
+20220920131352_2_2_1_pilny; nagl¹cy_urgent
+20220920115218_3_12_2_Rzeczywiœcie..._indeed
+20220920115257_3_9_0_zakres_a range
+20220920115404_3_12_5_to jest nieistotne_it is irrelevant
+20220920115503_3_9_0_! (wykrzyknik)_an exclamation mark
+20220920115532_3_11_2_warunki wstêpne_preconditions
+20220920115607_3_12_5_trójk¹t równoboczny_an equilateral triangle
+20220920115713_3_14_4_kompromis_trade off
+20220920115813_3_9_0_operacja_surgery
+20220920120020_3_11_7_wytyczne_guidelines
+20220920120201_3_9_0_chirurg_a surgeon
+20220920120311_3_9_1_wymagania_requirements
+20220920120351_3_12_1_Niestety to te¿ jest z³y pomys³_alas this is also a bad idea
+20220920120416_3_11_3_zazwyczaj_typically
+20220920120453_3_9_1_przechodziæ (operacjê, leczenie)_to undergo
+20220920120545_3_8_6_Przypadkowo rozla³em kawê._Accidentally I spilled my coffee
+20220920120635_3_13_2_oczywiœcie_of course
+20220920120720_3_16_3_Ona jest bardzo powœci¹gliw¹ kobiet¹_she is a very reserved woman
+20220920120803_3_9_1_leczyæ (o lekarzu)_to treat
+20220920120914_3_9_1_leczenie; kuracja_a treatment
+20220920120941_3_12_2_W przeciwieñstwie do..._opposite to
+20220920121049_3_9_2_chirurgiczny_surgical
+20220920121124_3_10_1_w tym przypadku_in this case
+20220920121145_3_20_1_do tej pory; dotychczas_so far
+20220920121302_3_7_2_Wiem, ¿e to trudne. (to trudne, wiem...)_It's tough. I know
+20220920121342_3_12_3_ró¿norodnoœæ_the variety
+20220920121602_3_9_1_stosowaæ_to apply
+20220920121629_3_9_0_syrop_syrup
+20220920121729_3_13_2_zwrot pieniêdzy; sp³ata_a repayment
+20220920121800_3_9_1_stosowanie; zastosowanie_an application
+20220920121930_3_9_0_syrop na kaszel_cough syrup
+20220920122012_3_8_2_W¹tpiê!_I doubt it
+20220920122048_3_9_1_maœæ_an ointment
+20220920122221_3_14_1_na tarasie_on the terrace
+20220920122343_3_14_4_z grubsza mówi¹c_roughly speaking
+20220920122451_3_13_4_odrzucanie_discarding
+20220920122714_3_9_0_wymiotowaæ_to vomit
+20220920122826_3_13_3_czytelne dla cz³owieka_human readable
+20220920122907_3_12_2_..., który zawiera_that contains
+20220920122929_3_9_1_zatrucie_a poisoning
+20220920123011_3_9_11_Zobaczmy, co powinniœmy z tym zrobiæ_let's see what we should do about that
+20220920123040_3_13_3_jednorazowa maszynka do golenia_a disposable razor
+20220920123125_3_9_0_biæ; uderzaæ_to beat
+20220920123222_3_12_3_w³aœciwy_appropriate
+20220920123319_3_16_3_udzia³owiec; akcjonariusz_a shareholder
+20220920123404_3_12_2_kontroler biletów_a ticket collector
+20220920123452_3_9_0_bicie; uderzenie_a beat
+20220920123531_3_9_0_bicie serca_heartbeat
+20220920123641_3_9_1_zatrucie pokarmowe_food poisoning
+20220920123841_3_12_3_wynajmowaæ (komuœ)_to let
+20220920123915_3_12_2_szczerze; otwarcie_frankly
+20220920123955_3_9_0_przytomny_conscious
+20220920124108_3_15_4_przygnêbiaæ_to depress
+20220920124152_3_14_1_sygnalizowaæ_to signal
+20220920124219_3_9_0_nieprzytomny_unconscious
+20220920124257_3_9_0_transfuzja krwi_a transfusion
+20220920124355_3_13_3_Zasadniczo..._basically
+20220920124430_3_13_2_cierpliwoœæ_patience
+20220920124706_3_9_1_Straci³ przytomnoœæ (po tym jak upad³ lub uderzy³ siê w coœ)_he knocked himself unconscious
+20220920124759_3_3_0_uczucia_feelings
+20220920124902_3_3_0_ekologia_an ecology
+20220920124931_3_16_2_produkty nieszkodliwe dla œrodowiska_eco friendly products
+20220920125043_3_3_0_dŸwiêki_sounds
+20220920125130_3_3_0_czas_time
+20220920125219_3_3_0_charakter i osobowoœæ_character and personality
+20220920125246_3_3_0_emocja; uczucie_an emotion
+20220920125330_3_13_3_rozs¹dny_sensible
+20220920125400_3_3_0_randka_a date
+20220920125451_3_7_2_Jest tu kto?_Anybody here?
+20220920125544_3_3_0_kochanek; mi³oœnik_a lover
+20220920125642_3_3_0_Oni s¹ kochankami._They are lovers
+20220920125724_3_3_0_mi³oœnik sztuki_an art lover
+20220920125747_3_3_1_emocjonalny; uczuciowy_emotional
+20220920125846_3_3_1_randka w ciemno_a blind date
+20220920125912_3_3_1_biuro matrymonialne_a dating agency
+20220920130039_3_3_1_romans_an affair
+20220920130147_3_7_1_Sprawy wymknê³y siê spod kontroli._Things got out of hand
+20220920130239_3_14_1_przytulny pokój_a cosy room
+20220920130402_3_3_1_kochaj¹cy ojciec_a fond father
+20220920130442_3_12_3_mam do czynienia_i have to deal
+20220920130535_3_10_1_zatruwaæ_to poison
+20220920130641_3_29_10_Przelejê 100$ na twoje konto_i will transfer 100$ to your account
+20220920130711_3_3_1_ukochany_beloved
+20220920130747_3_3_0_zak³opotaæ; zdezorientowaæ_to confuse
+20220920130856_3_3_1_zadziwiaæ; zaskakiwaæ_to astonish
+20220920130945_3_3_0_zazdroœæ_envy
+20220920131136_3_3_1_Byliœmy zaskoczeni jego sukcesem._We were astonished at his success
+20220920131219_3_3_0_obwiniaæ; zrzucaæ winê_to blame
+20220920131337_3_7_1_teœciowa_a mother in law
+20220920131355_3_3_0_wina_blame
+20220919174455_4_6_1_ziêæ_a son in law
+20220919174623_4_13_3_Ubrania le¿a³y w nie³adzie_the clothes were lying in disorder
+20220919174648_4_10_0_przebieg³oœæ_slyness
+20220919174737_4_15_2_ogrzewaæ_to heat
+20220919174826_4_10_1_cecha_a characteristic
+20220919174955_4_10_1_uzasadnij swoj¹ odpowiedŸ_justify your answer
+20220919175030_4_11_2_urz¹dzenie_a device
+20220919175118_4_10_0_chocia¿_though
+20220919175224_4_10_0_j¹dro_a kernel
+20220919175325_4_16_0_najpierw_first
+20220919175425_4_17_1_trêbacz_a trumpeter
+20220919175533_4_18_1_wieszak na ubrania_a coat stand
+20220919175724_4_16_0_przede wszystkim_first of all
+20220919175811_4_19_3_Wyjadê dopiero jutro_i am not going until tomorrow
+20220919175903_4_16_0_koñcowy; ostateczny_final
+20220919175954_4_10_1_tak zwane ("tzw.")_so called
+20220919180056_4_16_0_w koñcu_finally
+20220919180213_4_16_1_powœci¹gliwy_reserved
+20220919180305_4_16_0_dawno_long ago
+20220919180346_4_16_0_To by³o dawno temu_it was a long time ago
+20220919180503_4_10_1_oto co musisz zrobiæ_here is what you need to do
+20220919180623_4_14_3_prowizja_a commission
+20220919180715_4_10_0_maniery_manners
+20220919181017_4_17_2_egoistyczny_egoistic
+20220919181052_4_10_1_powszechnie znany_widely known
+20220919181144_4_10_1_jego u¿ycie nie zawsze jest uzasadnione_its use is not always justified
+20220919181233_4_10_1_rozró¿niaæ_to distinguish
+20220919181329_4_10_2_najprostszym sposobem by..._the simplest way to
+20220919181443_4_6_1_pewny, przekonany_certain
+20220919181537_4_10_0_w³aœciwie_properly
+20220919181858_4_10_0_jednak¿e_however
+20220919181955_4_10_1_charakterystyczny_characteristic
+20220919182039_4_10_1_podaj pe³n¹ œcie¿kê_provide the full path
+20220919182124_4_10_0_wtedy i tylko wtedy_when and only when
+20220919182210_4_10_1_niepoprawny, b³êdny_incorrect
+20220919182415_4_10_0_charakteryzowaæ_to characterize
+20220919182500_4_10_0_miej na uwadze_bear in mind
+20220919182539_4_10_0_w sumie; podsumowuj¹c_all in all
+20220919182616_4_10_1_zadanie_a task
+20220919182733_4_4_0_Co tam? (co s³ychaæ?)_What's up?
+20220919182858_4_6_2_Dosta³ ciep³¹ posadkê w firmie swojego ojca._He got a plum job at his father's company
+20220919183229_4_6_2_Gor¹co ciê zachêcam do... (Bardzo ciê zachêcam do...)_I highly encourage you to
+20220919183402_4_4_0_Jakoœ leci! (dajê radê!)_Getting by
+20220919183553_4_4_0_Odnotowa³em._I've duly noted
+20220919183633_4_4_0_Bu³ka z mas³em! (³atwizna!)_Easy peasy
+20220920113915_4_4_0_Dotrzymaj s³owa!_Keep your word
+20220920114201_4_4_0_Nigdy nie dotrzymujesz s³owa!_You never keep your word
+20220920114238_4_10_2_powszechna praktyka_the common practice
+20220920114405_4_4_1_odnotowane (nale¿ycie zanotowane)_duly noted
+20220920114455_4_4_0_Musisz dotrzymaæ s³owa!_You have to keep your word
+20220920114538_4_4_0_Poza tym, co za ró¿nica?_Besides what's the difference?
+20220920114726_4_6_2_Nie patrz tak na mnie!_Don't look at me like that
+20220920114808_4_4_0_Potrafisz dotrzymaæ tajemnicy?_Can you keep a secret?
+20220920114853_4_4_0_Wiesz, ¿e potrafiê dochowaæ tajemnicy._You know I can keep a secret
+20220920115023_4_11_5_decyduj¹c siê na..._by opting for
+20220920115141_4_4_0_No i co? (no i co z tego?)_So what?
+20220920115229_4_14_2_Jest zbyt tchórzliwy, by zrealizowaæ (wszystkie) swoje ambicje_he is too cowardly to realize all his ambitions
+20220920115259_4_4_0_Kogo to obchodzi?_Who cares?
+20220920115407_4_4_0_Wal siê!_Screw you
+20220920115509_4_4_1_Jesteœ œwiadkiem!_You're my witness
+20220920115537_4_4_0_dowód (np. w sprawie)_an evidence
+20220920115613_4_4_0_dowiadywaæ siê_to find out
+20220920115734_4_4_2_Nie martw siê, bêdê siê streszczaæ!_Don't worry. I'll keep it short
+20220920115821_4_4_1_Skoro o tym mowa, ..._Speaking of which
+20220920120024_4_4_1_Nie ma za co._You are welcome
+20220920120206_4_4_0_Dowiedzia³em siê, ¿e..._I found out that
+20220920120314_4_4_1_Nie ma za co (nieoficjalnie)_Any time
+20220920120354_4_10_0_innymi s³owy_in other words
+20220920120419_4_10_0_to przekracza_it exceeds
+20220920120502_4_4_1_Myœlê, ¿e robisz z ig³y wid³y (myœlê, ¿e siê czepiasz)_I think you're splitting hairs
+20220920120548_4_10_0_emitowaæ; wydzielaæ_to emit
+20220920120638_4_14_5_napój_a beverage
+20220920120724_4_4_0_bukiet_a bouquet
+20220920120813_4_14_5_Udzieli³ klientom rabatu na ksi¹¿ki_he offered a discount on books to the customers
+20220920120918_4_10_0_* (symbol gwiazdki)_an asterisk
+20220920120947_4_7_1_Powa¿nie? (serio?)_Seriously?
+20220920121051_4_10_1_charakter_a character
+20220920121127_4_18_3_optymista_an optimist
+20220920121148_4_16_0_jak tylko..._as soon as
+20220920121307_4_16_0_okres; przedzia³ czasu_a period
+20220920121348_4_16_0_przez krótki okres_for a short period of time
+20220920121605_4_16_0_w ci¹gu; w obrêbie (wewn¹trz)_within
+20220920121639_4_16_0_w ci¹gu szeœciu miesiêcy_within six months
+20220920121802_4_15_3_pluskaæ_to splash
+20220920121935_4_11_2_emisja; wydzielanie_emission
+20220920122018_4_10_1_funkcja, cecha, w³aœciwoœæ_a feature
+20220920122052_4_16_0_w obrêbie murów_within the walls
+20220920122225_4_16_0_nastêpowaæ_to follow
+20220920122349_4_13_4_straszyæ_to frighten
+20220920122453_4_12_2_W rzeczywistoœci..._in fact
+20220920122717_4_16_3_pesymista_a pessimist
+20220920122829_4_16_0_nastêpny_following
+20220920122908_4_18_1_humor_humour
+20220920122931_4_20_1_poza; oprócz_besides
+20220920123018_4_11_2_po pewnym czasie praktyki_after some time of practice
+20220920123045_4_17_3_¿¹dza przygód_a sense of adventure
+20220920123133_4_12_2_..., które wskazuj¹ czy..._those indicate whether
+20220920123231_4_15_6_Kiedy udomowiono koty?_when did cats become domesticated?
+20220920123324_4_11_2_warunek_a condition
+20220920123410_4_7_1_Zaraz wracam._I'll be right back
+20220920123454_4_10_1_oœmielaæ siê; mieæ odwagê_to dare
+20220920123539_4_7_1_Nie wiem co to znaczy._I don't know what it means
+20220920123844_4_10_1_Jak œmiesz!_how dare you
+20220920123917_4_11_1_weryfikowaæ_to validate
+20220920124003_4_15_3_przetwarzanie na surowce wtórne; recykling_recycling
+20220920124113_4_11_1_poprawnoœæ_correctness
+20220920124158_4_15_2_Skrêci³em kostkê_i have twisted my ankle
+20220920124225_4_15_3_Czy ju¿ sp³aci³eœ d³ugi?_have you repaid your debts yet
+20220920124300_4_10_1_nie znosiæ_to detest
+20220920124400_4_11_1_za³ó¿my, ¿e_let's assume that
+20220920124435_4_13_2_œwiadomie_consciously
+20220920124709_4_16_5_Podobnie..._likewise
+20220920124804_4_12_2_niepodlegaj¹cy zwrotowi; bezzwrotny_non returnable
+20220920124905_4_14_1_kurek z zimn¹ wod¹_a cold tap
+20220920124934_4_11_1_oczywiste_obvious
+20220920125046_4_10_0_? (znak zapytania)_a question mark
+20220920125136_4_10_0_z wyj¹tkiem (czegoœ), poza (czymœ)_except for
+20220920125248_4_10_0_niezdolny_unable
+20220920125409_4_10_1_nieznoœne dziecko_a detestable child
+20220920125454_4_12_2_zrównowa¿ony_even tempered
+20220920125546_4_12_2_usposobienie; nastrój_a temper
+20220920125645_4_13_4_Ogólnie, ..._overall
+20220920125726_4_15_1_dymiæ_to fume
+20220920125813_4_10_1_W tej chwili prawdopodobnie zastanawiasz siê, co powinniœmy zrobiæ_right now you are probably wondering what should we do
+20220920125854_4_14_1_Spó³ka przynios³a straty_the company made a loss
+20220920125918_4_12_3_Wynajmê ten dom jej siostrze_i will let this house to her sister
+20220920130158_4_12_3_niespójnoœci_inconsistencies
+20220920130243_4_10_0_potê¿ne narzêdzie_a powerful tool
+20220920130405_4_10_2_przetwarzanie_processing
+20220920130451_4_10_0_W kolejnych tematach zobaczymy..._in the following topics we will see
+20220920130545_4_12_4_to jest charakterystyczne dla Anglików_it is characteristic of the English
+20220920130643_4_14_2_rekin_a shark
+20220920130715_4_10_3_nieznacznie, nieco, lekko_slightly
+20220920130752_4_10_1_pozwalaj¹ nam zdefiniowaæ_they allow us to define
+20220920130910_4_12_3_odpowiedzi okaza³y siê b³êdne_the answers turned out to be incorrect
+20220920130955_4_14_5_trójk¹t ró¿noboczny_a scalene triangle
+20220920131139_4_10_1_zamiast_instead of
+20220920131224_4_10_0_inne mo¿liwoœci_other possibilities
+20220920131400_4_10_0_to nie ma znaczenia_it doesn't matter
+20220918140242_5_11_0_pojawiaæ siê, powstawaæ_to arise
+20220918140308_5_11_0_dwukropek_a colon
+20220918140340_5_12_2_ponadto_furthermore
+20220918140434_5_11_1_Rzuæmy okiem na..._let's have a look at
+20220918140522_5_11_5_W przeciwieñstwie do ..._unlike the
+20220918140656_5_11_0_wyrafinowany, wyszukany_sophisticated
+20220918140738_5_12_1_aplikacje wielow¹tkowe_multithreaded applications
+20220918140829_5_11_0_niestety_alas
+20220918140930_5_11_1_plusy i minusy (zalety i wady)_pros and cons
+20220918141008_5_5_0_po³ykaæ, prze³ykaæ_to swallow
+20220918141046_5_12_1_odnosiæ siê do (czegoœ)_to refer to
+20220918141115_5_11_0_dla (twojej) wygody_for your convenience
+20220918141148_5_17_5_Warto zapamiêtaæ, ¿e..._it's worth remembering that
+20220918141255_5_11_0_nie potrzeba (czegoœ robiæ)_there is no need to
+20220918141351_5_11_1_...z którego..._from which
+20220918141418_5_11_3_stragan_a market stall
+20220918141442_5_11_1_Po pierwsze, ..._first off
+20220918141514_5_5_0_zabójstwo_homicide
+20220918141654_5_5_0_Jesteœ bezpieczny._You're safe
+20220918141728_5_5_0_¯artujesz?_You're kidding?
+20220918141810_5_5_0_IdŸ do domu._Go home
+20220918142128_5_5_0_Nastêpnym razem._Next time
+20220919174304_5_6_2_Jakie to ma znaczenie? (Co to za ró¿nica?)_What does it matter?
+20220919174340_5_5_1_dos³owny, dos³ownie_verbatim
+20220919174415_5_5_1_s³owo w s³owo, dos³ownie_word for word
+20220919174513_5_5_0_Co to by³o do cholery?_What the hell was that?
+20220919174632_5_12_1_podœwiadomy_subconscious
+20220919174653_5_5_1_broniæ (czegoœ, kogoœ)_to defend
+20220919174745_5_5_0_Jestem z ciebie dumny._I am proud of you
+20220919174832_5_5_0_To zale¿y od ciebie._It's up to you
+20220919174959_5_5_0_Narazie! (po¿egnanie)_See you around
+20220919175045_5_5_1_odpornoœæ_immunity
+20220919175126_5_5_0_Co siê sta³o?_What happened?
+20220919175300_5_5_2_Doceniam twoj¹ pomoc._I appreciate your help
+20220919175330_5_5_1_system odpornoœciowy_immunity system
+20220919175444_5_5_1_Nie mogê tak dalej ¿yæ._I can't go on like this
+20220919175549_5_5_0_Co ci siê sta³o?_What happened to you?
+20220919175732_5_5_0_Co mu siê sta³o?_What happened to him?
+20220919175824_5_5_1_Po moim trupie!_Over my dead body
+20220919180016_5_5_0_W¹tpiê, ¿e..._I doubt that
+20220919180135_5_15_1_Trzymaj te papiery pod kluczem!_keep these papers under lock and key
+20220919180220_5_5_0_G³upiec ze mnie! (ale g³uptas ze mnie!)_How silly of me
+20220919180309_5_5_0_NajwyraŸniej ..._Clearly
+20220919180427_5_5_0_Chwila, chwila!_Hold on, hold on!
+20220919180507_5_5_0_Œwietnie!_Great
+20220919180628_5_5_0_Za³ó¿my, ¿e..._Assume that
+20220919180730_5_5_0_Zacznij od pocz¹tku._Start at the beginning
+20220919181027_5_5_0_Niestety, ... (niefortunnie)_Unfortunately
+20220919181146_5_5_0_Skoñczy³em._I'm done
+20220919181240_5_5_1_Cokolwiek?_Anything at all
+20220919181332_5_5_0_Trzymaj siê!_Take care
+20220919181452_5_5_0_Czy mo¿esz z tym ¿yæ?_Can you live with it?
+20220919181541_5_5_0_Jeszcze raz..._Once again
+20220919181907_5_5_0_Nie jestem przeciwko tobie!_I'm not against you
+20220919182000_5_5_0_To by³ wypadek._It was an accident
+20220919182043_5_5_1_Skoñczyliœmy._We're done
+20220919182140_5_5_1_Co to mia³o znaczyæ?_What's that supposed to mean?
+20220919182215_5_5_0_przypadkowo_accidentally
+20220919182427_5_5_0_synowa_a daughter in law
+20220919182504_5_5_0_teœæ_a father in law
+20220919182626_5_5_1_Mogê siê tylko domyœlaæ..._I can only surmise
+20220919182741_5_5_0_Naprawdê nie wiem._I don't honestly know
+20220919182911_5_5_0_rynsztok, kana³ œciekowy_a sewer
+20220919183240_5_5_0_plan emerytalny_a retirement plan
+20220919183410_5_5_0_wiek emerytalny_retirement age
+20220919183604_5_5_1_szczerze, uczciwie, naprawdê_honestly
+20220919183639_5_5_1_Tak czy inaczej..._Either way
+20220920113918_5_5_1_emerytura_retirement
+20220920114204_5_5_0_wiêzienie (za powa¿ne przestêpstwa, na d³u¿szy okres czasu)_a prison
+20220920114241_5_5_0_wiêzienie (za mniejsze przestêpstwa, na krótszy okres czasu)_a jail
+20220920114417_5_5_1_bracia_brethren
+20220920114502_5_13_1_przyjemny dla oka_pleasant to the eye
+20220920114543_5_5_1_cokolwiek_whatever
+20220920114732_5_14_5_Uwaga!_caution!
+20220920114818_5_5_1_rozprawa s¹dowa_a court hearing
+20220920114900_5_5_0_Nie ma innego wyjœcia?_There's no other way?
+20220920115029_5_6_3_doradca, adwokat_a counselor
+20220920115152_5_5_0_mordercy i gwa³ciciele_murderers and rapists
+20220920115231_5_5_0_gwa³t_a rape
+20220920115306_5_14_1_jednorazowe kubki papierowe_disposable paper cups
+20220920115432_5_5_3_okolica, dzielnica_a precinct
+20220920115513_5_5_0_to jest bolesne_it's painful
+20220920115540_5_5_0_Jesteœ zwolniony_You're fired
+20220920115618_5_5_0_Jesteœ zatrudniony_You're hired
+20220920115736_5_5_0_modlitwa_a prayer
+20220920115829_5_5_1_Zrezygnowa³em z tych pieniêdzy._I gave up that money
+20220920120032_5_5_1_Przyznaj siê do winy!_Plead guilty
+20220920120210_5_5_0_Mogê zapytaæ dlaczego?_May I ask why?
+20220920120329_5_5_2_W tych okolicznoœciach, ..._Under the circumstances
+20220920120357_5_5_0_pêcherz_a bladder
+20220920120431_5_22_5_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
+20220920120514_5_14_5_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
+20220920120606_5_5_0_Obawiam siê, ¿e nie mogê tego zrobiæ_I'm afraid I can't do that
+20220920120643_5_18_2_On jest mi winien 250$_he owes me 250$
+20220920120728_5_5_1_zaliczka, honorarium (np. dla adwokata)_a retainer
+20220920120827_5_16_8_Ten lek mo¿e byæ stosowany w leczeniu raka_this medicine can be applied to the treatment of cancer
+20220920120922_5_5_1_ciep³a posadka (potocznie o pracy)_a plum job
+20220920120952_5_5_0_Nikt tego nie lubi_No one likes that
+20220920121132_5_5_0_Chwalmy Pana! Chwa³a Panu!_Praise the Lord
+20220920121152_5_20_6_W przeciwieñstwie do..._in contrast to
+20220920121310_5_5_1_niekompatybilny, niezgodny, sprzeczny_incompatible
+20220920121356_5_5_0_okropna praca (straszna praca)_a terrible job
+20220920121609_5_5_0_Jesteœmy kwita._We are square
+20220920121655_5_5_1_Ja dok³adnie pamiêtam..._I distinctly remember
+20220920121845_5_5_1_Z pewnoœci¹ nigdy nie bêdziesz w stanie..._You certainly will never be able to
+20220920121939_5_5_1_straszny, okropny_terrible
+20220920122022_5_5_0_z³odziej_a thief
+20220920122054_5_5_2_chwa³a, pochwa³a_a praise
+20220920122229_5_5_0_Nie mam nic do stracenia_I got nothing to lose
+20220920122353_5_11_0_zarz¹dzanie_a management
+20220920122502_5_5_1_przechodziæ do sedna sprawy_to get to the nitty-gritty
+20220920122730_5_5_2_Na litoœæ bosk¹! (na mi³oœæ bosk¹)_For Chrissakes
+20220920122831_5_11_1_Powiedzmy, ¿e..._say
+20220920122914_5_5_1_okolicznoœci_circumstances
+20220920123020_5_11_1_zmaksymalizowaæ, wyolbrzymiæ_to maximize
+20220920123048_5_11_0_ponadto_moreover
+20220920123137_5_5_1_Na szczêœcie ..._Luckily
+20220920123240_5_5_1_Poparz na jasn¹ stronê (spójrz na to optymistycznie)_Look on the bright side
+20220920123327_5_11_0_ponadczasowy_timeless
+20220920123413_5_11_0_Z zasady...(zwykle)_as a rule
+20220920123456_5_11_0_zminimalizowaæ_to minimize
+20220920123554_5_14_7_Oczywiœcie ale to ma³o prawdopodobne, ¿e..._of course but it's unlikely that
+20220920123852_5_17_0_nierzetelny; zawodny_unreliable
+20220920123922_5_12_4_Lipiec nastêpuje po czerwcu_July follows June
+20220920124007_5_26_6_egoista_an egoist
+20220920124126_5_6_2_On jest niewinny._He is innocent
+20220920124201_5_17_0_pesymistyczny_pessimistic
+20220920124228_5_17_0_optymizm_optimism
+20220920124302_5_17_0_optymistyczny_optimistic
+20220920124405_5_17_0_On nie ma poczucia humoru_he has no sense of humour
+20220920124437_5_17_0_przedtem; zanim_before
+20220920124713_5_11_1_podobieñstwa_similarities
+20220920124811_5_11_1_..., który wskazuje, czy..._that indicates whether
+20220920124914_5_6_1_niefortunny, nieszczêœliwy_unfortunate
+20220920124941_5_11_1_Ogólnie, zazwyczaj_in general
+20220920125050_5_11_0_Który z nich...?_which of them
+20220920125145_5_19_4_Sprzedali spó³kê z zyskiem_they sold the company at a profit
+20220920125259_5_6_2_Oczekujê, ¿e to udowodnisz._I expect you to prove that
+20220920125425_5_17_1_Masz wspania³e poczucie humoru_you have a great sense of humour
+20220920125458_5_11_1_niezmienny_immutable
+20220920125550_5_11_0_Teraz, gdy...(coœ zrobiliœmy)_now that
+20220920125653_5_11_0_Spójrz na..._take a look at
+20220920125728_5_11_0_plik_a file
+20220920125816_5_11_0_folder_a directory
+20220920125856_5_11_1_zwrotny_returnable
+20220920125926_5_11_0_butelka zwrotna_a returnable bottle
+20220920130200_5_11_1_trwaæ_to last
+20220920130246_5_8_2_opieka zdrowotna_health care
+20220920130413_5_17_3_Mamy zobowi¹zania wobec naszych klientów_we have obligations to our customers
+20220920130458_5_11_1_odpowiedzialnoœæ_responsibility
+20220920130549_5_19_8_Oœmieli³em siê zaprotestowaæ_i dared to protest
+20220920130650_5_8_1_Nie mogê wzi¹æ ³apówki._I can't take a bribe
+20220920130726_5_11_0_godny zaufania_trustworthy
+20220920130758_5_11_0_Mówi¹c szczerze..._frankly speaking
+20220920130921_5_6_1_PrzejdŸmy do sedna sprawy._Let's get to the nitty-gritty
+20220920130956_5_11_1_cwany; przebieg³y_sly
+20220920131148_5_11_2_Zrobi³em to na w³asn¹ odpowiedzialnoœæ_i did it on my own responsibility
+20220920131228_5_11_2_sposób bycia_a manner
+20220920131402_5_20_5_przelewaæ (pieni¹dze)_to transfer

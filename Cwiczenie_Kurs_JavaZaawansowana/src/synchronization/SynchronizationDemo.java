@@ -1,15 +1,14 @@
-package multithreading;
+package synchronization;
 
-public class ThreadingDemo {
+class SynchronizationDemo {
     public static void main(String[] args) {
-        int n = 10; // num of threads
 
-        for (int i = 0; i < n; i++) {
-            Thread1 t1 = new Thread1();
-            t1.start();
+        MathUtils obj = new MathUtils();
 
-            Thread t2 = new Thread(new Thread2());
-            t2.start();
-        }
+        Thread1 t1 = new Thread1(obj);
+        Thread t2 = new Thread(new Thread2(obj));
+
+        t1.start();
+        t2.start();
     }
 }
