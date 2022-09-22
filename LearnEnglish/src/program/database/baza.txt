@@ -1,35 +1,16 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-00000000000000_0_0_0_wystrzeliæ_to fire
-00000000000000_0_0_0_Strzelali do demonstrantów._They were firing on demonstrators
-00000000000000_0_0_0_¯o³nierze odpowiedzieli ogniem na strza³y._The soldiers fired back
-20220922191606_0_0_1_uderzaæ; atakowaæ_to strike
-00000000000000_0_0_0_kula (z broni)_a bullet
-00000000000000_0_0_0_Zosta³ postrzelony w ramiê._He took a bullet in his arm
-00000000000000_0_0_0_strza³_a shot
-20220922191801_0_0_1_strzelba; karabin_a rifle
-00000000000000_0_0_0_Odda³em strza³._I fired a shot
-20220922191930_0_2_1_Dosta³ pozwolenie na pobyt._He got permission to stay
-20220922192003_0_0_2_Jego rozkaz uznano za nierozs¹dny._His command was held to be unreasonable
-00000000000000_0_0_0_wystrza³ z broni palnej_a gunshot
-00000000000000_0_0_0_polec; zgin¹æ_to fall
-00000000000000_0_0_0_Jego ojciec zgin¹³ na wojnie._His father fell in the war
-00000000000000_0_0_0_polegli; zabici_the fallen
-00000000000000_0_0_0_koncentrowaæ; skupiaæ (w jednym miejscu)_to concentrate
-00000000000000_0_0_0_koncentracja; skupisko_a concentration
-00000000000000_0_0_0_obóz koncentracyjny_a concentration camp
-00000000000000_0_0_0_uciekaæ_to flee
-00000000000000_0_0_0_Z³odziej uciek³ przez granicê do W³och._The thief fled across the border to Italy
-00000000000000_0_0_0_ucieczka_flight
-00000000000000_0_0_0_rzucili siê do ucieczki_they took flight
-00000000000000_0_0_0_ton¹æ (tylko o cz³owieku); topiæ (siê)_to drown
-00000000000000_0_0_0_Prawie uton¹³em._I nearly drowned
 00000000000000_0_0_0_Próbowa³ mnie utopiæ._He tried to drown me
 00000000000000_0_0_0_ton¹æ (o statku); zatapiaæ_to sink
+20220922212605_0_0_1_ton¹æ (tylko o cz³owieku); topiæ (siê)_to drown
 00000000000000_0_0_0_Statek tonie!_The ship is sinking
 00000000000000_0_0_0_Zatopiliœmy wczoraj dwa statki._We sank two ships yesterday
 20220913185558_0_6_1_wyzdrowieæ_to recover
+20220922212907_0_2_2_stan cywilny_marital status
 20220913185702_0_6_3_Mia³ chorobê morsk¹ i wymiotowa³ przez ca³¹ podró¿_he was seasick and vomited during the whole journey
+20220922213036_0_0_2_Z³odziej uciek³ przez granicê do W³och._The thief fled across the border to Italy
+20220922213052_0_0_2_ucieczka_flight
+20220922213105_0_0_2_rzucili siê do ucieczki_they took flight
 20220913185822_0_7_1_Musisz przejœæ operacjê_you have to undergo surgery
 20220913185855_0_11_5_zamiast_rather then
 20220913190105_0_6_0_jeleñ_a deer
@@ -872,27 +853,46 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922191718_0_6_1_Mogê siê tylko domyœlaæ..._I can only surmise
 20220922191751_0_6_0_Naprawdê nie wiem._I don't honestly know
 20220922191851_0_6_0_rynsztok, kana³ œciekowy_a sewer
-20220922182802_1_1_1_hodowla byd³a_cattle breeding
-20220922182850_1_1_1_Byd³o jest teraz na polu._The cattle are in the field now
-20220922182935_1_3_2_niewdziêcznoœæ_ingratitude
-20220922183052_1_1_0_s³omiany kapelusz_a straw hat
-20220922183142_1_10_2_stosowaæ_to apply
-20220922183239_1_2_1_cel wizyty_a purpose of the visit
-20220922183346_1_1_1_obora_a cowshed
-20220922183424_1_1_1_stajnia_a stable
-20220922183522_1_1_1_s³oma_straw
-20220922183532_1_1_2_byd³o_cattle
-20220922183751_1_1_0_¿andarmeria wojskowa_military police
-20220922183907_1_1_1_wojny i katastrofy_wars and disasters
-20220922183934_1_3_1_radosny; szczêsliwy_joyful
-20220922184111_1_2_2_pismo_writing
-20220922184229_1_1_1_wojskowy_military
-20220922184330_1_4_3_Czy lubisz dzieci?_Are you fond of children?
-20220922184403_1_1_1_broñ_arms
-20220922184439_1_1_1_wyœcig zbrojeñ_arms race
-20220922184550_1_2_1_z braku œrodków finansowych_for lack of finance
-20220922184743_1_1_1_zdarzaæ siê_to occur
-20220922184919_1_2_1_uprawa_cultivation
+00000000000000_0_0_0_Niemo¿liwe...!_Can't be right
+00000000000000_0_0_0_Usi¹dŸ, proszê._Have a seat please
+00000000000000_0_0_0_To niedorzeczne! (to œmieszne!)_This is ludicrous
+00000000000000_0_0_0_Zapewniam ciê..._I assure you
+00000000000000_0_0_0_To jest dok³adnie to o czym mówiê._It is exactly what I mean.
+00000000000000_0_0_0_Dobrze wiesz co mam na myœli!_You exactly know what I mean
+00000000000000_0_0_0_..., a jeœli nie..._and if not
+00000000000000_0_0_0_Do tego czasu... (póki co...)_Until then
+00000000000000_0_0_0_Co dalej?_What's next?
+00000000000000_0_0_0_okrutny_cruel
+00000000000000_0_0_0_To takie okrutne!_It's so cruel
+00000000000000_0_0_0_Nie wiedzia³em._I didn't know
+00000000000000_0_0_0_Co powinienem zrobiæ?_What should I do?
+00000000000000_0_0_0_Co ty byœ zrobi³?_What would you do?
+00000000000000_0_0_0_Gdybym bym tob¹..._If I were you
+00000000000000_0_0_0_Muszê iœæ._I gotta go
+00000000000000_0_0_0_Wrócê za kilka godzin._I'll be back in a few hours
+00000000000000_0_0_0_To jest bardziej ni¿ fair. (to jest bardziej ni¿ sprawiedliwe)_It's more than fair
+00000000000000_0_0_0_To bez sensu. (to bezcelowe)_It's pointless
+00000000000000_0_0_0_Dobrze wiedzieæ!_Good to know
+00000000000000_0_0_0_Nigdy nie wiadomo!_You never know
+20220922205946_0_6_0_plan emerytalny_a retirement plan
+20220922210101_0_6_0_wiek emerytalny_retirement age
+20220922210233_0_6_1_szczerze, uczciwie, naprawdê_honestly
+20220922211243_0_6_1_Tak czy inaczej..._Either way
+20220922211322_0_6_1_emerytura_retirement
+20220922211412_0_6_0_wiêzienie (za powa¿ne przestêpstwa, na d³u¿szy okres czasu)_a prison
+20220922211525_0_6_0_wiêzienie (za mniejsze przestêpstwa, na krótszy okres czasu)_a jail
+20220922211627_0_6_1_bracia_brethren
+20220922211711_0_14_1_przyjemny dla oka_pleasant to the eye
+20220922211825_0_6_1_cokolwiek_whatever
+20220922211913_0_15_5_Uwaga!_caution!
+20220922212116_0_6_1_rozprawa s¹dowa_a court hearing
+20220922212228_0_6_0_Nie ma innego wyjœcia?_There's no other way?
+20220922212513_0_6_0_mordercy i gwa³ciciele_murderers and rapists
+20220922212555_0_6_0_gwa³t_a rape
+20220922212652_0_15_1_jednorazowe kubki papierowe_disposable paper cups
+20220922212754_0_6_3_okolica, dzielnica_a precinct
+20220922212856_0_6_0_to jest bolesne_it's painful
+20220922213017_0_6_0_Jesteœ zwolniony_You're fired
 20220922185011_1_1_2_Odbywam s³u¿bê wojskow¹._I'm doing military service
 20220922185102_1_6_1_Co ci siê sta³o?_What happened to you?
 20220922185224_1_1_0_inwazja; najazd_an invasion
@@ -921,27 +921,27 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922191721_1_1_1_rozkazywaæ_to command
 20220922191815_1_3_1_rozwi¹zanie krótkoterminowe_a short-term solution
 20220922191859_1_2_1_Wspi¹³ siê po drabinie._He climbed a ladder
-20220921214216_2_2_1_up³ywaæ (o terminie); wygasaæ_to expire
-20220921214345_2_2_1_data up³ywu wa¿noœci_the expiry date
-20220921214454_2_3_3_Cieszy³a siê powa¿aniem._She enjoyed respect
-20220921214544_2_2_1_zezwalaæ_to permit
-20220921214623_2_2_0_pieczêæ_a seal
-20220921214652_2_2_1_pozwolenie (prawo)_permission
-20220921214734_2_2_0_szczegó³_a detail
-20220921214847_2_4_1_czêœci cia³a_parts of the body
-20220922181952_2_2_0_dodatkowy_additional
-20220922182028_2_14_2_nieœwiadomie_unconsciously
-20220922182127_2_2_0_kilka dodatkowych szczegó³ów_some additional details
-20220922182316_2_13_4_szczery; otwarty_frank
-20220922182406_2_2_1_zaklejaæ; pieczêtowaæ_to seal
-20220922182447_2_4_1_Oni mieli romans._They had an affair
-20220922182529_2_2_1_dane osobowe_personal details
-20220922182809_2_2_0_na piœmie_in writing
-20220922182857_2_2_0_pismo rêczne_handwriting
-20220922182949_2_4_2_zaskoczenie_astonishment
-20220922183057_2_2_1_ma³¿eñski_marital
-20220922183149_2_2_1_stan cywilny_marital status
-20220922183319_2_13_4_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
+20220922205900_1_1_1_uderzaæ; atakowaæ_to strike
+20220922210005_1_1_0_kula (z broni)_a bullet
+20220922210150_1_1_1_strzelba; karabin_a rifle
+20220922210310_1_3_1_Dosta³ pozwolenie na pobyt._He got permission to stay
+20220922211301_1_1_2_Jego rozkaz uznano za nierozs¹dny._His command was held to be unreasonable
+20220922211333_1_1_1_wystrzeliæ_to fire
+20220922211444_1_1_1_Strzelali do demonstrantów._They were firing on demonstrators
+20220922211546_1_1_1_¯o³nierze odpowiedzieli ogniem na strza³y._The soldiers fired back
+20220922211640_1_1_0_polec; zgin¹æ_to fall
+20220922211740_1_1_1_Zosta³ postrzelony w ramiê._He took a bullet in his arm
+20220922211827_1_1_1_strza³_a shot
+20220922212011_1_1_0_polegli; zabici_the fallen
+20220922212206_1_1_0_obóz koncentracyjny_a concentration camp
+20220922212251_1_1_1_wystrza³ z broni palnej_a gunshot
+20220922212434_1_1_1_Jego ojciec zgin¹³ na wojnie._His father fell in the war
+20220922212524_1_1_2_Odda³em strza³._I fired a shot
+20220922212621_1_1_1_koncentrowaæ; skupiaæ (w jednym miejscu)_to concentrate
+20220922212702_1_1_1_koncentracja; skupisko_a concentration
+20220922212820_1_1_0_Prawie uton¹³em._I nearly drowned
+20220922212859_1_1_1_uciekaæ_to flee
+20220922212923_1_7_4_doradca, adwokat_a counselor
 20220922183349_2_2_1_cel_a purpose
 20220922183443_2_2_1_Zrobi³ to celowo._He did it on purpose
 20220922183559_2_2_0_odrzucenie; odmowa przyjêcia_a rejection
@@ -980,26 +980,27 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922191724_2_3_1_szczegó³owy_detailed
 20220922191818_2_2_0_szopa na narzêdzia_a tool shed
 20220922191907_2_2_1_hodowaæ_to breed
-20220920125246_3_3_0_emocja; uczucie_an emotion
-20220920125330_3_13_3_rozs¹dny_sensible
-20220920125400_3_3_0_randka_a date
-20220920125451_3_7_2_Jest tu kto?_Anybody here?
-20220920125544_3_3_0_kochanek; mi³oœnik_a lover
-20220920125642_3_3_0_Oni s¹ kochankami._They are lovers
-20220920125724_3_3_0_mi³oœnik sztuki_an art lover
-20220920125747_3_3_1_emocjonalny; uczuciowy_emotional
-20220920125846_3_3_1_randka w ciemno_a blind date
-20220920125912_3_3_1_biuro matrymonialne_a dating agency
-20220920130039_3_3_1_romans_an affair
-20220920130147_3_7_1_Sprawy wymknê³y siê spod kontroli._Things got out of hand
-20220920130239_3_14_1_przytulny pokój_a cosy room
-20220920130402_3_3_1_kochaj¹cy ojciec_a fond father
-20220920130442_3_12_3_mam do czynienia_i have to deal
-20220920130535_3_10_1_zatruwaæ_to poison
-20220920130641_3_29_10_Przelejê 100$ na twoje konto_i will transfer 100$ to your account
-20220920130711_3_3_1_ukochany_beloved
-20220920130747_3_3_0_zak³opotaæ; zdezorientowaæ_to confuse
-20220920130856_3_3_1_zadziwiaæ; zaskakiwaæ_to astonish
+20220922205915_2_2_1_hodowla byd³a_cattle breeding
+20220922210022_2_2_1_Byd³o jest teraz na polu._The cattle are in the field now
+20220922210156_2_4_2_niewdziêcznoœæ_ingratitude
+20220922210314_2_2_0_s³omiany kapelusz_a straw hat
+20220922211305_2_11_2_stosowaæ_to apply
+20220922211352_2_3_1_cel wizyty_a purpose of the visit
+20220922211453_2_2_1_obora_a cowshed
+20220922211550_2_2_1_stajnia_a stable
+20220922211643_2_2_1_s³oma_straw
+20220922211745_2_2_2_byd³o_cattle
+20220922211836_2_2_0_¿andarmeria wojskowa_military police
+20220922212046_2_2_1_wojny i katastrofy_wars and disasters
+20220922212212_2_4_1_radosny; szczêsliwy_joyful
+20220922212254_2_3_2_pismo_writing
+20220922212437_2_2_1_wojskowy_military
+20220922212536_2_5_3_Czy lubisz dzieci?_Are you fond of children?
+20220922212623_2_2_1_broñ_arms
+20220922212711_2_2_1_wyœcig zbrojeñ_arms race
+20220922212837_2_3_1_z braku œrodków finansowych_for lack of finance
+20220922212904_2_2_1_zdarzaæ siê_to occur
+20220922212938_2_3_1_uprawa_cultivation
 20220920130945_3_3_0_zazdroœæ_envy
 20220920131136_3_3_1_Byliœmy zaskoczeni jego sukcesem._We were astonished at his success
 20220920131219_3_3_0_obwiniaæ; zrzucaæ winê_to blame
@@ -1069,26 +1070,26 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922191657_3_3_0_zezwolenie (dokument)_a permit
 20220922191732_3_3_0_zezwolenie na pracê_a work permit
 20220922191822_3_3_2_za³¹czaæ_to enclose
-20220920115821_4_4_1_Skoro o tym mowa, ..._Speaking of which
-20220920120024_4_4_1_Nie ma za co._You are welcome
-20220920120206_4_4_0_Dowiedzia³em siê, ¿e..._I found out that
-20220920120314_4_4_1_Nie ma za co (nieoficjalnie)_Any time
-20220920120354_4_10_0_innymi s³owy_in other words
-20220920120419_4_10_0_to przekracza_it exceeds
-20220920120502_4_4_1_Myœlê, ¿e robisz z ig³y wid³y (myœlê, ¿e siê czepiasz)_I think you're splitting hairs
-20220920120548_4_10_0_emitowaæ; wydzielaæ_to emit
-20220920120638_4_14_5_napój_a beverage
-20220920120724_4_4_0_bukiet_a bouquet
-20220920120813_4_14_5_Udzieli³ klientom rabatu na ksi¹¿ki_he offered a discount on books to the customers
-20220920120918_4_10_0_* (symbol gwiazdki)_an asterisk
-20220920120947_4_7_1_Powa¿nie? (serio?)_Seriously?
-20220920121051_4_10_1_charakter_a character
-20220920121127_4_18_3_optymista_an optimist
-20220920121148_4_16_0_jak tylko..._as soon as
-20220920121307_4_16_0_okres; przedzia³ czasu_a period
-20220920121348_4_16_0_przez krótki okres_for a short period of time
-20220920121605_4_16_0_w ci¹gu; w obrêbie (wewn¹trz)_within
-20220920121639_4_16_0_w ci¹gu szeœciu miesiêcy_within six months
+20220922205925_3_3_1_up³ywaæ (o terminie); wygasaæ_to expire
+20220922210039_3_3_1_data up³ywu wa¿noœci_the expiry date
+20220922210206_3_4_3_Cieszy³a siê powa¿aniem._She enjoyed respect
+20220922210317_3_3_1_zezwalaæ_to permit
+20220922211308_3_3_0_pieczêæ_a seal
+20220922211358_3_3_1_pozwolenie (prawo)_permission
+20220922211455_3_3_0_szczegó³_a detail
+20220922211558_3_5_1_czêœci cia³a_parts of the body
+20220922211651_3_3_0_dodatkowy_additional
+20220922211751_3_15_2_nieœwiadomie_unconsciously
+20220922211846_3_3_0_kilka dodatkowych szczegó³ów_some additional details
+20220922212051_3_14_4_szczery; otwarty_frank
+20220922212217_3_3_1_zaklejaæ; pieczêtowaæ_to seal
+20220922212305_3_5_1_Oni mieli romans._They had an affair
+20220922212453_3_3_1_dane osobowe_personal details
+20220922212543_3_3_0_na piœmie_in writing
+20220922212629_3_3_0_pismo rêczne_handwriting
+20220922212719_3_5_2_zaskoczenie_astonishment
+20220922212840_3_3_1_ma³¿eñski_marital
+20220922212948_3_14_4_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
 20220920121802_4_15_3_pluskaæ_to splash
 20220920121935_4_11_2_emisja; wydzielanie_emission
 20220920122018_4_10_1_funkcja, cecha, w³aœciwoœæ_a feature
@@ -1208,26 +1209,26 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922191700_4_4_0_dŸwiêki_sounds
 20220922191734_4_4_0_czas_time
 20220922191830_4_4_0_charakter i osobowoœæ_character and personality
-20220919183240_5_5_0_plan emerytalny_a retirement plan
-20220919183410_5_5_0_wiek emerytalny_retirement age
-20220919183604_5_5_1_szczerze, uczciwie, naprawdê_honestly
-20220919183639_5_5_1_Tak czy inaczej..._Either way
-20220920113918_5_5_1_emerytura_retirement
-20220920114204_5_5_0_wiêzienie (za powa¿ne przestêpstwa, na d³u¿szy okres czasu)_a prison
-20220920114241_5_5_0_wiêzienie (za mniejsze przestêpstwa, na krótszy okres czasu)_a jail
-20220920114417_5_5_1_bracia_brethren
-20220920114502_5_13_1_przyjemny dla oka_pleasant to the eye
-20220920114543_5_5_1_cokolwiek_whatever
-20220920114732_5_14_5_Uwaga!_caution!
-20220920114818_5_5_1_rozprawa s¹dowa_a court hearing
-20220920114900_5_5_0_Nie ma innego wyjœcia?_There's no other way?
-20220920115029_5_6_3_doradca, adwokat_a counselor
-20220920115152_5_5_0_mordercy i gwa³ciciele_murderers and rapists
-20220920115231_5_5_0_gwa³t_a rape
-20220920115306_5_14_1_jednorazowe kubki papierowe_disposable paper cups
-20220920115432_5_5_3_okolica, dzielnica_a precinct
-20220920115513_5_5_0_to jest bolesne_it's painful
-20220920115540_5_5_0_Jesteœ zwolniony_You're fired
+20220922205935_4_4_0_emocja; uczucie_an emotion
+20220922210046_4_14_3_rozs¹dny_sensible
+20220922210215_4_4_0_randka_a date
+20220922210320_4_8_2_Jest tu kto?_Anybody here?
+20220922211310_4_4_0_kochanek; mi³oœnik_a lover
+20220922211404_4_4_0_Oni s¹ kochankami._They are lovers
+20220922211506_4_4_0_mi³oœnik sztuki_an art lover
+20220922211605_4_4_1_emocjonalny; uczuciowy_emotional
+20220922211655_4_4_1_randka w ciemno_a blind date
+20220922211810_4_4_1_biuro matrymonialne_a dating agency
+20220922211852_4_4_1_romans_an affair
+20220922212105_4_8_1_Sprawy wymknê³y siê spod kontroli._Things got out of hand
+20220922212219_4_15_1_przytulny pokój_a cosy room
+20220922212312_4_4_1_kochaj¹cy ojciec_a fond father
+20220922212501_4_13_3_mam do czynienia_i have to deal
+20220922212548_4_11_1_zatruwaæ_to poison
+20220922212638_4_30_10_Przelejê 100$ na twoje konto_i will transfer 100$ to your account
+20220922212724_4_4_1_ukochany_beloved
+20220922212846_4_4_0_zak³opotaæ; zdezorientowaæ_to confuse
+20220922213008_4_4_1_zadziwiaæ; zaskakiwaæ_to astonish
 20220920115618_5_5_0_Jesteœ zatrudniony_You're hired
 20220920115736_5_5_0_modlitwa_a prayer
 20220920115829_5_5_1_Zrezygnowa³em z tych pieniêdzy._I gave up that money
@@ -1367,3 +1368,23 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922191710_5_5_0_dowód (np. w sprawie)_an evidence
 20220922191738_5_5_0_dowiadywaæ siê_to find out
 20220922191847_5_5_2_Nie martw siê, bêdê siê streszczaæ!_Don't worry. I'll keep it short
+20220922205940_5_5_1_Skoro o tym mowa, ..._Speaking of which
+20220922210055_5_5_1_Nie ma za co._You are welcome
+20220922210226_5_5_0_Dowiedzia³em siê, ¿e..._I found out that
+20220922211238_5_5_1_Nie ma za co (nieoficjalnie)_Any time
+20220922211318_5_11_0_innymi s³owy_in other words
+20220922211409_5_11_0_to przekracza_it exceeds
+20220922211520_5_5_1_Myœlê, ¿e robisz z ig³y wid³y (myœlê, ¿e siê czepiasz)_I think you're splitting hairs
+20220922211607_5_11_0_emitowaæ; wydzielaæ_to emit
+20220922211703_5_15_5_napój_a beverage
+20220922211818_5_5_0_bukiet_a bouquet
+20220922211910_5_15_5_Udzieli³ klientom rabatu na ksi¹¿ki_he offered a discount on books to the customers
+20220922212110_5_11_0_* (symbol gwiazdki)_an asterisk
+20220922212222_5_8_1_Powa¿nie? (serio?)_Seriously?
+20220922212318_5_11_1_charakter_a character
+20220922212504_5_19_3_optymista_an optimist
+20220922212552_5_17_0_jak tylko..._as soon as
+20220922212642_5_17_0_okres; przedzia³ czasu_a period
+20220922212748_5_17_0_przez krótki okres_for a short period of time
+20220922212850_5_17_0_w ci¹gu; w obrêbie (wewn¹trz)_within
+20220922213012_5_17_0_w ci¹gu szeœciu miesiêcy_within six months
