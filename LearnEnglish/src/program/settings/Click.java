@@ -32,6 +32,8 @@ public class Click implements ActionListener{
 
             MenuPanel.addRemoveBtn.setVisible(false);
             MenuPanel.endBtn.setVisible(false);
+            MenuPanel.checkbox.setVisible(false);
+            MenuPanel.checkboxLabel.setVisible(false);
             statBtn.setText("WRÓÆ");
         } else if (a.equals("stats") && statBtn.getText().equals("WRÓÆ")) {
             if (MainPanel.addRemoveView.isVisible()) {
@@ -49,6 +51,8 @@ public class Click implements ActionListener{
 
             MenuPanel.addRemoveBtn.setVisible(true);
             MenuPanel.endBtn.setVisible(true);
+            MenuPanel.checkbox.setVisible(true);
+            MenuPanel.checkboxLabel.setVisible(true);
             statBtn.setText("STATYSTYKI");
         } else if(a.equals("check")) {
             if (check.getText().equals("Dalej")) {
@@ -90,6 +94,8 @@ public class Click implements ActionListener{
 
             MenuPanel.addRemoveBtn.setVisible(false);
             MenuPanel.endBtn.setVisible(false);
+            MenuPanel.checkbox.setVisible(false);
+            MenuPanel.checkboxLabel.setVisible(false);
             statBtn.setText("WRÓÆ");
         } else if (a.equals("add") && AddOrRemoveView.addBtn.getText().equals("DODAJ")) {
             if (!AddOrRemoveView.tf1.getText().equals("wpisz s³ówko") && !AddOrRemoveView.tf1.getText().isBlank() &&
@@ -131,7 +137,16 @@ public class Click implements ActionListener{
                 AddOrRemoveView.addBtn.setText("DODAJ");
                 AddOrRemoveView.list.clearSelection();
             }
+        } else if (a.equals("showHide") && MenuPanel.checkbox.isSelected()) {
+            correctAnswer.setVisible(true);
+            underscores.setVisible(true);
+            inputTextF.requestFocusInWindow();
+        } else if (a.equals("showHide")) {
+            correctAnswer.setVisible(false);
+            underscores.setVisible(false);
+            inputTextF.requestFocusInWindow();
         }
+
     }
 
 

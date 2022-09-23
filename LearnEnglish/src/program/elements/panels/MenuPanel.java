@@ -1,8 +1,11 @@
 package program.elements.panels;
 
 import program.elements.buttons.MenuButton;
+import program.elements.checkboxes.UnderscoreCheckbox;
+import program.settings.MyColor;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MenuPanel extends JPanel {
 
@@ -16,6 +19,8 @@ public class MenuPanel extends JPanel {
     public static MenuButton statBtn;
     public static MenuButton addRemoveBtn;
     public static MenuButton endBtn;
+    public static UnderscoreCheckbox checkbox;
+    public static JTextArea checkboxLabel;
 
     public MenuPanel() {
         setBounds(X,Y, WIDTH, HEIGHT);
@@ -37,8 +42,27 @@ public class MenuPanel extends JPanel {
         endBtn.setActionCommand("end");
         endBtn.setLocation(BTN_X, UP_GAP+2*MenuButton.HEIGHT+2*GAP_BETWEEN_BTNS);
 
+        // Checkbox show/hide underscores:
+        checkbox = new UnderscoreCheckbox();
+        checkbox.setLocation(10, 230);
+        checkbox.setSelected(true);
+
+        // Checkbox Label:
+        checkboxLabel = new JTextArea();
+        checkboxLabel.setLocation(40, 220);
+        checkboxLabel.setFont(new Font("Courier", Font.PLAIN, 14));
+        checkboxLabel.setBackground(MyColor.BLUE);
+        checkboxLabel.setSize(80, 40);
+        checkboxLabel.setText("Pokaø/Ukryj podpowiedü");
+        checkboxLabel.setLineWrap(true);
+        checkboxLabel.setWrapStyleWord(true);
+
+
+
         add(statBtn);
         add(addRemoveBtn);
         add(endBtn);
+        add(checkbox);
+        add(checkboxLabel);
     }
 }

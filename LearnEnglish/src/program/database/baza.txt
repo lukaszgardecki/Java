@@ -1,40 +1,16 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-00000000000000_0_0_0_Próbowa³ mnie utopiæ._He tried to drown me
-00000000000000_0_0_0_ton¹æ (o statku); zatapiaæ_to sink
-20220922212605_0_0_1_ton¹æ (tylko o cz³owieku); topiæ (siê)_to drown
-00000000000000_0_0_0_Statek tonie!_The ship is sinking
-00000000000000_0_0_0_Zatopiliœmy wczoraj dwa statki._We sank two ships yesterday
-20220913185558_0_6_1_wyzdrowieæ_to recover
-20220922212907_0_2_2_stan cywilny_marital status
-20220913185702_0_6_3_Mia³ chorobê morsk¹ i wymiotowa³ przez ca³¹ podró¿_he was seasick and vomited during the whole journey
-20220922213036_0_0_2_Z³odziej uciek³ przez granicê do W³och._The thief fled across the border to Italy
-20220922213052_0_0_2_ucieczka_flight
-20220922213105_0_0_2_rzucili siê do ucieczki_they took flight
-20220913185822_0_7_1_Musisz przejœæ operacjê_you have to undergo surgery
-20220913185855_0_11_5_zamiast_rather then
-20220913190105_0_6_0_jeleñ_a deer
-20220913190146_0_6_1_powrót do zdrowia_recovery
-20220913190204_0_6_0_jelenie; zwierzyna p³owa_deer
-20220913190245_0_6_0_polowanie_hunting
-20220913190432_0_6_0_Idziemy na polowanie_we're going hunting
-20220913190553_0_6_0_polowanie na jelenia_deer hunting
-20220913190621_0_6_0_sierœæ; futro_fur
-20220913190742_0_9_1_wieczny_everlasting
-20220913190912_0_6_2_Szybko wróci³em do zdrowia po chorobie_i made a quick recovery from my illness
-20220913191019_0_6_1_renifer_a reindeer
-20220913191117_0_12_2_odwa¿ny_courageous
-20220913191147_0_6_0_kogut_a cock
-20220913191218_0_9_1_substancja wydzielana_an emission
-20220913191255_0_6_0_walki kogutów_cockfighting
-20220913191341_0_6_1_agresja_aggression
-20220913191415_0_6_0_bia³y go³¹b; go³êbica_a dove
-20220913191441_0_6_1_drapaæ_to scratch
-20220913191547_0_6_1_zadrapanie_a scratch
 20220913191650_0_6_0_go³¹bek pokoju_a dove of peace
+20220923192909_0_5_2_Z pewnoœci¹ nigdy nie bêdziesz w stanie..._You certainly will never be able to
+20220923204952_0_1_2_strzelba; karabin_a rifle
+20220923205031_0_4_4_By³em zirytowany jego zachowaniem._I was annoyed at his behaviour
 20220913191742_0_10_1_lokata kapita³u_a capital investment
 20220913191831_0_6_0_³abêdŸ_a swan
 20220913191949_0_6_1_paw_a peacock
+20220923210619_0_1_2_Strzelali do demonstrantów._They were firing on demonstrators
+20220923210717_0_1_2_¯o³nierze odpowiedzieli ogniem na strza³y._The soldiers fired back
+20220923210800_0_10_2_nie znosiæ_to detest
+20220923210920_0_11_2_za³ó¿my, ¿e_let's assume that
 20220913192042_0_6_2_Pies okaza³ wobec niej agresjê_the dog showed aggression towards her
 20220913192110_0_6_0_pióro (np. ptaka)_a feather
 20220913192141_0_10_3_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
@@ -893,44 +869,30 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922212754_0_6_3_okolica, dzielnica_a precinct
 20220922212856_0_6_0_to jest bolesne_it's painful
 20220922213017_0_6_0_Jesteœ zwolniony_You're fired
-20220922185011_1_1_2_Odbywam s³u¿bê wojskow¹._I'm doing military service
-20220922185102_1_6_1_Co ci siê sta³o?_What happened to you?
-20220922185224_1_1_0_inwazja; najazd_an invasion
-20220922185404_1_3_2_zadowolony_contented
-20220922185603_1_1_1_Katastrofa lotnicza wydarzy³a siê o 6:00 rano_The plane crash occurred at 6 a.m.
-20220922185649_1_1_2_miêdzynarodowy handel broni¹_the international arms trade
-20220922185748_1_6_1_W¹tpiê, ¿e..._I doubt that
-20220922185915_1_1_1_dokonywaæ inwazji; naje¿d¿aæ_to invade
-20220922190021_1_1_2_wydarzenie; wypadek_an occurrence
-20220922190102_1_3_1_Wyrazi³em wspó³czucie._I expressed my sympathy
-20220922190159_1_1_0_komandosi_commandos
-20220922190408_1_1_1_komandos_a commando
-20220922190555_1_1_0_spadochron_a parachute
-20220922190637_1_1_0_¿o³nierz piechoty_a trooper
-20220922190743_1_6_1_Niestety, ... (niefortunnie)_Unfortunately
-20220922190842_1_3_3_rozpaczliwy; beznadziejny_desperate
-20220922190939_1_3_3_wspó³czuæ_to sympathize
-20220922191046_1_1_1_Komandosi przejêli okrêt._The commandos took control of the ship
-20220922191150_1_1_1_skakaæ ze spadochronem_to parachute
-20220922191209_1_1_0_rozkaz_a command
-20220922191308_1_1_1_oddzia³_a troop
-20220922191432_1_1_0_wojownik_a warrior
-20220922191524_1_1_1_oddzia³y spadochronowe_paratroops
-20220922191612_1_1_0_uderzenie; atak_a strike
-20220922191650_1_1_0_nalot_an air strike
-20220922191721_1_1_1_rozkazywaæ_to command
-20220922191815_1_3_1_rozwi¹zanie krótkoterminowe_a short-term solution
-20220922191859_1_2_1_Wspi¹³ siê po drabinie._He climbed a ladder
-20220922205900_1_1_1_uderzaæ; atakowaæ_to strike
-20220922210005_1_1_0_kula (z broni)_a bullet
-20220922210150_1_1_1_strzelba; karabin_a rifle
-20220922210310_1_3_1_Dosta³ pozwolenie na pobyt._He got permission to stay
-20220922211301_1_1_2_Jego rozkaz uznano za nierozs¹dny._His command was held to be unreasonable
-20220922211333_1_1_1_wystrzeliæ_to fire
-20220922211444_1_1_1_Strzelali do demonstrantów._They were firing on demonstrators
-20220922211546_1_1_1_¯o³nierze odpowiedzieli ogniem na strza³y._The soldiers fired back
-20220922211640_1_1_0_polec; zgin¹æ_to fall
-20220922211740_1_1_1_Zosta³ postrzelony w ramiê._He took a bullet in his arm
+20220923111703_0_6_0_Jesteœ zatrudniony_You're hired
+20220923111846_0_6_0_modlitwa_a prayer
+20220923112423_0_6_1_Zrezygnowa³em z tych pieniêdzy._I gave up that money
+20220923112618_0_6_1_Przyznaj siê do winy!_Plead guilty
+20220923112718_0_6_0_Mogê zapytaæ dlaczego?_May I ask why?
+20220923112815_0_6_2_W tych okolicznoœciach, ..._Under the circumstances
+20220923113254_0_6_0_pêcherz_a bladder
+20220923113420_0_23_5_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
+20220923113456_0_15_5_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
+20220923113559_0_6_0_Obawiam siê, ¿e nie mogê tego zrobiæ_I'm afraid I can't do that
+20220923113640_0_19_2_On jest mi winien 250$_he owes me 250$
+20220923113724_0_6_1_zaliczka, honorarium (np. dla adwokata)_a retainer
+20220923113956_0_17_8_Ten lek mo¿e byæ stosowany w leczeniu raka_this medicine can be applied to the treatment of cancer
+20220923191842_0_6_1_ciep³a posadka (potocznie o pracy)_a plum job
+20220923192022_0_6_0_Nikt tego nie lubi_No one likes that
+20220923192303_0_6_0_Chwalmy Pana! Chwa³a Panu!_Praise the Lord
+20220923192435_0_21_6_W przeciwieñstwie do..._in contrast to
+20220923192504_0_6_1_niekompatybilny, niezgodny, sprzeczny_incompatible
+20220923192547_0_6_0_okropna praca (straszna praca)_a terrible job
+20220923192659_0_6_0_Jesteœmy kwita._We are square
+20220923192801_0_6_1_Ja dok³adnie pamiêtam..._I distinctly remember
+20220923205443_0_6_1_straszny, okropny_terrible
+20220923205545_0_6_0_z³odziej_a thief
+20220923210559_0_6_2_chwa³a, pochwa³a_a praise
 20220922211827_1_1_1_strza³_a shot
 20220922212011_1_1_0_polegli; zabici_the fallen
 20220922212206_1_1_0_obóz koncentracyjny_a concentration camp
@@ -942,37 +904,44 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922212820_1_1_0_Prawie uton¹³em._I nearly drowned
 20220922212859_1_1_1_uciekaæ_to flee
 20220922212923_1_7_4_doradca, adwokat_a counselor
-20220922183349_2_2_1_cel_a purpose
-20220922183443_2_2_1_Zrobi³ to celowo._He did it on purpose
-20220922183559_2_2_0_odrzucenie; odmowa przyjêcia_a rejection
-20220922183943_2_2_1_czytelny_legible
-20220922184117_2_2_1_odrzucaæ; odmawiaæ przyjêcia_to reject
-20220922184331_2_2_1_brak_lack
-20220922184413_2_2_1_z braku dowodów_for lack of evidence
-20220922184449_2_15_5_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
-20220922184605_2_2_0_Ry¿ jest uprawiany w Chinach._Rice is cultivated in China
-20220922184754_2_2_2_nieczytelny_illegible
-20220922184925_2_2_1_wieœ_the countryside
-20220922185017_2_4_2_zazdroœciæ_to envy
-20220922185110_2_2_1_uprawiaæ_to cultivate
-20220922185245_2_13_6_W przeciwieñstwie do ..._unlike the
-20220922185428_2_2_0_zbiory ziemniaków; wykopki_the potato harvest
-20220922185619_2_2_2_ch³op_a peasant
-20220922185707_2_2_3_czytelny podpis_a legible signature
-20220922185801_2_3_2_Nie mo¿esz przekroczyæ terminu sk³adania podañ._You can't miss the deadline for applications
-20220922185933_2_4_2_By³em zirytowany jego zachowaniem._I was annoyed at his behaviour
-20220922190027_2_2_1_pszenica_wheat
-20220922190113_2_2_1_m¹ka pszenna_wheat flour
-20220922190205_2_2_1_jêczmieñ_barley
-20220922190415_2_2_1_¿niwa; zbiory_a harvest
-20220922190557_2_2_0_m³yn_a mill
-20220922190649_2_2_1_do¿ynki_a harvest festival
-20220922190754_2_3_2_za³¹cznik_an enclosure
-20220922190845_2_2_0_m³ynarz_a miller
-20220922190949_2_2_0_wiatrak_a windmill
-20220922191050_2_2_0_drabina_a ladder
-20220922191155_2_14_6_wp³ata; zap³ata_a payment
-20220922191315_2_3_2_wygaœniêcie_expiry
+20220923111616_1_1_0_ton¹æ (o statku); zatapiaæ_to sink
+20220923111713_1_1_1_ton¹æ (tylko o cz³owieku); topiæ (siê)_to drown
+20220923111908_1_1_0_Statek tonie!_The ship is sinking
+20220923112455_1_1_0_Zatopiliœmy wczoraj dwa statki._We sank two ships yesterday
+20220923112623_1_7_1_wyzdrowieæ_to recover
+20220923112723_1_3_2_stan cywilny_marital status
+20220923112855_1_7_3_Mia³ chorobê morsk¹ i wymiotowa³ przez ca³¹ podró¿_he was seasick and vomited during the whole journey
+20220923113011_1_1_2_ucieczka_flight
+20220923113037_1_1_2_rzucili siê do ucieczki_they took flight
+20220923113203_1_1_1_Próbowa³ mnie utopiæ._He tried to drown me
+20220923113318_1_7_0_jeleñ_a deer
+20220923113425_1_7_1_powrót do zdrowia_recovery
+20220923113459_1_7_0_jelenie; zwierzyna p³owa_deer
+20220923113602_1_7_0_polowanie_hunting
+20220923113647_1_7_2_W¹tpiê, ¿e..._I doubt that
+20220923113810_1_2_2_dokonywaæ inwazji; naje¿d¿aæ_to invade
+20220923113833_1_13_4_ubezpieczenie_insurance
+20220923114005_1_7_0_Idziemy na polowanie_we're going hunting
+20220923114050_1_8_2_Musisz przejœæ operacjê_you have to undergo surgery
+20220923114153_1_7_0_polowanie na jelenia_deer hunting
+20220923191844_1_7_0_sierœæ; futro_fur
+20220923192025_1_10_1_wieczny_everlasting
+20220923192135_1_7_2_Szybko wróci³em do zdrowia po chorobie_i made a quick recovery from my illness
+20220923192240_1_7_1_renifer_a reindeer
+20220923192340_1_1_4_Z³odziej uciek³ przez granicê do W³och._The thief fled across the border to Italy
+20220923192439_1_18_3_jutrzejszy_tomorrow's
+20220923192509_1_13_2_odwa¿ny_courageous
+20220923192630_1_15_5_To odpowiada...(czemuœ)_it corresponds to
+20220923192721_1_7_0_kogut_a cock
+20220923192810_1_10_1_substancja wydzielana_an emission
+20220923204950_1_2_1_wojownik_a warrior
+20220923205325_1_7_0_walki kogutów_cockfighting
+20220923205449_1_7_1_agresja_aggression
+20220923205549_1_7_0_bia³y go³¹b; go³êbica_a dove
+20220923210604_1_7_1_drapaæ_to scratch
+20220923210658_1_2_3_Komandosi przejêli okrêt._The commandos took control of the ship
+20220923210738_1_7_1_zadrapanie_a scratch
+20220923210810_1_12_8_zamiast_rather then
 20220922191446_2_2_0_hodowla_breeding
 20220922191531_2_2_0_hodowca_a breeder
 20220922191614_2_2_1_studnia_a well
@@ -1001,36 +970,37 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922212837_2_3_1_z braku œrodków finansowych_for lack of finance
 20220922212904_2_2_1_zdarzaæ siê_to occur
 20220922212938_2_3_1_uprawa_cultivation
-20220920130945_3_3_0_zazdroœæ_envy
-20220920131136_3_3_1_Byliœmy zaskoczeni jego sukcesem._We were astonished at his success
-20220920131219_3_3_0_obwiniaæ; zrzucaæ winê_to blame
-20220920131337_3_7_1_teœciowa_a mother in law
-20220920131355_3_3_0_wina_blame
-20220921212625_3_3_0_wœciek³oœæ_fury
-20220921212656_3_12_3_ubezpieczenie_insurance
-20220921212732_3_11_4_Pod tym wzglêdem... ; W tym wzglêdzie..._in this regard
-20220921212825_3_3_1_Nie zrzucaj na mnie winy za wszystkie swoje problemy!_Don't blame all your problems on me!
-20220921212926_3_3_1_irytowaæ_to annoy
-20220921213035_3_3_2_zak³opotanie; dezorientacja_confusion
-20220921213126_3_3_2_By³em zdezorientowany._I was confused
-20220921213551_3_3_2_zazdrosny_envious
-20220921213718_3_17_2_jutrzejszy_tomorrow's
-20220921213819_3_3_0_pe³en szacunku_respectful
-20220921213907_3_14_4_To odpowiada...(czemuœ)_it corresponds to
-20220921213946_3_3_1_wœciek³y_furious
-20220921214127_3_3_2_irytacja_annoyance
-20220921214224_3_3_0_nieufnoœæ_distrust
-20220921214354_3_3_1_Wpad³a we wœciek³oœæ._She flew into a fury
-20220921214459_3_3_1_szacunek (do kogoœ)_respect
-20220921214559_3_3_1_pewnoœæ_certainty
-20220921214626_3_3_0_k³opot_bother
-20220921214656_3_3_1_nie ufaæ_to distrust
-20220921214739_3_3_0_wstyd_shame
-20220922181909_3_3_1_niepokoiæ; przeszkadzaæ_to bother
-20220922182000_3_4_1_problemy uczuciowe_emotional problems
-20220922182038_3_3_1_Nie rób sobie k³opotu!_Don't bother!
-20220922182139_3_3_1_wdziêcznoœæ_gratitude
-20220922182411_3_3_1_zawstydzaæ_to shame
+20220923111637_2_2_2_Odbywam s³u¿bê wojskow¹._I'm doing military service
+20220923111728_2_7_1_Co ci siê sta³o?_What happened to you?
+20220923112317_2_2_0_inwazja; najazd_an invasion
+20220923112525_2_4_2_zadowolony_contented
+20220923112657_2_2_1_Katastrofa lotnicza wydarzy³a siê o 6:00 rano_The plane crash occurred at 6 a.m.
+20220923112737_2_2_2_miêdzynarodowy handel broni¹_the international arms trade
+20220923113129_2_2_2_wydarzenie; wypadek_an occurrence
+20220923113228_2_4_1_Wyrazi³em wspó³czucie._I expressed my sympathy
+20220923113331_2_2_0_komandosi_commandos
+20220923113429_2_2_1_komandos_a commando
+20220923113511_2_2_0_spadochron_a parachute
+20220923113608_2_2_0_¿o³nierz piechoty_a trooper
+20220923113654_2_7_1_Niestety, ... (niefortunnie)_Unfortunately
+20220923113819_2_4_3_rozpaczliwy; beznadziejny_desperate
+20220923113852_2_4_3_wspó³czuæ_to sympathize
+20220923114116_2_2_1_skakaæ ze spadochronem_to parachute
+20220923114317_2_2_0_rozkaz_a command
+20220923191850_2_2_1_oddzia³_a troop
+20220923192143_2_2_1_oddzia³y spadochronowe_paratroops
+20220923192245_2_2_0_uderzenie; atak_a strike
+20220923192350_2_2_0_nalot_an air strike
+20220923192442_2_2_1_rozkazywaæ_to command
+20220923192516_2_4_1_rozwi¹zanie krótkoterminowe_a short-term solution
+20220923192641_2_3_1_Wspi¹³ siê po drabinie._He climbed a ladder
+20220923192734_2_2_1_uderzaæ; atakowaæ_to strike
+20220923192814_2_2_0_kula (z broni)_a bullet
+20220923205406_2_4_1_Dosta³ pozwolenie na pobyt._He got permission to stay
+20220923205512_2_2_2_Jego rozkaz uznano za nierozs¹dny._His command was held to be unreasonable
+20220923205553_2_2_1_wystrzeliæ_to fire
+20220923210745_2_2_0_polec; zgin¹æ_to fall
+20220923210835_2_2_1_Zosta³ postrzelony w ramiê._He took a bullet in his arm
 20220922182501_3_3_2_nieufny_distrustful
 20220922182542_3_3_1_bezwstydny_shameless
 20220922182817_3_3_0_zachwyt; rozkosz_delight
@@ -1090,33 +1060,36 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922212719_3_5_2_zaskoczenie_astonishment
 20220922212840_3_3_1_ma³¿eñski_marital
 20220922212948_3_14_4_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
-20220920121802_4_15_3_pluskaæ_to splash
-20220920121935_4_11_2_emisja; wydzielanie_emission
-20220920122018_4_10_1_funkcja, cecha, w³aœciwoœæ_a feature
-20220920122052_4_16_0_w obrêbie murów_within the walls
-20220920122225_4_16_0_nastêpowaæ_to follow
-20220920122349_4_13_4_straszyæ_to frighten
-20220920122453_4_12_2_W rzeczywistoœci..._in fact
-20220920122717_4_16_3_pesymista_a pessimist
-20220920122829_4_16_0_nastêpny_following
-20220920122908_4_18_1_humor_humour
-20220920122931_4_20_1_poza; oprócz_besides
-20220920123018_4_11_2_po pewnym czasie praktyki_after some time of practice
-20220920123045_4_17_3_¿¹dza przygód_a sense of adventure
-20220920123133_4_12_2_..., które wskazuj¹ czy..._those indicate whether
-20220920123231_4_15_6_Kiedy udomowiono koty?_when did cats become domesticated?
-20220920123324_4_11_2_warunek_a condition
-20220920123410_4_7_1_Zaraz wracam._I'll be right back
-20220920123454_4_10_1_oœmielaæ siê; mieæ odwagê_to dare
-20220920123539_4_7_1_Nie wiem co to znaczy._I don't know what it means
-20220920123844_4_10_1_Jak œmiesz!_how dare you
-20220920123917_4_11_1_weryfikowaæ_to validate
-20220920124003_4_15_3_przetwarzanie na surowce wtórne; recykling_recycling
-20220920124113_4_11_1_poprawnoœæ_correctness
-20220920124158_4_15_2_Skrêci³em kostkê_i have twisted my ankle
-20220920124225_4_15_3_Czy ju¿ sp³aci³eœ d³ugi?_have you repaid your debts yet
-20220920124300_4_10_1_nie znosiæ_to detest
-20220920124400_4_11_1_za³ó¿my, ¿e_let's assume that
+20220923111644_3_3_1_cel_a purpose
+20220923111744_3_3_1_Zrobi³ to celowo._He did it on purpose
+20220923112351_3_3_0_odrzucenie; odmowa przyjêcia_a rejection
+20220923112532_3_3_1_czytelny_legible
+20220923112703_3_3_1_odrzucaæ; odmawiaæ przyjêcia_to reject
+20220923112738_3_3_1_brak_lack
+20220923113141_3_3_1_z braku dowodów_for lack of evidence
+20220923113238_3_16_5_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
+20220923113344_3_3_0_Ry¿ jest uprawiany w Chinach._Rice is cultivated in China
+20220923113435_3_3_2_nieczytelny_illegible
+20220923113519_3_3_1_wieœ_the countryside
+20220923113612_3_5_2_zazdroœciæ_to envy
+20220923113658_3_3_1_uprawiaæ_to cultivate
+20220923113823_3_14_6_W przeciwieñstwie do ..._unlike the
+20220923113905_3_3_0_zbiory ziemniaków; wykopki_the potato harvest
+20220923114128_3_3_2_ch³op_a peasant
+20220923191517_3_3_3_czytelny podpis_a legible signature
+20220923191953_3_4_2_Nie mo¿esz przekroczyæ terminu sk³adania podañ._You can't miss the deadline for applications
+20220923192250_3_3_1_pszenica_wheat
+20220923192359_3_3_1_m¹ka pszenna_wheat flour
+20220923192451_3_3_1_jêczmieñ_barley
+20220923192521_3_3_1_¿niwa; zbiory_a harvest
+20220923192642_3_3_0_m³yn_a mill
+20220923192743_3_3_1_do¿ynki_a harvest festival
+20220923192823_3_4_2_za³¹cznik_an enclosure
+20220923205408_3_3_0_m³ynarz_a miller
+20220923205516_3_3_0_wiatrak_a windmill
+20220923205556_3_3_0_drabina_a ladder
+20220923210753_3_15_6_wp³ata; zap³ata_a payment
+20220923210904_3_4_2_wygaœniêcie_expiry
 20220920124435_4_13_2_œwiadomie_consciously
 20220920124709_4_16_5_Podobnie..._likewise
 20220920124804_4_12_2_niepodlegaj¹cy zwrotowi; bezzwrotny_non returnable
@@ -1229,31 +1202,33 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922212724_4_4_1_ukochany_beloved
 20220922212846_4_4_0_zak³opotaæ; zdezorientowaæ_to confuse
 20220922213008_4_4_1_zadziwiaæ; zaskakiwaæ_to astonish
-20220920115618_5_5_0_Jesteœ zatrudniony_You're hired
-20220920115736_5_5_0_modlitwa_a prayer
-20220920115829_5_5_1_Zrezygnowa³em z tych pieniêdzy._I gave up that money
-20220920120032_5_5_1_Przyznaj siê do winy!_Plead guilty
-20220920120210_5_5_0_Mogê zapytaæ dlaczego?_May I ask why?
-20220920120329_5_5_2_W tych okolicznoœciach, ..._Under the circumstances
-20220920120357_5_5_0_pêcherz_a bladder
-20220920120431_5_22_5_Œnieg skrzypia³ nam pod stopami_our feet crunched on the snow
-20220920120514_5_14_5_To jest zdecydowanie najbardziej skomplikowane_it is by far the most complicated
-20220920120606_5_5_0_Obawiam siê, ¿e nie mogê tego zrobiæ_I'm afraid I can't do that
-20220920120643_5_18_2_On jest mi winien 250$_he owes me 250$
-20220920120728_5_5_1_zaliczka, honorarium (np. dla adwokata)_a retainer
-20220920120827_5_16_8_Ten lek mo¿e byæ stosowany w leczeniu raka_this medicine can be applied to the treatment of cancer
-20220920120922_5_5_1_ciep³a posadka (potocznie o pracy)_a plum job
-20220920120952_5_5_0_Nikt tego nie lubi_No one likes that
-20220920121132_5_5_0_Chwalmy Pana! Chwa³a Panu!_Praise the Lord
-20220920121152_5_20_6_W przeciwieñstwie do..._in contrast to
-20220920121310_5_5_1_niekompatybilny, niezgodny, sprzeczny_incompatible
-20220920121356_5_5_0_okropna praca (straszna praca)_a terrible job
-20220920121609_5_5_0_Jesteœmy kwita._We are square
-20220920121655_5_5_1_Ja dok³adnie pamiêtam..._I distinctly remember
-20220920121845_5_5_1_Z pewnoœci¹ nigdy nie bêdziesz w stanie..._You certainly will never be able to
-20220920121939_5_5_1_straszny, okropny_terrible
-20220920122022_5_5_0_z³odziej_a thief
-20220920122054_5_5_2_chwa³a, pochwa³a_a praise
+20220923111649_4_4_0_zazdroœæ_envy
+20220923111837_4_4_1_Byliœmy zaskoczeni jego sukcesem._We were astonished at his success
+20220923112353_4_4_0_obwiniaæ; zrzucaæ winê_to blame
+20220923112540_4_8_1_teœciowa_a mother in law
+20220923112706_4_4_0_wina_blame
+20220923112742_4_4_0_wœciek³oœæ_fury
+20220923113248_4_12_4_Pod tym wzglêdem... ; W tym wzglêdzie..._in this regard
+20220923113407_4_4_1_Nie zrzucaj na mnie winy za wszystkie swoje problemy!_Don't blame all your problems on me!
+20220923113438_4_4_1_irytowaæ_to annoy
+20220923113531_4_4_2_zak³opotanie; dezorientacja_confusion
+20220923113624_4_4_2_By³em zdezorientowany._I was confused
+20220923113703_4_4_2_zazdrosny_envious
+20220923113915_4_4_0_pe³en szacunku_respectful
+20220923191531_4_4_1_wœciek³y_furious
+20220923191958_4_4_2_irytacja_annoyance
+20220923192254_4_4_0_nieufnoœæ_distrust
+20220923192412_4_4_1_Wpad³a we wœciek³oœæ._She flew into a fury
+20220923192454_4_4_1_szacunek (do kogoœ)_respect
+20220923192529_4_4_1_pewnoœæ_certainty
+20220923192648_4_4_0_k³opot_bother
+20220923192750_4_4_1_nie ufaæ_to distrust
+20220923192825_4_4_0_wstyd_shame
+20220923205437_4_4_1_niepokoiæ; przeszkadzaæ_to bother
+20220923205533_4_5_1_problemy uczuciowe_emotional problems
+20220923205639_4_4_1_Nie rób sobie k³opotu!_Don't bother!
+20220923210758_4_4_1_wdziêcznoœæ_gratitude
+20220923210912_4_4_1_zawstydzaæ_to shame
 20220920122229_5_5_0_Nie mam nic do stracenia_I got nothing to lose
 20220920122353_5_11_0_zarz¹dzanie_a management
 20220920122502_5_5_1_przechodziæ do sedna sprawy_to get to the nitty-gritty
@@ -1388,3 +1363,28 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220922212748_5_17_0_przez krótki okres_for a short period of time
 20220922212850_5_17_0_w ci¹gu; w obrêbie (wewn¹trz)_within
 20220922213012_5_17_0_w ci¹gu szeœciu miesiêcy_within six months
+20220923111653_5_16_3_pluskaæ_to splash
+20220923111844_5_12_2_emisja; wydzielanie_emission
+20220923112400_5_11_1_funkcja, cecha, w³aœciwoœæ_a feature
+20220923112545_5_17_0_w obrêbie murów_within the walls
+20220923112708_5_17_0_nastêpowaæ_to follow
+20220923112752_5_14_4_straszyæ_to frighten
+20220923113251_5_13_2_W rzeczywistoœci..._in fact
+20220923113410_5_17_3_pesymista_a pessimist
+20220923113441_5_17_0_nastêpny_following
+20220923113536_5_19_1_humor_humour
+20220923113628_5_21_1_poza; oprócz_besides
+20220923113716_5_12_2_po pewnym czasie praktyki_after some time of practice
+20220923113923_5_18_3_¿¹dza przygód_a sense of adventure
+20220923191838_5_13_2_..., które wskazuj¹ czy..._those indicate whether
+20220923192015_5_16_6_Kiedy udomowiono koty?_when did cats become domesticated?
+20220923192257_5_12_2_warunek_a condition
+20220923192428_5_8_1_Zaraz wracam._I'll be right back
+20220923192456_5_11_1_oœmielaæ siê; mieæ odwagê_to dare
+20220923192542_5_8_1_Nie wiem co to znaczy._I don't know what it means
+20220923192652_5_11_1_Jak œmiesz!_how dare you
+20220923192752_5_12_1_weryfikowaæ_to validate
+20220923192829_5_16_3_przetwarzanie na surowce wtórne; recykling_recycling
+20220923205440_5_12_1_poprawnoœæ_correctness
+20220923205541_5_16_2_Skrêci³em kostkê_i have twisted my ankle
+20220923205651_5_16_3_Czy ju¿ sp³aci³eœ d³ugi?_have you repaid your debts yet

@@ -12,9 +12,10 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
+    public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
+
     static String path = "program/database/baza.txt";
     static File file = new File(path);
-    public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
     static StringBuilder correctAns;
 
     /*
@@ -32,24 +33,7 @@ public class Main {
     public static void main(String[] args) {
         createMap();
         loadData();
-        
-//        System.out.println("listy po operacji:");
-//        System.out.println("lista 0");
-//        map.get(0).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 1");
-//        map.get(1).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 2");
-//        map.get(2).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 3");
-//        map.get(3).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 4");
-//        map.get(4).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 5");
-//        map.get(5).forEach(e -> System.out.println("    " + e));
-
-
         win = new Window();
-
     }
 
     public static void loadData() {
@@ -221,21 +205,9 @@ public class Main {
             //je¿eli grupa nie posiada 10 elementów to dodaj s³ówko na koniec tej grupy
             map.get(numOfGroup).addLast(temp);
         }
-
-//        System.out.println("listy po operacji:");
-//        System.out.println("lista 0");
-//        map.get(0).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 1");
-//        map.get(1).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 2");
-//        map.get(2).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 3");
-//        map.get(3).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 4");
-//        map.get(4).forEach(e -> System.out.println("    " + e));
-//        System.out.println("lista 5");
-//        map.get(5).forEach(e -> System.out.println("    " + e));
     }
+
+
 
     public static ArrayList<String> getTheOldestWord() {
         ArrayList<String> nMin = new ArrayList<>();
@@ -390,6 +362,9 @@ public class Main {
         StatsView.t4.setText(String.valueOf(map.get(3).size()));
         StatsView.t5.setText(String.valueOf(map.get(4).size()));
         StatsView.t6.setText(String.valueOf(map.get(5).size()));
+        StatsView.t7.setText(getAmountOfCorrectAns());
+        StatsView.t8.setText(getAmountOfIncorrectAns());
+        StatsView.t9.setText(getAmountOfAllAns());
     }
 
     public static int getAmountOfAllWords() {
@@ -399,6 +374,50 @@ public class Main {
                 map.get(3).size() +
                 map.get(4).size() +
                 map.get(5).size();
+    }
+
+    public static String getAmountOfCorrectAns() {
+        double amountOfCorrectAns = 0;
+        double allAns = Double.parseDouble(getAmountOfAllAns());
+        String correctAnsPercent;
+
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                amountOfCorrectAns += Integer.parseInt(list.get(2));
+            }
+        }
+
+        correctAnsPercent = String.valueOf(String.format("%.0f (%.2f%%)",
+                amountOfCorrectAns, (amountOfCorrectAns*100)/allAns));
+
+        return correctAnsPercent;
+    }
+
+    public static String getAmountOfIncorrectAns() {
+        double amountOfIncorrectAns = 0;
+        double allAns = Double.parseDouble(getAmountOfAllAns());
+        String incorrectAnsPercent;
+
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                amountOfIncorrectAns += Integer.parseInt(list.get(3));
+            }
+        }
+
+        incorrectAnsPercent = String.valueOf(String.format("%.0f (%.2f%%)",
+                amountOfIncorrectAns, (amountOfIncorrectAns*100)/allAns));
+
+        return incorrectAnsPercent;
+    }
+
+    public static String getAmountOfAllAns() {
+        int amountOfAllAns = 0;
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                amountOfAllAns += (Integer.parseInt(list.get(2)) + Integer.parseInt(list.get(3)));
+            }
+        }
+        return String.valueOf(amountOfAllAns);
     }
 
     public static void setUnderscores(ArrayList<String> lst) {

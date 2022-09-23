@@ -1,6 +1,7 @@
 package program.elements.panels.views;
 
 import program.elements.buttons.CheckButton;
+import program.elements.checkboxes.UnderscoreCheckbox;
 import program.elements.labels.DateLabel;
 import program.elements.text_fields.EnglishWordTextArea;
 import program.elements.text_fields.CorrectAnswerTextArea;
