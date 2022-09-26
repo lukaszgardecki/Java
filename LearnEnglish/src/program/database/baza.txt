@@ -1,35 +1,16 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-00000000000000_0_0_0_zgodnie z prawem_in accordance with the law
-20220925195505_0_1_2_ostatecznie_ultimately
-20220925195516_0_0_2_czujnoœæ_a vigilance
-00000000000000_0_0_0_lichwiarz_a loan shark
-00000000000000_0_0_0_Wcale nie. (ani trochê)_Not at all
-20220925231850_0_0_1_Nie b¹dŸ zazdrosny!_Don't be jealous!
-00000000000000_0_0_0_Nie uwa¿am tak, ani trochê!_I don't think so, not at all
-20220925232041_0_0_2_Zwracamy szczególn¹ uwagê na..._We pay particular attention to
-20220926110729_0_0_1_To niestosowne!_It's unbecoming
-20220926110803_0_0_1_Zgodnie z ..._In accordance with
-20220926110859_0_0_1_zgodnie z zasadami_in accordance with the rules
-00000000000000_0_0_0_Zas³ugujesz na medal!_You deserve a medal
-20220915082510_0_6_0_leciwy; wiekowy_elderly
-20220915082613_0_6_0_starszy cz³owiek_an elderly man
-20220915082645_0_6_1_ruch rewolucyjny_a revolutionary movement
-20220915082732_0_6_0_³ysy_bald
-20220915082836_0_6_1_wygl¹d; pozór_an appearance
-20220915082919_0_13_4_Ona jest nadopiekuñcza w stosunku do swoich dzieci_she is overprotective towards her children
-20220915083008_0_6_1_szeœcioletni ch³opiec_a boy aged six
-20220915083038_0_6_0_dieta_a diet
-20220915083114_0_6_1_Wy³ysia³ i przybra³ na wadze_he went bald and put on weight
 20220915084303_0_11_1_Bank udzieli³ nam po¿yczki studenckiej_the bank has granted us a student loan
 20220915084413_0_6_0_cecha_a feature
 20220915084508_0_6_1_dieta odchudzaj¹ca_a slimming diet
 20220915084555_0_6_1_atrakcyjny_attractive
 20220915084629_0_6_1_nieatrakcyjny_unattractive
+20220926190715_0_6_2_wygl¹d; pozór_an appearance
 20220915084841_0_6_0_zauwa¿yæ_to notice
 20220915084944_0_7_1_panika_a panic
 20220915085018_0_6_0_styl_a style
 20220915085149_0_6_1_cechy; rysy (twarzy)_features
+20220926191001_0_6_2_Wy³ysia³ i przybra³ na wadze_he went bald and put on weight
 20220915085253_0_7_1_ewakuacja_evacuation
 20220915085450_0_6_0_fryzura_a hairstyle
 20220915085554_0_6_0_o w³osach koloru..._...-haired
@@ -893,33 +874,30 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925231753_0_14_4_to jest charakterystyczne dla Anglików_it is characteristic of the English
 20220925231823_0_16_2_rekin_a shark
 20220925231951_0_12_3_nieznacznie, nieco, lekko_slightly
-20220925191552_1_1_1_os¹d_judgement
-20220925191626_1_1_0_Ogólnie rzecz bior¹c... (ogólnie mówi¹c)_Generally speaking
-20220925191703_1_1_1_kanapa, sofa_a couch
-20220925191833_1_1_3_czytaæ uwa¿nie, dok³adnie przegl¹daæ_to peruse
-20220925192016_1_1_0_SprawdŸ to._Check it out
-20220925192055_1_1_0_Pójdê to sprawdziæ._I'll go check it out
-20220925192117_1_5_2_wzruszaj¹cy_touching
-20220925192149_1_1_1_odzew, odpowiedŸ, reakcja_a response
-20220925192256_1_1_0_Œmiem twierdziæ, ¿e..._I dare say that
-20220925192350_1_1_1_pude³ko na wynos_a to-go container
-20220925192423_1_1_1_Jestem otwarty!_I'm open to it
-20220925192553_1_1_0_ludzie_folks
-20220925192640_1_13_3_po pewnym czasie praktyki_after some time of practice
-20220925192858_1_12_6_niepokój; zmartwienie; lêk_an anxiety
-20220925192935_1_1_1_Nie lubiê siê chwaliæ._I don't like to brag
-20220925193050_1_1_1_udogodnienia_facilities
-20220925193109_1_1_2_Za³o¿ê siê, ¿e..._I'll bet
-20220925193212_1_1_1_dzielnica_a district
-20220925193255_1_1_1_Czekam na nastêpny raport._Look forward to the next report
-20220925193358_1_1_0_Te informacje s¹ niezwykle wa¿ne._These information are incredibly important
-20220925193426_1_1_2_kontakty z klientami (pozyskiwanie klientów)_client outreach
-20220925193458_1_12_2_Jak œmiesz!_how dare you
-20220925193532_1_1_1_Zanim przejdziemy do..._Before we move on to
-20220925193558_1_1_1_Przejrzê twojê wypracownie._I'll look over your essay
-20220925193640_1_16_5_ubezpieczenie_insurance
-20220925193702_1_1_1_niesamowite, niewiarygodne_incredible
-20220925193757_1_1_1_On jest niezwykle silny._He is incredibly strong
+00000000000000_0_0_0_ryuk_k
+00000000000000_0_0_0_ruyk_k
+00000000000000_0_0_0_rr_kkryukruyk
+00000000000000_0_0_0_ryu_krukryuk
+00000000000000_0_0_0_ryukryuk_kkk
+20220926185227_0_12_1_pozwalaj¹ nam zdefiniowaæ_they allow us to define
+20220926185315_0_14_3_odpowiedzi okaza³y siê b³êdne_the answers turned out to be incorrect
+20220926185618_0_16_5_trójk¹t ró¿noboczny_a scalene triangle
+20220926190018_0_12_1_zamiast_instead of
+20220926190045_0_12_0_inne mo¿liwoœci_other possibilities
+20220926190141_0_12_0_to nie ma znaczenia_it doesn't matter
+20220926190234_0_15_2_Rzeczywiœcie..._indeed
+20220926190308_0_12_0_zakres_a range
+20220926190340_0_15_5_to jest nieistotne_it is irrelevant
+20220926190408_0_12_0_! (wykrzyknik)_an exclamation mark
+20220926190440_0_14_2_warunki wstêpne_preconditions
+20220926190530_0_15_5_trójk¹t równoboczny_an equilateral triangle
+20220926190558_0_17_4_kompromis_trade off
+20220926190620_0_12_0_operacja_surgery
+20220926190709_0_14_7_wytyczne_guidelines
+20220926190747_0_12_0_chirurg_a surgeon
+20220926190826_0_12_1_wymagania_requirements
+20220926190910_0_15_1_Niestety to te¿ jest z³y pomys³_alas this is also a bad idea
+20220926190946_0_14_3_zazwyczaj_typically
 20220925193830_1_1_0_szczególny_particular
 20220925193906_1_1_0_szczególnie_particularly
 20220925193958_1_1_0_Szczególnie w przypadku..._Particularly in a case of
@@ -942,30 +920,33 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925231722_1_1_1_To wspania³a okazja by... (wielka szansa)_This is a golden opportunity to
 20220925231758_1_1_0_Mi³ego dnia!_Have a good one
 20220925231921_1_1_0_Jesteœ zazdrosny?_Are you jealous?
-20220925190133_2_8_0_puchowa poduszka_a feather pillow
-20220925190238_2_9_2_lecznica dla zwierz¹t_a veterinary hospital
-20220925190328_2_8_2_Pod³¹cz czajnik do gniazdka_plug the kettle into the power point
-20220925190440_2_9_2_domowy (nale¿¹cy do gospodarstwa)_household
-20220925190553_2_8_0_Teraz twoja kolej, ¿eby zrobiæ zakupy_it's your turn to do the shopping
-20220925190616_2_8_1_przeœcierad³o_a sheet
-20220925190746_2_22_4_szkielet_a skeleton
-20220925190849_2_9_1_plama_a stain
-20220925191023_2_8_1_naprawiaæ_to mend
-20220925191119_2_8_0_panikowaæ; wpadaæ w panikê_to panic
-20220925191239_2_8_0_Spowodowa³ wybuch paniki_he caused a panic
-20220925191317_2_8_2_osoba psuj¹ca innym nastrój; smutas_a wet blanket
-20220925191420_2_8_0_ewakuowaæ (siê)_to evacuate
-20220925191520_2_8_1_tratwa ratunkowa_a life raft
-20220925191556_2_8_1_ko³o ratunkowe_a life belt
-20220925191650_2_15_9_zamiast_rather then
-20220925191707_2_10_3_Jest tu kto?_Anybody here?
-20220925191836_2_5_3_strzelba; karabin_a rifle
-20220925192020_2_8_0_ostro¿ny_cautious
-20220925192100_2_8_1_kamizelka ratunkowa_a life jacket
-20220925192122_2_13_1_nieuczciwy_dishonest
-20220925192202_2_15_8_Nic dziwnego..._unsurprisingly
-20220925192355_2_8_1_ostro¿noœæ_caution
-20220925192429_2_8_0_traktat handlowy_a trade treaty
+20220926182527_1_1_2_czujnoœæ_a vigilance
+20220926183207_1_1_0_Nie uwa¿am tak, ani trochê!_I don't think so, not at all
+20220926184613_1_2_3_ostatecznie_ultimately
+20220926185238_1_2_2_os¹d_judgement
+20220926185448_1_1_1_Wcale nie. (ani trochê)_Not at all
+20220926185542_1_1_2_Nie b¹dŸ zazdrosny!_Don't be jealous!
+20220926185627_1_2_1_Ogólnie rzecz bior¹c... (ogólnie mówi¹c)_Generally speaking
+20220926185823_1_1_2_To niestosowne!_It's unbecoming
+20220926185850_1_1_2_zgodnie z zasadami_in accordance with the rules
+20220926185936_1_1_2_zgodnie z prawem_in accordance with the law
+20220926185957_1_1_0_Zas³ugujesz na medal!_You deserve a medal
+20220926190022_1_7_0_leciwy; wiekowy_elderly
+20220926190115_1_5_2_dane osobowe_personal details
+20220926190149_1_7_0_starszy cz³owiek_an elderly man
+20220926190213_1_14_4_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
+20220926190242_1_1_4_Zwracamy szczególn¹ uwagê na..._We pay particular attention to
+20220926190316_1_2_2_odzew, odpowiedŸ, reakcja_a response
+20220926190346_1_1_3_Zgodnie z ..._In accordance with
+20220926190412_1_5_1_pismo rêczne_handwriting
+20220926190443_1_23_5_szkielet_a skeleton
+20220926190536_1_7_1_ruch rewolucyjny_a revolutionary movement
+20220926190600_1_7_0_³ysy_bald
+20220926190624_1_1_3_lichwiarz_a loan shark
+20220926190720_1_10_2_skrzyd³o_a wing
+20220926190757_1_14_4_Ona jest nadopiekuñcza w stosunku do swoich dzieci_she is overprotective towards her children
+20220926190831_1_7_1_szeœcioletni ch³opiec_a boy aged six
+20220926190912_1_7_0_dieta_a diet
 20220925192556_2_13_3_trwa³y_lasting
 20220925192644_2_8_1_poddawaæ (siê); kapitulowaæ_to surrender
 20220925192900_2_8_1_traktat; porozumienie_a treaty
@@ -1001,29 +982,30 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925231726_2_6_2_wdziêcznoœæ_gratitude
 20220925231806_2_2_0_Pyta³eœ, wiêc odpowiedzia³em._You asked so I answered
 20220925231939_2_2_1_Zaryzykujê i powiem_I'll go out on a limb and say
-20220924151346_3_9_1_go³¹bek pokoju_a dove of peace
-20220924151425_3_4_2_strza³_a shot
-20220924151503_3_9_2_Pies okaza³ wobec niej agresjê_the dog showed aggression towards her
-20220924151535_3_9_0_pióro (np. ptaka)_a feather
-20220924151605_3_13_3_Czy ju¿ dokona³ pan wp³aty?_have you made a payment yet
-20220924151640_3_18_7_trójk¹t równoramienny_an isosceles triangle
-20220924151710_3_9_0_foka_a seal
-20220924151753_3_4_3_Strzelali do demonstrantów._They were firing on demonstrators
-20220924151835_3_9_1_sowa_an owl
-20220924151903_3_9_1_skrzyd³o_a wing
-20220924151934_3_9_0_³osoœ_a salmon
-20220924152012_3_9_1_gniazdo_a nest
-20220924152037_3_9_0_³ososie_salmon
-20220924152106_3_9_0_robak_a worm
-20220924152134_3_9_1_wieloryb_a whale
-20220924152207_3_14_2_po¿yczaæ (komuœ pieni¹dze)_to loan
-20220924152235_3_9_0_mrówka_an ant
-20220924152313_3_9_0_mrówkojad_an anteater
-20220924152357_3_10_4_Mia³ chorobê morsk¹ i wymiotowa³ przez ca³¹ podró¿_he was seasick and vomited during the whole journey
-20220924152431_3_15_6_W porównaniu do..._compared to
-20220924152458_3_12_1_to jest oczywiste_it is obvious
-20220924152526_3_12_5_zaniepokojony; zmartwiony_anxious
-20220924152608_3_12_1_wydajnie, skutecznie, efektywnie_efficiently
+20220926184620_2_2_1_kanapa, sofa_a couch
+20220926185245_2_2_3_czytaæ uwa¿nie, dok³adnie przegl¹daæ_to peruse
+20220926185452_2_2_0_SprawdŸ to._Check it out
+20220926185549_2_2_0_Pójdê to sprawdziæ._I'll go check it out
+20220926185629_2_6_2_wzruszaj¹cy_touching
+20220926185902_2_2_0_Œmiem twierdziæ, ¿e..._I dare say that
+20220926185946_2_2_1_pude³ko na wynos_a to-go container
+20220926190004_2_2_1_Jestem otwarty!_I'm open to it
+20220926190024_2_2_0_ludzie_folks
+20220926190122_2_14_3_po pewnym czasie praktyki_after some time of practice
+20220926190156_2_13_6_niepokój; zmartwienie; lêk_an anxiety
+20220926190222_2_2_1_Nie lubiê siê chwaliæ._I don't like to brag
+20220926190250_2_2_1_udogodnienia_facilities
+20220926190322_2_2_2_Za³o¿ê siê, ¿e..._I'll bet
+20220926190354_2_2_1_dzielnica_a district
+20220926190426_2_2_1_Czekam na nastêpny raport._Look forward to the next report
+20220926190510_2_2_0_Te informacje s¹ niezwykle wa¿ne._These information are incredibly important
+20220926190545_2_2_2_kontakty z klientami (pozyskiwanie klientów)_client outreach
+20220926190603_2_13_2_Jak œmiesz!_how dare you
+20220926190631_2_2_1_Zanim przejdziemy do..._Before we move on to
+20220926190732_2_2_1_Przejrzê twojê wypracownie._I'll look over your essay
+20220926190804_2_17_5_ubezpieczenie_insurance
+20220926190843_2_2_1_niesamowite, niewiarygodne_incredible
+20220926190924_2_2_1_On jest niezwykle silny._He is incredibly strong
 20220924152638_3_12_1_nawet jeœli_even though
 20220924152711_3_8_4_Czy lubisz dzieci?_Are you fond of children?
 20220924152733_3_6_1_obowi¹zek_an obligation
@@ -1090,27 +1072,29 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925231731_3_16_3_uczciwoœæ_honesty
 20220925231808_3_9_2_robiæ na drutach_to knit
 20220925231941_3_9_0_poduszka_a pillow
-20220924121626_4_4_1_zaklejaæ; pieczêtowaæ_to seal
-20220924121703_4_6_1_Oni mieli romans._They had an affair
-20220924121737_4_4_1_dane osobowe_personal details
-20220924121922_4_4_0_na piœmie_in writing
-20220924122035_4_4_0_pismo rêczne_handwriting
-20220924122054_4_6_2_zaskoczenie_astonishment
-20220924122131_4_4_1_ma³¿eñski_marital
-20220924122202_4_15_4_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
-20220924122253_4_4_1_cel_a purpose
-20220924122325_4_4_1_Zrobi³ to celowo._He did it on purpose
-20220924122413_4_4_0_odrzucenie; odmowa przyjêcia_a rejection
-20220924122430_4_4_1_czytelny_legible
-20220924122451_4_4_1_odrzucaæ; odmawiaæ przyjêcia_to reject
-20220924122515_4_4_1_brak_lack
-20220924122537_4_4_1_z braku dowodów_for lack of evidence
-20220924122614_4_17_5_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
-20220924122704_4_4_0_Ry¿ jest uprawiany w Chinach._Rice is cultivated in China
-20220924122747_4_4_2_nieczytelny_illegible
-20220924122832_4_4_1_wieœ_the countryside
-20220924122920_4_6_2_zazdroœciæ_to envy
-20220924122942_4_4_1_uprawiaæ_to cultivate
+20220926184625_3_9_0_puchowa poduszka_a feather pillow
+20220926185256_3_10_2_lecznica dla zwierz¹t_a veterinary hospital
+20220926185503_3_9_2_Pod³¹cz czajnik do gniazdka_plug the kettle into the power point
+20220926185552_3_10_2_domowy (nale¿¹cy do gospodarstwa)_household
+20220926185636_3_9_0_Teraz twoja kolej, ¿eby zrobiæ zakupy_it's your turn to do the shopping
+20220926185904_3_9_1_przeœcierad³o_a sheet
+20220926190006_3_10_1_plama_a stain
+20220926190026_3_9_1_naprawiaæ_to mend
+20220926190124_3_9_0_panikowaæ; wpadaæ w panikê_to panic
+20220926190203_3_9_0_Spowodowa³ wybuch paniki_he caused a panic
+20220926190227_3_9_2_osoba psuj¹ca innym nastrój; smutas_a wet blanket
+20220926190254_3_9_0_ewakuowaæ (siê)_to evacuate
+20220926190330_3_9_1_tratwa ratunkowa_a life raft
+20220926190357_3_9_1_ko³o ratunkowe_a life belt
+20220926190430_3_16_9_zamiast_rather then
+20220926190516_3_11_3_Jest tu kto?_Anybody here?
+20220926190547_3_6_3_strzelba; karabin_a rifle
+20220926190607_3_9_0_ostro¿ny_cautious
+20220926190635_3_9_1_kamizelka ratunkowa_a life jacket
+20220926190735_3_14_1_nieuczciwy_dishonest
+20220926190812_3_16_8_Nic dziwnego..._unsurprisingly
+20220926190852_3_9_1_ostro¿noœæ_caution
+20220926190930_3_9_0_traktat handlowy_a trade treaty
 20220924123008_4_15_6_W przeciwieñstwie do ..._unlike the
 20220924123035_4_4_0_zbiory ziemniaków; wykopki_the potato harvest
 20220924123103_4_4_2_ch³op_a peasant
@@ -1229,25 +1213,27 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925231740_4_5_2_¯o³nierze odpowiedzieli ogniem na strza³y._The soldiers fired back
 20220925231810_4_14_2_nie znosiæ_to detest
 20220925231946_4_15_2_za³ó¿my, ¿e_let's assume that
-20220923214959_5_11_1_pozwalaj¹ nam zdefiniowaæ_they allow us to define
-20220923215307_5_13_3_odpowiedzi okaza³y siê b³êdne_the answers turned out to be incorrect
-20220923215509_5_15_5_trójk¹t ró¿noboczny_a scalene triangle
-20220923215815_5_11_1_zamiast_instead of
-20220924112546_5_11_0_inne mo¿liwoœci_other possibilities
-20220924112724_5_11_0_to nie ma znaczenia_it doesn't matter
-20220924112846_5_14_2_Rzeczywiœcie..._indeed
-20220924112947_5_11_0_zakres_a range
-20220924113111_5_14_5_to jest nieistotne_it is irrelevant
-20220924113144_5_11_0_! (wykrzyknik)_an exclamation mark
-20220924113210_5_13_2_warunki wstêpne_preconditions
-20220924113259_5_14_5_trójk¹t równoboczny_an equilateral triangle
-20220924113340_5_16_4_kompromis_trade off
-20220924113419_5_11_0_operacja_surgery
-20220924113515_5_13_7_wytyczne_guidelines
-20220924113606_5_11_0_chirurg_a surgeon
-20220924113637_5_11_1_wymagania_requirements
-20220924113733_5_14_1_Niestety to te¿ jest z³y pomys³_alas this is also a bad idea
-20220924113826_5_13_3_zazwyczaj_typically
+20220926185206_4_10_1_go³¹bek pokoju_a dove of peace
+20220926185300_4_5_2_strza³_a shot
+20220926185520_4_10_2_Pies okaza³ wobec niej agresjê_the dog showed aggression towards her
+20220926185555_4_10_0_pióro (np. ptaka)_a feather
+20220926185914_4_19_7_trójk¹t równoramienny_an isosceles triangle
+20220926190008_4_10_0_foka_a seal
+20220926190035_4_5_3_Strzelali do demonstrantów._They were firing on demonstrators
+20220926190126_4_10_1_sowa_an owl
+20220926190229_4_10_0_³osoœ_a salmon
+20220926190256_4_10_1_gniazdo_a nest
+20220926190332_4_10_0_³ososie_salmon
+20220926190359_4_10_0_robak_a worm
+20220926190433_4_10_1_wieloryb_a whale
+20220926190518_4_15_2_po¿yczaæ (komuœ pieni¹dze)_to loan
+20220926190549_4_10_0_mrówka_an ant
+20220926190611_4_10_0_mrówkojad_an anteater
+20220926190649_4_11_4_Mia³ chorobê morsk¹ i wymiotowa³ przez ca³¹ podró¿_he was seasick and vomited during the whole journey
+20220926190740_4_16_6_W porównaniu do..._compared to
+20220926190816_4_13_1_to jest oczywiste_it is obvious
+20220926190900_4_13_5_zaniepokojony; zmartwiony_anxious
+20220926190937_4_13_1_wydajnie, skutecznie, efektywnie_efficiently
 20220924113854_5_11_1_przechodziæ (operacjê, leczenie)_to undergo
 20220924114015_5_10_6_Przypadkowo rozla³em kawê._Accidentally I spilled my coffee
 20220924114044_5_15_2_oczywiœcie_of course
@@ -1388,3 +1374,22 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925231746_5_17_2_nieœwiadomie_unconsciously
 20220925231818_5_5_0_kilka dodatkowych szczegó³ów_some additional details
 20220925231948_5_16_4_szczery; otwarty_frank
+20220926185212_5_5_1_zaklejaæ; pieczêtowaæ_to seal
+20220926185305_5_7_1_Oni mieli romans._They had an affair
+20220926185606_5_5_0_na piœmie_in writing
+20220926190013_5_7_2_zaskoczenie_astonishment
+20220926190038_5_5_1_ma³¿eñski_marital
+20220926190135_5_16_4_czêsto siê zdarza, ¿e; czêsto jest tak, ¿e_it is often the case that
+20220926190232_5_5_1_cel_a purpose
+20220926190305_5_5_1_Zrobi³ to celowo._He did it on purpose
+20220926190336_5_5_0_odrzucenie; odmowa przyjêcia_a rejection
+20220926190402_5_5_1_czytelny_legible
+20220926190436_5_5_1_odrzucaæ; odmawiaæ przyjêcia_to reject
+20220926190520_5_5_1_brak_lack
+20220926190555_5_5_1_z braku dowodów_for lack of evidence
+20220926190616_5_18_5_Aby unikn¹æ niejasnoœci..._to avoid ambiguity
+20220926190700_5_5_0_Ry¿ jest uprawiany w Chinach._Rice is cultivated in China
+20220926190744_5_5_2_nieczytelny_illegible
+20220926190820_5_5_1_wieœ_the countryside
+20220926190903_5_7_2_zazdroœciæ_to envy
+20220926190941_5_5_1_uprawiaæ_to cultivate

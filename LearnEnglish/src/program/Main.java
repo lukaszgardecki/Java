@@ -8,6 +8,7 @@ import program.settings.MouseClick;
 
 import javax.swing.*;
 import java.io.*;
+import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -26,9 +27,9 @@ public class Main {
     static final int CAP_GROUP_3 = 90;
     static final int CAP_GROUP_4 = 140;
     static final int CAP_GROUP_5 = 160;
+
     public static int amountOfWords = 0;
     public static Window win;
-
 
     public static void main(String[] args) {
         createMap();
@@ -118,32 +119,43 @@ public class Main {
 
     public static ArrayList<String> loadWord() {
         ArrayList<String> word;
-        int volG0 = map.get(0).size();
-        int volG1 = map.get(1).size();
-        int volG2 = map.get(2).size();
-        int volG3 = map.get(3).size();
-        int volG4 = map.get(4).size();
-        int volG5 = map.get(5).size();
+        boolean isFull_Group1 = map.get(1).size() == CAP_GROUP_1;
+        boolean isFull_Group2 = map.get(2).size() == CAP_GROUP_2;
+        boolean isFull_Group3 = map.get(3).size() == CAP_GROUP_3;
+        boolean isFull_Group4 = map.get(4).size() == CAP_GROUP_4;
+        boolean isFull_Group5 = map.get(5).size() == CAP_GROUP_5;
+        boolean isMapEmpty = map.get(0).isEmpty() && map.get(1).isEmpty() &&
+                             map.get(2).isEmpty() && map.get(3).isEmpty() &&
+                             map.get(4).isEmpty() && map.get(5).isEmpty();
+        boolean areWordsInGroupZero = map.get(0).size() != 0;
 
-        if (volG1 == CAP_GROUP_1) {
-            word = map.get(1).getFirst();
-        } else if (volG2 == CAP_GROUP_2) {
-            word = map.get(2).getFirst();
-        } else if (volG3 == CAP_GROUP_3) {
-            word = map.get(3).getFirst();
-        } else if (volG4 == CAP_GROUP_4) {
-            word = map.get(4).getFirst();
-        } else if (volG5 == CAP_GROUP_5) {
-            word = map.get(5).getFirst();
-        } else if (volG0 != 0) {
-            word = map.get(0).getFirst();
-        } else if (volG1 == 0 && volG2 == 0 && volG3 == 0 && volG4 == 0 && volG5 == 0) {
-            word = (ArrayList<String>) List.of("19940418200515", "0", "0", "0", "brak fiszek", "brak fiszek");
+        if (isFull_Group1) {
+            word = getFirstWordFromGroup(1);
+        } else if (isFull_Group2) {
+            word = getFirstWordFromGroup(2);
+        } else if (isFull_Group3) {
+            word = getFirstWordFromGroup(3);
+        } else if (isFull_Group4) {
+            word = getFirstWordFromGroup(4);
+        } else if (isFull_Group5) {
+            word = getFirstWordFromGroup(5);
+        } else if (areWordsInGroupZero) {
+            word = getFirstWordFromGroup(0);
+        } else if (isMapEmpty) {
+            word = displayEmptyBaseMessage();
         } else {
             word = getTheOldestWord();
         }
         setUnderscores(word);
         return word;
+    }
+
+    private static ArrayList<String> displayEmptyBaseMessage() {
+        return (ArrayList<String>) List.of("19940418200515", "0", "0", "0", "brak fiszek", "brak fiszek");
+    }
+
+    private static ArrayList<String> getFirstWordFromGroup(int numOfGroup) {
+        return map.get(numOfGroup).getFirst();
     }
 
     public static void createMap() {
@@ -207,8 +219,6 @@ public class Main {
         }
     }
 
-
-
     public static ArrayList<String> getTheOldestWord() {
         ArrayList<String> nMin = new ArrayList<>();
         long min = Long.MAX_VALUE;
@@ -262,17 +272,16 @@ public class Main {
     public static void addWordToBase() {
         String polishWord = AddOrRemoveView.tf1.getText();
         String englishWord = AddOrRemoveView.tf2.getText();
+        boolean isWordExists = checkIfWordExists(polishWord, englishWord);
 
-        /*--------- return if it is a duplicate ---------*/
-        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-            for (ArrayList<String> list : el.getValue()) {
-                boolean s1 = list.get(4).equals(polishWord);
-                boolean s2 = list.get(5).equals(englishWord);
-                if (s1 && s2) return;
-            }
-        }
+        if (isWordExists) return;
 
-        /*--------- Add to map ---------*/
+        addNewWordToMap(polishWord, englishWord);
+        updateStatistics();
+        updateEditListOfWords();
+    }
+
+    private static void addNewWordToMap(String polishWord, String englishWord) {
         ArrayList<String> temp = new ArrayList<>(6);
         temp.add("00000000000000");
         temp.add("0");
@@ -281,12 +290,6 @@ public class Main {
         temp.add(polishWord);
         temp.add(englishWord);
         map.get(0).add(temp);
-
-        /*--------- update statistics ---------*/
-        updateStatistics();
-
-        /*--------- update edit list ---------*/
-        AddOrRemoveView.list.setModel(getListModel());
     }
 
     public static void changeTheWordInBase() {
@@ -294,18 +297,17 @@ public class Main {
         String englishWord = MouseClick.englishWord;
         String newPolishWord = AddOrRemoveView.tf1.getText();
         String newEnglishWord = AddOrRemoveView.tf2.getText();
+        boolean isDuplicate = polishWord.equals(newPolishWord) && englishWord.equals(newEnglishWord);
 
-        System.out.println(polishWord);
-        System.out.println(englishWord);
-        System.out.println(newPolishWord);
-        System.out.println(newEnglishWord);
+        if (isDuplicate) return;
 
+        changeWordInMap(polishWord, englishWord, newPolishWord, newEnglishWord);
+        updateStatistics();
+        updateEditListOfWords();
+    }
 
-        /*--------- return if it is a duplicate ---------*/
-        if (polishWord.equals(newPolishWord) && englishWord.equals(newEnglishWord)) return;
-
-        /*--------- Change to map ---------*/
-        loop2:
+    private static void changeWordInMap(String polishWord, String englishWord,
+                                        String newPolishWord, String newEnglishWord) {
         for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
             for (ArrayList<String> list : el.getValue()) {
                 boolean s1 = list.get(4).equals(polishWord);
@@ -313,24 +315,25 @@ public class Main {
                 if (s1 && s2) {
                     list.set(4, newPolishWord);
                     list.set(5, newEnglishWord);
-                    break loop2;
+                    return;
                 }
             }
         }
-        /*--------- update statistics ---------*/
-        updateStatistics();
-
-        /*--------- update edit list ---------*/
-        AddOrRemoveView.list.setModel(getListModel());
     }
 
     public static void removeFromBase() {
         String polishWord = AddOrRemoveView.tf1.getText();
         String englishWord = AddOrRemoveView.tf2.getText();
-        int numOfGroup = 0;
-        int index = 0;
+        boolean isNotExist = checkIfWordExists(polishWord, englishWord);
 
-        /*--------- return if it does not exist ---------*/
+        if (isNotExist) return;
+
+        removeFromMap(polishWord, englishWord);
+        updateStatistics();
+        updateEditListOfWords();
+    }
+
+    private static boolean checkIfWordExists(String polishWord, String englishWord) {
         boolean s1 = false;
         boolean s2 = false;
         loop:
@@ -338,21 +341,50 @@ public class Main {
             for (ArrayList<String> list : el.getValue()) {
                 s1 = list.get(4).equals(polishWord);
                 s2 = list.get(5).equals(englishWord);
+
+                if (s1 && s2) break loop;
+            }
+        }
+        return !s1 && !s2;
+    }
+
+    private static void removeFromMap(String polishWord, String englishWord) {
+        int numOfGroup = getNumOfGroup(polishWord, englishWord);
+        int index = getIndex(polishWord, englishWord);
+
+        map.get(numOfGroup).remove(index);
+    }
+
+    private static int getNumOfGroup(String polishWord, String englishWord) {
+        int numOfGroup = 0;
+        boolean s1;
+        boolean s2;
+        loop:
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                s1 = list.get(4).equals(polishWord);
+                s2 = list.get(5).equals(englishWord);
                 numOfGroup = Integer.parseInt(list.get(1));
+                if (s1 && s2) break loop;
+            }
+        }
+        return numOfGroup;
+    }
+
+    private static int getIndex(String polishWord, String englishWord) {
+        int index = 0;
+        boolean s1;
+        boolean s2;
+        loop:
+        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+            for (ArrayList<String> list : el.getValue()) {
+                s1 = list.get(4).equals(polishWord);
+                s2 = list.get(5).equals(englishWord);
                 if (s1 && s2) break loop;
                 index++;
             }
         }
-        if (!s1 && !s2) return;
-
-        /*--------- Change to map ---------*/
-        map.get(numOfGroup).remove(index);
-
-        /*--------- update statistics ---------*/
-        updateStatistics();
-
-        /*--------- update edit list ---------*/
-        AddOrRemoveView.list.setModel(getListModel());
+        return index;
     }
 
     public static void updateStatistics() {
@@ -437,7 +469,6 @@ public class Main {
                 undersc.append(sign);
                 correctAns.append(sign);
             }
-
         }
 
         MainView.underscores.setText(String.valueOf(undersc));
@@ -445,6 +476,10 @@ public class Main {
 
     public static String getCorrectAnswer() {
         return correctAns.toString();
+    }
+
+    private static void updateEditListOfWords() {
+        AddOrRemoveView.list.setModel(getListModel());
     }
 
 

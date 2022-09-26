@@ -1,5 +1,6 @@
 package program.settings;
 
+import program.Main;
 import program.elements.panels.MainPanel;
 import program.elements.panels.MenuPanel;
 import program.elements.panels.views.AddOrRemoveView;
@@ -27,7 +28,7 @@ public class Click implements ActionListener{
         boolean isPressedNextBtn = a.equals("check") && check.getText().equals("Dalej");
         boolean isPressedCheckBtn = a.equals("check") && check.getText().equals("Sprawdü");
         boolean isInputNotEmpty = !inputTextF.getText().isEmpty() && !inputTextF.getText().equals("T≥umaczenie");
-        boolean isGoodAnswer = (inputTextF.getText().toLowerCase()).equals(loadWord().get(5));
+        boolean isGoodAnswer = (inputTextF.getText().toLowerCase()).equals(loadWord().get(5).toLowerCase());
         boolean isPressedAddOrRemoveBtn = a.equals("addRemove");
         boolean isPressedAddBtn = a.equals("add") && AddOrRemoveView.addBtn.getText().equals("DODAJ");
         boolean isPressedChangeBtn = a.equals("add") && AddOrRemoveView.addBtn.getText().equals("ZMIE—");
@@ -48,12 +49,12 @@ public class Click implements ActionListener{
         } else if(isPressedNextBtn) {
             goToNextWord();
         } else if (isPressedCheckBtn && isInputNotEmpty && isGoodAnswer) {
-            setGoodAnsView();
             changeLevel("up");
+            setGoodAnsView();
             updateStatistics();
         } else if (isPressedCheckBtn && isInputNotEmpty) {
-            setWrongAnsView();
             changeLevel("down");
+            setWrongAnsView();
             updateStatistics();
         } else if (isPressedAddOrRemoveBtn) {
             changeToEditView();
@@ -100,7 +101,6 @@ public class Click implements ActionListener{
             updateWordList();
         }
         changeToMainView();
-        showMainViewBtns();
     }
 
     private void goToNextWord() {
@@ -161,6 +161,7 @@ public class Click implements ActionListener{
         editView.setVisible(false);
         statsView.setVisible(false);
         mainView.setVisible(true);
+        showMainViewBtns();
     }
 
     private void changeToEditView() {
@@ -200,7 +201,7 @@ public class Click implements ActionListener{
 
 
 
-//      TEN KOD NA PEWNO DZIA£A !
+//      TEN KOD NA PEWNO DZIA£A (PIERWSZA WERSJA KODU)!
 //    @Override
 //    public void actionPerformed(ActionEvent e) {
 //        String a = e.getActionCommand();
