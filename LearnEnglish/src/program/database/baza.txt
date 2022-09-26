@@ -1,19 +1,16 @@
 data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie polskie_t³umaczenie angielskie
 
-20220925194823_0_0_1_To wspania³a okazja by... (wielka szansa)_This is a golden opportunity to
-00000000000000_0_0_0_Mi³ego dnia!_Have a good one
-00000000000000_0_0_0_Nie b¹dŸ zazdrosny!_Don't be jealous!
-00000000000000_0_0_0_Jesteœ zazdrosny?_Are you jealous?
-20220925195128_0_0_1_Zwracamy szczególn¹ uwagê na..._We pay particular attention to
-00000000000000_0_0_0_To niestosowne!_It's unbecoming
-00000000000000_0_0_0_Zgodnie z ..._In accordance with
-00000000000000_0_0_0_zgodnie z zasadami_in accordance with the rules
 00000000000000_0_0_0_zgodnie z prawem_in accordance with the law
 20220925195505_0_1_2_ostatecznie_ultimately
 20220925195516_0_0_2_czujnoœæ_a vigilance
 00000000000000_0_0_0_lichwiarz_a loan shark
 00000000000000_0_0_0_Wcale nie. (ani trochê)_Not at all
+20220925231850_0_0_1_Nie b¹dŸ zazdrosny!_Don't be jealous!
 00000000000000_0_0_0_Nie uwa¿am tak, ani trochê!_I don't think so, not at all
+20220925232041_0_0_2_Zwracamy szczególn¹ uwagê na..._We pay particular attention to
+20220926110729_0_0_1_To niestosowne!_It's unbecoming
+20220926110803_0_0_1_Zgodnie z ..._In accordance with
+20220926110859_0_0_1_zgodnie z zasadami_in accordance with the rules
 00000000000000_0_0_0_Zas³ugujesz na medal!_You deserve a medal
 20220915082510_0_6_0_leciwy; wiekowy_elderly
 20220915082613_0_6_0_starszy cz³owiek_an elderly man
@@ -893,9 +890,9 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925195325_0_12_0_potê¿ne narzêdzie_a powerful tool
 20220925195356_0_12_2_przetwarzanie_processing
 20220925195447_0_12_0_W kolejnych tematach zobaczymy..._in the following topics we will see
-20220925191313_1_5_2_wdziêcznoœæ_gratitude
-20220925191407_1_1_0_Pyta³eœ, wiêc odpowiedzia³em._You asked so I answered
-20220925191514_1_1_1_Zaryzykujê i powiem_I'll go out on a limb and say
+20220925231753_0_14_4_to jest charakterystyczne dla Anglików_it is characteristic of the English
+20220925231823_0_16_2_rekin_a shark
+20220925231951_0_12_3_nieznacznie, nieco, lekko_slightly
 20220925191552_1_1_1_os¹d_judgement
 20220925191626_1_1_0_Ogólnie rzecz bior¹c... (ogólnie mówi¹c)_Generally speaking
 20220925191703_1_1_1_kanapa, sofa_a couch
@@ -942,9 +939,9 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925195335_1_1_1_nieoceniony, bezcenny_invaluable
 20220925195421_1_1_0_Nie zwracaj uwagi._Don't pay attention
 20220925195454_1_1_1_wieczny, wiekuisty_eternal
-20220925185923_2_15_3_uczciwoœæ_honesty
-20220925190020_2_8_2_robiæ na drutach_to knit
-20220925190036_2_8_0_poduszka_a pillow
+20220925231722_1_1_1_To wspania³a okazja by... (wielka szansa)_This is a golden opportunity to
+20220925231758_1_1_0_Mi³ego dnia!_Have a good one
+20220925231921_1_1_0_Jesteœ zazdrosny?_Are you jealous?
 20220925190133_2_8_0_puchowa poduszka_a feather pillow
 20220925190238_2_9_2_lecznica dla zwierz¹t_a veterinary hospital
 20220925190328_2_8_2_Pod³¹cz czajnik do gniazdka_plug the kettle into the power point
@@ -1001,9 +998,9 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925195257_2_2_2_orzeczenia_rulings
 20220925195343_2_2_1_Odbija siê to na nas._It reflects back on us
 20220925195429_2_6_4_wydarzenie; wypadek_an occurrence
-20220924151210_3_4_2_¯o³nierze odpowiedzieli ogniem na strza³y._The soldiers fired back
-20220924151241_3_13_2_nie znosiæ_to detest
-20220924151321_3_14_2_za³ó¿my, ¿e_let's assume that
+20220925231726_2_6_2_wdziêcznoœæ_gratitude
+20220925231806_2_2_0_Pyta³eœ, wiêc odpowiedzia³em._You asked so I answered
+20220925231939_2_2_1_Zaryzykujê i powiem_I'll go out on a limb and say
 20220924151346_3_9_1_go³¹bek pokoju_a dove of peace
 20220924151425_3_4_2_strza³_a shot
 20220924151503_3_9_2_Pies okaza³ wobec niej agresjê_the dog showed aggression towards her
@@ -1090,9 +1087,9 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925195300_3_6_2_¿niwa; zbiory_a harvest
 20220925195347_3_11_1_futro (futrzany p³aszcz)_a fur coat
 20220925195430_3_9_1_dzbanek_a jug
-20220924121425_4_16_2_nieœwiadomie_unconsciously
-20220924121445_4_4_0_kilka dodatkowych szczegó³ów_some additional details
-20220924121534_4_15_4_szczery; otwarty_frank
+20220925231731_3_16_3_uczciwoœæ_honesty
+20220925231808_3_9_2_robiæ na drutach_to knit
+20220925231941_3_9_0_poduszka_a pillow
 20220924121626_4_4_1_zaklejaæ; pieczêtowaæ_to seal
 20220924121703_4_6_1_Oni mieli romans._They had an affair
 20220924121737_4_4_1_dane osobowe_personal details
@@ -1229,9 +1226,9 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925195316_4_14_1_lokata kapita³u_a capital investment
 20220925195349_4_10_0_³abêdŸ_a swan
 20220925195434_4_10_1_paw_a peacock
-20220923213549_5_13_4_to jest charakterystyczne dla Anglików_it is characteristic of the English
-20220923213605_5_15_2_rekin_a shark
-20220923214910_5_11_3_nieznacznie, nieco, lekko_slightly
+20220925231740_4_5_2_¯o³nierze odpowiedzieli ogniem na strza³y._The soldiers fired back
+20220925231810_4_14_2_nie znosiæ_to detest
+20220925231946_4_15_2_za³ó¿my, ¿e_let's assume that
 20220923214959_5_11_1_pozwalaj¹ nam zdefiniowaæ_they allow us to define
 20220923215307_5_13_3_odpowiedzi okaza³y siê b³êdne_the answers turned out to be incorrect
 20220923215509_5_15_5_trójk¹t ró¿noboczny_a scalene triangle
@@ -1388,3 +1385,6 @@ data ost. powtórki_nr grupy_poprawne odpowiedzi_b³êdne odpowiedzi_t³umaczenie po
 20220925195319_5_5_0_szczegó³_a detail
 20220925195354_5_7_1_czêœci cia³a_parts of the body
 20220925195439_5_5_0_dodatkowy_additional
+20220925231746_5_17_2_nieœwiadomie_unconsciously
+20220925231818_5_5_0_kilka dodatkowych szczegó³ów_some additional details
+20220925231948_5_16_4_szczery; otwarty_frank
