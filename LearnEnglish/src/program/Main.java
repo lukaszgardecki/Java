@@ -6,11 +6,14 @@ import program.elements.panels.views.MainView;
 import program.elements.panels.views.StatsView;
 import program.settings.MouseClick;
 
+import javax.sound.midi.MidiFileFormat;
 import javax.swing.*;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 public class Main {
     public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
@@ -256,16 +259,26 @@ public class Main {
     public static DefaultListModel <String> getListModel() {
         DefaultListModel<String> m = new DefaultListModel<>();
         ArrayList<String> temp = new ArrayList<>();
-        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-            for (ArrayList<String> list : el.getValue()) {
-                String e = String.format("%s (%s)", list.get(4), list.get(5));
+
+//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+//            for (ArrayList<String> list : el.getValue()) {
+//                String e = String.format("%s (%s)", list.get(4), list.get(5));
+//                temp.add(e);
+//            }
+//        }
+        map.values().forEach(linkedList -> {
+            linkedList.forEach(arrayList -> {
+                String e = String.format("%s (%s)", arrayList.get(4), arrayList.get(5));
                 temp.add(e);
-            }
-        }
+            });
+        });
+
         Collections.sort(temp);
-        for (String s : temp) {
-            m.addElement(s);
-        }
+//        for (String s : temp) {
+//            m.addElement(s);
+//        }
+        temp.forEach(m::addElement);
+
         return m;
     }
 
@@ -319,33 +332,36 @@ public class Main {
                 }
             }
         }
+
+//        map.values().stream()
+//                .map(LinkedList::getFirst)
+//                .filter(e -> e.get(4).equals(polishWord) && e.get(5).equals(englishWord))
+//                .forEach(e -> {
+//                    e.set(4, newPolishWord);
+//                    e.set(5, newEnglishWord);
+//                });
+
+
+
     }
 
     public static void removeFromBase() {
         String polishWord = AddOrRemoveView.tf1.getText();
         String englishWord = AddOrRemoveView.tf2.getText();
-        boolean isNotExist = checkIfWordExists(polishWord, englishWord);
+        boolean isExist = checkIfWordExists(polishWord, englishWord);
 
-        if (isNotExist) return;
-
-        removeFromMap(polishWord, englishWord);
-        updateStatistics();
-        updateEditListOfWords();
+        if (isExist) {
+            removeFromMap(polishWord, englishWord);
+            updateStatistics();
+            updateEditListOfWords();
+        }
     }
 
     private static boolean checkIfWordExists(String polishWord, String englishWord) {
-        boolean s1 = false;
-        boolean s2 = false;
-        loop:
-        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-            for (ArrayList<String> list : el.getValue()) {
-                s1 = list.get(4).equals(polishWord);
-                s2 = list.get(5).equals(englishWord);
-
-                if (s1 && s2) break loop;
-            }
-        }
-        return !s1 && !s2;
+        return map.values().stream()
+                .anyMatch(e -> e.stream()
+                        .anyMatch(r -> r.get(4).equals(polishWord) &&
+                                       r.get(5).equals(englishWord)));
     }
 
     private static void removeFromMap(String polishWord, String englishWord) {
@@ -356,19 +372,29 @@ public class Main {
     }
 
     private static int getNumOfGroup(String polishWord, String englishWord) {
-        int numOfGroup = 0;
-        boolean s1;
-        boolean s2;
-        loop:
-        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-            for (ArrayList<String> list : el.getValue()) {
-                s1 = list.get(4).equals(polishWord);
-                s2 = list.get(5).equals(englishWord);
-                numOfGroup = Integer.parseInt(list.get(1));
-                if (s1 && s2) break loop;
-            }
-        }
-        return numOfGroup;
+//        int numOfGroup = 0;
+//        boolean s1;
+//        boolean s2;
+//        loop:
+//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+//            for (ArrayList<String> list : el.getValue()) {
+//                s1 = list.get(4).equals(polishWord);
+//                s2 = list.get(5).equals(englishWord);
+//                numOfGroup = Integer.parseInt(list.get(1));
+//                if (s1 && s2) break loop;
+//            }
+//        }
+//        return numOfGroup;
+
+        return map.entrySet().stream()
+                .filter(e -> e.getValue()
+                        .stream()
+                        .anyMatch(r -> r.get(4).equals(polishWord) &&
+                                r.get(5).equals(englishWord)))
+                .map(Map.Entry::getKey)
+                .toList().get(0);
+
+
     }
 
     private static int getIndex(String polishWord, String englishWord) {
@@ -385,6 +411,11 @@ public class Main {
             }
         }
         return index;
+//        return map.values().stream()
+//                .filter(e -> e.stream().anyMatch(r -> r.get(0).equals(polishWord) &&
+//                        r.get(1).equals(englishWord)))
+//                .toList().get(0)
+//                .indexOf(List.of(polishWord, englishWord));
     }
 
     public static void updateStatistics() {
@@ -400,56 +431,75 @@ public class Main {
     }
 
     public static int getAmountOfAllWords() {
-        return map.get(0).size() +
-                map.get(1).size() +
-                map.get(2).size() +
-                map.get(3).size() +
-                map.get(4).size() +
-                map.get(5).size();
+//        return map.get(0).size() +
+//                map.get(1).size() +
+//                map.get(2).size() +
+//                map.get(3).size() +
+//                map.get(4).size() +
+//                map.get(5).size();
+        return map.values().stream().mapToInt(LinkedList::size).sum();
     }
 
     public static String getAmountOfCorrectAns() {
-        double amountOfCorrectAns = 0;
+//        double amountOfCorrectAns = 0;
         double allAns = Double.parseDouble(getAmountOfAllAns());
         String correctAnsPercent;
 
-        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-            for (ArrayList<String> list : el.getValue()) {
-                amountOfCorrectAns += Integer.parseInt(list.get(2));
-            }
-        }
+//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+//            for (ArrayList<String> list : el.getValue()) {
+//                amountOfCorrectAns += Integer.parseInt(list.get(2));
+//            }
+//        }
+        int amountOfCorrectAns = map.values().stream()
+                .mapToInt(e -> e.stream()
+                        .mapToInt(r -> Integer.parseInt(r.get(2)))
+                        .sum())
+                .sum();
 
-        correctAnsPercent = String.valueOf(String.format("%.0f (%.2f%%)",
+        correctAnsPercent = String.valueOf(String.format("%d (%.2f%%)",
                 amountOfCorrectAns, (amountOfCorrectAns*100)/allAns));
 
         return correctAnsPercent;
     }
 
     public static String getAmountOfIncorrectAns() {
-        double amountOfIncorrectAns = 0;
+        //double amountOfIncorrectAns = 0;
         double allAns = Double.parseDouble(getAmountOfAllAns());
         String incorrectAnsPercent;
 
-        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-            for (ArrayList<String> list : el.getValue()) {
-                amountOfIncorrectAns += Integer.parseInt(list.get(3));
-            }
-        }
+//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+//            for (ArrayList<String> list : el.getValue()) {
+//                amountOfIncorrectAns += Integer.parseInt(list.get(3));
+//            }
+//        }
+        int amountOfIncorrectAns = map.values().stream()
+                .mapToInt(e -> e.stream()
+                        .mapToInt(r -> Integer.parseInt(r.get(3)))
+                        .sum())
+                .sum();
 
-        incorrectAnsPercent = String.valueOf(String.format("%.0f (%.2f%%)",
+        incorrectAnsPercent = String.valueOf(String.format("%d (%.2f%%)",
                 amountOfIncorrectAns, (amountOfIncorrectAns*100)/allAns));
 
         return incorrectAnsPercent;
     }
 
     public static String getAmountOfAllAns() {
-        int amountOfAllAns = 0;
-        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-            for (ArrayList<String> list : el.getValue()) {
-                amountOfAllAns += (Integer.parseInt(list.get(2)) + Integer.parseInt(list.get(3)));
-            }
-        }
+//        int amountOfAllAns = 0;
+//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
+//            for (ArrayList<String> list : el.getValue()) {
+//                amountOfAllAns += (Integer.parseInt(list.get(2)) + Integer.parseInt(list.get(3)));
+//            }
+//        }
+
+        int amountOfAllAns =  map.values().stream()
+                .mapToInt(e -> e.stream()
+                        .mapToInt(r -> Integer.parseInt(r.get(2)) + Integer.parseInt(r.get(3)))
+                        .sum())
+                .sum();
+
         return String.valueOf(amountOfAllAns);
+
     }
 
     public static void setUnderscores(ArrayList<String> lst) {
@@ -481,6 +531,5 @@ public class Main {
     private static void updateEditListOfWords() {
         AddOrRemoveView.list.setModel(getListModel());
     }
-
 
 }
