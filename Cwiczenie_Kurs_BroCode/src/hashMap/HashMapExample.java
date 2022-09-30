@@ -60,8 +60,10 @@ public class HashMapExample {
         }
         //System.out.println(map);
 
-        String polishWord = "S³owo5i0";
+        String polishWord = "S³owo50";
+        String newPolishWord = "yooy";
         String englishWord = "Word50";
+        String newElishWord = "piop";
 
 
 //        int t = map.entrySet().stream()
@@ -75,13 +77,26 @@ public class HashMapExample {
 
 
         System.out.println();
+        int g = map.values().stream()
+                .mapToInt(LinkedList::size)
+                .sum();
+        System.out.println("Mapa przed korekt¹ ma elementów: " + g);
+        System.out.println();
 
-        boolean ooo = map.values().stream()
-                .anyMatch(e -> e.stream()
-                        .anyMatch(r -> r.get(0).equals(polishWord) &&
-                                     r.get(1).equals(englishWord)));
 
-        System.out.println("Czy nasze s³owo istnieje? " + ooo);
+
+
+
+
+
+//        System.out.println();
+//
+//        boolean ooo = map.values().stream()
+//                .anyMatch(e -> e.stream()
+//                        .anyMatch(r -> r.get(0).equals(polishWord) &&
+//                                     r.get(1).equals(englishWord)));
+//
+//        System.out.println("Czy nasze s³owo istnieje? " + ooo);
 
 
 
@@ -96,11 +111,6 @@ public class HashMapExample {
 //                .indexOf(List.of(polishWord, englishWord));
 //
 //        System.out.printf("S³owo: %s (%s) jest w grupie %d i ma indeks %d\n", polishWord, englishWord, t, k);
-//
-//
-//
-//
-//
 //
 //
 //

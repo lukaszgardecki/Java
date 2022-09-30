@@ -9,7 +9,7 @@ import program.settings.MouseClick;
 import javax.sound.midi.MidiFileFormat;
 import javax.swing.*;
 import java.io.*;
-import java.lang.reflect.Array;
+import java.sql.Array;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.function.Supplier;
@@ -260,12 +260,6 @@ public class Main {
         DefaultListModel<String> m = new DefaultListModel<>();
         ArrayList<String> temp = new ArrayList<>();
 
-//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-//            for (ArrayList<String> list : el.getValue()) {
-//                String e = String.format("%s (%s)", list.get(4), list.get(5));
-//                temp.add(e);
-//            }
-//        }
         map.values().forEach(linkedList -> {
             linkedList.forEach(arrayList -> {
                 String e = String.format("%s (%s)", arrayList.get(4), arrayList.get(5));
@@ -274,11 +268,7 @@ public class Main {
         });
 
         Collections.sort(temp);
-//        for (String s : temp) {
-//            m.addElement(s);
-//        }
         temp.forEach(m::addElement);
-
         return m;
     }
 
@@ -372,20 +362,6 @@ public class Main {
     }
 
     private static int getNumOfGroup(String polishWord, String englishWord) {
-//        int numOfGroup = 0;
-//        boolean s1;
-//        boolean s2;
-//        loop:
-//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-//            for (ArrayList<String> list : el.getValue()) {
-//                s1 = list.get(4).equals(polishWord);
-//                s2 = list.get(5).equals(englishWord);
-//                numOfGroup = Integer.parseInt(list.get(1));
-//                if (s1 && s2) break loop;
-//            }
-//        }
-//        return numOfGroup;
-
         return map.entrySet().stream()
                 .filter(e -> e.getValue()
                         .stream()
@@ -393,8 +369,6 @@ public class Main {
                                 r.get(5).equals(englishWord)))
                 .map(Map.Entry::getKey)
                 .toList().get(0);
-
-
     }
 
     private static int getIndex(String polishWord, String englishWord) {
@@ -431,25 +405,13 @@ public class Main {
     }
 
     public static int getAmountOfAllWords() {
-//        return map.get(0).size() +
-//                map.get(1).size() +
-//                map.get(2).size() +
-//                map.get(3).size() +
-//                map.get(4).size() +
-//                map.get(5).size();
         return map.values().stream().mapToInt(LinkedList::size).sum();
     }
 
     public static String getAmountOfCorrectAns() {
-//        double amountOfCorrectAns = 0;
+
         double allAns = Double.parseDouble(getAmountOfAllAns());
         String correctAnsPercent;
-
-//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-//            for (ArrayList<String> list : el.getValue()) {
-//                amountOfCorrectAns += Integer.parseInt(list.get(2));
-//            }
-//        }
         int amountOfCorrectAns = map.values().stream()
                 .mapToInt(e -> e.stream()
                         .mapToInt(r -> Integer.parseInt(r.get(2)))
@@ -463,15 +425,9 @@ public class Main {
     }
 
     public static String getAmountOfIncorrectAns() {
-        //double amountOfIncorrectAns = 0;
+
         double allAns = Double.parseDouble(getAmountOfAllAns());
         String incorrectAnsPercent;
-
-//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-//            for (ArrayList<String> list : el.getValue()) {
-//                amountOfIncorrectAns += Integer.parseInt(list.get(3));
-//            }
-//        }
         int amountOfIncorrectAns = map.values().stream()
                 .mapToInt(e -> e.stream()
                         .mapToInt(r -> Integer.parseInt(r.get(3)))
@@ -485,13 +441,6 @@ public class Main {
     }
 
     public static String getAmountOfAllAns() {
-//        int amountOfAllAns = 0;
-//        for (Map.Entry<Integer, LinkedList<ArrayList<String>>> el : map.entrySet()) {
-//            for (ArrayList<String> list : el.getValue()) {
-//                amountOfAllAns += (Integer.parseInt(list.get(2)) + Integer.parseInt(list.get(3)));
-//            }
-//        }
-
         int amountOfAllAns =  map.values().stream()
                 .mapToInt(e -> e.stream()
                         .mapToInt(r -> Integer.parseInt(r.get(2)) + Integer.parseInt(r.get(3)))
@@ -499,7 +448,6 @@ public class Main {
                 .sum();
 
         return String.valueOf(amountOfAllAns);
-
     }
 
     public static void setUnderscores(ArrayList<String> lst) {
