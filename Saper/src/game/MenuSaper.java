@@ -6,8 +6,8 @@ public class MenuSaper extends JMenuBar {
 
     JMenu fileMenu;
     JMenu helpMenu;
-    private int menuWidth = 400;
-    private int menuHeight = 50;
+    private int menuWidth = MainPanel.mainPanelWidth;
+    static int menuHeight = 30;
 
     MenuSaper() {
         fileMenu = new JMenu("Plik");

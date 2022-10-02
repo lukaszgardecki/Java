@@ -7,10 +7,12 @@ public class MainContainer extends JPanel {
 
     MenuSaper menu;
     MainPanel mainPanel;
+    private int mainContainerWidth = MainPanel.mainPanelWidth;
+    private int mainContainerHeight = MainPanel.mainPanelHeight + MenuSaper.menuHeight;
 
     MainContainer() {
-        setPreferredSize(new Dimension(400, 450));
-        setBackground(Color.RED);
+        setPreferredSize(new Dimension(mainContainerWidth, mainContainerHeight));
+        //setBackground(Color.RED);
         setLayout(null);
 
         menu = new MenuSaper();

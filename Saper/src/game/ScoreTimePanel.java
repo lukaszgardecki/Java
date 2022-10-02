@@ -1,18 +1,26 @@
 package game;
 
 import javax.swing.*;
+import javax.swing.border.BevelBorder;
 import java.awt.*;
 
 public class ScoreTimePanel extends JPanel {
 
-    private int scoreTimePanelWidth = 400;
-    private int scoreTimePanelHeight = 100;
+    int horizontalMargin = BoardPanel.horizontalMargin;
+    int verticalMargin = BoardPanel.verticalMargin;
+
+    int scoreTimePanelWidth = BoardPanel.boardPanelWidth;
+    static int scoreTimePanelHeight = 50;
+
+    BevelBorder myBorder = new BevelBorder(BevelBorder.LOWERED, Color.white, new Color(129, 129, 129));
+
 
 
     ScoreTimePanel() {
 
-        setBounds(0, 0, scoreTimePanelWidth, scoreTimePanelHeight);
-        setBackground(Color.orange);
+        setBounds(horizontalMargin, verticalMargin, scoreTimePanelWidth, scoreTimePanelHeight);
+        setBackground(new Color(190, 190, 190));
+        setBorder(BorderFactory.createCompoundBorder(myBorder, null));
 
     }
 }
