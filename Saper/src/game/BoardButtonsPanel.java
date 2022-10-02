@@ -1,36 +1,32 @@
 package game;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Arrays;
 
-public class BoardPanel extends JPanel implements ActionListener {
+public class BoardButtonsPanel extends JPanel implements ActionListener {
 
     private static int boardSizeX = 10;
     private static int boardSizeY = 10;
-    private Field[][] board = new Field[boardSizeX][boardSizeY];
+    private FieldButton[][] buttons = new FieldButton[boardSizeX][boardSizeY];
 
     static int horizontalMargin = 10;
     static int verticalMargin = 10;
 
-    static int boardPanelWidth = boardSizeX * Field.fieldWidth;
-    static int boardPanelHeight = boardSizeY * Field.fieldHeight;
+    static int boardPanelWidth = boardSizeX * FieldButton.fieldWidth;
+    static int boardPanelHeight = boardSizeY * FieldButton.fieldHeight;
 
     private int x = horizontalMargin;
     private int y = ScoreTimePanel.scoreTimePanelHeight + 2 * verticalMargin;
 
 
-
-
-
-    BoardPanel() {
+    BoardButtonsPanel() {
         setBounds(x, y, boardPanelWidth, boardPanelHeight);
-        setBackground(new Color(190, 190, 190));
-        setBorder(new LineBorder(new Color(129, 129, 129), 2));
-        setLayout(new GridLayout(boardSizeY, boardSizeX));
+        //setBackground(new Color(190, 190, 190));
+        setOpaque(false);
+        //setBorder(new LineBorder(new Color(129, 129, 129), 2));
+        setLayout(new GridLayout(boardSizeY, boardSizeX, 2, 2));
 
         fillBoard();
     }
@@ -40,12 +36,12 @@ public class BoardPanel extends JPanel implements ActionListener {
     void fillBoard() {
         for (int rows = 0; rows < boardSizeX; rows++) {
             for (int cols = 0; cols < boardSizeY; cols++) {
-                Field field = new Field();
-                field.addActionListener(this);
-                field.setActionCommand("" + rows + "." + cols);
+                FieldButton fieldButton = new FieldButton();
+                fieldButton.addActionListener(this);
+                fieldButton.setActionCommand("" + rows + "." + cols);
 
-                board[rows][cols] = field;
-                add(field);
+                buttons[rows][cols] = fieldButton;
+                add(fieldButton);
             }
         }
     }
@@ -61,6 +57,6 @@ public class BoardPanel extends JPanel implements ActionListener {
     }
 
     private void hideField(int row, int col) {
-        board[row][col].setVisible(false);
+        buttons[row][col].setVisible(false);
     }
 }

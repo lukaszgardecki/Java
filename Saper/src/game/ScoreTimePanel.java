@@ -6,10 +6,10 @@ import java.awt.*;
 
 public class ScoreTimePanel extends JPanel {
 
-    int horizontalMargin = BoardPanel.horizontalMargin;
-    int verticalMargin = BoardPanel.verticalMargin;
+    int horizontalMargin = BoardButtonsPanel.horizontalMargin;
+    int verticalMargin = BoardButtonsPanel.verticalMargin;
 
-    int scoreTimePanelWidth = BoardPanel.boardPanelWidth;
+    int scoreTimePanelWidth = BoardButtonsPanel.boardPanelWidth;
     static int scoreTimePanelHeight = 50;
 
     BevelBorder myBorder = new BevelBorder(BevelBorder.LOWERED, Color.white, new Color(129, 129, 129));
