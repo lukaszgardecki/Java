@@ -18,8 +18,7 @@ public class FieldLabel extends JLabel {
         setFont(new Font("Courier", Font.BOLD, 22));
         setOpaque(true);
         setBackground(Color.white);
-
-
+        setVisible(false);
     }
 
     public void setBomb() {
@@ -34,5 +33,6 @@ public class FieldLabel extends JLabel {
     public int getSurroundingBombs() {
         return surroundingBombs;
     }
+
 
 }

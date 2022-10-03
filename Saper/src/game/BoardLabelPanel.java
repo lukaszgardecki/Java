@@ -101,19 +101,26 @@ public class BoardLabelPanel extends JPanel implements MouseListener {
         }
     }
 
-    private void displayBoardInConsole() {
+    /*private*/static void displayBoardInConsole() {
         for (int i = 0; i < labels.length; i++) {
             for (int j = 0; j < labels[i].length; j++) {
 
-                if (labels[i][j].hasBomb) {
-                    System.out.print("B ");
-                    continue;
+//                if (labels[i][j].hasBomb) {
+//                    System.out.print("B ");
+//                    continue;
+//                }
+//                if (labels[i][j].getText().equals("")) {
+//                    System.out.print("_ ");
+//                    continue;
+//                }
+
+                if (labels[i][j].isVisible()) {
+                    System.out.print("T ");
+                } else {
+                    System.out.print("F ");
                 }
-                if (labels[i][j].getText().equals("")) {
-                    System.out.print("_ ");
-                    continue;
-                }
-                System.out.print(labels[i][j].getText()+ " ");
+
+                //System.out.print(labels[i][j].getText()+ " ");
             }
             System.out.println();
         }
