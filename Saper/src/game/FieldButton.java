@@ -12,6 +12,7 @@ public class FieldButton extends JButton {
     FieldButton() {
         setSize(fieldWidth, fieldHeight);
         setBackground(new Color(123, 210, 253));
+        //setVisible(false);
     }
 
 

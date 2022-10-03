@@ -17,6 +17,7 @@ public class MainPanel extends JLayeredPane {
     MainPanel() {
         scoreTimePanel = new ScoreTimePanel();
         boardLabelPanel = new BoardLabelPanel();
+
         boardButtonsPanel = new BoardButtonsPanel();
 
         setBounds(0, 30, mainPanelWidth, mainPanelHeight);
@@ -26,7 +27,7 @@ public class MainPanel extends JLayeredPane {
         setLayout(null);
 
         add(scoreTimePanel, JLayeredPane.DEFAULT_LAYER);
-        //add(boardButtonsPanel, JLayeredPane.PALETTE_LAYER);
+        add(boardButtonsPanel, JLayeredPane.PALETTE_LAYER);
         add(boardLabelPanel, JLayeredPane.DEFAULT_LAYER);
 
     }
