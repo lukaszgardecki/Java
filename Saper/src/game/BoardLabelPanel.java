@@ -2,17 +2,14 @@ package game;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.Random;
 
-public class BoardLabelPanel extends JPanel implements MouseListener {
+public class BoardLabelPanel extends JPanel {
 
-    private static int boardSizeX = Game.GAME_BOARD_WIDTH;
-    private static int boardSizeY = Game.GAME_BOARD_HEIGHT;
-    private int numOfBombs = Game.BOMBS;
-    static FieldLabel[][] labels = new FieldLabel[boardSizeY][boardSizeX];
-    Random random = new Random();
+    private static int boardSizeX = Game.getGameWidth();
+    private static int boardSizeY = Game.getGameHeight();
+    static FieldLabel[][] labels;
+    static Random random = new Random();
 
     static int horizontalMargin = 10;
     static int verticalMargin = 10;
@@ -24,30 +21,32 @@ public class BoardLabelPanel extends JPanel implements MouseListener {
     private int y = ScoreTimePanel.scoreTimePanelHeight + 2 * verticalMargin;
 
     BoardLabelPanel() {
+//        setLocation(x, y);
+//        setPreferredSize(new Dimension(boardPanelWidth, boardPanelHeight));
         setBounds(x, y, boardPanelWidth, boardPanelHeight);
         setOpaque(false);
-        //setBorder(new LineBorder(new Color(129, 129, 129), 2));
         setLayout(new GridLayout(boardSizeY, boardSizeX, 2, 2));
-
-        fillBoard();
-        insertBombs(numOfBombs);
-
-
-        displayBoardInConsole();
-
     }
 
-    private void fillBoard() {
+    void fillBoard() {
+
+        labels = new FieldLabel[boardSizeY][boardSizeX];
+
         for (int row = 0; row < boardSizeY; row++) {
             for (int col = 0; col < boardSizeX; col++) {
                 FieldLabel fieldLabel = new FieldLabel();
+                fieldLabel.setRow(row);
+                fieldLabel.setCol(col);
+
+
+
                 labels[row][col] = fieldLabel;
                 add(fieldLabel);
             }
         }
     }
 
-    private void insertBombs(int numOfBombs) {
+    static void insertBombs(int numOfBombs) {
         int maxAmountOfBombs = boardSizeX * boardSizeY;
         if(numOfBombs > maxAmountOfBombs) numOfBombs = maxAmountOfBombs;
 
@@ -65,7 +64,7 @@ public class BoardLabelPanel extends JPanel implements MouseListener {
         }
     }
 
-    private void setNumbers(int bombX, int bombY) {
+    private static void setNumbers(int bombX, int bombY) {
         int startX = bombX - 1;
         int startY = bombY - 1;
         labels[bombX][bombY].setText("");
@@ -88,7 +87,7 @@ public class BoardLabelPanel extends JPanel implements MouseListener {
         }
     }
 
-    private void setFontColor(JLabel label, int num) {
+    static void setFontColor(JLabel label, int num) {
         switch (num) {
             case 1 -> label.setForeground(new Color(25, 187, 223));
             case 2 -> label.setForeground(new Color(112, 147, 25));
@@ -124,32 +123,16 @@ public class BoardLabelPanel extends JPanel implements MouseListener {
             }
             System.out.println();
         }
+        System.out.println();
+    }
+
+    public void setBoardPanelWidth(int width) {
+        boardPanelWidth = width;
+    }
+
+    public void setBoardPanelHeight(int height) {
+        boardPanelHeight = height;
     }
 
 
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
 }

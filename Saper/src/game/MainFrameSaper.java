@@ -4,17 +4,16 @@ import javax.swing.*;
 
 public class MainFrameSaper extends JFrame {
 
-    MainContainer container;
+    static MainContainer container;
 
     MainFrameSaper() {
         container = new MainContainer();
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(false);
-        setLocationRelativeTo(null);
-
         add(container);
 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //setResizable(false);
         pack();
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 }

@@ -8,20 +8,13 @@ public class FieldButton extends JButton implements MouseListener {
 
     static int fieldWidth = 40;
     static int fieldHeight = 40;
-    ImageIcon flag = new ImageIcon("src/game/flag.png");
+    static ImageIcon flag = new ImageIcon("src/game/flag.png");
     ImageIcon questionMark = new ImageIcon("src/game/question-mark.png");
-
 
     FieldButton() {
         setSize(fieldWidth, fieldHeight);
         setBackground(new Color(123, 210, 253));
         addMouseListener(this);
-        //setVisible(false);
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-
     }
 
     @Override
@@ -31,10 +24,17 @@ public class FieldButton extends JButton implements MouseListener {
                 this.setIcon(null);
             } else if (flag.equals(this.getIcon())) {
                 this.setIcon(questionMark);
-            } else {
+                ScoreTimePanel.bombCounter.setText(String.valueOf(++ScoreTimePanel.remainingBombs));
+            } else if (ScoreTimePanel.remainingBombs > 0) {
                 this.setIcon(flag);
+                ScoreTimePanel.bombCounter.setText(String.valueOf(--ScoreTimePanel.remainingBombs));
             }
         }
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+
     }
 
     @Override
