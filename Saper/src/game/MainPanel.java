@@ -22,13 +22,13 @@ public class MainPanel extends JLayeredPane {
 
 
 
-//    static BoardButtonsPanel boardButtonsPanel;
-//    static BoardLabelPanel boardLabelPanel;
-//
+    static BoardButtonsPanel boardButtonsPanel;
+    static BoardLabelPanel boardLabelPanel;
+
     MainPanel() {
         scoreTimePanel = new ScoreTimePanel();
-//        boardLabelPanel = new BoardLabelPanel();
-//        boardButtonsPanel = new BoardButtonsPanel();
+        boardLabelPanel = new BoardLabelPanel();
+        boardButtonsPanel = new BoardButtonsPanel();
 //
 ////        setPreferredSize(new Dimension(mainPanelWidth, mainPanelHeight));
 ////        setLocation(0, 30);
@@ -41,9 +41,9 @@ public class MainPanel extends JLayeredPane {
 
         add(scoreTimePanel, JLayeredPane.DEFAULT_LAYER);
 //        //add(, JLayeredPane.DEFAULT_LAYER);
-//        add(boardButtonsPanel, JLayeredPane.PALETTE_LAYER);
-//        //add(new BoardLabelPanel(), JLayeredPane.PALETTE_LAYER);
-//        add(boardLabelPanel, JLayeredPane.DEFAULT_LAYER);
+        add(boardButtonsPanel, JLayeredPane.PALETTE_LAYER);
+        //add(new BoardLabelPanel(), JLayeredPane.PALETTE_LAYER);
+        add(boardLabelPanel, JLayeredPane.DEFAULT_LAYER);
 //        //add(new BoardButtonsPanel(), JLayeredPane.DEFAULT_LAYER);
 //
     }

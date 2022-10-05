@@ -31,11 +31,11 @@ public class Game {
 
 
 
-//    public static void endGame() {
-//        ScoreTimePanel.timer.stop();
-//        BoardButtonsPanel.showAllUnflaggedBombs();
-//        BoardButtonsPanel.blockAllFields();
-//    }
+    public static void endGame() {
+        ScoreTimePanel.timer.stop();
+        BoardButtonsPanel.showAllUnflaggedBombs();
+        BoardButtonsPanel.blockAllFields();
+    }
 
     public int getGameWidth() {
         return Game_Board_Width;

@@ -62,16 +62,44 @@ public class MenuSaper extends JMenuBar implements ActionListener {
                 setBounds(0, 0, menuWidth, menuHeight);
 
                 MainContainer.mainPanel.setBounds(0, MainContainer.menu.getMenuHeight(), mainPanelWidth, mainPanelHeight);
-                
+
                 MainPanel.scoreTimePanel.setBounds(MainPanel.getMarginX(),
                         MainPanel.getMarginY(),
                         FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
                         ScoreTimePanel.getScoreTimePanelHeight());
 
+                MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
+                ScoreTimePanel.timer.stop();
+                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
+                MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
+                ScoreTimePanel.remainingBombs = Main.game.getBombs();
 
 
+                MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
+                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                        Main.game.getGameWidth() * FieldButton.fieldWidth,
+                        Main.game.getGameHeight() * FieldButton.fieldHeight);
 
+                MainPanel.boardLabelPanel.setLayout(new GridLayout(
+                        Main.game.getGameHeight(),
+                        Main.game.getGameWidth(),
+                        2,
+                        2));
+                MainPanel.boardLabelPanel.removeAll();
+                MainPanel.boardLabelPanel.fillBoard();
+                BoardLabelPanel.insertBombs(Main.game.getBombs());
 
+                MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
+                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                        Main.game.getGameWidth() * FieldButton.fieldWidth,
+                        Main.game.getGameHeight() * FieldButton.fieldHeight);
+                MainPanel.boardButtonsPanel.setLayout(new GridLayout(
+                        Main.game.getGameHeight(),
+                        Main.game.getGameWidth(),
+                        2,
+                        2));
+                MainPanel.boardButtonsPanel.removeAll();
+                MainPanel.boardButtonsPanel.fillBoard();
 
 
 
@@ -109,6 +137,39 @@ public class MenuSaper extends JMenuBar implements ActionListener {
                         FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
                         ScoreTimePanel.getScoreTimePanelHeight());
 
+                MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
+                ScoreTimePanel.timer.stop();
+                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
+                MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
+                ScoreTimePanel.remainingBombs = Main.game.getBombs();
+
+
+                MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
+                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                        Main.game.getGameWidth() * FieldButton.fieldWidth,
+                        Main.game.getGameHeight() * FieldButton.fieldHeight);
+
+                MainPanel.boardLabelPanel.setLayout(new GridLayout(
+                        Main.game.getGameHeight(),
+                        Main.game.getGameWidth(),
+                        2,
+                        2));
+                MainPanel.boardLabelPanel.removeAll();
+                MainPanel.boardLabelPanel.fillBoard();
+                BoardLabelPanel.insertBombs(Main.game.getBombs());
+
+                MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
+                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                        Main.game.getGameWidth() * FieldButton.fieldWidth,
+                        Main.game.getGameHeight() * FieldButton.fieldHeight);
+                MainPanel.boardButtonsPanel.setLayout(new GridLayout(
+                        Main.game.getGameHeight(),
+                        Main.game.getGameWidth(),
+                        2,
+                        2));
+                MainPanel.boardButtonsPanel.removeAll();
+                MainPanel.boardButtonsPanel.fillBoard();
+
 
 
 
@@ -144,6 +205,40 @@ public class MenuSaper extends JMenuBar implements ActionListener {
                         MainPanel.getMarginY(),
                         FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
                         ScoreTimePanel.getScoreTimePanelHeight());
+
+                MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
+                ScoreTimePanel.timer.stop();
+                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
+                MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
+                ScoreTimePanel.remainingBombs = Main.game.getBombs();
+
+
+                MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
+                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                        Main.game.getGameWidth() * FieldButton.fieldWidth,
+                        Main.game.getGameHeight() * FieldButton.fieldHeight);
+
+                MainPanel.boardLabelPanel.setLayout(new GridLayout(
+                        Main.game.getGameHeight(),
+                        Main.game.getGameWidth(),
+                        2,
+                        2));
+                MainPanel.boardLabelPanel.removeAll();
+                MainPanel.boardLabelPanel.fillBoard();
+                BoardLabelPanel.insertBombs(Main.game.getBombs());
+
+                MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
+                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                        Main.game.getGameWidth() * FieldButton.fieldWidth,
+                        Main.game.getGameHeight() * FieldButton.fieldHeight);
+                MainPanel.boardButtonsPanel.setLayout(new GridLayout(
+                        Main.game.getGameHeight(),
+                        Main.game.getGameWidth(),
+                        2,
+                        2));
+                MainPanel.boardButtonsPanel.removeAll();
+                MainPanel.boardButtonsPanel.fillBoard();
+
 
 
 
