@@ -24,7 +24,6 @@ public class BoardLabelPanel extends JPanel {
 
         fillBoard();
         insertBombs(Main.game.getBombs());
-
     }
 
     void fillBoard() {
@@ -95,6 +94,22 @@ public class BoardLabelPanel extends JPanel {
         }
     }
 
+    void refresh() {
+        MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
+                ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                Main.game.getGameWidth() * FieldButton.fieldWidth,
+                Main.game.getGameHeight() * FieldButton.fieldHeight);
+
+        MainPanel.boardLabelPanel.setLayout(new GridLayout(
+                Main.game.getGameHeight(),
+                Main.game.getGameWidth(),
+                2,
+                2));
+        MainPanel.boardLabelPanel.removeAll();
+        MainPanel.boardLabelPanel.fillBoard();
+        BoardLabelPanel.insertBombs(Main.game.getBombs());
+    }
+
     /*private*/static void displayBoardInConsole() {
         for (int i = 0; i < labels.length; i++) {
             for (int j = 0; j < labels[i].length; j++) {
@@ -120,24 +135,4 @@ public class BoardLabelPanel extends JPanel {
         }
         System.out.println();
     }
-
-//    public void setBoardPanelWidth(int width) {
-//        boardPanelWidth = width;
-//    }
-//
-//    public void setBoardPanelHeight(int height) {
-//        boardPanelHeight = height;
-//    }
-//
-//    public static void setBoardSizeX(int width) {
-//        boardSizeX = width;
-//    }
-//
-//    public static void setBoardSizeY(int height) {
-//        boardSizeY = height;
-//    }
-//
-//
-//
-//
 }

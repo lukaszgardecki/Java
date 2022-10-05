@@ -14,39 +14,19 @@ public class MainContainer extends JPanel {
 
     int mainContainerWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10);;
     int mainContainerHeight = FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + menu.getMenuHeight() + (3 * 10);
-//
+
     MainContainer() {
-       // mainPanel = new MainPanel();
-
-
-//        setPreferredSize(new Dimension(mainContainerWidth, mainContainerHeight));
         setPreferredSize(new Dimension(mainContainerWidth, mainContainerHeight));
-       //setBounds(0, 0, 400, 400);
-//        menu = new MenuSaper();
-
         setLayout(null);
         setBackground(Color.RED);
 
-
         add(menu);
-//        //add(new MenuSaper());
         add(mainPanel);
-//        //add(new MainPanel());
     }
 
-    public void setMainContainerWidth(int width) {
-        mainContainerWidth = width;
-    }
-
-    public void setMainContainerHeight(int height) {
-        mainContainerHeight = height;
-    }
-
-    public int getMainContainerWidth() {
-        return mainContainerWidth;
-    }
-
-    public int getMainContainerHeight() {
-        return mainContainerHeight;
+    void refresh() {
+        setPreferredSize(new Dimension(
+                FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10),
+                FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + MainContainer.menu.getMenuHeight() + (3 * 10)));
     }
 }

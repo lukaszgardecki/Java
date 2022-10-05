@@ -8,15 +8,9 @@ import java.awt.event.ActionListener;
 import java.time.Duration;
 
 public class ScoreTimePanel extends JPanel {
-
-//    int horizontalMargin = BoardButtonsPanel.horizontalMargin;
-//    int verticalMargin = BoardButtonsPanel.verticalMargin;
-
-
     int scoreTimePanelWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX();
 
     static int scoreTimePanelHeight = 50;
-
     BevelBorder myBorder = new BevelBorder(BevelBorder.LOWERED, Color.white, new Color(129, 129, 129));
     static int remainingBombs = Main.game.getBombs();
     JLabel timerLabel;
@@ -32,8 +26,6 @@ public class ScoreTimePanel extends JPanel {
                 MainPanel.getMarginY(),
                 FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
                 scoreTimePanelHeight);
-
-//        //setBackground(new Color(190, 190, 190));
         setBackground(Color.orange);
         setBorder(BorderFactory.createCompoundBorder(myBorder, null));
         setLayout(null);
@@ -55,8 +47,6 @@ public class ScoreTimePanel extends JPanel {
         bombCounter.setLocation(10 + bombIcon.getIconWidth(), (scoreTimePanelHeight - bombIcon.getIconHeight())/2);
         bombCounter.setFont(new Font("Courier", Font.BOLD, 25));
 
-
-
         timer = new Timer(100, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -74,35 +64,30 @@ public class ScoreTimePanel extends JPanel {
                 } else {
                     timerLabel.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
                 }
-
-
             }
         });
-
         add(timerLabel);
         add(bombLabel);
         add(bombCounter);
     }
 
+    void refresh() {
+        MainPanel.scoreTimePanel.setBounds(MainPanel.getMarginX(),
+                MainPanel.getMarginY(),
+                FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
+                ScoreTimePanel.getScoreTimePanelHeight());
 
+        MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
+        ScoreTimePanel.timer.stop();
+        MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
+        MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
+        ScoreTimePanel.remainingBombs = Main.game.getBombs();
+    }
 
     public static void startTimer() {
         lastTickTime = System.currentTimeMillis();
         timer.start();
     }
-
-//    public static void setlWidth(int width) {
-//        scoreTimePanelWidth = width;
-//    }
-//
-//    public static void setHeight(int height) {
-//        scoreTimePanelHeight = height;
-//    }
-//
-//    public static int getScoreTimePanelHeight() {
-//        return scoreTimePanelHeight;
-//    }
-
 
     public static int getScoreTimePanelHeight() {
         return scoreTimePanelHeight;

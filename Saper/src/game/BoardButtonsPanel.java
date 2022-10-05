@@ -11,6 +11,8 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
 
     private static int boardSizeX = Main.game.getGameWidth();
     private static int boardSizeY = Main.game.getGameHeight();
+    static int amountOfAllFields = boardSizeX * boardSizeY;
+    static int amountOfDiscoveredFields = 0;
     private static FieldButton[][] buttons;
 
     static int boardPanelWidth = boardSizeX * FieldButton.fieldWidth;
@@ -36,7 +38,6 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
                 fieldButton.addActionListener(this);
                 fieldButton.setActionCommand("" + row + "." + col);
 
-
                 buttons[row][col] = fieldButton;
                 add(fieldButton);
             }
@@ -57,13 +58,17 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
         discoverField(row, col);
 
         if (isBombExploded) {
-            fieldLabel.setBackground(Color.RED);
             Game.endGame();
+            fieldLabel.setBackground(Color.RED);
         }
 
         if (isEmptyField) displaySurroundingField(row, col);
 
+        if (areAllFieldsDiscovered()) Game.winGame();
+    }
 
+    static boolean areAllFieldsDiscovered() {
+        return amountOfAllFields - amountOfDiscoveredFields == Main.game.getBombs();
     }
 
     private boolean isFirstFieldInBoard() {
@@ -137,6 +142,7 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
     private static void discoverField(int row, int col) {
         buttons[row][col].setVisible(false);
         labels[row][col].setVisible(true);
+        amountOfDiscoveredFields++;
     }
 
     private boolean checkIsBomb(int row, int col) {
@@ -153,7 +159,7 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
                 if (fieldLabel.hasBomb && !hasFieldFlag) {
                     fieldButton.setVisible(false);
                     fieldLabel.setVisible(true);
-                    fieldLabel.setBackground(Color.RED);
+                    fieldLabel.setBackground(new Color(123, 210, 253));
                 }
             }
         }
@@ -172,21 +178,20 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
         }
     }
 
-//    public void setBoardPanelWidth(int width) {
-//        boardPanelWidth = width;
-//    }
-//
-//    public void setBoardPanelHeight(int height) {
-//        boardPanelHeight = height;
-//    }
-//
-//    public static void setBoardSizeX(int width) {
-//        boardSizeX = width;
-//    }
-//
-//    public static void setBoardSizeY(int height) {
-//        boardSizeY = height;
-//    }
-//
-//
+    void refresh() {
+        MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
+                ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
+                Main.game.getGameWidth() * FieldButton.fieldWidth,
+                Main.game.getGameHeight() * FieldButton.fieldHeight);
+        MainPanel.boardButtonsPanel.setLayout(new GridLayout(
+                Main.game.getGameHeight(),
+                Main.game.getGameWidth(),
+                2,
+                2));
+        MainPanel.boardButtonsPanel.removeAll();
+        MainPanel.boardButtonsPanel.fillBoard();
+
+        BoardButtonsPanel.amountOfDiscoveredFields = 0;
+        BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
+    }
 }

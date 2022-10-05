@@ -39,230 +39,112 @@ public class MenuSaper extends JMenuBar implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        int mainContainerWidth;
-        int mainContainerHeight;
-        int mainPanelWidth;
-        int mainPanelHeight;
-
         Object source = e.getSource();
 
         if (easyItem.equals(source)) {
             if (!Main.game.getLevel().equals("easy")) {
                 Main.playEasyLevel();
 
-                mainContainerWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10);
-                mainContainerHeight = FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + MainContainer.menu.getMenuHeight() + (3 * 10);
-                mainPanelWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX());
-                mainPanelHeight = FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + (3 * MainPanel.getMarginY());
-
-                System.out.printf("Poziom ³atwy, plansza: %sx%s, bomby: %s\n", Main.game.getGameWidth(), Main.game.getGameHeight(), Main.game.getBombs());
-
-                MainFrameSaper.container.setPreferredSize(new Dimension(mainContainerWidth, mainContainerHeight));
-                MainContainer.menu.setMenuWidth(FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10));
-                setBounds(0, 0, menuWidth, menuHeight);
-
-                MainContainer.mainPanel.setBounds(0, MainContainer.menu.getMenuHeight(), mainPanelWidth, mainPanelHeight);
-
-                MainPanel.scoreTimePanel.setBounds(MainPanel.getMarginX(),
-                        MainPanel.getMarginY(),
-                        FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight());
+                MainFrameSaper.container.refresh();
+                refresh();
+                MainContainer.mainPanel.refresh();
+                MainPanel.scoreTimePanel.refresh();
+                MainPanel.boardLabelPanel.refresh();
+                MainPanel.boardButtonsPanel.refresh();
+                Main.frame.refresh();
+            } else {
+                //za³aduj now¹ planszê!
+                System.out.println("£adujê now¹ planszê EASY");
 
                 MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
                 ScoreTimePanel.timer.stop();
                 MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
-                MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
                 ScoreTimePanel.remainingBombs = Main.game.getBombs();
 
-
-                MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
-                        Main.game.getGameWidth() * FieldButton.fieldWidth,
-                        Main.game.getGameHeight() * FieldButton.fieldHeight);
-
-                MainPanel.boardLabelPanel.setLayout(new GridLayout(
-                        Main.game.getGameHeight(),
-                        Main.game.getGameWidth(),
-                        2,
-                        2));
                 MainPanel.boardLabelPanel.removeAll();
                 MainPanel.boardLabelPanel.fillBoard();
                 BoardLabelPanel.insertBombs(Main.game.getBombs());
 
-                MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
-                        Main.game.getGameWidth() * FieldButton.fieldWidth,
-                        Main.game.getGameHeight() * FieldButton.fieldHeight);
-                MainPanel.boardButtonsPanel.setLayout(new GridLayout(
-                        Main.game.getGameHeight(),
-                        Main.game.getGameWidth(),
-                        2,
-                        2));
                 MainPanel.boardButtonsPanel.removeAll();
                 MainPanel.boardButtonsPanel.fillBoard();
 
-
-
-                Main.frame.pack();
-                Main.frame.setLocationRelativeTo(null);
-            } else {
-                //za³aduj now¹ planszê!
-                System.out.println("£adujê now¹ planszê EASY");
+                BoardButtonsPanel.amountOfDiscoveredFields = 0;
+                BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
             }
 
         } else if (intermediateItem.equals(source)) {
             if (!Main.game.getLevel().equals("intermediate")) {
                 Main.playIntermediateLevel();
 
-                mainContainerWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10);
-                ;
-                mainContainerHeight = FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + MainContainer.menu.getMenuHeight() + (3 * 10);
-                mainPanelWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX());
-                mainPanelHeight = FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + (3 * MainPanel.getMarginY());
-
-
-
-
-
-                System.out.printf("Poziom œredni, plansza: %sx%s, bomby: %s\n", Main.game.getGameWidth(), Main.game.getGameHeight(), Main.game.getBombs());
-
-                MainFrameSaper.container.setPreferredSize(new Dimension(mainContainerWidth, mainContainerHeight));
-                MainContainer.menu.setMenuWidth(FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10));
-                setBounds(0, 0, menuWidth, menuHeight);
-
-                MainContainer.mainPanel.setBounds(0, MainContainer.menu.getMenuHeight(), mainPanelWidth, mainPanelHeight);
-
-                MainPanel.scoreTimePanel.setBounds(MainPanel.getMarginX(),
-                        MainPanel.getMarginY(),
-                        FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight());
+                MainFrameSaper.container.refresh();
+                refresh();
+                MainContainer.mainPanel.refresh();
+                MainPanel.scoreTimePanel.refresh();
+                MainPanel.boardLabelPanel.refresh();
+                MainPanel.boardButtonsPanel.refresh();
+                Main.frame.refresh();
+            } else {
+                //za³aduj now¹ planszê!
+                System.out.println("£adujê now¹ planszê INTERMEDIATE");
 
                 MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
                 ScoreTimePanel.timer.stop();
                 MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
-                MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
                 ScoreTimePanel.remainingBombs = Main.game.getBombs();
 
-
-                MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
-                        Main.game.getGameWidth() * FieldButton.fieldWidth,
-                        Main.game.getGameHeight() * FieldButton.fieldHeight);
-
-                MainPanel.boardLabelPanel.setLayout(new GridLayout(
-                        Main.game.getGameHeight(),
-                        Main.game.getGameWidth(),
-                        2,
-                        2));
                 MainPanel.boardLabelPanel.removeAll();
                 MainPanel.boardLabelPanel.fillBoard();
                 BoardLabelPanel.insertBombs(Main.game.getBombs());
 
-                MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
-                        Main.game.getGameWidth() * FieldButton.fieldWidth,
-                        Main.game.getGameHeight() * FieldButton.fieldHeight);
-                MainPanel.boardButtonsPanel.setLayout(new GridLayout(
-                        Main.game.getGameHeight(),
-                        Main.game.getGameWidth(),
-                        2,
-                        2));
                 MainPanel.boardButtonsPanel.removeAll();
                 MainPanel.boardButtonsPanel.fillBoard();
 
-
-
-
-
-
-                Main.frame.pack();
-                Main.frame.setLocationRelativeTo(null);
-            } else {
-                //za³aduj now¹ planszê!
-                System.out.println("£adujê now¹ planszê INTERMEDIATE");
+                BoardButtonsPanel.amountOfDiscoveredFields = 0;
+                BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
             }
         } else if (expertItem.equals(source)) {
             if (!Main.game.getLevel().equals("expert")) {
                 Main.playExpertLevel();
 
-                mainContainerWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10);
-                ;
-                mainContainerHeight = FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + MainContainer.menu.getMenuHeight() + (3 * 10);
-                mainPanelWidth = FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX());
-                mainPanelHeight = FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + (3 * MainPanel.getMarginY());
-
-
-
-                System.out.printf("Poziom trudny, plansza: %sx%s, bomby: %s\n", Main.game.getGameWidth(), Main.game.getGameHeight(), Main.game.getBombs());
-
-                MainFrameSaper.container.setPreferredSize(new Dimension(mainContainerWidth, mainContainerHeight));
-                MainContainer.menu.setMenuWidth(FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10));
-                setBounds(0, 0, menuWidth, menuHeight);
-
-                MainContainer.mainPanel.setBounds(0, MainContainer.menu.getMenuHeight(), mainPanelWidth, mainPanelHeight);
-
-                MainPanel.scoreTimePanel.setBounds(MainPanel.getMarginX(),
-                        MainPanel.getMarginY(),
-                        FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight());
+                MainFrameSaper.container.refresh();
+                refresh();
+                MainContainer.mainPanel.refresh();
+                MainPanel.scoreTimePanel.refresh();
+                MainPanel.boardLabelPanel.refresh();
+                MainPanel.boardButtonsPanel.refresh();
+                Main.frame.refresh();
+            } else {
+                //za³aduj now¹ planszê!
+                System.out.println("£adujê now¹ planszê EXPERT");
 
                 MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
                 ScoreTimePanel.timer.stop();
                 MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
-                MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
                 ScoreTimePanel.remainingBombs = Main.game.getBombs();
 
-
-                MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
-                        Main.game.getGameWidth() * FieldButton.fieldWidth,
-                        Main.game.getGameHeight() * FieldButton.fieldHeight);
-
-                MainPanel.boardLabelPanel.setLayout(new GridLayout(
-                        Main.game.getGameHeight(),
-                        Main.game.getGameWidth(),
-                        2,
-                        2));
                 MainPanel.boardLabelPanel.removeAll();
                 MainPanel.boardLabelPanel.fillBoard();
                 BoardLabelPanel.insertBombs(Main.game.getBombs());
 
-                MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
-                        ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
-                        Main.game.getGameWidth() * FieldButton.fieldWidth,
-                        Main.game.getGameHeight() * FieldButton.fieldHeight);
-                MainPanel.boardButtonsPanel.setLayout(new GridLayout(
-                        Main.game.getGameHeight(),
-                        Main.game.getGameWidth(),
-                        2,
-                        2));
                 MainPanel.boardButtonsPanel.removeAll();
                 MainPanel.boardButtonsPanel.fillBoard();
 
-
-
-
-
-
-
-                Main.frame.pack();
-                Main.frame.setLocationRelativeTo(null);
-            } else {
-                //za³aduj now¹ planszê!
-                System.out.println("£adujê now¹ planszê EXPERT");
+                BoardButtonsPanel.amountOfDiscoveredFields = 0;
+                BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
             }
-
-
         } else if (endGameItem.equals(source)) {
             System.exit(0);
         }
+    }
 
+    void refresh() {
+        MainContainer.menu.setMenuWidth(FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10));
+        setBounds(0, 0, menuWidth, menuHeight);
     }
 
     public void setMenuWidth(int width) {
         menuWidth = width;
     }
-
 
     public int getMenuWidth() {
         return menuWidth;

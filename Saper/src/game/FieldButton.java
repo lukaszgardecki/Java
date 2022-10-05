@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class FieldButton extends JButton implements MouseListener {
-
     static int fieldWidth = 40;
     static int fieldHeight = 40;
     static ImageIcon flag = new ImageIcon("src/game/flag.png");
@@ -27,8 +26,6 @@ public class FieldButton extends JButton implements MouseListener {
                 MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(++ScoreTimePanel.remainingBombs));
             } else if (ScoreTimePanel.remainingBombs > 0) {
                 this.setIcon(flag);
-
-                //ScoreTimePanel.bombCounter.setText(String.valueOf(--ScoreTimePanel.remainingBombs));
                 MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(--ScoreTimePanel.remainingBombs));
             }
         }
@@ -36,22 +33,18 @@ public class FieldButton extends JButton implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
     }
 
     public static int getFieldWidth() {

@@ -29,11 +29,15 @@ public class Game {
         }
     }
 
-
-
     public static void endGame() {
         ScoreTimePanel.timer.stop();
         BoardButtonsPanel.showAllUnflaggedBombs();
+        BoardButtonsPanel.blockAllFields();
+    }
+
+    public static void winGame() {
+        System.out.println("Gra wygrana!");
+        ScoreTimePanel.timer.stop();
         BoardButtonsPanel.blockAllFields();
     }
 

@@ -10,7 +10,6 @@ import static game.BoardButtonsPanel.getNumOfFlags;
 import static game.BoardLabelPanel.labels;
 
 public class FieldLabel extends JLabel implements MouseListener {
-
     static int fieldWidth = 40;
     static int fieldHeight = 40;
     boolean hasBomb = false;
@@ -59,10 +58,8 @@ public class FieldLabel extends JLabel implements MouseListener {
         return col;
     }
 
-
     @Override
     public void mouseClicked(MouseEvent e) {
-
     }
 
     @Override
@@ -81,21 +78,19 @@ public class FieldLabel extends JLabel implements MouseListener {
             BoardButtonsPanel.displaySurroundingField(row, col);
         }
 
+        if (BoardButtonsPanel.areAllFieldsDiscovered()) Game.winGame();
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
     }
 
     public static int getFieldWidth() {
