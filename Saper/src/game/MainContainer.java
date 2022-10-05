@@ -24,9 +24,14 @@ public class MainContainer extends JPanel {
         add(mainPanel);
     }
 
-    void refresh() {
+    void changeSize() {
         setPreferredSize(new Dimension(
                 FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10),
                 FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + MainContainer.menu.getMenuHeight() + (3 * 10)));
+    }
+
+    static void changeSizeOfElements() {
+        menu.changeSize();
+        mainPanel.changeSize();
     }
 }

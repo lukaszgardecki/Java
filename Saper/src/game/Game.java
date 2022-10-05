@@ -41,6 +41,28 @@ public class Game {
         BoardButtonsPanel.blockAllFields();
     }
 
+    public static void playEasy() {
+        Main.setEasyLevel();
+        prepereGame();
+    }
+
+    public static void playIntermediate() {
+        Main.setIntermediateLevel();
+        prepereGame();
+    }
+
+    public static void playExpert() {
+        Main.setExpertLevel();
+        prepereGame();
+    }
+
+    private static void prepereGame() {
+        MainFrameSaper.container.changeSize();
+        MainContainer.changeSizeOfElements();
+        MainPanel.refresh();
+        Main.frame.changeSize();
+    }
+
     public int getGameWidth() {
         return Game_Board_Width;
     }

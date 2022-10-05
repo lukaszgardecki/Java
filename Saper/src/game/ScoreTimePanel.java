@@ -72,16 +72,27 @@ public class ScoreTimePanel extends JPanel {
     }
 
     void refresh() {
+        changeSize();
+        resetPanel();
+    }
+
+    void resetPanel() {
+        MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
+        MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
+        ScoreTimePanel.timer.stop();
+        MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
+        setRemainingBombs();
+    }
+
+    private void setRemainingBombs() {
+        remainingBombs = Main.game.getBombs();
+    }
+
+    void changeSize() {
         MainPanel.scoreTimePanel.setBounds(MainPanel.getMarginX(),
                 MainPanel.getMarginY(),
                 FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()) - 2 * MainPanel.getMarginX(),
                 ScoreTimePanel.getScoreTimePanelHeight());
-
-        MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
-        ScoreTimePanel.timer.stop();
-        MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
-        MainPanel.scoreTimePanel.timerLabel.setLocation((FieldLabel.getFieldWidth() * Main.game.getGameWidth()-MainPanel.scoreTimePanel.timerLabel.getWidth())/2, 0);
-        ScoreTimePanel.remainingBombs = Main.game.getBombs();
     }
 
     public static void startTimer() {

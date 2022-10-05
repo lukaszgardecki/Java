@@ -18,7 +18,7 @@ public class MainFrameSaper extends JFrame {
         setVisible(true);
     }
 
-    void refresh() {
+    void changeSize() {
         pack();
         setLocationRelativeTo(null);
     }

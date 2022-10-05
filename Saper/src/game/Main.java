@@ -6,19 +6,19 @@ public class Main {
     static MainFrameSaper frame;
 
     public static void main(String[] args) {
-        playEasyLevel();
+        setEasyLevel();
         frame = new MainFrameSaper();
     }
 
-    public static void playEasyLevel() {
+    public static void setEasyLevel() {
         game = new Game("easy");
     }
 
-    public static void playIntermediateLevel() {
+    public static void setIntermediateLevel() {
         game = new Game("intermediate");
     }
 
-    public static void playExpertLevel() {
+    public static void setExpertLevel() {
         game = new Game("expert");
     }
 

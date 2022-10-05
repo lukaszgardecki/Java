@@ -1,7 +1,6 @@
 package game;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -40,114 +39,31 @@ public class MenuSaper extends JMenuBar implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
+        boolean isClickedExit = endGameItem.equals(source);
+        boolean isChangedLevToEasy = easyItem.equals(source) && !Main.game.getLevel().equals("easy");
+        boolean isChangedLevToInteMediate = intermediateItem.equals(source) && !Main.game.getLevel().equals("intermediate");
+        boolean icChangedLevToExpert = expertItem.equals(source) && !Main.game.getLevel().equals("expert");
 
-        if (easyItem.equals(source)) {
-            if (!Main.game.getLevel().equals("easy")) {
-                Main.playEasyLevel();
-
-                MainFrameSaper.container.refresh();
-                refresh();
-                MainContainer.mainPanel.refresh();
-                MainPanel.scoreTimePanel.refresh();
-                MainPanel.boardLabelPanel.refresh();
-                MainPanel.boardButtonsPanel.refresh();
-                Main.frame.refresh();
-            } else {
-                //za³aduj now¹ planszê!
-                System.out.println("£adujê now¹ planszê EASY");
-
-                MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
-                ScoreTimePanel.timer.stop();
-                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
-                ScoreTimePanel.remainingBombs = Main.game.getBombs();
-
-                MainPanel.boardLabelPanel.removeAll();
-                MainPanel.boardLabelPanel.fillBoard();
-                BoardLabelPanel.insertBombs(Main.game.getBombs());
-
-                MainPanel.boardButtonsPanel.removeAll();
-                MainPanel.boardButtonsPanel.fillBoard();
-
-                BoardButtonsPanel.amountOfDiscoveredFields = 0;
-                BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
-            }
-
-        } else if (intermediateItem.equals(source)) {
-            if (!Main.game.getLevel().equals("intermediate")) {
-                Main.playIntermediateLevel();
-
-                MainFrameSaper.container.refresh();
-                refresh();
-                MainContainer.mainPanel.refresh();
-                MainPanel.scoreTimePanel.refresh();
-                MainPanel.boardLabelPanel.refresh();
-                MainPanel.boardButtonsPanel.refresh();
-                Main.frame.refresh();
-            } else {
-                //za³aduj now¹ planszê!
-                System.out.println("£adujê now¹ planszê INTERMEDIATE");
-
-                MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
-                ScoreTimePanel.timer.stop();
-                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
-                ScoreTimePanel.remainingBombs = Main.game.getBombs();
-
-                MainPanel.boardLabelPanel.removeAll();
-                MainPanel.boardLabelPanel.fillBoard();
-                BoardLabelPanel.insertBombs(Main.game.getBombs());
-
-                MainPanel.boardButtonsPanel.removeAll();
-                MainPanel.boardButtonsPanel.fillBoard();
-
-                BoardButtonsPanel.amountOfDiscoveredFields = 0;
-                BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
-            }
-        } else if (expertItem.equals(source)) {
-            if (!Main.game.getLevel().equals("expert")) {
-                Main.playExpertLevel();
-
-                MainFrameSaper.container.refresh();
-                refresh();
-                MainContainer.mainPanel.refresh();
-                MainPanel.scoreTimePanel.refresh();
-                MainPanel.boardLabelPanel.refresh();
-                MainPanel.boardButtonsPanel.refresh();
-                Main.frame.refresh();
-            } else {
-                //za³aduj now¹ planszê!
-                System.out.println("£adujê now¹ planszê EXPERT");
-
-                MainPanel.scoreTimePanel.timerLabel.setText(String.format("%02d:%02d", 0, 0));
-                ScoreTimePanel.timer.stop();
-                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(Main.game.getBombs()));
-                ScoreTimePanel.remainingBombs = Main.game.getBombs();
-
-                MainPanel.boardLabelPanel.removeAll();
-                MainPanel.boardLabelPanel.fillBoard();
-                BoardLabelPanel.insertBombs(Main.game.getBombs());
-
-                MainPanel.boardButtonsPanel.removeAll();
-                MainPanel.boardButtonsPanel.fillBoard();
-
-                BoardButtonsPanel.amountOfDiscoveredFields = 0;
-                BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
-            }
-        } else if (endGameItem.equals(source)) {
+        if (isClickedExit) {
             System.exit(0);
+        } else if (isChangedLevToEasy) {
+            Game.playEasy();
+        } else if (isChangedLevToInteMediate) {
+            Game.playIntermediate();
+        } else if (icChangedLevToExpert) {
+            Game.playExpert();
+        } else {
+            MainPanel.resetElements();
         }
     }
 
-    void refresh() {
+    void changeSize() {
         MainContainer.menu.setMenuWidth(FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * 10));
         setBounds(0, 0, menuWidth, menuHeight);
     }
 
     public void setMenuWidth(int width) {
         menuWidth = width;
-    }
-
-    public int getMenuWidth() {
-        return menuWidth;
     }
 
     public int getMenuHeight() {

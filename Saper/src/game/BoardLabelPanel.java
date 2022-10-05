@@ -95,6 +95,11 @@ public class BoardLabelPanel extends JPanel {
     }
 
     void refresh() {
+        changeSize();
+        setNewBoard();
+    }
+
+    void changeSize() {
         MainPanel.boardLabelPanel.setBounds(MainPanel.getMarginX(),
                 ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
                 Main.game.getGameWidth() * FieldButton.fieldWidth,
@@ -105,6 +110,9 @@ public class BoardLabelPanel extends JPanel {
                 Main.game.getGameWidth(),
                 2,
                 2));
+    }
+
+    void setNewBoard() {
         MainPanel.boardLabelPanel.removeAll();
         MainPanel.boardLabelPanel.fillBoard();
         BoardLabelPanel.insertBombs(Main.game.getBombs());

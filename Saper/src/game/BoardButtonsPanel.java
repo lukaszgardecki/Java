@@ -179,6 +179,17 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
     }
 
     void refresh() {
+        changeSize();
+        setNewBoard();
+    }
+
+    void setNewBoard() {
+        createNewBoard();
+        resetAmountOfDiscoveredFields();
+        setAmountOfAllFields();
+    }
+
+    void changeSize() {
         MainPanel.boardButtonsPanel.setBounds(MainPanel.getMarginX(),
                 ScoreTimePanel.getScoreTimePanelHeight() + 2 * MainPanel.getMarginY(),
                 Main.game.getGameWidth() * FieldButton.fieldWidth,
@@ -188,10 +199,18 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
                 Main.game.getGameWidth(),
                 2,
                 2));
+    }
+
+    private void createNewBoard() {
         MainPanel.boardButtonsPanel.removeAll();
         MainPanel.boardButtonsPanel.fillBoard();
+    }
 
-        BoardButtonsPanel.amountOfDiscoveredFields = 0;
-        BoardButtonsPanel.amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
+    private void resetAmountOfDiscoveredFields() {
+        amountOfDiscoveredFields = 0;
+    }
+
+    private void setAmountOfAllFields() {
+        amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
     }
 }

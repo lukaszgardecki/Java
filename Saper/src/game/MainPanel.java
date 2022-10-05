@@ -24,7 +24,6 @@ public class MainPanel extends JLayeredPane {
         setBounds(0, MainContainer.menu.getMenuHeight(), mainPanelWidth, mainPanelHeight);
         setOpaque(true);
         setBackground(new Color(2, 58, 112));
-
 //        setLayout(null);
 
         add(scoreTimePanel, JLayeredPane.DEFAULT_LAYER);
@@ -32,12 +31,30 @@ public class MainPanel extends JLayeredPane {
         add(boardLabelPanel, JLayeredPane.DEFAULT_LAYER);
     }
 
-    void refresh() {
+    void changeSize() {
         MainContainer.mainPanel.setBounds(0,
                 MainContainer.menu.getMenuHeight(),
                 FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()),
                 FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + (3 * MainPanel.getMarginY()));
     }
+
+    static void refresh() {
+        changeSizeOfElements();
+        resetElements();
+    }
+
+    static void changeSizeOfElements() {
+        scoreTimePanel.changeSize();
+        boardLabelPanel.changeSize();
+        boardButtonsPanel.changeSize();
+    }
+
+    static void resetElements() {
+        scoreTimePanel.resetPanel();
+        boardLabelPanel.setNewBoard();
+        boardButtonsPanel.setNewBoard();
+    }
+
 
     public static int getMarginX() {
         return marginX;
