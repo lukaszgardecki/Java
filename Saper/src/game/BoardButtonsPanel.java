@@ -1,13 +1,10 @@
 package game;
 
-import com.sun.management.GarbageCollectionNotificationInfo;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static game.BoardLabelPanel.displayBoardInConsole;
 import static game.BoardLabelPanel.labels;
 
 public class BoardButtonsPanel extends JPanel implements ActionListener {
@@ -61,13 +58,17 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
         discoverField(row, col);
 
         if (isBombExploded) {
+            ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.dead);
             Game.endGame();
             fieldLabel.setBackground(Color.RED);
         }
 
         if (isEmptyField) displaySurroundingField(row, col);
 
-        if (areAllFieldsDiscovered()) Game.winGame();
+        if (areAllFieldsDiscovered()) {
+            ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.cool);
+            Game.winGame();
+        }
     }
 
     static boolean areAllFieldsDiscovered() {
@@ -147,15 +148,16 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
                    if (field.getText().equals("")) {
                         displaySurroundingField(nextX, nextY);
                    }
-                   
+
                 } catch (ArrayIndexOutOfBoundsException ignored) {
                 }
-
-
             }
         }
 
-        if (isDiscoveredBombField) Game.endGame();
+        if (isDiscoveredBombField) {
+            ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.dead);
+            Game.endGame();
+        }
     }
 
     private static void discoverField(int row, int col) {

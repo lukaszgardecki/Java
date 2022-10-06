@@ -28,6 +28,12 @@ public class FieldButton extends JButton {
                         MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(--ScoreTimePanel.remainingBombs));
                     }
                 }
+                ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.shocked);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if(!Game.isFailure) ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.happy);
             }
         });
     }

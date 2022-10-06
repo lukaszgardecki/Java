@@ -20,7 +20,12 @@ public class ScoreTimePanel extends JPanel {
     static long lastTickTime;
     JLabel bombLabel;
     JLabel bombCounter;
+    static JButton resetBtn;
     ImageIcon bombIcon = FieldLabel.bombIcon;
+    static ImageIcon happy = new ImageIcon("src/game/happy.png");
+    static ImageIcon shocked = new ImageIcon("src/game/shocked.png");
+    static ImageIcon dead = new ImageIcon("src/game/dead.png");
+    static ImageIcon cool = new ImageIcon("src/game/cool.png");
 
     ScoreTimePanel() {
         setBounds(MainPanel.getMarginX(), MainPanel.getMarginY(),
@@ -29,11 +34,21 @@ public class ScoreTimePanel extends JPanel {
         setBorder(BorderFactory.createCompoundBorder(myBorder, null));
         setLayout(null);
 
+        resetBtn = new JButton();
+        resetBtn.setSize(40, 40);
+        resetBtn.setLocation((FieldLabel.getFieldWidth() * game.getGameWidth()-resetBtn.getWidth())/2,
+                                (scoreTimePanelHeight - resetBtn.getHeight())/2);
+        resetBtn.setBorder(BorderFactory.createBevelBorder(BevelBorder.LOWERED));
+        resetBtn.setIcon(happy);
+        resetBtn.setBackground(new Color(2, 58, 112));
+        resetBtn.setFocusable(false);
+        resetBtn.addActionListener(event -> MainPanel.resetElements());
+
         timerLabel = new JLabel(String.format("%02d:%02d", 0, 0));
         timerLabel.setFont(new Font("Courier", Font.BOLD, 25));
         timerLabel.setHorizontalTextPosition(SwingConstants.CENTER);
         timerLabel.setSize(63, scoreTimePanelHeight);
-        timerLabel.setLocation((FieldLabel.getFieldWidth() * game.getGameWidth()-timerLabel.getWidth())/2, 0);
+        timerLabel.setLocation(FieldLabel.getFieldWidth() * game.getGameWidth()-timerLabel.getWidth() - 10, 0);
 
         bombLabel = new JLabel();
         bombLabel.setIcon(bombIcon);
@@ -65,6 +80,7 @@ public class ScoreTimePanel extends JPanel {
                 }
             }
         });
+        add(resetBtn);
         add(timerLabel);
         add(bombLabel);
         add(bombCounter);
@@ -76,7 +92,10 @@ public class ScoreTimePanel extends JPanel {
     }
 
     void resetPanel() {
-        timerLabel.setLocation((FieldLabel.getFieldWidth() * game.getGameWidth()-timerLabel.getWidth())/2, 0);
+        timerLabel.setLocation(FieldLabel.getFieldWidth() * game.getGameWidth()-timerLabel.getWidth() - 10, 0);
+        resetBtn.setLocation((FieldLabel.getFieldWidth() * game.getGameWidth()-resetBtn.getWidth())/2,
+                                (scoreTimePanelHeight - resetBtn.getHeight())/2);
+        resetBtn.setIcon(happy);
         timerLabel.setText(String.format("%02d:%02d", 0, 0));
         timer.stop();
         bombCounter.setText(String.valueOf(game.getBombs()));

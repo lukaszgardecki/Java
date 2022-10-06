@@ -6,6 +6,7 @@ public class Game {
     private int Game_Board_Height;
     private int bombs;
     private String level;
+    static boolean isFailure = false;
 
     public Game(String level) {
         this.level = level;
@@ -30,6 +31,7 @@ public class Game {
     }
 
     public static void endGame() {
+        isFailure = true;
         ScoreTimePanel.timer.stop();
         BoardButtonsPanel.showAllUnflaggedBombs();
         BoardButtonsPanel.blockAllFields();

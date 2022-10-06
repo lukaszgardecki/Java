@@ -42,7 +42,18 @@ public class FieldLabel extends JLabel {
                     BoardButtonsPanel.displaySurroundingField(row, col);
                 }
 
-                if (BoardButtonsPanel.areAllFieldsDiscovered()) Game.winGame();
+                if (BoardButtonsPanel.areAllFieldsDiscovered()) {
+                    ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.cool);
+                    Game.winGame();
+                } else {
+                    ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.shocked);
+                }
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if(!Game.isFailure) ScoreTimePanel.resetBtn.setIcon(ScoreTimePanel.happy);
             }
         });
         setVisible(false);
