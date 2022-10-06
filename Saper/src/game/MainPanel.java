@@ -34,8 +34,8 @@ public class MainPanel extends JLayeredPane {
     void changeSize() {
         MainContainer.mainPanel.setBounds(0,
                 MainContainer.menu.getMenuHeight(),
-                FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * MainPanel.getMarginX()),
-                FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + (3 * MainPanel.getMarginY()));
+                FieldLabel.getFieldWidth() * Main.game.getGameWidth() + (2 * getMarginX()),
+                FieldLabel.getFieldHeight() * Main.game.getGameHeight() + 50 + (3 * getMarginY()));
     }
 
     static void refresh() {

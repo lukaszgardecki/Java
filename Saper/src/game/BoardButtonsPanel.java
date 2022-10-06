@@ -1,10 +1,13 @@
 package game;
 
+import com.sun.management.GarbageCollectionNotificationInfo;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static game.BoardLabelPanel.displayBoardInConsole;
 import static game.BoardLabelPanel.labels;
 
 public class BoardButtonsPanel extends JPanel implements ActionListener {
@@ -109,10 +112,10 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
         return numOfFlags;
     }
 
-
     static void displaySurroundingField(int row, int col) {
         int startX = row - 1;
         int startY = col - 1;
+        boolean isDiscoveredBombField = false;
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -124,19 +127,35 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
                     FieldButton button = buttons[nextX][nextY];
 
                     if (field.isVisible()) continue;
-                    if (button.getIcon() == FieldButton.flag) continue;
+                    if(button.getIcon() == FieldButton.flag && field.hasBomb) continue;
+
+                    if (button.getIcon() == FieldButton.flag) {
+                        button.setBackground(Color.white);
+                        button.setOpaque(true);
+                        button.setIcon(FieldButton.xSign);
+                        continue;
+                    }
 
                     discoverField(nextX, nextY);
 
-                    if (field.hasBomb) Game.endGame();
-
-                    if (field.getText().equals("")) {
-                        displaySurroundingField(nextX, nextY);
+                   if (field.hasBomb) {
+                       field.setBackground(Color.red);
+                        isDiscoveredBombField = true;
+                        continue;
                     }
+
+                   if (field.getText().equals("")) {
+                        displaySurroundingField(nextX, nextY);
+                   }
+                   
                 } catch (ArrayIndexOutOfBoundsException ignored) {
                 }
+
+
             }
         }
+
+        if (isDiscoveredBombField) Game.endGame();
     }
 
     private static void discoverField(int row, int col) {
@@ -159,6 +178,8 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
                 if (fieldLabel.hasBomb && !hasFieldFlag) {
                     fieldButton.setVisible(false);
                     fieldLabel.setVisible(true);
+
+                    if (fieldLabel.getBackground() == Color.red) continue;
                     fieldLabel.setBackground(new Color(123, 210, 253));
                 }
             }
@@ -171,9 +192,9 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
                 FieldButton fieldButton = buttons[row][col];
                 FieldLabel fieldLabel = labels[row][col];
 
-                fieldButton.removeMouseListener(fieldButton);
-                fieldButton.setEnabled(false);
-                fieldLabel.removeMouseListener(fieldLabel);
+                fieldButton.removeMouseListener(fieldButton.getMouseListeners()[0]);
+                fieldButton.removeMouseListener(fieldButton.getMouseListeners()[0]);
+                fieldLabel.removeMouseListener(fieldLabel.getMouseListeners()[0]);
             }
         }
     }

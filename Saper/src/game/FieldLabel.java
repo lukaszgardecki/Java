@@ -2,14 +2,14 @@ package game;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.Objects;
 
 import static game.BoardButtonsPanel.getNumOfFlags;
 import static game.BoardLabelPanel.labels;
 
-public class FieldLabel extends JLabel implements MouseListener {
+public class FieldLabel extends JLabel {
     static int fieldWidth = 40;
     static int fieldHeight = 40;
     boolean hasBomb = false;
@@ -23,9 +23,28 @@ public class FieldLabel extends JLabel implements MouseListener {
         setBorder(BorderFactory.createLineBorder(new Color(129, 129, 129), 1));
         setHorizontalAlignment(CENTER);
         setFont(new Font("Courier", Font.BOLD, 22));
-        addMouseListener(this);
         setOpaque(true);
         setBackground(Color.white);
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                int row = getRow();
+                int col = getCol();
+
+                String labelText = labels[row][col].getText();
+                int numOfSurroundingBombs = !Objects.equals(labelText, "") ? Integer.parseInt(labelText) : 0;
+                int numOfFlags = getNumOfFlags(row, col);
+                boolean numOfFlagsIsOK = numOfSurroundingBombs == numOfFlags;
+                boolean arePressedBothBtns = e.getModifiersEx() == MouseEvent.BUTTON3_DOWN_MASK + MouseEvent.BUTTON1_DOWN_MASK;
+                boolean isPressedWheel = e.getButton() == MouseEvent.BUTTON2;
+
+                if (numOfFlagsIsOK && (arePressedBothBtns || isPressedWheel)) {
+                    BoardButtonsPanel.displaySurroundingField(row, col);
+                }
+
+                if (BoardButtonsPanel.areAllFieldsDiscovered()) Game.winGame();
+            }
+        });
         setVisible(false);
     }
 
@@ -56,41 +75,6 @@ public class FieldLabel extends JLabel implements MouseListener {
 
     public int getCol() {
         return col;
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-        int row = getRow();
-        int col = getCol();
-
-        String labelText = labels[row][col].getText();
-        int numOfSurroundingBombs = !Objects.equals(labelText, "") ? Integer.parseInt(labelText) : 0;
-        int numOfFlags = getNumOfFlags(row, col);
-        boolean numOfFlagsIsOK = numOfSurroundingBombs == numOfFlags;
-        boolean arePressedBothBtns = e.getModifiersEx() == MouseEvent.BUTTON3_DOWN_MASK + MouseEvent.BUTTON1_DOWN_MASK;
-        boolean isPressedWheel = e.getButton() == MouseEvent.BUTTON2;
-
-        if (numOfFlagsIsOK && (arePressedBothBtns || isPressedWheel)) {
-            BoardButtonsPanel.displaySurroundingField(row, col);
-        }
-
-        if (BoardButtonsPanel.areAllFieldsDiscovered()) Game.winGame();
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
     }
 
     public static int getFieldWidth() {

@@ -4,54 +4,31 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class FieldButton extends JButton implements MouseListener {
+public class FieldButton extends JButton {
     static int fieldWidth = 40;
     static int fieldHeight = 40;
     static ImageIcon flag = new ImageIcon("src/game/flag.png");
     ImageIcon questionMark = new ImageIcon("src/game/question-mark.png");
+    static ImageIcon xSign = new ImageIcon("src/game/x.png");
 
     FieldButton() {
         setSize(fieldWidth, fieldHeight);
         setBackground(new Color(123, 210, 253));
-        addMouseListener(this);
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-        if (e.getButton() == MouseEvent.BUTTON3) {
-            if (questionMark.equals(this.getIcon())) {
-                this.setIcon(null);
-            } else if (flag.equals(this.getIcon())) {
-                this.setIcon(questionMark);
-                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(++ScoreTimePanel.remainingBombs));
-            } else if (ScoreTimePanel.remainingBombs > 0) {
-                this.setIcon(flag);
-                MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(--ScoreTimePanel.remainingBombs));
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (e.getButton() == MouseEvent.BUTTON3) {
+                    if (questionMark.equals(getIcon())) {
+                        setIcon(null);
+                    } else if (flag.equals(getIcon())) {
+                        setIcon(questionMark);
+                        MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(++ScoreTimePanel.remainingBombs));
+                    } else if (ScoreTimePanel.remainingBombs > 0) {
+                        setIcon(flag);
+                        MainPanel.scoreTimePanel.bombCounter.setText(String.valueOf(--ScoreTimePanel.remainingBombs));
+                    }
+                }
             }
-        }
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-    }
-
-    public static int getFieldWidth() {
-        return fieldWidth;
-    }
-
-    public static int getFieldHeight() {
-        return fieldHeight;
+        });
     }
 }
