@@ -236,4 +236,5 @@ public class BoardButtonsPanel extends JPanel implements ActionListener {
     private void setAmountOfAllFields() {
         amountOfAllFields = Main.game.getGameWidth() * Main.game.getGameHeight();
     }
+
 }

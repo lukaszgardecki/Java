@@ -16,7 +16,7 @@ public class FieldLabel extends JLabel {
     int surroundingBombs = 0;
     int row = 0;
     int col = 0;
-    static ImageIcon bombIcon = new ImageIcon("src/game/bomb.png");
+    static ImageIcon bombIcon = new ImageIcon("src/game/images/bomb.png");
 
     FieldLabel() {
         setSize(fieldWidth, fieldHeight);
@@ -39,6 +39,7 @@ public class FieldLabel extends JLabel {
                 boolean isPressedWheel = e.getButton() == MouseEvent.BUTTON2;
 
                 if (numOfFlagsIsOK && (arePressedBothBtns || isPressedWheel)) {
+
                     BoardButtonsPanel.displaySurroundingField(row, col);
                 }
 

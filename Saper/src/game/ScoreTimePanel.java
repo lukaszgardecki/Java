@@ -22,10 +22,10 @@ public class ScoreTimePanel extends JPanel {
     JLabel bombCounter;
     static JButton resetBtn;
     ImageIcon bombIcon = FieldLabel.bombIcon;
-    static ImageIcon happy = new ImageIcon("src/game/happy.png");
-    static ImageIcon shocked = new ImageIcon("src/game/shocked.png");
-    static ImageIcon dead = new ImageIcon("src/game/dead.png");
-    static ImageIcon cool = new ImageIcon("src/game/cool.png");
+    static ImageIcon happy = new ImageIcon("src/game/images/happy.png");
+    static ImageIcon shocked = new ImageIcon("src/game/images/shocked.png");
+    static ImageIcon dead = new ImageIcon("src/game/images/dead.png");
+    static ImageIcon cool = new ImageIcon("src/game/images/cool.png");
 
     ScoreTimePanel() {
         setBounds(MainPanel.getMarginX(), MainPanel.getMarginY(),

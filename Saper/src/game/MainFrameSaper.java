@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class MainFrameSaper extends JFrame {
     static MainContainer container;
-    ImageIcon mine = new ImageIcon("src/game/mine.png");
+    ImageIcon mine = new ImageIcon("src/game/images/mine.png");
 
     MainFrameSaper() {
         container = new MainContainer();
