@@ -6,14 +6,10 @@ import program.elements.panels.views.MainView;
 import program.elements.panels.views.StatsView;
 import program.settings.MouseClick;
 
-import javax.sound.midi.MidiFileFormat;
 import javax.swing.*;
 import java.io.*;
-import java.sql.Array;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
 
 public class Main {
     public static Map<Integer, LinkedList<ArrayList<String>>> map = new LinkedHashMap<>();
@@ -21,16 +17,7 @@ public class Main {
     static String path = "program/database/baza.txt";
     static File file = new File(path);
     static StringBuilder correctAns;
-
-    /*
-        CAPACITY OF LEVELS
-     */
-    static final int CAP_GROUP_1 = 50;
-    static final int CAP_GROUP_2 = 60;
-    static final int CAP_GROUP_3 = 90;
-    static final int CAP_GROUP_4 = 140;
-    static final int CAP_GROUP_5 = 160;
-
+    static final MemoBox memoBox = new MemoBox(50, 60, 90, 140, 160);
     public static int amountOfWords = 0;
     public static Window win;
 
@@ -48,9 +35,11 @@ public class Main {
             scanner.nextLine();
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
+
                 String[] tab = line.split("_");
                 ArrayList<String> list = new ArrayList<>();
                 Collections.addAll(list, tab);
+
                 int numOfGroup = Integer.parseInt(tab[1]);
 
                 map.get(numOfGroup).add(list);
@@ -122,11 +111,11 @@ public class Main {
 
     public static ArrayList<String> loadWord() {
         ArrayList<String> word;
-        boolean isFull_Group1 = map.get(1).size() == CAP_GROUP_1;
-        boolean isFull_Group2 = map.get(2).size() == CAP_GROUP_2;
-        boolean isFull_Group3 = map.get(3).size() == CAP_GROUP_3;
-        boolean isFull_Group4 = map.get(4).size() == CAP_GROUP_4;
-        boolean isFull_Group5 = map.get(5).size() == CAP_GROUP_5;
+        boolean isFull_Group1 = map.get(1).size() == memoBox.getCapOfGroup(1);
+        boolean isFull_Group2 = map.get(2).size() == memoBox.getCapOfGroup(2);
+        boolean isFull_Group3 = map.get(3).size() == memoBox.getCapOfGroup(3);
+        boolean isFull_Group4 = map.get(4).size() == memoBox.getCapOfGroup(4);
+        boolean isFull_Group5 = map.get(5).size() == memoBox.getCapOfGroup(5);
         boolean isMapEmpty = map.get(0).isEmpty() && map.get(1).isEmpty() &&
                              map.get(2).isEmpty() && map.get(3).isEmpty() &&
                              map.get(4).isEmpty() && map.get(5).isEmpty();
@@ -157,8 +146,8 @@ public class Main {
         return (ArrayList<String>) List.of("19940418200515", "0", "0", "0", "brak fiszek", "brak fiszek");
     }
 
-    private static ArrayList<String> getFirstWordFromGroup(int numOfGroup) {
-        return map.get(numOfGroup).getFirst();
+    private static ArrayList<String> getFirstWordFromGroup(int group) {
+        return map.get(group).getFirst();
     }
 
     public static void createMap() {

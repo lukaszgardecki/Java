@@ -57,8 +57,6 @@ public class MenuPanel extends JPanel {
         checkboxLabel.setLineWrap(true);
         checkboxLabel.setWrapStyleWord(true);
 
-
-
         add(statBtn);
         add(addRemoveBtn);
         add(endBtn);
