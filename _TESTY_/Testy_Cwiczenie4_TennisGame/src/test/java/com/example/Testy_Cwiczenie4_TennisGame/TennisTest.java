@@ -49,17 +49,17 @@ class TennisTest {
             "4, 2, Win for player1",
             "2, 4, Win for player2",
 
-            "4, 3, Advantage player1",
-            "3, 4, Advantage player2",
+            "4, 3, AdvantageResult player1",
+            "3, 4, AdvantageResult player2",
 
-            "5, 4, Advantage player1",
-            "4, 5, Advantage player2",
+            "5, 4, AdvantageResult player1",
+            "4, 5, AdvantageResult player2",
 
             "6, 4, Win for player1",
             "4, 6, Win for player2",
 
-            "15, 14, Advantage player1",
-            "14, 15, Advantage player2",
+            "15, 14, AdvantageResult player1",
+            "14, 15, AdvantageResult player2",
 
             "16, 14, Win for player1",
             "14, 16, Win for player2"
