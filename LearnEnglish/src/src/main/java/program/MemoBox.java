@@ -77,17 +77,17 @@ public class MemoBox {
         //jeżeli memobox nie jest pusty
        if (!isEmpty()) {
 
-           boolean group5hasHighestLoadInPercent = group5.getLoadInPercent() > group4.getLoadInPercent() && group5.getLoadInPercent() > group3.getLoadInPercent() &&
-                   group5.getLoadInPercent() > group2.getLoadInPercent() && group5.getLoadInPercent() > group1.getLoadInPercent();
+           boolean group5hasHighestLoadInPercent = group5.getLoadInPercent() >= group4.getLoadInPercent() && group5.getLoadInPercent() >= group3.getLoadInPercent() &&
+                   group5.getLoadInPercent() >= group2.getLoadInPercent() && group5.getLoadInPercent() >= group1.getLoadInPercent();
 
-           boolean group4hasHighestLoadInPercent = group4.getLoadInPercent() > group5.getLoadInPercent() && group4.getLoadInPercent() > group3.getLoadInPercent() &&
-                   group4.getLoadInPercent() > group2.getLoadInPercent() && group4.getLoadInPercent() > group1.getLoadInPercent();
+           boolean group4hasHighestLoadInPercent = group4.getLoadInPercent() >= group5.getLoadInPercent() && group4.getLoadInPercent() >= group3.getLoadInPercent() &&
+                   group4.getLoadInPercent() >= group2.getLoadInPercent() && group4.getLoadInPercent() >= group1.getLoadInPercent();
 
-           boolean group3hasHighestLoadInPercent = group3.getLoadInPercent() > group5.getLoadInPercent() && group3.getLoadInPercent() > group4.getLoadInPercent() &&
-                   group3.getLoadInPercent() > group2.getLoadInPercent() && group3.getLoadInPercent() > group1.getLoadInPercent();
+           boolean group3hasHighestLoadInPercent = group3.getLoadInPercent() >= group5.getLoadInPercent() && group3.getLoadInPercent() >= group4.getLoadInPercent() &&
+                   group3.getLoadInPercent() >= group2.getLoadInPercent() && group3.getLoadInPercent() >= group1.getLoadInPercent();
 
-           boolean group2hasHighestLoadInPercent = group2.getLoadInPercent() > group5.getLoadInPercent() && group2.getLoadInPercent() > group4.getLoadInPercent() &&
-                   group2.getLoadInPercent() > group3.getLoadInPercent() && group2.getLoadInPercent() > group1.getLoadInPercent();
+           boolean group2hasHighestLoadInPercent = group2.getLoadInPercent() >= group5.getLoadInPercent() && group2.getLoadInPercent() >= group4.getLoadInPercent() &&
+                   group2.getLoadInPercent() >= group3.getLoadInPercent() && group2.getLoadInPercent() >= group1.getLoadInPercent();
 
 
            boolean group5432areOverloaded = group5.isOverloaded() && group4.isOverloaded() && group3.isOverloaded() && group2.isOverloaded();
@@ -118,23 +118,21 @@ public class MemoBox {
                //jeżeli grupa 4 ma fiszki i grupa 5 jest pusta
                else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isEmpty()) word = 4;
 
+
                // jeżeli grupa 4 ma fiszki i grupa 5 też ma fiszki jeżeli obie są TAK SAMO przeładowane
                else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isOverloaded() && group4.isOverloaded() &&
-                           group5.getLoadInPercent() == group4.getLoadInPercent()) word = 5;
+                       group5hasHighestLoadInPercent) word = 5;
 
                //jeżeli obie są przeładowane ale 4 jst bardziej
                else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isOverloaded() && group4.isOverloaded() &&
                        group4hasHighestLoadInPercent) word = 4;
 
-               //jeżeli obie są przeładowane ale 5 jst bardziej
-               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isOverloaded() && group4.isOverloaded() &&
-                       group5hasHighestLoadInPercent)  word = 5;
 
                //jeżeli obie są pełne
-               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isFull() && group4.isFull()) word = 5;
+               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && ((group5.isFull() && group4.isFull()) || group5.isFull())) word = 5;
 
-               //jeżeli 5 jest pełna
-               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isFull()) word = 5;
+//               //jeżeli 5 jest pełna
+//               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isFull()) word = 5;
 
                //jeżeli 4 jest pełna
                else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group4.isFull()) word = 4;
@@ -142,22 +140,17 @@ public class MemoBox {
                //jeżeli obie mają więcej niż minimum
                else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isMoreThanMinimum() && group4.isMoreThanMinimum()) {
 
-                   //i takie smao zapełnienie
-                   if (group5.getLoadInPercent() == group4.getLoadInPercent()) {
-                       word = 5;
-                   }
                    // i 5 ma większe zapłenienie
-                   else if (group5hasHighestLoadInPercent) word = 5;
+                   if (group5hasHighestLoadInPercent) word = 5;
 
                    // i 4 ma większe zapełnienie
                    else if (group4hasHighestLoadInPercent) word = 4;
 
                }
-               //jeżeli obie mają równe minimum
-               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isMinimum() && group4.isMinimum()) word = 5;
 
-               //jeżeli 5 ma minimum a 4 ma mniej
-               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isMinimum()) word = 5;
+
+               //jeżeli obie mają równe minimum
+               else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && ((group5.isMinimum() && group4.isMinimum()) || group5.isMinimum())) word = 5;
 
                //jeżeli 4 ma minimum a 5 ma mniej
                else if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group4.isMinimum()) word = 4;
@@ -172,48 +165,40 @@ public class MemoBox {
                //jeżeli grupa 3 ma fiszki i grupy 4 i 5 są puste
                else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isEmpty()) word = 3;
 
+
                //jeżeli poza grupą 3 grupa 5 też ma fiszki (jeżeli 4 jest pusta)
                else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isOverloaded() && group3.isOverloaded() &&
-                           group5.getLoadInPercent() == group3.getLoadInPercent()) word = 5;
+                       group5hasHighestLoadInPercent) word = 5;
 
                    //jeżeli obie są przeładowane ale 3 jst bardziej
                else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isOverloaded() && group3.isOverloaded() &&
                        group3hasHighestLoadInPercent) word = 3;
 
-                   //jeżeli obie są przeładowane ale 5 jst bardziej
-               else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isOverloaded() && group3.isOverloaded() &&
-                       group5hasHighestLoadInPercent)  word = 5;
-
                    //jeżeli obie są pełne
-               else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isFull() && group3.isFull()) word = 5;
-
-                   //jeżeli 5 jest pełna
-               else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isFull()) word = 5;
+               else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && ((group5.isFull() && group3.isFull()) || group5.isFull())) word = 5;
 
                    //jeżeli 3 jest pełna
                else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group3.isFull()) word = 3;
+
+
 
                    //jeżeli obie mają więcej niż minimum
                else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isMoreThanMinimum() && group3.isMoreThanMinimum()) {
 
                    //i takie smao zapełnienie
-                   if (group5.getLoadInPercent() == group3.getLoadInPercent()) word = 5;
-
-                   // i 5 ma większe zapłenienie
-                   else if (group5hasHighestLoadInPercent) word = 5;
+                   if (group5hasHighestLoadInPercent) word = 5;
 
                    // i 3 ma większe zapełnienie
                    else if (group3hasHighestLoadInPercent) word = 3;
 
                }
-               //jeżeli obie mają równe minimum
-               else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isMinimum() && group3.isMinimum()) word = 5;
 
-                   //jeżeli 5 ma minimum a 3 ma mniej
-               else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isMinimum()) word = 5;
+               //jeżeli obie mają równe minimum
+               else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && ((group5.isMinimum() && group3.isMinimum()) || group5.isMinimum())) word = 5;
 
                    //jeżeli 3 ma minimum a 5 ma mniej
                else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group3.isMinimum()) word = 3;
+
 
                    //obie mają mniej niż minimum ale 5 ma więkze zapełnienie
                else if (group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5hasHighestLoadInPercent) word = 5;
@@ -224,10 +209,6 @@ public class MemoBox {
 
                //jeżeli poza grupą 3 grupa 4 też ma fiszki (jeżeli 5 jest pusta)
                else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3.isOverloaded() && group4.isOverloaded() &&
-                       group3.getLoadInPercent() == group4.getLoadInPercent()) word = 4;
-
-                   //jeżeli obie są przeładowane ale 4 jst bardziej
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3.isOverloaded() && group4.isOverloaded() &&
                        group4hasHighestLoadInPercent) word = 4;
 
                    //jeżeli obie są przeładowane ale 3 jst bardziej
@@ -235,47 +216,38 @@ public class MemoBox {
                        group3hasHighestLoadInPercent)  word = 3;
 
                    //jeżeli obie są pełne
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3.isFull() && group4.isFull()) word = 4;
+               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && ((group3.isFull() && group4.isFull()) || group4.isFull())) word = 4;
 
                    //jeżeli 3 jest pełna
                else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3.isFull()) word = 3;
 
-                   //jeżeli 4 jest pełna
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group4.isFull()) word = 4;
 
                    //jeżeli obie mają więcej niż minimum
                else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3.isMoreThanMinimum() && group4.isMoreThanMinimum()) {
 
                    //i takie smao zapełnienie
-                   if (group3.getLoadInPercent() == group4.getLoadInPercent()) word = 4;
+                   if (group4hasHighestLoadInPercent) word = 4;
 
                    // i 3 ma większe zapłenienie
                    else if (group3hasHighestLoadInPercent) word = 3;
 
-                   // i 4 ma większe zapełnienie
-                   else if (group4hasHighestLoadInPercent)  word = 4;
-
                }
+
+
                //jeżeli obie mają równe minimum
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3.isMinimum() && group4.isMinimum()) word = 4;
+               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && ((group3.isMinimum() && group4.isMinimum()) || group4.isMinimum())) word = 4;
 
                    //jeżeli 3 ma minimum a 4 ma mniej
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3.isMinimum()) word = 3;
+               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && (group3.isMinimum() || group3hasHighestLoadInPercent)) word = 3;
 
-                   //jeżeli 4 ma minimum a 3 ma mniej
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group4.isMinimum()) word = 4;
-
-                   //obie mają mniej niż minimum ale 3 ma więkze zapełnienie
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group3hasHighestLoadInPercent) word = 3;
 
                //obie mają mniej niż minimum ale 4 ma więkze zapełnienie
                 else if (group1.isEmpty() && group2.isEmpty() && group5.isEmpty() && group4hasHighestLoadInPercent) word = 4;
 
 
                //jeżeli grupy 3,4,5 mają fiszki i wszystkie są TAK SAMO przeładowane
-               else if (group1.isEmpty() && group2.isEmpty() && group543areOverloaded && (group54sameLoad && group43sameLoad)) word = 5;
-               //jeżeli wszystkie są przeładowane ale 5 najbardziej
-               else if (group1.isEmpty() && group2.isEmpty() && group543areOverloaded && group5hasHighestLoadInPercent) word = 5;
+               else if (group1.isEmpty() && group2.isEmpty() && group543areOverloaded && ((group54sameLoad && group43sameLoad) || group5hasHighestLoadInPercent)) word = 5;
+
                //jeżeli wszystkie są przeładowane ale 4 najbardziej
                else if (group1.isEmpty() && group2.isEmpty() && group543areOverloaded && group4hasHighestLoadInPercent) word = 4;
                //jeżeli wszystkie są przeładowane ale 3 najbardziej
@@ -283,25 +255,20 @@ public class MemoBox {
 
 
                //jeżeli 5 i 4 są TAK SAMO przeładowane
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isOverloaded() && group4.isOverloaded() && group5.getLoadInPercent() == group4.getLoadInPercent()) word = 5;
-               // jeżeli 5 i 4 są przeładowane ale 5 bardziej
                else if (group1.isEmpty() && group2.isEmpty() && group5.isOverloaded() && group4.isOverloaded() && group5hasHighestLoadInPercent) word = 5;
+
                // jeżeli 5 i 4 są przeładowane ale 4 bardziej
                else if (group1.isEmpty() && group2.isEmpty() && group5.isOverloaded() && group4.isOverloaded() && group4hasHighestLoadInPercent) word = 4;
 
-
                //jeżeli 5 i 3 są TAK SAMO przeładowane
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isOverloaded() && group3.isOverloaded() && group5.getLoadInPercent() == group3.getLoadInPercent()) word = 5;
-               // jeżeli 5 i 3 są przeładowane ale 5 bardziej
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isOverloaded() && group4.isOverloaded() && group5hasHighestLoadInPercent) word = 5;
-               // jeżeli 5 i 3 są przeładowane ale 4 bardziej
+               else if (group1.isEmpty() && group2.isEmpty() && group5.isOverloaded() && group3.isOverloaded() && group5hasHighestLoadInPercent) word = 5;
+
+               // jeżeli 5 i 3 są przeładowane ale 3 bardziej
                else if (group1.isEmpty() && group2.isEmpty() && group5.isOverloaded() && group3.isOverloaded() && group3hasHighestLoadInPercent) word = 3;
 
-
                //jeżeli 4 i 3 są TAK SAMO przeładowane
-               else if (group1.isEmpty() && group2.isEmpty() && group4.isOverloaded() && group3.isOverloaded() && group4.getLoadInPercent() == group3.getLoadInPercent()) word = 4;
-               // jeżeli 4 i 3 są przeładowane ale 4 bardziej
                else if (group1.isEmpty() && group2.isEmpty() && group4.isOverloaded() && group3.isOverloaded() && group4hasHighestLoadInPercent) word = 4;
+
                // jeżeli 4 i 3 są przeładowane ale 3 bardziej
                else if (group1.isEmpty() && group2.isEmpty() && group4.isOverloaded() && group3.isOverloaded() && group3hasHighestLoadInPercent) word = 3;
 
@@ -314,12 +281,8 @@ public class MemoBox {
                else if (group1.isEmpty() && group2.isEmpty() && group3.isOverloaded()) word = 3;
 
 
-               //jeżęli wszystkie 3 są pełne
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isFull() && group4.isFull() && group3.isFull()) word = 5;
-               //jeżeli pełne są tylko 5 i 4
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isFull() && group4.isFull()) word = 5;
                //jeżeli pełne są tylko 5 i 3
-               else if (group1.isEmpty() && group2.isEmpty() && group5.isFull() && group3.isFull()) word = 5;
+               else if (group1.isEmpty() && group2.isEmpty() && group5.isFull() && (group3.isFull() || group4.isFull())) word = 5;
                //jeżeli pełne są tylko 4 i 3
                else if (group1.isEmpty() && group2.isEmpty() && group4.isFull() && group3.isFull()) word = 4;
                //jeżeli pełna jest tylko 5
@@ -328,6 +291,16 @@ public class MemoBox {
                else if (group1.isEmpty() && group2.isEmpty() && group4.isFull()) word = 4;
                //jeżeli pełna jest tylko 3
                else if (group1.isEmpty() && group2.isEmpty() && group3.isFull()) word = 3;
+
+
+
+
+               //---------------------------------------------- KONIEC -----------------------------------------
+
+
+
+
+
 
 
                //jeżeli wszystkie 3 mają wiecej niż minimum
