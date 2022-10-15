@@ -8,14 +8,15 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MenuPanel extends JPanel {
-
-    public static final int WIDTH = 150;
+    private static final float WIDTH_IN_PERCENT = 100 - MainPanel.WIDTH_IN_PERCENT;
+    //public static final int WIDTH = 150;
+    public static final int WIDTH = Math.round(Content.WIDTH * WIDTH_IN_PERCENT/100);;
     public static final int HEIGHT = Content.HEIGHT;
     public static final int X = Content.WIDTH-WIDTH;
     public static final int Y = Content.Y;
     public static final int UP_GAP = 30;
     public static final int GAP_BETWEEN_BTNS = 10;
-    public static final int BTN_X = (int) ((MenuPanel.WIDTH - MenuButton.WIDTH) * 0.5);
+    public static final int BTN_X = (WIDTH - MenuButton.WIDTH)/2;
     public static MenuButton statBtn;
     public static MenuButton addRemoveBtn;
     public static MenuButton endBtn;
@@ -24,7 +25,8 @@ public class MenuPanel extends JPanel {
 
     public MenuPanel() {
         setBounds(X,Y, WIDTH, HEIGHT);
-        setBackground(null);
+        //setBackground(null);
+        setBackground(Color.RED);
         setLayout(null);
 
         // Button 1:

@@ -8,9 +8,11 @@ import program.elements.panels.views.View;
 import javax.swing.*;
 
 public class MainPanel extends JPanel {
+    static final float WIDTH_IN_PERCENT = 80;
     public static final int X = Content.X;
     public static final int Y = Content.Y;
-    public static final int WIDTH = Content.WIDTH - MenuPanel.WIDTH;
+    //public static final int WIDTH = Content.WIDTH - MenuPanel.WIDTH;
+    public static final int WIDTH = Math.round(Content.WIDTH * WIDTH_IN_PERCENT/100);
     public static final int HEIGHT = Content.HEIGHT;
     public static View mainView;
     public static View statsView;

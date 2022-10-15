@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1250">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/program/Main.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/program/database/asdfgjafsdg.txt" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/program/database/baza.txt" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/program/elements/panels/views/StatsView.java" charset="windows-1250" />
+    <file url="PROJECT" charset="windows-1250" />
   </component>
 </project>

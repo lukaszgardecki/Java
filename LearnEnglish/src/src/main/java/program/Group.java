@@ -25,6 +25,10 @@ public class Group extends LinkedList<String[]> {
         return this.size() == minSize;
     }
 
+    public boolean isLessThanMinimum() {
+        return this.size() < minSize;
+    }
+
     public boolean isMoreThanMinimum() {
         return this.size() > minSize;
     }

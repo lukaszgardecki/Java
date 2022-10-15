@@ -4,7 +4,7 @@ import program.elements.panels.MainPanel;
 
 import javax.swing.*;
 
-public class View extends JPanel {
+public class View extends JLayeredPane {
     public static final int X = MainPanel.X;
     public static final int Y = MainPanel.Y;
     public static final int WIDTH = MainPanel.WIDTH;
