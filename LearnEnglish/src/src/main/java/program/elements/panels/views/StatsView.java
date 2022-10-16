@@ -43,7 +43,7 @@ public class StatsView extends View {
         s2.setForeground(MyColor.RED);
         add(s2);
 
-        t2 = new JLabel(String.valueOf(memoBox.getNum(1).size()));
+        t2 = new JLabel(String.valueOf(memoBox.getGroup(1).size()));
         t2.setBounds(TEXTCOL_WIDTH, UP_MARGIN + 2 * VERTICAL_GAP, VALUECOL_WIDTH, ROW_HEIGHT);
         t2.setFont(boldFont);
         t2.setForeground(MyColor.RED);
@@ -56,7 +56,7 @@ public class StatsView extends View {
         s3.setForeground(MyColor.ORANGE_DARK);
         add(s3);
 
-        t3 = new JLabel(String.valueOf(memoBox.getNum(2).size()));
+        t3 = new JLabel(String.valueOf(memoBox.getGroup(2).size()));
         t3.setBounds(TEXTCOL_WIDTH, UP_MARGIN + 3 * VERTICAL_GAP, VALUECOL_WIDTH, ROW_HEIGHT);
         t3.setFont(boldFont);
         t3.setForeground(MyColor.ORANGE_DARK);
@@ -69,7 +69,7 @@ public class StatsView extends View {
         s4.setForeground(MyColor.ORANGE_LIGHT);
         add(s4);
 
-        t4 = new JLabel(String.valueOf(memoBox.getNum(3).size()));
+        t4 = new JLabel(String.valueOf(memoBox.getGroup(3).size()));
         t4.setBounds(TEXTCOL_WIDTH, UP_MARGIN + 4 * VERTICAL_GAP, VALUECOL_WIDTH, ROW_HEIGHT);
         t4.setFont(boldFont);
         t4.setForeground(MyColor.ORANGE_LIGHT);
@@ -82,7 +82,7 @@ public class StatsView extends View {
         s5.setForeground(MyColor.YELLOW);
         add(s5);
 
-        t5 = new JLabel(String.valueOf(memoBox.getNum(4).size()));
+        t5 = new JLabel(String.valueOf(memoBox.getGroup(4).size()));
         t5.setBounds(TEXTCOL_WIDTH, UP_MARGIN + 5 * VERTICAL_GAP, VALUECOL_WIDTH, ROW_HEIGHT);
         t5.setFont(boldFont);
         t5.setForeground(MyColor.YELLOW);
@@ -95,7 +95,7 @@ public class StatsView extends View {
         s6.setForeground(MyColor.GREEN);
         add(s6);
 
-        t6 = new JLabel(String.valueOf(memoBox.getNum(5).size()));
+        t6 = new JLabel(String.valueOf(memoBox.getGroup(5).size()));
         t6.setBounds(TEXTCOL_WIDTH, UP_MARGIN + 6 * VERTICAL_GAP, VALUECOL_WIDTH, ROW_HEIGHT);
         t6.setFont(boldFont);
         t6.setForeground(MyColor.GREEN);
@@ -107,7 +107,7 @@ public class StatsView extends View {
         s7.setFont(plainFont);
         add(s7);
 
-        t7 = new JLabel(String.valueOf(memoBox.getNum(6).size()));
+        t7 = new JLabel(String.valueOf(memoBox.getGroup(6).size()));
         t7.setBounds(TEXTCOL_WIDTH, UP_MARGIN + 7 * VERTICAL_GAP, VALUECOL_WIDTH, ROW_HEIGHT);
         t7.setFont(boldFont);
         add(t7);

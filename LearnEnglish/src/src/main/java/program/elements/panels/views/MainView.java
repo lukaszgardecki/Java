@@ -1,9 +1,6 @@
 package program.elements.panels.views;
 
-import org.springframework.boot.autoconfigure.jackson.JacksonProperties;
-import program.Main;
 import program.elements.buttons.CheckButton;
-import program.elements.checkboxes.UnderscoreCheckbox;
 import program.elements.labels.DateLabel;
 import program.elements.labels.GroupVol;
 import program.elements.panels.MainPanel;
@@ -11,7 +8,6 @@ import program.elements.text_fields.EnglishWordTextArea;
 import program.elements.text_fields.CorrectAnswerTextArea;
 import program.elements.text_fields.TranslateTextField;
 import program.elements.text_fields.UnderscoresTextArea;
-import program.settings.KeyPress;
 import program.settings.MyColor;
 
 import javax.swing.*;
@@ -34,13 +30,13 @@ public class MainView extends View {
     public MainView() {
 
         underscores = new UnderscoresTextArea();
-        g1 = new GroupVol(String.valueOf(Main.getAmountOfAllWords()));
-        g2 = new GroupVol(String.valueOf(memoBox.getNum(1).size()));
-        g3 = new GroupVol(String.valueOf(memoBox.getNum(2).size()));
-        g4 = new GroupVol(String.valueOf(memoBox.getNum(3).size()));
-        g5 = new GroupVol(String.valueOf(memoBox.getNum(4).size()));
-        g6 = new GroupVol(String.valueOf(memoBox.getNum(5).size()));
-        g7 = new GroupVol(String.valueOf(memoBox.getNum(6).size()));
+        g1 = new GroupVol(String.valueOf(memoBox.getGroup(0).size()));
+        g2 = new GroupVol(String.valueOf(memoBox.getGroup(1).size()));
+        g3 = new GroupVol(String.valueOf(memoBox.getGroup(2).size()));
+        g4 = new GroupVol(String.valueOf(memoBox.getGroup(3).size()));
+        g5 = new GroupVol(String.valueOf(memoBox.getGroup(4).size()));
+        g6 = new GroupVol(String.valueOf(memoBox.getGroup(5).size()));
+        g7 = new GroupVol(String.valueOf(memoBox.getGroup(6).size()));
         wordLabel = new EnglishWordTextArea();
         groups = new JPanel();
         correctAnswer = new CorrectAnswerTextArea();

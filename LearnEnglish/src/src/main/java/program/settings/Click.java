@@ -1,13 +1,11 @@
 package program.settings;
 
-import program.Main;
 import program.elements.panels.MainPanel;
 import program.elements.panels.MenuPanel;
 import program.elements.panels.views.AddOrRemoveView;
 import program.elements.panels.views.MainView;
 import program.elements.panels.views.View;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -42,17 +40,13 @@ public class Click implements ActionListener{
                                             !AddOrRemoveView.tf2.getText().equals("wpisz t³umaczenie") &&
                                             !AddOrRemoveView.tf2.getText().isBlank();
 
-        if (isPressedExitBtn) {
-            saveAndExit();
-        } else if(isPressedStatsBtn) {
-            showStatistics();
-        } else if (isPressedReturnBtn) {
-            returnToMainView();
-        } else if(isPressedNextBtn) {
-            goToNextWord();
-        } else if (isPressedCheckBtn && isInputNotEmpty && isGoodAnswer) {
+        if (isPressedExitBtn) saveAndExit();
+        else if(isPressedStatsBtn) showStatistics();
+        else if (isPressedReturnBtn) returnToMainView();
+        else if(isPressedNextBtn) setNewWord();
+        else if (isPressedCheckBtn && isInputNotEmpty && isGoodAnswer) {
             changeLevel("up");
-            setGoodAnsView();
+            setNewWord();
             updateStatistics();
         } else if (isPressedCheckBtn && isInputNotEmpty) {
             changeLevel("down");
@@ -105,17 +99,17 @@ public class Click implements ActionListener{
         changeToMainView();
     }
 
-    private void goToNextWord() {
+    private void setNewWord() {
         wordLabel.setText(loadWord()[6]);
         wordLabel.setForeground(MyColor.BLACK);
-        wordLabel.setMyBorder(Main.loadWord()[1]);
+        wordLabel.setMyBorder(loadWord()[1]);
         MainView.setGroupColor(loadWord());
         dateLabel.setText("Ostatnia powtórka: " + getDate());
         correctAnswer.setText("");
+        inputTextF.setText("");
         inputTextF.requestFocusInWindow();
         inputTextF.setEditable(true);
         inputTextF.setForeground(MyColor.BLACK);
-        inputTextF.setText("");
         check.setText("SprawdŸ");
     }
 
@@ -126,13 +120,6 @@ public class Click implements ActionListener{
 
     private void hideUnderscores() {
         underscores.setVisible(false);
-        inputTextF.requestFocusInWindow();
-    }
-
-    private void setGoodAnsView() {
-        wordLabel.setText(loadWord()[6]);
-        dateLabel.setText("Ostatnia powtórka: " + getDate());
-        inputTextF.setText("");
         inputTextF.requestFocusInWindow();
     }
 
@@ -175,19 +162,20 @@ public class Click implements ActionListener{
     }
 
     private void showMainViewBtns() {
-        MenuPanel.addRemoveBtn.setVisible(true);
-        MenuPanel.endBtn.setVisible(true);
-        MenuPanel.checkbox.setVisible(true);
-        MenuPanel.checkboxLabel.setVisible(true);
+        setVisibleOtherComponentsTo(true);
         statBtn.setText("STATYSTYKI");
     }
 
     private void showBackBtn() {
-        MenuPanel.addRemoveBtn.setVisible(false);
-        MenuPanel.endBtn.setVisible(false);
-        MenuPanel.checkbox.setVisible(false);
-        MenuPanel.checkboxLabel.setVisible(false);
+        setVisibleOtherComponentsTo(false);
         statBtn.setText("WRÓÆ");
+    }
+
+    private void setVisibleOtherComponentsTo(boolean TorF) {
+        MenuPanel.addRemoveBtn.setVisible(TorF);
+        MenuPanel.endBtn.setVisible(TorF);
+        MenuPanel.checkbox.setVisible(TorF);
+        MenuPanel.checkboxLabel.setVisible(TorF);
     }
 
     private void changeDefaultFocus() {

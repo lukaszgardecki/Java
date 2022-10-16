@@ -23,16 +23,18 @@ public class Main {
     public static final MemoBox memoBox = new MemoBox(5, 10, 15, 20, 25);
     public static int amountOfWords = 0;
     public static Window win;
+    public static String[] wordFromPreviousSession;
 
     public static void main(String[] args) {
         loadData();
-        baza.forEach(e -> System.out.println(e.getName() + " " + e.getList().size()));
+        //baza.forEach(e -> System.out.println(e.getName() + " " + e.getList().size()));
         //baza.get(0).getList().forEach(e -> System.out.println(Arrays.toString(e)));
         //System.out.println(memoBox.getWord());
         //System.out.println(Arrays.toString(loadWord1()));
-        System.out.println(getAmountOfAllAns());
+        //System.out.println(getAmountOfAllAns());
         //System.out.println("S³oñce ¿ó³wiaste");
 
+        System.out.println(memoBox);
         //createMap();
         //loadData();
         //System.out.print(memoBox);
@@ -84,29 +86,30 @@ public class Main {
         return word;
     }
 
+
+
     private static String[] displayEmptyBaseMessage() {
         return new String[]{"19940418200515", "0", "0", "0", "brak fiszek", "brak fiszek"};
     }
 
     private static String[] getFirstWordFromGroup(int group) {
-        return memoBox.getNum(group).getFirst();
+        return memoBox.getGroup(group).getFirst();
     }
 
     public static void changeLevel(String upOrDown) {
         String[] temp = loadWord();
-        //ArrayList<String> temp = loadWord();
         int numOfGroup = Integer.parseInt(temp[1]);
         int correctAnswer = Integer.parseInt(temp[4]);
         int wrongAnswer = Integer.parseInt(temp[5]);
         String dateNew = new SimpleDateFormat("yyyyMMddHHmmss").format(Calendar.getInstance().getTime());
 
         // usuñ ze starej listy
-        //map.get(numOfGroup).remove(temp);
         memoBox.remove(temp);
 
         switch (upOrDown) {
             case "up" -> {
-                numOfGroup++;
+                if(numOfGroup == 0) numOfGroup = numOfGroup + 2;
+                else numOfGroup++;
                 correctAnswer++;
             }
             case "down" -> {
@@ -121,8 +124,7 @@ public class Main {
         temp[4] = String.valueOf(correctAnswer);
         temp[5] = String.valueOf(wrongAnswer);
 
-        //map.get(numOfGroup).addLast(temp);
-        memoBox.getNum(numOfGroup).addLast(temp);
+        memoBox.getGroup(numOfGroup).addLast(temp);
     }
 
     public static String getDate() {
@@ -198,23 +200,21 @@ public class Main {
 
     public static void updateStatistics() {
 
-        MainView.g1.setText(String.valueOf(getAmountOfAllWords()));
-        MainView.g2.setText(String.valueOf(memoBox.getNum(1).size()));
-        MainView.g3.setText(String.valueOf(memoBox.getNum(2).size()));
-        MainView.g4.setText(String.valueOf(memoBox.getNum(3).size()));
-        MainView.g5.setText(String.valueOf(memoBox.getNum(4).size()));
-        MainView.g6.setText(String.valueOf(memoBox.getNum(5).size()));
-        MainView.g7.setText(String.valueOf(memoBox.getNum(6).size()));
-
-
+        MainView.g1.setText(String.valueOf(memoBox.getGroup(0).size()));
+        MainView.g2.setText(String.valueOf(memoBox.getGroup(1).size()));
+        MainView.g3.setText(String.valueOf(memoBox.getGroup(2).size()));
+        MainView.g4.setText(String.valueOf(memoBox.getGroup(3).size()));
+        MainView.g5.setText(String.valueOf(memoBox.getGroup(4).size()));
+        MainView.g6.setText(String.valueOf(memoBox.getGroup(5).size()));
+        MainView.g7.setText(String.valueOf(memoBox.getGroup(6).size()));
 
         StatsView.t1.setText(String.valueOf(getAmountOfAllWords()));
-        StatsView.t2.setText(String.valueOf(memoBox.getNum(1).size()));
-        StatsView.t3.setText(String.valueOf(memoBox.getNum(2).size()));
-        StatsView.t4.setText(String.valueOf(memoBox.getNum(3).size()));
-        StatsView.t5.setText(String.valueOf(memoBox.getNum(4).size()));
-        StatsView.t6.setText(String.valueOf(memoBox.getNum(5).size()));
-        StatsView.t7.setText(String.valueOf(memoBox.getNum(6).size()));
+        StatsView.t2.setText(String.valueOf(memoBox.getGroup(1).size()));
+        StatsView.t3.setText(String.valueOf(memoBox.getGroup(2).size()));
+        StatsView.t4.setText(String.valueOf(memoBox.getGroup(3).size()));
+        StatsView.t5.setText(String.valueOf(memoBox.getGroup(4).size()));
+        StatsView.t6.setText(String.valueOf(memoBox.getGroup(5).size()));
+        StatsView.t7.setText(String.valueOf(memoBox.getGroup(6).size()));
         StatsView.t8.setText(getAmountOfCorrectAns());
         StatsView.t9.setText(getAmountOfIncorrectAns());
         StatsView.t10.setText(getAmountOfAllAns());

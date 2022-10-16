@@ -1,8 +1,12 @@
 package program;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Group extends LinkedList<String[]> {
+    static List<Group> groups1to5 = new ArrayList<>();
     private int maxSize;
     private int minSize;
 
@@ -11,6 +15,7 @@ public class Group extends LinkedList<String[]> {
     Group(int minSize, int maxSize) {
         this.minSize = minSize;
         this.maxSize = maxSize;
+        groups1to5.add(this);
     }
 
     public int getMaxSize() {
@@ -34,15 +39,11 @@ public class Group extends LinkedList<String[]> {
     }
 
     public boolean isFull() {
-        return this.size() == maxSize;
+        return this.size() >= maxSize;
     }
 
     public boolean isLessThanFull() {
         return this.size() < maxSize;
-    }
-
-    public boolean isOverloaded() {
-        return this.size() > maxSize;
     }
 
     public double getLoadInPercent() {
@@ -54,5 +55,16 @@ public class Group extends LinkedList<String[]> {
         for (int i = 0; i < num; i++) {
             this.add(new String[0]);
         }
+    }
+
+    boolean hasTheHighestLoad() {
+        boolean ans = true;
+        for (Group group : groups1to5) {
+            if (this.getLoadInPercent() < group.getLoadInPercent()) {
+                ans = false;
+                break;
+            }
+        }
+        return ans;
     }
 }
