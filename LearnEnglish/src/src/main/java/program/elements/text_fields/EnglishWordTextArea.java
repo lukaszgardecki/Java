@@ -12,14 +12,17 @@ public class EnglishWordTextArea extends JTextArea {
     final int HEIGHT = 180;
     final int X = (MainPanel.WIDTH - WIDTH)/2;
     final int Y = 130;
+    final String[] word = Main.loadWord();
+    final String polishWord = word[6];
+    final String numOfGroup = word[1];
 
 
     public EnglishWordTextArea() {
-        setText(Main.loadWord()[6]);
+        setText(polishWord);
         setSize(WIDTH, HEIGHT);
         setLocation(X, Y);
         //setBounds(55, 30, 450, 130);
-        setMyBorder(Main.loadWord()[1]);
+        setMyBorder(numOfGroup);
 
         setLineWrap(true);
         setWrapStyleWord(true);

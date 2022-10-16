@@ -73,38 +73,38 @@ public class MemoBox {
 
 
     public int getNumberOfGroup() {
-        int word = -1;
+        int numOfGroup = -1;
 
        if (!isEmpty()) {
-           if (group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group4.isEmpty() && group5.isEmpty()) word = 0;
-           else if (group0.isEmpty() && group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group4.isEmpty()) word = 5;
-           else if (group0.isEmpty() && group1.isEmpty() && group2.isEmpty() && group3.isEmpty() && group5.isEmpty()) word = 4;
-           else if (group0.isEmpty() && group1.isEmpty() && group2.isEmpty() && group4.isEmpty() && group5.isEmpty()) word = 3;
-           else if (group0.isEmpty() && group1.isEmpty() && group3.isEmpty() && group4.isEmpty() && group5.isEmpty())  word = 2;
+           if (group0.isTheOnlyNonEmptyGroup()) numOfGroup = 0;
+           else if (group5.isTheOnlyNonEmptyGroup()) numOfGroup = 5;
+           else if (group4.isTheOnlyNonEmptyGroup()) numOfGroup = 4;
+           else if (group3.isTheOnlyNonEmptyGroup()) numOfGroup = 3;
+           else if (group2.isTheOnlyNonEmptyGroup())  numOfGroup = 2;
 
-           else if (group5.isFull() && group5.hasTheHighestLoad()) word = 5;
-           else if (group4.isFull() && group4.hasTheHighestLoad()) word = 4;
-           else if (group3.isFull() && group3.hasTheHighestLoad()) word = 3;
-           else if (group2.isFull() && group2.hasTheHighestLoad()) word = 2;
-           else if (group1.isFull() && group1.hasTheHighestLoad()) word = 1;
+           else if (group5.isFull() && group5.hasTheHighestLoad()) numOfGroup = 5;
+           else if (group4.isFull() && group4.hasTheHighestLoad()) numOfGroup = 4;
+           else if (group3.isFull() && group3.hasTheHighestLoad()) numOfGroup = 3;
+           else if (group2.isFull() && group2.hasTheHighestLoad()) numOfGroup = 2;
+           else if (group1.isFull() && group1.hasTheHighestLoad()) numOfGroup = 1;
 
-           else if (group1.isMoreThanMinimum() && !group0.isEmpty()) word = 0;
+           else if (group1.isMoreThanMinimum() && !group0.isEmpty()) numOfGroup = 0;
 
-           else if (group5.isMoreThanMinimum() && group5.hasTheHighestLoad()) word = 5;
-           else if (group4.isMoreThanMinimum() && group4.hasTheHighestLoad()) word = 4;
-           else if (group3.isMoreThanMinimum() && group3.hasTheHighestLoad()) word = 3;
-           else if (group2.isMoreThanMinimum() && group2.hasTheHighestLoad()) word = 2;
-           else if (group1.isMoreThanMinimum() && group1.hasTheHighestLoad()) word = 1;
+           else if (group5.isMoreThanMinimum() && group5.hasTheHighestLoad()) numOfGroup = 5;
+           else if (group4.isMoreThanMinimum() && group4.hasTheHighestLoad()) numOfGroup = 4;
+           else if (group3.isMoreThanMinimum() && group3.hasTheHighestLoad()) numOfGroup = 3;
+           else if (group2.isMoreThanMinimum() && group2.hasTheHighestLoad()) numOfGroup = 2;
+           else if (group1.isMoreThanMinimum() && group1.hasTheHighestLoad()) numOfGroup = 1;
 
-           else if (group5.isMoreThanMinimum()) word = 5;
-           else if (group4.isMoreThanMinimum()) word = 4;
-           else if (group3.isMoreThanMinimum()) word = 3;
-           else if (group2.isMoreThanMinimum()) word = 2;
+           else if (group5.isMoreThanMinimum()) numOfGroup = 5;
+           else if (group4.isMoreThanMinimum()) numOfGroup = 4;
+           else if (group3.isMoreThanMinimum()) numOfGroup = 3;
+           else if (group2.isMoreThanMinimum()) numOfGroup = 2;
 
-           else if (group5.isMinimum() || group5.hasTheHighestLoad()) word = 5;
-           else if (group4.isMinimum() || group4.hasTheHighestLoad()) word = 4;
-           else if (group3.isMinimum() || group3.hasTheHighestLoad()) word = 3;
-           else if (group2.isMinimum() || group2.hasTheHighestLoad()) word = 2;
+           else if (group5.isMinimum() || group5.hasTheHighestLoad()) numOfGroup = 5;
+           else if (group4.isMinimum() || group4.hasTheHighestLoad()) numOfGroup = 4;
+           else if (group3.isMinimum() || group3.hasTheHighestLoad()) numOfGroup = 3;
+           else if (group2.isMinimum() || group2.hasTheHighestLoad()) numOfGroup = 2;
 
 
 
@@ -121,18 +121,18 @@ public class MemoBox {
             */
 
            //je¿eli wybra³ grupê 1
-           if (word == 1) {
+           if (numOfGroup == 1) {
                //i wczeœniej by³a te¿ wziêta grupa 1
                if (currentGroup == 1) {
                    //ale nie skoñczyliœmy odpowiadaæ
                    if (group1counter > 0) {
-                       word = 1;
+                       numOfGroup = 1;
                        group1counter--;
                    }
                 //a wczeœniej by³a inna grupa ni¿ 1 (tzn. ¿e w jeden jest max lub wiêcej, lub ma najwiêksze zape³nienie)
                } else {
                    group1counter = group1.size();
-                   word = 1;
+                   numOfGroup = 1;
                    currentGroup = 1;
                    group1counter--;
                }
@@ -143,20 +143,20 @@ public class MemoBox {
            else {
 
                //ale w poprzedniej grupie jest wiêcej jak minimum to weŸ dokoñcz tamt¹ grupê
-               if (currentGroup != 1 && getGroup(currentGroup).isMoreThanMinimum()) {
-                   word = currentGroup;
+               if (currentGroup != 1 && currentGroup != 0 && getGroup(currentGroup).isMoreThanMinimum()) {
+                   numOfGroup = currentGroup;
                    //currentGroup jest ju¿ ustawione
                }
 
            }
-           currentGroup = word;
+           currentGroup = numOfGroup;
        }
-        return word;
+        return numOfGroup;
     }
 
-
-
-
+    public static int getCurrentGroup() {
+        return currentGroup;
+    }
 
     private double getMaxPercent() {
         return Math.max(group1.getLoadInPercent(),

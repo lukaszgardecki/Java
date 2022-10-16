@@ -18,7 +18,7 @@ public class Main {
 
     static String path = "src/main/java/program/database/baza.txt";
     static File file = new File(path);
-    static StringBuilder correctAns;
+    public static StringBuilder correctAns;
     //static final MemoBox memoBox = new MemoBox(50, 60, 90, 140, 160);
     public static final MemoBox memoBox = new MemoBox(5, 10, 15, 20, 25);
     public static int amountOfWords = 0;
@@ -35,9 +35,6 @@ public class Main {
         //System.out.println("S³oñce ¿ó³wiaste");
 
         System.out.println(memoBox);
-        //createMap();
-        //loadData();
-        //System.out.print(memoBox);
         win = new Window();
     }
 
@@ -81,19 +78,17 @@ public class Main {
 
     public static String[] loadWord() {
         int numOfGroup = memoBox.getNumberOfGroup();
-        String[] word = getFirstWordFromGroup(numOfGroup);
-        setUnderscores(word);
-        return word;
+
+
+
+
+        return memoBox.getGroup(numOfGroup).getFirst();
     }
 
 
 
     private static String[] displayEmptyBaseMessage() {
         return new String[]{"19940418200515", "0", "0", "0", "brak fiszek", "brak fiszek"};
-    }
-
-    private static String[] getFirstWordFromGroup(int group) {
-        return memoBox.getGroup(group).getFirst();
     }
 
     public static void changeLevel(String upOrDown) {
@@ -259,27 +254,27 @@ public class Main {
         return incorrectAnsPercent;
     }
 
-    public static void setUnderscores(String[] word) {
-        String englishWord = word[7];
-        StringBuilder undersc = new StringBuilder();
-        correctAns = new StringBuilder();
-
-        for (int i = 0; i < englishWord.length(); i++) {
-            String sign = Character.toString(englishWord.charAt(i));
-            if (sign.matches("\\w")) {
-                undersc.append("_").append("\u00A0");
-                correctAns.append(sign).append("\u00A0");
-            } else if (sign.matches("\\s+")) {
-                undersc.append("  ");
-                correctAns.append("  ");
-            } else {
-                undersc.append(sign);
-                correctAns.append(sign);
-            }
-        }
-
-        MainView.underscores.setText(String.valueOf(undersc));
-    }
+//    public static void setUnderscores(String[] word) {
+//        String englishWord = word[7];
+//        StringBuilder undersc = new StringBuilder();
+//        correctAns = new StringBuilder();
+//
+//        for (int i = 0; i < englishWord.length(); i++) {
+//            String sign = Character.toString(englishWord.charAt(i));
+//            if (sign.matches("\\w")) {
+//                undersc.append("_").append("\u00A0");
+//                correctAns.append(sign).append("\u00A0");
+//            } else if (sign.matches("\\s+")) {
+//                undersc.append("  ");
+//                correctAns.append("  ");
+//            } else {
+//                undersc.append(sign);
+//                correctAns.append(sign);
+//            }
+//        }
+//
+//        MainView.underscores.setText(String.valueOf(undersc));
+//    }
 
     public static void changeTheWordInBase() {
         String polishWord = MouseClick.polishWord;

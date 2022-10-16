@@ -18,17 +18,24 @@ public class Click implements ActionListener{
     View mainView = MainPanel.mainView;
     View editView = MainPanel.addRemoveView;
     View statsView = MainPanel.statsView;
+    String[] word;
+    String englishWord;
+    String polishWord;
+    String numOfGroup;
 
     @Override
     public void actionPerformed(ActionEvent e) {
         String a = e.getActionCommand();
+        word = loadWord();
+        englishWord = word[7];
+
         boolean isPressedExitBtn = a.equals("end");
         boolean isPressedStatsBtn = a.equals("stats") && statBtn.getText().equals("STATYSTYKI");
         boolean isPressedReturnBtn = a.equals("stats") && statBtn.getText().equals("WRÓÆ");
         boolean isPressedNextBtn = a.equals("check") && check.getText().equals("Dalej");
         boolean isPressedCheckBtn = a.equals("check") && check.getText().equals("SprawdŸ");
         boolean isInputNotEmpty = !inputTextF.getText().isEmpty() && !inputTextF.getText().equals("T³umaczenie");
-        boolean isGoodAnswer = (inputTextF.getText().toLowerCase()).equals(loadWord()[7].toLowerCase());
+        boolean isGoodAnswer = (inputTextF.getText().toLowerCase()).equals(englishWord.toLowerCase());
         boolean isPressedAddOrRemoveBtn = a.equals("addRemove");
         boolean isPressedAddBtn = a.equals("add") && AddOrRemoveView.addBtn.getText().equals("DODAJ");
         boolean isPressedChangeBtn = a.equals("add") && AddOrRemoveView.addBtn.getText().equals("ZMIEÑ");
@@ -39,6 +46,8 @@ public class Click implements ActionListener{
                                             !AddOrRemoveView.tf1.getText().isBlank() &&
                                             !AddOrRemoveView.tf2.getText().equals("wpisz t³umaczenie") &&
                                             !AddOrRemoveView.tf2.getText().isBlank();
+
+
 
         if (isPressedExitBtn) saveAndExit();
         else if(isPressedStatsBtn) showStatistics();
@@ -100,10 +109,16 @@ public class Click implements ActionListener{
     }
 
     private void setNewWord() {
-        wordLabel.setText(loadWord()[6]);
+        word = loadWord();
+        englishWord = word[7];
+        polishWord = word[6];
+        numOfGroup = word[1];
+
+        wordLabel.setText(polishWord);
+        underscores.setUnderscores(word);
         wordLabel.setForeground(MyColor.BLACK);
-        wordLabel.setMyBorder(loadWord()[1]);
-        MainView.setGroupColor(loadWord());
+        wordLabel.setMyBorder(numOfGroup);
+        MainView.setGroupColor(word);
         dateLabel.setText("Ostatnia powtórka: " + getDate());
         correctAnswer.setText("");
         inputTextF.setText("");

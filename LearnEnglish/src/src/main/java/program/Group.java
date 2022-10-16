@@ -67,4 +67,16 @@ public class Group extends LinkedList<String[]> {
         }
         return ans;
     }
+
+    boolean isTheOnlyNonEmptyGroup() {
+        boolean ans = true;
+        for (Group group : groups1to5) {
+            if (group.equals(this)) continue;
+            if (!group.isEmpty()) {
+                ans = false;
+                break;
+            }
+        }
+        return ans;
+    }
 }
