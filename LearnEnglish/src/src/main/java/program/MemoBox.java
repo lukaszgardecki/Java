@@ -4,8 +4,8 @@ import java.util.List;
 
 public class MemoBox {
     private final Group group0, group1, group2, group3, group4, group5, group6;
-    private static int currentGroup = 0;
-    private static int group1counter = 0;
+    private int currentGroup = 0;
+    private static int counter = 0;
 
 
     public MemoBox(int capOfGroup1, int capOfGroup2, int capOfGroup3, int capOfGroup4, int capOfGroup5) {
@@ -88,7 +88,13 @@ public class MemoBox {
            else if (group2.isFull() && group2.hasTheHighestLoad()) numOfGroup = 2;
            else if (group1.isFull() && group1.hasTheHighestLoad()) numOfGroup = 1;
 
-           else if (group1.isMoreThanMinimum() && !group0.isEmpty()) numOfGroup = 0;
+           else if (!group0.isEmpty() &&
+                   (group1.isMoreThanMinimum() || group1.isEmpty()) &&
+                   group2.isLessThanFull() && group3.isLessThanFull() &&
+                   group4.isLessThanFull() && group5.isLessThanFull()
+           ) numOfGroup = 0;
+
+
 
            else if (group5.isMoreThanMinimum() && group5.hasTheHighestLoad()) numOfGroup = 5;
            else if (group4.isMoreThanMinimum() && group4.hasTheHighestLoad()) numOfGroup = 4;
@@ -101,12 +107,13 @@ public class MemoBox {
            else if (group3.isMoreThanMinimum()) numOfGroup = 3;
            else if (group2.isMoreThanMinimum()) numOfGroup = 2;
 
+
            else if (group5.isMinimum() || group5.hasTheHighestLoad()) numOfGroup = 5;
            else if (group4.isMinimum() || group4.hasTheHighestLoad()) numOfGroup = 4;
            else if (group3.isMinimum() || group3.hasTheHighestLoad()) numOfGroup = 3;
            else if (group2.isMinimum() || group2.hasTheHighestLoad()) numOfGroup = 2;
 
-
+           System.out.println("pierwszy wybór grupy: " + numOfGroup);
 
 
 
@@ -122,41 +129,133 @@ public class MemoBox {
 
            //je¿eli wybra³ grupê 1
            if (numOfGroup == 1) {
+
                //i wczeœniej by³a te¿ wziêta grupa 1
                if (currentGroup == 1) {
                    //ale nie skoñczyliœmy odpowiadaæ
-                   if (group1counter > 0) {
+                   if (counter > 0) {
+                       //to wybierz jeszcze raz grupê 1
                        numOfGroup = 1;
-                       group1counter--;
+                       counter--;
                    }
-                //a wczeœniej by³a inna grupa ni¿ 1 (tzn. ¿e w jeden jest max lub wiêcej, lub ma najwiêksze zape³nienie)
-               } else {
-                   group1counter = group1.size();
+               }
+
+               //ale wczeœniej nie dokoñczy³ poprzedniej grupy
+               else if (currentGroup != 0 && getGroup(currentGroup).isMoreThanMinimum()) {
+                   // to wróæ do tej grupy
+                   numOfGroup = currentGroup;
+               }
+
+
+               //a wczeœniej by³a inna grupa ni¿ 1 (tzn. ¿e w jeden jest max lub wiêcej, lub ma najwiêksze zape³nienie)
+               else {
+                   counter = group1.size();
                    numOfGroup = 1;
                    currentGroup = 1;
-                   group1counter--;
+                   counter--;
                }
 
            }
 
            //je¿eli wybra³ grupê 0,2-5
            else {
+                // i poprzednia grupa by³a 1
+               if (currentGroup == 1) {
+                   //której nie skoñczyliœmy
+                   if (counter > 0) {
+                       // to wybierz grupê 1
+                       numOfGroup = 1;
+                       counter--;
+                   }
 
-               //ale w poprzedniej grupie jest wiêcej jak minimum to weŸ dokoñcz tamt¹ grupê
-               if (currentGroup != 1 && currentGroup != 0 && getGroup(currentGroup).isMoreThanMinimum()) {
-                   numOfGroup = currentGroup;
-                   //currentGroup jest ju¿ ustawione
+                   //a jeœli skoñczyliœmy
+                   else{
+                       //to nic nie rób
+                   }
                }
+
+                // i poprzedni¹ grup¹ by³a grupa 2-5, której nie dokoñæzy³
+               else {
+                   if (currentGroup != 0 && getGroup(currentGroup).isMoreThanMinimum()) {
+                       //to dokoñcz tê grupê
+                       numOfGroup = currentGroup;
+                       //currentGroup jest ju¿ ustawione
+                   }
+               }
+
+
+//               //je¿eli grupa 0 jest pusta
+//               if (group0.isEmpty()) {
+//
+//                   //i counter jest wiêkszy od zera
+//                   if (counter > 0) {
+//                       numOfGroup = currentGroup;
+//                       counter--;
+//                   }
+//
+//                   //i we wszystkich grupach jest minimum lub mniej
+//                   else if ((group2.isMinimum() || group2.isLessThanMinimum()) &&
+//                           (group3.isMinimum() || group3.isLessThanMinimum()) &&
+//                           (group4.isMinimum() || group4.isLessThanMinimum()) &&
+//                           (group5.isMinimum() || group5.isLessThanMinimum())) {
+//
+//                       // to weŸ grupê z najwiêkszym zape³nieniem
+//                       if (group5.hasTheHighestLoad()) numOfGroup = 5;
+//                       else if (group4.hasTheHighestLoad()) numOfGroup = 4;
+//                       else if (group3.hasTheHighestLoad()) numOfGroup = 3;
+//                       else if (group2.hasTheHighestLoad()) numOfGroup = 2;
+//
+//                       //ustaw counter na wielkoœæ tej grupy
+//                       counter = 5;
+//                   }
+//
+//
+//               }
+
+
+
+
 
            }
            currentGroup = numOfGroup;
        }
+
+
+        System.out.println("drugi wybór grupy: " + numOfGroup);
         return numOfGroup;
     }
 
-    public static int getCurrentGroup() {
+
+
+
+
+
+
+
+    public int getNumOfCurrentGroup() {
         return currentGroup;
     }
+
+    public void setCurrentGroup(int currentGroup) {
+        this.currentGroup = currentGroup;
+    }
+
+    public Group getCurrentGroup() {
+        return this.getGroup(currentGroup);
+    }
+
+    public Group getGroup0() {
+        return group0;
+    }
+
+    public Group getGroup6() {
+        return group6;
+    }
+
+    public String[] getCurrentWord() {
+        return this.getGroup(currentGroup).getFirst();
+    }
+
 
     private double getMaxPercent() {
         return Math.max(group1.getLoadInPercent(),

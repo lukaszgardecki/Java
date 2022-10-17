@@ -1,21 +1,24 @@
 package program;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
+import static program.Main.memoBox;
+
 public class Group extends LinkedList<String[]> {
-    static List<Group> groups1to5 = new ArrayList<>();
+    static List<Group> groups0to6 = new ArrayList<>();
     private int maxSize;
     private int minSize;
 
-    Group() {};
+    Group() {
+        groups0to6.add(this);
+    };
 
     Group(int minSize, int maxSize) {
         this.minSize = minSize;
         this.maxSize = maxSize;
-        groups1to5.add(this);
+        groups0to6.add(this);
     }
 
     public int getMaxSize() {
@@ -59,7 +62,8 @@ public class Group extends LinkedList<String[]> {
 
     boolean hasTheHighestLoad() {
         boolean ans = true;
-        for (Group group : groups1to5) {
+        for (Group group : groups0to6) {
+            if (group.equals(memoBox.getGroup0()) || group.equals(memoBox.getGroup6())) continue;
             if (this.getLoadInPercent() < group.getLoadInPercent()) {
                 ans = false;
                 break;
@@ -70,8 +74,8 @@ public class Group extends LinkedList<String[]> {
 
     boolean isTheOnlyNonEmptyGroup() {
         boolean ans = true;
-        for (Group group : groups1to5) {
-            if (group.equals(this)) continue;
+        for (Group group : groups0to6) {
+            if (group.equals(memoBox.getGroup6()) || group.equals(this)) continue;
             if (!group.isEmpty()) {
                 ans = false;
                 break;

@@ -13,7 +13,7 @@ import program.settings.MyColor;
 import javax.swing.*;
 import java.awt.*;
 
-import static program.Main.loadWord;
+
 import static program.Main.memoBox;
 
 
@@ -44,7 +44,7 @@ public class MainView extends View {
         dateLabel = new DateLabel();
         check = new CheckButton("Sprawdü");
 
-        setGroupColor(loadWord());
+        setGroupColor(memoBox.getCurrentWord());
 
         groups.setLayout(new GridLayout(1, 7));
         groups.setSize(450, 50);

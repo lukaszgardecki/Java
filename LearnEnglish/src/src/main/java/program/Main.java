@@ -20,7 +20,7 @@ public class Main {
     static File file = new File(path);
     public static StringBuilder correctAns;
     //static final MemoBox memoBox = new MemoBox(50, 60, 90, 140, 160);
-    public static final MemoBox memoBox = new MemoBox(5, 10, 15, 20, 25);
+    public static final MemoBox memoBox = new MemoBox(5, 10, 25, 40, 70);
     public static int amountOfWords = 0;
     public static Window win;
     public static String[] wordFromPreviousSession;
@@ -34,7 +34,7 @@ public class Main {
         //System.out.println(getAmountOfAllAns());
         //System.out.println("S³oñce ¿ó³wiaste");
 
-        System.out.println(memoBox);
+        //System.out.println(memoBox);
         win = new Window();
     }
 
@@ -43,7 +43,10 @@ public class Main {
         try (FileInputStream inputf = new FileInputStream(path);
              Scanner scanner = new Scanner(new InputStreamReader(inputf))) {
             scanner.nextLine();
+            String lineWithCurrentWord = scanner.nextLine();
+            memoBox.setCurrentGroup(Integer.parseInt(lineWithCurrentWord.substring(lineWithCurrentWord.length() -1)));
             scanner.nextLine();
+
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] word = line.split("_");
@@ -61,6 +64,7 @@ public class Main {
              OutputStreamWriter writer = new OutputStreamWriter(outf)) {
             writer.write("DATE_GROUP_CATEGORY_LEVEL_ANS-T_ANS-F_PL_ANG");
             writer.write("\n");
+            writer.write("Number of current group: " + memoBox.getNumOfCurrentGroup() + "\n");
             writer.write("\n");
 
             for (Category cat : baza) {
@@ -78,10 +82,6 @@ public class Main {
 
     public static String[] loadWord() {
         int numOfGroup = memoBox.getNumberOfGroup();
-
-
-
-
         return memoBox.getGroup(numOfGroup).getFirst();
     }
 
@@ -92,7 +92,7 @@ public class Main {
     }
 
     public static void changeLevel(String upOrDown) {
-        String[] temp = loadWord();
+        String[] temp = memoBox.getCurrentWord();
         int numOfGroup = Integer.parseInt(temp[1]);
         int correctAnswer = Integer.parseInt(temp[4]);
         int wrongAnswer = Integer.parseInt(temp[5]);
@@ -123,7 +123,7 @@ public class Main {
     }
 
     public static String getDate() {
-        String fullDate = loadWord()[0];
+        String fullDate = memoBox.getCurrentWord()[0];
         if (fullDate.equals("00000000000000")) {
             return "NOWE";
         } else {

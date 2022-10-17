@@ -1,5 +1,6 @@
 package program.elements.text_fields;
 
+import program.Main;
 import program.elements.panels.MainPanel;
 import program.settings.MyColor;
 
@@ -7,7 +8,8 @@ import javax.swing.*;
 import java.awt.*;
 
 import static program.Main.correctAns;
-import static program.Main.loadWord;
+import static program.Main.memoBox;
+
 
 public class UnderscoresTextArea extends JTextArea {
 
@@ -15,7 +17,7 @@ public class UnderscoresTextArea extends JTextArea {
     final int HEIGHT = 100;
     final int X = (MainPanel.WIDTH - WIDTH)/2;
     final int Y = 345;
-    String[] word = loadWord();
+    String[] word = memoBox.getCurrentWord();
 
     public UnderscoresTextArea() {
         setBackground(null);

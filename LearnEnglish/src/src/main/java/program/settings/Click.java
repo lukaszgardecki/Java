@@ -26,7 +26,7 @@ public class Click implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         String a = e.getActionCommand();
-        word = loadWord();
+        word = memoBox.getCurrentWord();
         englishWord = word[7];
 
         boolean isPressedExitBtn = a.equals("end");
