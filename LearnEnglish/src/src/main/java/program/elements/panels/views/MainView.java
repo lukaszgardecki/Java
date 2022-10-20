@@ -1,5 +1,6 @@
 package program.elements.panels.views;
 
+import program.Category;
 import program.elements.buttons.CheckButton;
 import program.elements.labels.DateLabel;
 import program.elements.labels.GroupVol;
@@ -27,6 +28,7 @@ public class MainView extends View {
     public static CheckButton check;
     public static JPanel groups;
     public static GroupVol g1, g2, g3, g4, g5, g6, g7;
+    public static JLabel categoryLabel, levelLabel;
     public MainView() {
 
         underscores = new UnderscoresTextArea();
@@ -38,6 +40,8 @@ public class MainView extends View {
         g6 = new GroupVol(String.valueOf(memoBox.getGroup(5).size()));
         g7 = new GroupVol(String.valueOf(memoBox.getGroup(6).size()));
         wordLabel = new EnglishWordTextArea();
+        categoryLabel = new JLabel();
+        levelLabel = new JLabel();
         groups = new JPanel();
         correctAnswer = new CorrectAnswerTextArea();
         inputTextF = new TranslateTextField("T³umaczenie");
@@ -50,7 +54,6 @@ public class MainView extends View {
         groups.setSize(450, 50);
         groups.setLocation((MainPanel.WIDTH - 450)/2, 90);
         groups.setOpaque(false);
-
         groups.add(g1);
         groups.add(g2);
         groups.add(g3);
@@ -59,11 +62,31 @@ public class MainView extends View {
         groups.add(g6);
         groups.add(g7);
 
+        categoryLabel.setSize(200, 25);
+        categoryLabel.setLocation(365, 280);
+        categoryLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+        if (memoBox.isEmpty()) {
+            categoryLabel.setText("");
+        } else {
+            categoryLabel.setText(Category.valueOf(memoBox.getCurrentWord()[2]).getName());
+        }
+
+        levelLabel.setSize(200, 25);
+        levelLabel.setLocation(155, 280);
+        levelLabel.setHorizontalAlignment(SwingConstants.LEFT);
+        if (memoBox.isEmpty()) {
+            levelLabel.setText("");
+        } else {
+            levelLabel.setText("Poziom " + memoBox.getCurrentWord()[3]);
+        }
+
+
         add(check);
         add(wordLabel, PALETTE_LAYER);
         add(groups, DEFAULT_LAYER);
         add(underscores);
-
+        add(categoryLabel, MODAL_LAYER);
+        add(levelLabel, MODAL_LAYER);
         add(dateLabel);
         add(correctAnswer);
         add(inputTextF);
@@ -82,6 +105,7 @@ public class MainView extends View {
         else if (group == 3) MainView.g4.setBackground(MyColor.ORANGE2_DARK);
         else if (group == 4) MainView.g5.setBackground(MyColor.YELLOW_DARK);
         else if (group == 5) MainView.g6.setBackground(MyColor.GREEN_DARK);
+        //else if (group == 6) MainView.g7.setBackground(MyColor.GRAY);
     }
 
     private static void setDefaultGroupColors() {
@@ -91,7 +115,7 @@ public class MainView extends View {
         MainView.g4.setBackground(MyColor.ORANGE2_LIGHT);
         MainView.g5.setBackground(MyColor.YELLOW_LIGHT);
         MainView.g6.setBackground(MyColor.GREEN_LIGHT);
-        //MainView.g7.setBackground(MyColor.GRAY);
+        MainView.g7.setBackground(MyColor.GRAY);
     }
 
 

@@ -1,14 +1,19 @@
 package program.settings;
 
+import org.yaml.snakeyaml.util.EnumUtils;
+import program.Category;
 import program.elements.panels.MainPanel;
 import program.elements.panels.MenuPanel;
 import program.elements.panels.views.AddOrRemoveView;
 import program.elements.panels.views.MainView;
 import program.elements.panels.views.View;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
+import java.util.EnumSet;
 
 import static program.Main.*;
 import static program.elements.panels.MenuPanel.statBtn;
@@ -18,14 +23,15 @@ public class Click implements ActionListener{
     View mainView = MainPanel.mainView;
     View editView = MainPanel.addRemoveView;
     View statsView = MainPanel.statsView;
-    String[] word;
-    String englishWord;
-    String polishWord;
-    String numOfGroup;
+    static String[] word;
+    static String englishWord;
+    static String polishWord;
+    static String numOfGroup;
 
     @Override
     public void actionPerformed(ActionEvent e) {
         String a = e.getActionCommand();
+
         word = memoBox.getCurrentWord();
         englishWord = word[7];
 
@@ -66,16 +72,17 @@ public class Click implements ActionListener{
             changeDefaultFocus();
             showBackBtn();
         } else if (isPressedAddBtn && areBothAddTxtFldsNotEmpty) {
-            addWordToBase();
+            doOperation("add");
             updateAddTxtFlds();
             AddOrRemoveView.tf2.setText("");
         } else if (isPressedChangeBtn && areBothAddTxtFldsNotEmpty) {
-            changeTheWordInBase();
+            doOperation("change");
+            setNewWord();
             updateAddTxtFlds();
             showAddBtn();
             updateWordList();
         } else if (isPressedRemoveBtn && areBothAddTxtFldsNotEmpty) {
-            removeFromBase();
+            doOperation("remove");
             updateAddTxtFlds();
             showAddBtn();
             updateWordList();
@@ -85,6 +92,8 @@ public class Click implements ActionListener{
             hideUnderscores();
         }
     }
+
+
 
     private void saveAndExit() {
         saveData();
@@ -102,19 +111,25 @@ public class Click implements ActionListener{
             AddOrRemoveView.tf1.setText("wpisz s³ówko");
             AddOrRemoveView.tf2.setForeground(Color.GRAY);
             AddOrRemoveView.tf2.setText("wpisz t³umaczenie");
+            AddOrRemoveView.levelCombo.setSelectedIndex(0);
+            AddOrRemoveView.groupsCombo.setSelectedIndex(0);
             showAddBtn();
             updateWordList();
         }
         changeToMainView();
     }
 
-    private void setNewWord() {
+    public static void setNewWord() {
         word = loadWord();
         englishWord = word[7];
         polishWord = word[6];
         numOfGroup = word[1];
+        String category = word[2].equals("CAT0") ? "" : Category.valueOf(word[2]).getName();
+        String level = word[3].equals("0") ? "" : "Poziom " + word[3];
 
         wordLabel.setText(polishWord);
+        categoryLabel.setText(category);
+        levelLabel.setText(level);
         underscores.setUnderscores(word);
         wordLabel.setForeground(MyColor.BLACK);
         wordLabel.setMyBorder(numOfGroup);
@@ -196,6 +211,7 @@ public class Click implements ActionListener{
     private void changeDefaultFocus() {
         AddOrRemoveView.tf1.transferFocus();
         AddOrRemoveView.tf2.transferFocus();
+        AddOrRemoveView.levelCombo.transferFocus();
     }
 
     private void showAddBtn() {

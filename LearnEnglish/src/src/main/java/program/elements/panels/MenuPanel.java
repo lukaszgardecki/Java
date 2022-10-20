@@ -25,8 +25,8 @@ public class MenuPanel extends JPanel {
 
     public MenuPanel() {
         setBounds(X,Y, WIDTH, HEIGHT);
-        //setBackground(null);
-        setBackground(Color.RED);
+        setBackground(null);
+        //setBackground(Color.RED);
         setLayout(null);
 
         // Button 1:
@@ -35,7 +35,7 @@ public class MenuPanel extends JPanel {
         statBtn.setLocation(BTN_X, UP_GAP);
 
         // Button 2:
-        addRemoveBtn = new MenuButton("DODAJ/USUÑ");
+        addRemoveBtn = new MenuButton("MEMOBOX");
         addRemoveBtn.setActionCommand("addRemove");
         addRemoveBtn.setLocation(BTN_X, UP_GAP+MenuButton.HEIGHT+GAP_BETWEEN_BTNS);
 

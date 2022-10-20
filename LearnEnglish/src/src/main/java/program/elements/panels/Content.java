@@ -9,8 +9,8 @@ import java.awt.*;
 public class Content extends JPanel {
     public static final int X = 0;
     public static final int Y = 0;
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 600;
+    public static final int WIDTH = 900;
+    public static final int HEIGHT = 900;
     public static MainPanel mainPanel;
     public static MenuPanel menuPanel;
 

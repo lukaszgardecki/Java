@@ -42,5 +42,6 @@ public class EnglishWordTextArea extends JTextArea {
         else if (numberOfGroup == 3) this.setBorder(BorderFactory.createLineBorder(MyColor.ORANGE2_DARK, 4));
         else if (numberOfGroup == 4) this.setBorder(BorderFactory.createLineBorder(MyColor.YELLOW_DARK, 4));
         else if (numberOfGroup == 5) this.setBorder(BorderFactory.createLineBorder(MyColor.GREEN_DARK, 4));
+        else if (numberOfGroup == 6) this.setBorder(BorderFactory.createLineBorder(MyColor.GRAY, 4));
     }
 }

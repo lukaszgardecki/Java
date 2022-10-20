@@ -42,7 +42,11 @@ public class Group extends LinkedList<String[]> {
     }
 
     public boolean isFull() {
-        return this.size() >= maxSize;
+        return this.size() == maxSize;
+    }
+
+    public boolean isOverloaded() {
+        return this.size() > maxSize;
     }
 
     public boolean isLessThanFull() {
