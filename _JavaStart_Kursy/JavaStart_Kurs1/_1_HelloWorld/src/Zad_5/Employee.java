@@ -1,6 +1,6 @@
 package Zad_5;
 
-public class Employee {
+class Employee {
     String firstname;
     String lastname;
     int yearOfBirth;

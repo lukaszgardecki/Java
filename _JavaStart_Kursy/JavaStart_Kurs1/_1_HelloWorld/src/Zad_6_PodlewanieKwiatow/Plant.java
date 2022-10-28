@@ -1,6 +1,6 @@
-package Zad_6;
+package Zad_6_PodlewanieKwiatow;
 
-public class Plant {
+class Plant {
     String name;
     String description;
     double waterPerDay;

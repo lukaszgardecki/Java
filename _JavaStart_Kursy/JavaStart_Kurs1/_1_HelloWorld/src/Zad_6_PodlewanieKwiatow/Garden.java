@@ -1,6 +1,6 @@
-package Zad_6;
+package Zad_6_PodlewanieKwiatow;
 
-public class Garden {
+class Garden {
     public static void main(String[] args) {
         Plant p1 = new Plant("Kaktus", "Opis kaktusa.", 0.3475);
         Plant p2 = new Plant("Petunia", "Opis petuni.", 9.43242);
