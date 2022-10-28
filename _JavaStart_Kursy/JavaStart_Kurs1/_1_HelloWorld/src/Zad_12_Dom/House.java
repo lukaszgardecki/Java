@@ -1,6 +1,6 @@
 package Zad_12_Dom;
 
-public class House {
+class House {
     double water;
     double petroleum;
 

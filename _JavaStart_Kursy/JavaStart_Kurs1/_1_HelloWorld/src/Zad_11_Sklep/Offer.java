@@ -1,6 +1,6 @@
 package Zad_11_Sklep;
 
-public class Offer {
+class Offer {
     Product product;
     double price;
     boolean special;

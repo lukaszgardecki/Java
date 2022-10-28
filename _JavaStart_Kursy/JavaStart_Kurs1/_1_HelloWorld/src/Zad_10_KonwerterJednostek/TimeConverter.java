@@ -1,6 +1,6 @@
 package Zad_10_KonwerterJednostek;
 
-public class TimeConverter {
+class TimeConverter {
 
     int hTOm(int h) {
         return h * 60;

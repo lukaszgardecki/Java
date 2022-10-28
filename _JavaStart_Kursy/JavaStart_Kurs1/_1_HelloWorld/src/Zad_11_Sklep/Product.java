@@ -1,6 +1,6 @@
 package Zad_11_Sklep;
 
-public class Product {
+class Product {
     String name;
     String producer;
 

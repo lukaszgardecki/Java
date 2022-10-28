@@ -1,6 +1,6 @@
-package Zad_9_Kalkulator;
+package Zad_9_Kalkulator1;
 
-public class Calculator {
+class Calculator {
 
     public double add(double x, double y) {
         return x + y;

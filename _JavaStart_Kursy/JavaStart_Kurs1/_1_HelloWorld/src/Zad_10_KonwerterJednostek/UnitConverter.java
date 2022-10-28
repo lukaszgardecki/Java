@@ -1,6 +1,6 @@
 package Zad_10_KonwerterJednostek;
 
-public class UnitConverter {
+class UnitConverter {
 
     double mTOcm(double m) {
         return m * 100;

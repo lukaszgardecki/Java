@@ -1,6 +1,6 @@
 package Zad_10_KonwerterJednostek;
 
-public class Convert {
+class Convert {
     public static void main(String[] args) {
         UnitConverter unitConverter = new UnitConverter();
         TimeConverter timeConverter = new TimeConverter();

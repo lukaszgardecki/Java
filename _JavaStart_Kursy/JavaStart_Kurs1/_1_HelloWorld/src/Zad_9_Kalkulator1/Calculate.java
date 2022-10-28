@@ -1,6 +1,6 @@
-package Zad_9_Kalkulator;
+package Zad_9_Kalkulator1;
 
-public class Calculate {
+class Calculate {
     public static void main(String[] args) {
         double x = 5;
         double y = 24;
