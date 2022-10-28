@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class Order implements IOrder {
     private IPizza pizza;
 
-    public Order(@Value("#{goodPizza}") IPizza pizza) {
+    public Order(@Value("#{goodPizza}") IPizza pizza)   {
         this.pizza = pizza;
     }
 
