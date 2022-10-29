@@ -23,7 +23,12 @@ public class Book {
 
 
     public void printInfo() {
-        System.out.printf("%s; %s; %s; %s; %s; %s\n", title, author, releaseDate, pages, publisher, isbn);
+        String info = String.format("%s; %s; %s; %s; %s", title, author, releaseDate, pages, publisher);
+        if (isbn != null) {
+            info += "; " + isbn;
+        }
+
+        System.out.println(info);
     }
 
     public String getTitle() {
