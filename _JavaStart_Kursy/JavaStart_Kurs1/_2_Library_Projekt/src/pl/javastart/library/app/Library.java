@@ -4,9 +4,11 @@ import pl.javastart.library.model.Book;
 
 public class Library {
     public static void main(String[] args) {
-        final String appName = "Biblioteka v0.5";
+        final String appName = "Biblioteka v0.7";
 
-        Book book1 = new Book(
+        Book[] books = new Book[1000];
+
+        books[0] = new Book(
                 "W pustyni i w puszczy",
                 "Henryk Sienkiewicz",
                 2010,
@@ -15,7 +17,7 @@ public class Library {
                 "9788373271890"
         );
 
-        Book book2 = new Book(
+        books[1] = new Book(
                 "Java. Efektywne programowanie. Wydanie II",
                 "Joshua Bloch",
                 2009,
@@ -24,7 +26,7 @@ public class Library {
                 "9788324620845"
         );
 
-        Book book3 = new Book(
+        books[2] = new Book(
                 "SCJP Sun Certified Programmer for Java 6 Study Guide",
                 "Bert Bates, Katherine Sierra",
                 2008,
@@ -36,9 +38,9 @@ public class Library {
 
         System.out.println(appName);
         System.out.println("Ksi¹¿ki dostêpne w bibliotece");
-        book1.printInfo();
-        book2.printInfo();
-        book3.printInfo();
+        books[0].printInfo();
+        books[1].printInfo();
+        books[2].printInfo();
 
     }
 }
