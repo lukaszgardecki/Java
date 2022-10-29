@@ -19,4 +19,6 @@ public class PointController {
     public void minusY(Point point) {
         point.setY(point.getY() - 1);
     }
+
+
 }

@@ -8,19 +8,18 @@ public class PointApplication {
         Point point = new Point(2, 5);
 
         PointController pointController = new PointController();
-        pointController.addX(point);
-        pointController.addX(point);
-        pointController.addX(point);
-        pointController.addX(point);
 
-        pointController.minusX(point);
-        pointController.minusX(point);
+        int choice = 1;
 
-        pointController.addY(point);
-        pointController.addY(point);
-        pointController.addY(point);
+        switch (choice) {
+            case 1 -> pointController.addX(point);
+            case 2 -> pointController.minusX(point);
+            case 3 -> pointController.addY(point);
+            case 4 -> pointController.minusY(point);
+        }
 
-        pointController.minusY(point);
+
+
 
         System.out.println(point);
     }
