@@ -3,7 +3,7 @@ package Zad_24_RzutMoneta;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Rzut {
+class Rzut {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
