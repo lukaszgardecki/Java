@@ -1,6 +1,6 @@
 package Zad_21_Winda;
 
-public class Elevator {
+class Elevator {
     private Person[] people = new Person[4];
     private int peopleNumber = 0;
     private final int maxWeight = 400;

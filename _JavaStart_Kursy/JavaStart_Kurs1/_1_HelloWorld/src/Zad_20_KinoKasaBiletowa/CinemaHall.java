@@ -1,6 +1,6 @@
 package Zad_20_KinoKasaBiletowa;
 
-public class CinemaHall {
+class CinemaHall {
     private int number;
     private int maxSeats;
     private int freeSeats;
