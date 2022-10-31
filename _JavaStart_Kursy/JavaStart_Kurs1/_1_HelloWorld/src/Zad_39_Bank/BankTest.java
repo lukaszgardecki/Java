@@ -1,6 +1,6 @@
 package Zad_39_Bank;
 
-public class BankTest {
+class BankTest {
     public static void main(String[] args) {
         Address address1 = new Address("Wroc³aw", "Hubska", "50-123", "23A", "15");
         Client client1 = new Client("Jan", "Kowalski", "88061056273", address1);
