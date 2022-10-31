@@ -1,6 +1,6 @@
 package Zad_34_SklepKomputerowy;
 
-public class Notebook extends Computer{
+class Notebook extends Computer{
     private int batteryCapacity;
 
     public Notebook(double cpuTemperature, int ramMemory, int batteryCapacity) {

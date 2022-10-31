@@ -1,6 +1,6 @@
 package Zad_34_SklepKomputerowy;
 
-public class Computer {
+class Computer {
     private double cpuTemperature;
     private int ramMemory;
 

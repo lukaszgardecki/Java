@@ -1,6 +1,6 @@
 package Zad_35_OwoceWsklepie;
 
-public class Fruit {
+class Fruit {
     private int weight;
     private String type;
 

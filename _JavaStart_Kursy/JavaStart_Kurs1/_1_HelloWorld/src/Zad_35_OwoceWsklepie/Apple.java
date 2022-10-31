@@ -1,6 +1,6 @@
 package Zad_35_OwoceWsklepie;
 
-public class Apple extends Fruit{
+class Apple extends Fruit{
     private String variety;
 
     public Apple(int weight, String variety) {
