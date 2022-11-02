@@ -1,7 +1,5 @@
 package Zad_45_ZapisyNaZawody;
 
-import java.util.Objects;
-
 class Participant {
     private String firstName;
     private String lastName;
