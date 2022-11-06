@@ -17,8 +17,8 @@
       <HBox BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="previousButton" mnemonicParsing="false" text="Button" />
-            <Button fx:id="nextButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
             <ToggleButton fx:id="playButton" mnemonicParsing="false" text="ToggleButton" />
+            <Button fx:id="nextButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
             <Slider fx:id="volumeSlider" />
             <Slider fx:id="progressSlider" layoutX="203.0" layoutY="10.0" />
          </children></HBox>

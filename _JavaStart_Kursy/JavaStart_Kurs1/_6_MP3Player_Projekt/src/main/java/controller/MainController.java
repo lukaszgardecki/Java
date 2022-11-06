@@ -2,6 +2,7 @@ package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 
 public class MainController {
     @FXML
@@ -35,6 +36,24 @@ public class MainController {
     private Slider volumeSlider;
 
     public void initialize() {
-        System.out.println("MainController created");
+        configureButtons();
+        configureVolume();
+    }
+
+    private void configureVolume() {
+        volumeSlider.addEventFilter(MouseEvent.MOUSE_PRESSED,
+                event -> System.out.println("Wciœniêto przycisk na suwaku g³oœnoœci"));
+    }
+
+    private void configureButtons() {
+        previousButton.setOnAction(event -> System.out.println("Poprzednia piosenka"));
+        nextButton.setOnAction(event -> System.out.println("Nastêpna piosenka"));
+        playButton.setOnAction(event -> {
+            if (playButton.isSelected()) {
+                System.out.println("Play");
+            } else {
+                System.out.println("Stop");
+            }
+        });
     }
 }
