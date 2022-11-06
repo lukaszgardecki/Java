@@ -6,7 +6,6 @@ import pl.javastart.library.io.DataReader;
 import pl.javastart.library.io.file.FileManager;
 import pl.javastart.library.io.file.FileManagerBuilder;
 import pl.javastart.library.model.*;
-import pl.javastart.library.model.comparator.AlphabeticalTitleComparator;
 
 import java.util.Comparator;
 import java.util.InputMismatchException;
@@ -45,10 +44,21 @@ class LibraryControl {
                 case DELETE_MAGAZINE -> deleteMagazine();
                 case ADD_USER -> addUser();
                 case PRINT_USERS -> printUsers();
+                case FIND_BOOK -> findBook();
                 case EXIT -> exit();
                 default -> System.out.println("Nie ma takiej opcji, wprowadŸ ponownie.");
             }
         } while (option != Option.EXIT);
+    }
+
+    private void findBook() {
+        printer.printLine("Podaj tytu³ publikacji:");
+        String title = dataReader.getString();
+        String notFoundMessage = "Brak publikacji o takim tytule.";
+        library.findPublicationByTitle(title)
+                .map(Publication::toString)
+                .ifPresentOrElse(System.out::println, () -> System.out.println(notFoundMessage));
+
     }
 
     private void printUsers() {
@@ -176,7 +186,8 @@ class LibraryControl {
         DELETE_BOOK(5, "usuñ ksi¹¿kê"),
         DELETE_MAGAZINE(6, "usuñ magazyn"),
         ADD_USER(7, "dodaj czytelnika"),
-        PRINT_USERS(8, "wyœwietl czytelników");
+        PRINT_USERS(8, "wyœwietl czytelników"),
+        FIND_BOOK(9, "wyszukaj ksi¹¿kê");
 
         private final int value;
         private final String description;
