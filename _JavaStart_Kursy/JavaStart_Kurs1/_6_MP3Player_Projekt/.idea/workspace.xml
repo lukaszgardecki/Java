@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/mainPane.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="module-info" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
