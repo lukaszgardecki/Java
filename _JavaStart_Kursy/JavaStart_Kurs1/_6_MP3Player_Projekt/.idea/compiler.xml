@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="_6_MP3Player_Projekt" />
-        <module name="_6_MP3Player" />
       </profile>
     </annotationProcessing>
   </component>

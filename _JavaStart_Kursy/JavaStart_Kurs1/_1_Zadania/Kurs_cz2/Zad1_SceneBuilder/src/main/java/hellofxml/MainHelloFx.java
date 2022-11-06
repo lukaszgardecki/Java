@@ -18,7 +18,7 @@ public class MainHelloFx extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         AnchorPane mainPane = FXMLLoader.load(getClass().getResource("/helloFxml.fxml"));
-        
+
         Scene scene = new Scene(mainPane);
         stage.setScene(scene);
         stage.show();
