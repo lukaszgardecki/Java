@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<!--<HBox BorderPane.alignment="CENTER">-->
+<HBox xmlns:fx="http://javafx.com/fxml">
+<children>
+    <TextArea fx:id="leftTextArea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+    <TextArea fx:id="rightTextArea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+</children>
+</HBox>
