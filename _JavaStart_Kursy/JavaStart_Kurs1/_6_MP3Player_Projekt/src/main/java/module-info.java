@@ -4,4 +4,5 @@ module _6_MP3Player.Projekt {
     requires javafx.fxml;
 
     exports main to javafx.graphics;
+    opens controller to javafx.fxml;
 }

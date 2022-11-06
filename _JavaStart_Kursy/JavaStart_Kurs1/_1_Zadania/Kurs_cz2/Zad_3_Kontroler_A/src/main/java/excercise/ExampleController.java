@@ -20,6 +20,6 @@ public class ExampleController {
     public void initialize() {
         label1.setText("zmieniony tekst1");
         label2.setText("a tu nie wiem");
-        
+
     }
 }
