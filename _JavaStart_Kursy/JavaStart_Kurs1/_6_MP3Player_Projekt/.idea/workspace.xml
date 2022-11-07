@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2b9f3be-35a6-4ba5-a8eb-defbd1add6fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../_1_Zadania/Kurs_cz2/Zad_9_CSS/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ContentPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ContentPaneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ControlPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ControlPaneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/controlPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/controlPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/menuPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/menuPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ControlPaneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ControlPaneController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/controlPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/controlPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/mainPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/menuPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/menuPane.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,7 @@
         <option value="module-info" />
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -38,12 +45,21 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/lukas_000/Desktop/Java_Projekty/Java/_JavaStart_Kursy/JavaStart_Kurs1/_6_MP3Player_Projekt/src/main/resources/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lukas_000\Desktop\Java_Projekty\Java\_JavaStart_Kursy\JavaStart_Kurs1\_6_MP3Player_Projekt\src\main\resources\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
@@ -72,7 +88,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667745736701</updated>
+      <workItem from="1667822874693" duration="45000" />
+      <workItem from="1667830929294" duration="8000" />
+      <workItem from="1667834605998" duration="2219000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
