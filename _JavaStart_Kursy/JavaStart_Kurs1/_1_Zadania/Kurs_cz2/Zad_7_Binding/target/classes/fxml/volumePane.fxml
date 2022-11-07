@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.javastart.fxproperties.controller.VolumeController">
+    <Slider fx:id="volumeSlider" showTickLabels="true" snapToTicks="true" />
+    <HBox>
+        <Label maxWidth="1.7976931348623157E308" text="Głośność: " />
+        <Label fx:id="volumeLevelLabel" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="34.0" text="0" />
+    </HBox>
+</VBox>
