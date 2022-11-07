@@ -7,7 +7,4 @@ public class ContentPaneController {
     @FXML
     private TableView<?> contentTable;
 
-    public TableView<?> getContentTable() {
-        return contentTable;
-    }
 }

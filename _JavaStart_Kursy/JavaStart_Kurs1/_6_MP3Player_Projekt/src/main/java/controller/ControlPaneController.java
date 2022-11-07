@@ -17,24 +17,29 @@ public class ControlPaneController {
     @FXML
     private Slider progressSlider;
 
-
-    public Button getPreviousButton() {
-        return previousButton;
+    public void initialize() {
+        System.out.println("ControlPane Controller created");
+        configureButtons();
+        configureSliders();
     }
 
-    public ToggleButton getPlayButton() {
-        return playButton;
+    private void configureSliders() {
+        volumeSlider.valueProperty().addListener((observable, oldValue, newValue) ->
+                System.out.println("Zmiana g³oœnoœci " + newValue.doubleValue())
+        );
+        progressSlider.valueProperty().addListener(x ->
+                System.out.println("Przesuniêcie piosenki"));
     }
 
-    public Button getNextButton() {
-        return nextButton;
-    }
-
-    public Slider getVolumeSlider() {
-        return volumeSlider;
-    }
-
-    public Slider getProgressSlider() {
-        return progressSlider;
+    private void configureButtons() {
+        previousButton.setOnAction(event -> System.out.println("Poprzednia piosenka"));
+        nextButton.setOnAction(event -> System.out.println("Nastêpna piosenka"));
+        playButton.setOnAction(event -> {
+            if (playButton.isSelected()) {
+                System.out.println("Play");
+            } else {
+                System.out.println("Stop");
+            }
+        });
     }
 }
