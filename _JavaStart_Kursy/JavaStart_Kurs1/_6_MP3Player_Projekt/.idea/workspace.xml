@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2b9f3be-35a6-4ba5-a8eb-defbd1add6fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../_1_Zadania/Kurs_cz2/Zad_9_CSS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/controlPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/controlPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/menuPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/menuPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/ControlPaneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ControlPaneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/controlPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/controlPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/mainPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/menuPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/menuPane.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="c2b9f3be-35a6-4ba5-a8eb-defbd1add6fd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +78,7 @@
       <updated>1667745736701</updated>
       <workItem from="1667822874693" duration="45000" />
       <workItem from="1667830929294" duration="8000" />
-      <workItem from="1667834605998" duration="2219000" />
+      <workItem from="1667834605998" duration="2519000" />
     </task>
     <servers />
   </component>
