@@ -5,7 +5,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kurs.apka.controller.MainPaneController">
    <center>
-      <fx:include source="textPane.fxml"/>
+      <fx:include fx:id="textPane" source="textPane.fxml"/>
    </center>
    <bottom>
       <Button fx:id="clearButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Clear windows" BorderPane.alignment="CENTER" />

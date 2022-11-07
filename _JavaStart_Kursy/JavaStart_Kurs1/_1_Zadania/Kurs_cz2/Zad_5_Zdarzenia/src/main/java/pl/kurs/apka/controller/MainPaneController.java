@@ -1,7 +1,5 @@
 package pl.kurs.apka.controller;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -11,15 +9,13 @@ public class MainPaneController {
 
     @FXML
     private Button clearButton;
-
     @FXML
-    private TextArea leftTextArea;
-
-    @FXML
-    private TextArea rightTextArea;
-
+    private TextPaneController textPaneController;
 
     public void initialize() {
+        TextArea leftTextArea = textPaneController.getLeftTextArea();
+        TextArea rightTextArea = textPaneController.getRightTextArea();
+
         leftTextArea.addEventFilter(KeyEvent.KEY_RELEASED,
                 event -> reverseTextHandler(leftTextArea, rightTextArea)
         );
