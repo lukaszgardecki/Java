@@ -18,5 +18,6 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setTitle("Mp3 Player");
         stage.show();
+
     }
 }

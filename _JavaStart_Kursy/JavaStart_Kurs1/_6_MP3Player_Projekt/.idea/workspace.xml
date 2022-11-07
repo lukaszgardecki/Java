@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2b9f3be-35a6-4ba5-a8eb-defbd1add6fd" name="Changes" comment="" />
+    <list default="true" id="c2b9f3be-35a6-4ba5-a8eb-defbd1add6fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ContentPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ContentPaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ContentPaneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ContentPaneController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,13 +49,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/lukas_000/Desktop/Java_Projekty/Java/_JavaStart_Kursy/JavaStart_Kurs1/_6_MP3Player_Projekt/src/main/resources/img",
+    "last_opened_file_path": "C:/Users/lukas_000/Desktop/Java_Projekty/Java/_JavaStart_Kursy/JavaStart_Kurs1/_6_MP3Player_Projekt/src",
     "list.type.of.created.stylesheet": "CSS",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lukas_000\Desktop\Java_Projekty\Java\_JavaStart_Kursy\JavaStart_Kurs1\_6_MP3Player_Projekt\src" />
       <recent name="C:\Users\lukas_000\Desktop\Java_Projekty\Java\_JavaStart_Kursy\JavaStart_Kurs1\_6_MP3Player_Projekt\src\main\resources\img" />
     </key>
   </component>
@@ -79,6 +91,7 @@
       <workItem from="1667822874693" duration="45000" />
       <workItem from="1667830929294" duration="8000" />
       <workItem from="1667834605998" duration="2519000" />
+      <workItem from="1667850380303" duration="3396000" />
     </task>
     <servers />
   </component>
