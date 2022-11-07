@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Slider;
 import javafx.scene.control.ToggleButton;
-import javafx.scene.input.MouseEvent;
 
 public class ControlPaneController {
     @FXML
@@ -18,28 +17,24 @@ public class ControlPaneController {
     @FXML
     private Slider progressSlider;
 
-    public void initialize() {
-        System.out.println("ControlPane Controller created");
-        configureButtons();
-        configureVolume();
+
+    public Button getPreviousButton() {
+        return previousButton;
     }
 
-    private void configureVolume() {
-        volumeSlider.addEventFilter(MouseEvent.MOUSE_PRESSED,
-                event -> System.out.println("Wciœniêto przycisk na suwaku g³oœnoœci"));
+    public ToggleButton getPlayButton() {
+        return playButton;
     }
 
-    private void configureButtons() {
-        previousButton.setOnAction(event -> System.out.println("Poprzednia piosenka"));
-        nextButton.setOnAction(event -> System.out.println("Nastêpna piosenka"));
-        playButton.setOnAction(event -> {
-            if (playButton.isSelected()) {
-                System.out.println("Play");
-            } else {
-                System.out.println("Stop");
-            }
-        });
+    public Button getNextButton() {
+        return nextButton;
     }
 
+    public Slider getVolumeSlider() {
+        return volumeSlider;
+    }
 
+    public Slider getProgressSlider() {
+        return progressSlider;
+    }
 }
