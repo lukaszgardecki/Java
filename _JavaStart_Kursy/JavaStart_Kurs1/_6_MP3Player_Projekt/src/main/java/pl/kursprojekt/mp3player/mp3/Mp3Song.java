@@ -1,4 +1,4 @@
-package mp3;
+package pl.kursprojekt.mp3player.mp3;
 
 public class Mp3Song {
     private String title;

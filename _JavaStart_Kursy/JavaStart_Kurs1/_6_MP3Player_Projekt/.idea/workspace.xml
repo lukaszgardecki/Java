@@ -7,14 +7,17 @@
     <list default="true" id="c2b9f3be-35a6-4ba5-a8eb-defbd1add6fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ContentPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ContentPaneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ContentPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kursprojekt/mp3player/controller/ContentPaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ControlPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kursprojekt/mp3player/controller/ControlPaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kursprojekt/mp3player/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MenuPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kursprojekt/mp3player/controller/MenuPaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kursprojekt/mp3player/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp3/Mp3Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kursprojekt/mp3player/mp3/Mp3Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/contentPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/ContentPaneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ContentPaneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/contentPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/controlPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/controlPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/menuPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/menuPane.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +28,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="FxmlFile" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -51,7 +54,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/lukas_000/Desktop/Java_Projekty/Java/_JavaStart_Kursy/JavaStart_Kurs1/_6_MP3Player_Projekt/src",
     "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,7 +63,7 @@
       <recent name="C:\Users\lukas_000\Desktop\Java_Projekty\Java\_JavaStart_Kursy\JavaStart_Kurs1\_6_MP3Player_Projekt\src\main\resources\img" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.pl.kursprojekt.mp3player.main.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="_6_MP3Player_Projekt" />
@@ -74,8 +77,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pl.kursprojekt.mp3player.main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.kursprojekt.mp3player.main.Main" />
+      <module name="_6_MP3Player_Projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.kursprojekt.mp3player.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.pl.kursprojekt.mp3player.main.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -91,7 +108,10 @@
       <workItem from="1667822874693" duration="45000" />
       <workItem from="1667830929294" duration="8000" />
       <workItem from="1667834605998" duration="2519000" />
-      <workItem from="1667850380303" duration="3396000" />
+      <workItem from="1667850380303" duration="4044000" />
+      <workItem from="1667854837293" duration="19000" />
+      <workItem from="1667857095081" duration="11000" />
+      <workItem from="1667895044722" duration="6112000" />
     </task>
     <servers />
   </component>
