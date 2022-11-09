@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Formularze rejestracji</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Przykładowy formularz rejestracji">
+    </head>
+    <body>
+        <h2>Zarejestruj się</h2>
+        <form action="">
+
+            <fieldset>
+                <legend>Dane konta</legend>
+                <div>
+                    <label for="username">Nazwa użytkownika</label>
+                    <input type="text" id="username" placeholder="Nazwa użytkownika">
+                </div>
+                <div>
+                    <label for="email">Adres Email</label>
+                    <input type="email" id="email" placeholder="Adres email">
+                </div>
+                <div>
+                    <label for="pass">Hasło</label>
+                    <input type="password" id="pass" placeholder="Hasło">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dane personalne</legend>
+                <div>
+                    <label for="firstName">Imię</label>
+                    <input type="text" id="firstName" placeholder="Imię">
+                </div>
+                <div>
+                    <label for="lastName">Nazwisko</label>
+                    <input type="text" id="lastName" placeholder="Nazwisko">
+                </div>
+                <div>
+                    <label for="age">Wiek</label>
+                    <input type="number" id="age" placeholder="Wiek">
+                </div>
+                <div>
+                    <p>Płeć</p>
+                    <input type="radio" name="gender" id="male" checked>
+                    <label for="male">Mężczyzna</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Kobieta</label>
+                </div>
+            </fieldset>
+            <!-- <input type="submit" value="Zarejestruj się"> -->
+            <button>
+                Zarejestruj się
+            </button>
+        </form>
+
+    </body>
+</html>

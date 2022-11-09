@@ -1,0 +1,22 @@
+a:link {
+    color: orange;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: greenyellow;
+}
+
+input:focus {
+    background-color: gray;
+    color: white;
+}
+
+input:focus,
+input:focus::placeholder {
+    color: white;
+}

@@ -1,0 +1,19 @@
+#first_benefit {
+    color: red;
+}
+
+#second_benefit {
+    color: orange;
+}
+
+#third_benefit {
+    color: blueviolet;
+}
+
+.odd {
+    color: orange;
+}
+
+.even {
+    color: cyan;
+}

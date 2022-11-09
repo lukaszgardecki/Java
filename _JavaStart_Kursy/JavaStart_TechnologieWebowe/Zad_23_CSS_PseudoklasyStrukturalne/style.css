@@ -1,0 +1,11 @@
+article > p:first-of-type {
+    font-style: italic;
+    color: gray;
+}
+
+/* li:nth-child(odd) { */
+/* li:nth-child(even) { */
+/* li:nth-last-child(2n) { */
+li:nth-child(2n+1) {
+    background-color: lightgray;
+}

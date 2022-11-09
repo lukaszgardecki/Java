@@ -1,0 +1,25 @@
+#java > h2 {
+    background-color: orange;
+    color: white;
+}
+
+#python > h2 {
+    background-color: lightblue;
+    color: white;
+}
+
+button {
+    color: white;
+}
+
+.cart-button {
+    background-color: yellowgreen;
+}
+
+#java > .buy-button {
+    background-color: orange;
+}
+
+#python > .buy-button {
+    background-color: lightblue;
+}

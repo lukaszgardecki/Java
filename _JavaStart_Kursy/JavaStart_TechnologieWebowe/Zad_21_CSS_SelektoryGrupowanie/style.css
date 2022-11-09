@@ -1,0 +1,11 @@
+h1,
+p,
+h2 {
+    font-family: sans-serif;
+}
+
+section > h2,
+button.buy-button {
+    background-color: orange;
+    color: white;
+}

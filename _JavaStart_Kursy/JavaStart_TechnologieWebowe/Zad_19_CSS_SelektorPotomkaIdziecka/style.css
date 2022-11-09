@@ -1,0 +1,10 @@
+
+/* Po spacji wymieniamy relację PRZODEK - POTOMEK, czyli dość ogólna relacja */
+section ul li {
+    color: orange;
+}
+
+/* Poniżej zdefiniowano relajcę RODZIC - DZIECKO */
+article > p {
+    font-style: italic;
+}

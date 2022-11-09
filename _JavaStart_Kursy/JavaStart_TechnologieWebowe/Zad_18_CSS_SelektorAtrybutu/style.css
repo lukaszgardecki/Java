@@ -1,0 +1,65 @@
+[title] {
+    color: red;
+}
+
+[target="_blank"] {
+    color: red;
+}
+
+a {
+    color: orange;
+}
+
+[href] {
+    color: orange;
+}
+
+
+[href^="#"] {
+    color: orange;
+}
+
+[href*="javastart.pl"] {
+    color: green;
+}
+
+
+
+
+
+Dostępne selektory atrybutu
+
+
+[atr]   [href]  <a href="https://pl.wikipedia.org/wiki/Paradygmat_programowania">paradygmat programowania</a>
+
+[atr = "xyz"]   [target = "_blank"]   <a href="https://pl.wikipedia.org/wiki/Paradygmat_programowania" target="_blank">paradygmat programowania</a>
+
+
+[atr ^= "xyz"]   [href ^= "https"]   <a href="https://javastart.pl">JavaStart.pl</a>
+
+[atr $= "xyz"]   [src $= ".png"]   <img src="male_kotki.png" alt="Zdjęcie małych kotków">
+
+[atr *= "xyz"]   [href *= "javastart"]   <a href="https://javastart.pl">JavaStart.pl</a>
+
+
+[atr ~= "xyz"]   [class ~= "image"]   <div class="image jumbo">
+...
+</div>
+
+
+[atr |= "xyz"]   [class |= "image"]   <div class="image-rounded">
+...
+</div>
+
+<div class="image-square">
+...
+</div>
+
+
+Ignorowanie wielkości znaków
+
+Przy porównywaniu wartości dowolnym z wymienionych operatorów wielkość liter ma znaczenie. Jeżeli chcesz ją zignorować, to przed domykającym nawiasem kwadratowym możesz wstawić literę i lub I.
+
+[class = "image" i]   <div class="ImAgE">
+...
+</div>

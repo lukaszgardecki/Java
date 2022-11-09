@@ -1,0 +1,13 @@
+/* .first,
+.second,
+.fourth {
+    color: red;
+} */
+
+/* p:not(.third) {
+    color: red;
+} */
+
+section:target {
+    background-color: lightgray;
+}
