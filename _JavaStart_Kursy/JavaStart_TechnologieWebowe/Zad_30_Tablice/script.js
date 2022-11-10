@@ -62,6 +62,22 @@ let predykat = x => x > 100;
 let firstGreaterThan100 = mojatablica.find(predykat); // znajdzie pierwszy element z tablicy, który spełni warunek
 console.log("pierwszy element, który jest większy od 100 to " + firstGreaterThan100);
 
+let getIndexIfGreaterThan100 = mojatablica.findIndex(predykat);
+console.log("indeks w tablicy pierwszego elementu, który spełnia warunek: " + getIndexIfGreaterThan100)
+
+console.log("Czy wartość 10 znajduje się w tablicy? " + mojatablica.includes(10));
+console.log("Czy wartość 3 znajduje się w tablicy? " + mojatablica.includes(3));
+
+console.log("Komputer! Podaj mjeee indeks liczby 10: " + mojatablica.indexOf(10));
+
+
+console.log("Czy jakiś element w tablicy jest większy od 100? " + mojatablica.some(predykat));
+
+
+
+
+
+
 
 
 
