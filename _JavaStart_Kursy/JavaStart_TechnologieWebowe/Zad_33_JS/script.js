@@ -3,7 +3,7 @@ const h1 = "Kurs programowania w JavaScript";
 const p = "Ucz się na praktycznych przykładach, rozwiązując dziesiątki zadań.";
 const price = 299;
 
-let html = 
+let html =
 `
   <html>
       <head>
