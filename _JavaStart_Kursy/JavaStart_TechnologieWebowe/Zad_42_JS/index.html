@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baza gier</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+
+        <h1>Baza gier</h1>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Tytuł gry</th>
+                    <th>Ocena</th>
+                    <th>Szczegóły</th>
+                    <th>Usuń grę</th>
+                </tr>
+            </thead>
+            <tbody id="body"></tbody>
+        </table>
+
+
+        <p id="desc"><br></p>
+
+        <form>
+            <input type="text" id="title-input" placeholder="Tytuł gry"><br>
+            <input type="text" id="rate-input" placeholder="Ocena"><br>
+            <input type="text" id="details-input" placeholder="Opis">
+        </form>
+        <button id="add-button">Dodaj grę</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
