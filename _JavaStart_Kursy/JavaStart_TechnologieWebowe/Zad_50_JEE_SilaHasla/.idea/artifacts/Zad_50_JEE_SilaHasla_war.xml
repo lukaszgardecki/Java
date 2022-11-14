@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Zad_50_JEE_SilaHasla:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Zad_50_JEE_SilaHasla</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Zad_50_JEE_SilaHasla-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Zad_50_JEE_SilaHasla:war exploded" />
+    </root>
+  </artifact>
+</component>

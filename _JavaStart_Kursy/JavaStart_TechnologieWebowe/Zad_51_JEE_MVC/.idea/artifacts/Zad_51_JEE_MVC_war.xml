@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Zad_51_JEE_MVC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Zad_51_JEE_MVC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Zad_51_JEE_MVC-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Zad_51_JEE_MVC:war exploded" />
+    </root>
+  </artifact>
+</component>

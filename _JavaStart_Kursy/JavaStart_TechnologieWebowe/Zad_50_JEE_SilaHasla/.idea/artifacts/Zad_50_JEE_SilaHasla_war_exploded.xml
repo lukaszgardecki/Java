@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Zad_50_JEE_SilaHasla:war exploded">
+    <output-path>$PROJECT_DIR$/target/Zad_50_JEE_SilaHasla-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Zad_50_JEE_SilaHasla</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Zad_50_JEE_SilaHasla" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Zad_50_JEE_SilaHasla-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Zad_50_JEE_SilaHasla/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Zad_49_JEE_Formularze:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Zad_49_JEE_Formularze</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Zad_49_JEE_Formularze-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Zad_49_JEE_Formularze:war exploded" />
+    </root>
+  </artifact>
+</component>
