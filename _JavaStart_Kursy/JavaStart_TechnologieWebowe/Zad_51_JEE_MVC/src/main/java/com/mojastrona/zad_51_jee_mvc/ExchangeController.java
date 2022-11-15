@@ -18,12 +18,6 @@ public class ExchangeController extends HttpServlet {
         } else {
             errorDispatch(request, response);
         }
-
-
-    }
-
-    private void errorDispatch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("error.jsp").forward(request, response);
     }
 
     private boolean validateParameters(HttpServletRequest request) {
@@ -61,5 +55,9 @@ public class ExchangeController extends HttpServlet {
 
         request.setAttribute("result", exchangeResult);
         request.getRequestDispatcher("/result.jsp").forward(request, response);
+    }
+
+    private void errorDispatch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("error.jsp").forward(request, response);
     }
 }

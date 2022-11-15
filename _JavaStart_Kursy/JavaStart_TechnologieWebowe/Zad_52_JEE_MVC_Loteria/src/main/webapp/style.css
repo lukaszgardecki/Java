@@ -1,0 +1,33 @@
+main {
+    margin: auto;
+    background-color: floralwhite;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 600px;
+    }
+}
+
+input {
+    font-size: 30px;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    margin-top: 20px;
+    width: 30%;
+    height: 30px;
+}
