@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Zad_56_JEE_EdytorHTML:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Zad_56_JEE_EdytorHTML</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Zad_56_JEE_EdytorHTML-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Zad_56_JEE_EdytorHTML:war exploded" />
+    </root>
+  </artifact>
+</component>

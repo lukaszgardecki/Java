@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Zad_54_JEE_Sesje:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Zad_54_JEE_Sesje</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Zad_54_JEE_Sesje-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Zad_54_JEE_Sesje:war exploded" />
+    </root>
+  </artifact>
+</component>
