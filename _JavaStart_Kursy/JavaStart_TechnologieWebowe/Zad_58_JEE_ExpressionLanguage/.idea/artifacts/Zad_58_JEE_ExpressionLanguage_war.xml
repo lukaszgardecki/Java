@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Zad_58_JEE_ExpressionLanguage:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Zad_58_JEE_ExpressionLanguage</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Zad_58_JEE_ExpressionLanguage-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Zad_58_JEE_ExpressionLanguage:war exploded" />
+    </root>
+  </artifact>
+</component>
