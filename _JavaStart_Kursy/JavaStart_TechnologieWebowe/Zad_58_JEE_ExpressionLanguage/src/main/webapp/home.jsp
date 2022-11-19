@@ -34,7 +34,11 @@
     <ol>
         <c:forEach items="${applicationScope.people}" var="person">
             <li>
-                ${fn:toUpperCase(person.firstName.concat(" ").concat(person.lastName))}
+<%--                ${fn:toUpperCase(person.firstName.concat(" ").concat(person.lastName))}--%>
+<%--                Przy wyświetlaniu danych z formularza warto skorzystać ze znacznika c:out--%>
+<%--                zamienia on nawiasy "<" czy cudzysłowy na encje HTML--%>
+<%--                Umożliwia to zabezpieczenie się przed wpisaniem do formularza złośliwego kodu (atak XSS)--%>
+                    <c:out value="${person.firstName} - ${person.lastName}"/>
                     (${person.age} lat) / ${person.gender == 'MALE' ? 'Mężczyzna' : 'Kobieta'}
                 <c:if test="${person.age ge 18}">
                     <span style="color: green">Pełnotleni(a)</span>
