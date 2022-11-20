@@ -21,7 +21,7 @@ function addToTable(game) {
     remove.innerHTML = "Usuń";
     remove.addEventListener("click", () => {
         row.remove();
-        document.getElementById("desc").innerHTML = "<br>";
+        clearDescription();
     });
 
     let row = body.insertRow(-1);
@@ -32,6 +32,9 @@ function addToTable(game) {
     row.insertCell(-1).appendChild(remove);
 }
 
+function clearDescription() {
+    document.getElementById("desc").innerHTML = "<br>";
+}
 
 
 
@@ -54,6 +57,7 @@ function registerButton() {
         document.getElementById("title-input").value = "";
         document.getElementById("rate-input").value = "";
         document.getElementById("details-input").value = "";
+        clearDescription();
     });
 }
 registerButton();

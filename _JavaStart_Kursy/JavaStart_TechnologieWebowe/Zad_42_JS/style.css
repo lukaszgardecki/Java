@@ -9,12 +9,10 @@ table {
 
 table, tr, th, td {
     border: 2px solid black;
-    
 }
 
 input {
     width: 80%;
-    
 }
 
 thead {
