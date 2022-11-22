@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--        Źródło danych skonfigurowane jest w standardowy sposób poprzez element <Resource>. Nowością jest element <Realm>, który definiuje domenę bezpieczeństwa. DataSourceRealm to taki jej rodzaj, który pozwala wskazać bazę danych z użytkownikami. Do źródła danych odwołujemy się przez wskazanie odpowiedniej nazwy JNDI. Parametr localDataSource mówi o tym, że źródło danych jest lokalne dla danej aplikacji, a nie utworzone np. w pliku server.xml. Pozostałe atrybuty to:-->
+
+<!--    userTable - nazwa tabeli z użytkownikami,-->
+<!--    userNameCol - nazwa kolumny z nazwą użytkownika w tabeli z użytkownikami,-->
+<!--    userCredCol - nazwa kolumny z hasłem w tabeli z użytkownikami,-->
+<!--    userRoleTable - nazwa tabeli z rolami użytkowników,-->
+<!--    roleNameCol - nazwa kolumny z nazwą roli w tabeli z rolami.-->
+
+<!--    Domena bezpieczeństwa skonfigurowana w pliku context.xml nadpisuje tę skonfigurowaną w pliku server.xml. Jeżeli uruchomisz aplikację i w międzyczasie dodasz do bazy nowego użytkownika, to możesz się na niego zalogować bez konieczności restartowania serwera.-->
+
+<Context>
+    <Resource name="jdbc/calculator"
+              type="javax.sql.DataSource"
+              username="root"
+              password="admin"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/calculator?serverTimezone=UTC"/>
+
+    <Realm className="org.apache.catalina.realm.DataSourceRealm"
+
+           dataSourceName="jdbc/calculator"
+           localDataSource="true"
+           userTable="user"
+           userNameCol="username"
+           userCredCol="password"
+           userRoleTable="user_role"
+           roleNameCol="role_name"/>
+</Context>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+<!--&lt;!&ndash;    SPOSÓB 1:&ndash;&gt;-->
+<!--        <security-role>-->
+<!--            <role-name>admin_role</role-name>-->
+<!--        </security-role>-->
+<!--        <security-role>-->
+<!--            <role-name>user_role</role-name>-->
+<!--        </security-role>-->
+
+<!--&lt;!&ndash;    W naszym przypadku wskazujemy, że żądanie POST do adresu /calculator może wykonać jedynie użytkownik z przypisaną rolą admin_role.&ndash;&gt;-->
+<!--        <security-constraint>-->
+<!--            <web-resource-collection>-->
+<!--                <web-resource-name>Bezpieczny kalkulator</web-resource-name>-->
+<!--                <url-pattern>/calculator</url-pattern>-->
+<!--                <http-method>POST</http-method>-->
+<!--            </web-resource-collection>-->
+<!--            <auth-constraint>-->
+<!--                <role-name>admin_role</role-name>-->
+<!--            </auth-constraint>-->
+<!--        </security-constraint>-->
+
+<!--&lt;!&ndash;    Konfiguracja logowania. Metoda BASIC to najprostszy mechanizm. Jest on czasami używany w aplikacjach działających wewnątrz firm. Zdecydowanie bardziej popularny jest mechanizm oparty o formularz&ndash;&gt;-->
+<!--        <login-config>-->
+<!--            <auth-method>BASIC</auth-method>-->
+<!--        </login-config>-->
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/WEB-INF/login/login.jsp</form-login-page>
+            <form-error-page>/WEB-INF/login/badcredentials.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+
+</web-app>
