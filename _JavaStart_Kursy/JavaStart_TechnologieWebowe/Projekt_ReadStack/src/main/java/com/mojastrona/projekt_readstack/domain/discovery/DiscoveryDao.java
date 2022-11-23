@@ -38,15 +38,16 @@ public class DiscoveryDao extends BaseDao {
     public List<Discovery> findByCategory(int categoryId) {
         final String query = """
                     SELECT
-                        id, title, description, date_added, category_id, user_id
+                        id, title, url, description, date_added, category_id, user_id
                     FROM
                         discovery
                     WHERE
-                        category_id=?            
+                        category_id=?
                 """;
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(query)
         ) {
+            statement.setInt(1, categoryId);
             ResultSet resultSet = statement.executeQuery();
             List<Discovery> discoveries = new ArrayList<>();
 
