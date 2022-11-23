@@ -12,7 +12,7 @@ public class CategoryDao extends BaseDao {
     public List<Category> findAll() {
         final String query = """
                 SELECT
-                    id, name secription
+                    id, name, description
                 FROM
                     category
                 """;
