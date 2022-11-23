@@ -3,6 +3,8 @@ package com.mojastrona.projekt_readstack.domain.user;
 import com.mojastrona.projekt_readstack.domain.common.BaseDao;
 
 import java.sql.*;
+import java.time.LocalDateTime;
+import java.util.Optional;
 
 public class UserDao extends BaseDao {
 
@@ -52,5 +54,39 @@ public class UserDao extends BaseDao {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public Optional<User> findByUsername(String username) {
+        final String query = """
+                    SELECT
+                        id, username, email, password, registration_date
+                    FROM
+                        user
+                    WHERE
+                        username = ?
+                """;
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)
+        ) {
+            statement.setString(1, username);
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                return Optional.of(mapRow(resultSet));
+            } else {
+                return Optional.empty();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private User mapRow(ResultSet resultSet) throws SQLException {
+        int id = resultSet.getInt("id");
+        String username = resultSet.getString("username");
+        String email = resultSet.getString("email");
+        String password = resultSet.getString("password");
+        LocalDateTime registrationDate = resultSet.getObject("registration_date", LocalDateTime.class);
+        return new User(id, username, email, password, registrationDate);
     }
 }
