@@ -31,12 +31,14 @@ public class DiscoveryService {
 
     private static class DiscoveryMapper {
         private final UserDao userDao = new UserDao();
-        DiscoveryBasicInfo map(Discovery discovery) {
+
+        DiscoveryBasicInfo map(Discovery d) {
             return new DiscoveryBasicInfo(
-                    discovery.getTitle(),
-                    discovery.getUrl(),
-                    discovery.getDescription(),
-                    discovery.getDateAdded()
+                    d.getId(),
+                    d.getTitle(),
+                    d.getUrl(),
+                    d.getDescription(),
+                    d.getDateAdded()
             );
         }
 
