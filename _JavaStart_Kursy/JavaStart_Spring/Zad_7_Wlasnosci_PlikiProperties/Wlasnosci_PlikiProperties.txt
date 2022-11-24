@@ -1,0 +1,68 @@
+Odczytanie własności w dowolnym komponencie jest banalnie proste i sprowadza się do wykorzystania adnotacji @Value:
+
+
+@Configuration
+class MyConfigClass {
+    private String firstProperty;
+    private String secondProperty;
+
+    MyConfigClass(@Value("${app.some.first-property}") String firstProperty,
+                  @Value("${app.some.second-property}") String secondProperty) {
+        this.firstProperty = firstProperty;
+        this.secondProperty = secondProperty;
+    }
+    //...
+}
+
+
+
+Jeżeli własności znajdowałyby się w innym pliku niż application.properties/yml, to możesz wskazać plik źródłowy wykorzystując adnotację @PropertySource.
+
+@Configuration
+@PropertySource("classpath:external.properties")
+class MyConfigClass {
+    private String firstProperty;
+    private String secondProperty;
+
+    MyConfigClass(@Value("${app.some.first-property}") String firstProperty,
+                         @Value("${app.some.second-property}") String secondProperty) {
+        this.firstProperty = firstProperty;
+        this.secondProperty = secondProperty;
+    }
+    //...
+}
+
+
+Klasa może być też niemodyfikowalna. W takiej sytuacji należy do niej dodać dodatkową adnotację @ConstructorBinding.
+@ConfigurationProperties(prefix = "app.some")
+@ConstructorBinding
+class MyConfigClass {
+    private final String firstProperty;
+    private final String secondProperty;
+
+    public MyConfigClass(String firstProperty, String secondProperty) {
+        this.firstProperty = firstProperty;
+        this.secondProperty = secondProperty;
+    }
+
+    public String getFirstProperty() {
+        return firstProperty;
+    }
+
+    public String getSecondProperty() {
+        return secondProperty;
+    }
+}
+
+Skanowanie klas oznaczonych adnotacją @ConfigurationProperties włączamy przez dodanie adnotacji @ConfigurationPropertiesScan do dowolnej klasy konfiguracji. Najczęściej będzie do tego używana główna klasa programu.
+@SpringBootApplication
+@ConfigurationPropertiesScan
+public class Main {
+    public static void main(String[] args) {
+        ConfigurableApplicationContext context = SpringApplication.run(Main.class);
+        //...
+    }
+}
+
+
+

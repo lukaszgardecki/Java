@@ -1,0 +1,6 @@
+#Pliki application.configuration i application.yml s? traktowane równowa?nie,
+#  wi?c nie trzeba nic robi? wystarczy zmieni? rozszerzenie pliku
+spring:
+  banner:
+    location: banner.txt
+    charset: utf-8

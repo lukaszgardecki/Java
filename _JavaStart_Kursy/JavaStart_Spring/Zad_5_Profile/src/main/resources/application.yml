@@ -1,0 +1,10 @@
+
+#Je?eli chcemy odpali? aplikacj? na profilu "console"
+#spring:
+#  profiles:
+#    active: console
+
+#Je?eli chcemy odpali? aplikacj? na profilu "file"
+spring:
+  profiles:
+    active: file
