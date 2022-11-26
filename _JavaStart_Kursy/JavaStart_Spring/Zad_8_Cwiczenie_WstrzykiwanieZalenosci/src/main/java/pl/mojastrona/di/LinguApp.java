@@ -19,4 +19,5 @@ public class LinguApp {
     Scanner scanner() {
         return new Scanner(System.in);
     }
+
 }

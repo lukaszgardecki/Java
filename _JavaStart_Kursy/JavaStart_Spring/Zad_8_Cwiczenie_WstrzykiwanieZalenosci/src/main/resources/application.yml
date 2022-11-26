@@ -1,0 +1,18 @@
+
+#?cia?ka do pliku:
+file:
+  path: data.csv
+
+
+
+#Profile:
+# - upperCase, lowerCase
+# - prod, dev
+spring:
+  profiles:
+    active: dev, upperCase
+  banner:
+    location: logo-app.txt
+
+
+
