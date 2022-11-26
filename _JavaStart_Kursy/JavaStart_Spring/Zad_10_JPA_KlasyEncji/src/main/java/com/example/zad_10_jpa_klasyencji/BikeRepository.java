@@ -2,7 +2,6 @@ package com.example.zad_10_jpa_klasyencji;
 
 import jakarta.persistence.EntityManager;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -15,7 +14,6 @@ public class BikeRepository {
     }
 
     // metody oznaczone @Transactional MUSZĄ być publiczne
-    @Transactional
     public void save(Bike bike) {
         entityManager.persist(bike);
     }
@@ -24,8 +22,14 @@ public class BikeRepository {
         return Optional.ofNullable(entityManager.find(Bike.class, id));
     }
 
-    @Transactional
+
     public void deleteById(Long id) {
         findById(id).ifPresent(entityManager::remove);
     }
+
+//    @Transactional
+//    public void delete(Bike bike) {
+//        Bike mergedEntity = entityManager.merge(bike);
+//        entityManager.refresh(mergedEntity);
+//    }
 }
