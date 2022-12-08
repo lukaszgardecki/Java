@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.nio.file.Path;
-
 @Controller
 @RequestMapping("/api")
 public class BodyWeightController {
@@ -36,11 +34,11 @@ public class BodyWeightController {
         return ResponseEntity.ok(bmiResponse);
     }
 
-    @GetMapping(value = "/bmr", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_PLAIN_VALUE})
+    @GetMapping(value = "/bmr/{gender}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_PLAIN_VALUE})
     ResponseEntity<BMRDto> calculateBMRJson(@RequestParam double weight,
                                             @RequestParam double height,
                                             @RequestParam int age,
-                                            @RequestParam String gender) {
+                                            @PathVariable String gender) {
         if (containsNonPositiveNumber(weight, height, age)) {
             return ResponseEntity.badRequest()
                     .header("reason", BMR_INVALID_WEIGHT_HEIGHT_AGE)
@@ -65,6 +63,6 @@ public class BodyWeightController {
     }
 
     private boolean isIncorrectGenderValue(String gender) {
-        return !gender.equals("M") && !gender.equals("W");
+        return !gender.equals("man") && !gender.equals("woman");
     }
 }

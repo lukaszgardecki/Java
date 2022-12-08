@@ -23,7 +23,7 @@ public class BMRMessageConverter extends AbstractHttpMessageConverter<BMRDto> {
     }
 
     @Override
-    protected BMRDto readInternal(Class<? extends BMRDto> clazz, HttpInputMessage inputMessage) throws IOException, HttpMessageNotReadableException {
+    protected BMRDto readInternal(Class<? extends BMRDto> clazz, HttpInputMessage inputMessage) throws HttpMessageNotReadableException {
         return null;
     }
 
