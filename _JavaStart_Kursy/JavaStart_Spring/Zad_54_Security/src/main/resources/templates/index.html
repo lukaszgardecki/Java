@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<!--      th:lang="${#request.getParameter('lang') ne null ? #request.getParameter('lang') : 'en'}"-->
-<html lang="pl"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Strona główna</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/styles/main.css" th:href="@{/styles/main.css}">
 </head>
 <body>
-  <h1 th:text="${welcomeMessage}">Strona główna</h1>
-  <a sec:authorize="isAuthenticated()"
-     th:text="|Wyloguj się ${#authentication.getName()}|"
-     th:href="@{/logout}">Wyloguj się John</a>
+  <div class="container">
+    <h1>Bezpieczna strona</h1>
+      <img src="../static/img/grafika.jpg" th:src="@{/img/grafika.jpg}" alt="Bezpieczna strona" class="scaled-image"/>
+      <a href="#" th:href="@{/secured}">Zabezpieczona strona</a>
+      <a href="#" th:href="@{/admin}">Panel admina</a>
+  </div>
 </body>
 </html>

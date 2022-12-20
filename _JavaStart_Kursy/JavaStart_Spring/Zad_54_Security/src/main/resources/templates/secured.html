@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--      th:lang="${#request.getParameter('lang') ne null ? #request.getParameter('lang') : 'en'}"-->
+<html lang="pl"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel użytkownika</title>
+</head>
+<body>
+  <h1 th:text="${welcomeMessage}">Strona główna</h1>
+  <a sec:authorize="isAuthenticated()"
+     th:text="|Wyloguj się ${#authentication.getName()}|"
+     th:href="@{/logout}">Wyloguj się John</a>
+
+    <h2>Zmień hasło</h2>
+    <form th:action="@{/change-password}" method="post">
+        <input type="password" name="newPassword" placeholder="Nowe hasło"/>
+        <button type="submit">Zmień</button>
+    </form>
+</body>
+</html>
