@@ -72,7 +72,7 @@ i powinna zajmowaæ wiêkszoœæ dostêpnej przestrzeni
 
 /*Jumbotron START*/
 .jumbotron {
-    background-image: url("../img/jumbotron.png");
+    background-image: url("../img/jumbotron.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 2rem;
@@ -253,4 +253,91 @@ i powinna zajmowaæ wiêkszoœæ dostêpnej przestrzeni
         font-size: 1.2rem;
         margin: 0 4px;
     }
+}
+
+/*error pages START*/
+.error-container {
+    margin: 32px auto;
+}
+.error-container > * {
+    display: block;
+    text-align: center;
+}
+.error-header,
+.error-icon {
+    font-size: 2rem;
+    margin: 16px 0;
+}
+/*error pages END*/
+
+/*Lista gatunków START*/
+.list-border {
+    margin: auto;
+    list-style: none;
+}
+.list-border > li {
+    font-size: 1.2rem;
+    border: 1px #6d6d6d solid;
+    padding: 16px;
+    text-align: center;
+}
+/*Lista gatunków END*/
+
+/*genre-form START*/
+/*textarea domyœlnie nie dziedziczy czcionki z body*/
+textarea {
+    font-family: inherit;
+}
+/*etykiety i inputy jeden pod drugim z odstêpami po bokach*/
+.mc-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+}
+/*odstêpy miêdzy etykietami i inputami*/
+.mc-form > * {
+    margin-top: 8px;
+}
+/*wiêksze inputy z paddingami*/
+.mc-form > input,
+.mc-form > textarea,
+.mc-form > button,
+.mc-form > select {
+    font-size: 1.2rem;
+    color: black;
+    padding: 8px;
+}
+.mc-form > button {
+    margin-top: 16px;
+    background-color: white;
+    color: #ffc107;
+    border: none;
+}
+/*genre-form END*/
+
+/*Wiêkszy checkbox*/
+.mc-form > input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 5px;
+}
+/*Bia³y kolor tekstu przy wyborze pliku*/
+.mc-form > input[type=file] {
+    color: white;
+}
+
+.notification-bar {
+    text-align: center;
+    background-color: #ffc107;
+    padding: 8px 0;
+}
+
+/*Tekst nad formularzem*/
+.mc-form-message {
+    color: #ffc107;
+    text-align: center;
+}
+
+.registration-link {
+    text-align: center;
+    margin-top: 32px;
 }

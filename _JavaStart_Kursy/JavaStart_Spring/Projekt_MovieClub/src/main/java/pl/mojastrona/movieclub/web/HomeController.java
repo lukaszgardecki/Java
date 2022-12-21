@@ -1,4 +1,4 @@
-package pl.mojastrona.movieclub.domain.web;
+package pl.mojastrona.movieclub.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
