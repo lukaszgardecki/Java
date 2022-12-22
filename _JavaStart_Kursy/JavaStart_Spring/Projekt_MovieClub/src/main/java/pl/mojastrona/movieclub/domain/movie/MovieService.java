@@ -1,11 +1,13 @@
 package pl.mojastrona.movieclub.domain.movie;
 
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import pl.mojastrona.movieclub.domain.genre.Genre;
 import pl.mojastrona.movieclub.domain.genre.GenreRepository;
 import pl.mojastrona.movieclub.domain.movie.dto.MovieDto;
 import pl.mojastrona.movieclub.domain.movie.dto.MovieSaveDto;
 import pl.mojastrona.movieclub.storage.FileStorageService;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -55,5 +57,12 @@ public class MovieService {
             movie.setPoster(savedFileName);
         }
         movieRepository.save(movie);
+    }
+
+    public List<MovieDto> findTopMovies(int size) {
+        Pageable page = Pageable.ofSize(size);
+        return movieRepository.findTopByRating(page).stream()
+                .map(MovieDtoMapper::map)
+                .toList();
     }
 }
