@@ -8,6 +8,10 @@ public class Contact implements Comparable<Contact> {
         this.telephone = telephone;
     }
 
+    public String toCSV() {
+        return name + ";" + telephone;
+    }
+
     public String getName() {
         return name;
     }

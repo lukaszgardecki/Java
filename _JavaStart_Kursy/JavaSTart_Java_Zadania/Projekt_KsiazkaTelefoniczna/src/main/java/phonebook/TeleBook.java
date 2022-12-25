@@ -1,11 +1,8 @@
 package phonebook;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
-public class TeleBook {
+public class TeleBook implements Iterable<Contact> {
     private Map<String, Contact> contacts = new TreeMap<>();
 
     public TeleBook() {}
@@ -53,4 +50,8 @@ public class TeleBook {
         return result;
     }
 
+    @Override
+    public Iterator<Contact> iterator() {
+        return contacts.values().iterator();
+    }
 }
