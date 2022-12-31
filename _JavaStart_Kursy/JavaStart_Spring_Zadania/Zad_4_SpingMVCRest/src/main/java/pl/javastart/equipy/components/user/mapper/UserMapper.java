@@ -1,4 +1,7 @@
-package pl.javastart.equipy.components.user;
+package pl.javastart.equipy.components.user.mapper;
+
+import pl.javastart.equipy.components.user.User;
+import pl.javastart.equipy.components.user.dto.UserDto;
 
 public class UserMapper {
     static UserDto toDto(User user) {

@@ -1,4 +1,4 @@
-package pl.javastart.equipy.components.user;
+package pl.javastart.equipy.components.user.dto;
 
 public class UserDto {
    private Long id;

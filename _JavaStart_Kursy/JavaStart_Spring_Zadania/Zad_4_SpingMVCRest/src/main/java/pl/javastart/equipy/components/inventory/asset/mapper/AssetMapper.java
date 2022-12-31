@@ -1,6 +1,8 @@
-package pl.javastart.equipy.components.inventory.asset;
+package pl.javastart.equipy.components.inventory.asset.mapper;
 
 import org.springframework.stereotype.Service;
+import pl.javastart.equipy.components.inventory.asset.Asset;
+import pl.javastart.equipy.components.inventory.asset.dto.AssetDto;
 import pl.javastart.equipy.components.inventory.category.Category;
 import pl.javastart.equipy.components.inventory.category.CategoryRepository;
 
@@ -14,7 +16,7 @@ public class AssetMapper {
         this.categoryRepository = categoryRepository;
     }
 
-    AssetDto toDto(Asset asset) {
+    public AssetDto toDto(Asset asset) {
         AssetDto dto = new AssetDto();
         dto.setId(asset.getId());
         dto.setName(asset.getName());
@@ -26,7 +28,7 @@ public class AssetMapper {
         return dto;
     }
 
-    Asset toEntity(AssetDto asset) {
+    public Asset toEntity(AssetDto asset) {
         Asset entity = new Asset();
         entity.setId(asset.getId());
         entity.setName(asset.getName());

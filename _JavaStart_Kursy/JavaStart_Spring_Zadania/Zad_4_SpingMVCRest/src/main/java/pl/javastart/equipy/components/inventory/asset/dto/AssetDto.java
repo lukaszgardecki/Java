@@ -1,4 +1,4 @@
-package pl.javastart.equipy.components.inventory.asset;
+package pl.javastart.equipy.components.inventory.asset.dto;
 
 public class AssetDto {
     private Long id;
