@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f023e616-2250-4f75-b006-e6cbc4761c37" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/ASlowTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/CoreBusinessCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/Fast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/FastImportant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/FastTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/Important.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/OtherFastTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/example-fast-slow/src/test/java/pl/javastart/junittestingcourse/examples/SlowTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/ComputerComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/MojaSuperLista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example1/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example1/PaymentDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example1/PaymentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example1/PaymentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example2/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example2/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example2/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentmatcher/InvalidPasswordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/argumentmatcher/PasswordChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/mockito/HumiditySensor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/mockito/SmartHomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/mockito/WateringController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/argumentmatcher/AdultChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/argumentmatcher/Email.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/argumentmatcher/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/model/Superhero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/model/Superheros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/random/DateTimeProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/random/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/random/UserCreationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/sources/AccessController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/sources/EmailProviderType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/sources/EmailValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/sources/FibonacciGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/main/java/pl/javastart/junittestingcourse/examples/sources/SignupStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/ListAssertionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/NamingAndGrouping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/RepetitionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/StaticImportExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/TestLifecycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example1/PaymentServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/argumentcaptor/example2/UserServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/argumentmatcher/PasswordCheckerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/assertj/AssertJTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/assertjintro/AssertJIntro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/assertjintro/TestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/exceptions/ExceptionExamplesWIthAssertJTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/exceptions/ExceptionExamplesWIthJUnit5Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/exceptions/ExceptionThrowingExampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockito/SmartHomeControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/BehaviorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/argumentmatcher/ArgumentMatcherMultipleParamsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/argumentmatcher/ArgumentMatcherTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockito/behaviour/argumentmatcher/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockitoverify/MockitoVerifyExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/mockitoverify/MyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/multipleassertions/AssertJMultipleAssertions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/multipleassertions/JUnit5MultipleAssertions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/random/UserCreationServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/random/UserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/sources/CsvFileSourceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/sources/CsvSourceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/sources/EnumSourceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/sources/MethodSourceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/java/pl/javastart/junittestingcourse/examples/sources/ValueSourceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/src/test/resources/pl/javastart/junittestingcourse/examples/sources/email-data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/examples/target/test-classes/pl/javastart/junittestingcourse/examples/sources/email-data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/argcaptors1/Signup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/argcaptors1/SignupRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/argcaptors1/SignupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/daysinmonth/MonthCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception1/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception1/EmployeeNoLongerWorkingException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception1/EmployeeNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception1/SalaryCalculationFailedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception1/SalaryCalculatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception1/TaskManagementSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception2/DataNotAvailableException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception2/Database.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception2/ExceptionExercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/exception2/Invoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/junit5assertions/JUnit5Assertions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/junit5assertions/JUnit5AssertionsSolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/mocking1/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/mocking1/SalaryCalculatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/mocking1/TaskManagementSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/random/PasswordResetGenerationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/random/RandomTextGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/shoppingcart/ShoppingCartCalculatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/main/java/pl/javastart/tj/shoppingcart/ShoppingCartDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/assertjintro/AssertJIntroTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/cycle/JUnitTestCycleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/daysinmonth/MonthCalculatorOrganizedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/daysinmonth/MonthCalculatorParametrizedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/daysinmonth/MonthCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/exception1/SalaryCalculatorServiceTest_Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/junit5assertions/AssertionsWIthJUnit5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/junit5assertions/JUnit5AssertionsSolutionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/junit5assertions/JUnit5AssertionsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/mocking1/SalaryCalculatorServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/namingandgrouping/NamingAndGrouping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/exercises/src/test/java/pl/javastart/tj/random/PasswordResetGenerationServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/argcaptors1/DateTimeProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/argcaptors1/Signup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/argcaptors1/SignupRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/argcaptors1/SignupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/exception1/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/exception1/EmployeeNoLongerWorkingException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/exception1/EmployeeNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/exception1/SalaryCalculationFailedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/exception1/SalaryCalculatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/main/java/pl/javastart/tj/exception1/TaskManagementSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/test/java/pl/javastart/tj/argcaptors1/SignupServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenia/solutions/src/test/java/pl/javastart/tj/exception1/SalaryCalculatorServiceTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JjEMRb2Rie6fnHIBFnt1Gkpf0E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.app" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f023e616-2250-4f75-b006-e6cbc4761c37" name="Changes" comment="" />
+      <created>1672583044802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672583044802</updated>
+      <workItem from="1672583046198" duration="8000" />
+      <workItem from="1672583105439" duration="824000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
