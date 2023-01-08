@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -53,6 +54,20 @@ public class TaskService {
         }
         task.setCompletionTime(LocalDateTime.now());
         return new TaskDurationDto(task.getStartTime(), task.getCompletionTime());
+    }
+
+    public List<String> getAllNotStartedTasksInfo() {
+        return repository.findAllByStartTimeIsNullOrderByPriorityDesc()
+                .stream()
+                .map(Task::toString)
+                .toList();
+    }
+
+    public List<String> getAllCompletedTasks() {
+        return repository.findAllByCompletionTimeIsNotNullOrderByCompletionTimeDesc()
+                .stream()
+                .map(Task::toString)
+                .toList();
     }
 
 

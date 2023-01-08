@@ -8,9 +8,8 @@ import com.example.todo.exception.TaskNotFoundException;
 import com.example.todo.exception.TaskNotStartedException;
 import org.springframework.stereotype.Controller;
 
-import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.Optional;
+import java.util.List;
 import java.util.Scanner;
 
 @Controller
@@ -50,6 +49,8 @@ public class TaskController {
             switch (option) {
                 case ADD -> addTask();
                 case PRINT_SINGLE -> printTask();
+                case PRINT_UNSTARTED_TASKS -> printUnstartedTasks();
+                case PRINT_COMPLETED_TASKS -> printCompletedTasks();
                 case START -> startTask();
                 case END -> endTask();
                 case EXIT -> exit();
@@ -58,6 +59,16 @@ public class TaskController {
         } catch (TaskNotFoundException e) {
             System.out.println("Brak zadania ze wskazanym identyfikatorem");
         }
+    }
+
+    private void printUnstartedTasks() {
+        service.getAllNotStartedTasksInfo()
+                .forEach(System.out::println);
+    }
+
+    private void printCompletedTasks() {
+        service.getAllCompletedTasks()
+                .forEach(System.out::println);
     }
 
     private void startTask() {
@@ -120,9 +131,11 @@ public class TaskController {
     private enum Option {
         ADD(1, "Dodaj nowe zadanie"),
         PRINT_SINGLE(2, "Wyświetl zadanie"),
-        START(3, "Wystartuj zadanie"),
-        END(4, "Zakończ zadanie"),
-        EXIT(3, "Koniec programu");
+        PRINT_UNSTARTED_TASKS(3, "Wyświetl nierozpoczęte zadania"),
+        PRINT_COMPLETED_TASKS(4, "Wyświetl zakończone zadania"),
+        START(5, "Wystartuj zadanie"),
+        END(6, "Zakończ zadanie"),
+        EXIT(7, "Koniec programu");
 
         private final int number;
         private final String name;
