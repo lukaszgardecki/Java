@@ -11,8 +11,8 @@
     <groupId>com.example</groupId>
     <artifactId>shop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Zad_11_Liquibase</name>
-    <description>Zad_11_Liquibase</description>
+    <name>Zad_14_Relacje_ManyToMany</name>
+    <description>Zad_14_Relacje_ManyToMany</description>
     <properties>
         <java.version>19</java.version>
     </properties>
@@ -37,17 +37,6 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

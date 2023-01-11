@@ -1,6 +1,6 @@
-insert into product
-    (name, price, description)
-values
+INSERT INTO
+    product(name, price, description)
+VALUES
     ('mleko', 3.2, 'testowy opis mleka'),
     ('czekolada', 2.8, 'testowy opis czekolady'),
     ('jogurt', 1.59, 'testowy opis jogurtu'),
