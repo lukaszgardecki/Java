@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Książki</title>
+</head>
+<body>
+    <h1>Lista książek</h1>
+    <ol th:each="book:${books}">
+        <li th:text="|Tytuł: ${book.title}|">Tytuł</li>
+    </ol>
+</body>
+</html>
