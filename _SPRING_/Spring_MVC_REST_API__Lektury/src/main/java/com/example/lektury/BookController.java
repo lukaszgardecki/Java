@@ -3,7 +3,8 @@ package com.example.lektury;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.Arrays;
 
 @Controller
 public class BookController {
@@ -15,8 +16,12 @@ public class BookController {
 
     @GetMapping("/")
     public String home(Model model) {
-        Book[] books = booksService.getBooks();
-        model.addAttribute("books", books);
+        BookDto[] bookDtos = booksService.getBooks();
+        model.addAttribute("books", bookDtos);
+        Arrays.stream(bookDtos).forEach(System.out::println);
+
+        booksService.saveAll(bookDtos);
+
         return "bookPage";
     }
 }

@@ -1,33 +1,35 @@
 package com.example.lektury;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.stereotype.Component;
 
-import jakarta.persistence.*;
-
-@Entity
-public class Book {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+@Component
+public class BookDto {
     private String kind;
+    @JsonProperty("full_sort_key")
     private String fullSortKey;
     private String title;
     private String url;
+    @JsonProperty("cover_color")
     private String coverColor;
     private String author;
     private String cover;
     private String epoch;
     private String href;
+    @JsonProperty("has_audio")
     private Boolean hasAudio;
     private String genre;
+    @JsonProperty("simple_thumb")
     private String simpleThumb;
     private String slug;
+    @JsonProperty("cover_thumb")
     private String coverThumb;
     private Boolean liked;
 
-    public Book() {
+    public BookDto() {
     }
 
-    public Book(String kind, String fullSortKey, String title, String url, String coverColor, String author, String cover, String epoch, String href, Boolean hasAudio, String genre, String simpleThumb, String slug, String coverThumb, Boolean liked) {
+    public BookDto(String kind, String fullSortKey, String title, String url, String coverColor, String author, String cover, String epoch, String href, Boolean hasAudio, String genre, String simpleThumb, String slug, String coverThumb, Boolean liked) {
         this.kind = kind;
         this.fullSortKey = fullSortKey;
         this.title = title;
@@ -43,14 +45,6 @@ public class Book {
         this.slug = slug;
         this.coverThumb = coverThumb;
         this.liked = liked;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getKind() {
@@ -171,5 +165,10 @@ public class Book {
 
     public void setLiked(Boolean liked) {
         this.liked = liked;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s (%s) - %s", title, author, genre);
     }
 }
