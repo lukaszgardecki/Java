@@ -4,8 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.Arrays;
-
 @Controller
 public class BookController {
     private final BooksService booksService;
@@ -16,10 +14,11 @@ public class BookController {
 
     @GetMapping("/")
     public String home(Model model) {
+        // pobierz dane z zewnętrznego API:
         BookDto[] bookDtos = booksService.getBooks();
+        // zapisz dane do modelu:
         model.addAttribute("books", bookDtos);
-        Arrays.stream(bookDtos).forEach(System.out::println);
-
+        // zapisz dane w bazie:
         booksService.saveAll(bookDtos);
 
         return "bookPage";
