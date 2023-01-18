@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Statystki tekstu</title>
+    <link rel="stylesheet" th:href="@{static/main.css}" href="../static/main.css">
+</head>
+<body>
+  <div class="container">
+      <h1>Statystyki tekstu</h1>
+      <form action="/stats" method="post" class="form-stats">
+        <label for="text">Tekst, dla którego statystki chcesz zobaczyć</label>
+        <textarea id="text" rows="20" name="text" placeholder="Wprowadź tekst..."></textarea>
+
+        <p>Które statystki cię interesują?</p>
+
+        <label for="len">
+            Długość tekstu:
+            <input type="checkbox" id="len" name="textLength">
+        </label>
+
+        <label for="words">
+            Liczba słów:
+            <input type="checkbox" id="words" name="words">
+        </label>
+        <label for="palindrom">
+            Sprawdzenie, czy tekst jest palindromem:
+            <input type="checkbox" id="palindrom" name="palindrome">
+        </label>
+        <label for="famous-word">
+            Znalezienie najpopularniejszego słowa:
+            <input type="checkbox" id="famous-word" name="mostFamousWord">
+        </label>
+        <button type="submit">Sprawdź statystyki</button>
+      </form>
+  </div>
+</body>
+</html>

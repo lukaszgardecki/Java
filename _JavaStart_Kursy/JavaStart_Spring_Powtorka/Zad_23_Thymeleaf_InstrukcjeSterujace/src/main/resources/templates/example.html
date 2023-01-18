@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl" th:lang="${lang}" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Instrukcje sterujące</title>
+</head>
+<body>
+    <p th:unless="${person}">Nie przekazano obiektu reprezentującego osobę</p>
+    <div th:if="${person}">
+        <div th:switch="${lang}">
+            <h2 th:case="pl">Cześć!</h2>
+            <h2 th:case="es">Hola!</h2>
+            <h2 th:case="de">Hallo!</h2>
+            <h2 th:case="*">Hello!</h2>
+        </div>
+        <p>Poniżej znajdują się Twoje informacje.</p>
+        <p th:text="${person.firstName} ? 'Imię: ' + ${person.firstName} : 'Brak imienia.'">Imię: John</p>
+        <p th:text="${person.lastName} ? 'Nazwisko: ' + ${person.lastName} : 'Brak nazwiska.'">Nazwisko: Doe</p>
+        <p th:if="${person.age ge 18}">Pełnoletni</p>
+        <p th:unless="${person.age ge 18}">Nieletni</p>
+    </div>
+</body>
+</html>
