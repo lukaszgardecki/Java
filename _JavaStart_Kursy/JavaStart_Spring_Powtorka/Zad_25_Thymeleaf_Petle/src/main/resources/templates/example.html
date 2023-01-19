@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pętle</title>
+</head>
+<body>
+    <h1>Lista osób:</h1>
+    <ul>
+        <li th:each="person, status : ${people}"
+            th:text="|${status.count}/${status.size} ${person.firstName} ${person.lastName}|">
+            Jan Kowalski
+        </li>
+    </ul>
+
+    <h2>Lista generowana na bazie sekwencji:</h2>
+    <ul>
+        <li th:each="i : ${#numbers.sequence(1, size)}" th:text="|Liczba nr ${i}|">Liczba nr 1</li>
+    </ul>
+</body>
+</html>
