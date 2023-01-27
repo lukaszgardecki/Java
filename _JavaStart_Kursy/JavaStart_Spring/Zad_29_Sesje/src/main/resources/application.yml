@@ -1,0 +1,6 @@
+server:
+  reactive:
+    session:
+      cookie:
+        max-age: 86400
+      timeout: 1440
