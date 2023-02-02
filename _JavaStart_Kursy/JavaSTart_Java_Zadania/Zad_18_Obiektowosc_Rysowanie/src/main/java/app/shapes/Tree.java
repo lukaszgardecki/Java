@@ -12,7 +12,11 @@ public class Tree implements Drawable {
     @Override
     public void draw() {
         for (int i = 0; i < height; i++) {
-            System.out.println(" ".repeat(height - 1 - i) + Drawable.SIGN.repeat(2 * i + 1) + " ".repeat(height - 1 - i));
+            System.out.println(
+                    new StringBuffer(" ".repeat(height - 1 - i))
+                    .append(Drawable.SIGN.repeat(2 * i + 1))
+                    .append(" ".repeat(height - 1 - i))
+            );
         }
     }
 }
