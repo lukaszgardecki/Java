@@ -5,10 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Optional;
-
 @RestController
-public class JobOfferController {
+class JobOfferController {
     private final JobOfferService jobOfferService;
 
     public JobOfferController(JobOfferService jobOfferService) {

@@ -3,7 +3,7 @@ package com.example.arch.company;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CompanyMapper {
+class CompanyMapper {
 
     CompanyDto map(Company company) {
         CompanyDto dto = new CompanyDto();

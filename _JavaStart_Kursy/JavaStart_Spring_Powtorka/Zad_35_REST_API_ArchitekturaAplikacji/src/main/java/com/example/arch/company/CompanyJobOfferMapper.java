@@ -4,7 +4,7 @@ import com.example.arch.joboffer.JobOffer;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CompanyJobOfferMapper {
+class CompanyJobOfferMapper {
 
     CompanyJobOfferDto map(JobOffer jobOffer) {
         CompanyJobOfferDto dto = new CompanyJobOfferDto();

@@ -2,7 +2,7 @@ package com.example.arch.joboffer;
 
 import java.time.LocalDateTime;
 
-public class JobOfferDto {
+class JobOfferDto {
     private Long id;
     private String title;
     private String description;

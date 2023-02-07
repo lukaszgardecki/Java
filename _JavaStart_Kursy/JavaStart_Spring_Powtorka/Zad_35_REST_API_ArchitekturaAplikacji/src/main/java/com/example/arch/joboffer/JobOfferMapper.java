@@ -3,7 +3,7 @@ package com.example.arch.joboffer;
 import org.springframework.stereotype.Service;
 
 @Service
-public class JobOfferMapper {
+class JobOfferMapper {
     JobOfferDto map(JobOffer jobOffer) {
         JobOfferDto dto = new JobOfferDto();
         dto.setId(jobOffer.getId());
