@@ -28,4 +28,13 @@ public class Type {
     public void setExtension(String extension) {
         this.extension = extension;
     }
+
+    @Override
+    public String toString() {
+        return "Type{" +
+                "name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                ", extension='" + extension + '\'' +
+                '}';
+    }
 }

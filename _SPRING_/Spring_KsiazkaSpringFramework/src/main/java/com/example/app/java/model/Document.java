@@ -48,4 +48,15 @@ public class Document {
     public void setModified(Date modified) {
         this.modified = modified;
     }
+
+    @Override
+    public String toString() {
+        return "Document{" +
+                "name='" + name + '\'' +
+                ", type=" + type +
+                ", location='" + location + '\'' +
+                ", created=" + created +
+                ", modified=" + modified +
+                '}';
+    }
 }

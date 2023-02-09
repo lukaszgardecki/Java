@@ -6,32 +6,35 @@ import com.example.app.java.service.SearchEngine;
 import com.example.app.spring.data.DocumentDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
+@Service()
+@Scope("prototype")
 public class SearchEngineService implements SearchEngine {
-
-    private DocumentDAO documentDAO;
+    private final DocumentDAO documentRepository;
     private static final Logger log = LoggerFactory.getLogger(SearchEngineService.class);
 
-    public SearchEngineService() {
+    public SearchEngineService(DocumentDAO documentRepository) {
+        this.documentRepository = documentRepository;
         if (log.isDebugEnabled()) {
             log.debug("Utworzono egzemplarz klasy SearchEngineService: " + this);
         }
     }
 
-    public DocumentDAO getDocumentDAO() {
-        return documentDAO;
+    public DocumentDAO getDocumentRepository() {
+        return documentRepository;
     }
 
-    public void setDocumentDAO(DocumentDAO documentDAO) {
+    public void setDocumentRepository(DocumentDAO documentRepository) {
         if (log.isDebugEnabled()) {
-            log.debug("Utworzono egzemplarz implementacji Document DAO: " + documentDAO);
+            log.debug("Utworzono egzemplarz implementacji Document DAO: " + documentRepository);
         }
-        this.documentDAO = documentDAO;
+//        this.documentRepository = documentRepository;
     }
 
     @Override
@@ -47,6 +50,6 @@ public class SearchEngineService implements SearchEngine {
 
     @Override
     public List<Document> listAll() {
-        return Arrays.asList(documentDAO.getAll());
+        return Arrays.asList(documentRepository.getAll());
     }
 }
