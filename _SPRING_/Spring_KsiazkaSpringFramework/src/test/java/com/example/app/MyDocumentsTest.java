@@ -3,14 +3,12 @@ package com.example.app;
 import com.example.app.java.model.Document;
 import com.example.app.java.model.Type;
 import com.example.app.java.service.SearchEngine;
-import com.example.app.spring.data.DocumentRepository;
 import com.example.app.spring.data.TypeDataRepository;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

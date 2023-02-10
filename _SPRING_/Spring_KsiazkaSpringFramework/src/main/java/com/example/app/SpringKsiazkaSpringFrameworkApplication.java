@@ -1,23 +1,22 @@
 package com.example.app;
 
-import com.example.app.java.model.Document;
 import com.example.app.java.model.Type;
 import com.example.app.spring.data.DocumentRepository;
 import com.example.app.spring.data.TypeDataRepository;
-import com.example.app.spring.service.SearchEngineService;
+import com.example.app.spring.views.Menu;
+import org.apache.naming.factory.ResourceFactory;
+import org.apache.tomcat.util.file.ConfigurationSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.io.Resource;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.io.File;
 import java.util.Map;
 
 @SpringBootApplication
 public class SpringKsiazkaSpringFrameworkApplication {
-
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(SpringKsiazkaSpringFrameworkApplication.class, args);
@@ -33,7 +32,10 @@ public class SpringKsiazkaSpringFrameworkApplication {
         System.out.println("Zawartość DocumentRepository:");
         documentRepository.getDocuments().forEach(System.out::println);
 
+        new Menu().printMenu();
+
     }
+
 
 
 }
