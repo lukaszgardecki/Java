@@ -16,4 +16,16 @@ class CompanyMapper {
         dto.setEmail(company.getEmail());
         return dto;
     }
+
+    Company map(CompanyDto dto) {
+        Company company = new Company();
+        company.setId(dto.getId());
+        company.setName(dto.getName());
+        company.setDescription(dto.getDescription());
+        company.setCity(dto.getCity());
+        company.setEmployees(dto.getEmployees());
+        company.setTelephone(dto.getTelephone());
+        company.setEmail(dto.getEmail());
+        return company;
+    }
 }

@@ -31,4 +31,10 @@ class CompanyService {
                 .map(companyJobOfferMapper::map)
                 .toList();
     }
+
+    CompanyDto saveCompany(CompanyDto companyDto) {
+        Company company = companyMapper.map(companyDto);
+        Company savedCompany = companyRepository.save(company);
+        return companyMapper.map(savedCompany);
+    }
 }
