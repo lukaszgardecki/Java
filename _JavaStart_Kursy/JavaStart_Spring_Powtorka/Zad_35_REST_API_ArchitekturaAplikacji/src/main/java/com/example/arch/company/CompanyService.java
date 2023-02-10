@@ -37,4 +37,14 @@ class CompanyService {
         Company savedCompany = companyRepository.save(company);
         return companyMapper.map(savedCompany);
     }
+
+    Optional<CompanyDto> replaceCompany(Long companyId, CompanyDto companyDto) {
+        if (!companyRepository.existsById(companyId)) {
+            return Optional.empty();
+        }
+        companyDto.setId(companyId);
+        Company companyToUpdate = companyMapper.map(companyDto);
+        Company updatedCompany = companyRepository.save(companyToUpdate);
+        return Optional.of(companyMapper.map(updatedCompany));
+    }
 }
