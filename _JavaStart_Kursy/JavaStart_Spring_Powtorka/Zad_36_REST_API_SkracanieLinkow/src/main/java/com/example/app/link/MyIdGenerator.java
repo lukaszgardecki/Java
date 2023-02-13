@@ -1,4 +1,4 @@
-package com.example.app;
+package com.example.app.link;
 
 import org.springframework.stereotype.Service;
 
@@ -8,7 +8,7 @@ import java.util.*;
 public class MyIdGenerator {
     private static final int ID_LENGTH = 10;
 
-    String generate() {
+    static String generate() {
         List<String> id = new ArrayList<>();
         String signs = "abcdefghijklmnopqrstuvwxyz1234567890";
         Random random = new Random();

@@ -1,13 +1,9 @@
-package com.example.app;
+package com.example.app.link.dto;
 
 public class CreateLinkDto {
     private String name;
     private String targetUrl;
-
-    public CreateLinkDto(String name, String targetUrl) {
-        this.name = name;
-        this.targetUrl = targetUrl;
-    }
+    private String password;
 
     public String getName() {
         return name;
@@ -23,5 +19,13 @@ public class CreateLinkDto {
 
     public void setTargetUrl(String targetUrl) {
         this.targetUrl = targetUrl;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

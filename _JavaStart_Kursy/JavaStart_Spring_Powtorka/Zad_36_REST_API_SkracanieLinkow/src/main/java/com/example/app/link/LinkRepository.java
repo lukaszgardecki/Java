@@ -1,4 +1,4 @@
-package com.example.app;
+package com.example.app.link;
 
 import org.springframework.data.repository.CrudRepository;
 

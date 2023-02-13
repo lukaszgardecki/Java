@@ -1,21 +1,13 @@
-package com.example.app;
+package com.example.app.link.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
-public class Link {
-    @Id
+public class LinkDto {
     private String id;
     private String name;
     private String targetUrl;
     private String redirectUrl;
-    private Long visits;
+    private long visits;
 
-    public Link() {
-    }
-
-    public Link(String id, String name, String targetUrl, String redirectUrl, Long visits) {
+    public LinkDto(String id, String name, String targetUrl, String redirectUrl, long visits) {
         this.id = id;
         this.name = name;
         this.targetUrl = targetUrl;
@@ -55,11 +47,12 @@ public class Link {
         this.redirectUrl = redirectUrl;
     }
 
-    public Long getVisits() {
+    public long getVisits() {
         return visits;
     }
 
-    public void setVisits(Long visits) {
+    public void setVisits(long visits) {
         this.visits = visits;
     }
+
 }
