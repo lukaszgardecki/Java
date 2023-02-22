@@ -3,6 +3,8 @@ package com.example.app.link;
 import com.example.app.link.dto.CreateLinkDto;
 import com.example.app.link.dto.LinkDto;
 import com.example.app.link.dto.UpdateLinkDto;
+import com.example.app.link.exceptions.InvalidPasswordException;
+import com.example.app.link.exceptions.LinkNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -43,17 +45,29 @@ public class LinkController {
 
     @PatchMapping("/{id}")
     ResponseEntity<?> updateLink(@PathVariable String id, @RequestBody UpdateLinkDto linkDto) {
-        return linkService.findLinkById(id)
-                .map(el -> {
-                    Optional<LinkDto> updatedLink = linkService.updateLinkName(id, linkDto);
-                    if (updatedLink.isEmpty()) {
-                        return ResponseEntity.status(HttpStatus.FORBIDDEN)
-                                .header("Reason", "wrong password")
-                                .build();
-                    }
-                    return ResponseEntity.noContent().build();
-                })
-                .orElse(ResponseEntity.notFound().build());
+        try {
+            linkService.updateLinkName(id, linkDto);
+            return ResponseEntity.noContent().build();
+        } catch (LinkNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        } catch (InvalidPasswordException e) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN)
+                    .header("Reason", e.getMessage())
+                    .build();
+        }
+    }
 
+    @DeleteMapping("/{id}")
+    ResponseEntity<?> deleteLink(@RequestHeader(name = "passwd") String password, @PathVariable String id) {
+        try {
+            linkService.deleteLink(id, password);
+            return ResponseEntity.noContent().build();
+        } catch (LinkNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        } catch (InvalidPasswordException e) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN)
+                    .header("Reason", e.getMessage())
+                    .build();
+        }
     }
 }

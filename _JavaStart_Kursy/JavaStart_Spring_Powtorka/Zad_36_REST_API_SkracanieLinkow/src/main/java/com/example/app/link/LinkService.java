@@ -3,6 +3,8 @@ package com.example.app.link;
 import com.example.app.link.dto.CreateLinkDto;
 import com.example.app.link.dto.LinkDto;
 import com.example.app.link.dto.UpdateLinkDto;
+import com.example.app.link.exceptions.InvalidPasswordException;
+import com.example.app.link.exceptions.LinkNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -35,22 +37,32 @@ public class LinkService {
     }
 
     @Transactional
-    public Optional<LinkDto> updateLinkName(String id, UpdateLinkDto dto) {
-        Optional<Link> link = linkRepository.findById(id).filter(el -> el.getPassword() != null);
-        Optional<Link> linkWithCorrectPass = link.filter(el -> el.getPassword().equals(dto.getPassword()));
-
-        if (link.isEmpty() || linkWithCorrectPass.isEmpty()) {
-            return Optional.empty();
-        }
-        linkWithCorrectPass.ifPresent(el -> el.setName(dto.getName()));
-        return linkWithCorrectPass.map(linkMapper::map);
+    public void updateLinkName(String id, UpdateLinkDto link) {
+        Optional<Link> linkToUpdate = linkRepository.findById(id);
+        linkToUpdate.orElseThrow(LinkNotFoundException::new);
+        linkToUpdate.filter(entity -> checkPassword(entity, link.getPassword()))
+                .orElseThrow(InvalidPasswordException::new)
+                .setName(link.getName());
     }
+
+    public void deleteLink(String id, String password) {
+        Optional<Link> linkToDelete = linkRepository.findById(id);
+        linkToDelete.orElseThrow(LinkNotFoundException::new);
+        Link link = linkToDelete.filter(entity -> checkPassword(entity, password))
+                .orElseThrow(InvalidPasswordException::new);
+        linkRepository.delete(link);
+    }
+
 
     @Transactional
     public Optional<LinkDto> incrementVisitById(String id) {
         Optional<Link> link = linkRepository.findById(id);
         link.ifPresent(el -> el.setVisits(el.getVisits() + 1));
         return link.map(linkMapper::map);
+    }
+
+    private boolean checkPassword(Link entity, String password) {
+        return entity.getPassword() != null && entity.getPassword().equals(password);
     }
 
 }
