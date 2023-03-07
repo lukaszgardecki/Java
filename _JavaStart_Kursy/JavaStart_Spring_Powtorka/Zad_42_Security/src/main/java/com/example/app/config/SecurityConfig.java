@@ -4,6 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
@@ -18,14 +22,14 @@ public class SecurityConfig {
                         .authenticated())
                 .formLogin(login -> login
                         .loginPage("/login")
-                        .loginProcessingUrl("/niewiem")
-                        .usernameParameter("user")
-                        .passwordParameter("user")
+//                        .loginProcessingUrl("/niewiem")
+//                        .usernameParameter("user")
+//                        .passwordParameter("user")
                         .permitAll())
-                .logout(logout -> logout
-                        .logoutUrl("/wyloguj")
-                        .logoutSuccessUrl("/byebye")
-                        .permitAll())
+//                .logout(logout -> logout
+//                        .logoutUrl("/wyloguj")
+//                        .logoutSuccessUrl("/byebye")
+//                        .permitAll())
                 //jeśli csrf jest włączony to tak można ustawić stronę wylogowania
                 //wyloguj po wysłaniu żądania GET pod adres /logout
                 //po wylogowaniu przekieruj do strony /login?logout
@@ -36,4 +40,12 @@ public class SecurityConfig {
                 .csrf().disable()
                 .build();
     }
+
+//    @Bean
+//    public UserDetailsService userDetailsService() {
+//        User.UserBuilder userBuilder = User.builder();
+//        UserDetails admin = userBuilder.username("superadmin").password("{noop}hard").roles("ADMIN").build();
+//        UserDetails user1 = userBuilder.username("john").password("{noop}asdf1234").roles("USER").build();
+//        return new InMemoryUserDetailsManager(admin, user1);
+//    }
 }
