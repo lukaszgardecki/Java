@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html lang="pl"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
-<head>
-    <meta charset="UTF-8">
-    <title>Strona główna</title>
-</head>
-<body>
-    <h1>Strong główna</h1>
-    <h2 th:text="${welcomeMessage}">Hello John!</h2>
-    <a sec:authorize="isAuthenticated()"
-       th:text="|Wyloguj się ${#authentication.name}|"
-       href="#"
-       th:href="@{/logout}">Wyloguj się John</a>
-
-
-
-<!--    <a th:if="${#authentication.isAuthenticated()}" -->
-<!--       th:text="|Wyloguj się ${#authentication.name}|" -->
-<!--       href="#" -->
-<!--       th:href="@{/logout}">Wyloguj się John</a>-->
-</body>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Strona główna</title>
+      <link rel="stylesheet" href="../static/styles/main.css" th:href="@{/styles/main.css}"/>
+  </head>
+  <body>
+      <div class="container">
+          <h1>Bezpieczna strona</h1>
+          <img src="../static/img/security-image.jpg" th:src="@{/img/security-image.jpg}" alt="Bezpieczna strona" class="scaled-image">
+          <a href="#" th:href="@{/secured}">Zabezpieczona strona</a>
+          <a href="#" th:href="@{/admin}">Panel admina</a>
+      </div>
+  </body>
 </html>

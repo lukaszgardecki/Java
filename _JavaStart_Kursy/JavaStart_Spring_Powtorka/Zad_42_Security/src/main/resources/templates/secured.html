@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel użytkownika</title>
+</head>
+<body>
+    <h1>Panel użytkownika</h1>
+    <h2 th:text="${welcomeMessage}">Hello John!</h2>
+    <a sec:authorize="isAuthenticated()"
+       th:text="|Wyloguj się ${#authentication.name}|"
+       href="#"
+       th:href="@{/logout}">Wyloguj się John</a>
+
+    <h2>Zmień hasło</h2>
+    <form th:action="@{/change-password}" method="post">
+        <input type="password" name="newPassword" placeholder="Nowe hasło">
+        <button type="submit">Zmień</button>
+    </form>
+
+
+<!--    <a th:if="${#authentication.isAuthenticated()}" -->
+<!--       th:text="|Wyloguj się ${#authentication.name}|" -->
+<!--       href="#" -->
+<!--       th:href="@{/logout}">Wyloguj się John</a>-->
+</body>
+</html>
