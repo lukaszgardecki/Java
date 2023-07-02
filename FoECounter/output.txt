@@ -1,7 +1,7 @@
 Sprawdzone sektory:
-    - razem: 179
-    - w tym 3 i mniej obozów: 44
-    - w tym 4 i więcej obozów: 135
+    - razem: 190
+    - w tym 3 i mniej obozów: 46
+    - w tym 4 i więcej obozów: 144
 -----------
 Data: 28-06-2023 19:05:43
 Sektor: obozy=5, ilość graczy=7, walki=156, negocjacje=0, wynik z pomiaru=156
@@ -1778,6 +1778,7 @@ Sektor: obozy=7, ilość graczy=11, walki=156, negocjacje=0, wynik z pomiaru=156
 - SiD. - N:0, W:3, S:3, U:1,92%
 -----------
 Data: 01-07-2023 13:08:59
+[2 sektory z 4 obozami]
 Sektor: obozy=4, ilość graczy=11, walki=288, negocjacje=0, wynik z pomiaru=288
  (N - nego, W - walki, S - suma, U - udział w sektorze)
 - Kiee - N:0, W:61, S:61, U:21,18%
@@ -2534,6 +2535,173 @@ Sektor: obozy=2, ilość graczy=11, walki=146, negocjacje=3, wynik z pomiaru=152
 - kolekcjoner03 - N:3, W:0, S:6, U:3,95%
 - ANDRZEJ1977 - N:0, W:6, S:6, U:3,95%
 - Irma - N:0, W:3, S:3, U:1,97%
+-----------
+Data: 02-07-2023 16:18:16
+Sektor: obozy=7, ilość graczy=12, walki=157, negocjacje=0, wynik z pomiaru=157
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- Alexx - N:0, W:24, S:24, U:15,29%
+- LordChriss - N:0, W:20, S:20, U:12,74%
+- zetzet - N:0, W:18, S:18, U:11,46%
+- kumitus - N:0, W:18, S:18, U:11,46%
+- as200 - N:0, W:15, S:15, U:9,55%
+- Wlodzimierz2011 - N:0, W:12, S:12, U:7,64%
+- Kris5407 - N:0, W:11, S:11, U:7,01%
+- encypency - N:0, W:11, S:11, U:7,01%
+- SiD. - N:0, W:9, S:9, U:5,73%
+- kolekcjoner03 - N:0, W:8, S:8, U:5,10%
+- evenezer - N:0, W:8, S:8, U:5,10%
+- Kiee - N:0, W:3, S:3, U:1,91%
+-----------
+Data: 02-07-2023 16:18:20
+Sektor: obozy=11, ilość graczy=11, walki=159, negocjacje=0, wynik z pomiaru=159
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- LordChriss - N:0, W:24, S:24, U:15,09%
+- Alexx - N:0, W:22, S:22, U:13,84%
+- zetzet - N:0, W:19, S:19, U:11,95%
+- kumitus - N:0, W:18, S:18, U:11,32%
+- encypency - N:0, W:14, S:14, U:8,81%
+- Wlodzimierz2011 - N:0, W:13, S:13, U:8,18%
+- as200 - N:0, W:11, S:11, U:6,92%
+- evenezer - N:0, W:11, S:11, U:6,92%
+- SiD. - N:0, W:10, S:10, U:6,29%
+- Kris5407 - N:0, W:9, S:9, U:5,66%
+- kolekcjoner03 - N:0, W:8, S:8, U:5,03%
+-----------
+Data: 02-07-2023 16:18:23
+Sektor: obozy=5, ilość graczy=11, walki=160, negocjacje=0, wynik z pomiaru=160
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- LordChriss - N:0, W:23, S:23, U:14,38%
+- Alexx - N:0, W:23, S:23, U:14,38%
+- zetzet - N:0, W:19, S:19, U:11,88%
+- kumitus - N:0, W:18, S:18, U:11,25%
+- encypency - N:0, W:14, S:14, U:8,75%
+- SiD. - N:0, W:13, S:13, U:8,13%
+- as200 - N:0, W:12, S:12, U:7,50%
+- Wlodzimierz2011 - N:0, W:11, S:11, U:6,88%
+- Kris5407 - N:0, W:10, S:10, U:6,25%
+- evenezer - N:0, W:9, S:9, U:5,63%
+- kolekcjoner03 - N:0, W:8, S:8, U:5,00%
+-----------
+Data: 02-07-2023 16:18:25
+Sektor: obozy=4, ilość graczy=12, walki=155, negocjacje=0, wynik z pomiaru=155
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- LordChriss - N:0, W:24, S:24, U:15,48%
+- Alexx - N:0, W:22, S:22, U:14,19%
+- zetzet - N:0, W:16, S:16, U:10,32%
+- kumitus - N:0, W:14, S:14, U:9,03%
+- as200 - N:0, W:13, S:13, U:8,39%
+- encypency - N:0, W:13, S:13, U:8,39%
+- Wlodzimierz2011 - N:0, W:12, S:12, U:7,74%
+- SiD. - N:0, W:12, S:12, U:7,74%
+- Kris5407 - N:0, W:10, S:10, U:6,45%
+- kolekcjoner03 - N:0, W:8, S:8, U:5,16%
+- evenezer - N:0, W:6, S:6, U:3,87%
+- Kiee - N:0, W:5, S:5, U:3,23%
+-----------
+Data: 02-07-2023 16:18:26
+Sektor: obozy=8, ilość graczy=11, walki=155, negocjacje=0, wynik z pomiaru=155
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- LordChriss - N:0, W:24, S:24, U:15,48%
+- Alexx - N:0, W:20, S:20, U:12,90%
+- zetzet - N:0, W:19, S:19, U:12,26%
+- kumitus - N:0, W:16, S:16, U:10,32%
+- as200 - N:0, W:15, S:15, U:9,68%
+- encypency - N:0, W:14, S:14, U:9,03%
+- Wlodzimierz2011 - N:0, W:10, S:10, U:6,45%
+- evenezer - N:0, W:10, S:10, U:6,45%
+- Kris5407 - N:0, W:9, S:9, U:5,81%
+- kolekcjoner03 - N:0, W:9, S:9, U:5,81%
+- SiD. - N:0, W:9, S:9, U:5,81%
+-----------
+Data: 02-07-2023 16:18:28
+Sektor: obozy=9, ilość graczy=12, walki=154, negocjacje=0, wynik z pomiaru=154
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- LordChriss - N:0, W:24, S:24, U:15,58%
+- Alexx - N:0, W:22, S:22, U:14,29%
+- Kiee - N:0, W:19, S:19, U:12,34%
+- zetzet - N:0, W:14, S:14, U:9,09%
+- encypency - N:0, W:14, S:14, U:9,09%
+- Wlodzimierz2011 - N:0, W:12, S:12, U:7,79%
+- as200 - N:0, W:12, S:12, U:7,79%
+- SiD. - N:0, W:12, S:12, U:7,79%
+- Kris5407 - N:0, W:10, S:10, U:6,49%
+- kolekcjoner03 - N:0, W:7, S:7, U:4,55%
+- evenezer - N:0, W:7, S:7, U:4,55%
+- kumitus - N:0, W:1, S:1, U:0,65%
+-----------
+Data: 02-07-2023 16:18:31
+Sektor: obozy=5, ilość graczy=9, walki=157, negocjacje=0, wynik z pomiaru=157
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- Kiee - N:0, W:25, S:25, U:15,92%
+- LordChriss - N:0, W:24, S:24, U:15,29%
+- zetzet - N:0, W:24, S:24, U:15,29%
+- encypency - N:0, W:19, S:19, U:12,10%
+- as200 - N:0, W:17, S:17, U:10,83%
+- Wlodzimierz2011 - N:0, W:16, S:16, U:10,19%
+- Kris5407 - N:0, W:13, S:13, U:8,28%
+- kolekcjoner03 - N:0, W:10, S:10, U:6,37%
+- Alexx - N:0, W:9, S:9, U:5,73%
+-----------
+Data: 02-07-2023 16:18:33
+Sektor: obozy=6, ilość graczy=12, walki=148, negocjacje=0, wynik z pomiaru=148
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- LordChriss - N:0, W:20, S:20, U:13,51%
+- Alexx - N:0, W:19, S:19, U:12,84%
+- encypency - N:0, W:16, S:16, U:10,81%
+- Kiee - N:0, W:15, S:15, U:10,14%
+- zetzet - N:0, W:13, S:13, U:8,78%
+- kumitus - N:0, W:13, S:13, U:8,78%
+- as200 - N:0, W:12, S:12, U:8,11%
+- Wlodzimierz2011 - N:0, W:11, S:11, U:7,43%
+- Kris5407 - N:0, W:10, S:10, U:6,76%
+- evenezer - N:0, W:9, S:9, U:6,08%
+- kolekcjoner03 - N:0, W:7, S:7, U:4,73%
+- SiD. - N:0, W:3, S:3, U:2,03%
+-----------
+Data: 02-07-2023 16:18:34
+Sektor: obozy=8, ilość graczy=12, walki=154, negocjacje=0, wynik z pomiaru=154
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- Alexx - N:0, W:22, S:22, U:14,29%
+- LordChriss - N:0, W:21, S:21, U:13,64%
+- Kiee - N:0, W:18, S:18, U:11,69%
+- zetzet - N:0, W:16, S:16, U:10,39%
+- encypency - N:0, W:15, S:15, U:9,74%
+- Wlodzimierz2011 - N:0, W:12, S:12, U:7,79%
+- as200 - N:0, W:12, S:12, U:7,79%
+- SiD. - N:0, W:12, S:12, U:7,79%
+- Kris5407 - N:0, W:9, S:9, U:5,84%
+- evenezer - N:0, W:7, S:7, U:4,55%
+- kolekcjoner03 - N:0, W:6, S:6, U:3,90%
+- kumitus - N:0, W:4, S:4, U:2,60%
+-----------
+Data: 02-07-2023 16:18:36
+Sektor: obozy=3, ilość graczy=11, walki=155, negocjacje=2, wynik z pomiaru=159
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- zetzet - N:0, W:20, S:20, U:12,58%
+- as200 - N:0, W:19, S:19, U:11,95%
+- encypency - N:1, W:16, S:18, U:11,32%
+- Alexx - N:1, W:16, S:18, U:11,32%
+- kumitus - N:0, W:17, S:17, U:10,69%
+- Wlodzimierz2011 - N:0, W:16, S:16, U:10,06%
+- SiD. - N:0, W:13, S:13, U:8,18%
+- LordChriss - N:0, W:11, S:11, U:6,92%
+- kolekcjoner03 - N:0, W:11, S:11, U:6,92%
+- evenezer - N:0, W:9, S:9, U:5,66%
+- Kris5407 - N:0, W:7, S:7, U:4,40%
+-----------
+Data: 02-07-2023 16:18:37
+Sektor: obozy=3, ilość graczy=10, walki=156, negocjacje=0, wynik z pomiaru=156
+ (N - nego, W - walki, S - suma, U - udział w sektorze)
+- Alexx - N:0, W:32, S:32, U:20,51%
+- zetzet - N:0, W:25, S:25, U:16,03%
+- kumitus - N:0, W:23, S:23, U:14,74%
+- LordChriss - N:0, W:13, S:13, U:8,33%
+- Wlodzimierz2011 - N:0, W:13, S:13, U:8,33%
+- kolekcjoner03 - N:0, W:13, S:13, U:8,33%
+- evenezer - N:0, W:13, S:13, U:8,33%
+- Kris5407 - N:0, W:9, S:9, U:5,77%
+- as200 - N:0, W:8, S:8, U:5,13%
+- SiD. - N:0, W:7, S:7, U:4,49%
 
 Statystyki graczy w czasie wykonywania pomiarów:
 -----
@@ -2551,39 +2719,39 @@ Statystyki graczy w czasie wykonywania pomiarów:
 - Belladonna*: W3: 16 (8,33%), W4: 176 (91,67%)
 - stempi: W3: 4 (9,30%), W4: 39 (90,70%)
 - Dylu-Raf: W3: 33 (11,42%), W4: 256 (88,58%)
-- LordChriss: W3: 169 (13,15%), W4: 1116 (86,85%)
-- SiD.: W3: 109 (13,36%), W4: 707 (86,64%)
-- encypency: W3: 180 (14,41%), W4: 1069 (85,59%)
+- LordChriss: W3: 193 (12,76%), W4: 1320 (87,24%)
+- SiD.: W3: 129 (14,08%), W4: 787 (85,92%)
+- encypency: W3: 198 (14,17%), W4: 1199 (85,83%)
 - -SilverHead-: W3: 54 (15,74%), W4: 289 (84,26%)
 - ..IRCIA..: W3: 72 (15,86%), W4: 382 (84,14%)
 - Arkadiusz635: W3: 18 (15,93%), W4: 95 (84,07%)
 - Mikołaj 138 Piękny: W3: 12 (16,22%), W4: 62 (83,78%)
 - WiktoreQ221: W3: 85 (17,10%), W4: 412 (82,90%)
 - zosia3456: W3: 48 (17,65%), W4: 224 (82,35%)
+- Kiee: W3: 519 (17,72%), W4: 2410 (82,28%)
 - Irma: W3: 70 (17,99%), W4: 319 (82,01%)
 - prion: W3: 32 (18,18%), W4: 144 (81,82%)
-- Kiee: W3: 519 (18,25%), W4: 2325 (81,75%)
 - Malg5: W3: 45 (18,83%), W4: 194 (81,17%)
+- Kris5407: W3: 226 (20,25%), W4: 890 (79,75%)
 - Kendra Volcano: W3: 51 (20,40%), W4: 199 (79,60%)
-- Kris5407: W3: 210 (20,81%), W4: 799 (79,19%)
-- as200: W3: 236 (20,83%), W4: 897 (79,17%)
+- as200: W3: 263 (20,56%), W4: 1016 (79,44%)
 - ANDRZEJ1977: W3: 220 (21,30%), W4: 813 (78,70%)
 - hiszpan11: W3: 47 (21,46%), W4: 172 (78,54%)
-- zetzet: W3: 369 (21,78%), W4: 1325 (78,22%)
+- zetzet: W3: 414 (21,82%), W4: 1483 (78,18%)
 - koko koko: W3: 53 (24,42%), W4: 164 (75,58%)
-- Wlodzimierz2011: W3: 336 (25,83%), W4: 965 (74,17%)
+- Wlodzimierz2011: W3: 365 (25,36%), W4: 1074 (74,64%)
 - Arii Arii: W3: 59 (28,10%), W4: 151 (71,90%)
 - Trubibabur: W3: 283 (28,70%), W4: 703 (71,30%)
 - nasze: W3: 9 (29,03%), W4: 22 (70,97%)
-- kumitus: W3: 290 (30,40%), W4: 664 (69,60%)
-- evenezer: W3: 240 (31,05%), W4: 533 (68,95%)
-- kolekcjoner03: W3: 564 (33,85%), W4: 1102 (66,15%)
+- kumitus: W3: 330 (30,11%), W4: 766 (69,89%)
+- evenezer: W3: 262 (30,39%), W4: 600 (69,61%)
+- kolekcjoner03: W3: 588 (33,39%), W4: 1173 (66,61%)
 - Okeyka: W3: 20 (34,48%), W4: 38 (65,52%)
 - antares0pl: W3: 156 (35,29%), W4: 286 (64,71%)
 - piotr74c: W3: 71 (36,04%), W4: 126 (63,96%)
 - Gawlorek: W3: 37 (37,76%), W4: 61 (62,24%)
 - CineqW: W3: 124 (37,92%), W4: 203 (62,08%)
-- Alexx: W3: 585 (41,14%), W4: 837 (58,86%)
+- Alexx: W3: 635 (38,37%), W4: 1020 (61,63%)
 - Flamber: W3: 350 (45,10%), W4: 426 (54,90%)
 - Araxu: W3: 35 (47,95%), W4: 38 (52,05%)
 - BenKiller: W3: 184 (53,49%), W4: 160 (46,51%)
