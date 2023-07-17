@@ -1,0 +1,10 @@
+com\example\mikroserwisy\repository\ProductRepository.class
+com\example\mikroserwisy\dto\ProductResponse.class
+com\example\mikroserwisy\MikroserwisyApplication.class
+com\example\mikroserwisy\model\Product.class
+com\example\mikroserwisy\controller\ProductController.class
+com\example\mikroserwisy\dto\ProductRequest$ProductRequestBuilder.class
+com\example\mikroserwisy\dto\ProductRequest.class
+com\example\mikroserwisy\dto\ProductResponse$ProductResponseBuilder.class
+com\example\mikroserwisy\model\Product$ProductBuilder.class
+com\example\mikroserwisy\service\ProductService.class

@@ -1,0 +1,11 @@
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\repository\OrderRepository.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\model\OrderLineItems.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\dto\OrderRequest.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\config\WebClientConfig.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\service\OrderService.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\controller\OrderController.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\model\Order.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\OrderServiceApplication.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\dto\InventoryResponse.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\dto\OrderLineItemsDto.java
+C:\Users\Asus\Desktop\Projekty\Java\Mikroserwisy\microservices-new\order-service\src\main\java\com\example\orderservice\event\OrderPlacedEvent.java

@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5431/order-service
+    username: lukas
+    password: password
+  kafka:
+    bootstrap-servers: "broker:29092"
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@discovery-server:8761/eureka
+management:
+  zipkin:
+    tracing:
+      endpoint: http://zipkin:9411
