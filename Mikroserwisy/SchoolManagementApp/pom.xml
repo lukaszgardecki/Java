@@ -17,6 +17,9 @@
     <modules>
         <module>eureka-service</module>
         <module>school-service</module>
+        <module>teacher-service</module>
+        <module>student-service</module>
+        <module>gateway-service</module>
     </modules>
     <properties>
         <java.version>19</java.version>
