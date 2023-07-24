@@ -1,6 +1,7 @@
 package com.example.movieinfoservice.resources;
 
 import com.example.movieinfoservice.model.Movie;
+import com.example.movieinfoservice.model.MovieSummary;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

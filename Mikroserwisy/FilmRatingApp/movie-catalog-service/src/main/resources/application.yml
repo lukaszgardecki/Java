@@ -1,0 +1,32 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: movie-catalog-service
+
+
+#Resilience4j properties
+resilience4j:
+  circuitbreaker:
+    instances:
+      ratingssss:
+        - register-health-indicator: true
+        - event-consumer-buffer-size: 10
+        - sliding-window-type: COUNT_BASED
+        - sliding-window-size: 5
+        - failure-rate-threshold: 50
+        - wait-duration-in-open-state:
+            seconds: 5
+        - permitted-number-of-calls-in-half-open-state: 3
+        - automatic-transition-from-open-to-half-open-enabled: true
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
