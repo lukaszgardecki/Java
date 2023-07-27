@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rating-service" />
+        <module name="api-gateway" />
         <module name="user-service" />
         <module name="registry-service" />
         <module name="hotel-service" />
@@ -20,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="UserService" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="hotel-service" options="-parameters" />
       <module name="rating-service" options="-parameters" />
       <module name="registry-service" options="-parameters" />
