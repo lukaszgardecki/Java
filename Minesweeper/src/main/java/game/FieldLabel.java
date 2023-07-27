@@ -16,7 +16,7 @@ public class FieldLabel extends JLabel {
     int surroundingBombs = 0;
     int row = 0;
     int col = 0;
-    static ImageIcon bombIcon = new ImageIcon("src/game/images/bomb.png");
+    static ImageIcon bombIcon = new ImageIcon("src/main/java/game/images/bomb.png");
 
     FieldLabel() {
         setSize(fieldWidth, fieldHeight);

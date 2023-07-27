@@ -1,33 +1,17 @@
 package game;
 
 public class Game {
-
-    private int Game_Board_Width;
-    private int Game_Board_Height;
+    private int boardWidth;
+    private int boardHeight;
     private int bombs;
-    private String level;
+    private Level level;
     static boolean isFailure = false;
 
-    public Game(String level) {
+    public Game(Level level) {
         this.level = level;
-
-        switch (level) {
-            case "easy" -> {
-                setGame_Board_Width(9);
-                setGame_Board_Height(9);
-                setBombs(10);
-            }
-            case "intermediate" -> {
-                setGame_Board_Width(16);
-                setGame_Board_Height(16);
-                setBombs(40);
-            }
-            case "expert" -> {
-                setGame_Board_Width(30);
-                setGame_Board_Height(16);
-                setBombs(100);
-            }
-        }
+        this.boardWidth = level.getBoardWidth();
+        this.boardHeight = level.getBoardHeight();
+        this.bombs = level.getBombs();
     }
 
     public static void endGame() {
@@ -45,20 +29,20 @@ public class Game {
 
     public static void playEasy() {
         Main.setEasyLevel();
-        prepereGame();
+        prepareGame();
     }
 
     public static void playIntermediate() {
         Main.setIntermediateLevel();
-        prepereGame();
+        prepareGame();
     }
 
     public static void playExpert() {
         Main.setExpertLevel();
-        prepereGame();
+        prepareGame();
     }
 
-    private static void prepereGame() {
+    private static void prepareGame() {
         MainFrameSaper.container.changeSize();
         MainContainer.changeSizeOfElements();
         MainPanel.refresh();
@@ -66,30 +50,34 @@ public class Game {
     }
 
     public int getGameWidth() {
-        return Game_Board_Width;
+        return boardWidth;
     }
 
     public int getGameHeight() {
-        return Game_Board_Height;
+        return boardHeight;
     }
 
     public int getBombs() {
         return bombs;
     }
 
-    public String getLevel() {
+    public Level getLevel() {
         return level;
     }
 
-    private void setGame_Board_Width(int game_Board_Width) {
-        Game_Board_Width = game_Board_Width;
+    private void setBoardWidth(int boardWidth) {
+        this.boardWidth = boardWidth;
     }
 
-    private void setGame_Board_Height(int game_Board_Height) {
-        Game_Board_Height = game_Board_Height;
+    private void setBoardHeight(int boardHeight) {
+        this.boardHeight = boardHeight;
     }
 
     private void setBombs(int bombs) {
         this.bombs = bombs;
+    }
+
+    public void setLevel(Level level) {
+        this.level = level;
     }
 }

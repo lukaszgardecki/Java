@@ -13,10 +13,10 @@ public class MenuSaper extends JMenuBar implements ActionListener {
     MenuSaper() {
         setBounds(0, 0, menuWidth, menuHeight);
 
-        easyItem = new JMenuItem("Pocz¹tkuj¹cy");
-        intermediateItem = new JMenuItem("Œredniozaawansowany");
+        easyItem = new JMenuItem("PoczÄ…tkujÄ…cy");
+        intermediateItem = new JMenuItem("Åšredniozaawansowany");
         expertItem = new JMenuItem("Ekspert");
-        endGameItem = new JMenuItem("Zakoñcz");
+        endGameItem = new JMenuItem("ZakoÅ„cz");
 
         fileMenu = new JMenu("Plik");
         helpMenu = new JMenu("Pomoc");
@@ -40,9 +40,9 @@ public class MenuSaper extends JMenuBar implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         boolean isClickedExit = endGameItem.equals(source);
-        boolean isChangedLevToEasy = easyItem.equals(source) && !Main.game.getLevel().equals("easy");
-        boolean isChangedLevToInteMediate = intermediateItem.equals(source) && !Main.game.getLevel().equals("intermediate");
-        boolean icChangedLevToExpert = expertItem.equals(source) && !Main.game.getLevel().equals("expert");
+        boolean isChangedLevToEasy = easyItem.equals(source) && !Main.game.getLevel().equals(Level.EASY);
+        boolean isChangedLevToInteMediate = intermediateItem.equals(source) && !Main.game.getLevel().equals(Level.INTERMEDIATE);
+        boolean icChangedLevToExpert = expertItem.equals(source) && !Main.game.getLevel().equals(Level.EXPERT);
 
         if (isClickedExit) {
             System.exit(0);
