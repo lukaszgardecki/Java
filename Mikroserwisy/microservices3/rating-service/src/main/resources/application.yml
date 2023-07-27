@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:admin@localhost:27017
+      database: microservices
+      username: root
+      password: admin
+server:
+  port: 8083
