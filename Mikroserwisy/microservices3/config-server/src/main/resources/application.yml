@@ -1,0 +1,13 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: config-server
+
+# pobieranie propertisów z repozytorium zdalnego ! w tym repo znajduj? si? pliki .yml
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lukaszgardecki/config-server
+          clone-on-start: true

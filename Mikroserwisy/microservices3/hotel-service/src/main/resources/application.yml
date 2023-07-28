@@ -12,11 +12,15 @@ spring:
     show-sql: true
   application:
     name: hotel-service
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+  config:
+    import: optional:configserver:http://localhost:8085
+
+# TEN ZAKOMENTOWANY PROPERTIS JEST ZACIĄGANY Z SERWERA (Z REPO - GITHUB):
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
