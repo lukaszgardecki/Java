@@ -17,6 +17,23 @@ spring:
     name: user-service
   config:
     import: configserver:http://localhost:8085
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-91507242.okta.com/oauth2/default
+      client:
+        registration:
+          my-internal-client:
+            provider: okta
+            authorization-grant-type: client_credentials
+            scope:
+              - internal
+            client-id: 0oaakums1g3Kni7FK5d7
+            client-secret: 6Ri2LgC78w407_7MrdeTme5x8o_kZft-SjSIVar0ga1Q-Y_aov7gHPV0mez_Ij_4
+        provider:
+          okta:
+            issuer-uri: https://dev-91507242.okta.com/oauth2/default
 
 
 # TEN ZAKOMENTOWANY PROPERTIS JEST ZACIĄGANY Z SERWERA (Z REPO - GITHUB):
@@ -63,4 +80,12 @@ resilience4j:
     instances:
       userRateLimiter:
         limit-refresh-period: 4s
+        limit-for-period: 2
+        timeout-duration: 2s
+
+# Okta configuration for api gateway
+okta:
+  oauth2:
+    issuer: https://dev-91507242.okta.com/oauth2/default
+    audience: api://default
 

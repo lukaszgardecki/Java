@@ -4,6 +4,7 @@ import com.example.ratingservice.entity.Rating;
 import com.example.ratingservice.service.RatingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -17,6 +18,7 @@ public class RatingController {
     private final RatingService ratingService;
 
     @PostMapping
+    @PreAuthorize("hasAuthority('Admin')")
     public ResponseEntity<Rating> create(@RequestBody Rating rating) {
         Rating createdRating = ratingService.create(rating);
         URI createdRatingURI = ServletUriComponentsBuilder.fromCurrentRequest()
@@ -33,6 +35,7 @@ public class RatingController {
     }
 
     @GetMapping("/users/{userId}")
+    @PreAuthorize("hasAuthority('SCOPE_internal') || hasAuthority('Admin')")
     public ResponseEntity<List<Rating>> getAllRatingsByUserId(@PathVariable Long userId) {
         List<Rating> ratings = ratingService.getRatingsByUserId(userId);
         return ResponseEntity.ok(ratings);
