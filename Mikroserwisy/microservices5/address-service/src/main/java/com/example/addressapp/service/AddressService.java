@@ -6,6 +6,7 @@ import com.example.addressapp.repository.AddressRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -16,5 +17,11 @@ public class AddressService {
     public Optional<AddressResponse> getAddressByEmployeeId(Long id) {
         return addressRepository.findAddressByEmployeeId(id)
                 .map(AddressMapper::map);
+    }
+
+    public List<AddressResponse> getAllAddresses() {
+        return addressRepository.findAll().stream()
+                .map(AddressMapper::map)
+                .toList();
     }
 }

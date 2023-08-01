@@ -2,35 +2,30 @@ package com.example.employeeservice.service;
 
 import com.example.employeeservice.dto.AddressResponse;
 import com.example.employeeservice.dto.EmployeeResponse;
+import com.example.employeeservice.feignclient.AddressClient;
 import com.example.employeeservice.mapper.EmployeeMapper;
 import com.example.employeeservice.repository.EmployeeRepository;
-import com.netflix.appinfo.InstanceInfo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import java.net.URI;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class EmployeeService {
     private final EmployeeRepository employeeRepository;
-    private final RestTemplate restTemplate;
-    private final WebClient webClient;
-    @Value("${addressservice.base.url}")
-    private String addressBaseURL;
-    private DiscoveryClient discoveryClient;
-    private LoadBalancerClient loadBalancerClient;
+    private final AddressClient addressClient;
 
     public Optional<EmployeeResponse> getEmployeeById(Long id) {
-        AddressResponse employeeAddress = getAddressByEmployeeIdWithRestTemplate(id);
+        ResponseEntity<AddressResponse> addressResponseEntity = addressClient.getAddressByEmployeeId(id);
+        AddressResponse employeeAddress = addressResponseEntity.getBody();
+
         Optional<EmployeeResponse> employeeOptional = employeeRepository.findById(id).map(EmployeeMapper::mapToDto);
         if (employeeOptional.isPresent()) {
             EmployeeResponse employee = employeeOptional.get();
@@ -40,17 +35,20 @@ public class EmployeeService {
         return Optional.empty();
     }
 
-    private AddressResponse getAddressByEmployeeIdWithRestTemplate(Long id) {
-        return restTemplate.getForObject( "http://address-service/address-service/api/address/{id}", AddressResponse.class, id);
+    public List<EmployeeResponse> getAllEmployees() {
+        List<EmployeeResponse> employees = employeeRepository.findAll().stream()
+                .map(EmployeeMapper::mapToDto)
+                .toList();
+        List<AddressResponse> addresses = addressClient.getAllAddresses().getBody();
+
+        employees.forEach(em ->  {
+            for (AddressResponse address : addresses) {
+                if (Objects.equals(address.getId(), em.getId())) {
+                    em.setAddress(address);
+                }
+            }
+        });
+
+        return employees;
     }
-
-    private AddressResponse getAddressByEmployeeIdWithWebClient(Long id) {
-        return webClient.get()
-                .uri("/address/" + id)
-                .retrieve()
-                .bodyToMono(AddressResponse.class)
-                .block();
-    }
-
-
 }

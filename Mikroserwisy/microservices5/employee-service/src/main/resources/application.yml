@@ -18,3 +18,22 @@ addressservice:
   base:
     url: http://localhost:8081/address-service/api
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# żeby odblokować endpoint /actuator/info:
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+# domyślnie będzie pusto. Trzeba dodać jakieś informacje:
+info:
+  name: To jest jakaś apka
+  version: 1.234.4
+
