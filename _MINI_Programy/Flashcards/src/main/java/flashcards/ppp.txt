@@ -1,0 +1,5 @@
+Podaj stolicê Polski.	Warszawa	12
+Podaj stolicê Niemiec.	Berlin	10
+Podaj stolicê Czech.	Praga	9
+Podaj stolicê W³och.	Rzym	8
+Podaj nazwisko Jana Sebastiana Bacha.	Bach	8

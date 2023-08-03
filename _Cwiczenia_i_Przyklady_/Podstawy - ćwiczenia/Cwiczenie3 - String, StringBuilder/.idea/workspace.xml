@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac0253d1-d62b-463c-a0f8-14a9aecc1055" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie1/Cwiczenie1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie1/out/production/Cwiczenie1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/Cwiczenie10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/out/production/Cwiczenie10/Monte_Carlo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie10/src/PI/Monte_Carlo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie2/Cwiczenie2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie2/out/production/Cwiczenie2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie3/Cwiczenie3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie3/out/production/Cwiczenie3/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie3/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/Cwiczenie4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/lista.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja1/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja10/FunkcjaKwadratowa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja10/MiejscaZerowe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja11/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja12/Rekurencja.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja12/Silnia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja13/Odwroc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja13/TypString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja14/DodawanieUcznia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja14/ListaObecnosci1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja14/Pliki.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja15/Odwroc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja15/Trojkat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja2/TypyZmiennych.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja3/KtoTy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja3/OperacjeNaZmiennych.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja3/PrymitywnyKalkulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja4/Decyzja.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja5/PrymitywnyKalkulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja5/PrzelicznikCali.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja6/PetlaDoWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja6/PetlaFor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja6/PetlaWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja6/Suma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja6/ZasiegZmiennych.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja7/LiczbyLosowe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja7/Rozgrzewka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja7/TabliczkaMnozenia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja7/ZgadnijLiczbe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja8/ListaObecnosci.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja8/Tablice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/out/production/Cwiczenie4/pl/am/podstawy/lekcja9/Malpa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/plik.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja1/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja10/FunkcjaKwadratowa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja10/MiejscaZerowe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja11/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja12/Rekurencja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja12/Silnia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja13/Odwroc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja13/TypString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja14/DodawanieUcznia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja14/ListaObecnosci1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja14/Pliki.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja15/Odwroc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja15/Trojkat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja2/TypyZmiennych.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja3/KtoTy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja3/OperacjeNaZmiennych.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja3/PrymitywnyKalkulator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja4/Decyzja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja5/PrymitywnyKalkulator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja5/PrzelicznikCali.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja6/PetlaDoWhile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja6/PetlaFor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja6/PetlaWhile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja6/Suma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja6/ZasiegZmiennych.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja7/LiczbyLosowe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja7/Rozgrzewka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja7/TabliczkaMnozenia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja7/ZgadnijLiczbe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja8/ListaObecnosci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja8/Tablice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie4/src/pl/am/podstawy/lekcja9/Malpa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/Cwiczenie5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/out/production/Cwiczenie5/ShapesAbstractTest/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/out/production/Cwiczenie5/ShapesAbstractTest/Deltoid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/out/production/Cwiczenie5/ShapesAbstractTest/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/out/production/Cwiczenie5/ShapesAbstractTest/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/out/production/Cwiczenie5/ShapesAbstractTest/Trapeze.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/out/production/Cwiczenie5/ShapesAbstractTest/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/ShapesAbstractTest/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/ShapesAbstractTest/Deltoid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/ShapesAbstractTest/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/ShapesAbstractTest/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/ShapesAbstractTest/Trapeze.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/ShapesAbstractTest/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/Zoo/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie5/src/Zoo/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/.idea/artifacts/Cwiczenie6_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/Cwiczenie6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Czas/Czas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Dziedziczenie/Figura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Dziedziczenie/Kolo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Dziedziczenie/Prostokat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Enum/Wyliczeniowy$DzienTygodnia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Enum/Wyliczeniowy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Figury/Kształty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Figury/Prostokat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Kolekcja/ArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Kolekcja2/Totek.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Kolekcja2/TotekTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Polimorfizm/Figura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Polimorfizm/FiguraTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Polimorfizm/Kolo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Polimorfizm/Prostokat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Przekazywanie/Przekazywanie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/RownanieKwadratowe/RownanieKwadratowe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/RownanieKwadratowe/TestRownania.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/SwitchCase/Kolory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/SwitchCase/Oceny.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Tablice/Koło.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Tablice/Tablice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Tablice/Tablice2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/Tablice/Tablice3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/out/production/Cwiczenie6/TryCatch/Dzielenie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/BigNum/BigNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/BigNum/Lotto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/BigNum/SilniaMala.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/BigNum/SilniaWielka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Czas/Czas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Dziedziczenie/Figura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Dziedziczenie/Kolo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Dziedziczenie/Prostokat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Enum/Wyliczeniowy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Figury/Kształty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Figury/Prostokat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Kolekcja/ArrayListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Kolekcja2/Totek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Kolekcja2/TotekTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Polimorfizm/Figura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Polimorfizm/FiguraTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Polimorfizm/Kolo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Polimorfizm/Prostokat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Przekazywanie/Przekazywanie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/RownanieKwadratowe/RownanieKwadratowe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/RownanieKwadratowe/TestRownania.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/SwitchCase/Kolory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/SwitchCase/Kolory2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/SwitchCase/Oceny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Tablice/Koło.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Tablice/Tablice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Tablice/Tablice2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/Tablice/Tablice3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie6/src/TryCatch/Dzielenie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie7/Cwiczenie7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie7/src/test/PersonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/Cwiczenie8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/out/production/Cwiczenie8/Bankomat/Konto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/out/production/Cwiczenie8/Dom/Domek.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/out/production/Cwiczenie8/Dom/Telewizor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/src/Bankomat/Bankomat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/src/Bankomat/Konto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/src/Dom/Domek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cwiczenie8/src/Dom/Telewizor.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2TT1YjHurJqJdqpbeIrq9GFe4Bp" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Asus/Desktop/Projekty/Java/Cwiczenie3 - String, StringBuilder",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac0253d1-d62b-463c-a0f8-14a9aecc1055" name="Changes" comment="" />
+      <created>1691052305450</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691052305450</updated>
+      <workItem from="1691052306513" duration="85000" />
+      <workItem from="1691052910096" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

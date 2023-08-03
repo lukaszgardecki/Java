@@ -1,0 +1,87 @@
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+import
+File name:
+F:\1. S  T  U  D  I  A\Æwiczenia z programowania\Java\Flashcards\Flashcards\task\src\flashcards\ppp.txt
+3 cards have been loaded.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+add
+The card:
+1
+The definition of the card:
+1
+The pair ("1":"1") has been added.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+add
+The card:
+dupa
+The definition of the card:
+dupa
+The pair ("dupa":"dupa") has been added.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+add
+The card:
+90
+The definition of the card:
+90
+The pair ("90":"90") has been added.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+add
+The card:
+Poland
+The definition of the card:
+Warsaw
+The pair ("Poland":"Warsaw") has been added.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+add
+The card:
+France
+The definition of the card:
+Paris
+The pair ("France":"Paris") has been added.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+ask
+How many times to ask?
+3
+Print the definition of "2":
+2
+Correct!
+Print the definition of "3":
+3
+Correct!
+Print the definition of "4":
+4
+Correct!
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+export
+File name:
+F:\1. S  T  U  D  I  A\Æwiczenia z programowania\Java\Flashcards\Flashcards\task\src\flashcards\ppp.txt
+8 cards have been saved.
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+ask
+How many times to ask?
+1
+Print the definition of "2":
+5
+Wrong. The right answer is "2".
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+ask
+How many times to ask?
+1
+Print the definition of "2":
+90
+Wrong. The right answer is "2", but your definition is correct for "90".
+
+Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):
+log
+File name:
+F:\1. S  T  U  D  I  A\Æwiczenia z programowania\Java\Flashcards\Flashcards\task\src\flashcards\log.txt
