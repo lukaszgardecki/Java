@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85108194-4721-484f-8f2b-c60be82be73f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/KalkulatorDziesietnyNaBinarny.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/out/production/KalkulatorDziesietnyNaBinarny/KalkulatorBinarny/Kalkulator1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/out/production/KalkulatorDziesietnyNaBinarny/KalkulatorBinarny/Kalkulator2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/src/KonwerterDziesietneNaBinarne/Konwerter1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KalkulatorDziesietnyNaBinarny/src/KonwerterDziesietneNaBinarne/Konwerter2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/LisM_Java.Cwiczenia_Praktyczne.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_10/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_11/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_12/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_13/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_14/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_15/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_16/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_20/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_27/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_29/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad2/_9/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad4/_2/Punkt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad4/_3/Punkt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad4/_4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/out/production/LisM_Java.Cwiczenia_Praktyczne/zad4/_4/Punkt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_10/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_11/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_12/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_13/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_14/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_15/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_16/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_20/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_27/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_29/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad2/_9/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad4/_2/Punkt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad4/_3/Punkt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad4/_4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LisM_Jaca.Cwiczenia_Praktyczne/src/zad4/_4/Punkt.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2TTZ9k1LnO6Qzkqm0RS26KUpe2l" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Asus/Desktop/Projekty/Java/_MINI_Programy/Cwiczenia_Kurs_BroCode/src/main/java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Asus\Desktop\Projekty\Java\_MINI_Programy\Cwiczenia_Kurs_BroCode\src\main\java" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85108194-4721-484f-8f2b-c60be82be73f" name="Changes" comment="" />
+      <created>1691068883330</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691068883330</updated>
+      <workItem from="1691068884340" duration="224000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
