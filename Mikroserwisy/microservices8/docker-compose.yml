@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  student-db:
+    image: postgres
+    container_name: student-db
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: students
+    ports:
+      - "5431:5432"
+
+  school-db:
+    image: postgres
+    container_name: school-db
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: schools
+    ports:
+      - "5432:5432"
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
