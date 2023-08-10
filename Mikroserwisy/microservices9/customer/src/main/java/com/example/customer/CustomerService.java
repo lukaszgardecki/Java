@@ -23,9 +23,7 @@ public class CustomerService {
         FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(savedCustomer.getId());
 
         if (fraudCheckResponse.isFraudster()) throw new IllegalStateException("fraudster");
-
         sendNotification(savedCustomer);
-
         return CustomerMapper.map(savedCustomer);
     }
 
