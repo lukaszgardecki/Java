@@ -1,0 +1,15 @@
+server:
+  port: 8761
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+spring:
+  application:
+    name: eureka-server
+
+#do zipkina ważne, żeby wyświetlał wszystkie info:
+management:
+  tracing:
+    sampling:
+      probability: 1.0

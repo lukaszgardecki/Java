@@ -13,3 +13,23 @@ spring:
       ddl-auto: update
     show-sql: true
 
+#RabbitMQ:
+  rabbitmq:
+    addresses: localhost:5672
+
+  profiles:
+    active: default
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
+#do zipkina ważne, żeby wyświetlał wszystkie info:
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
