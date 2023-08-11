@@ -3,4 +3,4 @@ chatgpt:
 #  model: gpt-4
   api:
     url: https://api.openai.com/v1/chat/completions
-    key: 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
+    key: API_KEY
