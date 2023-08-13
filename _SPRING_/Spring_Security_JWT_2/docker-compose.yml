@@ -1,13 +1,10 @@
 services:
-  postgres:
-    container_name: postgres
+  postgres-db:
+    container_name: postgres-db
     image: postgres
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: admin
-      PGDATA: /data/postgres
-    volumes:
-      - postgres:/data/postgres
     ports:
       - "5432:5432"
     networks:
