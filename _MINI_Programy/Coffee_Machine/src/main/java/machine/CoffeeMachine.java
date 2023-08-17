@@ -1,95 +1,101 @@
 package machine;
 
+import machine.components.*;
 import machine.drinks.Coffe;
 
 public class CoffeeMachine {
-    private int water = 400;
-    private int milk = 540;
-    private int beans = 120;
-    private int cups = 9;
-    private int money = 550;
+    private final Component water;
+    private final Component milk;
+    private final Component beans;
+    private final Component cups;
+    private final Component money;
 
     public CoffeeMachine() {
+        water = new Water(400);
+        milk = new Milk(540);
+        beans = new Beans(120);
+        cups = new Cups(9);
+        money = new Money(550);
     }
 
     public void addWater(int extraWater) {
-        water = water + extraWater;
+        water.add(extraWater);
     }
 
     public void addMilk(int extraMilk) {
-        milk = milk + extraMilk;
+        milk.add(extraMilk);
     }
 
     public void addBeans(int extraBeans) {
-        beans = beans + extraBeans;
+        beans.add(extraBeans);
     }
 
     public void addCups(int extraCups) {
-        cups = cups + extraCups;
+        cups.add(extraCups);
     }
 
     public void addMoney(int extraCash) {
-        money = money + extraCash;
+        money.add(extraCash);
     }
 
     public void subtractWater(int water) {
-        this.water = this.water - water;
+        this.water.subtract(water);
     }
 
     public void subtractMilk(int milk) {
-        this.milk = this.milk - milk;
+        this.milk.subtract(milk);
     }
 
     public void subtractBeans(int beans) {
-        this.beans = this.beans - beans;
+        this.beans.subtract(beans);
     }
 
     public void subtractCups(int cups) {
-        this.cups = this.cups - cups;
+        this.cups.subtract(cups);
     }
 
     public void subtractMoney(int cash) {
-        money = money - cash;
+        money.subtract(cash);
     }
 
     public int getWater() {
-        return water;
+        return water.getValue();
     }
 
     public int getMilk() {
-        return milk;
+        return milk.getValue();
     }
 
     public int getBeans() {
-        return beans;
+        return beans.getValue();
     }
 
     public int getCups() {
-        return cups;
+        return cups.getValue();
     }
 
     public int getMoney() {
-        return money;
+        return money.getValue();
     }
 
     public void takeMoney() {
-        money = 0;
+        money.setValue(0);
     }
 
     public boolean hasNotEnoughWaterToPrepare(Coffe coffe) {
-        return water < coffe.getAmountOfWater();
+        return water.getValue() < coffe.getAmountOfWater();
     }
 
     public boolean hasNotEnoughMilkToPrepare(Coffe coffe) {
-        return water < coffe.getAmountOfMilk();
+        return water.getValue() < coffe.getAmountOfMilk();
     }
 
     public boolean hasNotEnoughBeansToPrepare(Coffe coffe) {
-        return water < coffe.getAmountOfBeans();
+        return water.getValue() < coffe.getAmountOfBeans();
     }
 
     public boolean hasNoCups() {
-        return cups == 0;
+        return cups.getValue() == 0;
     }
 
     public void prepareDrink(Coffe coffee) {
@@ -104,11 +110,11 @@ public class CoffeeMachine {
     public String toString() {
         return String.format("""
                 The coffee machine has:
-                %d ml of water
-                %d ml of milk
-                %d g of coffee beans
-                %d disposable cups
-                $%d of money
+                %s ml of water
+                %s ml of milk
+                %s g of coffee beans
+                %s disposable cups
+                $%s of money
                 """,
                 water, milk, beans, cups, money
         );
