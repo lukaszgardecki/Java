@@ -63,19 +63,11 @@ public class AppController {
     }
 
     private void fill() {
-        printer.println("\nWrite how many ml of water you want to add:");
-        int addWater = reader.getInt();
-        printer.println("Write how many ml of milk you want to add:");
-        int addMilk = reader.getInt();
-        printer.println("Write how many grams of coffee beans you want to add:");
-        int addBeans = reader.getInt();
-        printer.println("Write how many disposable cups of coffee you want to add:");
-        int addCups = reader.getInt();
-
-        machine.addWater(addWater);
-        machine.addMilk(addMilk);
-        machine.addBeans(addBeans);
-        machine.addCups(addCups);
+        machine.getComponentList()
+               .forEach(c -> {
+                   printer.println("Write how many " + c.getUnit() + " of " + c.getName() + " you want to add:");
+                   c.add(reader.getInt());
+               });
     }
 
 
