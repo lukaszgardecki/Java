@@ -24,7 +24,7 @@ public class AppController {
     void mainLoop() {
         Option option;
         do {
-            printOptions();
+            printer.printOptions();
             option = getOption();
             switch (option) {
                 case EXIT -> exit();
@@ -34,13 +34,6 @@ public class AppController {
                 case REMAINING -> displaySupplies();
             }
         } while (option != Option.EXIT);
-    }
-
-    private void printOptions() {
-        printer.println("Choose an option:");
-        for (Option value : Option.values()) {
-            printer.println(value.toString());
-        }
     }
 
     private Option getOption() {

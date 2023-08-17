@@ -1,6 +1,7 @@
 package machine.io;
 
 import machine.CoffeeMachine;
+import machine.Option;
 
 public class Printer {
 
@@ -43,4 +44,10 @@ public class Printer {
         println(text);
     }
 
+    public void printOptions() {
+        println("Choose an option:");
+        for (Option value : Option.values()) {
+            println(value.toString());
+        }
+    }
 }
