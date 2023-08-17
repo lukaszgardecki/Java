@@ -93,15 +93,10 @@ public class AppController {
                 default -> printer.println("Wrong input!");
             }
         }
-
     }
 
     private void displaySupplies() {
         printer.println(machine);
-    }
-
-    private void displaySteps() {
-        printer.printSteps();
     }
 
     private void makeCoffee(Coffe coffee) {
