@@ -2,36 +2,42 @@ package machine;
 
 import machine.components.*;
 import machine.drinks.Coffe;
+import machine.exception.ComponentNotFoundException;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class CoffeeMachine {
-    private final Component water;
-    private final Component milk;
-    private final Component beans;
-    private final Component cups;
+    private final Set<Component> componentList = new LinkedHashSet<>();
     private final Component money;
 
     public CoffeeMachine() {
-        water = new Water(400);
-        milk = new Milk(540);
-        beans = new Beans(120);
-        cups = new Cups(9);
+        componentList.add(new Water(400));
+        componentList.add(new Milk(540));
+        componentList.add(new Beans(120));
+        componentList.add(new Cups(9));
         money = new Money(550);
     }
 
+    public Set<Component> getComponentList() {
+        return componentList;
+    }
+
     public void addWater(int extraWater) {
-        water.add(extraWater);
+        getComponent(Water.class).add(extraWater);
     }
 
     public void addMilk(int extraMilk) {
-        milk.add(extraMilk);
+        getComponent(Milk.class).add(extraMilk);
     }
 
     public void addBeans(int extraBeans) {
-        beans.add(extraBeans);
+        getComponent(Beans.class).add(extraBeans);
     }
 
     public void addCups(int extraCups) {
-        cups.add(extraCups);
+        getComponent(Cups.class).add(extraCups);
     }
 
     public void addMoney(int extraCash) {
@@ -39,19 +45,19 @@ public class CoffeeMachine {
     }
 
     public void subtractWater(int water) {
-        this.water.subtract(water);
+        getComponent(Water.class).subtract(water);
     }
 
     public void subtractMilk(int milk) {
-        this.milk.subtract(milk);
+        getComponent(Milk.class).subtract(milk);
     }
 
     public void subtractBeans(int beans) {
-        this.beans.subtract(beans);
+        getComponent(Beans.class).subtract(beans);
     }
 
     public void subtractCups(int cups) {
-        this.cups.subtract(cups);
+        getComponent(Cups.class).subtract(cups);
     }
 
     public void subtractMoney(int cash) {
@@ -59,19 +65,19 @@ public class CoffeeMachine {
     }
 
     public int getWater() {
-        return water.getValue();
+        return getComponent(Water.class).getValue();
     }
 
     public int getMilk() {
-        return milk.getValue();
+        return getComponent(Milk.class).getValue();
     }
 
     public int getBeans() {
-        return beans.getValue();
+        return getComponent(Beans.class).getValue();
     }
 
     public int getCups() {
-        return cups.getValue();
+        return getComponent(Cups.class).getValue();
     }
 
     public int getMoney() {
@@ -83,19 +89,19 @@ public class CoffeeMachine {
     }
 
     public boolean hasNotEnoughWaterToPrepare(Coffe coffe) {
-        return water.getValue() < coffe.getAmountOfWater();
+        return getComponent(Water.class).getValue() < coffe.getAmountOfWater();
     }
 
     public boolean hasNotEnoughMilkToPrepare(Coffe coffe) {
-        return water.getValue() < coffe.getAmountOfMilk();
+        return getComponent(Milk.class).getValue() < coffe.getAmountOfMilk();
     }
 
     public boolean hasNotEnoughBeansToPrepare(Coffe coffe) {
-        return water.getValue() < coffe.getAmountOfBeans();
+        return getComponent(Beans.class).getValue() < coffe.getAmountOfBeans();
     }
 
     public boolean hasNoCups() {
-        return cups.getValue() == 0;
+        return getComponent(Cups.class).getValue() == 0;
     }
 
     public void prepareDrink(Coffe coffee) {
@@ -108,15 +114,17 @@ public class CoffeeMachine {
 
     @Override
     public String toString() {
-        return String.format("""
-                The coffee machine has:
-                %s ml of water
-                %s ml of milk
-                %s g of coffee beans
-                %s disposable cups
-                $%s of money
-                """,
-                water, milk, beans, cups, money
-        );
+        String firstLine = "The coffee machine has:\n";
+        String componentsStr = componentList.stream()
+                .map(Component::toString)
+                .collect(Collectors.joining("\n"));
+        return firstLine + componentsStr + "\n" + money;
+    }
+
+    private Component getComponent(Class<?> clazzz) {
+        return componentList.stream()
+                .filter(el -> el.getClass().equals(clazzz))
+                .findFirst()
+                .orElseThrow(ComponentNotFoundException::new);
     }
 }
