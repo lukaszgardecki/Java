@@ -33,23 +33,23 @@ public class CoffeeMachine {
     }
 
     public void subtractWater(int water) {
-        this.water = this.water + water;
+        this.water = this.water - water;
     }
 
     public void subtractMilk(int milk) {
-        this.milk = this.milk + milk;
+        this.milk = this.milk - milk;
     }
 
     public void subtractBeans(int beans) {
-        this.beans = this.beans + beans;
+        this.beans = this.beans - beans;
     }
 
     public void subtractCups(int cups) {
-        this.cups = this.cups + cups;
+        this.cups = this.cups - cups;
     }
 
     public void subtractMoney(int cash) {
-        money = money + cash;
+        money = money - cash;
     }
 
     public int getWater() {

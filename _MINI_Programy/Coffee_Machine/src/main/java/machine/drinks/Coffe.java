@@ -1,12 +1,19 @@
 package machine.drinks;
 
 public abstract class Coffe {
-    protected String name;
-    protected int amountOfWater;
-    protected int amountOfMilk;
-    protected int amountOfBeans;
-    protected int price;
+    protected final String name;
+    protected final int amountOfWater;
+    protected final int amountOfMilk;
+    protected final int amountOfBeans;
+    protected final int price;
 
+    public Coffe(String name, int amountOfWater, int amountOfMilk, int amountOfBeans, int price) {
+        this.name = name;
+        this.amountOfWater = amountOfWater;
+        this.amountOfMilk = amountOfMilk;
+        this.amountOfBeans = amountOfBeans;
+        this.price = price;
+    }
 
     public String getName() {
         return name;
