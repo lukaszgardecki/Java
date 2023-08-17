@@ -16,8 +16,8 @@ public class AppController {
     private final CoffeeMachine machine;
 
     public AppController() {
-        this.reader = new DataReader();
         this.printer = new Printer();
+        this.reader = new DataReader(printer);
         this.machine = new CoffeeMachine();
     }
 
