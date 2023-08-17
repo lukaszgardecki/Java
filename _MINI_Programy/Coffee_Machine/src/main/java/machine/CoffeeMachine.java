@@ -99,4 +99,18 @@ public class CoffeeMachine {
         subtractCups(1);
         addMoney(coffee.getPrice());
     }
+
+    @Override
+    public String toString() {
+        return String.format("""
+                The coffee machine has:
+                %d ml of water
+                %d ml of milk
+                %d g of coffee beans
+                %d disposable cups
+                $%d of money
+                """,
+                water, milk, beans, cups, money
+        );
+    }
 }
