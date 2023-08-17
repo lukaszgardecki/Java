@@ -4,8 +4,11 @@ import machine.drinks.Cappuccino;
 import machine.drinks.Coffe;
 import machine.drinks.Espresso;
 import machine.drinks.Latte;
+import machine.exception.NoSuchOptionException;
 import machine.io.DataReader;
 import machine.io.Printer;
+
+import java.util.InputMismatchException;
 
 public class Application {
     private static DataReader reader = new DataReader();
@@ -13,39 +16,54 @@ public class Application {
     private static CoffeeMachine machine = new CoffeeMachine();
 
     public static void main(String[] args) {
-        while(true) {
-            printer.printActionMenu();
-            String action = reader.getString();
+        mainLoop();
+    }
 
-
-            if ("buy".equalsIgnoreCase(action)) {
-                action = "buy";
-            } else if ("fill".equalsIgnoreCase(action)) {
-                action = "fill";
-            } else if ("take".equalsIgnoreCase(action)) {
-                action = "take";
-            } else if ("remaining".equalsIgnoreCase(action)) {
-                action = "remaining";
-            } else if ("exit".equalsIgnoreCase(action)) {
-                action = "exit";
+    static void mainLoop() {
+        Option option;
+        do {
+            printOptions();
+            option = getOption();
+            switch (option) {
+                case EXIT -> exit();
+                case BUY -> buy();
+                case FILL -> fill();
+                case TAKE -> take();
+                case REMAINING -> displaySupplies();
             }
+        } while (option != Option.EXIT);
+    }
 
-            switch (action) {
-                case "buy" -> buy();
-                case "fill" -> fill();
-                case "take" -> take();
-                case "remaining" -> displaySupplies();
-                case "exit" -> {
-                    return;
-                }
-                default -> printer.println("Proszê wpisaæ poprawne polecenie!");
+    private static void printOptions() {
+        printer.println("Choose an option:");
+        for (Option value : Option.values()) {
+            printer.println(value.toString());
+        }
+    }
+
+    private static Option getOption() {
+        boolean optionOK = false;
+        Option option = null;
+        while (!optionOK) {
+            try {
+                option = Option.createFromInt(reader.getInt());
+                optionOK = true;
+            } catch (NoSuchOptionException e) {
+                printer.println(e.getMessage());
+            } catch (InputMismatchException e) {
+                printer.println("Wprowadzono wartoœæ, która nie jest liczb¹, podaj ponownie: ");
             }
         }
+        return option;
     }
 
     public static void take() {
         printer.printTakeMoneyMessage(machine.getMoney());
         machine.takeMoney();
+    }
+
+    public static void exit() {
+        printer.println("Bye bye!");
     }
 
     public static void fill() {

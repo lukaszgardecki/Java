@@ -20,10 +20,6 @@ public class Printer {
         System.out.printf(format, args);
     }
 
-    public void printActionMenu() {
-        println();
-        println("Write action (buy, fill, take, remaining, exit):");
-    }
 
     public void printTakeMoneyMessage(int moneyInMachine) {
         printf("\nI gave you $%d\n", moneyInMachine);
