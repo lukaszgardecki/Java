@@ -59,16 +59,16 @@ public class AppController {
         return option;
     }
 
-    public void take() {
+    private void take() {
         printer.printTakeMoneyMessage(machine.getMoney());
         machine.takeMoney();
     }
 
-    public void exit() {
+    private void exit() {
         printer.println("Bye bye!");
     }
 
-    public void fill() {
+    private void fill() {
         printer.println("\nWrite how many ml of water you want to add:");
         int addWater = reader.getInt();
         printer.println("Write how many ml of milk you want to add:");
@@ -85,7 +85,7 @@ public class AppController {
     }
 
 
-    public void buy() {
+    private void buy() {
         while (true) {
             printer.printBuyMessage();
             String choice = reader.getString();
@@ -103,15 +103,15 @@ public class AppController {
 
     }
 
-    public void displaySupplies() {
+    private void displaySupplies() {
         printer.println(machine);
     }
 
-    public void displaySteps() {
+    private void displaySteps() {
         printer.printSteps();
     }
 
-    public void makeCoffee(Coffe coffee) {
+    private void makeCoffee(Coffe coffee) {
         if (machine.hasNotEnoughWaterToPrepare(coffee)) {
             printer.println("Sorry, not enough water!");
         } else if (machine.hasNotEnoughMilkToPrepare(coffee)) {
