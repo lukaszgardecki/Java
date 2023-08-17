@@ -1,7 +1,9 @@
 package machine.components;
 
 public abstract class Component {
+    protected String name;
     private int value;
+    protected String unit;
 
     public Component(int value) {
         this.value = value;
@@ -19,12 +21,20 @@ public abstract class Component {
         return value;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
     public void setValue(int value) {
         this.value = value;
     }
 
     @Override
     public String toString() {
-        return String.valueOf(value);
+        return String.format("%s %s of %s", value, unit, name);
     }
 }
