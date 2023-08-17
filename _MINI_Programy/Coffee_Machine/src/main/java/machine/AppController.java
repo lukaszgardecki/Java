@@ -6,6 +6,7 @@ import machine.drinks.Espresso;
 import machine.drinks.Latte;
 import machine.exception.NoSuchOptionException;
 import machine.io.DataReader;
+import machine.io.Message;
 import machine.io.Printer;
 
 import java.util.InputMismatchException;
@@ -46,7 +47,7 @@ public class AppController {
             } catch (NoSuchOptionException e) {
                 printer.println(e.getMessage());
             } catch (InputMismatchException e) {
-                printer.println("Wprowadzono wartoœæ, która nie jest liczb¹, podaj ponownie: ");
+                printer.println(Message.INPUT_NOT_INT);
             }
         }
         return option;
