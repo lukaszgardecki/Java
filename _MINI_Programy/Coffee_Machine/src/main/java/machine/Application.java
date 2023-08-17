@@ -8,13 +8,9 @@ import machine.io.DataReader;
 import machine.io.Printer;
 
 public class Application {
-    private static int waterInMachine = 400;
-    private static int milkInMachine = 540;
-    private static int beansInMachine = 120;
-    private static int cupsInMachine = 9;
-    private static int moneyInMachine = 550;
     private static DataReader reader = new DataReader();
     private static Printer printer = new Printer();
+    private static CoffeeMachine machine = new CoffeeMachine();
 
     public static void main(String[] args) {
         while(true) {
@@ -48,8 +44,8 @@ public class Application {
     }
 
     public static void take() {
-        printer.printTakeMoneyMessage(moneyInMachine);
-        moneyInMachine = 0;
+        printer.printTakeMoneyMessage(machine.getMoney());
+        machine.takeMoney();
     }
 
     public static void fill() {
@@ -62,10 +58,10 @@ public class Application {
         printer.println("Write how many disposable cups of coffee you want to add:");
         int addCups = reader.getInt();
 
-        waterInMachine += addWater;
-        milkInMachine += addMilk;
-        beansInMachine += addBeans;
-        cupsInMachine += addCups;
+        machine.addWater(addWater);
+        machine.addMilk(addMilk);
+        machine.addBeans(addBeans);
+        machine.addCups(addCups);
     }
 
 
@@ -96,38 +92,19 @@ public class Application {
     }
 
     public static void makeCoffee(Coffe coffee) {
-        //PÓNIEJ USUN¥Æ I ZAMIENIEÆ NA 1 JE¯ELI MASZYNA BÊDZIE ROBIÆ TYLKO JEDN¥ KAWÊ
-        int howMuchCoffees = 1;
-
-        int milk = coffee.getAmountOfMilk();
-        int water = coffee.getAmountOfWater();
-        int beans = coffee.getAmountOfBeans();
-
-        if (milk == 0) {
-            milk = 1;
-        }
-
-        int coffiesOfWater = waterInMachine / water;
-        int coffiesOfMilk = milkInMachine / milk;
-        int coffiesOfBeans = beansInMachine / beans;
-        int coffiesOfCups = cupsInMachine / howMuchCoffees;
-        int amountOfAvailableCoffees = Math.min(Math.min(coffiesOfWater, coffiesOfMilk),Math.min(coffiesOfCups, coffiesOfBeans));
-
-        if (amountOfAvailableCoffees >= howMuchCoffees) {
-            printer.println("I have enough resources, making you a coffee!");
-            waterInMachine -= coffee.getAmountOfWater();
-            milkInMachine -= coffee.getAmountOfMilk();
-            beansInMachine -= coffee.getAmountOfBeans();
-            cupsInMachine--;
-            moneyInMachine += coffee.getPrice();
-        } else if (coffiesOfWater == 0) {
-                printer.println("Sorry, not enough water!");
-        } else if (coffiesOfMilk == 0) {
+        if (machine.hasNotEnoughWaterToPrepare(coffee)) {
+            printer.println("Sorry, not enough water!");
+        } else if (machine.hasNotEnoughMilkToPrepare(coffee)) {
             printer.println("Sorry, not enough milk!");
-        } else if (coffiesOfBeans == 0) {
+        } else if (machine.hasNotEnoughBeansToPrepare(coffee)) {
             printer.println("Sorry, not enough beans!");
-        } else if (cupsInMachine == 0) {
+        } else if (machine.hasNoCups()) {
             printer.println("Sorry, not enough cups!");
+        } else {
+            printer.println("I have enough resources, making you a coffee!");
+            printer.println("Preparing...");
+            machine.prepareDrink(coffee);
+            printer.println("Drink is ready!");
         }
     }
 }
