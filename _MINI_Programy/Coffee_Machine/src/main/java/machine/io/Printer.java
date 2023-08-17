@@ -1,5 +1,7 @@
 package machine.io;
 
+import machine.CoffeeMachine;
+
 public class Printer {
 
     public void println() {
@@ -9,6 +11,10 @@ public class Printer {
     public void println(String text) {
         System.out.println(text);
     }
+    public void println(CoffeeMachine machine) {
+        System.out.println(machine);
+    }
+
 
     public void printf(String format, Object... args) {
         System.out.printf(format, args);
@@ -41,16 +47,4 @@ public class Printer {
         println(text);
     }
 
-//    //drukowanie maszyny więc to powinno drukować maszynę!
-//    public void printSupplies() {
-//        String text = """
-//                The coffee machine has:
-//                %d ml of water
-//                %d ml of milk
-//                %d g of coffee beans
-//                %d disposable cups
-//                $%d of money
-//                """;
-//        printer.printf(text, waterInMachine, milkInMachine, beansInMachine, cupsInMachine, moneyInMachine);
-//    }
 }

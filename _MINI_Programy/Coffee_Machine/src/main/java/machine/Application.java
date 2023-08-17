@@ -84,7 +84,7 @@ public class Application {
     }
 
     public static void displaySupplies() {
-//        printer.printSupplies();
+        printer.println(machine);
     }
 
     public static void displaySteps() {
