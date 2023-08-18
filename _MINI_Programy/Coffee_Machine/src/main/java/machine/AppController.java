@@ -1,5 +1,6 @@
 package machine;
 
+import machine.components.Component;
 import machine.drinks.Cappuccino;
 import machine.drinks.Coffe;
 import machine.drinks.Espresso;
@@ -10,6 +11,7 @@ import machine.io.Message;
 import machine.io.Printer;
 
 import java.util.InputMismatchException;
+import java.util.List;
 
 public class AppController {
     private final DataReader reader;
@@ -93,19 +95,16 @@ public class AppController {
     }
 
     private void makeCoffee(Coffe coffee) {
-        if (machine.hasNotEnoughWaterToPrepare(coffee)) {
-            printer.println("Sorry, not enough water!");
-        } else if (machine.hasNotEnoughMilkToPrepare(coffee)) {
-            printer.println("Sorry, not enough milk!");
-        } else if (machine.hasNotEnoughBeansToPrepare(coffee)) {
-            printer.println("Sorry, not enough beans!");
-        } else if (machine.hasNoCups()) {
-            printer.println("Sorry, not enough cups!");
-        } else {
+        List<Component> missingSupplies = machine.getMissingSupplies(coffee);
+        if (missingSupplies.isEmpty()) {
             printer.println("I have enough resources, making you a coffee!");
             printer.println("Preparing...");
             machine.prepareDrink(coffee);
             printer.println("Drink is ready!");
+        } else {
+            missingSupplies.forEach(el ->
+                    printer.printf(Message.MISSING_COMPONENT, el.getName())
+            );
         }
     }
 }
