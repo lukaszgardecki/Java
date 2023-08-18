@@ -61,17 +61,16 @@ public class AppController {
     }
 
     private void exit() {
-        printer.println("Bye bye!");
+        printer.println(Message.END_PROGRAM);
     }
 
     private void fill() {
         machine.getComponentList()
                .forEach(c -> {
-                   printer.println("Write how many " + c.getUnit() + " of " + c.getName() + " you want to add:");
+                   printer.printf(Message.ADD_COMPONENT, c.getUnit(), c.getName());
                    c.add(reader.getInt());
                });
     }
-
 
     private void buy() {
         while (true) {
