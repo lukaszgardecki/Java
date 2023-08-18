@@ -88,27 +88,12 @@ public class CoffeeMachine {
         money.setValue(0);
     }
 
-    public boolean hasNotEnoughWaterToPrepare(Coffe coffe) {
-        return getComponent(Water.class).getValue() < coffe.getAmountOfWater();
-    }
-
-    public boolean hasNotEnoughMilkToPrepare(Coffe coffe) {
-        return getComponent(Milk.class).getValue() < coffe.getAmountOfMilk();
-    }
-
-    public boolean hasNotEnoughBeansToPrepare(Coffe coffe) {
-        return getComponent(Beans.class).getValue() < coffe.getAmountOfBeans();
-    }
-
-    public boolean hasNoCups() {
-        return getComponent(Cups.class).getValue() == 0;
-    }
-
     public void prepareDrink(Coffe coffee) {
-        subtractWater(coffee.getAmountOfWater());
-        subtractMilk(coffee.getAmountOfMilk());
-        subtractBeans(coffee.getAmountOfBeans());
-        subtractCups(1);
+        coffee.getIngredients()
+              .forEach(com -> getComponent(com.getClass())
+                      .subtract(com.getValue()
+                      )
+        );
         addMoney(coffee.getPrice());
     }
 
