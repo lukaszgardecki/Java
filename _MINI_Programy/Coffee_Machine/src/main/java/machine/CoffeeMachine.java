@@ -5,6 +5,7 @@ import machine.drinks.Coffe;
 import machine.exception.ComponentNotFoundException;
 
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -104,6 +105,12 @@ public class CoffeeMachine {
                 .map(Component::toString)
                 .collect(Collectors.joining("\n"));
         return firstLine + componentsStr + "\n" + money;
+    }
+
+    public List<Component> getMissingSupplies(Coffe coffee) {
+        return coffee.getIngredients().stream()
+                .filter(com -> getComponent(com.getClass()).getValue() < com.getValue())
+                .toList();
     }
 
     private Component getComponent(Class<?> clazzz) {
