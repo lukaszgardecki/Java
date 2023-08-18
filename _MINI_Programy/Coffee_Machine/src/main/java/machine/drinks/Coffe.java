@@ -1,37 +1,32 @@
 package machine.drinks;
 
-public abstract class Coffe {
-    protected final String name;
-    protected final int amountOfWater;
-    protected final int amountOfMilk;
-    protected final int amountOfBeans;
-    protected final int price;
+import machine.components.Component;
+import machine.exception.ComponentNotFoundException;
 
-    public Coffe(String name, int amountOfWater, int amountOfMilk, int amountOfBeans, int price) {
-        this.name = name;
-        this.amountOfWater = amountOfWater;
-        this.amountOfMilk = amountOfMilk;
-        this.amountOfBeans = amountOfBeans;
-        this.price = price;
-    }
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public abstract class Coffe {
+    protected String name;
+    protected Set<Component> ingredients = new LinkedHashSet<>();
+    protected int price;
 
     public String getName() {
         return name;
     }
 
-    public int getAmountOfWater() {
-        return amountOfWater;
-    }
-
-    public int getAmountOfMilk() {
-        return amountOfMilk;
-    }
-
-    public int getAmountOfBeans() {
-        return amountOfBeans;
+    public Set<Component> getIngredients() {
+        return ingredients;
     }
 
     public int getPrice() {
         return price;
+    }
+
+    public Component getComponent(Class<?> clazzz) {
+        return ingredients.stream()
+                .filter(el -> el.getClass().equals(clazzz))
+                .findFirst()
+                .orElseThrow(ComponentNotFoundException::new);
     }
 }
