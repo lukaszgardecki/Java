@@ -12,8 +12,6 @@ public class BudgetController {
     private final Printer printer = new Printer();
     private final DataReader reader = new DataReader(printer);
 
-
-    private static final Scanner scanner = new Scanner(System.in);
     private static double balance = 0.00;
     static Map<Integer, TypesOfProducts> map = new HashMap<>();
     static TypesOfProducts products;
@@ -70,12 +68,12 @@ public class BudgetController {
     }
 
 //      1) Dodaj przych�d:
-    public static void addIncome() {
+    public void addIncome() {
         double income;
         while(true) {
             System.out.println("\nEnter income:");
             try {
-                income = Double.parseDouble(scanner.nextLine());
+                income = Double.parseDouble(reader.getString());
                 break;
             } catch (InputMismatchException | NumberFormatException ignored) {
             }
@@ -93,7 +91,7 @@ public class BudgetController {
                 showTypesOfPurchases2();
                 try {
                     //wybierz numer pozycji menu
-                    typeOfPurchase = Integer.parseInt(scanner.nextLine());
+                    typeOfPurchase = Integer.parseInt(reader.getString());
 
                     //if zale�ny od rozmiaru mapy, poniewa� ilo�� pozycji menu powinna by� uzale�niona od zawarto�ci mapy
                     if (typeOfPurchase > 0 && typeOfPurchase < map.size()) {
@@ -111,7 +109,7 @@ public class BudgetController {
             String x;
             while(true) {
                 System.out.println("\nEnter purchase name:");
-                x = scanner.nextLine();
+                x = reader.getString();
                 if(!x.isEmpty() && !x.isBlank()) break;
             }
 
@@ -119,7 +117,7 @@ public class BudgetController {
                 System.out.println("Enter its price:");
                 try {
 
-                    price = Double.parseDouble(scanner.nextLine());
+                    price = Double.parseDouble(reader.getString());
 
                     System.out.println("Purchase was added!");
                     break;
@@ -159,7 +157,7 @@ public class BudgetController {
                 try {
                     //wy�wietl menu
                     showTypesOfPurchases3();
-                    choice = Integer.parseInt(scanner.nextLine());
+                    choice = Integer.parseInt(reader.getString());
 
                     if (choice > 0 && choice <= map.size()) {
                         break;
@@ -333,7 +331,7 @@ public class BudgetController {
     public void analyze() {
         while(true) {
             showSortTypes();
-            String action = scanner.nextLine();
+            String action = reader.getString();
             switch (action) {
                 case "1":
                     sortAllPurchases();
@@ -393,7 +391,7 @@ public class BudgetController {
         System.out.println("\nChoose the type of purchase");
         showTypesOfPurchases();
         while (true) {
-            String action = scanner.nextLine();
+            String action = reader.getString();
             switch (action) {
                 case "1":
                     TypesOfProducts el = map.get(1);
