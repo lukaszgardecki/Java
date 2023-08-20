@@ -45,32 +45,28 @@ public class BudgetController {
     }
 
 //      Poka� podmenu nr 1:
-    public static void showTypesOfPurchases1() {
+    public void showTypesOfPurchases() {
         for (Map.Entry<Integer, TypesOfProducts> el : map.entrySet()) {
             if(el.getValue().equals(TypesOfProducts.ALL)) return;
             System.out.printf("%d) %s\n", el.getKey(), el.getValue().getName());
         }
     }
 //      Poka� podmenu nr 2:
-    public static void showTypesOfPurchases2() {
+    public void showTypesOfPurchases2() {
         System.out.println("\nChoose the type of purchase");
-        showTypesOfPurchases1();
+        showTypesOfPurchases();
         System.out.printf("%d) Back\n", map.size());
     }
 //      Poka� podmenu nr 3:
-    public static void showTypesOfPurchases3() {
+    public void showTypesOfPurchases3() {
         System.out.println("\nChoose the type of purchases");
-        showTypesOfPurchases1();
+        showTypesOfPurchases();
         System.out.printf("%d) All\n", map.size());
         System.out.printf("%d) Back\n", map.size()+1);
     }
-//      Poka� podmenu nr 4:
-    public static void showSortTypes() {
-        System.out.println("\nHow do you want to sort?");
-        System.out.println("1) Sort all purchases");
-        System.out.println("2) Sort by type");
-        System.out.println("3) Sort certain type");
-        System.out.println("4) Back");
+
+    public void showSortTypes() {
+        printer.showSortTypes();
     }
 
 //      1) Dodaj przych�d:
@@ -88,7 +84,7 @@ public class BudgetController {
         System.out.println("Income was added!");
     }
 //      2) Dodaj wydatki (zakupy, rozchody):
-    public static void addPurchase() {
+    public void addPurchase() {
         double price;
 
         while(true) {
@@ -151,7 +147,7 @@ public class BudgetController {
         }
     }
 //      3) Pokaz list� wydatk�w (zakup�w, rozchod�w):
-    public static void showListOfPurchases() {
+    public void showListOfPurchases() {
         while(true) {
             if (map.get(5).getBoughtProducts().size() == 0) {
                 System.out.println("\nThe purchase list is empty!");
@@ -334,7 +330,7 @@ public class BudgetController {
         }
     }
 //      7) Sortuj wybrane dane:
-    public static void analyze() {
+    public void analyze() {
         while(true) {
             showSortTypes();
             String action = scanner.nextLine();
@@ -393,9 +389,9 @@ public class BudgetController {
         System.out.println(temp);
     }
 //      Poka� list� wydatk�w danej kategorii, posortowan� malej�co
-    public static void sortCertainType() {
+    public void sortCertainType() {
         System.out.println("\nChoose the type of purchase");
-        showTypesOfPurchases1();
+        showTypesOfPurchases();
         while (true) {
             String action = scanner.nextLine();
             switch (action) {
