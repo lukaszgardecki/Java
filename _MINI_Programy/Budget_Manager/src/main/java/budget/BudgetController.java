@@ -15,7 +15,7 @@ public class BudgetController {
     private static double balance = 0.00;
     static Map<Integer, TypesOfProducts> map = new HashMap<>();
     static TypesOfProducts products;
-    static String filePath = "purchases.txt";
+//    static String filePath = "purchases.txt";
     //static String filePath = "F:\\1. S  T  U  D  I  A\\�wiczenia z programowania\\Java\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt";
 
     public void mainLoop() {
@@ -188,54 +188,7 @@ public class BudgetController {
     public static void showBalance() {
         System.out.printf("\nBalance: $%.2f\n", balance);
     }
-//      5) Zapisz dane do pliku tekstowego:
-    public static void saveFile() {
-        File file = new File(filePath);
 
-        try (FileWriter writer = new FileWriter(file)) {
-
-            writer.write(String.format("Balance: $%.2f\n\n", balance));
-
-            for(Map.Entry<Integer, TypesOfProducts> el : map.entrySet()) {
-                int num = el.getKey();
-
-                String nameOfCategory = el.getValue().getName();
-                double sumOfCategory = el.getValue().getSum();
-                ArrayList<String> list = el.getValue().getBoughtProducts();
-
-                StringBuilder sb = new StringBuilder();
-
-                if (list.size() == 0) {
-                    String t = "\tThe purchase list is empty!\n";
-                    sb = new StringBuilder(t);
-                } else {
-                    for (String pos : list) {
-
-                        int indexLast$ = pos.lastIndexOf("$");
-
-                        String name = pos.substring(0,indexLast$);
-                        String price = pos.substring(indexLast$ + 1);
-                        String designOfPos = String.format("\t- %40s $%s\n", name, price);
-                        sb.append(designOfPos);
-                    }
-                }
-
-                String listOfPurchases = sb.toString();
-
-                String text = String.format(
-                        "%d %s:"     +"\n"+
-                        "%s"         +
-                        "--------------------------------------------------------\n" +
-                        "\t%41s  $%.2f\n\n"
-                , num, nameOfCategory,listOfPurchases,"TOTAL:", sumOfCategory);
-                writer.write(text);
-            }
-
-            System.out.println("\nPurchases were saved!");
-        } catch (IOException e) {
-            System.out.println("File not found!");
-        }
-    }
 //      6) Pobierz dane z pliku tekstowego:
     public static void loadFile() {
         File file = new File(filePath);
