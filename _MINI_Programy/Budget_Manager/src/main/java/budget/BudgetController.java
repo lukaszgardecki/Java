@@ -7,6 +7,7 @@ import static budget.Option.*;
 public class BudgetController {
     private final Printer printer = new Printer();
     private final DataReader reader = new DataReader(printer);
+    private final Sorter sorter = new Sorter();
 
     private double balance = 0.00;
     private final Map<Integer, TypesOfProducts> map = new HashMap<>();
@@ -248,7 +249,7 @@ public class BudgetController {
     }
 //      Poka� list� wydatk�w danej kategorii, posortowan� malej�co
     public void sortCertainType() {
-        System.out.println("\nChoose the type of purchase");
+        printer.println("\nChoose the type of purchase");
         showTypesOfPurchases();
         while (true) {
             String action = reader.getString();
@@ -280,44 +281,22 @@ public class BudgetController {
     }
 
 //      Wy�wietlanie zawarto�ci tablicy w kolejno�ci malej�cej
-    public static void sortingDesc (ArrayList<String> list, double total, String name) {
+    public void sortingDesc (ArrayList<String> list, double total, String name) {
         //je�eli lista pusta to wy�wietl komunikat i wyjd�
         if (list.isEmpty()) {
-            System.out.println("\nThe purchase list is empty!");
+            printer.println("\nThe purchase list is empty!");
             return;
         } else if (list.size() == 1) {
-            System.out.println(list);
-            System.out.printf("Total: $%.2f\n", total);
+            printer.println(list);
+            printer.printf("Total: $%.2f\n", total);
             return;
         }
 
-        // --- BUBLE SORT
-        //je�eli lista posiada min. 2 elementy to wykonaj sortowanie
-        for (int i = 0; i < list.size() - 1; i++ ) {
-            for (int j = 0; j < list.size() - i - 1; j++) {
-                String el1 = list.get(j);
-                String el2 = list.get(j+1);
-                String p1 = el1.substring(el1.lastIndexOf("$") + 1);
-                String p2 = el2.substring(el2.lastIndexOf("$") + 1);
+        sorter.doBubbleSort(list);
 
-                if (p1.contains(",")) p1 = p1.replace(",", ".");
-                if (p2.contains(",")) p2 = p2.replace(",", ".");
-
-                double price1 = Double.parseDouble(p1);
-                double price2 = Double.parseDouble(p2);
-
-                //TO SORT IN ASCENDING ORDER, CHANGE < TO >
-                if (price1 < price2) {
-                    String temp = list.get(j);
-                    list.set(j, list.get(j+1));
-                    list.set(j+1, temp);
-                }
-            }
-        }
-
-        System.out.printf("\n%s:\n", name);
+        printer.printf("\n%s:\n", name);
         list.forEach(System.out::println);
-        System.out.printf("Total sum: $%.2f\n", total);
+        printer.printf("Total sum: $%.2f\n", total);
     }
 
 
