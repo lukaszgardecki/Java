@@ -29,12 +29,22 @@ public class DataReader {
                 if (num < 0) throw new InputMismatchException();
                 intOK = true;
             } catch (InputMismatchException e) {
-                printer.println(Message.INCORRECT_INT);
+                printer.println(Message.INCORRECT_VALUE);
+            } finally {
+                scanner.nextLine();
             }
         } while (!intOK);
         return num;
     }
 
+
+    public double getDouble() {
+        try {
+            return scanner.nextDouble();
+        } finally {
+            scanner.nextLine();
+        }
+    }
 
     public Option getOptionFromInt() {
         Option option;
@@ -48,7 +58,7 @@ public class DataReader {
         return option;
     }
 
-    public void saveFile() {
+    public void saveFile(double balance, Map<Integer, TypesOfProducts> map) {
         File file = new File(filePath);
 
         try (FileWriter writer = new FileWriter(file)) {
@@ -96,7 +106,7 @@ public class DataReader {
         }
     }
 
-    public void loadFile() {
+    public void loadFile(double balance, Map<Integer, TypesOfProducts> map) {
         File file = new File(filePath);
         try (Scanner importScanner = new Scanner(file)) {
 

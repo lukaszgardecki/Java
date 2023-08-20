@@ -33,7 +33,7 @@ public class Printer {
     public void showSortTypes() {
         String text = """
                 How do you want to sort?
-                1) Sort all purchases           
+                1) Sort all purchases
                 2) Sort by type
                 3) Sort certain type
                 4) Back

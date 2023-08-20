@@ -1,9 +1,5 @@
 package budget;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.*;
 
 import static budget.Option.*;
@@ -12,14 +8,13 @@ public class BudgetController {
     private final Printer printer = new Printer();
     private final DataReader reader = new DataReader(printer);
 
-    private static double balance = 0.00;
-    static Map<Integer, TypesOfProducts> map = new HashMap<>();
+    private double balance = 0.00;
+    private final Map<Integer, TypesOfProducts> map = new HashMap<>();
     static TypesOfProducts products;
-//    static String filePath = "purchases.txt";
     //static String filePath = "F:\\1. S  T  U  D  I  A\\�wiczenia z programowania\\Java\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt";
 
     public void mainLoop() {
-        TypesOfProducts.createHashMap();
+        TypesOfProducts.createHashMap(map);
         Option option;
         do {
             printer.displayMenu();
@@ -43,11 +38,11 @@ public class BudgetController {
     }
 
     private void saveFile() {
-        reader.saveFile();
+        reader.saveFile(balance, map);
     }
 
     private void loadFile() {
-        reader.loadFile();
+        reader.loadFile(balance, map);
     }
 
 //      Poka� podmenu nr 1:
@@ -75,19 +70,20 @@ public class BudgetController {
         printer.showSortTypes();
     }
 
-//      1) Dodaj przych�d:
     public void addIncome() {
-        double income;
-        while(true) {
-            System.out.println("\nEnter income:");
+        double income = 0.0;
+        boolean incomeOK = false;
+        do {
+            printer.println(Message.ADD_INCOME);
             try {
-                income = Double.parseDouble(reader.getString());
-                break;
-            } catch (InputMismatchException | NumberFormatException ignored) {
+                income = reader.getDouble();
+                incomeOK = true;
+            } catch (IllegalArgumentException e) {
+                printer.println(Message.INCORRECT_VALUE);
             }
-        }
+        } while (!incomeOK);
         balance += income;
-        System.out.println("Income was added!");
+        printer.println(Message.INCOME_ADDED);
     }
 //      2) Dodaj wydatki (zakupy, rozchody):
     public void addPurchase() {
@@ -193,42 +189,34 @@ public class BudgetController {
         }
     }
 //      4) Poka� stan konta:
-    public static void showBalance() {
-        System.out.printf("\nBalance: $%.2f\n", balance);
+    public void showBalance() {
+        printer.printf("\nBalance: $%.2f\n", balance);
     }
 
-//      6) Pobierz dane z pliku tekstowego:
 
 //      7) Sortuj wybrane dane:
     public void analyze() {
-        while(true) {
+        String action;
+        do {
             showSortTypes();
-            String action = reader.getString();
+            action = reader.getString();
             switch (action) {
-                case "1":
-                    sortAllPurchases();
-                    break;
-                case "2":
-                    sortByType();
-                    break;
-                case "3":
-                    sortCertainType();
-                    break;
-                case "4":
-                    return;
-                default:
-                    break;
+                case "1" -> sortAllPurchases();
+                case "2" -> sortByType();
+                case "3" -> sortCertainType();
+                default -> {
+                }
             }
-        }
+        } while (!action.equals("4"));
     }
 
 //      Poka� list� wszystkich wydatk�w, posortowan� malej�co
-    public static void sortAllPurchases() {
+    public void sortAllPurchases() {
         ArrayList<String> allList = map.get(5).getBoughtProducts();
         sortingDesc(allList, map.get(5).getSum(), map.get(5).getName());
     }
 //      Poka� list� kategorii, posortowan� malej�co
-    public static void sortByType() {
+    public void sortByType() {
         SortedMap<Double, String> sortedMap = new TreeMap<>(Collections.reverseOrder());
 
         if (map.get(5).getSum() == 0) {
@@ -265,24 +253,28 @@ public class BudgetController {
         while (true) {
             String action = reader.getString();
             switch (action) {
-                case "1":
+                case "1" -> {
                     TypesOfProducts el = map.get(1);
                     sortingDesc(el.getBoughtProducts(), el.getSum(), el.getName());
                     return;
-                case "2":
+                }
+                case "2" -> {
                     TypesOfProducts el1 = map.get(2);
                     sortingDesc(el1.getBoughtProducts(), el1.getSum(), el1.getName());
                     return;
-                case "3":
+                }
+                case "3" -> {
                     TypesOfProducts el2 = map.get(3);
                     sortingDesc(el2.getBoughtProducts(), el2.getSum(), el2.getName());
                     return;
-                case "4":
+                }
+                case "4" -> {
                     TypesOfProducts el3 = map.get(4);
                     sortingDesc(el3.getBoughtProducts(), el3.getSum(), el3.getName());
                     return;
-                default:
-                    break;
+                }
+                default -> {
+                }
             }
         }
     }

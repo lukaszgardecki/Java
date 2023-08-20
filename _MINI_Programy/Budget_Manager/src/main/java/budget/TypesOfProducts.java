@@ -1,5 +1,6 @@
 package budget;
 import java.util.ArrayList;
+import java.util.Map;
 
 public enum TypesOfProducts {
 
@@ -19,12 +20,12 @@ public enum TypesOfProducts {
         this.boughtProducts = boughtProducts;
     }
 
-    public static void createHashMap() {
-        BudgetController.map.put(1, TypesOfProducts.FOOD);
-        BudgetController.map.put(2, TypesOfProducts.CLOTHES);
-        BudgetController.map.put(3, TypesOfProducts.ENTERTAINMENT);
-        BudgetController.map.put(4, TypesOfProducts.OTHER);
-        BudgetController.map.put(5, TypesOfProducts.ALL);
+    public static void createHashMap(Map<Integer, TypesOfProducts> map) {
+        map.put(1, TypesOfProducts.FOOD);
+        map.put(2, TypesOfProducts.CLOTHES);
+        map.put(3, TypesOfProducts.ENTERTAINMENT);
+        map.put(4, TypesOfProducts.OTHER);
+        map.put(5, TypesOfProducts.ALL);
     }
 
     public String getName() {
