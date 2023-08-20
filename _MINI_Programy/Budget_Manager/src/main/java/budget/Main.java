@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.util.*;
 
 public class Main {
+    private final Printer printer = new Printer();
+
+
     private static final Scanner scanner = new Scanner(System.in);
     private static double balance = 0.00;
     static Map<Integer, TypesOfProducts> map = new HashMap<>();
@@ -20,39 +23,26 @@ public class Main {
     public static void play() {
         //add default values to the HashMap:
         TypesOfProducts.createHashMap();
-
-        while(true) {
+        String action;
+        do {
             displayMenu();
-            String action = scanner.nextLine();
+            action = scanner.nextLine();
             switch (action) {
-                case "0":
-                    System.out.println("\nBye!");
-                    return;
-                case "1":
-                    addIncome();
-                    break;
-                case "2":
-                    addPurchase();
-                    break;
-                case "3":
-                    showListOfPurchases();
-                    break;
-                case "4":
-                    showBalance();
-                    break;
-                case "5":
-                    saveFile();
-                    break;
-                case "6":
-                    loadFile();
-                    break;
-                case "7":
-                    analyze();
-                    break;
-                default:
-                    System.out.println("\nIncorrect operation. Try again!");
+                case "0" -> exit();
+                case "1" -> addIncome();
+                case "2" -> addPurchase();
+                case "3" -> showListOfPurchases();
+                case "4" -> showBalance();
+                case "5" -> saveFile();
+                case "6" -> loadFile();
+                case "7" -> analyze();
+                default -> System.out.println(Message.INCORRECT_INPUT);
             }
-        }
+        } while (action != Option.EXIT);
+    }
+
+    private void exit() {
+        printer.println(Message.EXIT);
     }
 
     //      Poka� menu g��wne:
