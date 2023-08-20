@@ -1,5 +1,8 @@
 package budget;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class Printer {
 
 
@@ -15,17 +18,11 @@ public class Printer {
         System.out.format(format, args);
     }
 
-    public static void displayMenu() {
-
-
-        System.out.println("\nChoose your action:");
-        System.out.println("1) Add income");
-        System.out.println("2) Add purchase");
-        System.out.println("3) Show list of purchases");
-        System.out.println("4) Balance");
-        System.out.println("5) Save");
-        System.out.println("6) Load");
-        System.out.println("7) Analyze (Sort)");
-        System.out.println("0) Exit");
+    public void displayMenu() {
+        String firstLine = "Choose your action:";
+        String content = Arrays.stream(Option.values())
+                .map(Option::toString)
+                .collect(Collectors.joining("\n"));
+        println(firstLine + content);
     }
 }

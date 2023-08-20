@@ -18,11 +18,11 @@ public class Main {
     //static String filePath = "F:\\1. S  T  U  D  I  A\\�wiczenia z programowania\\Java\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt";
 
     public void mainLoop() {
-       
+
         TypesOfProducts.createHashMap();
         String action;
         do {
-            displayMenu();
+            printer.displayMenu();
             action = scanner.nextLine();
             switch (action) {
                 case "0" -> exit();
