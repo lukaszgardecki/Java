@@ -8,8 +8,9 @@ import java.util.*;
 
 import static budget.Option.*;
 
-public class Main {
+public class BudgetController {
     private final Printer printer = new Printer();
+    private final DataReader reader = new DataReader(printer);
 
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -20,13 +21,12 @@ public class Main {
     //static String filePath = "F:\\1. S  T  U  D  I  A\\�wiczenia z programowania\\Java\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt";
 
     public void mainLoop() {
-
         TypesOfProducts.createHashMap();
-        String action;
+        Option option;
         do {
             printer.displayMenu();
-            action = scanner.nextLine();
-            switch (action) {
+            option = reader.getOptionFromInt();
+            switch (option) {
                 case EXIT -> exit();
                 case ADD_INCOME -> addIncome();
                 case ADD_PURCHASE -> addPurchase();
@@ -37,14 +37,12 @@ public class Main {
                 case ANALYZE -> analyze();
                 default -> System.out.println(Message.INCORRECT_INPUT);
             }
-        } while (action != EXIT);
+        } while (option != EXIT);
     }
 
     private void exit() {
         printer.println(Message.EXIT);
     }
-
-    //      Poka� menu g��wne:
 
 //      Poka� podmenu nr 1:
     public static void showTypesOfPurchases1() {

@@ -19,7 +19,7 @@ public class Printer {
     }
 
     public void displayMenu() {
-        String firstLine = "Choose your action:";
+        String firstLine = "Choose your action:\n";
         String content = Arrays.stream(Option.values())
                 .map(Option::toString)
                 .collect(Collectors.joining("\n"));
