@@ -17,8 +17,8 @@ public class Main {
     static String filePath = "purchases.txt";
     //static String filePath = "F:\\1. S  T  U  D  I  A\\�wiczenia z programowania\\Java\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt";
 
-    public static void play() {
-        //add default values to the HashMap:
+    public void mainLoop() {
+       
         TypesOfProducts.createHashMap();
         String action;
         do {
