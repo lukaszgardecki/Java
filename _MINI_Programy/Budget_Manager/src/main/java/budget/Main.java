@@ -6,6 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+import static budget.Option.*;
+
 public class Main {
     private final Printer printer = new Printer();
 
@@ -25,17 +27,17 @@ public class Main {
             printer.displayMenu();
             action = scanner.nextLine();
             switch (action) {
-                case "0" -> exit();
-                case "1" -> addIncome();
-                case "2" -> addPurchase();
-                case "3" -> showListOfPurchases();
-                case "4" -> showBalance();
-                case "5" -> saveFile();
-                case "6" -> loadFile();
-                case "7" -> analyze();
+                case EXIT -> exit();
+                case ADD_INCOME -> addIncome();
+                case ADD_PURCHASE -> addPurchase();
+                case SHOW_PURCHASES -> showListOfPurchases();
+                case BALANCE -> showBalance();
+                case SAVE -> saveFile();
+                case LOAD -> loadFile();
+                case ANALYZE -> analyze();
                 default -> System.out.println(Message.INCORRECT_INPUT);
             }
-        } while (action != Option.EXIT);
+        } while (action != EXIT);
     }
 
     private void exit() {
