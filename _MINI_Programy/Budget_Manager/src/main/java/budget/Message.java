@@ -7,4 +7,5 @@ public class Message {
     public static final String BAD_OPT_NUM = "Value does not exist. Enter the correct value!";
     public static final String ADD_INCOME = "Enter income:";
     public static final String INCOME_ADDED = "Income was added!";
+    public static final String PURCHASE_LIST_EMPTY = "\nThe purchase list is empty!";
 }

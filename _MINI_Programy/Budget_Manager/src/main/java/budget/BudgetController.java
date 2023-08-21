@@ -284,7 +284,7 @@ public class BudgetController {
     public void sortingDesc (ArrayList<String> list, double total, String name) {
         //je�eli lista pusta to wy�wietl komunikat i wyjd�
         if (list.isEmpty()) {
-            printer.println("\nThe purchase list is empty!");
+            printer.println(Message.PURCHASE_LIST_EMPTY);
             return;
         } else if (list.size() == 1) {
             printer.println(list);
