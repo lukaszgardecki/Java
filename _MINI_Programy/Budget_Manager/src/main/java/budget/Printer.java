@@ -1,5 +1,6 @@
 package budget;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -26,9 +27,6 @@ public class Printer {
         println(firstLine + content);
     }
 
-    public void printTypesOfPurchases() {
-
-    }
 
     public void showSortTypes() {
         String text = """
@@ -39,5 +37,39 @@ public class Printer {
                 4) Back
                 """;
         println(text);
+    }
+
+    public void printAllBoughtProductsFrom(Budget budget) {
+        ArrayList<Product> allProductsInBudget =
+                budget.getProductType(ProductType.ALL).getBoughtProducts();
+
+        if (allProductsInBudget.size() == 0) {
+            println("\nThe purchase list is empty!");
+            return;
+        }
+
+        for (ProductType type : budget.getTypeList()) {
+            ArrayList<Product> products = type.getBoughtProducts();
+
+            if (products.size() != 0) {
+                String template = String.format("""
+                        %s:
+                        %s
+                        Total sum: $%.2f
+                        """,
+                        type.getName(),
+                        products.stream().map(Product::toString).collect(Collectors.joining("\n")),
+                        type.getTotalSum()
+                );
+                println(template);
+            }
+        }
+    }
+
+    public void printProductTypes() {
+        println("Choose a purchase type:");
+        Arrays.stream(ProductType.values())
+                .filter(type -> type != ProductType.ALL)
+                .forEach(this::println);
     }
 }
