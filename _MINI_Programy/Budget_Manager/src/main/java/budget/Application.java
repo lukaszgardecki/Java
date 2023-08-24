@@ -1,5 +1,8 @@
 package budget;
 
+import budget.controller.BudgetController;
+import budget.model.Budget;
+
 public class Application {
     public static final String TARGET_FILE_PATH = "src/main/resources/purchases.txt";
     public static void main(String[] args) {

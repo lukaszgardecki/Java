@@ -1,4 +1,9 @@
-package budget;
+package budget.io;
+
+import budget.Application;
+import budget.model.Budget;
+import budget.model.Product;
+import budget.model.ProductType;
 
 import java.io.File;
 import java.io.FileWriter;

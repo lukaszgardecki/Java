@@ -1,8 +1,18 @@
-package budget;
+package budget.controller;
+
+import budget.helper.Sorter;
+import budget.io.DataReader;
+import budget.io.DataWriter;
+import budget.io.Message;
+import budget.io.Printer;
+import budget.model.Budget;
+import budget.model.Option;
+import budget.model.Product;
+import budget.model.ProductType;
 
 import java.util.*;
 
-import static budget.Option.EXIT;
+import static budget.model.Option.EXIT;
 
 public class BudgetController {
     private final Printer printer;

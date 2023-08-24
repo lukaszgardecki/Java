@@ -1,4 +1,4 @@
-package budget;
+package budget.model;
 
 public class Product {
     private final String name;

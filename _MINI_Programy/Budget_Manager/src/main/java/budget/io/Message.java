@@ -1,4 +1,4 @@
-package budget;
+package budget.io;
 
 public class Message {
     public static final String INCORRECT_INPUT = "Incorrect operation. Try again!";

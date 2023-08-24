@@ -1,4 +1,6 @@
-package budget;
+package budget.helper;
+
+import budget.model.Product;
 
 import java.util.List;
 

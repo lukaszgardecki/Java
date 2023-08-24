@@ -1,4 +1,10 @@
-package budget;
+package budget.io;
+
+import budget.*;
+import budget.model.Budget;
+import budget.model.Option;
+import budget.model.Product;
+import budget.model.ProductType;
 
 import java.io.File;
 import java.io.FileNotFoundException;

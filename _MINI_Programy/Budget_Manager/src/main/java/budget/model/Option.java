@@ -1,4 +1,4 @@
-package budget;
+package budget.model;
 
 public enum Option {
     ADD_INCOME(1, "Add income"),

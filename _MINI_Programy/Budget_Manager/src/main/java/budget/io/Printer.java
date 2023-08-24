@@ -1,4 +1,9 @@
-package budget;
+package budget.io;
+
+import budget.model.Budget;
+import budget.model.Option;
+import budget.model.Product;
+import budget.model.ProductType;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package budget;
+package budget.model;
 
 import java.util.ArrayList;
 
