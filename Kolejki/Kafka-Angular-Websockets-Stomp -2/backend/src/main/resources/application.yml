@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: backend
+  kafka:
+    topic:
+      demo: topic
+    bootstrap-servers: localhost:9092
+
+  datasource:
+    url: jdbc:h2:mem:test
+stomp:
+  topic:
+    topic
+

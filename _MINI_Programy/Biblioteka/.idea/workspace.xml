@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ae0eeef-ad20-4b61-8cce-86844c0fd73e" name="Changes" comment="Create mini library management system" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WLrbrc54s4MLzitD7e4ljkHTZi" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/Desktop/Projekty/Java/_MINI_Programy/Biblioteka&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;db0d2634d6763046b332f4d35ab53405&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.biblioteka.book" />
+      <recent name="com.example.biblioteka.account" />
+      <recent name="com.example.biblioteka.bookreservation" />
+      <recent name="com.example.biblioteka.notification" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.biblioteka.booklending" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BibliotekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Biblioteka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.biblioteka.BibliotekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ae0eeef-ad20-4b61-8cce-86844c0fd73e" name="Changes" comment="" />
+      <created>1696522776182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696522776182</updated>
+      <workItem from="1696522777208" duration="749000" />
+      <workItem from="1696524024350" duration="34960000" />
+      <workItem from="1696706510277" duration="5659000" />
+      <workItem from="1696746665506" duration="2332000" />
+      <workItem from="1696788772350" duration="3591000" />
+      <workItem from="1696834611255" duration="6855000" />
+      <workItem from="1696959984584" duration="12164000" />
+      <workItem from="1697013057893" duration="11962000" />
+      <workItem from="1697190195429" duration="599000" />
+      <workItem from="1697634214745" duration="22799000" />
+      <workItem from="1697738133298" duration="3388000" />
+      <workItem from="1697741804638" duration="6323000" />
+      <workItem from="1697786767606" duration="11731000" />
+      <workItem from="1698430493998" duration="2410000" />
+      <workItem from="1698477616530" duration="21203000" />
+      <workItem from="1718102733564" duration="635000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create mini library management system">
+      <option name="closed" value="true" />
+      <created>1697832980902</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697832980902</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create mini library management system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create mini library management system" />
+  </component>
+</project>

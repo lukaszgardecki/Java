@@ -1,0 +1,29 @@
+<div>
+  <!-- <div>
+    <button id="sendMessage" (click)="onSendMessage();">Send</button>
+    <input type="text" id="text" placeholder="Text"/>
+  </div>
+  <br /> -->
+  <!-- <div>
+    <button id="sendPrivateMessage" (click)="sendPrivateMessage();">Send Private</button>
+    <input type="text" id="privateText" placeholder="Private Message"/>
+    <input type="text" id="to" placeholder="To"/>
+  </div> -->
+  <br />
+  <br />
+  <br />
+
+  <div id="messages">
+    <button class="btn btn-primary" (click)="onSendMessage()">
+      Send Test Message
+    </button>
+    <h2>Received messages</h2>
+    <ol>
+      <!-- we will use Angular binding to populate list of messages -->
+      <li class="message" *ngFor="let message of receivedMessages">
+        {{ message }}
+      </li>
+    </ol>
+  </div>
+
+</div>
