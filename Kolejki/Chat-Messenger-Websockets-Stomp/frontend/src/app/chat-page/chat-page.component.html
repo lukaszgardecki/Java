@@ -1,0 +1,117 @@
+<div id="chat-page">
+    <div class="nk-app-root">
+        <div class="nk-wrap ">
+            <div class="nk-content nk-content-fluid">
+                <div class="container-xl wide-xl">
+                    <div class="nk-content-inner">
+                        <div class="nk-content-body">
+                            <div class="nk-chat shadow">
+                                <div class="nk-chat-body show-chat">
+                                    <div class="nk-chat-head">
+                                        <ul class="nk-chat-head-info">
+                                            <li class="nk-chat-head-user">
+                                                <div class="user-info">
+                                                    <div class="lead-text">Grupa 1</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="nk-chat-head-tools">
+                                            <li>
+                                                <button class="btn btn-round btn-danger" id="logout" (click)="disconnect()">
+                                                    Wyloguj się
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+
+
+                                    <div class="nk-chat-panel" style="overflow-x: hidden; height: 100%; " #messageContainer>
+                                        <div *ngFor="let item of messages" >
+                                            <ng-container [ngSwitch]="item.type">
+                                                
+                                                <div *ngSwitchCase="'CHAT'" class="chat" [ngClass]="{'is-me': isMyMessage(item), 'is-you': !isMyMessage(item)}">
+
+                                                    <ng-container *ngIf="isMyMessage(item); else isYours">
+                                                        <div class="chat-content">
+                                                            <div class="chat-bubbles">
+                                                                <div class="chat-bubble">
+                                                                    <div class="chat-msg">{{item.content}}</div>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="chat-meta">
+                                                                <!-- <li>{{item.sender}}</li> -->
+                                                                <li><time>{{item.time}}</time></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="chat-avatar">
+                                                            <div class="user-avatar fw-bold" [ngStyle]="{'background-color': getAvatarColor(item.sender)}">
+                                                                <span>{{item.sender.charAt(0).toUpperCase()}}</span>
+                                                            </div>
+                                                        </div>
+                                                    </ng-container>
+
+                                                    <ng-template #isYours>
+                                                        <div class="chat-avatar">
+                                                            <div class="user-avatar fw-bold" [ngStyle]="{'background-color': getAvatarColor(item.sender)}">
+                                                                <span>{{item.sender.charAt(0).toUpperCase()}}</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chat-content">
+                                                            <div class="chat-bubbles">
+                                                                <div class="chat-bubble">
+                                                                    <div class="chat-msg">{{item.content}}</div>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="chat-meta">
+                                                                <!-- <li>{{item.sender}}</li>  -->
+                                                                <li><time>{{item.time}}</time></li>
+                                                            </ul>
+                                                        </div>
+                                                    </ng-template>
+                                                    
+                                                    
+                                                </div>
+                                                <div *ngSwitchDefault class="chat-sap">
+                                                    <div class="chat-sap-meta"><span>{{item.content}}</span></div>
+                                                </div>
+                                                
+                                            </ng-container>
+                                        </div>
+                                        
+                                
+                                    </div>
+                            
+              
+
+
+                                    <div class="nk-chat-editor">
+                                        <form method="post" id="messageForm" name="messageForm" class="nk-chat-editor-form d-inline-block">
+                                            <div class="form-control-wrap">
+                                                <input aria-label="message" type="text" [(ngModel)]="messageContent" name="message" class="form-control form-control-simple no-resize" id="message" placeholder="Wpisz wiadomość..." />
+                                            </div>
+                                        </form>
+                                        <ul class="nk-chat-editor-tools g-2">
+                                            <li>
+                                                <button type="submit" form="messageForm" class="btn btn-round btn-primary" (click)="send()">
+                                                    Wyślij
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-footer nk-footer-fluid bg-lighter">
+                <div class="container-xl">
+                    <div class="nk-footer-wrap">
+                        <div class="nk-footer-copyright"><p>© 2023 <strong>Project POO</strong>. Wszelkie prawa zastrzeżone.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
