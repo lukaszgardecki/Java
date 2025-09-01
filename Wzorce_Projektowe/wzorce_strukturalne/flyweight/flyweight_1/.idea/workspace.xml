@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2a23c79-7af9-4b47-aefa-484181b36388" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/VehicleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VehicleFactory.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2a23c79-7af9-4b47-aefa-484181b36388" name="Default Changelist" comment="Ćwiczenie wzorce - Flyweight 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,11 +31,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/lukas/Desktop/Projekty/Java/Wzorce_Projektowe/wzorce_strukturalne/flyweight/flyweight_1",
+    "last_opened_file_path": "C:/Users/lukas/Desktop/Projekty/Java/Wzorce_Projektowe/wzorce_strukturalne/flyweight/flyweight_2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,61 +74,24 @@
       <workItem from="1582452525151" duration="5295000" />
       <workItem from="1582470229008" duration="10627000" />
       <workItem from="1590332543365" duration="12000" />
-      <workItem from="1756754313326" duration="418000" />
+      <workItem from="1756754313326" duration="739000" />
     </task>
+    <task id="LOCAL-00001" summary="Ćwiczenie wzorce - Flyweight 1">
+      <option name="closed" value="true" />
+      <created>1756755006803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756755006803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="461" y="231" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582452539993">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state x="461" y="231" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.797@0.23.1440.797" timestamp="1582452539993" />
-    <state x="533" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1582460022926">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state x="533" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797@0.23.1440.797" timestamp="1582460022926" />
-    <state x="268" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582476631940">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state x="268" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.797@0.23.1440.797" timestamp="1582476631940" />
-    <state width="1398" height="258" key="GridCell.Tab.0.bottom" timestamp="1582479537519">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582479537519" />
-    <state width="1398" height="258" key="GridCell.Tab.0.center" timestamp="1582479537518">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582479537518" />
-    <state width="1398" height="258" key="GridCell.Tab.0.left" timestamp="1582479537515">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582479537515" />
-    <state width="1398" height="258" key="GridCell.Tab.0.right" timestamp="1582479537519">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582479537519" />
-    <state width="1398" height="244" key="GridCell.Tab.1.bottom" timestamp="1582475840388">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.1.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582475840388" />
-    <state width="1398" height="244" key="GridCell.Tab.1.center" timestamp="1582475840387">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.1.center/0.23.1440.797@0.23.1440.797" timestamp="1582475840387" />
-    <state width="1398" height="244" key="GridCell.Tab.1.left" timestamp="1582475840386">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.1.left/0.23.1440.797@0.23.1440.797" timestamp="1582475840386" />
-    <state width="1398" height="244" key="GridCell.Tab.1.right" timestamp="1582475840388">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1582475840388" />
-    <state x="385" y="191" width="670" height="675" key="run.anything.popup" timestamp="1582479537295">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state x="385" y="191" width="670" height="675" key="run.anything.popup/0.23.1440.797@0.23.1440.797" timestamp="1582479537295" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ćwiczenie wzorce - Flyweight 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ćwiczenie wzorce - Flyweight 1" />
   </component>
 </project>
