@@ -1,0 +1,9 @@
+type: unsupported
+custom_name: "Paycheck face-off: Who's the breadwinner?"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/49127#comment
+status: Solved
+record: -1

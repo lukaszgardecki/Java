@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "a is reference, b is reference, str is primitive"
+  - text: "a is reference, b is primitive, str is reference"
+  - text: "a is primitive, b is primitive, str is reference"
+  - text: "a is primitive, b is reference, str is primitive"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/29752#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,19 @@
+content:
+  - "Basic literals  numbers, strings and characters"
+  - Writing first program
+  - Printing data
+  - Types and variables
+  - String
+  - Formatted output
+  - Primitive and reference types
+  - Comments
+  - Reading user's input with Scanner
+  - Arithmetic operations
+  - Integer types and operations
+  - Increment and decrement
+  - Floating-point types and operations
+  - Type casting
+  - Comparing values. Relational operators
+  - Conditional statement
+  - One-line condition with ternary operator
+  - For loop
