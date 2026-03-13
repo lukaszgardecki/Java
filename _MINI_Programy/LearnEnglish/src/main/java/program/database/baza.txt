@@ -1973,30 +1973,30 @@ Current group: 0.0
 20221006131013_7_CAT50_3_12_0_przykrycie; pokrowiec_a cover
 20221006131223_7_CAT50_3_12_1_dzbanek_a jug
 20221006130901_7_CAT50_3_12_0_dzbanuszek na mleko (lub �mietank�)_a cream jug
-20220924112550_0_CAT51_1_12_0_Kt�ry z nich...?_which of them
-20220924112857_0_CAT51_1_7_2_Oczekuj�, �e to udowodnisz._I expect you to prove that
-20221011155015_0_CAT51_1_8_2_Co to mia�o znaczy�?_What's that supposed to mean?
-20220924113114_0_CAT51_1_12_1_niezmienny_immutable
-20220924113147_0_CAT51_1_12_0_Teraz, gdy...(co� zrobili�my)_now that
-20220924113219_0_CAT51_1_12_0_Sp�jrz na..._take a look at
-20221011155211_0_CAT51_1_7_2_niefortunny, nieszcz�liwy_unfortunate
-20220924113301_0_CAT51_1_12_0_plik_a file
-20220924113342_0_CAT51_1_12_0_folder_a directory
-20220924113640_0_CAT51_1_9_2_opieka zdrowotna_health care
-20220924114022_0_CAT51_1_9_1_Nie mog� wzi�� �ap�wki._I can't take a bribe
-20220924114153_0_CAT51_1_7_1_Przejd�my do sedna sprawy._Let's get to the nitty-gritty
-20220924121902_0_CAT51_1_8_1_zi��_a son in law
-20220924122212_0_CAT51_1_12_1_uzasadnij swoj� odpowied�_justify your answer
-20220924122301_0_CAT51_1_13_2_urz�dzenie_a device
-20220924122333_0_CAT51_1_12_0_chocia�_though
-20220924122418_0_CAT51_1_12_0_j�dro_a kernel
-20220924122803_0_CAT51_1_12_1_tak zwane ("tzw.")_so called
-20220924123048_0_CAT51_1_12_1_oto co musisz zrobi�_here is what you need to do
-20220924123237_0_CAT51_1_12_1_powszechnie znany_widely known
-20220924123315_0_CAT51_1_12_1_jego u�ycie nie zawsze jest uzasadnione_its use is not always justified
-20220924123356_0_CAT51_1_12_1_rozr�nia�_to distinguish
-20220924123638_0_CAT51_1_12_2_najprostszym sposobem by..._the simplest way to
-20220924123703_0_CAT51_1_8_1_pewny, przekonany_certain
+20260217094006_3_CAT51_1_14_1_Kt�ry z nich...?_which of them
+20260217094030_1_CAT51_1_7_5_Oczekuj�, �e to udowodnisz._I expect you to prove that
+20260217094047_1_CAT51_1_8_5_Co to mia�o znaczy�?_What's that supposed to mean?
+20260217094000_3_CAT51_1_14_1_niezmienny_immutable
+20260217094009_3_CAT51_1_14_1_Teraz, gdy...(co� zrobili�my)_now that
+20260217094004_3_CAT51_1_14_0_Sp�jrz na..._take a look at
+20260217094104_1_CAT51_1_7_5_niefortunny, nieszcz�liwy_unfortunate
+20260217094011_3_CAT51_1_14_0_plik_a file
+20260217094138_3_CAT51_1_14_0_folder_a directory
+20260217094141_3_CAT51_1_11_2_opieka zdrowotna_health care
+20260217094147_3_CAT51_1_11_1_Nie mog� wzi�� �ap�wki._I can't take a bribe
+20260217094313_3_CAT51_1_9_2_Przejd�my do sedna sprawy._Let's get to the nitty-gritty
+20260217094153_3_CAT51_1_10_1_zi��_a son in law
+20260217094159_3_CAT51_1_14_1_uzasadnij swoj� odpowied�_justify your answer
+20260217094315_3_CAT51_1_15_3_urz�dzenie_a device
+20260217094123_1_CAT51_1_12_1_chocia�_though
+20260217094317_3_CAT51_1_14_0_j�dro_a kernel
+20260217094320_3_CAT51_1_14_1_tak zwane ("tzw.")_so called
+20260217094325_3_CAT51_1_14_1_oto co musisz zrobi�_here is what you need to do
+20260217094216_2_CAT51_1_13_1_powszechnie znany_widely known
+20260217094229_2_CAT51_1_13_1_jego u�ycie nie zawsze jest uzasadnione_its use is not always justified
+20260217094241_2_CAT51_1_13_1_rozr�nia�_to distinguish
+20260217094247_2_CAT51_1_13_2_najprostszym sposobem by..._the simplest way to
+20260217094303_2_CAT51_1_9_1_pewny, przekonany_certain
 20220924123737_0_CAT51_1_12_0_w�a�ciwie_properly
 20220924150155_0_CAT51_1_12_0_jednak�e_however
 20220924150255_0_CAT51_1_12_1_podaj pe�n� �cie�k�_provide the full path
