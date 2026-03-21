@@ -20,7 +20,7 @@ class GraZaDuzoZaMalo {
         this.gameController = new GameController(inputHandler, printer);
     }
 
-    public void run() {
+    void run() {
         printer.printAppInfo();
         boolean shouldContinue = true;
 
