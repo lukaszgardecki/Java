@@ -33,7 +33,7 @@ class FiguryPlaskie {
                 if (choice == MenuOption.EXIT.getId()) break;
 
                 MenuOption.fromInt(choice).ifPresentOrElse(
-                        shapeService::execute,
+                        shapeService::handleCalculation,
                         () -> printer.printError("Nie ma takiej opcji!")
                 );
             };
@@ -114,7 +114,7 @@ class ShapeService {
         this.printer = printer;
     }
 
-    void execute(MenuOption option) {
+    void handleCalculation(MenuOption option) {
         printer.printf("Wybrano: %s%n", option.getName());
         while (true) {
             printer.printSubmenu();
@@ -368,7 +368,7 @@ class InputHandler implements AutoCloseable {
 
 
 class Printer {
-    private final String separator = "-".repeat(69);
+    private final String separator = "-".repeat(59);
 
     void printAppInfo() {
         printSeparator();
