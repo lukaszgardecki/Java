@@ -6,8 +6,6 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import static com.example.programowanie2.cwiczenia.zaliczenia.zad9_operacje_na_tablicach.MenuOption.*;
-
 public class Zadanie_9 {
     public static void main(String[] args) {
         new OperacjeNaTablicach().run();
@@ -34,9 +32,9 @@ class OperacjeNaTablicach {
                 printer.printMenu();
                 int choice = inputHandler.getIntegerValue("Wybierz opcję: ");
 
-                if (choice == WYJSCIE.getId()) break;
+                if (choice == MenuOption.WYJSCIE.getId()) break;
 
-                fromInt(choice).ifPresentOrElse(
+                MenuOption.fromInt(choice).ifPresentOrElse(
                         arrayService::handleMenuOption,
                         () -> printer.printError("Nie ma takiej opcji!")
                 );
@@ -150,7 +148,7 @@ class ArrayService {
         int min = 4;
         int max = 24;
         int[][] tablica = ObliczeniaTablicowe.wypelnijTablice(new int[wiersze][kolumny], min, max);
-        printer.println(WYPELNIANIE_LOSOWE.getResultPattern()
+        printer.println(MenuOption.WYPELNIANIE_LOSOWE.getResultPattern()
                 .formatted(wiersze, kolumny, min, max, TableFormatter.format(tablica))
         );
     }
@@ -158,7 +156,7 @@ class ArrayService {
     private void pokazWypelnianieTablicyJedynkami() {
         int size = 5;
         int[][] tablica = ObliczeniaTablicowe.wypelnijTabliceZJedynkami(new int[size][size]);
-        printer.println(WYPELNIANIE_PRZEKATNYCH_JEDYNKAMI.getResultPattern()
+        printer.println(MenuOption.WYPELNIANIE_PRZEKATNYCH_JEDYNKAMI.getResultPattern()
                 .formatted(size, TableFormatter.format(tablica))
         );
     }
@@ -166,7 +164,7 @@ class ArrayService {
     private void pokazTransponowanieZNowaTablica() {
         int[][] tablica = ObliczeniaTablicowe.wypelnijTablice(new int[3][7], 1, 100);
         int[][] tablicaWynikowa = ObliczeniaTablicowe.transponujTablice1(tablica);
-        printer.println(TRANSPOZYCJA_NOWA_TABLICA.getResultPattern()
+        printer.println(MenuOption.TRANSPOZYCJA_NOWA_TABLICA.getResultPattern()
                 .formatted(
                         TableFormatter.format(tablica),
                         TableFormatter.format(tablicaWynikowa)
@@ -178,7 +176,7 @@ class ArrayService {
         int[][] tablica = ObliczeniaTablicowe.wypelnijTablice(new int[3][3], 1, 100);
         int[][] tablicaOryginalna = Arrays.stream(tablica).map(int[]::clone).toArray(int[][]::new);
         int[][] tablicaWynikowa = ObliczeniaTablicowe.transponujTablice2(tablica);
-        printer.println(TRANSPOZYCJA_PRZESTAWIANIE.getResultPattern()
+        printer.println(MenuOption.TRANSPOZYCJA_PRZESTAWIANIE.getResultPattern()
                 .formatted(
                         TableFormatter.format(tablicaOryginalna),
                         TableFormatter.format(tablicaWynikowa)
@@ -190,7 +188,7 @@ class ArrayService {
         int[][] macierz1 = ObliczeniaTablicowe.wypelnijTablice(new int[3][3], 1, 10);
         int[][] macierz2 = ObliczeniaTablicowe.wypelnijTablice(new int[3][3], 1, 10);
         int[][] macierzWynikowa = ObliczeniaTablicowe.mnozenieMacierzy(macierz1, macierz2);
-        printer.println(MNOZENIE_MACIERZY.getResultPattern()
+        printer.println(MenuOption.MNOZENIE_MACIERZY.getResultPattern()
                 .formatted(
                         TableFormatter.format(macierz1),
                         TableFormatter.format(macierz2),
