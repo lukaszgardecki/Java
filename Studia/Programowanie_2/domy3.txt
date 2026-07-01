@@ -1,0 +1,9 @@
+dom1 miasto 4 T 435
+dom2 wieś 2 T 654
+dom3 miasto 2 T 123
+dom4 miasto 3 N 789
+dom5 wies 5 N 945
+dom6 miasto 4 N 123
+dom7 miasto 1 N 999
+dom8 miasto 4 T 798
+dom9 miasto 3 N 1234

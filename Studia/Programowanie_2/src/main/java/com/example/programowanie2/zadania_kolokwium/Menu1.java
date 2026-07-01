@@ -4,7 +4,7 @@ package com.example.programowanie2.zadania_kolokwium;
 import java.util.Scanner;
 
 
-public class Menu {
+public class Menu1 {
 
     static void poz1(){
         System.out.println("\nPozycja 1\n");

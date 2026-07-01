@@ -2,7 +2,7 @@ package com.example.programowanie2.zadania_kolokwium;
 
 import java.util.Scanner;
 
-public class Conversion {
+public class Conversion1 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner( System.in );
