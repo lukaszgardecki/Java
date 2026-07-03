@@ -3,6 +3,19 @@ package com.example.programowanie2.zadania_egz;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * Napisać funkcję o dwóch parametrach: liczbaParzystych i liczbaNieparzystych (typu int), która:
+ *      losuje jednocyfrowe liczby całkowite tak długo, aż zostanie wylosowana żądana liczba liczb parzystych
+ *      i nieparzystych (zgodnie z wartościami parametrów)
+ *
+ *      wylosowane liczby umieszcza w tablicy "2-wymiarowej" (pierwszy wiersz - liczby parzyste, drugi - nieparzyste)
+ *
+ *      na koniec każdego wiersza dopisuje (w odpowiednim wierszu): średnią liczb oraz wartość najmniejszą (dla
+ *      parzystych) i największą (dla nieparzystych)
+ *
+ *      zwraca wypełnioną tablicę
+ * UWAGA: napisać osobną funkcję liczącą średnią dla podanego parametrem wiersza.
+ */
 public class Zad_losowanie {
     public static void main(String[] args) {
         double[][] ints = wypelnijTablice(3, 3);
@@ -32,10 +45,10 @@ public class Zad_losowanie {
         }
 
         tablicaParzystych[parzyste] = liczSrednia(tablicaParzystych);
-        tablicaParzystych[parzyste+1] = znajdzMinimum(tablicaParzystych);
+        tablicaParzystych[parzyste+1] = Arrays.stream(tablicaParzystych).min().getAsDouble();
 
         tablicaNieparzystych[nieparzyste] = liczSrednia(tablicaNieparzystych);
-        tablicaNieparzystych[nieparzyste+1] = znajdzMaksimum(tablicaNieparzystych);
+        tablicaNieparzystych[nieparzyste+1] = Arrays.stream(tablicaNieparzystych).max().getAsDouble();
 
         tablica[0] = tablicaParzystych;
         tablica[1] = tablicaNieparzystych;
@@ -50,23 +63,5 @@ public class Zad_losowanie {
             suma += tablica[i];
         }
         return Math.round(suma / dlugosc * 100.0) / 100.0;
-    }
-
-    private static double znajdzMinimum(double[] tablica) {
-        int dlugosc = tablica.length - 2;
-        double min = Double.MAX_VALUE;
-        for (int i = 1; i < dlugosc; i++) {
-            if (tablica[i] < min) min = tablica[i];
-        }
-        return min;
-    }
-
-    private static double znajdzMaksimum(double[] tablica) {
-        int dlugosc = tablica.length - 2;
-        double max = -Double.MAX_VALUE;
-        for (int i = 0; i < dlugosc; i++) {
-            if (tablica[i] > max) max = tablica[i];
-        }
-        return max;
     }
 }
