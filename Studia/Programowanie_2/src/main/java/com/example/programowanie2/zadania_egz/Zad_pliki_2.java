@@ -44,13 +44,15 @@ public class Zad_pliki_2 {
                 }
 
                 if (cena <= cenaMin) {
-                    if (cena < cenaMin) najtanszeLeki.clear();
+                    if (cena < cenaMin) {
+                        najtanszeLeki.clear();
+                        cenaMin = cena;
+                    }
                     najtanszeLeki.add(nazwaLeku);
-                    cenaMin = cena;
                 }
 
-                bw.write("%s: %s".formatted(nazwaLeku, cena));
-                bw.newLine();
+
+                bw.write("%s: %s\n".formatted(nazwaLeku, cena));
                 raf.seek(endPointer);
             }
         } catch (FileNotFoundException e) {
