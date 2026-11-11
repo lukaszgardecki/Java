@@ -1,3 +1,16 @@
+package wzorce.singleton;
+
+/**
+ * Zadanie 3: Generator identyfikatorów
+ *
+ * Cel: Ćwiczenie Singletona w kontekście generowania unikalnych danych
+ *
+ * - Zaimplementuj klasę GeneratorID, która będzie Singletonem
+ * - klasa powinna mieć metodę pobierzNoweID(), która zwraca kolejne liczby całkowite (np. 1, 2, 3...)
+ * - w metodzie main utwórz kilka wątków, które będą pobierały identyfikatory i wypisywały je na konsolę
+ * - udowodnij, że identyfikatory są unikalne i rosnące, niezależnie od liczby wątków
+ * - Rozszerzenie: dodaj możliwość resetowania licznika ID (np., resetuj())
+ */
 public class Zadanie3 {
 
     public static void main(String[] args) throws InterruptedException {

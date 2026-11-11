@@ -1,5 +1,16 @@
+package wzorce.singleton;
 
-
+/**
+ * Zadanie 1: Dziennik zdarzeń aplikacji
+ *
+ * Cel: Utrwalenie podstaw implementacji Singletona
+ *
+ * - Napisz klasę DziennikZdarzen, która będzie Singletonem
+ * - klasa powinna mieć metodę log(String wiadomosc), która wypisuje komunikaty na konsolę z prefiksem [DZIENNIK]
+ * - w metodzie main utwórz kilka wątkó, które będą próbowały logować zdarzenia
+ * - udowodnij, że wszystkie wątki korzystają z tej samej instacji DziennikZdarzen
+ * - Rozszerzenie: dodaj numerowanie logów (np. [DZIENNIK #1] Start aplikacji)
+ */
 public class Zadanie1 {
 
     public static void main(String[] args) {

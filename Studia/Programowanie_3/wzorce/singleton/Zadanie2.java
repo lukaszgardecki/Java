@@ -1,8 +1,21 @@
+package wzorce.singleton;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * Zadanie 2: Konfiguracja aplikacji
+ *
+ * Cel: Pokazanie uzycia Singletona do przechowywania globalnych ustawień
+ *
+ * - Stwórz klase Konfiguracja, która będzie Singletonem
+ * - klasa powinna przechowywać ustawienia aplikacji w polach (np. trybDebug, sciezkaDoPliku, wersja)
+ * - w metodzie main pobierze instancję Konfiguracja, ustaw wartości i wyświetl je na konsoli
+ * - następnie w innym miejscu programu pobierz ponownie instancję i pokaż, że wartości są zachowane
+ * - Rozszerzenie: dodaj możliwość wczytania konfiguracji z pliku np. z roszerzeniem .properties
+ */
 public class Zadanie2 {
 
     public static void main(String[] args) {
@@ -25,7 +38,7 @@ public class Zadanie2 {
 
     private static void innyFragmentAplikacji() {
         Konfiguracja config = Konfiguracja.getInstance();
-        System.out.println("\n>>> Konfiguracja odczytana z innego miejsca programu:");
+        System.out.println("\n>>> wzorce.singleton.Konfiguracja odczytana z innego miejsca programu:");
         System.out.println(config);
     }
 }
@@ -83,7 +96,7 @@ class Konfiguracja {
 
     @Override
     public String toString() {
-        return "Konfiguracja {" +
+        return "wzorce.singleton.Konfiguracja {" +
                 "trybDebug=" + trybDebug +
                 ", sciezkaDoPliku='" + sciezkaDoPliku + '\'' +
                 ", wersja='" + wersja + '\'' +
