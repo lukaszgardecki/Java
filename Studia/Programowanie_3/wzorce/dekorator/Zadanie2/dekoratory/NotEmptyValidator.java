@@ -1,0 +1,15 @@
+package wzorce.dekorator.Zadanie2.dekoratory;
+
+import wzorce.dekorator.Zadanie2.Validator;
+
+public class NotEmptyValidator extends ValidatorDecorator {
+
+    public NotEmptyValidator(Validator validator) {
+        super(validator);
+    }
+
+    @Override
+    public boolean validate(String input) {
+        return super.validate(input) && !input.isBlank();
+    }
+}
