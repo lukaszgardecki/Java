@@ -1,28 +1,31 @@
 package wzorce.behawioralne.polecenie.Zadanie3;
 
+/**
+ * Odbiorca (Receiver)
+ */
 public class Robot {
 
-    void idzDoPrzodu() {
+    public void idzDoPrzodu() {
         System.out.println("Robot idzie do przodu");
     }
 
-    void idzDoTylu() {
+    public void idzDoTylu() {
         System.out.println("Robot cofa się");
     }
 
-    void obrocWLewo() {
+    public void obrocWLewo() {
         System.out.println("Robot obraca się w lewo");
     }
 
-    void obrocWPrawo() {
+    public void obrocWPrawo() {
         System.out.println("Robot obraca się w prawo");
     }
 
-    void podniesPrzedmiot() {
+    public void podniesPrzedmiot() {
         System.out.println("Robot podnosi przedmiot");
     }
 
-    void opuscPrzedmiot() {
+    public void opuscPrzedmiot() {
         System.out.println("Robot opuszcza przedmiot");
     }
 }

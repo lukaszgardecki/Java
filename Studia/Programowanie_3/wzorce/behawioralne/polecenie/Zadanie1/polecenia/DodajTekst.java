@@ -1,0 +1,23 @@
+package wzorce.behawioralne.polecenie.Zadanie1.polecenia;
+
+import wzorce.behawioralne.polecenie.Zadanie1.Dokument;
+
+public class DodajTekst implements Polecenie {
+    private Dokument dokument;
+    private String tekst;
+
+    public DodajTekst(Dokument dokument, String tekst) {
+        this.dokument = dokument;
+        this.tekst = tekst;
+    }
+
+    @Override
+    public void wykonaj() {
+        dokument.dodaj(tekst);
+    }
+
+    @Override
+    public void cofnij() {
+        dokument.usun(tekst.length());
+    }
+}

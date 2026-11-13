@@ -1,7 +1,12 @@
 package wzorce.behawioralne.polecenie.Zadanie5;
 
+import wzorce.behawioralne.polecenie.Zadanie5.polecenia.Polecenie;
+
 import java.util.Stack;
 
+/**
+ * Pośrednik kolejkujący polecenia
+ */
 public class Dowodca {
     private Stack<Polecenie> historia = new  Stack<>();
 

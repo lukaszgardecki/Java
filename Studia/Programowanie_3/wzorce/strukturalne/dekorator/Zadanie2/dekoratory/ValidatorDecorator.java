@@ -1,6 +1,6 @@
 package wzorce.strukturalne.dekorator.Zadanie2.dekoratory;
 
-import wzorce.strukturalne.dekorator.Zadanie2.Validator;
+import wzorce.strukturalne.dekorator.Zadanie2.walidatory.Validator;
 
 abstract class ValidatorDecorator implements Validator {
     protected final Validator opakowanyWalidator;

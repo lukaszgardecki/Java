@@ -1,5 +1,7 @@
 package wzorce.behawioralne.polecenie.Zadanie4;
 
+import wzorce.behawioralne.polecenie.Zadanie4.polecenia.*;
+
 import java.util.List;
 
 /**

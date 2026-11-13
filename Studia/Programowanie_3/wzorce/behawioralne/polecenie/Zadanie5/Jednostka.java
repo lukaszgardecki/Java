@@ -1,36 +1,39 @@
 package wzorce.behawioralne.polecenie.Zadanie5;
 
+/**
+ * Odbiorca (Receiver) poleceń
+ */
 public class Jednostka {
 
-    void atakuj() {
+    public void atakuj() {
         System.out.println("Jednostka atakuje!");
     }
 
-    void wycofaj() {
+    public void wycofaj() {
         System.out.println("Jednostka wycofuje się.");
     }
 
-    void bronSie() {
+    public void bronSie() {
         System.out.println("Jednostka broni się!");
     }
 
-    void przestanBronic() {
+    public void przestanBronic() {
         System.out.println("Jednostka przestaje się bronić.");
     }
 
-    void buduj() {
+    public void buduj() {
         System.out.println("Jednostka buduje strukturę.");
     }
 
-    void rozbierz() {
+    public void rozbierz() {
         System.out.println("Jednostka rozbiera strukturę.");
     }
 
-    void zbierajSurowce() {
+    public void zbierajSurowce() {
         System.out.println("Jednostka zbiera surowce.");
     }
 
-    void oddajSurowce() {
+    public void oddajSurowce() {
         System.out.println("Jednostka oddaje zebrane surowce.");
     }
 }

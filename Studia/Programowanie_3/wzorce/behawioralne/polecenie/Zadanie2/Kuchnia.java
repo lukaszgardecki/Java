@@ -1,15 +1,18 @@
 package wzorce.behawioralne.polecenie.Zadanie2;
 
+/**
+ * Odbiorca (Receiver)
+ */
 public class Kuchnia {
-    void przygotuj(String danie) {
+    public void przygotuj(String danie) {
         System.out.println("Przygotowano: " + danie);
     }
 
-    void anuluj(String danie) {
+    public void anuluj(String danie) {
         System.out.println("Anulowano: " + danie);
     }
 
-    void zrealizuj(String danie) {
+    public void zrealizuj(String danie) {
         System.out.println("Zrealizowano: " + danie);
     }
 }

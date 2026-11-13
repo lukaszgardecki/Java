@@ -1,5 +1,10 @@
 package wzorce.behawioralne.polecenie.Zadanie1;
 
+import wzorce.behawioralne.polecenie.Zadanie1.polecenia.DodajTekst;
+import wzorce.behawioralne.polecenie.Zadanie1.polecenia.Polecenie;
+import wzorce.behawioralne.polecenie.Zadanie1.polecenia.UsunTekst;
+import wzorce.behawioralne.polecenie.Zadanie1.polecenia.ZmienStyl;
+
 /**
  * Zadanie 1: Edytor tekstu z poleceniami
  *

@@ -2,6 +2,8 @@ package wzorce.strukturalne.dekorator.Zadanie2;
 
 import wzorce.strukturalne.dekorator.Zadanie2.dekoratory.MinLengthValidator;
 import wzorce.strukturalne.dekorator.Zadanie2.dekoratory.NotEmptyValidator;
+import wzorce.strukturalne.dekorator.Zadanie2.walidatory.BaseValidator;
+import wzorce.strukturalne.dekorator.Zadanie2.walidatory.Validator;
 
 /**
  * Zadanie 2: system walidacji pól formularza
