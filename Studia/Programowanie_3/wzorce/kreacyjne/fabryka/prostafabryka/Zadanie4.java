@@ -1,8 +1,10 @@
 package wzorce.kreacyjne.fabryka.prostafabryka;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 /**
@@ -26,72 +28,50 @@ public class Zadanie4 {
         data.add(Map.of("id", "2", "imie", "Ola", "wiek", "30"));
         data.add(Map.of("id", "3", "imie", "Jan", "wiek", "27"));
 
-//        System.out.println("=== JSON ===");
-//        DataExporterFactory.createExporter(ExporterType.JSON).export(data);
-//
-//        System.out.println("\n=== CSV ===");
-//        DataExporterFactory.createExporter(ExporterType.CSV).export(data);
-//
-//        System.out.println("\n=== YAML ===");
-//        DataExporterFactory.createExporter(ExporterType.YAML).export(data);
+        DataExporterFactory.registerExporter(ExporterType.JSON, JsonDataExporter::new);
+        DataExporterFactory.registerExporter(ExporterType.CSV, CsvDataExporter::new);
+        DataExporterFactory.registerExporter(ExporterType.YAML, YamlDataExporter::new);
+        DataExporterFactory.registerExporter(ExporterType.XML, XmlDataExporter::new);
 
         System.out.println("=== JSON ===");
-        new JsonDataExporterFactory().createExporter().export(data);
+        DataExporterFactory.createExporter(ExporterType.JSON).export(data);
 
         System.out.println("\n=== CSV ===");
-        new CsvDataExporterFactory().createExporter().export(data);
+        DataExporterFactory.createExporter(ExporterType.CSV).export(data);
 
         System.out.println("\n=== YAML ===");
-        new YamlDataExporterFactory().createExporter().export(data);
+        DataExporterFactory.createExporter(ExporterType.YAML).export(data);
 
         System.out.println("\n=== XML ===");
-        new XmlDataExporterFactory().createExporter().export(data);
+        DataExporterFactory.createExporter(ExporterType.XML).export(data);
     }
 }
 
-//class DataExporterFactory {
+class DataExporterFactory {
+    private final static Map<ExporterType, Supplier<DataExporter>> exporters = new HashMap<>();
+
+    public static void registerExporter(ExporterType type, Supplier<DataExporter> supplier) {
+        exporters.put(type, supplier);
+    }
+
 //    static DataExporter createExporter(ExporterType type) {
 //        return switch (type) {
 //            case JSON -> new JsonDataExporter();
 //            case CSV -> new CsvDataExporter();
 //            case YAML -> new YamlDataExporter();
+//            case XML -> new XmlDataExporter();
 //        };
 //    }
-//}
-//enum ExporterType { JSON, CSV, YAML }
 
-interface DataExporterFactory {
-    DataExporter createExporter();
-}
-
-class JsonDataExporterFactory implements DataExporterFactory {
-    @Override
-    public DataExporter createExporter() {
-        return new JsonDataExporter();
+    public static DataExporter createExporter(ExporterType type) {
+        Supplier<DataExporter> supplier = exporters.get(type);
+        if (supplier == null) {
+            throw new IllegalArgumentException("Brak zarejestrowanego eksportera dla typu: " + type);
+        }
+        return supplier.get();
     }
 }
-
-class CsvDataExporterFactory implements DataExporterFactory {
-    @Override
-    public DataExporter createExporter() {
-        return new CsvDataExporter();
-    }
-}
-
-class YamlDataExporterFactory implements DataExporterFactory {
-    @Override
-    public DataExporter createExporter() {
-        return new YamlDataExporter();
-    }
-}
-
-class XmlDataExporterFactory implements DataExporterFactory {
-    @Override
-    public DataExporter createExporter() {
-        return new XmlDataExporter();
-    }
-}
-
+enum ExporterType { JSON, CSV, YAML, XML }
 
 interface DataExporter {
     void export(List<Map<String, String>> data);
