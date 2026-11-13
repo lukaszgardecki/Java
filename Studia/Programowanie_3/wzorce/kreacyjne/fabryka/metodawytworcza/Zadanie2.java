@@ -28,17 +28,19 @@ public class Zadanie2 {
         NotificationFactory.registerFactory(NotificationType.PUSH, PushNotificationFactory::new);
         NotificationFactory.registerFactory(NotificationType.SLACK, SlackNotificationFactory::new);
 
-        Notification email = NotificationFactory.getFactory(NotificationType.EMAIL).createNotification();
-        email.send("Witaj w systemie!");
+        Notification notifiaction;
 
-        Notification sms = NotificationFactory.getFactory(NotificationType.SMS).createNotification();
-        sms.send("Twoje hasło zostało wysłane");
+        notifiaction = NotificationFactory.getFactory(NotificationType.EMAIL).createNotification();
+        notifiaction.send("Witaj w systemie!");
 
-        Notification push = NotificationFactory.getFactory(NotificationType.PUSH).createNotification();
-        push.send("Coś wysłane przez push");
+        notifiaction = NotificationFactory.getFactory(NotificationType.SMS).createNotification();
+        notifiaction.send("Twoje hasło zostało wysłane");
 
-        Notification slack = NotificationFactory.getFactory(NotificationType.SLACK).createNotification();
-        slack.send("Wiadomość przez slacka");
+        notifiaction = NotificationFactory.getFactory(NotificationType.PUSH).createNotification();
+        notifiaction.send("Coś wysłane przez push");
+
+        notifiaction = NotificationFactory.getFactory(NotificationType.SLACK).createNotification();
+        notifiaction.send("Wiadomość przez slacka");
     }
 }
 
