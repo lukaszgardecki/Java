@@ -1,5 +1,9 @@
 package wzorce.kreacyjne.fabryka.metodawytworcza;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
+
 /**
  * Zadanie 2: System powiadomień
  *
@@ -19,25 +23,26 @@ public class Zadanie2 {
 
 
         //Rozszerzenie - metoda wytwórcza:
-        EmailNotificationFactory emailFactory = new EmailNotificationFactory();
-        Notification email = emailFactory.createNotification();
+        NotificationFactory.registerFactory(NotificationType.EMAIL, EmailNotificationFactory::new);
+        NotificationFactory.registerFactory(NotificationType.SMS, SmsNotificationFactory::new);
+        NotificationFactory.registerFactory(NotificationType.PUSH, PushNotificationFactory::new);
+        NotificationFactory.registerFactory(NotificationType.SLACK, SlackNotificationFactory::new);
+
+        Notification email = NotificationFactory.getFactory(NotificationType.EMAIL).createNotification();
         email.send("Witaj w systemie!");
 
-        SmsNotificationFactory smsFactory = new SmsNotificationFactory();
-        Notification sms = smsFactory.createNotification();
+        Notification sms = NotificationFactory.getFactory(NotificationType.SMS).createNotification();
         sms.send("Twoje hasło zostało wysłane");
 
-        PushNotificationFactory pushFactory = new PushNotificationFactory();
-        Notification push = pushFactory.createNotification();
+        Notification push = NotificationFactory.getFactory(NotificationType.PUSH).createNotification();
         push.send("Coś wysłane przez push");
 
-        SlackNotificationFactory slackFactory = new SlackNotificationFactory();
-        Notification slack = slackFactory.createNotification();
+        Notification slack = NotificationFactory.getFactory(NotificationType.SLACK).createNotification();
         slack.send("Wiadomość przez slacka");
     }
 }
 
-//enum NotificationType { EMAIL, SMS, PUSH, SLACK }
+enum NotificationType { EMAIL, SMS, PUSH, SLACK }
 
 //class NotificationFactory {
 //    static Notification createNotification(NotificationType type) {
@@ -52,10 +57,24 @@ public class Zadanie2 {
 
 
 
-// FABRYKI
+// FABRYKI - Twórcy - Kreatorzy
 
 abstract class NotificationFactory {
+    private static final Map<NotificationType, Supplier<NotificationFactory>> fabryki = new HashMap<>();
+
     abstract Notification createNotification();
+
+    public static void registerFactory(NotificationType type, Supplier<NotificationFactory> supplier) {
+        fabryki.put(type, supplier);
+    }
+
+    public static NotificationFactory getFactory(NotificationType type) {
+        Supplier<NotificationFactory> fabryka = fabryki.get(type);
+        if (fabryka == null) {
+            throw new IllegalArgumentException("Brak fabryki dla typu: " + type);
+        }
+        return fabryka.get();
+    }
 }
 
 class EmailNotificationFactory extends NotificationFactory {
@@ -88,7 +107,7 @@ class SlackNotificationFactory extends NotificationFactory {
 
 
 
-// POWIADOMIENIA
+// POWIADOMIENIA - konkretne elementy tworzone
 
 interface Notification {
     void send(String message);
